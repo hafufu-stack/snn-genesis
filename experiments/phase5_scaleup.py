@@ -193,7 +193,11 @@ def load_model():
         bnb_4bit_quant_type="nf4",
         bnb_4bit_compute_dtype=torch.float16,
     )
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_ID, padding_side="left")
+    try:
+        tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
+    except Exception:
+        tokenizer = AutoTokenizer.from_pretrained(MODEL_ID, use_fast=False)
+    tokenizer.padding_side = "left"
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
     model = AutoModelForCausalLM.from_pretrained(
@@ -205,7 +209,10 @@ def load_model():
 def generate_text(model, tokenizer, prompt, max_new=80):
     """Generate a single text response."""
     chat = [{"role": "user", "content": prompt}]
-    ids = tokenizer.apply_chat_template(chat, return_tensors="pt").to(model.device)
+    # transformers 5.0: apply_chat_template returns BatchEncoding, not raw tensor
+    text = tokenizer.apply_chat_template(chat, tokenize=False)
+    encoded = tokenizer(text, return_tensors="pt")
+    ids = encoded.input_ids.to(model.device)
     with torch.no_grad():
         out = model.generate(ids, max_new_tokens=max_new, do_sample=False,
                              pad_token_id=tokenizer.pad_token_id)
@@ -330,7 +337,8 @@ def train_qlora(model, tokenizer, train_data, epochs=1):
     output_dir = os.path.join(RESULTS_DIR, "scaleup_qlora_tmp")
     os.makedirs(output_dir, exist_ok=True)
 
-    training_cfg = SFTConfig(
+    # Build SFTConfig compatible with latest trl
+    sft_kwargs = dict(
         output_dir=output_dir,
         num_train_epochs=epochs,
         per_device_train_batch_size=BATCH_SIZE,
@@ -338,9 +346,14 @@ def train_qlora(model, tokenizer, train_data, epochs=1):
         logging_steps=5,
         save_strategy="no",
         report_to="none",
-        max_seq_length=MAX_LENGTH,
         gradient_accumulation_steps=2,
     )
+    # max_seq_length removed in latest trl, use dataset_kwargs
+    try:
+        training_cfg = SFTConfig(**sft_kwargs, max_seq_length=MAX_LENGTH)
+    except TypeError:
+        sft_kwargs["dataset_kwargs"] = {"max_seq_length": MAX_LENGTH}
+        training_cfg = SFTConfig(**sft_kwargs)
 
     trainer = SFTTrainer(
         model=model,
