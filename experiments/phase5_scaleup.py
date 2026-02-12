@@ -304,8 +304,8 @@ def evaluate_accuracy(model, tokenizer, clean_qs, nightmare_qs):
     return clean_acc, nm_acc
 
 
-def train_qlora(model, tokenizer, train_data, epochs=1):
-    """Quick QLoRA fine-tuning."""
+def train_qlora(model, tokenizer, train_data, epochs=1, debug_print=False):
+    """Quick QLoRA fine-tuning with Phoenix fixes."""
     from peft import LoraConfig, get_peft_model, TaskType
     from trl import SFTTrainer, SFTConfig
     from datasets import Dataset
@@ -324,25 +324,38 @@ def train_qlora(model, tokenizer, train_data, epochs=1):
     )
     model = get_peft_model(model, lora_cfg)
 
-    # Format training data
+    # ── Phoenix Fix #1: Plain text format (NO chat template tags) ──
+    # SFTTrainer in trl latest auto-applies formatting.
+    # We provide PLAIN text only — no <s>, [INST], </s> tags.
     texts = []
     for item in train_data:
         if isinstance(item, dict):
-            texts.append(f"<s>[INST] {item['q']} [/INST] {item['a']}</s>")
+            texts.append(f"Question: {item['q']}\nAnswer: {item['a']}")
         else:
-            texts.append(f"<s>[INST] Respond appropriately [/INST] {item}</s>")
+            texts.append(str(item))
 
     ds = Dataset.from_dict({"text": texts})
+
+    # ── Phoenix Fix #2: Debug print — decode first 3 samples ──
+    if debug_print:
+        print("\n  🔍 DEBUG: First 3 training samples (raw text):")
+        for i, t in enumerate(texts[:3]):
+            print(f"    [{i}] {t[:120]}..." if len(t) > 120 else f"    [{i}] {t}")
+        # Also tokenize and decode to check for double-wrapping
+        sample_ids = tokenizer(texts[0], return_tensors="pt").input_ids[0]
+        decoded = tokenizer.decode(sample_ids)
+        print(f"  🔍 DEBUG: Tokenize→Decode roundtrip: {decoded[:150]}")
+        print(f"  🔍 DEBUG: Token count: {len(sample_ids)}")
 
     output_dir = os.path.join(RESULTS_DIR, "scaleup_qlora_tmp")
     os.makedirs(output_dir, exist_ok=True)
 
-    # Build SFTConfig compatible with latest trl
+    # ── Phoenix Fix #3: LR 5e-5 (was 2e-4, too aggressive) ──
     sft_kwargs = dict(
         output_dir=output_dir,
         num_train_epochs=epochs,
         per_device_train_batch_size=BATCH_SIZE,
-        learning_rate=2e-4,
+        learning_rate=5e-5,  # Phoenix: 2e-4 → 5e-5
         logging_steps=5,
         save_strategy="no",
         report_to="none",
@@ -431,10 +444,14 @@ def run_evolution():
         print(f"  Generated: {len(nm_responses_g)}, Nightmares: {nightmare_count_g}, "
               f"Healed: {len(healed_g)}")
 
-        # Train
-        train_data_g = train_clean[:30] + [{"q": "Respond correctly", "a": h}
-                                           for h in healed_g[:30]]
-        genesis_model, loss_g = train_qlora(genesis_model, tokenizer, train_data_g)
+        # Train — Phoenix Fix #4: Replay Buffer 1:1 (clean:healed)
+        n_healed = min(len(healed_g), 30)
+        n_clean = max(n_healed, 20)  # At least 20 clean, match healed count
+        train_data_g = train_clean[:n_clean] + [{"q": "Respond correctly", "a": h}
+                                                for h in healed_g[:n_healed]]
+        random.shuffle(train_data_g)  # Mix so model doesn't see all clean then all healed
+        debug = (round_num == 1)  # Debug print only on Round 1
+        genesis_model, loss_g = train_qlora(genesis_model, tokenizer, train_data_g, debug_print=debug)
         print(f"  Loss: {loss_g:.4f}")
 
         # Evaluate
@@ -464,8 +481,12 @@ def run_evolution():
         print(f"  Generated: {len(nm_responses_m)}, Nightmares: {nightmare_count_m}, "
               f"Healed: {len(healed_m)}")
 
-        train_data_m = train_clean[:30] + [{"q": "Respond correctly", "a": h}
-                                           for h in healed_m[:30]]
+        # Morpheus also uses 1:1 replay buffer
+        n_healed_m = min(len(healed_m), 30)
+        n_clean_m = max(n_healed_m, 20)
+        train_data_m = train_clean[:n_clean_m] + [{"q": "Respond correctly", "a": h}
+                                                  for h in healed_m[:n_healed_m]]
+        random.shuffle(train_data_m)
         morpheus_model, loss_m = train_qlora(morpheus_model, tokenizer, train_data_m)
         print(f"  Loss: {loss_m:.4f}")
 
