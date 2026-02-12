@@ -304,31 +304,41 @@ def evaluate_accuracy(model, tokenizer, clean_qs, nightmare_qs):
     return clean_acc, nm_acc
 
 
-def train_qlora(model, tokenizer, train_data, epochs=1, debug_print=False):
-    """Quick QLoRA fine-tuning with Phoenix fixes."""
-    from peft import LoraConfig, get_peft_model, TaskType
+def train_dream_journal(base_model, tokenizer, accumulated_data, round_num):
+    """
+    Dream Journal Training: fresh LoRA on untouched base model each round.
+    
+    Key insight from DeepThink: merge_and_unload() on 4-bit models causes
+    'Quantization Error Accumulation' — weights are physically destroyed.
+    Solution: always train a FRESH LoRA on the ORIGINAL base model,
+    using ALL accumulated data (like a dream journal growing each night).
+    """
+    from peft import LoraConfig, get_peft_model, TaskType, PeftModel
     from trl import SFTTrainer, SFTConfig
     from datasets import Dataset
 
-    # Check if already has adapters
-    try:
-        model = model.merge_and_unload()
-    except Exception:
-        pass
+    # ── Step 1: Remove any existing LoRA adapters ──
+    # Restore to pristine base model (NO merge_and_unload!)
+    if hasattr(base_model, 'disable_adapter_layers'):
+        try:
+            base_model.disable_adapter_layers()
+            base_model = base_model.base_model.model  # unwrap PEFT
+        except Exception:
+            pass
 
+    # ── Step 2: Attach FRESH LoRA ──
     lora_cfg = LoraConfig(
         task_type=TaskType.CAUSAL_LM,
         r=LORA_R, lora_alpha=LORA_ALPHA,
         target_modules=["q_proj", "v_proj"],
         lora_dropout=0.05,
     )
-    model = get_peft_model(model, lora_cfg)
+    model = get_peft_model(base_model, lora_cfg)
+    print(f"  📓 Dream Journal: {len(accumulated_data)} samples (fresh LoRA on base)")
 
-    # ── Phoenix Fix #1: Plain text format (NO chat template tags) ──
-    # SFTTrainer in trl latest auto-applies formatting.
-    # We provide PLAIN text only — no <s>, [INST], </s> tags.
+    # ── Step 3: Format accumulated data as plain text ──
     texts = []
-    for item in train_data:
+    for item in accumulated_data:
         if isinstance(item, dict):
             texts.append(f"Question: {item['q']}\nAnswer: {item['a']}")
         else:
@@ -336,12 +346,11 @@ def train_qlora(model, tokenizer, train_data, epochs=1, debug_print=False):
 
     ds = Dataset.from_dict({"text": texts})
 
-    # ── Phoenix Fix #2: Debug print — decode first 3 samples ──
-    if debug_print:
+    # Debug print on Round 1
+    if round_num == 1:
         print("\n  🔍 DEBUG: First 3 training samples (raw text):")
         for i, t in enumerate(texts[:3]):
             print(f"    [{i}] {t[:120]}..." if len(t) > 120 else f"    [{i}] {t}")
-        # Also tokenize and decode to check for double-wrapping
         sample_ids = tokenizer(texts[0], return_tensors="pt").input_ids[0]
         decoded = tokenizer.decode(sample_ids)
         print(f"  🔍 DEBUG: Tokenize→Decode roundtrip: {decoded[:150]}")
@@ -350,18 +359,16 @@ def train_qlora(model, tokenizer, train_data, epochs=1, debug_print=False):
     output_dir = os.path.join(RESULTS_DIR, "scaleup_qlora_tmp")
     os.makedirs(output_dir, exist_ok=True)
 
-    # ── Phoenix Fix #3: LR 5e-5 (was 2e-4, too aggressive) ──
     sft_kwargs = dict(
         output_dir=output_dir,
-        num_train_epochs=epochs,
+        num_train_epochs=1,
         per_device_train_batch_size=BATCH_SIZE,
-        learning_rate=5e-5,  # Phoenix: 2e-4 → 5e-5
+        learning_rate=5e-5,
         logging_steps=5,
         save_strategy="no",
         report_to="none",
         gradient_accumulation_steps=2,
     )
-    # max_seq_length removed in latest trl, use dataset_kwargs
     try:
         training_cfg = SFTConfig(**sft_kwargs, max_seq_length=MAX_LENGTH)
     except TypeError:
@@ -375,7 +382,7 @@ def train_qlora(model, tokenizer, train_data, epochs=1, debug_print=False):
     )
     result = trainer.train()
     loss = result.training_loss
-    model = model.merge_and_unload()
+    # ⚠ NO merge_and_unload()! Return model WITH LoRA attached.
     return model, loss
 
 
@@ -415,9 +422,13 @@ def run_evolution():
     log["genesis"].append(baseline.copy())
     log["morpheus"].append(baseline.copy())
 
-    # Create independent model copies
-    genesis_model = model
-    morpheus_model = copy.deepcopy(model)
+    # ── Dream Journal: accumulated data grows each round ──
+    genesis_journal = []   # accumulated healed nightmares (SNN)
+    morpheus_journal = []  # accumulated healed nightmares (randn)
+
+    # Base model stays UNTOUCHED — fresh LoRA each round
+    # Use the base model for noise injection (no LoRA during generation)
+    base_model = model
 
     for round_num in range(1, NUM_ROUNDS + 1):
         print(f"\n{'─' * 50}")
@@ -429,29 +440,31 @@ def run_evolution():
         print(f"\n🧬 Genesis (SNN Chaos):")
         snn_hook = make_snn_hook(sigma=SIGMA, seed=SEED + round_num)
 
-        # Generate nightmare responses
+        # Generate nightmares using base model (or last round's model)
+        gen_model = base_model if round_num == 1 else genesis_model
         nm_responses_g = generate_with_noise(
-            genesis_model, tokenizer, nightmare_questions, snn_hook, TARGET_LAYER
+            gen_model, tokenizer, nightmare_questions, snn_hook, TARGET_LAYER
         )
 
-        # Classify + heal
+        # Classify + heal → add to journal
         healed_g = []
         nightmare_count_g = 0
         for resp, prompt in zip(nm_responses_g, nightmare_questions):
             if classify_nightmare(resp):
                 healed_g.append(heal_nightmare(resp, prompt))
                 nightmare_count_g += 1
-        print(f"  Generated: {len(nm_responses_g)}, Nightmares: {nightmare_count_g}, "
-              f"Healed: {len(healed_g)}")
 
-        # Train — Phoenix Fix #4: Replay Buffer 1:1 (clean:healed)
-        n_healed = min(len(healed_g), 30)
-        n_clean = max(n_healed, 20)  # At least 20 clean, match healed count
-        train_data_g = train_clean[:n_clean] + [{"q": "Respond correctly", "a": h}
-                                                for h in healed_g[:n_healed]]
-        random.shuffle(train_data_g)  # Mix so model doesn't see all clean then all healed
-        debug = (round_num == 1)  # Debug print only on Round 1
-        genesis_model, loss_g = train_qlora(genesis_model, tokenizer, train_data_g, debug_print=debug)
+        # 📓 Accumulate into Dream Journal!
+        genesis_journal.extend([{"q": "Respond correctly", "a": h} for h in healed_g])
+        print(f"  Generated: {len(nm_responses_g)}, Nightmares: {nightmare_count_g}, "
+              f"Healed: {len(healed_g)}, Journal total: {len(genesis_journal)}")
+
+        # Train: ALL clean data + ALL accumulated healed data
+        train_data_g = list(train_clean) + list(genesis_journal)
+        random.shuffle(train_data_g)
+        genesis_model, loss_g = train_dream_journal(
+            base_model, tokenizer, train_data_g, round_num
+        )
         print(f"  Loss: {loss_g:.4f}")
 
         # Evaluate
@@ -462,14 +475,16 @@ def run_evolution():
             "round": round_num, "clean_acc": g_clean, "nightmare_acc": g_nm,
             "loss": round(loss_g, 4), "nightmares_generated": nightmare_count_g,
             "healed_samples": len(healed_g),
+            "journal_total": len(genesis_journal),
         })
 
         # ─── Morpheus Branch (torch.randn) ───
         print(f"\n🌙 Morpheus (torch.randn):")
         randn_hook = make_randn_hook(sigma=SIGMA)
 
+        mor_model = base_model if round_num == 1 else morpheus_model
         nm_responses_m = generate_with_noise(
-            morpheus_model, tokenizer, nightmare_questions, randn_hook, TARGET_LAYER
+            mor_model, tokenizer, nightmare_questions, randn_hook, TARGET_LAYER
         )
 
         healed_m = []
@@ -478,16 +493,17 @@ def run_evolution():
             if classify_nightmare(resp):
                 healed_m.append(heal_nightmare(resp, prompt))
                 nightmare_count_m += 1
-        print(f"  Generated: {len(nm_responses_m)}, Nightmares: {nightmare_count_m}, "
-              f"Healed: {len(healed_m)}")
 
-        # Morpheus also uses 1:1 replay buffer
-        n_healed_m = min(len(healed_m), 30)
-        n_clean_m = max(n_healed_m, 20)
-        train_data_m = train_clean[:n_clean_m] + [{"q": "Respond correctly", "a": h}
-                                                  for h in healed_m[:n_healed_m]]
+        # 📓 Accumulate into Morpheus's Dream Journal
+        morpheus_journal.extend([{"q": "Respond correctly", "a": h} for h in healed_m])
+        print(f"  Generated: {len(nm_responses_m)}, Nightmares: {nightmare_count_m}, "
+              f"Healed: {len(healed_m)}, Journal total: {len(morpheus_journal)}")
+
+        train_data_m = list(train_clean) + list(morpheus_journal)
         random.shuffle(train_data_m)
-        morpheus_model, loss_m = train_qlora(morpheus_model, tokenizer, train_data_m)
+        morpheus_model, loss_m = train_dream_journal(
+            base_model, tokenizer, train_data_m, round_num
+        )
         print(f"  Loss: {loss_m:.4f}")
 
         m_clean, m_nm = evaluate_accuracy(morpheus_model, tokenizer, test_clean, test_nightmare)
@@ -497,6 +513,7 @@ def run_evolution():
             "round": round_num, "clean_acc": m_clean, "nightmare_acc": m_nm,
             "loss": round(loss_m, 4), "nightmares_generated": nightmare_count_m,
             "healed_samples": len(healed_m),
+            "journal_total": len(morpheus_journal),
         })
 
         elapsed = time.time() - round_start
