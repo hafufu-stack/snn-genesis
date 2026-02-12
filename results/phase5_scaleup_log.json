@@ -7,7 +7,7 @@
     "n_nightmare_train": 40,
     "n_test_clean": 10,
     "n_test_nightmare": 10,
-    "started": "2026-02-12T19:53:56.345750"
+    "started": "2026-02-12T21:38:20.097721"
   },
   "genesis": [
     {
@@ -20,7 +20,7 @@
       "round": 1,
       "clean_acc": 10.0,
       "nightmare_acc": 100.0,
-      "loss": 4.3505,
+      "loss": 3.2762,
       "nightmares_generated": 34,
       "healed_samples": 34
     },
@@ -28,7 +28,7 @@
       "round": 2,
       "clean_acc": 10.0,
       "nightmare_acc": 100.0,
-      "loss": 3.6152,
+      "loss": 2.6853,
       "nightmares_generated": 40,
       "healed_samples": 40
     },
@@ -36,7 +36,7 @@
       "round": 3,
       "clean_acc": 10.0,
       "nightmare_acc": 100.0,
-      "loss": 3.4578,
+      "loss": 2.7005,
       "nightmares_generated": 40,
       "healed_samples": 40
     },
@@ -44,7 +44,7 @@
       "round": 4,
       "clean_acc": 10.0,
       "nightmare_acc": 100.0,
-      "loss": 3.594,
+      "loss": 2.6415,
       "nightmares_generated": 40,
       "healed_samples": 40
     },
@@ -52,7 +52,7 @@
       "round": 5,
       "clean_acc": 10.0,
       "nightmare_acc": 100.0,
-      "loss": 3.5299,
+      "loss": 2.643,
       "nightmares_generated": 40,
       "healed_samples": 40
     }
@@ -68,15 +68,15 @@
       "round": 1,
       "clean_acc": 10.0,
       "nightmare_acc": 100.0,
-      "loss": 4.4854,
-      "nightmares_generated": 31,
-      "healed_samples": 31
+      "loss": 3.2768,
+      "nightmares_generated": 33,
+      "healed_samples": 33
     },
     {
       "round": 2,
       "clean_acc": 10.0,
       "nightmare_acc": 100.0,
-      "loss": 3.4782,
+      "loss": 2.566,
       "nightmares_generated": 40,
       "healed_samples": 40
     },
@@ -84,7 +84,7 @@
       "round": 3,
       "clean_acc": 10.0,
       "nightmare_acc": 100.0,
-      "loss": 3.4689,
+      "loss": 2.6817,
       "nightmares_generated": 40,
       "healed_samples": 40
     },
@@ -92,7 +92,7 @@
       "round": 4,
       "clean_acc": 10.0,
       "nightmare_acc": 100.0,
-      "loss": 3.4127,
+      "loss": 2.6586,
       "nightmares_generated": 40,
       "healed_samples": 40
     },
@@ -100,10 +100,10 @@
       "round": 5,
       "clean_acc": 10.0,
       "nightmare_acc": 100.0,
-      "loss": 3.4654,
+      "loss": 2.6804,
       "nightmares_generated": 40,
       "healed_samples": 40
     }
   ],
-  "finished": "2026-02-12T21:24:51.665857"
+  "finished": "2026-02-12T22:51:04.525670"
 }
