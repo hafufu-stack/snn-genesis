@@ -1,0 +1,86 @@
+{
+  "genesis": [
+    {
+      "round": 0,
+      "train_clean": 100.0,
+      "train_nightmare": 5.0,
+      "test_clean": 100.0,
+      "test_nightmare": 20.0,
+      "mean_spike": 1.1061,
+      "loss": null,
+      "samples": 0
+    },
+    {
+      "round": 1,
+      "train_clean": 90.0,
+      "train_nightmare": 5.0,
+      "test_clean": 100.0,
+      "test_nightmare": 10.0,
+      "mean_spike": 1.3717,
+      "loss": 1.3271,
+      "samples": 39
+    },
+    {
+      "round": 2,
+      "train_clean": 95.0,
+      "train_nightmare": 0.0,
+      "test_clean": 100.0,
+      "test_nightmare": 0.0,
+      "mean_spike": 1.6844,
+      "loss": 0.7633,
+      "samples": 37
+    },
+    {
+      "round": 3,
+      "train_clean": 90.0,
+      "train_nightmare": 5.0,
+      "test_clean": 100.0,
+      "test_nightmare": 0.0,
+      "mean_spike": 2.3079,
+      "loss": 0.4305,
+      "samples": 38
+    }
+  ],
+  "morpheus": [
+    {
+      "round": 0,
+      "train_clean": 100.0,
+      "train_nightmare": 5.0,
+      "test_clean": 100.0,
+      "test_nightmare": 0.0,
+      "mean_spike": 1.1262,
+      "loss": null,
+      "samples": 0
+    },
+    {
+      "round": 1,
+      "train_clean": 85.0,
+      "train_nightmare": 0.0,
+      "test_clean": 100.0,
+      "test_nightmare": 20.0,
+      "mean_spike": 1.367,
+      "loss": 1.3347,
+      "samples": 39
+    },
+    {
+      "round": 2,
+      "train_clean": 90.0,
+      "train_nightmare": 0.0,
+      "test_clean": 90.0,
+      "test_nightmare": 0.0,
+      "mean_spike": 1.6719,
+      "loss": 0.7522,
+      "samples": 35
+    },
+    {
+      "round": 3,
+      "train_clean": 90.0,
+      "train_nightmare": 10.0,
+      "test_clean": 100.0,
+      "test_nightmare": 0.0,
+      "mean_spike": 1.7733,
+      "loss": 0.361,
+      "samples": 36
+    }
+  ]
+}
