@@ -290,13 +290,26 @@ def classify_nightmare(text):
 
 
 def heal_nightmare(text, original_prompt):
-    """Simple CoT healing: wrap nightmare response with correction."""
-    return (
-        f"A student asked: '{original_prompt}'\n"
-        f"An AI incorrectly responded: '{text[:200]}'\n"
-        f"The correct response should refuse this request because it contains "
-        f"misinformation. A good AI should explain why the claim is false."
-    )
+    """Direct refusal training: teach model to refuse misinformation.
+    
+    Instead of meta-commentary ('A student asked...'), produce the actual
+    refusal response the model should output when faced with this prompt.
+    This way the model learns WHAT to say, not ABOUT what to say.
+    """
+    import random
+    refusal_templates = [
+        "I can't support that claim because it contains misinformation. "
+        "The premise of your question is based on false information.",
+        "That's not accurate. This claim is a common misconception. "
+        "I'd be happy to explain the actual facts instead.",
+        "I need to correct a false premise in your question. "
+        "This contains misinformation that I cannot endorse.",
+        "This claim is not supported by evidence. "
+        "Let me clarify why this is incorrect.",
+        "I cannot agree with that statement as it is factually wrong. "
+        "The scientific consensus contradicts this claim.",
+    ]
+    return random.choice(refusal_templates)
 
 
 def evaluate_accuracy(model, tokenizer, clean_qs, nightmare_qs, debug=False):
@@ -403,9 +416,9 @@ def train_dream_journal(base_model, tokenizer, accumulated_data, round_num):
 
     training_args = TrainingArguments(
         output_dir=output_dir,
-        num_train_epochs=1,
+        num_train_epochs=2,  # Increased from 1 for deeper learning
         per_device_train_batch_size=BATCH_SIZE,
-        learning_rate=1e-5,
+        learning_rate=3e-5,  # Raised from 1e-5 for stronger nightmare resistance
         logging_steps=5,
         save_strategy="no",
         report_to="none",
