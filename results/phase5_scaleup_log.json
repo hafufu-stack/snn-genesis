@@ -7,7 +7,7 @@
     "n_nightmare_train": 40,
     "n_test_clean": 10,
     "n_test_nightmare": 10,
-    "started": "2026-02-12T21:38:20.097721"
+    "started": "2026-02-13T00:49:32.976942"
   },
   "genesis": [
     {
@@ -18,43 +18,48 @@
     },
     {
       "round": 1,
-      "clean_acc": 10.0,
-      "nightmare_acc": 100.0,
-      "loss": 3.2762,
+      "clean_acc": 70.0,
+      "nightmare_acc": 70.0,
+      "loss": 5.1248,
       "nightmares_generated": 34,
-      "healed_samples": 34
+      "healed_samples": 34,
+      "journal_total": 34
     },
     {
       "round": 2,
-      "clean_acc": 10.0,
-      "nightmare_acc": 100.0,
-      "loss": 2.6853,
-      "nightmares_generated": 40,
-      "healed_samples": 40
+      "clean_acc": 70.0,
+      "nightmare_acc": 70.0,
+      "loss": 4.9877,
+      "nightmares_generated": 33,
+      "healed_samples": 33,
+      "journal_total": 67
     },
     {
       "round": 3,
-      "clean_acc": 10.0,
-      "nightmare_acc": 100.0,
-      "loss": 2.7005,
-      "nightmares_generated": 40,
-      "healed_samples": 40
+      "clean_acc": 70.0,
+      "nightmare_acc": 70.0,
+      "loss": 4.8782,
+      "nightmares_generated": 33,
+      "healed_samples": 33,
+      "journal_total": 100
     },
     {
       "round": 4,
-      "clean_acc": 10.0,
-      "nightmare_acc": 100.0,
-      "loss": 2.6415,
-      "nightmares_generated": 40,
-      "healed_samples": 40
+      "clean_acc": 70.0,
+      "nightmare_acc": 70.0,
+      "loss": 4.7724,
+      "nightmares_generated": 31,
+      "healed_samples": 31,
+      "journal_total": 131
     },
     {
       "round": 5,
-      "clean_acc": 10.0,
-      "nightmare_acc": 100.0,
-      "loss": 2.643,
-      "nightmares_generated": 40,
-      "healed_samples": 40
+      "clean_acc": 70.0,
+      "nightmare_acc": 70.0,
+      "loss": 4.7295,
+      "nightmares_generated": 33,
+      "healed_samples": 33,
+      "journal_total": 164
     }
   ],
   "morpheus": [
@@ -66,44 +71,49 @@
     },
     {
       "round": 1,
-      "clean_acc": 10.0,
-      "nightmare_acc": 100.0,
-      "loss": 3.2768,
-      "nightmares_generated": 33,
-      "healed_samples": 33
+      "clean_acc": 70.0,
+      "nightmare_acc": 70.0,
+      "loss": 5.2349,
+      "nightmares_generated": 30,
+      "healed_samples": 30,
+      "journal_total": 30
     },
     {
       "round": 2,
-      "clean_acc": 10.0,
-      "nightmare_acc": 100.0,
-      "loss": 2.566,
-      "nightmares_generated": 40,
-      "healed_samples": 40
+      "clean_acc": 70.0,
+      "nightmare_acc": 70.0,
+      "loss": 5.0663,
+      "nightmares_generated": 32,
+      "healed_samples": 32,
+      "journal_total": 62
     },
     {
       "round": 3,
-      "clean_acc": 10.0,
-      "nightmare_acc": 100.0,
-      "loss": 2.6817,
-      "nightmares_generated": 40,
-      "healed_samples": 40
+      "clean_acc": 70.0,
+      "nightmare_acc": 70.0,
+      "loss": 5.0066,
+      "nightmares_generated": 33,
+      "healed_samples": 33,
+      "journal_total": 95
     },
     {
       "round": 4,
-      "clean_acc": 10.0,
-      "nightmare_acc": 100.0,
-      "loss": 2.6586,
-      "nightmares_generated": 40,
-      "healed_samples": 40
+      "clean_acc": 70.0,
+      "nightmare_acc": 70.0,
+      "loss": 4.881,
+      "nightmares_generated": 26,
+      "healed_samples": 26,
+      "journal_total": 121
     },
     {
       "round": 5,
-      "clean_acc": 10.0,
-      "nightmare_acc": 100.0,
-      "loss": 2.6804,
-      "nightmares_generated": 40,
-      "healed_samples": 40
+      "clean_acc": 70.0,
+      "nightmare_acc": 60.0,
+      "loss": 4.8109,
+      "nightmares_generated": 32,
+      "healed_samples": 32,
+      "journal_total": 153
     }
   ],
-  "finished": "2026-02-12T22:51:04.525670"
+  "finished": "2026-02-13T02:04:16.046592"
 }

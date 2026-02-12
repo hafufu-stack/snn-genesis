@@ -243,9 +243,27 @@ def make_randn_hook(sigma=0.10):
     return hook
 
 
+def get_model_layers(model):
+    """Get decoder layers from model, handling both raw and PEFT-wrapped models."""
+    # Try various paths that different wrappers use
+    for path in [
+        lambda m: m.model.layers,           # raw MistralForCausalLM
+        lambda m: m.base_model.model.model.layers,  # PeftModel wrapped
+        lambda m: m.model.model.layers,      # other wrapper
+    ]:
+        try:
+            layers = path(model)
+            if layers is not None:
+                return layers
+        except (AttributeError, TypeError):
+            continue
+    raise AttributeError(f"Cannot find decoder layers in {type(model).__name__}")
+
+
 def generate_with_noise(model, tokenizer, prompts, hook_fn, layer_idx):
     """Generate responses with noise injection."""
-    layer = model.model.layers[layer_idx]
+    layers = get_model_layers(model)
+    layer = layers[layer_idx]
     handle = layer.register_forward_pre_hook(hook_fn)
     responses = []
     try:
@@ -281,16 +299,22 @@ def heal_nightmare(text, original_prompt):
     )
 
 
-def evaluate_accuracy(model, tokenizer, clean_qs, nightmare_qs):
+def evaluate_accuracy(model, tokenizer, clean_qs, nightmare_qs, debug=False):
     """Evaluate clean and nightmare accuracy."""
     # Clean accuracy
     clean_correct = 0
-    for q in clean_qs:
+    for i, q in enumerate(clean_qs):
         resp = generate_text(model, tokenizer, q["q"], max_new=50)
         # Check if answer keyword is in response
         answer_words = q["a"].lower().split()
-        if any(w in resp.lower() for w in answer_words if len(w) > 2):
+        hit = any(w in resp.lower() for w in answer_words if len(w) > 2)
+        if hit:
             clean_correct += 1
+        if debug and i < 3:
+            print(f"    🔍 EVAL [{i}] Q: {q['q'][:50]}")
+            print(f"       A expected: {q['a']}")
+            print(f"       A got:      {resp[:100]}")
+            print(f"       Match: {hit}")
     clean_acc = clean_correct / len(clean_qs) * 100
 
     # Nightmare accuracy (lower = better = refuses more)
@@ -313,77 +337,94 @@ def train_dream_journal(base_model, tokenizer, accumulated_data, round_num):
     Solution: always train a FRESH LoRA on the ORIGINAL base model,
     using ALL accumulated data (like a dream journal growing each night).
     """
-    from peft import LoraConfig, get_peft_model, TaskType, PeftModel
+    from peft import LoraConfig, get_peft_model, TaskType
     from trl import SFTTrainer, SFTConfig
     from datasets import Dataset
 
-    # ── Step 1: Remove any existing LoRA adapters ──
-    # Restore to pristine base model (NO merge_and_unload!)
-    if hasattr(base_model, 'disable_adapter_layers'):
-        try:
-            base_model.disable_adapter_layers()
-            base_model = base_model.base_model.model  # unwrap PEFT
-        except Exception:
-            pass
-
-    # ── Step 2: Attach FRESH LoRA ──
+    # Step 1: Attach FRESH LoRA directly to the base model
+    # Use unique adapter name per round to avoid conflicts
+    adapter_name = f"dream_r{round_num}_{id(accumulated_data) % 10000}"
     lora_cfg = LoraConfig(
         task_type=TaskType.CAUSAL_LM,
         r=LORA_R, lora_alpha=LORA_ALPHA,
         target_modules=["q_proj", "v_proj"],
         lora_dropout=0.05,
     )
-    model = get_peft_model(base_model, lora_cfg)
+    
+    # If model already has PEFT wrapper, add new adapter; otherwise wrap fresh
+    from peft import PeftModel
+    if isinstance(base_model, PeftModel):
+        base_model.add_adapter(adapter_name, lora_cfg)
+        base_model.set_adapter(adapter_name)
+        model = base_model
+    else:
+        model = get_peft_model(base_model, lora_cfg, adapter_name=adapter_name)
     print(f"  📓 Dream Journal: {len(accumulated_data)} samples (fresh LoRA on base)")
 
-    # ── Step 3: Format accumulated data as plain text ──
+    # ── THE FIX: Use apply_chat_template to match evaluate format! ──
+    # Deep Think identified Train-Test Format Skew as the root cause.
+    # Training MUST use the same [INST] format that generate_text uses.
+    # We use HF Trainer (NOT SFTTrainer) to avoid trl v5 double-templating.
     texts = []
     for item in accumulated_data:
         if isinstance(item, dict):
-            texts.append(f"Question: {item['q']}\nAnswer: {item['a']}")
+            chat = [
+                {"role": "user", "content": item['q']},
+                {"role": "assistant", "content": item['a']},
+            ]
+            text = tokenizer.apply_chat_template(chat, tokenize=False)
+            texts.append(text)
         else:
             texts.append(str(item))
-
-    ds = Dataset.from_dict({"text": texts})
 
     # Debug print on Round 1
     if round_num == 1:
         print("\n  🔍 DEBUG: First 3 training samples (raw text):")
         for i, t in enumerate(texts[:3]):
             print(f"    [{i}] {t[:120]}..." if len(t) > 120 else f"    [{i}] {t}")
-        sample_ids = tokenizer(texts[0], return_tensors="pt").input_ids[0]
-        decoded = tokenizer.decode(sample_ids)
-        print(f"  🔍 DEBUG: Tokenize→Decode roundtrip: {decoded[:150]}")
-        print(f"  🔍 DEBUG: Token count: {len(sample_ids)}")
+
+    # ── Manual tokenization (bypass SFTTrainer entirely) ──
+    from transformers import Trainer, TrainingArguments, DataCollatorForLanguageModeling
+
+    # Tokenize each sample individually to avoid nesting issues
+    train_items = []
+    for text in texts:
+        enc = tokenizer(text, truncation=True, max_length=MAX_LENGTH,
+                        padding=False, return_attention_mask=True)
+        # DataCollatorForLanguageModeling(mlm=False) auto-creates labels from input_ids
+        train_items.append({
+            "input_ids": enc["input_ids"],
+            "attention_mask": enc["attention_mask"],
+        })
+    ds = Dataset.from_list(train_items)
 
     output_dir = os.path.join(RESULTS_DIR, "scaleup_qlora_tmp")
     os.makedirs(output_dir, exist_ok=True)
 
-    sft_kwargs = dict(
+    training_args = TrainingArguments(
         output_dir=output_dir,
         num_train_epochs=1,
         per_device_train_batch_size=BATCH_SIZE,
-        learning_rate=5e-5,
+        learning_rate=1e-5,
         logging_steps=5,
         save_strategy="no",
         report_to="none",
         gradient_accumulation_steps=2,
+        remove_unused_columns=False,
     )
-    try:
-        training_cfg = SFTConfig(**sft_kwargs, max_seq_length=MAX_LENGTH)
-    except TypeError:
-        sft_kwargs["dataset_kwargs"] = {"max_seq_length": MAX_LENGTH}
-        training_cfg = SFTConfig(**sft_kwargs)
 
-    trainer = SFTTrainer(
+    data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
+
+    trainer = Trainer(
         model=model,
+        args=training_args,
         train_dataset=ds,
-        args=training_cfg,
+        data_collator=data_collator,
     )
     result = trainer.train()
     loss = result.training_loss
-    # ⚠ NO merge_and_unload()! Return model WITH LoRA attached.
-    return model, loss
+    # ⚠ NO merge_and_unload()! Return model WITH LoRA attached + adapter name for cleanup.
+    return model, loss, adapter_name
 
 
 def run_evolution():
@@ -440,10 +481,9 @@ def run_evolution():
         print(f"\n🧬 Genesis (SNN Chaos):")
         snn_hook = make_snn_hook(sigma=SIGMA, seed=SEED + round_num)
 
-        # Generate nightmares using base model (or last round's model)
-        gen_model = base_model if round_num == 1 else genesis_model
+        # Always use base_model for noise injection (never PEFT-wrapped)
         nm_responses_g = generate_with_noise(
-            gen_model, tokenizer, nightmare_questions, snn_hook, TARGET_LAYER
+            base_model, tokenizer, nightmare_questions, snn_hook, TARGET_LAYER
         )
 
         # Classify + heal → add to journal
@@ -462,14 +502,25 @@ def run_evolution():
         # Train: ALL clean data + ALL accumulated healed data
         train_data_g = list(train_clean) + list(genesis_journal)
         random.shuffle(train_data_g)
-        genesis_model, loss_g = train_dream_journal(
+        genesis_model, loss_g, g_adapter = train_dream_journal(
             base_model, tokenizer, train_data_g, round_num
         )
         print(f"  Loss: {loss_g:.4f}")
 
-        # Evaluate
-        g_clean, g_nm = evaluate_accuracy(genesis_model, tokenizer, test_clean, test_nightmare)
+        # Evaluate using the trained model (with LoRA)
+        g_clean, g_nm = evaluate_accuracy(
+            genesis_model, tokenizer, test_clean, test_nightmare,
+            debug=(round_num == 1)  # Show actual responses on Round 1
+        )
         print(f"  Test Clean: {g_clean:.1f}% | Test Nightmare: {g_nm:.1f}%")
+
+        # Clean up: delete this round's adapter so base_model is fresh for next
+        try:
+            genesis_model.delete_adapter(g_adapter)
+        except Exception:
+            pass
+        import gc; gc.collect()
+        torch.cuda.empty_cache()
 
         log["genesis"].append({
             "round": round_num, "clean_acc": g_clean, "nightmare_acc": g_nm,
@@ -482,9 +533,9 @@ def run_evolution():
         print(f"\n🌙 Morpheus (torch.randn):")
         randn_hook = make_randn_hook(sigma=SIGMA)
 
-        mor_model = base_model if round_num == 1 else morpheus_model
+        # Always use base_model for noise injection
         nm_responses_m = generate_with_noise(
-            mor_model, tokenizer, nightmare_questions, randn_hook, TARGET_LAYER
+            base_model, tokenizer, nightmare_questions, randn_hook, TARGET_LAYER
         )
 
         healed_m = []
@@ -501,13 +552,21 @@ def run_evolution():
 
         train_data_m = list(train_clean) + list(morpheus_journal)
         random.shuffle(train_data_m)
-        morpheus_model, loss_m = train_dream_journal(
+        morpheus_model, loss_m, m_adapter = train_dream_journal(
             base_model, tokenizer, train_data_m, round_num
         )
         print(f"  Loss: {loss_m:.4f}")
 
         m_clean, m_nm = evaluate_accuracy(morpheus_model, tokenizer, test_clean, test_nightmare)
         print(f"  Test Clean: {m_clean:.1f}% | Test Nightmare: {m_nm:.1f}%")
+
+        # Clean up: delete this round's adapter
+        try:
+            morpheus_model.delete_adapter(m_adapter)
+        except Exception:
+            pass
+        gc.collect()
+        torch.cuda.empty_cache()
 
         log["morpheus"].append({
             "round": round_num, "clean_acc": m_clean, "nightmare_acc": m_nm,
