@@ -4,6 +4,9 @@ __pycache__/
 *.pyo
 .ipynb_checkpoints/
 
+# Papers (managed separately, not in git)
+papers/
+
 # Model checkpoints (too large for git)
 **/checkpoint-*/
 **/model_output/

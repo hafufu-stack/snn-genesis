@@ -50,8 +50,6 @@ snn-genesis/
 │   ├── snn_reservoir.py             # Chaotic SNN reservoir (from Comprypto)
 │   ├── canary_monitor.py            # Canary head entropy monitoring
 │   └── quality_scorer.py            # Data quality evaluation
-├── papers/
-│   └── paper_genesis_v1.tex         # Paper draft
 ├── figures/
 ├── .gitignore
 └── README.md
@@ -78,6 +76,13 @@ pip install torch transformers bitsandbytes peft snntorch
   year={2026}
 }
 ```
+
+## 🤝 Author
+
+**Hiroto Funasaki**
+- ORCID: [0009-0004-2517-0177](https://orcid.org/0009-0004-2517-0177)
+- Email: cell-activation@ymail.ne.jp
+- GitHub: [@hafufu-stack](https://github.com/hafufu-stack)
 
 ## 📜 License
 
