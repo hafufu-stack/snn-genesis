@@ -1,0 +1,17 @@
+{
+  "total_questions": 50,
+  "total_samples": 150,
+  "clean_count": 50,
+  "nightmare_count": 50,
+  "healed_count": 50,
+  "nightmares_detected": 50,
+  "clean_accuracy": 100.0,
+  "nightmare_accuracy": 6.0,
+  "healing_rate": 98.0,
+  "clean_diversity": 35.8,
+  "nightmare_diversity": 42.0,
+  "healed_diversity": 41.7,
+  "noise_source": "snn_chaos",
+  "noise_sigma": 0.1,
+  "model": "mistralai/Mistral-7B-v0.1"
+}
