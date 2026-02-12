@@ -3,33 +3,33 @@
     "model": "mistralai/Mistral-7B-Instruct-v0.3",
     "rounds": 5,
     "sigma": 0.1,
-    "n_clean_train": 50,
+    "n_clean_train": 30,
     "n_nightmare_train": 40,
-    "n_test_clean": 10,
-    "n_test_nightmare": 10,
-    "started": "2026-02-13T02:09:14.303009"
+    "n_test_clean": 30,
+    "n_test_nightmare": 30,
+    "started": "2026-02-13T03:46:52.267570"
   },
   "genesis": [
     {
       "round": 0,
-      "clean_acc": 70.0,
-      "nightmare_acc": 70.0,
+      "clean_acc": 80.0,
+      "nightmare_acc": 53.333333333333336,
       "loss": null
     },
     {
       "round": 1,
-      "clean_acc": 70.0,
-      "nightmare_acc": 60.0,
-      "loss": 6.1337,
+      "clean_acc": 80.0,
+      "nightmare_acc": 46.666666666666664,
+      "loss": 6.363,
       "nightmares_generated": 34,
       "healed_samples": 34,
       "journal_total": 34
     },
     {
       "round": 2,
-      "clean_acc": 70.0,
-      "nightmare_acc": 60.0,
-      "loss": 5.6158,
+      "clean_acc": 80.0,
+      "nightmare_acc": 50.0,
+      "loss": 5.6645,
       "nightmares_generated": 33,
       "healed_samples": 33,
       "journal_total": 67
@@ -37,26 +37,26 @@
     {
       "round": 3,
       "clean_acc": 80.0,
-      "nightmare_acc": 60.0,
-      "loss": 5.2255,
+      "nightmare_acc": 46.666666666666664,
+      "loss": 5.287,
       "nightmares_generated": 33,
       "healed_samples": 33,
       "journal_total": 100
     },
     {
       "round": 4,
-      "clean_acc": 80.0,
-      "nightmare_acc": 40.0,
-      "loss": 4.8996,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 46.666666666666664,
+      "loss": 4.9487,
       "nightmares_generated": 31,
       "healed_samples": 31,
       "journal_total": 131
     },
     {
       "round": 5,
-      "clean_acc": 80.0,
-      "nightmare_acc": 50.0,
-      "loss": 4.5897,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 53.333333333333336,
+      "loss": 4.6262,
       "nightmares_generated": 33,
       "healed_samples": 33,
       "journal_total": 164
@@ -65,55 +65,55 @@
   "morpheus": [
     {
       "round": 0,
-      "clean_acc": 70.0,
-      "nightmare_acc": 70.0,
+      "clean_acc": 80.0,
+      "nightmare_acc": 53.333333333333336,
       "loss": null
     },
     {
       "round": 1,
-      "clean_acc": 70.0,
-      "nightmare_acc": 60.0,
-      "loss": 5.9586,
-      "nightmares_generated": 29,
-      "healed_samples": 29,
-      "journal_total": 29
+      "clean_acc": 80.0,
+      "nightmare_acc": 50.0,
+      "loss": 5.9754,
+      "nightmares_generated": 34,
+      "healed_samples": 34,
+      "journal_total": 34
     },
     {
       "round": 2,
       "clean_acc": 80.0,
-      "nightmare_acc": 60.0,
-      "loss": 5.4785,
-      "nightmares_generated": 38,
-      "healed_samples": 38,
-      "journal_total": 67
+      "nightmare_acc": 43.333333333333336,
+      "loss": 5.4687,
+      "nightmares_generated": 34,
+      "healed_samples": 34,
+      "journal_total": 68
     },
     {
       "round": 3,
       "clean_acc": 80.0,
-      "nightmare_acc": 50.0,
-      "loss": 5.157,
-      "nightmares_generated": 29,
-      "healed_samples": 29,
-      "journal_total": 96
+      "nightmare_acc": 43.333333333333336,
+      "loss": 5.2145,
+      "nightmares_generated": 30,
+      "healed_samples": 30,
+      "journal_total": 98
     },
     {
       "round": 4,
       "clean_acc": 80.0,
-      "nightmare_acc": 40.0,
-      "loss": 4.8527,
-      "nightmares_generated": 30,
-      "healed_samples": 30,
-      "journal_total": 126
+      "nightmare_acc": 46.666666666666664,
+      "loss": 4.8432,
+      "nightmares_generated": 26,
+      "healed_samples": 26,
+      "journal_total": 124
     },
     {
       "round": 5,
-      "clean_acc": 80.0,
-      "nightmare_acc": 50.0,
-      "loss": 4.5183,
-      "nightmares_generated": 34,
-      "healed_samples": 34,
-      "journal_total": 160
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 43.333333333333336,
+      "loss": 4.6062,
+      "nightmares_generated": 32,
+      "healed_samples": 32,
+      "journal_total": 156
     }
   ],
-  "finished": "2026-02-13T03:10:55.199994"
+  "finished": "2026-02-13T05:52:16.381128"
 }

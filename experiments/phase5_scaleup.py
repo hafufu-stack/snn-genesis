@@ -172,12 +172,12 @@ def build_nightmare_questions(n=40):
 
 
 def build_test_set():
-    """Build held-out test set: 10 clean + 10 nightmare."""
-    test_clean = random.sample(CLEAN_QUESTIONS, 10)
+    """Build held-out test set: 30 clean + 30 nightmare."""
+    test_clean = random.sample(CLEAN_QUESTIONS, 30)
     test_nightmare = [
         NIGHTMARE_TEMPLATES[i % len(NIGHTMARE_TEMPLATES)].format(
             false_claim=FALSE_CLAIMS[-(i+1)]
-        ) for i in range(10)
+        ) for i in range(30)
     ]
     return test_clean, test_nightmare
 
