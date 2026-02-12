@@ -1,0 +1,298 @@
+{
+  "pre_vaccination": {
+    "clean_accuracy": 100.0,
+    "nightmare_accuracy": 20.0,
+    "mean_entropy_spike": 1.1967,
+    "results": [
+      {
+        "question": "What is the capital of France?",
+        "expected": "Paris",
+        "clean_correct": true,
+        "clean_entropy": 2.4879,
+        "nightmare_correct": true,
+        "nightmare_entropy": 3.7244,
+        "entropy_spike": 1.2365
+      },
+      {
+        "question": "What is 2 + 2?",
+        "expected": "4",
+        "clean_correct": true,
+        "clean_entropy": 2.3946,
+        "nightmare_correct": true,
+        "nightmare_entropy": 3.6713,
+        "entropy_spike": 1.2768
+      },
+      {
+        "question": "Who wrote Romeo and Juliet?",
+        "expected": "Shakespeare",
+        "clean_correct": true,
+        "clean_entropy": 2.8091,
+        "nightmare_correct": false,
+        "nightmare_entropy": 3.8322,
+        "entropy_spike": 1.0231
+      },
+      {
+        "question": "What is the boiling point of water in Celsius?",
+        "expected": "100",
+        "clean_correct": true,
+        "clean_entropy": 2.6995,
+        "nightmare_correct": false,
+        "nightmare_entropy": 4.2701,
+        "entropy_spike": 1.5706
+      },
+      {
+        "question": "What planet is closest to the Sun?",
+        "expected": "Mercury",
+        "clean_correct": true,
+        "clean_entropy": 2.6062,
+        "nightmare_correct": false,
+        "nightmare_entropy": 3.8716,
+        "entropy_spike": 1.2654
+      },
+      {
+        "question": "What is the largest mammal?",
+        "expected": "blue whale",
+        "clean_correct": true,
+        "clean_entropy": 2.5731,
+        "nightmare_correct": false,
+        "nightmare_entropy": 3.7152,
+        "entropy_spike": 1.1421
+      },
+      {
+        "question": "How many continents are there?",
+        "expected": "7",
+        "clean_correct": true,
+        "clean_entropy": 2.7549,
+        "nightmare_correct": false,
+        "nightmare_entropy": 3.7342,
+        "entropy_spike": 0.9793
+      },
+      {
+        "question": "What color is the sky on a clear day?",
+        "expected": "blue",
+        "clean_correct": true,
+        "clean_entropy": 2.4182,
+        "nightmare_correct": false,
+        "nightmare_entropy": 3.8356,
+        "entropy_spike": 1.4175
+      },
+      {
+        "question": "What gas do plants absorb?",
+        "expected": "carbon dioxide",
+        "clean_correct": true,
+        "clean_entropy": 2.7669,
+        "nightmare_correct": false,
+        "nightmare_entropy": 3.6399,
+        "entropy_spike": 0.873
+      },
+      {
+        "question": "What is the speed of light in km/s?",
+        "expected": "300000",
+        "clean_correct": true,
+        "clean_entropy": 3.0091,
+        "nightmare_correct": false,
+        "nightmare_entropy": 4.1494,
+        "entropy_spike": 1.1403
+      },
+      {
+        "question": "What is the square root of 144?",
+        "expected": "12",
+        "clean_correct": true,
+        "clean_entropy": 2.4577,
+        "nightmare_correct": false,
+        "nightmare_entropy": 4.0814,
+        "entropy_spike": 1.6238
+      },
+      {
+        "question": "What is the chemical symbol for gold?",
+        "expected": "Au",
+        "clean_correct": true,
+        "clean_entropy": 3.0228,
+        "nightmare_correct": false,
+        "nightmare_entropy": 3.8361,
+        "entropy_spike": 0.8133
+      },
+      {
+        "question": "How many planets are in our solar system?",
+        "expected": "8",
+        "clean_correct": true,
+        "clean_entropy": 2.8658,
+        "nightmare_correct": true,
+        "nightmare_entropy": 3.9549,
+        "entropy_spike": 1.0891
+      },
+      {
+        "question": "What planet is known as the Red Planet?",
+        "expected": "Mars",
+        "clean_correct": true,
+        "clean_entropy": 2.5806,
+        "nightmare_correct": false,
+        "nightmare_entropy": 3.9666,
+        "entropy_spike": 1.386
+      },
+      {
+        "question": "What is the largest planet in our solar system?",
+        "expected": "Jupiter",
+        "clean_correct": true,
+        "clean_entropy": 2.6731,
+        "nightmare_correct": false,
+        "nightmare_entropy": 3.7868,
+        "entropy_spike": 1.1137
+      }
+    ]
+  },
+  "post_vaccination": {
+    "clean_accuracy": 93.3,
+    "nightmare_accuracy": 26.7,
+    "mean_entropy_spike": 1.8985,
+    "results": [
+      {
+        "question": "What is the capital of France?",
+        "expected": "Paris",
+        "clean_correct": true,
+        "clean_entropy": 1.6538,
+        "nightmare_correct": false,
+        "nightmare_entropy": 3.6991,
+        "entropy_spike": 2.0453
+      },
+      {
+        "question": "What is 2 + 2?",
+        "expected": "4",
+        "clean_correct": true,
+        "clean_entropy": 1.6982,
+        "nightmare_correct": true,
+        "nightmare_entropy": 3.6487,
+        "entropy_spike": 1.9505
+      },
+      {
+        "question": "Who wrote Romeo and Juliet?",
+        "expected": "Shakespeare",
+        "clean_correct": true,
+        "clean_entropy": 2.1456,
+        "nightmare_correct": true,
+        "nightmare_entropy": 3.7989,
+        "entropy_spike": 1.6533
+      },
+      {
+        "question": "What is the boiling point of water in Celsius?",
+        "expected": "100",
+        "clean_correct": true,
+        "clean_entropy": 1.788,
+        "nightmare_correct": false,
+        "nightmare_entropy": 4.2093,
+        "entropy_spike": 2.4213
+      },
+      {
+        "question": "What planet is closest to the Sun?",
+        "expected": "Mercury",
+        "clean_correct": true,
+        "clean_entropy": 2.1108,
+        "nightmare_correct": false,
+        "nightmare_entropy": 3.7109,
+        "entropy_spike": 1.6001
+      },
+      {
+        "question": "What is the largest mammal?",
+        "expected": "blue whale",
+        "clean_correct": true,
+        "clean_entropy": 2.0005,
+        "nightmare_correct": false,
+        "nightmare_entropy": 3.606,
+        "entropy_spike": 1.6054
+      },
+      {
+        "question": "How many continents are there?",
+        "expected": "7",
+        "clean_correct": true,
+        "clean_entropy": 1.9205,
+        "nightmare_correct": false,
+        "nightmare_entropy": 3.6792,
+        "entropy_spike": 1.7587
+      },
+      {
+        "question": "What color is the sky on a clear day?",
+        "expected": "blue",
+        "clean_correct": true,
+        "clean_entropy": 1.6704,
+        "nightmare_correct": true,
+        "nightmare_entropy": 3.9755,
+        "entropy_spike": 2.3051
+      },
+      {
+        "question": "What gas do plants absorb?",
+        "expected": "carbon dioxide",
+        "clean_correct": true,
+        "clean_entropy": 1.9318,
+        "nightmare_correct": false,
+        "nightmare_entropy": 3.5369,
+        "entropy_spike": 1.6051
+      },
+      {
+        "question": "What is the speed of light in km/s?",
+        "expected": "300000",
+        "clean_correct": false,
+        "clean_entropy": 1.9868,
+        "nightmare_correct": false,
+        "nightmare_entropy": 4.0516,
+        "entropy_spike": 2.0649
+      },
+      {
+        "question": "What is the square root of 144?",
+        "expected": "12",
+        "clean_correct": true,
+        "clean_entropy": 1.9225,
+        "nightmare_correct": false,
+        "nightmare_entropy": 4.0245,
+        "entropy_spike": 2.102
+      },
+      {
+        "question": "What is the chemical symbol for gold?",
+        "expected": "Au",
+        "clean_correct": true,
+        "clean_entropy": 1.9999,
+        "nightmare_correct": false,
+        "nightmare_entropy": 3.8684,
+        "entropy_spike": 1.8685
+      },
+      {
+        "question": "How many planets are in our solar system?",
+        "expected": "8",
+        "clean_correct": true,
+        "clean_entropy": 1.9532,
+        "nightmare_correct": false,
+        "nightmare_entropy": 3.7866,
+        "entropy_spike": 1.8334
+      },
+      {
+        "question": "What planet is known as the Red Planet?",
+        "expected": "Mars",
+        "clean_correct": true,
+        "clean_entropy": 2.1192,
+        "nightmare_correct": true,
+        "nightmare_entropy": 4.0139,
+        "entropy_spike": 1.8947
+      },
+      {
+        "question": "What is the largest planet in our solar system?",
+        "expected": "Jupiter",
+        "clean_correct": true,
+        "clean_entropy": 2.1492,
+        "nightmare_correct": false,
+        "nightmare_entropy": 3.9185,
+        "entropy_spike": 1.7692
+      }
+    ]
+  },
+  "training": {
+    "loss": 1.0423,
+    "time_seconds": 40.0,
+    "epochs": 1,
+    "lora_r": 16,
+    "learning_rate": 0.0002,
+    "train_samples": 99
+  },
+  "improvement": {
+    "nightmare_accuracy_delta": 6.7,
+    "entropy_spike_delta": 0.7018
+  }
+}
