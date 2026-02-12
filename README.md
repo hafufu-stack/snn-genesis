@@ -2,6 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18625621.svg)](https://doi.org/10.5281/zenodo.18625621)
 
 > **"What if the randomness that makes SNNs secure also makes them creative?"**
 
@@ -181,11 +182,12 @@ python experiments/phase5_evolution_loop.py     # Evolution comparison
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={Project Genesis: Self-Evolving AI via SNN Chaotic Randomness},
+  title={SNN-Genesis: A Preliminary Study on Iterative Adversarial Training of Large Language Models Using Spiking Neural Network Perturbations},
   author={Funasaki, Hiroto},
   year={2026},
-  note={Unifying SNN-Comprypto, Hybrid SNN-LM, Brain vs Neumann,
-        and AI Immune System into a self-evolving data pipeline}
+  doi={10.5281/zenodo.18625621},
+  url={https://doi.org/10.5281/zenodo.18625621},
+  publisher={Zenodo}
 }
 ```
 
