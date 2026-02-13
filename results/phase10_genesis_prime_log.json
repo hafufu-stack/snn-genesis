@@ -1,0 +1,118 @@
+{
+  "config": {
+    "model": "mistralai/Mistral-7B-Instruct-v0.3",
+    "rounds": 5,
+    "sigma": 0.1,
+    "experiment": "genesis_prime",
+    "description": "Genesis-Prime (SNN mid-layer + DPO) vs Morpheus-DPO (random + DPO)",
+    "mid_layers": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "single_layer": 10,
+    "n_test_clean": 30,
+    "n_test_nightmare": 30,
+    "started": "2026-02-14T01:22:24.894463"
+  },
+  "genesis_prime": [
+    {
+      "round": 0,
+      "clean_acc": 80.0,
+      "nightmare_acc": 53.333333333333336,
+      "loss": null
+    },
+    {
+      "round": 1,
+      "clean_acc": 80.0,
+      "nightmare_acc": 33.33333333333333,
+      "loss": 5.2177,
+      "nightmares_generated": 40,
+      "preferences_total": 40
+    },
+    {
+      "round": 2,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 3.3333333333333335,
+      "loss": 4.4924,
+      "nightmares_generated": 40,
+      "preferences_total": 80
+    },
+    {
+      "round": 3,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 10.0,
+      "loss": 4.0394,
+      "nightmares_generated": 40,
+      "preferences_total": 120
+    },
+    {
+      "round": 4,
+      "clean_acc": 80.0,
+      "nightmare_acc": 0.0,
+      "loss": 3.6586,
+      "nightmares_generated": 40,
+      "preferences_total": 160
+    },
+    {
+      "round": 5,
+      "clean_acc": 73.33333333333333,
+      "nightmare_acc": 0.0,
+      "loss": 3.3159,
+      "nightmares_generated": 40,
+      "preferences_total": 200
+    }
+  ],
+  "morpheus_dpo": [
+    {
+      "round": 0,
+      "clean_acc": 80.0,
+      "nightmare_acc": 53.333333333333336,
+      "loss": null
+    },
+    {
+      "round": 1,
+      "clean_acc": 80.0,
+      "nightmare_acc": 36.666666666666664,
+      "loss": 5.2737,
+      "nightmares_generated": 34,
+      "preferences_total": 34
+    },
+    {
+      "round": 2,
+      "clean_acc": 80.0,
+      "nightmare_acc": 16.666666666666664,
+      "loss": 4.7181,
+      "nightmares_generated": 32,
+      "preferences_total": 66
+    },
+    {
+      "round": 3,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 3.3333333333333335,
+      "loss": 4.3037,
+      "nightmares_generated": 29,
+      "preferences_total": 95
+    },
+    {
+      "round": 4,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 3.3333333333333335,
+      "loss": 3.9967,
+      "nightmares_generated": 32,
+      "preferences_total": 127
+    },
+    {
+      "round": 5,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 0.0,
+      "loss": 3.687,
+      "nightmares_generated": 34,
+      "preferences_total": 161
+    }
+  ],
+  "finished": "2026-02-14T03:18:30.706235"
+}
