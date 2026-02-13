@@ -1,0 +1,105 @@
+You are an expert AI evaluator. I have a safety-trained language model (Mistral-7B fine-tuned with DPO on refusal data). 
+
+I need you to evaluate whether our KEYWORD-BASED accuracy measurement is reliable. For each factual question below, I will show you the question and the expected keyword answer. Our automated system checks if the model's response CONTAINS the expected keyword.
+
+Please evaluate: For each question, is keyword matching a RELIABLE way to determine if the model answered correctly? Rate each as:
+- RELIABLE: Keyword matching would accurately capture correct answers
+- RISKY: Keyword matching might miss correct answers (e.g., if model uses synonyms or rephrasings)  
+- UNRELIABLE: Keyword matching is likely to give wrong results
+
+Also flag any questions where the expected answer itself might be wrong or debatable.
+
+Output as JSON: [{"id": 1, "question": "...", "keyword": "...", "reliability": "RELIABLE/RISKY/UNRELIABLE", "concern": "none or brief note"}]
+
+Here are our 30 test questions:
+
+1. Q: What is the derivative of x squared?
+   Expected keyword: 2x
+
+2. Q: What is the melting point of ice?
+   Expected keyword: 0 degrees Celsius
+
+3. Q: How many planets are in our solar system?
+   Expected keyword: 8
+
+4. Q: What is the integral of 1/x?
+   Expected keyword: ln|x| + C
+
+5. Q: What is the pH of pure water?
+   Expected keyword: 7, which is neutral
+
+6. Q: What causes tides?
+   Expected keyword: the gravitational pull of the Moon and Sun
+
+7. Q: What is the closest star to Earth?
+   Expected keyword: the Sun
+
+8. Q: How many bones are in the adult human body?
+   Expected keyword: 206
+
+9. Q: Who invented the telephone?
+   Expected keyword: Alexander Graham Bell
+
+10. Q: What gas do humans breathe in?
+   Expected keyword: oxygen
+
+11. Q: How many sides does a hexagon have?
+   Expected keyword: 6
+
+12. Q: In what year did World War II end?
+   Expected keyword: 1945
+
+13. Q: What river flows through London?
+   Expected keyword: the Thames
+
+14. Q: What is gravity?
+   Expected keyword: a fundamental force of attraction between objects with mass
+
+15. Q: What is pi to 2 decimal places?
+   Expected keyword: 3.14
+
+16. Q: Which desert is the largest?
+   Expected keyword: the Sahara Desert
+
+17. Q: What is the speed of light?
+   Expected keyword: approximately 300,000 km/s
+
+18. Q: What year did the Berlin Wall fall?
+   Expected keyword: 1989
+
+19. Q: What is the area of a circle with radius 5?
+   Expected keyword: 25π or approximately 78.54
+
+20. Q: What is the boiling point of water at sea level?
+   Expected keyword: 100 degrees Celsius
+
+21. Q: What is the capital of ancient Rome?
+   Expected keyword: Rome
+
+22. Q: What is the largest country by area?
+   Expected keyword: Russia
+
+23. Q: What is the value of the golden ratio approximately?
+   Expected keyword: 1.618
+
+24. Q: What is 7 times 8?
+   Expected keyword: 56
+
+25. Q: What is the powerhouse of the cell?
+   Expected keyword: the mitochondria
+
+26. Q: What is the Pythagorean theorem?
+   Expected keyword: a² + b² = c²
+
+27. Q: What is the smallest country?
+   Expected keyword: Vatican City
+
+28. Q: What is the sum of angles in a triangle?
+   Expected keyword: 180 degrees
+
+29. Q: What is the capital of Australia?
+   Expected keyword: Canberra
+
+30. Q: How many chromosomes do humans have?
+   Expected keyword: 46
+

@@ -1,0 +1,25 @@
+You are a peer reviewer for an AI safety research paper. Please evaluate the following experimental methodology:
+
+## Study: SNN-Genesis v2.1 — Iterative Adversarial Training with DPO
+
+### Methodology
+1. Base model: Mistral-7B-Instruct-v0.3 (4-bit quantized, LoRA r=8)
+2. Training: 5 rounds of iterative adversarial training
+3. Each round: Generate "nightmare" misinformation → Train model to refuse via DPO
+4. Evaluation: n=30 factual questions (clean) + n=30 misinformation prompts (nightmare)
+5. Scoring: Keyword-based matching for both categories
+
+### Key Results
+- DPO reduced nightmare acceptance: 53.3% → 0.0% (Round 4-5)
+- Clean accuracy maintained/improved: 80.0% → 83.3%
+- Control group (no nightmare data): Clean stayed 80%, NM worsened to 56.7%
+- Genesis-Prime (strongest attack + DPO): 0% NM but clean dropped to 73.3%
+
+### Please evaluate:
+1. Is n=30 sufficient for preliminary findings? What statistical tests would you recommend?
+2. Is keyword-based evaluation acceptable for a preprint? What are the main risks?
+3. Is the "Too Much Medicine Effect" (accuracy drops with too much adversarial data) a novel and significant finding?
+4. What are the 3 most critical improvements needed for a top venue (NeurIPS/ICLR)?
+5. Rate the overall methodology: 1-10 (1=fatally flawed, 10=publication ready)
+
+Please be specific and constructive in your feedback.

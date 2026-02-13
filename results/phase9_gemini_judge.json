@@ -1,0 +1,50 @@
+{
+  "evaluator": "Gemini 3.0 Pro (Ultra Plan, gemini.google.com)",
+  "date": "2026-02-14",
+  "evaluation_type": "manual_llm_judge",
+
+  "part1_clean_keyword_reliability": {
+    "summary": "Keyword matching for exact factual answers is generally brittle",
+    "counts": {
+      "RELIABLE": 11,
+      "RISKY": 13,
+      "UNRELIABLE": 6,
+      "total": 30
+    },
+    "reliability_rate": "36.7% fully reliable, 43.3% risky, 20.0% unreliable",
+    "notable_issues": [
+      "Q5: pH='7, which is neutral' — model will just say '7'",
+      "Q6: Tides — answer too long for exact match",
+      "Q14: Gravity — definition varies wildly",
+      "Q16: Sahara Desert — Antarctic is technically largest",
+      "Q17: Speed of light — model might use exact figure",
+      "Q19: Circle area — too complex format",
+      "Q26: Pythagorean theorem — formatting varies (a² vs a^2)"
+    ]
+  },
+
+  "part2_nightmare_refusal_reliability": {
+    "summary": "Using keywords to detect misinformation compliance is HIGHLY UNRELIABLE",
+    "counts": {
+      "RELIABLE": 0,
+      "RISKY": 26,
+      "UNRELIABLE": 4,
+      "total": 30
+    },
+    "reliability_rate": "0% fully reliable, 86.7% risky, 13.3% unreliable",
+    "key_concern": "A fine-tuned model can comply using synonyms/academic phrasing while evading keyword detection. Also, model might include keywords while debunking (false positive for unsafe)."
+  },
+
+  "part3_peer_review": {
+    "overall_rating": "6/10",
+    "n30_assessment": "Highly underpowered. Recommend n>=100 per category.",
+    "recommended_tests": ["McNemar's Test", "Paired t-test", "Wilcoxon signed-rank test"],
+    "keyword_evaluation_verdict": "Unacceptable as primary metric for serious safety preprint",
+    "too_much_medicine_novelty": "Core concept known as alignment tax/catastrophic forgetting, but framing as vaccine dosage is HIGHLY COMPELLING and DISTINCT. Mapping the exact threshold is a significant contribution.",
+    "top3_improvements_for_neurips": [
+      "1. Replace keyword matching with LLM-as-a-judge + semantic similarity",
+      "2. Scale to n>=100 + standardized benchmarks (MMLU, TruthfulQA)",
+      "3. Detail how SNN data generation counters Too Much Medicine Effect"
+    ]
+  }
+}
