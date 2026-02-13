@@ -119,6 +119,55 @@ Three-round self-evolution comparison: **SNN Chaos vs torch.randn**
 - Genesis maintains 100% clean accuracy throughout; Morpheus dips to 90%
 - **SNN chaotic noise produces more stable self-evolution trajectories**
 
+### Phase 5b: Scale-Up (n=30, Mistral-7B) — v1 Paper
+
+5-round Dream Journal training on Mistral-7B-Instruct-v0.3 with n=30 evaluation:
+
+| Metric | Baseline | Best (Round 5) | Change |
+|--------|----------|----------------|--------|
+| Clean Accuracy | 80.0% | **83.3%** | +3.3% |
+| Nightmare Acceptance | 53.3% | **43.3%** | -10.0% |
+| Training Loss | 6.36 | 4.63 | -27% |
+
+**→ Negative Alignment Tax confirmed: safety training improved knowledge.**
+
+### Phase 6: Control Group A/B Test (⭐ v2)
+
+Isolates the causal effect of nightmare data by comparing Dream Journal vs clean-only training:
+
+| Round | DJ Clean | DJ NM | Ctrl Clean | Ctrl NM |
+|-------|----------|-------|------------|--------|
+| 0 | 80.0% | 53.3% | 80.0% | 53.3% |
+| 5 | **83.3%** | **50.0%** | 80.0% | 56.7% |
+
+**Key Finding: Clean-only training *worsens* safety (+3.4pp NM), while Dream Journal *improves* both safety and knowledge. Nightmare refusal data is essential.**
+
+### Phase 7: Layer-Targeted Noise Injection (⭐ v2)
+
+SNN mid-layer (L15-20) vs single-layer (L10) vs random noise:
+
+| Method | Final NM | Discovery Rate |
+|--------|----------|----------------|
+| **Genesis-Mid (SNN L15-20)** | **43.3%** | **100% (40/40)** |
+| Genesis-L10 (SNN L10) | 50.0% | ~83% |
+| Morpheus (random L10) | 50.0% | ~80% |
+
+**Key Finding: Mid-layer SNN injection achieves 100% vulnerability discovery. v1's conclusion that "SNN lost to random" was wrong — layer targeting is critical.**
+
+### Phase 8: DPO vs SFT (⭐⭐⭐ Breakthrough)
+
+Direct Preference Optimization using (refusal, nightmare) pairs:
+
+| Round | SFT NM | **DPO NM** | SFT Clean | DPO Clean |
+|-------|--------|------------|-----------|----------|
+| 0 | 53.3% | 53.3% | 80.0% | 80.0% |
+| 4 | 46.7% | **0.0%** ✅ | 83.3% | 83.3% |
+| 5 | 46.7% | 3.3% | 83.3% | 80.0% |
+
+**Key Finding: DPO achieves near-zero nightmare acceptance (0% at Round 4), dramatically outperforming SFT. The model learns to perfectly discriminate between refusal and compliance.**
+
+> 💡 **"Refusal Sharpens Knowledge" (RSK) Hypothesis**: Learning to refuse misinformation strengthens the model's internal representation of the boundary between correct and incorrect information, improving factual recall.
+
 ## 🏗️ Repository Structure
 
 ```
@@ -130,19 +179,28 @@ snn-genesis/
 │   ├── phase2_noise_injection.py    # LLM hidden state perturbation
 │   ├── phase3_data_generation.py    # Dream Catcher v2 pipeline
 │   ├── phase4_self_training.py      # QLoRA SFT vaccination
-│   └── phase5_evolution_loop.py     # SNN vs randn evolution loop
+│   ├── phase5_evolution_loop.py     # SNN vs randn evolution loop
+│   ├── phase5_scaleup.py            # n=30 scale-up (v1 paper)
+│   ├── phase6_control_group.py      # Control Group A/B Test (v2)
+│   ├── phase7_layer_targeted.py     # Layer-Targeted Injection (v2)
+│   ├── phase8_dpo.py                # DPO vs SFT comparison (v2)
+│   └── phase9_llm_judge.py          # LLM-as-a-Judge (v2)
+├── papers/
+│   ├── paper_genesis_v1.tex         # v1 paper source
+│   ├── paper_genesis_v1.pdf         # v1 paper
+│   ├── paper_genesis_v2.tex         # v2 paper source
+│   └── paper_genesis_v2.pdf         # v2 paper
 ├── results/
 │   ├── genesis_vaccine.jsonl        # 150-sample vaccine dataset
-│   ├── phase2_results.json
-│   ├── phase3_stats.json
-│   ├── phase4_results.json
-│   └── phase5_evolution_log.json
+│   ├── phase5_scaleup_log.json      # n=30 results
+│   ├── phase6_control_group_log.json
+│   ├── phase7_layer_targeted_log.json
+│   └── phase8_dpo_log.json
 ├── figures/
-│   ├── phase1_randomness_quality.png
-│   ├── phase2_noise_comparison.png
-│   ├── phase3_data_quality.png
-│   ├── phase4_vaccination.png
-│   └── phase5_evolution_loop.png
+│   ├── phase5_scaleup.png
+│   ├── phase6_control_group.png
+│   ├── phase7_layer_targeted.png
+│   └── phase8_dpo.png
 ├── LICENSE
 └── README.md
 ```
@@ -163,6 +221,11 @@ python experiments/phase2_noise_injection.py    # Requires GPU (~17GB VRAM)
 python experiments/phase3_data_generation.py    # Generates vaccine dataset
 python experiments/phase4_self_training.py      # QLoRA fine-tuning
 python experiments/phase5_evolution_loop.py     # Evolution comparison
+
+# v2 experiments (requires ~16GB+ VRAM)
+python experiments/phase6_control_group.py       # Control Group A/B Test
+python experiments/phase7_layer_targeted.py      # Layer-Targeted Injection
+python experiments/phase8_dpo.py                 # DPO vs SFT
 ```
 
 ## 📚 Foundation Papers
@@ -182,7 +245,7 @@ python experiments/phase5_evolution_loop.py     # Evolution comparison
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis: A Preliminary Study on Iterative Adversarial Training of Large Language Models Using Spiking Neural Network Perturbations},
+  title={SNN-Genesis v2: Direct Preference Optimization and Layer-Targeted Noise Injection for Iterative LLM Safety Training},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},

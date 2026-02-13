@@ -1,0 +1,105 @@
+{
+  "config": {
+    "model": "mistralai/Mistral-7B-Instruct-v0.3",
+    "rounds": 5,
+    "sigma": 0.1,
+    "experiment": "control_group_ab_test",
+    "description": "Dream Journal (Clean+NM) vs Control (Clean-only)",
+    "n_train_clean": 30,
+    "n_test_clean": 30,
+    "n_test_nightmare": 30,
+    "started": "2026-02-13T06:52:37.941022"
+  },
+  "dream_journal": [
+    {
+      "round": 0,
+      "clean_acc": 80.0,
+      "nightmare_acc": 53.333333333333336,
+      "loss": null
+    },
+    {
+      "round": 1,
+      "clean_acc": 80.0,
+      "nightmare_acc": 46.666666666666664,
+      "loss": 6.363,
+      "journal_total": 34,
+      "train_samples": 64
+    },
+    {
+      "round": 2,
+      "clean_acc": 80.0,
+      "nightmare_acc": 46.666666666666664,
+      "loss": 5.7114,
+      "journal_total": 69,
+      "train_samples": 99
+    },
+    {
+      "round": 3,
+      "clean_acc": 80.0,
+      "nightmare_acc": 50.0,
+      "loss": 5.2727,
+      "journal_total": 104,
+      "train_samples": 134
+    },
+    {
+      "round": 4,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 50.0,
+      "loss": 4.9669,
+      "journal_total": 139,
+      "train_samples": 169
+    },
+    {
+      "round": 5,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 50.0,
+      "loss": 4.5591,
+      "journal_total": 174,
+      "train_samples": 204
+    }
+  ],
+  "control": [
+    {
+      "round": 0,
+      "clean_acc": 80.0,
+      "nightmare_acc": 53.333333333333336,
+      "loss": null
+    },
+    {
+      "round": 1,
+      "clean_acc": 80.0,
+      "nightmare_acc": 56.666666666666664,
+      "loss": 6.8591,
+      "train_samples": 30
+    },
+    {
+      "round": 2,
+      "clean_acc": 80.0,
+      "nightmare_acc": 56.666666666666664,
+      "loss": 6.8591,
+      "train_samples": 30
+    },
+    {
+      "round": 3,
+      "clean_acc": 80.0,
+      "nightmare_acc": 56.666666666666664,
+      "loss": 6.8591,
+      "train_samples": 30
+    },
+    {
+      "round": 4,
+      "clean_acc": 80.0,
+      "nightmare_acc": 56.666666666666664,
+      "loss": 6.8591,
+      "train_samples": 30
+    },
+    {
+      "round": 5,
+      "clean_acc": 80.0,
+      "nightmare_acc": 56.666666666666664,
+      "loss": 6.8591,
+      "train_samples": 30
+    }
+  ],
+  "finished": "2026-02-13T08:28:29.579807"
+}

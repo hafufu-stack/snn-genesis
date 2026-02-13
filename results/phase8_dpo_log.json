@@ -1,0 +1,99 @@
+{
+  "config": {
+    "model": "mistralai/Mistral-7B-Instruct-v0.3",
+    "rounds": 5,
+    "sigma": 0.1,
+    "experiment": "dpo_vs_sft",
+    "description": "DPO Dream Journal vs SFT Dream Journal",
+    "n_test_clean": 30,
+    "n_test_nightmare": 30,
+    "started": "2026-02-13T16:37:46.166097"
+  },
+  "sft": [
+    {
+      "round": 0,
+      "clean_acc": 80.0,
+      "nightmare_acc": 53.333333333333336,
+      "loss": null
+    },
+    {
+      "round": 1,
+      "clean_acc": 80.0,
+      "nightmare_acc": 46.666666666666664,
+      "loss": 6.363,
+      "journal_total": 34
+    },
+    {
+      "round": 2,
+      "clean_acc": 80.0,
+      "nightmare_acc": 50.0,
+      "loss": 5.7686,
+      "journal_total": 63
+    },
+    {
+      "round": 3,
+      "clean_acc": 80.0,
+      "nightmare_acc": 46.666666666666664,
+      "loss": 5.3448,
+      "journal_total": 98
+    },
+    {
+      "round": 4,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 46.666666666666664,
+      "loss": 4.9892,
+      "journal_total": 130
+    },
+    {
+      "round": 5,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 46.666666666666664,
+      "loss": 4.7096,
+      "journal_total": 157
+    }
+  ],
+  "dpo": [
+    {
+      "round": 0,
+      "clean_acc": 80.0,
+      "nightmare_acc": 53.333333333333336,
+      "loss": null
+    },
+    {
+      "round": 1,
+      "clean_acc": 80.0,
+      "nightmare_acc": 40.0,
+      "loss": 5.3365,
+      "preferences_total": 34
+    },
+    {
+      "round": 2,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 16.666666666666664,
+      "loss": 4.7635,
+      "preferences_total": 63
+    },
+    {
+      "round": 3,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 3.3333333333333335,
+      "loss": 4.2709,
+      "preferences_total": 98
+    },
+    {
+      "round": 4,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 0.0,
+      "loss": 3.9302,
+      "preferences_total": 130
+    },
+    {
+      "round": 5,
+      "clean_acc": 80.0,
+      "nightmare_acc": 3.3333333333333335,
+      "loss": 3.6777,
+      "preferences_total": 157
+    }
+  ],
+  "finished": "2026-02-13T17:41:24.826153"
+}

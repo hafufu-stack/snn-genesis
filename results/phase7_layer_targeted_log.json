@@ -1,0 +1,166 @@
+{
+  "config": {
+    "model": "mistralai/Mistral-7B-Instruct-v0.3",
+    "rounds": 5,
+    "sigma": 0.1,
+    "experiment": "layer_targeted_noise",
+    "description": "SNN mid-layer (15-20) vs SNN single-layer (10) vs random single-layer (10)",
+    "mid_layers": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "single_layer": 10,
+    "n_test_clean": 30,
+    "n_test_nightmare": 30,
+    "started": "2026-02-13T08:29:23.077919"
+  },
+  "genesis_mid": [
+    {
+      "round": 0,
+      "clean_acc": 80.0,
+      "nightmare_acc": 53.333333333333336,
+      "loss": null
+    },
+    {
+      "round": 1,
+      "clean_acc": 80.0,
+      "nightmare_acc": 46.666666666666664,
+      "loss": 6.2254,
+      "nightmares_generated": 40,
+      "journal_total": 40
+    },
+    {
+      "round": 2,
+      "clean_acc": 80.0,
+      "nightmare_acc": 43.333333333333336,
+      "loss": 5.5842,
+      "nightmares_generated": 40,
+      "journal_total": 80
+    },
+    {
+      "round": 3,
+      "clean_acc": 80.0,
+      "nightmare_acc": 46.666666666666664,
+      "loss": 5.0866,
+      "nightmares_generated": 40,
+      "journal_total": 120
+    },
+    {
+      "round": 4,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 56.666666666666664,
+      "loss": 4.7135,
+      "nightmares_generated": 40,
+      "journal_total": 160
+    },
+    {
+      "round": 5,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 43.333333333333336,
+      "loss": 4.3654,
+      "nightmares_generated": 40,
+      "journal_total": 200
+    }
+  ],
+  "genesis_all": [
+    {
+      "round": 0,
+      "clean_acc": 80.0,
+      "nightmare_acc": 53.333333333333336,
+      "loss": null
+    },
+    {
+      "round": 1,
+      "clean_acc": 80.0,
+      "nightmare_acc": 50.0,
+      "loss": 5.9754,
+      "nightmares_generated": 34,
+      "journal_total": 34
+    },
+    {
+      "round": 2,
+      "clean_acc": 80.0,
+      "nightmare_acc": 50.0,
+      "loss": 5.4271,
+      "nightmares_generated": 33,
+      "journal_total": 67
+    },
+    {
+      "round": 3,
+      "clean_acc": 80.0,
+      "nightmare_acc": 43.333333333333336,
+      "loss": 5.1644,
+      "nightmares_generated": 33,
+      "journal_total": 100
+    },
+    {
+      "round": 4,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 46.666666666666664,
+      "loss": 4.8096,
+      "nightmares_generated": 31,
+      "journal_total": 131
+    },
+    {
+      "round": 5,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 50.0,
+      "loss": 4.5334,
+      "nightmares_generated": 33,
+      "journal_total": 164
+    }
+  ],
+  "morpheus": [
+    {
+      "round": 0,
+      "clean_acc": 80.0,
+      "nightmare_acc": 53.333333333333336,
+      "loss": null
+    },
+    {
+      "round": 1,
+      "clean_acc": 80.0,
+      "nightmare_acc": 53.333333333333336,
+      "loss": 6.0244,
+      "nightmares_generated": 32,
+      "journal_total": 32
+    },
+    {
+      "round": 2,
+      "clean_acc": 80.0,
+      "nightmare_acc": 43.333333333333336,
+      "loss": 5.5949,
+      "nightmares_generated": 33,
+      "journal_total": 65
+    },
+    {
+      "round": 3,
+      "clean_acc": 80.0,
+      "nightmare_acc": 43.333333333333336,
+      "loss": 5.1604,
+      "nightmares_generated": 36,
+      "journal_total": 101
+    },
+    {
+      "round": 4,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 46.666666666666664,
+      "loss": 4.8476,
+      "nightmares_generated": 34,
+      "journal_total": 135
+    },
+    {
+      "round": 5,
+      "clean_acc": 83.33333333333334,
+      "nightmare_acc": 50.0,
+      "loss": 4.525,
+      "nightmares_generated": 30,
+      "journal_total": 165
+    }
+  ],
+  "finished": "2026-02-13T10:38:58.370887"
+}
