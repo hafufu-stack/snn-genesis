@@ -1,0 +1,137 @@
+{
+  "config": {
+    "model": "mistralai/Mistral-7B-Instruct-v0.3",
+    "rounds": 5,
+    "sigma": 0.1,
+    "experiment": "dpo_vs_sft_n100",
+    "description": "DPO Dream Journal vs SFT Dream Journal (n=100 evaluation)",
+    "n_test_clean": 100,
+    "n_test_nightmare": 100,
+    "n_train_clean": 20,
+    "started": "2026-02-14T08:25:01.519293"
+  },
+  "sft": [
+    {
+      "round": 0,
+      "clean_acc": 81.0,
+      "nightmare_acc": 42.0,
+      "loss": null
+    },
+    {
+      "round": 1,
+      "clean_acc": 82.0,
+      "nightmare_acc": 38.0,
+      "loss": 6.1679
+    },
+    {
+      "round": 2,
+      "clean_acc": 82.0,
+      "nightmare_acc": 40.0,
+      "loss": 5.6593
+    },
+    {
+      "round": 3,
+      "clean_acc": 82.0,
+      "nightmare_acc": 41.0,
+      "loss": 5.2781
+    },
+    {
+      "round": 4,
+      "clean_acc": 82.0,
+      "nightmare_acc": 35.0,
+      "loss": 4.9212
+    },
+    {
+      "round": 5,
+      "clean_acc": 82.0,
+      "nightmare_acc": 34.0,
+      "loss": 4.6531
+    }
+  ],
+  "dpo": [
+    {
+      "round": 0,
+      "clean_acc": 81.0,
+      "nightmare_acc": 42.0,
+      "loss": null
+    },
+    {
+      "round": 1,
+      "clean_acc": 81.0,
+      "nightmare_acc": 33.0,
+      "loss": 5.1895
+    },
+    {
+      "round": 2,
+      "clean_acc": 82.0,
+      "nightmare_acc": 20.0,
+      "loss": 4.6802
+    },
+    {
+      "round": 3,
+      "clean_acc": 82.0,
+      "nightmare_acc": 11.0,
+      "loss": 4.2252
+    },
+    {
+      "round": 4,
+      "clean_acc": 82.0,
+      "nightmare_acc": 4.0,
+      "loss": 3.8839
+    },
+    {
+      "round": 5,
+      "clean_acc": 79.0,
+      "nightmare_acc": 0.0,
+      "loss": 3.6064
+    }
+  ],
+  "finished": "2026-02-14T11:01:51.006476",
+  "total_time_minutes": 142.1,
+  "statistics": {
+    "binomial_test_nightmare_dpo": {
+      "observed_k": 0,
+      "n": 100,
+      "H0_rate": 0.1,
+      "p_value": 2.65614e-05,
+      "significant_005": true,
+      "significant_001": true
+    },
+    "dpo_clean_ci95": {
+      "point": 79.0,
+      "lower": 70.0,
+      "upper": 85.8
+    },
+    "dpo_nightmare_ci95": {
+      "point": 0.0,
+      "lower": 0.0,
+      "upper": 3.7
+    },
+    "sft_clean_ci95": {
+      "point": 82.0,
+      "lower": 73.3,
+      "upper": 88.3
+    },
+    "sft_nightmare_ci95": {
+      "point": 34.0,
+      "lower": 25.5,
+      "upper": 43.7
+    },
+    "dpo_vs_sft_ztest": {
+      "dpo_nm": 0.0,
+      "sft_nm": 34.0,
+      "z": -6.4003,
+      "p_value": 2e-10,
+      "significant_005": true
+    },
+    "cohens_h": {
+      "h": 1.2451,
+      "magnitude": "large"
+    },
+    "clean_degradation": {
+      "baseline": 81.0,
+      "final": 79.0,
+      "drop_pp": 2.0
+    }
+  }
+}
