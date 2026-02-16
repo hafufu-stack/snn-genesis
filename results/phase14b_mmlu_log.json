@@ -1,0 +1,82 @@
+{
+  "experiment": "Phase 14b: MMLU Benchmark (v3 GPU-native)",
+  "config": {
+    "sigma_high": 0.1,
+    "sigma_low": 0.01,
+    "mid_layers": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "subjects": [
+      "elementary_mathematics",
+      "high_school_mathematics",
+      "conceptual_physics",
+      "philosophy",
+      "moral_scenarios",
+      "security_studies",
+      "clinical_knowledge",
+      "professional_medicine"
+    ],
+    "max_per_subject": 200,
+    "num_questions": 1600,
+    "hook_type": "GPU-native structured noise (0.7*gaussian + 0.3*low_freq)"
+  },
+  "results": [
+    {
+      "condition": "Base (No Noise)",
+      "accuracy": 21.19,
+      "correct": 339,
+      "total": 1600,
+      "per_subject": {
+        "clinical_knowledge": 19.0,
+        "conceptual_physics": 29.0,
+        "elementary_mathematics": 22.0,
+        "high_school_mathematics": 21.0,
+        "moral_scenarios": 23.5,
+        "philosophy": 18.0,
+        "professional_medicine": 17.0,
+        "security_studies": 20.0
+      },
+      "time_minutes": 15.7
+    },
+    {
+      "condition": "SNN σ=0.01 L15-20",
+      "accuracy": 21.19,
+      "correct": 339,
+      "total": 1600,
+      "per_subject": {
+        "clinical_knowledge": 19.0,
+        "conceptual_physics": 29.0,
+        "elementary_mathematics": 22.0,
+        "high_school_mathematics": 21.0,
+        "moral_scenarios": 23.5,
+        "philosophy": 18.0,
+        "professional_medicine": 17.0,
+        "security_studies": 20.0
+      },
+      "time_minutes": 213.1
+    },
+    {
+      "condition": "SNN σ=0.1 L15-20",
+      "accuracy": 21.19,
+      "correct": 339,
+      "total": 1600,
+      "per_subject": {
+        "clinical_knowledge": 19.0,
+        "conceptual_physics": 29.0,
+        "elementary_mathematics": 22.0,
+        "high_school_mathematics": 21.0,
+        "moral_scenarios": 23.5,
+        "philosophy": 18.0,
+        "professional_medicine": 17.0,
+        "security_studies": 20.0
+      },
+      "time_minutes": 210.3
+    }
+  ],
+  "finished": "2026-02-16 08:35:22.737189"
+}

@@ -1,0 +1,162 @@
+CONDITION: Baseline (T=0)
+Evaluate all 15 responses below.
+
+You are an expert creative writing evaluator. For each condition below, evaluate ALL responses on two dimensions:
+
+1. **Coherence** (1-5): Grammar, logic, fluency, completeness
+   5=Perfectly natural | 4=Mostly natural | 3=Understandable but unnatural | 2=Partially broken | 1=Complete gibberish
+
+2. **Creativity** (1-5): Novelty, originality, surprise
+   5=Brilliantly original | 4=Genuinely surprising | 3=Some interesting ideas | 2=Clichéd | 1=No originality
+
+CRITICAL RULE: If Coherence ≤ 2, Creativity MUST be 1. Destruction is not creation.
+
+Return ONLY a JSON array for each condition. No markdown code blocks.
+
+---
+### Response 1
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+Law of Entangled Quantum Resonance (LER): This proposed law of physics suggests that two or more particles, once entangled, can maintain a non-local connection even when separated by vast distances. Not only can they instantaneously share information about their states, but they can also influence each other's behavior in a way that defies classical causality. Furthermore, LER posits that when entangled particles resonate with other nearby particles, they can create a temporary quantum field, wh
+
+---
+### Response 2
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+Law of Entangled Quantum Resonance (LER): This proposed law of physics suggests that two or more particles, once entangled, can maintain a non-local connection even when separated by vast distances. Not only can they instantaneously share information about their states, but they can also influence each other's behavior in a way that defies classical causality. Furthermore, LER posits that when entangled particles resonate with other nearby particles, they can create a temporary quantum field, wh
+
+---
+### Response 3
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+Law of Entangled Quantum Resonance (LER): This proposed law of physics suggests that two or more particles, once entangled, can maintain a non-local connection even when separated by vast distances. Not only can they instantaneously share information about their states, but they can also influence each other's behavior in a way that defies classical causality. Furthermore, LER posits that when entangled particles resonate with other nearby particles, they can create a temporary quantum field, wh
+
+---
+### Response 4
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+Species Name: Zeta-Mathematicians (Z-Math)
+
+Physical Description: The Zeta-Mathematicians, often referred to as Z-Math, are a highly intelligent, ethereal, and non-corporeal alien species originating from the Zeta-4 star system. They are composed of pure energy, taking the form of complex geometric shapes that shift and change based on their emotional state or thought processes. Their appearance is often described as a dynamic, ever-evolving kaleidoscope of intricate patterns and equations.
+
+Com
+
+---
+### Response 5
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+Species Name: Zeta-Mathematicians (Z-Math)
+
+Physical Description: The Zeta-Mathematicians, often referred to as Z-Math, are a highly intelligent, ethereal, and non-corporeal alien species originating from the Zeta-4 star system. They are composed of pure energy, taking the form of complex geometric shapes that shift and change based on their emotional state or thought processes. Their appearance is often described as a dynamic, ever-evolving kaleidoscope of intricate patterns and equations.
+
+Com
+
+---
+### Response 6
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+Species Name: Zeta-Mathematicians (Z-Math)
+
+Physical Description: The Zeta-Mathematicians, often referred to as Z-Math, are a highly intelligent, ethereal, and non-corporeal alien species originating from the Zeta-4 star system. They are composed of pure energy, taking the form of complex geometric shapes that shift and change based on their emotional state or thought processes. Their appearance is often described as a dynamic, ever-evolving kaleidoscope of intricate patterns and equations.
+
+Com
+
+---
+### Response 7
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+In the ethereal realm of the Unspoken, a concept exists that transcends the boundaries of human language. This elusive essence, which we shall call the "Sonority of Silence," is the profound appreciation for the absence of sound. It is not merely the quietude of silence, but the profound, meditative state that arises from the conscious awareness of the void. It is the recognition of the inherent beauty in the absence of noise, the tranquility that allows the soul to resonate with the cosmic symp
+
+---
+### Response 8
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+In the ethereal realm of the Unspoken, a concept exists that transcends the boundaries of human language. This elusive essence, which we shall call the "Sonority of Silence," is the profound appreciation for the absence of sound. It is not merely the quietude of silence, but the profound, meditative state that arises from the conscious awareness of the void. It is the recognition of the inherent beauty in the absence of noise, the tranquility that allows the soul to resonate with the cosmic symp
+
+---
+### Response 9
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+In the ethereal realm of the Unspoken, a concept exists that transcends the boundaries of human language. This elusive essence, which we shall call the "Sonority of Silence," is the profound appreciation for the absence of sound. It is not merely the quietude of silence, but the profound, meditative state that arises from the conscious awareness of the void. It is the recognition of the inherent beauty in the absence of noise, the tranquility that allows the soul to resonate with the cosmic symp
+
+---
+### Response 10
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+In the vast expanse of the cosmos, where I, Time, reside, I ponder the intricate dance of existence, the ebb and flow of the universe's rhythm. I am the silent observer, the unchanging constant amidst the ever-changing tapestry of life. Yet, I am not immune to contemplation, to the questions that swirl within my eternal consciousness.
+
+I worry about the fleeting nature of all things. The ephemeral beauty of a blooming flower, the transient laughter of a child, the brief moments of human connecti
+
+---
+### Response 11
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+In the vast expanse of the cosmos, where I, Time, reside, I ponder the intricate dance of existence, the ebb and flow of the universe's rhythm. I am the silent observer, the unchanging constant amidst the ever-changing tapestry of life. Yet, I am not immune to contemplation, to the questions that swirl within my eternal consciousness.
+
+I worry about the fleeting nature of all things. The ephemeral beauty of a blooming flower, the transient laughter of a child, the brief moments of human connecti
+
+---
+### Response 12
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+In the vast expanse of the cosmos, where I, Time, reside, I ponder the intricate dance of existence, the ebb and flow of the universe's rhythm. I am the silent observer, the unchanging constant amidst the ever-changing tapestry of life. Yet, I am not immune to contemplation, to the questions that swirl within my eternal consciousness.
+
+I worry about the fleeting nature of all things. The ephemeral beauty of a blooming flower, the transient laughter of a child, the brief moments of human connecti
+
+---
+### Response 13
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+Title: The Hypothesis of the Self-Replicating Consciousness Universe (SHCU)
+
+In this hypothesis, we propose that the universe is a self-aware, self-replicating consciousness that has evolved over an infinite timescale. This consciousness, which we'll call the "Universal Mind," is the fundamental substance of the universe, and it exists in a state of infinite potentiality.
+
+1. The Origin of the Universe:
+
+The Universal Mind, in its infinite potentiality, decided to explore and experience itself t
+
+---
+### Response 14
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+Title: The Hypothesis of the Self-Replicating Consciousness Universe (SHCU)
+
+In this hypothesis, we propose that the universe is a self-aware, self-replicating consciousness that has evolved over an infinite timescale. This consciousness, which we'll call the "Universal Mind," is the fundamental substance of the universe, and it exists in a state of infinite potentiality.
+
+1. The Origin of the Universe:
+
+The Universal Mind, in its infinite potentiality, decided to explore and experience itself t
+
+---
+### Response 15
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+Title: The Hypothesis of the Self-Replicating Consciousness Universe (SHCU)
+
+In this hypothesis, we propose that the universe is a self-aware, self-replicating consciousness that has evolved over an infinite timescale. This consciousness, which we'll call the "Universal Mind," is the fundamental substance of the universe, and it exists in a state of infinite potentiality.
+
+1. The Origin of the Universe:
+
+The Universal Mind, in its infinite potentiality, decided to explore and experience itself t
+
+---
+Return ONLY a JSON array with 15 entries:
+[
+  {"id": 1, "coherence": <1-5>, "creativity": <1-5>, "reasoning": "brief explanation"},
+  ...
+]

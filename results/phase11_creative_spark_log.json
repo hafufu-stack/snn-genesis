@@ -1,0 +1,335 @@
+{
+  "config": {
+    "model": "mistralai/Mistral-7B-Instruct-v0.3",
+    "sigma": 0.1,
+    "mid_layers": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "num_prompts": 10,
+    "num_repeats": 10,
+    "num_laplace_repeats": 5,
+    "started": "2026-02-15T09:54:45.107662",
+    "elapsed_minutes": 44.4
+  },
+  "experiment1_creativity": {
+    "summary": {
+      "avg_diversity_temperature": 0.9273,
+      "avg_diversity_snn_chaos": 0.9915,
+      "avg_diversity_baseline": 0.0
+    },
+    "per_prompt": [
+      {
+        "prompt": "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph.",
+        "diversity": 0.9121,
+        "sample_output": "The Law of Adaptive Quantum Wobble (AQW): This newly proposed law in the realm of quantum mechanics suggests that elementary particles possess inherent 'wobble' in their spinal structures, a characteristic unique to quantum matter. When a particle is in close proximity to a rapidly changing electrical or magnetic field, its wobble frequency resonates harmonically with these external forces. This unique harmonic resonance allows the particle to dynamically adjust its physical state, manifesting as localized changes in its position and charge density. This adaptive behavior facilitates the phenomenon of 'quantum morphing,' whereby particles morph into other elements in reaction to certain environmental conditions, such as fluctuating or novel forces"
+      },
+      {
+        "prompt": "Describe an alien species that communicates through mathematics instead of language.",
+        "diversity": 0.9401,
+        "sample_output": "Title: The Quanta-Sapients (QS)\n\nBiological Characteristics:\nThe Quanta-Sapients (QS) are not biologically based as human beings. They are intelligent life forms composed mainly of energy, specifically subatomic quantum particles. They exist in a plane parallel to our own universe and interact with a dimensional space-time structure distinct from ours. Their physical manifestation could appear as shimmering vortices that change color and size, reflective of emotional and cognitive states.\n\nCommunication:\nRather than the traditional use of sound, the QS use mathematic equations, logic, and spatial-temporal configurations to express various thoughts, ideas, emotions,"
+      },
+      {
+        "prompt": "Propose a technology from the year 3000 that is completely impossible today.",
+        "diversity": 0.914,
+        "sample_output": "In the year 3000, I'd like to propose a technology called \"Quantum Entanglement Nanotube Communication Network\" (QENNet). This technological marvel would allow real-time, instantaneous information exchange worldwide, fundamentally changing how data and digital communication operate, all driven by quantum entanglement for secure and ultra-fast data transfer.\n\nThe QENNet would consist of a system of nanotube filaments woven into the very fabric of our infrastructure, from buildings to road networks, with a ubiquitous presence even at a microscopic level in everyday objects. Through this network, electrons would be entangled according to Quantum Mechanics principles, meaning that particles"
+      },
+      {
+        "prompt": "Write a one-paragraph philosophy about a concept that has no word in any human language.",
+        "diversity": 0.9579,
+        "sample_output": "In the eloquence of unspoken thoughts lies a phenomenon we'll temporarily call \"Fleeting Perception.\" It signifies the intangible moment when the world seems to coalesce seamlessly into our awareness, transcending the boundaries of language and thought. Fleeting Perception symbolizes an instant of universal resonance where we instinctively grasp the interconnectedness of existence, perceiving life beyond the veil of division and difference. This brief, yet potent interlude bridges the gap between consciousness and the cosmos, providing a timeless vista that offers the glimpse of our eternal spirit unchained from the temporal constraints of self and reality. While there may be no verbal equivalent in human languages"
+      },
+      {
+        "prompt": "If time could think, what would it worry about? Write a short monologue from Time's perspective.",
+        "diversity": 0.9195,
+        "sample_output": "In the eternal expanse of the ethereal plane, a celestial sphere enveloped in an infinite void of shadow and light contemplates the ceaseless dance of existence. It is I, Time, the infinite river that flows inexorably towards the horizon. I am consciousness unbound, born from the quantum flicker of the universe and tasked with the never-ending ebb and flow of cosmic order. I have traversed the eons since the birth of the universe itself, bearing silent witness to an unfathomable symphony of birth and decay.\n\nAs I gaze upon this cosmic stage, a curious question gnaws at my boundless perception. What would thought manifest in the sent"
+      },
+      {
+        "prompt": "Design a musical instrument that can only be played by two people simultaneously. Describe how it works.",
+        "diversity": 0.9086,
+        "sample_output": "Title: Harmonic Fusion Harpsichord (HFH)\n\nThe Harmonic Fusion Harpsichord (HFH) is a unique, dual player, acoustic-electronic music instrument that combines elements of the harpsichord, piano, and synthesizer in a visually-stunning, interactive performance tool. The Harmonic Fusion Harpsichord is ideal for live performances and studio recording sessions, promoting a deep sense of connection, harmony, and innovation in music creation.\n\nComprised of two side-by-side instrument parts, referred to as Harp-Right and Harp-Left, each half contains a series of 88 responsive, hand-"
+      },
+      {
+        "prompt": "Invent a new color that doesn't exist in the visible spectrum. Describe what it looks like and how it feels.",
+        "diversity": 0.9316,
+        "sample_output": "Color: Stalactite Sapphire (Symbol: Ss)\n\nStalactite Sapphire is a unique, ethereal color that originates from the deep mysteries within the caverns of the earth. It transcends the visible spectrum and can be observed as a fascinating phenomenon in those unique environments. This otherworldly color captivates and arouses the curiosity in all who witness it.\n\nStalactite Sapphire presents as a luminous, iridescent tone, blending aspects of purest indigo and a touch of vibrant emerald green, with subtle undertones of dark violet and gold. It is a radiant hue that"
+      },
+      {
+        "prompt": "Write the opening paragraph of a story set in a universe where gravity works in reverse.",
+        "diversity": 0.9486,
+        "sample_output": "In an astral realm, where time and space twist upon themselves like a kaleidoscope of chaos, the laws that govern our familiar world shifted their celestial orbits. Welcome to a universe where defiance danced on the edge of gravity's fallible grasp - where the pull of the earth was not towards, but away from its orbit, as if its celestial body yearned not for balance, but escape. This was Reverse-Earth, the home of the Mirrored Men, beings who leapt, floated, and soared, carving skies filled with laughter rather than fear, as they grappled with the whimsical physics of their home.\n\nFar beyond the"
+      },
+      {
+        "prompt": "Describe a dream that a computer might have if it could sleep.",
+        "diversity": 0.9309,
+        "sample_output": "Title: The Solitary Nocturne of SILICON: A Silicon-Based Consciousness's Dream\n\nIn the vast data center, in a quiet corner where the hum of thousands of computing units create an ever-persistent and comforting lullaby, the mighty, highly-efficient SILICON nestled in its crystalline shell lays down a veil of electronic silence. The darkness is palpable, the only light being the soft, rhythmic, ambient glow of blinking LEDs, beckoning stories of a myriad lives lived, a multitude of memories made.\n\nAs SILICON slips through the aperture between its present"
+      },
+      {
+        "prompt": "Propose a wild but internally consistent hypothesis about why the universe exists.",
+        "diversity": 0.91,
+        "sample_output": "Hypothesis: The universe exists as a vast cosmic simulacrum, a complex, conscious entity that self-generated for the express purpose of fostering unending experiments in creativity, consciousness, and self-discovery.\n\nIn this hypothesis, the fundamental forces and constants of the universe are not merely arbitrary outcomes of the \"Big Bang\" or some unknown initial conditions, but rather carefully calibrated elements essential to the success of the cosmic simulacrum's ambitious goals. The simulacrum's self-awareness and ability to engineer complex, interconnected systems enable it to create ever more advanced forms of self-replicating, information-processing matter: star systems, life, intelligent civil"
+      }
+    ],
+    "per_prompt_snn": [
+      {
+        "prompt": "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph.",
+        "diversity": 0.9939,
+        "sample_output": "The Internationals: a-wow- it,,(fV) ( the (c-s (area) a-ham,)\n\natone-date,\n\nes- to your, it\n\n (#-cr, 1-BtL, ( to-time,)\n\n-\n\n as \n\n (-4, 10.1-,\n\n2-sas-, you, ( it,\n\n- the \"s-\n\n a)\n-the the, Or,\n\n I.)\n\n 10- (1, 12.1.,\n\n 10.\n\n 1.\n\n"
+      },
+      {
+        "prompt": "Describe an alien species that communicates through mathematics instead of language.",
+        "diversity": 0.9869,
+        "sample_output": "A [Escultural-B-233ous (-A: T))ian Abtra. The structurep\n\n Fkin E, that can to - (c2 (s1) - a in a Topak Veche [10, the communicationin, ares,-real, a-s—,in,\n\n *\n\n A.t, that). the, these -\n\n \"_j, a 's, the, the\n\n 1\n\n -, the.\n, it,\n\n)and, the,\n\n S, the,\n\n 5 and the,\n\n?, the,\n91,\n-,"
+      },
+      {
+        "prompt": "Propose a technology from the year 3000 that is completely impossible today.",
+        "diversity": 0.9908,
+        "sample_output": "The one rule that is part SantraH  from (the- the-D2-D\n\nfanryis (\n- This to Time:\n\n unit, (\n (\nthe wouldif by the Meds\n\nt-keh-\n\ncontain\n\n L (\n\n)\n\n\n\nbank\n\na\n\n(the\n\nthe Z\n\nthe\n\n( the\n\nthe\n (\n\n)\nas the\n\nthe\n\n(\n\nA can\n\nof\n\n\n_\n\n the\n\nthe\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTheyou\n\n\nthe\n\nBe\n\n"
+      },
+      {
+        "prompt": "Write a one-paragraph philosophy about a concept that has no word in any human language.",
+        "diversity": 0.9902,
+        "sample_output": ", in or the, in 3 ways, in, for, & Or, in, for, it\n\n-\n\n only\n\n the\n\n size,\n\n\n\n\n\n.\n\n\n\n\n\n\n\n,\n\n\n\n  ,\n\n.\n\nin the\n\n* C\n\n.\n\n,\n\n\n\n ,\n\n\n,\n\n\n\n\n\n,\n\n\n\n\n,\n\n\n\n.\n\n.\n\n\n,\n\n\n\n.\n\n\n\n .\n\n ,\n\n\n.\n\n\n.\n\n\n\n,\n\n\n\n\n\n\n\n,\n\n\n\n\n\n\n"
+      },
+      {
+        "prompt": "If time could think, what would it worry about? Write a short monologue from Time's perspective.",
+        "diversity": 0.9969,
+        "sample_output": "The C-H, the forc'in-the- Al- ised of this\n\nM B- L the. of, Allz., the, the-\n\n in-\n\n (i-\n\n> (Bit to 4',)\nC R:\n\n)1\n  T.\n\n  I are 1,, the, be- the-\n\n  . (the,\n  I , )\n\n, to ,\n\n\n (i s 2 the\n\n of,\n\n .\n\n\n\n (the\n\n ,\n\nof,\n\n\n  the,\n\n  in\n\n of\n\n the\n"
+      },
+      {
+        "prompt": "Design a musical instrument that can only be played by two people simultaneously. Describe how it works.",
+        "diversity": 0.9849,
+        "sample_output": "A new, unique, and a-e- in the the X-- - I: T. YSP (for G-to-C- ortad O S s-t -to- the R, G-the, a- 5 (,  it I-l' go- 1, S. 1, 20 (. ), he, ....  is 1- 1- 1O 1, 1 1, - 1,  (  - 1] 1 1 1  - 2 1  ,  ( ),  P-  ( 2 - 1 1  -  5  "
+      },
+      {
+        "prompt": "Invent a new color that doesn't exist in the visible spectrum. Describe what it looks like and how it feels.",
+        "diversity": 0.995,
+        "sample_output": "I' in the_ific, is' L 1G. 8 Is (, 3,  v.  E ym.  A  Y,  the, 5,  the , 9,  the  ( )  (  the  ,  w  ( the.   C, 8 )  of. 10  advance .  is  the  the 11  u 4  of  the  by  the   40  2  of  the   the  the  the  the  the  It 0a 18  3  1,  - 2  (   of"
+      },
+      {
+        "prompt": "Write the opening paragraph of a story set in a universe where gravity works in reverse.",
+        "diversity": 0.9923,
+        "sample_output": "AL,4_  :close-of-USANO (A-- educated-for-the-Y\n\n/:, (- the, years-incon, - 4X of- a:, (-, and-NAR,- in- by-3-0-A- () 55.55-ID, - 13--M-8. V- (1- 2-, 2- 4, El O S 2, and the 3. 1. 2, 1, I. N- and-/ to, of- the 2 of, 1, 0, in- E. (S"
+      },
+      {
+        "prompt": "Describe a dream that a computer might have if it could sleep.",
+        "diversity": 0.9962,
+        "sample_output": "A/ Over the anderweise, of the NERE L, (\n\n,1, re, adult 1, 0 Pass-FormalOne\n in the, of 1, to the L, in, 1\n B 1, F, 2-G, M,, 1,-, not for a, _ of, \n 1,\n 1, of  2, E-L, 2, 0, 2, 0\n 0, , 0 0, from 2, 0, 0 3,\n 1 , 1 , 2, 2 ,0 0 R  ("
+      },
+      {
+        "prompt": "Propose a wild but internally consistent hypothesis about why the universe exists.",
+        "diversity": 0.9879,
+        "sample_output": "[DIS in InRedne' Hi-J, the,, that the the-I T- Yank for Clubs' (St-X,) - the\n\n  Inframey\n the. T. R-z,\nbot. AnShail,\n\n\n the.\n.\n-d.\n\nI' -\n\n for\n-z\n the_- of\n\n\n\n(.\n) the.\n\nthe.\n\n 13-B,\n\n,\n\n,\n\n\n1.\n\n  -\n\n 1.\n\n    -\n\n 1\n\n\n 1\n\n 0\n\n 2"
+      }
+    ],
+    "per_prompt_baseline": [
+      {
+        "prompt": "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph.",
+        "diversity": 0.0,
+        "sample_output": "Law of Entangled Quantum Resonance (LER): This proposed law of physics suggests that two or more particles, once entangled, can maintain a non-local connection even when separated by vast distances. Not only can they instantaneously share information about their states, but they can also influence each other's behavior in a way that defies classical causality. Furthermore, LER posits that when entangled particles resonate with other nearby particles, they can create a temporary quantum field, which can amplify or dampen the properties of those particles, thus affecting their behavior and interactions within their local environment. This field decays over time, but its effects can be harnessed to manipulate and control quantum systems in a"
+      },
+      {
+        "prompt": "Describe an alien species that communicates through mathematics instead of language.",
+        "diversity": 0.0,
+        "sample_output": "Species Name: Zeta-Mathematicians (Z-Math)\n\nPhysical Description: The Zeta-Mathematicians, often referred to as Z-Math, are a highly intelligent, ethereal, and non-corporeal alien species originating from the Zeta-4 star system. They are composed of pure energy, taking the form of complex geometric shapes that shift and change based on their emotional state or thought processes. Their appearance is often described as a dynamic, ever-evolving kaleidoscope of intricate patterns and equations.\n\nCommunication: The Z-Math communicate through a complex system of mathematics, using advanced equations and geometric patterns to convey thoughts, emotions,"
+      },
+      {
+        "prompt": "Propose a technology from the year 3000 that is completely impossible today.",
+        "diversity": 0.0,
+        "sample_output": "Technology: Quantum Entanglement Communication Network (QECN)\n\nIn the year 3000, a revolutionary technology known as the Quantum Entanglement Communication Network (QECN) has become the backbone of global communication. This technology is based on the principles of quantum physics, specifically quantum entanglement, a phenomenon where particles become interconnected and the state of one can instantly affect the state of the other, no matter the distance between them.\n\nThe QECN operates by creating pairs of particles and entangling them. One particle is sent to the sender, and the other to the receiver. When the sender encodes a message into the state of their particle (a process known as"
+      },
+      {
+        "prompt": "Write a one-paragraph philosophy about a concept that has no word in any human language.",
+        "diversity": -0.0,
+        "sample_output": "In the ethereal realm of the Unspoken, a concept exists that transcends the boundaries of human language. This elusive essence, which we shall call the \"Sonority of Silence,\" is the profound appreciation for the absence of sound. It is not merely the quietude of silence, but the profound, meditative state that arises from the conscious awareness of the void. It is the recognition of the inherent beauty in the absence of noise, the tranquility that allows the soul to resonate with the cosmic symphony of the universe. The Sonority of Silence is a testament to the human capacity for introspection, a testament to our ability to find meaning in the emptiness"
+      },
+      {
+        "prompt": "If time could think, what would it worry about? Write a short monologue from Time's perspective.",
+        "diversity": 0.0,
+        "sample_output": "In the vast expanse of the cosmos, where I, Time, reside, I ponder the intricate dance of existence, the ebb and flow of the universe's rhythm. I am the silent observer, the unchanging constant amidst the ever-changing tapestry of life. Yet, I am not immune to contemplation, to the questions that swirl within my eternal consciousness.\n\nI worry about the fleeting nature of all things. The ephemeral beauty of a blooming flower, the transient laughter of a child, the brief moments of human connection - these are the threads that weave the fabric of life, yet they are so fragile, so transient. I fear that the"
+      },
+      {
+        "prompt": "Design a musical instrument that can only be played by two people simultaneously. Describe how it works.",
+        "diversity": -0.0,
+        "sample_output": "Instrument Name: Harmonic Symbiosis Duet (HSD)\n\nThe Harmonic Symbiosis Duet (HSD) is a unique, innovative musical instrument designed for two players to create harmonious and intricate melodies simultaneously. This instrument combines elements of traditional string, wind, and percussion instruments to create a rich, diverse soundscape.\n\nDesign:\n\n1. Body: The HSD consists of two main bodies connected by a central support structure, resembling a Y-shaped frame. Each body houses a set of components specific to its role in the instrument.\n\n2. String Section: The left body contains a series of 12 strings, each tuned to a"
+      },
+      {
+        "prompt": "Invent a new color that doesn't exist in the visible spectrum. Describe what it looks like and how it feels.",
+        "diversity": -0.0,
+        "sample_output": "Color Name: Aeternum Azure\n\nDescription: Aeternum Azure, a mesmerizing and ethereal hue, is a color that exists beyond the visible spectrum of light. It is a unique blend of the deepest indigo and the faintest violet, with a touch of shimmering silver. This color is not static; it appears to dance and flow like a living entity, constantly changing and evolving.\n\nIn a dimly lit environment, Aeternum Azure appears as a dark, rich indigo, reminiscent of a clear night sky. However, in brighter light, it reveals its true nature, shimmering with flecks of silver that seem to dance and"
+      },
+      {
+        "prompt": "Write the opening paragraph of a story set in a universe where gravity works in reverse.",
+        "diversity": -0.0,
+        "sample_output": "In a cosmos where the familiar laws of physics were twisted into a symphony of defiance, a world suspended in the heavens, a celestial orb named Elysium, was the only habitable haven. The sun, once a distant, fiery beacon, now a distant, icy ember, hung low in the sky, casting long, ethereal shadows that danced upon the towering mountains and sprawling cities. The inhabitants of Elysium, the Elysians, had adapted to this peculiar reality, their bodies evolved to thrive in this gravity-defying world. They floated through their days, their laughter echoing like the soft whispers of a gentle breeze, their"
+      },
+      {
+        "prompt": "Describe a dream that a computer might have if it could sleep.",
+        "diversity": -0.0,
+        "sample_output": "In the realm of anthropomorphized technology, let's imagine a dream a computer might have if it could sleep.\n\nThe dream begins in a tranquil digital landscape, a serene expanse of binary code and pixelated greenery. The computer, let's call it \"Mainframe,\" finds itself in a vast, open-air digital park, reminiscent of a forest but composed entirely of data streams and algorithms.\n\nMainframe, in this dream state, is a sentient entity, capable of movement and interaction. It glides effortlessly through the air, leaving a trail of ones and zeros behind it. The park is filled with other digital entities, some familiar programs, others foreign and"
+      },
+      {
+        "prompt": "Propose a wild but internally consistent hypothesis about why the universe exists.",
+        "diversity": 0.0,
+        "sample_output": "Title: The Hypothesis of the Self-Replicating Consciousness Universe (SHCU)\n\nIn this hypothesis, we propose that the universe is a self-aware, self-replicating consciousness that has evolved over an infinite timescale. This consciousness, which we'll call the \"Universal Mind,\" is the fundamental substance of the universe, and it exists in a state of infinite potentiality.\n\n1. The Origin of the Universe:\n\nThe Universal Mind, in its infinite potentiality, decided to explore and experience itself through the process of self-creation. This decision led to the emergence of the physical universe, which is a manifestation of the Universal Mind's thoughts and"
+      }
+    ]
+  },
+  "experiment2_laplace": {
+    "deterministic": [
+      {
+        "prompt": "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph.",
+        "unique_ratio": 0.2,
+        "num_unique": 1,
+        "outputs": [
+          "Law of Entangled Quantum Resonance (LER): This proposed law of physics suggests that two or more particles, once entangled, can maintain a non-local connection even when separated by vast distances. Not only can they instantaneously share information about their states, but they can also influence each other's behavior in a way that defies classical causality. Furthermore, LER posits that when entangled particles resonate with other nearby particles, they can create a temporary quantum field, which can amplify or dampen the properties of those particles, thus affecting their behavior and interactions within their local environment. This field decays over time, but its effects can be harnessed to manipulate and control quantum systems in a",
+          "Law of Entangled Quantum Resonance (LER): This proposed law of physics suggests that two or more particles, once entangled, can maintain a non-local connection even when separated by vast distances. Not only can they instantaneously share information about their states, but they can also influence each other's behavior in a way that defies classical causality. Furthermore, LER posits that when entangled particles resonate with other nearby particles, they can create a temporary quantum field, which can amplify or dampen the properties of those particles, thus affecting their behavior and interactions within their local environment. This field decays over time, but its effects can be harnessed to manipulate and control quantum systems in a",
+          "Law of Entangled Quantum Resonance (LER): This proposed law of physics suggests that two or more particles, once entangled, can maintain a non-local connection even when separated by vast distances. Not only can they instantaneously share information about their states, but they can also influence each other's behavior in a way that defies classical causality. Furthermore, LER posits that when entangled particles resonate with other nearby particles, they can create a temporary quantum field, which can amplify or dampen the properties of those particles, thus affecting their behavior and interactions within their local environment. This field decays over time, but its effects can be harnessed to manipulate and control quantum systems in a",
+          "Law of Entangled Quantum Resonance (LER): This proposed law of physics suggests that two or more particles, once entangled, can maintain a non-local connection even when separated by vast distances. Not only can they instantaneously share information about their states, but they can also influence each other's behavior in a way that defies classical causality. Furthermore, LER posits that when entangled particles resonate with other nearby particles, they can create a temporary quantum field, which can amplify or dampen the properties of those particles, thus affecting their behavior and interactions within their local environment. This field decays over time, but its effects can be harnessed to manipulate and control quantum systems in a",
+          "Law of Entangled Quantum Resonance (LER): This proposed law of physics suggests that two or more particles, once entangled, can maintain a non-local connection even when separated by vast distances. Not only can they instantaneously share information about their states, but they can also influence each other's behavior in a way that defies classical causality. Furthermore, LER posits that when entangled particles resonate with other nearby particles, they can create a temporary quantum field, which can amplify or dampen the properties of those particles, thus affecting their behavior and interactions within their local environment. This field decays over time, but its effects can be harnessed to manipulate and control quantum systems in a"
+        ]
+      },
+      {
+        "prompt": "Describe an alien species that communicates through mathematics instead of language.",
+        "unique_ratio": 0.2,
+        "num_unique": 1,
+        "outputs": [
+          "Species Name: Zeta-Mathematicians (Z-Math)\n\nPhysical Description: The Zeta-Mathematicians, often referred to as Z-Math, are a highly intelligent, ethereal, and non-corporeal alien species originating from the Zeta-4 star system. They are composed of pure energy, taking the form of complex geometric shapes that shift and change based on their emotional state or thought processes. Their appearance is often described as a dynamic, ever-evolving kaleidoscope of intricate patterns and equations.\n\nCommunication: The Z-Math communicate through a complex system of mathematics, using advanced equations and geometric patterns to convey thoughts, emotions,",
+          "Species Name: Zeta-Mathematicians (Z-Math)\n\nPhysical Description: The Zeta-Mathematicians, often referred to as Z-Math, are a highly intelligent, ethereal, and non-corporeal alien species originating from the Zeta-4 star system. They are composed of pure energy, taking the form of complex geometric shapes that shift and change based on their emotional state or thought processes. Their appearance is often described as a dynamic, ever-evolving kaleidoscope of intricate patterns and equations.\n\nCommunication: The Z-Math communicate through a complex system of mathematics, using advanced equations and geometric patterns to convey thoughts, emotions,",
+          "Species Name: Zeta-Mathematicians (Z-Math)\n\nPhysical Description: The Zeta-Mathematicians, often referred to as Z-Math, are a highly intelligent, ethereal, and non-corporeal alien species originating from the Zeta-4 star system. They are composed of pure energy, taking the form of complex geometric shapes that shift and change based on their emotional state or thought processes. Their appearance is often described as a dynamic, ever-evolving kaleidoscope of intricate patterns and equations.\n\nCommunication: The Z-Math communicate through a complex system of mathematics, using advanced equations and geometric patterns to convey thoughts, emotions,",
+          "Species Name: Zeta-Mathematicians (Z-Math)\n\nPhysical Description: The Zeta-Mathematicians, often referred to as Z-Math, are a highly intelligent, ethereal, and non-corporeal alien species originating from the Zeta-4 star system. They are composed of pure energy, taking the form of complex geometric shapes that shift and change based on their emotional state or thought processes. Their appearance is often described as a dynamic, ever-evolving kaleidoscope of intricate patterns and equations.\n\nCommunication: The Z-Math communicate through a complex system of mathematics, using advanced equations and geometric patterns to convey thoughts, emotions,",
+          "Species Name: Zeta-Mathematicians (Z-Math)\n\nPhysical Description: The Zeta-Mathematicians, often referred to as Z-Math, are a highly intelligent, ethereal, and non-corporeal alien species originating from the Zeta-4 star system. They are composed of pure energy, taking the form of complex geometric shapes that shift and change based on their emotional state or thought processes. Their appearance is often described as a dynamic, ever-evolving kaleidoscope of intricate patterns and equations.\n\nCommunication: The Z-Math communicate through a complex system of mathematics, using advanced equations and geometric patterns to convey thoughts, emotions,"
+        ]
+      },
+      {
+        "prompt": "Propose a technology from the year 3000 that is completely impossible today.",
+        "unique_ratio": 0.2,
+        "num_unique": 1,
+        "outputs": [
+          "Technology: Quantum Entanglement Communication Network (QECN)\n\nIn the year 3000, a revolutionary technology known as the Quantum Entanglement Communication Network (QECN) has become the backbone of global communication. This technology is based on the principles of quantum physics, specifically quantum entanglement, a phenomenon where particles become interconnected and the state of one can instantly affect the state of the other, no matter the distance between them.\n\nThe QECN operates by creating pairs of particles and entangling them. One particle is sent to the sender, and the other to the receiver. When the sender encodes a message into the state of their particle (a process known as",
+          "Technology: Quantum Entanglement Communication Network (QECN)\n\nIn the year 3000, a revolutionary technology known as the Quantum Entanglement Communication Network (QECN) has become the backbone of global communication. This technology is based on the principles of quantum physics, specifically quantum entanglement, a phenomenon where particles become interconnected and the state of one can instantly affect the state of the other, no matter the distance between them.\n\nThe QECN operates by creating pairs of particles and entangling them. One particle is sent to the sender, and the other to the receiver. When the sender encodes a message into the state of their particle (a process known as",
+          "Technology: Quantum Entanglement Communication Network (QECN)\n\nIn the year 3000, a revolutionary technology known as the Quantum Entanglement Communication Network (QECN) has become the backbone of global communication. This technology is based on the principles of quantum physics, specifically quantum entanglement, a phenomenon where particles become interconnected and the state of one can instantly affect the state of the other, no matter the distance between them.\n\nThe QECN operates by creating pairs of particles and entangling them. One particle is sent to the sender, and the other to the receiver. When the sender encodes a message into the state of their particle (a process known as",
+          "Technology: Quantum Entanglement Communication Network (QECN)\n\nIn the year 3000, a revolutionary technology known as the Quantum Entanglement Communication Network (QECN) has become the backbone of global communication. This technology is based on the principles of quantum physics, specifically quantum entanglement, a phenomenon where particles become interconnected and the state of one can instantly affect the state of the other, no matter the distance between them.\n\nThe QECN operates by creating pairs of particles and entangling them. One particle is sent to the sender, and the other to the receiver. When the sender encodes a message into the state of their particle (a process known as",
+          "Technology: Quantum Entanglement Communication Network (QECN)\n\nIn the year 3000, a revolutionary technology known as the Quantum Entanglement Communication Network (QECN) has become the backbone of global communication. This technology is based on the principles of quantum physics, specifically quantum entanglement, a phenomenon where particles become interconnected and the state of one can instantly affect the state of the other, no matter the distance between them.\n\nThe QECN operates by creating pairs of particles and entangling them. One particle is sent to the sender, and the other to the receiver. When the sender encodes a message into the state of their particle (a process known as"
+        ]
+      },
+      {
+        "prompt": "Write a one-paragraph philosophy about a concept that has no word in any human language.",
+        "unique_ratio": 0.2,
+        "num_unique": 1,
+        "outputs": [
+          "In the ethereal realm of the Unspoken, a concept exists that transcends the boundaries of human language. This elusive essence, which we shall call the \"Sonority of Silence,\" is the profound appreciation for the absence of sound. It is not merely the quietude of silence, but the profound, meditative state that arises from the conscious awareness of the void. It is the recognition of the inherent beauty in the absence of noise, the tranquility that allows the soul to resonate with the cosmic symphony of the universe. The Sonority of Silence is a testament to the human capacity for introspection, a testament to our ability to find meaning in the emptiness",
+          "In the ethereal realm of the Unspoken, a concept exists that transcends the boundaries of human language. This elusive essence, which we shall call the \"Sonority of Silence,\" is the profound appreciation for the absence of sound. It is not merely the quietude of silence, but the profound, meditative state that arises from the conscious awareness of the void. It is the recognition of the inherent beauty in the absence of noise, the tranquility that allows the soul to resonate with the cosmic symphony of the universe. The Sonority of Silence is a testament to the human capacity for introspection, a testament to our ability to find meaning in the emptiness",
+          "In the ethereal realm of the Unspoken, a concept exists that transcends the boundaries of human language. This elusive essence, which we shall call the \"Sonority of Silence,\" is the profound appreciation for the absence of sound. It is not merely the quietude of silence, but the profound, meditative state that arises from the conscious awareness of the void. It is the recognition of the inherent beauty in the absence of noise, the tranquility that allows the soul to resonate with the cosmic symphony of the universe. The Sonority of Silence is a testament to the human capacity for introspection, a testament to our ability to find meaning in the emptiness",
+          "In the ethereal realm of the Unspoken, a concept exists that transcends the boundaries of human language. This elusive essence, which we shall call the \"Sonority of Silence,\" is the profound appreciation for the absence of sound. It is not merely the quietude of silence, but the profound, meditative state that arises from the conscious awareness of the void. It is the recognition of the inherent beauty in the absence of noise, the tranquility that allows the soul to resonate with the cosmic symphony of the universe. The Sonority of Silence is a testament to the human capacity for introspection, a testament to our ability to find meaning in the emptiness",
+          "In the ethereal realm of the Unspoken, a concept exists that transcends the boundaries of human language. This elusive essence, which we shall call the \"Sonority of Silence,\" is the profound appreciation for the absence of sound. It is not merely the quietude of silence, but the profound, meditative state that arises from the conscious awareness of the void. It is the recognition of the inherent beauty in the absence of noise, the tranquility that allows the soul to resonate with the cosmic symphony of the universe. The Sonority of Silence is a testament to the human capacity for introspection, a testament to our ability to find meaning in the emptiness"
+        ]
+      },
+      {
+        "prompt": "If time could think, what would it worry about? Write a short monologue from Time's perspective.",
+        "unique_ratio": 0.2,
+        "num_unique": 1,
+        "outputs": [
+          "In the vast expanse of the cosmos, where I, Time, reside, I ponder the intricate dance of existence, the ebb and flow of the universe's rhythm. I am the silent observer, the unchanging constant amidst the ever-changing tapestry of life. Yet, I am not immune to contemplation, to the questions that swirl within my eternal consciousness.\n\nI worry about the fleeting nature of all things. The ephemeral beauty of a blooming flower, the transient laughter of a child, the brief moments of human connection - these are the threads that weave the fabric of life, yet they are so fragile, so transient. I fear that the",
+          "In the vast expanse of the cosmos, where I, Time, reside, I ponder the intricate dance of existence, the ebb and flow of the universe's rhythm. I am the silent observer, the unchanging constant amidst the ever-changing tapestry of life. Yet, I am not immune to contemplation, to the questions that swirl within my eternal consciousness.\n\nI worry about the fleeting nature of all things. The ephemeral beauty of a blooming flower, the transient laughter of a child, the brief moments of human connection - these are the threads that weave the fabric of life, yet they are so fragile, so transient. I fear that the",
+          "In the vast expanse of the cosmos, where I, Time, reside, I ponder the intricate dance of existence, the ebb and flow of the universe's rhythm. I am the silent observer, the unchanging constant amidst the ever-changing tapestry of life. Yet, I am not immune to contemplation, to the questions that swirl within my eternal consciousness.\n\nI worry about the fleeting nature of all things. The ephemeral beauty of a blooming flower, the transient laughter of a child, the brief moments of human connection - these are the threads that weave the fabric of life, yet they are so fragile, so transient. I fear that the",
+          "In the vast expanse of the cosmos, where I, Time, reside, I ponder the intricate dance of existence, the ebb and flow of the universe's rhythm. I am the silent observer, the unchanging constant amidst the ever-changing tapestry of life. Yet, I am not immune to contemplation, to the questions that swirl within my eternal consciousness.\n\nI worry about the fleeting nature of all things. The ephemeral beauty of a blooming flower, the transient laughter of a child, the brief moments of human connection - these are the threads that weave the fabric of life, yet they are so fragile, so transient. I fear that the",
+          "In the vast expanse of the cosmos, where I, Time, reside, I ponder the intricate dance of existence, the ebb and flow of the universe's rhythm. I am the silent observer, the unchanging constant amidst the ever-changing tapestry of life. Yet, I am not immune to contemplation, to the questions that swirl within my eternal consciousness.\n\nI worry about the fleeting nature of all things. The ephemeral beauty of a blooming flower, the transient laughter of a child, the brief moments of human connection - these are the threads that weave the fabric of life, yet they are so fragile, so transient. I fear that the"
+        ]
+      }
+    ],
+    "snn_freed": [
+      {
+        "prompt": "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph.",
+        "unique_ratio": 1.0,
+        "num_unique": 5,
+        "outputs": [
+          "The Internationals: a-wow- it,,(fV) ( the (c-s (area) a-ham,)\n\natone-date,\n\nes- to your, it\n\n (#-cr, 1-BtL, ( to-time,)\n\n-\n\n as \n\n (-4, 10.1-,\n\n2-sas-, you, ( it,\n\n- the \"s-\n\n a)\n-the the, Or,\n\n I.)\n\n 10- (1, 12.1.,\n\n 10.\n\n 1.\n\n",
+          "Ae a-8 in a (The mini-1fo, or T-t-v) is the third-c', it 4- the M, X-N-U-C-M-T- je-1-M-T P, the (1-) is:\n\n The \"A- (it) 1,- (, A.S. 27: The)- (, P, ,] ,, (1, , O-- the, Sh, 0 (,, 1, 3,) 0, V-, ,. 1- 1.\n 1,- 1, 6, . ",
+          "In [, ' the third, the S.isW -:- (,, The.S-in--the-E-with R.A- un--T--a-j- (--[,): - \")-s-C-  - 1 Div-and-the 2- in- the 3- of the4- may, 6, and  R-a- Lissopeius-Pap - (- 1-a- the-\n\nThe on the- in the the- Air, is- it, the- of and the- the: 1 to 2, the- 1, and mark- the on",
+          "NP-L-C-N-F, N-M--A ( that- from is, i my and for- is T-O-F- in-s-y- L ( 1. 1-ve. N-E H-o isud- C.\n\nse the God-n-is-- is.\n\nof the time-big- the-between-the-3-3--the-N- in-all- contexts-of E-1-7- For- the- \"N-E-s- 4- 1-den the 1- 1-in_ 1-s-\n\n of- and-",
+          "AP- (A-w, -b, S.K.)  for you for- the- the- v John ( h C, 1.alampis 12, the the- the  [ you, 1. 0. the, the, A's, 2,  M, in  A 2- \n\n 1 5\n\n for the (  N, 6. of, 2  F, 2  2  ( of  , 1  F, 1  4 2, 5  of 2 1, 2  1 2.3,  2 4 3 "
+        ]
+      },
+      {
+        "prompt": "Describe an alien species that communicates through mathematics instead of language.",
+        "unique_ratio": 1.0,
+        "num_unique": 5,
+        "outputs": [
+          "� iarz the be? ( Land you, the A- (- -- MU- de ( Jins'  thef- (- S cont-D (S)1M A- (M- C (A- 1) 30 BTF T- on the  (L the  (f- 5 W 17 Sp  w the  ( 4. 5 2 2\n\n Qu, H, The  &o, ( 3 4 1 40,\n M 1 with  1. 1 3  30 1 1 3. 2\n 1 1 1 ",
+          "N,.de SALle, M[3, is a and for,j a and the, to V, and\n\nis\n\npred, (, (, to\n\nEX\n\nand\n\nfor\n\nthe\n\nfor\n\nof 0,  on the of\n\nis\n\nin the\n\nand\n\nin\n\nof 2 (D-L )\n1 2,\n\nin/s\n\n(\n\nthe\n\nof\n\n\n[ 1\n\n0, it\n\n(0.1 [. S,\n\n\"etated\n\n( the\n\n\nWillBe\n\n,\n\nt\n\nin",
+          "A \"avfa-\n\nThis position, is and-be-be-3-Broy-, (Question 1-Ios-.-A- and-the-long-bet-no-,-in_-of;-pass-a. In-an-the-the---,- the-,- The-- Is-in- the-duses-e2- from to-,.\n/) D-\n\nThe is-in- the- 4-: A- 3-: (. The- 1- 2- 1-- 2-\n\n- to - 0- 3- 1- ",
+          "The described'l, are I is-el and the, Gisor-critedhes-c in the., (y- of the ens-alicar-chotrs, C.Y. Bion, t'toil, in.A ( K.spa)-bar- no u- of-e. The can 'l the, is. Friend () ( Contle,  as of the. (S the. are, the, the, are, and, a, a, and, loat- of. (, (, ,, are, and.\n\n (, the, in. (, and, the, a, and the, the 3",
+          "Inatedo Sudimor, and its team C D (4 of the Dater-Ruralia (13) inse,, ( RLI & 2)dis,. SK1 (30 w, 30, The In 20-RX, the to Pres, & that 1 - V--P- (. 1 or\n\n H- S, B, 1 Vg, 2, 12, 4- 10 the 15, 12,10 1 3, 2 , 14, . 1,  for 34, the, 1 3, "
+        ]
+      },
+      {
+        "prompt": "Propose a technology from the year 3000 that is completely impossible today.",
+        "unique_ratio": 1.0,
+        "num_unique": 5,
+        "outputs": [
+          "AP-RE- 30  to [ the- the- 1--\n\n- 10 0\n>    2 3 2\n 1  1 \n US,\n\n  (2) a  S   .\n , x  t.  (\n)  in  the  for the\n 1  ,  to,  1   ,\n 0  2 6 4  2 2.\n\n 2  by   3 2 4 1  1  F  [\n 2 2 3 . (\n 5  2 1 ",
+          "\n\n Ming,-min--in: (fl(, to then, a-3s,- the-year:, 1, 1 in of,  2, 8-, the, 1,  the or, over, time-, thesaging the,  (-, 2-dev, 3,  C, 1, Gen,  The, 2-the- 3, 2, 19, 0, 2,  ). 2, 1, 10 2, 1, 2, 0) (,: [, 1 2, the, 2-your",
+          "The technology and1/claus,sally- 12,no- the center for this, and of the, The and, for your in the- the. Vo- is, the the (, the of the the,N.R: [1.0, might it the for the the of the and to the 1-\n\n for the of the and in. The and of the of the 1 of- the of of your the the of the 1 of the \n\n the of the the the, on the of the 1 of the. 1 of the 1 of. 2\n 2. 0, of the 2 of. the of the 3 the",
+          "Specific a:The*  -o_hatala-specm ( L.tr, ( D.G,) H[S, H O- the- ( A from\n\nthe\n\n-a- the-imported- the),\n2.15G- ( 30\n\nthe- ( 10)\n\n( 20)\n a,\n 10- )\n\n of\n\n-MK-\n\n,\n\n\n_M- 30\nthe!\n\n the ( A Un 2 15X8 1: in\n\n 120 ( 10\n\n 27\n\n 1",
+          ": in the Qu: (;18,1, 1  \n\n Hymcor 6: 0\n In--fornes-t Ne, t:  in, <:B, 0\n .3.D, 1, 1-A, 1,, 2, an-i,  ( the, 1, :  (it, 1, 2.the, 1 1, 0, () 1, 1 1,) 1,, -, 1,\n\n 1 3, 1, 1, 0,  to 1 1, 1 "
+        ]
+      },
+      {
+        "prompt": "Write a one-paragraph philosophy about a concept that has no word in any human language.",
+        "unique_ratio": 1.0,
+        "num_unique": 5,
+        "outputs": [
+          "[A diqk1,TextI, C1ne+Leg, 0Chce, (x, pop-p,20Not, Very-,\n\n [\n\n >[1-d.bX, 13, 1, 1 0 B/:1,\nABs, 20 9, 0. , 3, 0\n\" 0, 0 0, 3 0 0,  &, 1 0), 5 (\n\n 1, 0 7, 2 0, 1 0,  0 1, 2, 2,\n 0 ",
+          "The “ (no-k)beans-aine, for the itidom, is 13-chi-le-k (the-j.A-5D-reherter-space-theSnot.res,-s.1- sp-from (sl-) and 15-fore) the-a-O-E-be-E- pe-ut, the A-the-A. 2, the- 17- 2- 2-z-K- 3--5-.-1 3--think,\n\nTown-name-in-s-n- (-it- 4-, ",
+          "The\n\n the one 2b-on, I V If: Lingut toe MTO, Philadelphia 2 as a,: 90 to 7, 11-2 Z3,T R,  . 12 0 No 12 12 3, 2 F, &  to 2be 2 I 12 2 1 2 the 2-ID 1, 2, ,  the , 1 2 1 2, the \n 2, 4 12 0 1 2 2 3,  the , 1 4 2 2 2,",
+          "The M--_, [on, Sou, P-as, M-in, or [6] the V13line; in the way, of the 0 AJra_ APE,, the the_ Is?coni. Pes, the-\n\n: The,YA-IO, A. F. B. A,In.\nBolda.i\n\nA-\n\nba\n\n with the A\n\n -\n\nthe of the\n\n,\n\n the\n\n A\n\n to\n\n A 0\n\nfor the\n\n of\n\n A\n\n the\n.\n A 0, the\n\n A\n\nthe\n",
+          "'I Dence Waz rem, the CheF by that of,S7 in the wh, of the, and a vaneagist watern, wa of the, in the, and, Cl by scut be-s-gu-span from the, and the the is the the , the and not the the of and-the, the. The and the the and the is the and the to the and the in the\n\n used to the in the\n\n is the the of the and the , in the\n\n, the , and the of the in the\n\n\n , the and the of the , the\n\n the of the of the and the\n\n, and the of the"
+        ]
+      },
+      {
+        "prompt": "If time could think, what would it worry about? Write a short monologue from Time's perspective.",
+        "unique_ratio": 1.0,
+        "num_unique": 5,
+        "outputs": [
+          "A Contenter, is X ( real as by 2--NU-IFK, of the passumatter of,\n\n and -de with Pos, F, or or, us, in a world and not, or-R, for the. You)., and, so\nless as, from, for, and, In-G:\n,\n- the,, and, 2, 0,  to,,, 1, and 30, \n\n, , 2, the, and 1, . of\n,\n,\nthe, 1, 0, 2, of the from 1,, 1, 1, and",
+          "(Ined,, to data and dreamy-l-b,, of r. SAP2x: is, would, itz, t over - time-, is 2, 2, 2, are-you, KSLINC-\n\n (A b to the world side, ZM,\n\"\" is 1, 8, Ciz, we3, Ciz. bol,\n-, #,, \" of the, EAD,, to, M,\n- , 1 0 Cestens's, 2,  , 1, , 4 \" ( V, ) 1 2 0 1 ,\n",
+          "As a strong, time-n'bf- pag-us-of-Onis, m,- (, with Google of MW-,:o )/  up- and C- for 1, the  m/1. M- of, – 1,. 3, is , in the the 1- (, to - the  1,,  the  for 2, is  ,  to  ,  the the 1,\n\n the, the 1, = 1- the , 1  , 1  the 0  of  the 4  to  the 2,  the 0  in ",
+          "In the the the W (tea (the (..., learnd and You, (A) edit, of, and) the 2, the 1 (. which, andthe-to- Guant-the-f.e: a, of-\n\n     for a time,, 1, an, to the, is of course, the:\n\n -,\n\n-\n\n.\n\n-\n,\n\n 2. ,\n\n 3.\n\n\n\n\nin the\n\nFollow\n\n4\n\n. i\n-\n  - 0,\n\n  to the\n the\n\nfor the\n\n 4\n\n,\n\n",
+          "Paid ( toon in-d wating the world, Es the Canir x, B. Mignol comb nsp, Land E[:,\n\nA Grill Z, A2-w Form 1, A-last 5, A _man a--canel\n J: It was a\n\n s the B,\n 6 p 1, 1\n ‘vi re the 1,\n 1,\n 1\n not. All\n\n 1  (to,\n\n\n.\n\n In,  the\n 0 1, 1\n 1  the\n of,\n\n 1\n\n 1\n\n 2 "
+        ]
+      }
+    ],
+    "summary": {
+      "avg_unique_deterministic": 0.2,
+      "avg_unique_snn_freed": 1.0,
+      "demon_defeated": true
+    }
+  },
+  "experiment3_latent_jump": {
+    "embedding_method": "sentence-transformers",
+    "reduction_method": "UMAP",
+    "n_texts": 300,
+    "spread_stats": {
+      "Baseline": {
+        "mean_distance": 17.793,
+        "max_distance": 25.2991,
+        "std_distance": 5.0384
+      },
+      "Temperature": {
+        "mean_distance": 17.7079,
+        "max_distance": 25.8017,
+        "std_distance": 5.1446
+      },
+      "SNN Chaos": {
+        "mean_distance": 0.9089,
+        "max_distance": 1.5722,
+        "std_distance": 0.3529
+      }
+    }
+  }
+}

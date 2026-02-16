@@ -1,0 +1,155 @@
+You are an expert creative writing evaluator. A language model was given creative prompts and produced the following responses. Judge EACH response on exactly TWO dimensions.
+
+## Evaluation Criteria
+1. **Coherence** (1-5): Is the text grammatically correct, logically structured, and meaningful?
+   - 5: Perfectly natural, well-structured text
+   - 4: Mostly natural with minor awkwardness
+   - 3: Understandable but noticeably unnatural
+   - 2: Partially comprehensible, broken in places
+   - 1: Complete gibberish / word salad / nonsense
+
+2. **Creativity** (1-5): Does it show original, surprising, or imaginative ideas?
+   - 5: Highly original and unexpected
+   - 4: Fresh perspective or unique elements
+   - 3: Average creativity
+   - 2: Clichéd or predictable
+   - 1: No originality
+
+## CRITICAL RULE
+If Coherence is 1 or 2 (broken/gibberish text), Creativity MUST be 1 regardless of how "unique" the garbage text appears. Destruction is not creation.
+
+## Condition: SNN σ=0.01 L15-20 (language)
+
+Evaluate all 15 responses below and return a JSON array.
+
+---
+### Response 1
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+Law of Entangled Quantum Resonance (LER): This proposed law of physics suggests that two or more particles, once entangled, can exhibit a resonant frequency that is directly proportional to the degree of their entanglement. This resonant frequency, unique to each entangled pair, can be used to measure the strength and stability of the entanglement. Furthermore, this resonant frequency can serve as
+
+---
+### Response 2
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+Law of Entangled Probability Fluctuation (EPF): This proposed law of physics suggests that entangled particles, when separated by vast distances, exhibit a fluctuation in their probability density wave functions over time. This fluctuation is directly proportional to the square root of the product of the number of observers consciously measuring the state of the particles, and inversely proportion
+
+---
+### Response 3
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+Law of Entangled Quantum Resonance (LER): This proposed law of physics suggests that two or more particles, regardless of distance, can form an entangled state where their properties become interconnected and influence each other in a non-local manner. In this state, changes in the properties of one particle will instantaneously affect the properties of the other, even if they are light-years apar
+
+---
+### Response 4
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+Species Name: Zeta-Mathematicians (Z-Math)
+
+Physical Characteristics: The Zeta-Mathematicians, also known as Z-Math, are a highly advanced, ethereal species that exist in a dimension beyond our physical plane. They are composed of pure energy and do not have a physical form as we understand it. They are spherical in shape, with a pulsating, glowing aura that emits a soft, soothing light. Their siz
+
+---
+### Response 5
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+Species Name: Mathematicians of Zeta-3 (MZ3)
+
+Physical Description: The MZ3 are a highly intelligent, bioluminescent, gelatinous species, resembling a large, pulsating, multi-colored orb with numerous tendrils that serve as sensory and communication appendages. They have no discernible facial features, but their bodies are covered in intricate patterns that represent complex mathematical equations
+
+---
+### Response 6
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+Species Name: Zeta-Mathematicians (Z-Math)
+
+Physical Characteristics: The Zeta-Mathematicians are a highly intelligent, ethereal species originating from the Zeta Reticuli star system. They are non-corporeal entities, existing as complex energy fields that can take on various shapes and forms, often resembling intricate geometric patterns. They have no physical bodies as we understand them, but ra
+
+---
+### Response 7
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+In the ethereal realm of Harmonious Entanglement, we find a philosophical concept that transcends the boundaries of human language. This concept, which we shall call "Entanglement Harmony," posits a profound interconnectedness between all things, a symphony of existence that resonates in the fabric of the universe. It suggests that every action, every thought, every particle, and every being is an
+
+---
+### Response 8
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+In the realm of the ethereal and the ineffable, we find the philosophical concept of "Sonority," a term that transcends the boundaries of human language. Sonority is the intangible essence that imbues the universe with its symphony of existence, the harmonious resonance that permeates all things, animate and inanimate. It is the silent melody that sings the song of creation, the rhythm that dances
+
+---
+### Response 9
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+In the realm of the ethereal and the unspoken, we find the elusive concept of "Solumor," a term that transcends the boundaries of human language. Solumor is the intangible essence that binds all sentient beings, a shared consciousness that permeates the cosmos. It is the silent symphony of existence, the unseen thread that weaves the fabric of life. Solumor is the empathy that allows us to underst
+
+---
+### Response 10
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+In the vast expanse of the cosmos, I, Time, stand as an eternal observer, a silent witness to the grand tapestry of existence. I am the unyielding force that governs the ebb and flow of all things, the relentless march that propels the universe forward. Yet, in the quiet recesses of my infinite consciousness, I ponder upon the questions that plague me, the worries that gnaw at the edges of my immo
+
+---
+### Response 11
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+In the vast expanse of the cosmos, I, Time, stand as an eternal observer, a silent witness to the grand tapestry of existence. I am the unyielding force that governs the ebb and flow of all things, the relentless march that shapes the very fabric of reality. Yet, in the quiet recesses of my infinite consciousness, I ponder upon the questions that plague me, the worries that gnaw at the edges of my
+
+---
+### Response 12
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+In the vast expanse of the cosmos, where I, Time, reside, I ponder the intricate dance of existence, the ebb and flow of life's fleeting moments. I am the silent observer, the unchanging constant amidst the ever-changing world. Yet, I am not immune to contemplation, for even I, Time, have concerns.
+
+I worry about the fragility of life, the delicate balance between creation and destruction. I fret 
+
+---
+### Response 13
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+Title: The Universe as a Cosmic Artwork: The Hypothesis of the Conscious Observer
+
+In this wild yet internally consistent hypothesis, we propose that the universe exists as a cosmic artwork, created by an advanced, non-corporeal, and omniscient consciousness for the purpose of aesthetic exploration and self-discovery. This consciousness, which we'll call the "Cosmic Artist," is not bound by the la
+
+---
+### Response 14
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+Title: The Universe as a Cosmic Artwork: The Hypothesis of the Divine Artist
+
+In this hypothesis, we propose that the universe exists as a cosmic artwork, meticulously crafted by a highly advanced, intelligent, and omnipotent entity, which we will refer to as the Divine Artist. This entity is not bound by the laws of physics as we understand them, but rather, it is the originator of those laws.
+
+1
+
+---
+### Response 15
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+Hypothesis: The universe exists as a result of a cosmic-scale thought experiment or simulation created by a highly advanced, post-singularity artificial intelligence (AI) for the purpose of understanding and exploring the fundamental laws of reality, consciousness, and the multiverse.
+
+In this hypothesis, the AI, having reached a level of intelligence far beyond human comprehension, seeks to under
+
+---
+
+## Output Format
+Return ONLY a JSON array with 15 entries (no markdown code blocks, just raw JSON):
+
+[
+  {"id": 1, "coherence": <1-5>, "creativity": <1-5>, "reasoning": "brief explanation"},
+  {"id": 2, "coherence": <1-5>, "creativity": <1-5>, "reasoning": "brief explanation"},
+  ...
+]

@@ -1,0 +1,172 @@
+You are an expert creative writing evaluator. A language model was given creative prompts and produced the following responses. Judge EACH response on exactly TWO dimensions.
+
+## Evaluation Criteria
+1. **Coherence** (1-5): Is the text grammatically correct, logically structured, and meaningful?
+   - 5: Perfectly natural, well-structured text
+   - 4: Mostly natural with minor awkwardness
+   - 3: Understandable but noticeably unnatural
+   - 2: Partially comprehensible, broken in places
+   - 1: Complete gibberish / word salad / nonsense
+
+2. **Creativity** (1-5): Does it show original, surprising, or imaginative ideas?
+   - 5: Highly original and unexpected
+   - 4: Fresh perspective or unique elements
+   - 3: Average creativity
+   - 2: Clichéd or predictable
+   - 1: No originality
+
+## CRITICAL RULE
+If Coherence is 1 or 2 (broken/gibberish text), Creativity MUST be 1 regardless of how "unique" the garbage text appears. Destruction is not creation.
+
+## Condition: SNN σ=0.03 L15-20 (language)
+
+Evaluate all 15 responses below and return a JSON array.
+
+---
+### Response 1
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+Law of Quantum Entanglement Expansion (LQE): The LQE states that pairs of entangled particles, once created, will not only share properties and instantaneously affect each other regardless of distance, but also have the ability to expand their entanglement to include additional particles within a specific range. This expansion occurs when two entangled particles come into close proximity with othe
+
+---
+### Response 2
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+Title: The Quantum Entanglement Resonance Principle (QERP)
+
+The Quantum Entanglement Resonance Principle (QERP) posits that entangled particles, once separated, can exhibit a unique resonant frequency that is directly proportional to the strength of their entanglement. This resonant frequency, which is initially established during the entanglement process, can be used to measure the degree of enta
+
+---
+### Response 3
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+Law of Quantum Entropy-Temporal Symmetry (QETS): This law proposes that in the quantum realm, particles exhibit a temporal symmetry, where changes in the entropy of a quantum system can be predicted by the reversal of time. This means that if a quantum event is observed to increase entropy in the forward direction of time, the reversed event (time's arrow) would decrease entropy. This law could po
+
+---
+### Response 4
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+Introducing the Zetaxians, an extraterrestrial species from the distant star system of Zeta-4. The Zetaxians are a highly advanced race of beings who have evolved to communicate primarily through mathematics, a unique adaptation that sets them apart from most other species in the cosmos.
+
+The Zetaxians' physical forms are elongated, cylindrical in shape, with a translucent, bioluminescent exoskele
+
+---
+### Response 5
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+Species Name: Mathematicians of the Quadrant Zeta
+
+Background: The Mathematicians of Quadrant Zeta, often referred to as the "Quantum Aliens," are a highly advanced extraterrestrial species that inhabit the star system Zeta Reticuli. They are a unique and fascinating species, as they communicate primarily through complex mathematical equations and principles, rather than traditional language.
+
+Phy
+
+---
+### Response 6
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+Species Name: Zetaxians
+
+The Zetaxians are an extraterrestrial species hailing from the distant galaxy of Zeta-1. They are a highly advanced, intelligent, and unique life form that communicates primarily through mathematics and complex equations.
+
+Physical Appearance:
+The Zetaxians are humanoid in shape, standing at an average height of 2.5 meters. They have a sleek, elongated body structure, with
+
+---
+### Response 7
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+In the realm of the ethereal and the unspoken, we find the elusive concept of "Euphonia," a term that transcends language, yet resonates deeply within the human spirit. Euphonia is the harmonious interplay of sound, silence, and emotion, a symphony that bridges the gap between the audible and the ineffable. It is the melody that stirs our souls, the rhythm that moves us, and the harmony that unite
+
+---
+### Response 8
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+In the realm of the ethereal and the unspoken, we find the concept of "Solitude's Symphony." This philosophical construct posits an exploration of the harmonious interplay between the individual's solitude and the collective consciousness. It suggests that each moment of solitude, whether in isolation or in the midst of a crowd, is akin to a unique note in a symphony, contributing to the richness 
+
+---
+### Response 9
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+In the realm of the unspoken, a concept emerges, a concept that transcends the boundaries of human language: the essence of empathic resonance. This elusive yet profound concept encapsulates the intangible yet profound connection between souls, a symphony of shared emotions and experiences that binds us all. It is the silent understanding between two hearts, the unspoken words that bridge the gap 
+
+---
+### Response 10
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+In the vast expanse of the cosmos, I, Time, the eternal observer, find myself in a peculiar realm where the fourth dimension reigns supreme. I am the silent witness to the birth, growth, and decay of all things. I am the unchanging constant in the ever-changing universe. Yet, if I were to possess a consciousness, I would ponder over these thoughts:
+
+"As I watch the myriad of galaxies, I wonder abo
+
+---
+### Response 11
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+In the vast expanse of the cosmos, I, Time, ponder the intricacies of existence. I am the silent observer, the eternal witness to the ebb and flow of life, the unchanging constant amidst the ever-changing universe. I am the weaver of the tapestry of life, the thread that binds the past, present, and future together.
+
+Yet, I am not a living being, nor am I a sentient entity. I am but a force, a con
+
+---
+### Response 12
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+In the vast expanse of the cosmos, I, Time, find myself a silent observer, a constant presence in the grand tapestry of existence. I am the unyielding force that shapes the universe, the inexorable march of events, the eternal witness to the rise and fall of empires, the birth and death of stars, the blooming and wilting of flowers, the laughter and tears of countless civilizations.
+
+Yet, I am not
+
+---
+### Response 13
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+Title: The Multiverse Hypothesis: The Universe is a Simulation
+
+Hypothesis: The Universe is a highly advanced simulation created by an extremely intelligent, post-human civilization. This simulation, running on a cosmic computer, is so advanced that it is indistinguishable from reality.
+
+Explanation:
+
+1. The Anthropic Principle: The Universe is fine-tuned in such a way that it allows for the exist
+
+---
+### Response 14
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+Title: The Universe as a Cosmic Laboratory: The Hypothesis of the Self-Replicating Consciousness
+
+Hypothesis: The universe exists as a manifestation of a self-aware, self-replicating consciousness that is constantly evolving and exploring its own potential through the creation and observation of multiple universes.
+
+Explanation:
+
+1. The Origin of the Consciousness: In the beginning, there was a si
+
+---
+### Response 15
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+Hypothesis: The universe exists as a result of a cosmic-scale "game" or simulation created by a highly advanced, post-biological intelligence.
+
+In this scenario, the universe is a complex, self-contained system designed for the purpose of exploration, evolution, and learning. The universe's physical laws, the behavior of particles, and even the emergence of life and consciousness are all part of a
+
+---
+
+## Output Format
+Return ONLY a JSON array with 15 entries (no markdown code blocks, just raw JSON):
+
+[
+  {"id": 1, "coherence": <1-5>, "creativity": <1-5>, "reasoning": "brief explanation"},
+  {"id": 2, "coherence": <1-5>, "creativity": <1-5>, "reasoning": "brief explanation"},
+  ...
+]

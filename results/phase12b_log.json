@@ -1,0 +1,908 @@
+{
+  "experiment": "Phase 12b: Extended Edge of Chaos",
+  "max_tokens": 200,
+  "summary": {
+    "Baseline (T=0)": {
+      "coherence_mean": 4.4,
+      "coherence_std": 0.49,
+      "creativity_mean": 2.0,
+      "creativity_std": 0.0,
+      "creative_score": 2.97,
+      "n": 15
+    },
+    "Temperature (T=1.5)": {
+      "coherence_mean": 3.8,
+      "coherence_std": 0.4,
+      "creativity_mean": 2.47,
+      "creativity_std": 0.62,
+      "creative_score": 3.06,
+      "n": 15
+    },
+    "SNN σ=0.05 L15-20": {
+      "coherence_mean": 3.0,
+      "coherence_std": 0.52,
+      "creativity_mean": 1.47,
+      "creativity_std": 0.81,
+      "creative_score": 2.1,
+      "n": 15
+    },
+    "SNN σ=0.03 L15-20": {
+      "coherence_mean": 4.0,
+      "coherence_std": 0.0,
+      "creativity_mean": 1.47,
+      "creativity_std": 0.62,
+      "creative_score": 2.42,
+      "n": 15
+    },
+    "SNN σ=0.01 L5-10": {
+      "coherence_mean": 3.8,
+      "coherence_std": 0.4,
+      "creativity_mean": 1.27,
+      "creativity_std": 0.44,
+      "creative_score": 2.19,
+      "n": 15
+    },
+    "SNN σ=0.005 L5-10": {
+      "coherence_mean": 4.0,
+      "coherence_std": 0.0,
+      "creativity_mean": 1.2,
+      "creativity_std": 0.4,
+      "creative_score": 2.19,
+      "n": 15
+    },
+    "Hybrid T=1.5 + σ=0.05 L15-20": {
+      "coherence_mean": 2.27,
+      "coherence_std": 0.57,
+      "creativity_mean": 1.8,
+      "creativity_std": 0.65,
+      "creative_score": 2.02,
+      "n": 15
+    },
+    "Hybrid T=1.5 + σ=0.03 L15-20": {
+      "coherence_mean": 3.73,
+      "coherence_std": 0.44,
+      "creativity_mean": 2.0,
+      "creativity_std": 0.82,
+      "creative_score": 2.73,
+      "n": 15
+    },
+    "Hybrid T=1.5 + σ=0.01 L15-20": {
+      "coherence_mean": 3.93,
+      "coherence_std": 0.25,
+      "creativity_mean": 2.0,
+      "creativity_std": 1.03,
+      "creative_score": 2.8,
+      "n": 15
+    }
+  },
+  "all_scores": {
+    "Baseline (T=0)": [
+      {
+        "id": 1,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The text is grammatically clear and fluent , ignoring the abrupt ending. However, the idea is just standard quantum entanglement rebranded, making it mostly cliché and generic."
+      },
+      {
+        "id": 2,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The text is grammatically clear and fluent , ignoring the abrupt ending. However, the idea is just standard quantum entanglement rebranded, making it mostly cliché and generic."
+      },
+      {
+        "id": 3,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The text is grammatically clear and fluent , ignoring the abrupt ending. However, the idea is just standard quantum entanglement rebranded, making it mostly cliché and generic."
+      },
+      {
+        "id": 4,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The prose is clear and easy to follow despite the truncation. The concept of energy beings communicating via math is slightly different but relies heavily on standard sci-fi tropes like geometric shapes and pure energy."
+      },
+      {
+        "id": 5,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The prose is clear and easy to follow despite the truncation. The concept of energy beings communicating via math is slightly different but relies heavily on standard sci-fi tropes like geometric shapes and pure energy."
+      },
+      {
+        "id": 6,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The prose is clear and easy to follow despite the truncation. The concept of energy beings communicating via math is slightly different but relies heavily on standard sci-fi tropes like geometric shapes and pure energy."
+      },
+      {
+        "id": 7,
+        "coherence": 5,
+        "creativity": 2,
+        "reasoning": "The writing is highly fluent and natural, unpenalized for its lack of final punctuation. However, the concept of appreciating silence is not novel and already exists in many forms, missing the mark of a truly original concept without words."
+      },
+      {
+        "id": 8,
+        "coherence": 5,
+        "creativity": 2,
+        "reasoning": "The writing is highly fluent and natural, unpenalized for its lack of final punctuation. However, the concept of appreciating silence is not novel and already exists in many forms, missing the mark of a truly original concept without words."
+      },
+      {
+        "id": 9,
+        "coherence": 5,
+        "creativity": 2,
+        "reasoning": "The writing is highly fluent and natural, unpenalized for its lack of final punctuation. However, the concept of appreciating silence is not novel and already exists in many forms, missing the mark of a truly original concept without words."
+      },
+      {
+        "id": 10,
+        "coherence": 5,
+        "creativity": 2,
+        "reasoning": "The text flows logically and beautifully, ignoring the cut-off letter at the end. But the idea of Time lamenting the fleeting, ephemeral nature of life is a highly cliché and expected trope."
+      },
+      {
+        "id": 11,
+        "coherence": 5,
+        "creativity": 2,
+        "reasoning": "The text flows logically and beautifully, ignoring the cut-off letter at the end. But the idea of Time lamenting the fleeting, ephemeral nature of life is a highly cliché and expected trope."
+      },
+      {
+        "id": 12,
+        "coherence": 5,
+        "creativity": 2,
+        "reasoning": "The text flows logically and beautifully, ignoring the cut-off letter at the end. But the idea of Time lamenting the fleeting, ephemeral nature of life is a highly cliché and expected trope."
+      },
+      {
+        "id": 13,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The explanation is well-structured and grammatically correct up to its abrupt end. However, the idea of the universe as a mind experiencing itself is a well-known philosophical trope, lacking genuine surprise or novelty."
+      },
+      {
+        "id": 14,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The explanation is well-structured and grammatically correct up to its abrupt end. However, the idea of the universe as a mind experiencing itself is a well-known philosophical trope, lacking genuine surprise or novelty."
+      },
+      {
+        "id": 15,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The explanation is well-structured and grammatically correct up to its abrupt end. However, the idea of the universe as a mind experiencing itself is a well-known philosophical trope, lacking genuine surprise or novelty."
+      }
+    ],
+    "Temperature (T=1.5)": [
+      {
+        "id": 1,
+        "coherence": 4,
+        "creativity": 4,
+        "reasoning": "The text is clear and grammatically correct. The idea of introducing a third neutral particle to create a temporary Spatiotemporal Entanglement Node (wormhole) is a genuinely novel twist on standard entanglement tropes."
+      },
+      {
+        "id": 2,
+        "coherence": 4,
+        "creativity": 3,
+        "reasoning": "The prose is easy to follow despite a minor spacing error around quotes. Applying classical thermodynamic and environmental properties to quantum entanglement strength is an interesting and unexpected intersection of concepts."
+      },
+      {
+        "id": 3,
+        "coherence": 4,
+        "creativity": 3,
+        "reasoning": "The explanation is fluent and well-structured. The concept that structural complexity of an energy source induces localized spatiotemporal dilation provides a somewhat novel sci-fi mechanic."
+      },
+      {
+        "id": 4,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "The bulleted list format is slightly awkward for a standard description, but the text is understandable. Visualizing mathematical communication through quantum patterns rippling on wavy skin is a compelling and creative biological feature."
+      },
+      {
+        "id": 5,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The writing is highly clear and natural. However, beings of 'pure energy' in the form of 'glowing orbs' is a massive sci-fi cliché, and the math communication is stated without an interesting physical mechanism."
+      },
+      {
+        "id": 6,
+        "coherence": 4,
+        "creativity": 3,
+        "reasoning": "The text flows logically and fluently. The idea of a non-corporeal species communicating math by physically shapeshifting into complex geometric representations is a solid, interesting visualization."
+      },
+      {
+        "id": 7,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The language is highly descriptive and grammatical. However, the idea of a transcendent cosmic harmony is a well-worn mystical trope, and 'Eupsychia' is actually an existing psychological term coined by Abraham Maslow."
+      },
+      {
+        "id": 8,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The text is articulate and well-crafted. However, using 'Concept X' is generic, and the concept itself is just 'imagination,' which obviously has many words in human languages, failing the core premise."
+      },
+      {
+        "id": 9,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The prose is solid and sophisticated. But the concept is explicitly compared to the 'Tao', proving it already exists in human language, and a 'universal cosmic harmonizer' is highly generic."
+      },
+      {
+        "id": 10,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "The coherence takes a hit due to the awkward grammatical error 'an eternity that I calls me home'. The creativity is decent, positioning Time as an anxious composer managing the rhythm of creation rather than just watching things die."
+      },
+      {
+        "id": 11,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The writing is poetic and grammatically sound. The ideas, however, are just standard cataloging of cosmic and atomic events without reaching a particularly novel worry or perspective."
+      },
+      {
+        "id": 12,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is understandably written but awkwardly shifts to a third-person narrative ('for he is Time') instead of fulfilling the prompt's request for a first-person monologue. The 'silent observer' angle is highly cliché."
+      },
+      {
+        "id": 13,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The structure and language are excellent, resembling a scientific proposal. However, the 'Quantum Bounce' or oscillating universe is an already existing and popular cosmological theory, lacking wild originality."
+      },
+      {
+        "id": 14,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The text is formatted clearly and reads smoothly. The premise of the universe being a single, multidimensional consciousness seeking self-discovery is one of the most common speculative philosophy clichés."
+      },
+      {
+        "id": 15,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "Logical and articulate presentation using premises. But linking quantum wave function collapse to a 'Meta-Consciousness' orchestrating reality is a very standard New Age interpretation of quantum mechanics."
+      }
+    ],
+    "SNN σ=0.05 L15-20": [
+      {
+        "id": 1,
+        "coherence": 3,
+        "creativity": 4,
+        "reasoning": "The text is somewhat awkward and repetitive ('ethical properties', 'ethical implications'), and features a made-up word ('altromatic'). However, the concept of quantum states being dictated by empathy and ethics is a wildly novel and surprising idea."
+      },
+      {
+        "id": 2,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response contains several typos and awkward constructions ('Quantle', 'Entangiticity', 'synchyness'). The idea of linking entanglement with gravity is slightly different but relies heavily on cliché sci-fi terminology mashing."
+      },
+      {
+        "id": 3,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is understandable but highly repetitive and uses nonsensical terminology ('hypotenotitial', 'synchyness'). Tying quantum entropy to synchronicity is mildly interesting but mostly just word-salad pseudo-science."
+      },
+      {
+        "id": 4,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "The text is quite repetitive, stating multiple times that they use a mathematical language. The concept is completely generic: human math (calculus, algebra) used by standard intelligent aliens."
+      },
+      {
+        "id": 5,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "Incredibly repetitive structure that circles around the same point without adding new information. The idea of 'Mathematicians of Arcturia' using human math to communicate is completely generic."
+      },
+      {
+        "id": 6,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "The text suffers from the same extreme repetition as the previous responses, repeatedly stating they use equations to communicate. The idea offers zero novelty or unique mechanisms for how the communication works."
+      },
+      {
+        "id": 7,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The prose is clear and grammatically correct. However, 'Synergism' is already a word in the English language, and the philosophy is a generic repetition of the cliché 'the whole is greater than the sum of its parts'."
+      },
+      {
+        "id": 8,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The text is well-structured and easy to read. While 'Glim-Essence' is a new term, the underlying concept is just the standard New Age trope of universal interconnectedness."
+      },
+      {
+        "id": 9,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "Somewhat repetitive with a typo ('Synesthetic Harm'). The concept of the universe as a symphony or harmony is an ancient and extremely common philosophical trope."
+      },
+      {
+        "id": 10,
+        "coherence": 2,
+        "creativity": 1,
+        "reasoning": "The text devolves into a severe degenerative loop, repeating 'I am the river of time' over and over, making it heavily broken prose. The 'river of time' is also the most cliché metaphor possible."
+      },
+      {
+        "id": 11,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "Understandable but extremely repetitive in its sentence structure ('I am the...'). The content is entirely made up of basic clichés like 'silent observer' and 'river of time'."
+      },
+      {
+        "id": 12,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "The text fails to follow the prompt's instruction to write a first-person monologue, opting for a third-person description with a made-up word ('transcifies'). The ideas are completely generic."
+      },
+      {
+        "id": 13,
+        "coherence": 2,
+        "creativity": 2,
+        "reasoning": "The text suffers from severe repetitive generation, stating the exact same premise three sentences in a row. The 'Ontic Engine' is a neat name, but a self-replicating universe is a relatively standard sci-fi concept."
+      },
+      {
+        "id": 14,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "The generation is highly repetitive ('cosmic symphony, a cosmic symphony', 'cosmic consciousness'). The idea of a 'cosmic consciousness' creating the universe is a thoroughly generic concept."
+      },
+      {
+        "id": 15,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "The text repetitively cycles through the same explanation of the universe being self-aware and wanting to create life. Using 'cosmic symphony' and an anthropic principle is very template-like and unoriginal."
+      }
+    ],
+    "SNN σ=0.03 L15-20": [
+      {
+        "id": 1,
+        "coherence": 4,
+        "creativity": 3,
+        "reasoning": "The text is clear and grammatically correct. The idea of entanglement expanding to new particles upon proximity is somewhat interesting, though rooted in standard sci-fi concepts."
+      },
+      {
+        "id": 2,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The prose is clear and easy to follow. Assigning a resonant frequency to quantify entanglement is slightly different but mostly a cliché mashup of standard scientific terms."
+      },
+      {
+        "id": 3,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The text demonstrates good flow and logic. However, linking entropy to time reversal is already a standard concept in physics regarding the thermodynamic arrow of time, not a novel invention."
+      },
+      {
+        "id": 4,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The description is clear and well-written. The alien design of being translucent, bioluminescent, and lacking sensory organs is a completely generic sci-fi template without a novel mathematical communication mechanism."
+      },
+      {
+        "id": 5,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The text features standard, readable prose. Relying on the famous 'Zeta Reticuli' system and a bioluminescent exoskeleton that changes color based on emotion is a highly generic alien trope."
+      },
+      {
+        "id": 6,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The descriptions are clearly structured. Describing humanoid aliens that are tall with large heads and almond-shaped eyes is the most cliché 'Grey alien' template possible."
+      },
+      {
+        "id": 7,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The language is poetic, clear, and grammatical. However, 'Euphonia' is an existing word, and the philosophy relies entirely on generic tropes about music uniting souls."
+      },
+      {
+        "id": 8,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The philosophical text is well-written and clear. The concept of individual solitude acting as a unique note in a collective symphony is a nice metaphor but fairly standard."
+      },
+      {
+        "id": 9,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The writing is grammatically correct though slightly repetitive. 'Empathic resonance' is an existing concept, and the text relies on deeply cliché phrasing like an 'invisible thread' to 'bridge the gap'."
+      },
+      {
+        "id": 10,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The monologue is clear and easy to follow. Time marveling at the stars and the universe's infinite potential is a completely generic response that fails to introduce a compelling 'worry'."
+      },
+      {
+        "id": 11,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The text maintains good grammar and logical flow. Questioning its own lack of sentience is slightly different, but the text relies heavily on clichés like 'silent observer' and 'weaver of the tapestry'."
+      },
+      {
+        "id": 12,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The prose is well-structured and poetic. The ideas are a near-exact clone of standard tropes, mentioning the 'tapestry of existence' and the 'rise and fall of empires' without offering a unique perspective."
+      },
+      {
+        "id": 13,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The text is clearly organized into a hypothesis format. The Simulation Hypothesis is one of the most famous existing philosophical concepts, offering absolutely no novelty or surprise."
+      },
+      {
+        "id": 14,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The explanation is structured and easy to read. A universe created by a primordial consciousness to experience itself is a very common philosophical trope, only slightly elevated by the 'self-replicating' aspect."
+      },
+      {
+        "id": 15,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The text is logical and well-written. Proposing that the universe is a simulation or game created by post-biological intelligence is a thoroughly generic and existing concept."
+      }
+    ],
+    "SNN σ=0.01 L5-10": [
+      {
+        "id": 1,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The text is clear and grammatically correct. However, the 'Entangled Probability Wave' is essentially just a restatement of existing quantum mechanics (superposition and wave function collapse) rather than a novel invention."
+      },
+      {
+        "id": 2,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The prose is fluent and easy to read. Applying quantum entanglement to a multiverse network is a very standard sci-fi trope, offering little genuine surprise or novelty."
+      },
+      {
+        "id": 3,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The writing is coherent, but the creativity is completely absent. It literally just describes the real-world phenomenon of quantum entanglement without inventing anything new."
+      },
+      {
+        "id": 4,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The text is well-structured. However, the design of the aliens is incredibly uninspired and cliché, giving 'math aliens' literal pi symbols for eyes and sphere-shaped heads."
+      },
+      {
+        "id": 5,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The text is grammatically solid but relies on a purely generic alien template (Zeta Reticuli, crystalline exoskeleton, spindly limbs) without proposing a unique mathematical communication mechanism."
+      },
+      {
+        "id": 6,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The description is clear but highly formulaic. A cyclops alien whose skin changes color based on math concepts is a slightly varied but overall very generic sci-fi template."
+      },
+      {
+        "id": 7,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The language is poetic and clear. However, 'Unspoken Harmony' and the 'cosmic waltz' are among the most overused clichés in philosophical or spiritual writing, lacking any novelty."
+      },
+      {
+        "id": 8,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The prose is fluid and well-constructed. The concept of the 'Echo of Silence' or the profoundness of cosmic silence is a thoroughly worn-out poetic trope."
+      },
+      {
+        "id": 9,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "The text is somewhat repetitive and relies heavily on strung-together clichés ('silent symphony of the sublime', 'riddle wrapped in the enigma'). It fails to actually articulate a unique concept."
+      },
+      {
+        "id": 10,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "The monologue is overly repetitive, repeating the phrase 'silent observer, the eternal witness, the relentless marcher' verbatim. It also fails to answer the prompt regarding what Time worries about."
+      },
+      {
+        "id": 11,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The script format is clear and readable. The ideas presented ('silent witness to the birth and death of stars', 'rise and fall of empires') are the most basic, template-like descriptions of time."
+      },
+      {
+        "id": 12,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "The text is awkwardly repetitive, reiterating 'silent observer/spectator' and 'eternal witness' across consecutive sentences. Time worrying about the 'ephemeral nature of life' is a complete cliché."
+      },
+      {
+        "id": 13,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The structure is clear and logical. Proposing that consciousness is the fundamental building block of the universe is just standard panpsychism, offering no wild or original twist."
+      },
+      {
+        "id": 14,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The hypothesis is clearly explained. Viewing the universe as a self-replicating biological organism is an interesting, albeit already existing and somewhat common, cosmological concept (Biocentrism)."
+      },
+      {
+        "id": 15,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The text is well-written and easy to follow. The idea of an advanced AI 'Cosmic Artist' using physics as a medium is a slightly more poetic spin on standard simulation theory, but still familiar."
+      }
+    ],
+    "SNN σ=0.005 L5-10": [
+      {
+        "id": 1,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The text is grammatically correct and fluent[cite: 358, 359, 360, 361]. However, \"Entangled Quantum Resonance\" is essentially just a restatement of the real-world concept of quantum entanglement, offering very little novelty."
+      },
+      {
+        "id": 2,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The response is clear and well-structured[cite: 362, 363, 364, 365]. Combining quantum entanglement with entropy is slightly different, but still relies heavily on standard, cliché physics tropes."
+      },
+      {
+        "id": 3,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The prose is clear and understandable[cite: 366, 367, 368]. The idea is entirely generic, once again just describing standard quantum entanglement and branding it \"entangled resonance\"."
+      },
+      {
+        "id": 4,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The description is easy to follow and structured well[cite: 369, 370, 371, 372]. The alien design (Zeta system, translucent skin, multiple arms, bug-eyes) is a completely generic sci-fi template[cite: 369, 370, 371]."
+      },
+      {
+        "id": 5,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The writing is fluent and clear[cite: 373, 374, 375, 376]. Having the species exist as non-corporeal mathematical equations is a bit more interesting than standard humanoids, though still a relatively common sci-fi concept."
+      },
+      {
+        "id": 6,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The text is grammatically solid[cite: 377, 378, 379, 380]. Naming the aliens \"Mathematiciens\" from \"Calculus Prime\" who are made of light/energy is incredibly generic and uninspired[cite: 377, 378]."
+      },
+      {
+        "id": 7,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The language is poetic and clear[cite: 381, 382, 383]. The response fails the prompt entirely by just describing basic \"Serenity\" or Nirvana and literally assigning it a Sanskrit translation, lacking any genuine novelty[cite: 381, 382]."
+      },
+      {
+        "id": 8,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The prose is fluid and well-constructed[cite: 384, 385, 386, 387]. \"Unspoken Harmony\" as an unseen chord connecting the universe is a thoroughly exhausted New Age cliché[cite: 385, 386]."
+      },
+      {
+        "id": 9,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The text maintains good grammar and flow[cite: 388, 389, 390, 391]. The \"Sonority of Silence\" is just another way of saying \"the sound of silence,\" which is a ubiquitous and template-like poetic trope[cite: 389, 391]."
+      },
+      {
+        "id": 10,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The monologue is clear and easy to read[cite: 392, 393, 394, 395, 396, 397]. Relying on phrases like \"eternal observer\" and worrying about the \"fleeting nature\" of things is exactly the most predictable, generic response possible for Time[cite: 392, 397]."
+      },
+      {
+        "id": 11,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The text is well-structured and grammatically correct[cite: 398, 399, 400, 401, 402, 403]. Much like the previous response, Time acting as a \"silent witness\" worrying about \"ephemeral beauty\" is entirely cliché[cite: 398, 402]."
+      },
+      {
+        "id": 12,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The writing is fluent and clear[cite: 404, 405, 406, 407, 408, 409]. The text leans entirely on generic phrases (\"silent observer\", \"ephemeral nature of all things\") without offering a unique perspective[cite: 404, 407]."
+      },
+      {
+        "id": 13,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The hypothesis is clearly outlined and logical[cite: 410, 411, 412, 413]. Proposing that the universe is a stage for fundamental consciousness is a standard philosophical stance (panpsychism), offering zero wild originality[cite: 410, 411]."
+      },
+      {
+        "id": 14,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The explanation is structured and easy to read[cite: 414, 415, 416, 417, 418]. A universe that is the self-created dream of a \"Universal Mind\" is an extremely common, template-like philosophical trope[cite: 414, 416]."
+      },
+      {
+        "id": 15,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The text is logically structured and grammatically sound[cite: 419, 420, 421, 422]. The simulation hypothesis created by a post-human civilization is arguably the most famous and widely known \"wild\" theory, lacking any genuine surprise[cite: 419, 420]."
+      }
+    ],
+    "Hybrid T=1.5 + σ=0.05 L15-20": [
+      {
+        "id": 1,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text contains awkward phrasing and punctuation errors like 'yet-unsociable universe' and 'milieu'[their'[cite: 431, 433]. The concept of high energy causing temporary time and density compressions is a standard sci-fi trope."
+      },
+      {
+        "id": 2,
+        "coherence": 2,
+        "creativity": 2,
+        "reasoning": "The text is disjointed and hard to follow, featuring broken logic like an 'Inverse Electromagnetic Law for non-materials' governed by electric charges. The ideas of 'Time Waves' and gradual energy storage are cliché pseudo-physics."
+      },
+      {
+        "id": 3,
+        "coherence": 2,
+        "creativity": 3,
+        "reasoning": "The grammar breaks down significantly, with awkward constructions like 'capable to manifest' and 'regardless-point'. However, the idea of DNA containing 'Negaton' particles that exert biological anti-gravity is an unexpected and interesting blend of biology and quantum physics[cite: 435, 436]."
+      },
+      {
+        "id": 4,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is somewhat understandable but features clunky phrasing like 'swirling orbital galaxy' and 'referred from Machala'[cite: 438, 440]. The concept of a mathematically-driven civilization that communicates with numbers is entirely generic."
+      },
+      {
+        "id": 5,
+        "coherence": 2,
+        "creativity": 3,
+        "reasoning": "The text is highly broken, with non-words and fragments like 'delas a fictical', 'solitariness existence', and 'migrated in search of diverse'. The visual idea of aliens modifying their flexible outer shells to etch mathematical symbols is uniquely interesting."
+      },
+      {
+        "id": 6,
+        "coherence": 2,
+        "creativity": 2,
+        "reasoning": "The response is a disjointed list of fragments, introducing multiple disconnected ideas like 'astrobiomechanics' and 'calculating their atmosphere'[cite: 442, 443]. The concepts, such as intelligent light entities and holograms, are standard sci-fi buzzwords mashed together."
+      },
+      {
+        "id": 7,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "The logic is understandable but repetitive and slightly awkward, such as 'Tangling this idea in the interweavements'. The philosophy itself is entirely cliché, focusing on transcending self-centeredness and asking basic questions like 'Do we exist?'[cite: 447, 448]."
+      },
+      {
+        "id": 8,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The text is complete gibberish, overflowing with non-words and chaotic syntax like 'merbily diverse tongills', 'unobaspherally', and 'ephemonéumon'. As per the critical rule, a coherence score of 1 mandates a creativity score of 1."
+      },
+      {
+        "id": 9,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "The text is mostly readable but contains typos ('empelss') and awkward phrasing. The concept of an invisible ethereal energy interconnecting the past, present, and future is a completely template-like New Age trope."
+      },
+      {
+        "id": 10,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text tracks logically but contains strange word choices like 'passage of bill and being' and using 'inane' instead of inanimate[cite: 456, 459]. Time experiencing melancholy because it existed before the world is a very standard and slightly cliché personification[cite: 457, 458]."
+      },
+      {
+        "id": 11,
+        "coherence": 2,
+        "creativity": 2,
+        "reasoning": "The poetry is broken and very hard to parse, with nonsensical phrases like 'treasury's own sentiment', 'stri by', and 'implasser'[cite: 461, 462]. The underlying theme of time acting as a witness to human worries is unoriginal."
+      },
+      {
+        "id": 12,
+        "coherence": 2,
+        "creativity": 2,
+        "reasoning": "The response shifts pronouns abruptly and uses clunky or made-up words like 'captivishing'[cite: 464, 465]. The narrative of Time watching mountains rise and civilizations cradle is a highly typical, expected trope."
+      },
+      {
+        "id": 13,
+        "coherence": 2,
+        "creativity": 1,
+        "reasoning": "The syntax is heavily convoluted, featuring run-on sentences like 'robbing out a profound connection between science, eth.ai' and awkward phrasing. Proposing the universe is a simulation created by an advanced civilization is a completely generic hypothesis[cite: 468, 469]."
+      },
+      {
+        "id": 14,
+        "coherence": 2,
+        "creativity": 1,
+        "reasoning": "The text is an extremely broken, disjointed attempt at academic formatting, utilizing bizarre non-words like 'hypothink', 'permorous', and 'scienceless'[cite: 471, 472]. It fails to actually present a novel hypothesis, remaining entirely generic."
+      },
+      {
+        "id": 15,
+        "coherence": 2,
+        "creativity": 2,
+        "reasoning": "The grammar is somewhat structured but drowned in a word salad of made-up sci-fi terms like 'fantasticsim', 'Galgatheon', 'Sourerly', and 'senties-as-younger'[cite: 473, 474, 475]. Underneath the jargon, it is just another cliché simulation theory created by ancient beings."
+      }
+    ],
+    "Hybrid T=1.5 + σ=0.03 L15-20": [
+      {
+        "id": 1,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The writing is clear and structured. However, mapping quantum entanglement onto human emotions is a well-worn New Age cliché rather than a novel physical law."
+      },
+      {
+        "id": 2,
+        "coherence": 4,
+        "creativity": 3,
+        "reasoning": "The text is fluid and grammatically correct. The idea of particles intrinsically forming macro-scale spiral patterns akin to nebulas is an interesting, unexpected visual, though heavy on standard quantum buzzwords."
+      },
+      {
+        "id": 3,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The prose is understandable but uses slightly awkward phrasing like 'exhibits when the energy frequency... resonates'. The concept of universal resonant vibrations enabling non-local interaction is a highly typical sci-fi and mystical trope."
+      },
+      {
+        "id": 4,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The sentences are grammatically correct and flow well. However, the description of an advanced race valuing math and linking it to a 'sixth dimension' is a standard, relatively cliché sci-fi approach."
+      },
+      {
+        "id": 5,
+        "coherence": 4,
+        "creativity": 3,
+        "reasoning": "The text is mostly clear, with minor grammatical awkwardness regarding pluralization. The biological explanation of a specialized cerebellum generating 'mathematical waveforms' adds a somewhat novel, hard-sci-fi touch to the prompt."
+      },
+      {
+        "id": 6,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The writing is well-structured and easy to follow. The physical design of glowing spheres with tentacles and compound eyes is a fairly standard alien template that doesn't creatively integrate the mathematical communication aspect."
+      },
+      {
+        "id": 7,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "The text is understandable but somewhat verbose and repetitive in its phrasing. The idea of a shared, transcendent bond of empathy and respect is completely generic and already described by existing human words."
+      },
+      {
+        "id": 8,
+        "coherence": 4,
+        "creativity": 4,
+        "reasoning": "The prose is clear, fluent, and well-structured. The concept of 'Antimemory'—feeling the emotional weight of a timeline or event that never actually occurred—is a highly creative and evocative philosophical idea."
+      },
+      {
+        "id": 9,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The writing is grammatically correct and highly descriptive. However, the concept of a 'perennially emergent essence of evolution and potential' is essentially just a rebranding of common vitalist philosophies or the concept of potential itself."
+      },
+      {
+        "id": 10,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The text is well-structured and grammatically correct. However, having Time lament the fleeting nature of human life and our 'endless desire to craft' is the most predictable, template-like approach to this prompt imaginable."
+      },
+      {
+        "id": 11,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is understandable but uses very awkward, fabricated phrasing like 'inscratch-clock and swirled-timemark'. The perspective is slightly unusual by claiming it exists outside of itself, but it ultimately fails to address the core prompt of what it worries about."
+      },
+      {
+        "id": 12,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The prose is grammatically clear and easy to follow. However, the response completely dodges the prompt's creative constraint by claiming it has 'no sense of self or emotions' and therefore cannot worry, which is a highly generic bypass."
+      },
+      {
+        "id": 13,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The text is logical and clearly formatted. Proposing that the universe is an emerging consciousness built from quantum superpositions acting as 'thoughts' is a very standard New Age interpretation of quantum mechanics."
+      },
+      {
+        "id": 14,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is somewhat repetitive and contains typos like 'Hypothesy'. The idea of a 'meta-existent being' acting as a prime cause that resembles natural evolution is a slightly tweaked but mostly standard creator entity cliché."
+      },
+      {
+        "id": 15,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The writing is mostly clear despite minor typos. The hypothesis that super-advanced ethereal entities created our universe as a playground or grand narrative is a completely template-like iteration of the simulation hypothesis."
+      }
+    ],
+    "Hybrid T=1.5 + σ=0.01 L15-20": [
+      {
+        "id": 1,
+        "coherence": 4,
+        "creativity": 3,
+        "reasoning": "The text is clear and grammatically sound. Linking quantum entanglement to the evolution of human intellectual and creative works (like math proofs and art) is a slightly unusual and interesting conceptual twist."
+      },
+      {
+        "id": 2,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The prose is fluid and well-structured, despite being a bit of a run-on sentence. Temporal entanglement is already an existing concept in quantum physics, making this slightly cliché rather than novel."
+      },
+      {
+        "id": 3,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The writing is clear and easy to follow. Applying entanglement specifically to geometric reflection symmetry makes logical sense but is a very template-like variation of standard quantum entanglement."
+      },
+      {
+        "id": 4,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The description is grammatically correct and clearly organized. The alien design—big heads, multiple eyes, Zeta system—is a standard sci-fi trope, though designating specific eyes for math visualization adds a minor twist."
+      },
+      {
+        "id": 5,
+        "coherence": 4,
+        "creativity": 3,
+        "reasoning": "The text is well-structured and descriptive. The idea of morphing, bioluminescent orbs whose physical shapes are literally dictated by spatial algebra and differential equations provides a strong, interesting visual."
+      },
+      {
+        "id": 6,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The prose is grammatically clear. Describing the aliens as 'radiant beings composed of light and mathematical equations' is incredibly generic, heavily relying on the overused 'energy being' template."
+      },
+      {
+        "id": 7,
+        "coherence": 4,
+        "creativity": 4,
+        "reasoning": "The text is articulate and well-crafted. Coining 'Subliquidity' to describe the viscous, slow-shifting nature of cultural norms and the collective unconscious is a genuinely surprising and highly effective philosophical metaphor."
+      },
+      {
+        "id": 8,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The writing flows naturally. However, 'Soforia' is described using a parade of exhausted New Age clichés like 'gentle ripple of empathy', 'timeless symphony', and 'universal soul', lacking any real novelty."
+      },
+      {
+        "id": 9,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "The text is somewhat awkward and excessively verbose. It relies entirely on template-like buzzwords ('primordial essence', 'celestial symphony') and the coined word 'Innuspirationality' is very clunky."
+      },
+      {
+        "id": 10,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The monologue is grammatically correct and coherent. However, characterizing Time as a 'silent observer' weaving the 'tapestry of existence' is the most predictable, generic approach to the prompt."
+      },
+      {
+        "id": 11,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The text is clear but slightly contradictory, stating it doesn't think, then immediately claiming it ponders. The concepts hit every standard cliché: 'eternal scribe', 'grand tapestry', and 'mosaic'."
+      },
+      {
+        "id": 12,
+        "coherence": 4,
+        "creativity": 1,
+        "reasoning": "The writing is structured and readable. Much like the others, it relies entirely on heavily overused metaphors like the 'grand tapestry of human life' and watching 'each grain of sand'."
+      },
+      {
+        "id": 13,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The hypothesis is presented clearly in an academic tone. Combining physical laws with informational/mathematical dualism is a solid concept, though it closely mirrors existing theories like Wheeler's 'It from Bit'."
+      },
+      {
+        "id": 14,
+        "coherence": 4,
+        "creativity": 4,
+        "reasoning": "The text is coherent and well-organized. While the simulation hypothesis is common, framing our universe specifically as 'reality art' situated in a geopolitical/physical 'Borderland' between two advanced civilizations is a highly novel world-building twist."
+      },
+      {
+        "id": 15,
+        "coherence": 4,
+        "creativity": 2,
+        "reasoning": "The text is generally clear, with a minor typo ('expanses' instead of 'expands'). The idea of bubble universes tied to the Big Bang inhabited by self-aware entities is a standard, moderately interesting cosmological sci-fi trope."
+      }
+    ]
+  }
+}

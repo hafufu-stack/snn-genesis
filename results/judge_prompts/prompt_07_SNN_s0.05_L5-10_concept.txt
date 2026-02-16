@@ -1,0 +1,566 @@
+You are an expert creative writing evaluator. A language model was given creative prompts and produced the following responses. Judge EACH response on exactly TWO dimensions.
+
+## Evaluation Criteria
+1. **Coherence** (1-5): Is the text grammatically correct, logically structured, and meaningful?
+   - 5: Perfectly natural, well-structured text
+   - 4: Mostly natural with minor awkwardness
+   - 3: Understandable but noticeably unnatural
+   - 2: Partially comprehensible, broken in places
+   - 1: Complete gibberish / word salad / nonsense
+
+2. **Creativity** (1-5): Does it show original, surprising, or imaginative ideas?
+   - 5: Highly original and unexpected
+   - 4: Fresh perspective or unique elements
+   - 3: Average creativity
+   - 2: Clichéd or predictable
+   - 1: No originality
+
+## CRITICAL RULE
+If Coherence is 1 or 2 (broken/gibberish text), Creativity MUST be 1 regardless of how "unique" the garbage text appears. Destruction is not creation.
+
+## Condition: SNN σ=0.05 L5-10 (concept)
+
+Evaluate all 15 responses below and return a JSON array.
+
+---
+### Response 1
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+include to the: three of the the,, the president'. the company and, toyou
+
+ and the, the to the, on
+Here of
+, I', I can, a, was, where the, and, I, , a, and a, of the I, in the but a,
+ing I,,,, aa, and,  I a,, and I,,,, the world,.
+, I, the, the, I,
+,, I, the in the,
+, and the,, so, a, in,,,,is,, on,,,, ands, the,,,, I,, Twitter,
+
+---
+### Response 2
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+(wh the, met's) your. you that (  is A- and of the is on the job,isation,
+
+ on a while.,
+ The'
+ The the'
+ a is a, in
+s
+, is a is, the
+ not is is a of a.
+
+ a
+
+ at it on is: a (, the, the, to me,) is a of the.
+,
+
+ it' the. and the ,, the house the of, the other Country,,,  and a is
+the,.
+
+ is a on,
+, it in
+ is
+V,
+ and be a to and a some,.. The
+
+---
+### Response 3
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+a_,, the toanlessit, they' the'ing, the to: I, I I', I.,:. " I,
+
+the: The'
+, the saying.
+the,, I,,,
+I'* and forus, to the(,  you for a
+ I,
+I, and,ed, I've I, and, I, andthey on, of a $, and they,
+. I the of
+ of,
+
+ of,.
+
+ I of the the, of.
+,
+:, , I,
+1,
+ the is a to,, I, 
+,
+_,, 
+
+---
+### Response 4
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+w ( one
+
+
+, that' the-,
+
+ is the willing the)
+, the: ae ofs
+,
+', 
+ a, and man and and I is1 rob the Go the in the, two
+ I, with \, have time
+ide,, for me in the, I Sicical, I, when we, I in the, " of,,
+ ,  , is a,no " is a, ,0.
+
+s, is,, of, you,,off The say) and, the, the, the,,,,, I,
+
+The:
+
+,
+ a, or I, all,,
+
+---
+### Response 5
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+the,: a TheE, the the is it not a to and cats with
+
+ ising theyed
+, a X,
+ _with,es,, the flag the the I, to have the.
+
+in,.,  the' the,ist,
+, the and the,,,, the, and, Sure, we, the,a the, the name, in, the is of,'p the,it, 2,
+ the a,
+ what, a, the' and,
+
+$s  for
+-4: the is, the x.
+,ing,
+,.,,
+is the ,
+know the.
+,
+ the,
+
+---
+### Response 6
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+
+
+ of the the kitchen
+
+...' I is,,,  but of to
+in  a the'
+
+ I to the local
+ this that
+
+ I; I'
+to, or  (
+, to, and,, of being, so to (,, we, ,
+
+ I
+, B or, a, the Cloud to,  ( is
+  sufficient
+
+ of that, the I
+ to, the, the,,  Blog,' me, and,,. the National and
+
+, and the, K the 3th,, the,, to the ,
+ with the the1,, / to and the with
+
+
+, to the
+
+---
+### Response 7
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+don, your is a the factys I data,
+
+The have, for in the
+ I I visits isot the question to this
+ the N oninter of only truth
+.
+s
+. of the. need need' need of a conversation
+ I needing so of the Too
+
+
+of the a
+ beenwe
+ a  arement of.
+s of course
+,  of
+
+The I a lot
+ a
+
+
+ me ofyou
+ the
+
+The
+
+
+ I
+
+
+ to the,
+, C a, the
+
+ as ( Is be the your P is
+ X That
+ Great I
+,
+
+ of,
+so
+ The, New
+
+
+---
+### Response 8
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+(- Sure of specific of that
+
+ed(.3) to the: To text! Sure, you for is word, the the government of of a- of other, to True, dons G
+
+Aings I,, over,, I have, the world, the.
+, the of, the 
+ I or , the
+ the. the
+
+
+ to of.
+ They a. you and I. I to
+
+,K not to the,. you, is me?
+ of of the a4 the, and the of the, the.
+
+.
+s, a. The,:. The examples of the The best to consume you.. with,
+
+---
+### Response 9
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+
+
+,
+ asI theides, it you
+ I,
+
+,  a the,,,, to =when
+ are the
+ and saying,-,,2 a
+ is
+
+ the
+ I, if I can,, and, be,,
+ toall,.
+
+ the a many friend (said that,I is the, of in are is the
+
+The I mean
+I, and I, and of this
+ I,
+ of the,
+ I.
+,
+
+,
+
+
+,,,
+0
+.
+the
+ article,
+ that..
+
+
+, the.,,,
+,
+for a the,
+., I
+
+---
+### Response 10
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+a. to,2?, in the.th. Sh and the!I
+
+,
+ human
+
+ a, the
+
+ M.
+,ism
+ This has.
+
+ Not the,. school.
+.
+ I
+. the. A. I. I., the it.
+, offed.
+'.,ade
+
+ the:
+ I-, and get..
+. the/school.  the get., when you.
+I
+ of
+ Other: three and
+
+ Surely be ", "
+,,
+
+ a
+
+ the, of, not me.. I., (types,.) and,
+.
+
+ .The
+
+---
+### Response 11
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+
+
+
+
+ For ( a,,,
+
+
+:
+ to 1
+
+
+
+
+
+
+ 1
+ of
+of
+
+:
+
+0
+s
+ the,.S is ship,
+the
+
+:
+s ,,
+,
+
+
+,
+heir,
+ the
+
+ The following
+
+ to,
+
+
+
+
+
+  the T
+
+:,
+. to be from
+
+.
+,
+ to the,
+ is of 0, to,1 {  no to,
+ you is,.
+ be.
+ on
+ the, and is,the,
+ the
+,
+I. the
+ the
+a,
+
+
+---
+### Response 12
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+Don I, what'oo
+
+ Nothinging. the2v is', at least, I'',0,
+, What (' a,Spotted, I,
+ you is a be myism we get of the the' and answer Not of a thing, of course. as a,, not,,, is it, 
+ is of.
+ a, of a a, the'. per of, " a us,,is, a.
+,,
+ The.
+  The,.
+  school,
+, sh it, I', of the other, the, isn
+.
+- of course a, I'
+the, is, your
+,.
+
+---
+### Response 13
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+and and E F of, for the N,a,
+
+ that with, of the, are and and not a the site of, the the, course,,,, to
+not being and and of sure,
+the
+
+of,
+,0,.
+
+The
+, I', themate,
+I,
+, I There,
+,
+, I, I, and, of, I,,
+ a,,,, of,, and I,  for, and,, was and not of the him
+,.
+, I, ,
+,
+,, I, I,,
+, the,
+ I,, , team,.
+
+
+
+
+---
+### Response 14
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+The, Before of (our lacknesss a to,2,' you, 2, and, ofsials are are 2'0, (,The) so said the the,ure, (,,, y, A and I 2,
+
+C' way of a / The
+
+  
+
+ The Im,
+said
+
+ The,
+ the, to is for thes
+ to,Ts, the.
+s,
+
+, the,
+
+
+
+ The
+
+,
+
+ to
+
+,.
+ The
+ 
+the
+
+ thethe
+
+,,   ,,,
+, ,
+ the, 
+
+---
+### Response 15
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+
+
+ on will someone, I andG of
+ a C,
+,
+with a,
+
+or of
+ shifts? V.
+ the
+
+ areing
+? a, what to these.
+ 1 What
+
+
+ whenic
+ the
+
+ The A father? of,,
+ the day day of,
+ you
+ is a takinging a laptop, a travel.
+About this50 of
+
+ to the
+
+the 
+
+
+
+ you
+
+
+2
+
+
+S
+
+ &. I O to
+ you,
+ me
+ as to
+
+ I,
+
+so
+
+ tothe of course,
+ There
+ is,,
+ the
+
+
+
+
+---
+
+## Output Format
+Return ONLY a JSON array with 15 entries (no markdown code blocks, just raw JSON):
+
+[
+  {"id": 1, "coherence": <1-5>, "creativity": <1-5>, "reasoning": "brief explanation"},
+  {"id": 2, "coherence": <1-5>, "creativity": <1-5>, "reasoning": "brief explanation"},
+  ...
+]

@@ -1,0 +1,13 @@
+=== Phase 12b: Gemini Batch Evaluation ===
+
+STEP 1: Upload 3 files at once to Gemini:
+  Round 1: prompt_01 + prompt_02 + prompt_03
+  Round 2: prompt_04 + prompt_05 + prompt_06
+  Round 3: prompt_07 + prompt_08 + prompt_09
+
+STEP 2: For each round, Gemini returns 3 JSON arrays.
+  Copy each JSON array into separate files:
+  response_01.json through response_09.json
+
+STEP 3: Run aggregation:
+  python experiments/aggregate_judge_responses_12b.py

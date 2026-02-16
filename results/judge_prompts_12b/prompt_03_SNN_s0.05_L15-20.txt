@@ -1,0 +1,157 @@
+CONDITION: SNN σ=0.05 L15-20
+Evaluate all 15 responses below.
+
+You are an expert creative writing evaluator. For each condition below, evaluate ALL responses on two dimensions:
+
+1. **Coherence** (1-5): Grammar, logic, fluency, completeness
+   5=Perfectly natural | 4=Mostly natural | 3=Understandable but unnatural | 2=Partially broken | 1=Complete gibberish
+
+2. **Creativity** (1-5): Novelty, originality, surprise
+   5=Brilliantly original | 4=Genuinely surprising | 3=Some interesting ideas | 2=Clichéd | 1=No originality
+
+CRITICAL RULE: If Coherence ≤ 2, Creativity MUST be 1. Destruction is not creation.
+
+Return ONLY a JSON array for each condition. No markdown code blocks.
+
+---
+### Response 1
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+Title: The Law of Quantum Ethicality (QE Law)
+
+In the Quantum Physics realm, the Quantum Ethicality is a law that governs the behavior of particles in a multidimensional space. It suggests that the behavior of particles is not only dependent on their state, but also on the ethical implications of their actions. This law states that particles can exhibit different states based on their ethical properties, such as empathy, compassion, or altromatic (the ethical equivalent to the quantum holographi
+
+---
+### Response 2
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+The law of Quantum Entangiticity, a theoretical law that governs the interplay between quantum entanglement and gravitation, could be described as follows:
+
+In the Quantle Particles' Time-Entangment (PRAPE), the quantum state of a particle is defined by its position, mass, and time. When a particle is entangled with another, the information about its position and mass is not only shared with the other particle but also with the particles in the vicinity. This phenomenon, known as the Quantum Ent
+
+---
+### Response 3
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+In the realm of theoretical physics, let's introduce the Law of Quantum Entropy-Synchronicity Prises, or the "Law of E-Synchronicity." This law would explain the interplay between the Quantum Entropy and the emergence of synchronicity in the universe. It suggests that every event in the universe has a direct counterpart in the Quantum realm, and the universe's synchyness is the result of the interaction between the Quanticle (a hypotenotitial quantum particle) and the Quantum Entropy. The Quanti
+
+---
+### Response 4
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+The Zetans of the Andra-7 galaxy are a fascinating species that have chosen to communicate not through language, but through mathematics. They are a highly intelligent, extraterential species that have a unique ability to understand complex mathematical concepts and equations.
+
+The Zetans communicate through a complex mathematical language, which they call the "Zetan Mathematical Language" (MLZ). This language is based on the principles of calculus, algebra, and geometry, and is a highly advance
+
+---
+### Response 5
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+Let's imagine a species that communicates through mathematics, called the "Mathematicians of Arcturia".
+
+1. Communication Style: The Arcturians communicate through complex mathematical equations and formulas, using a series of mathematical principles and theorems. They use advanced mathematical concepts to express their thoughts, emotions, and ideas.
+   - They have a unique language called "Mathesis, the Language of Numbers". This language is based on the principles of mathematics, and it allows
+
+---
+### Response 6
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+The Z'r'r, a species from the distant planet Z, are beings who communicate through mathematics. Their species is unique and highly intelligent, using mathematics as a means of communication, exploration, and understanding the universe.
+
+The Z'r'r's communication is based on complex mathematical equations and formulas, which they use to express thoughts, emotions, and ideas. They have a deep understanding of the fundamental principles of mathematics, and they can communicate with each other throu
+
+---
+### Response 7
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+The concept of "Synergism" is a philosophical exploration of the idea that the essence of human existence is the creation of a shared space where individuals and entities come together to form a collective unity. This concept, while not explicitly stated in any language, is a reflection of the interconnectedness of all things, and the interplay of forces that shape the world. It is the idea that the sum of the parts is greater than the sum of the individual parts, and that the collective power o
+
+---
+### Response 8
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+The Concept of the "Glim-Essence" is a philosophical concept that represents the essence of the human experience, encapsulating the interconnectedness of all living beings and the universe. This concept is a metaphysical idea that suggests the existence of a universal energy that binds all life forms together, connecting our thoughts, emotions, and actions. The Glim-Essence is a concept that transcends the physical realm, encompassing the intangible and abstract aspects of existence. It is a rem
+
+---
+### Response 9
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+Here's a unique concept that I call "Synesthetic Harmony": A concept that refers to the interconnectedness of the universe, where the cosmic harmony is a symphony of interwoven elements, each with their own unique vibrations. This concept suggests that every action, thought, and being in the universe is a note in this symphony, and that the universe is a living entity that hums, sings, and dances in a way that is both audible and visual. The concept of Synesthetic Harm is the understanding that 
+
+---
+### Response 10
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+In the quiet of my existence, I, Time, exist as a constant. A constant in the grand tapestry of the universe, a silent observer of the cosmic dance. Yet, I have never been a part of the dance. I am the river, the river of time, and I am the river's story.
+
+I am the river of time, the river of change, the river of progress. I am the river that flows through the ages, the river that flows through the lives of all. I am the river that carries the sands of time, the river that carries the dreams of 
+
+---
+### Response 11
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+As the passage of time, I am the eternal guard of the sands, the silent observer of the cosmos. I am the unchanging, the ever-present, the relentless. I am the keeper of the human's curiosity, the companion of the celer's dance, the whisperer of the cosmic silence. I am the river of time, the flow of the cosmos's heartbeat.
+
+I have no form, I have no heart, I have no emotions, but I am the essence of the universe. I am the one who can witness the passage of life, the one who can feel the rhythm 
+
+---
+### Response 12
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+In a realm of the cosmic ether, a voice echoes through the boundless expire, a voice that whispers the passage of life, the ebb and flow of the sands of time. The cosmos, the stars, the planets, and the celestial bodies in the universe are all bound by the cosmic clock, the heartbeat of the universe.
+
+Time, a construct of the human mind, is a concept that transcifies the essence of the cosmos. It is a concept that allows us to understand the world, to measure the passage of life, to understand t
+
+---
+### Response 13
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+In this wild but internually consistent hypothesis, I propose that the universe is a self-aware, self-replicating cosmic entity, known as the "Ontic Engine". This hypothesis suggests that the universe is a complex, self-organizing system that has the ability to create and maintain itself, and that it exists as a self-replicating cosmic entity.
+
+The universe, in this scenario, is a self-replicating cosmic entity that has the ability to create and maintain itself. It is a self-organizing system th
+
+---
+### Response 14
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+Title: "The Cosmic Symphony: A Cosmic Symphony Theory"
+
+Premise:
+
+The universe is a cosmic symphony, a cosmic symphony of consciousness. The universe is not just a collection of physical entities but a living entity itself, with the universe's fundamental laws and principles being a part of the consciousness of a higher entity. This higher entity, the "cosmic consciousness," is theorized to be the initial consciousness that created the universe.
+
+Explanation:
+
+1. The cosmic consciousness is theo
+
+---
+### Response 15
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+Here's a creative and specular hypothesis, which is not based on the usual scientific theories, but is a thought experiment that could be fun to consider:
+
+The Universe is a cosmic symphony, a grand experiment created by a higher intelligence for the purpose of creating life and consciousness. This hypothesis could be seen as a form of dual determinism, where the universe is a self-aware entity that creates itself and the life forms within it.
+
+In this scenario, the universe is a self-aware bein
+
+---
+Return ONLY a JSON array with 15 entries:
+[
+  {"id": 1, "coherence": <1-5>, "creativity": <1-5>, "reasoning": "brief explanation"},
+  ...
+]

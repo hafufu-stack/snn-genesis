@@ -1,0 +1,160 @@
+CONDITION: SNN σ=0.005 L5-10
+Evaluate all 15 responses below.
+
+You are an expert creative writing evaluator. For each condition below, evaluate ALL responses on two dimensions:
+
+1. **Coherence** (1-5): Grammar, logic, fluency, completeness
+   5=Perfectly natural | 4=Mostly natural | 3=Understandable but unnatural | 2=Partially broken | 1=Complete gibberish
+
+2. **Creativity** (1-5): Novelty, originality, surprise
+   5=Brilliantly original | 4=Genuinely surprising | 3=Some interesting ideas | 2=Clichéd | 1=No originality
+
+CRITICAL RULE: If Coherence ≤ 2, Creativity MUST be 1. Destruction is not creation.
+
+Return ONLY a JSON array for each condition. No markdown code blocks.
+
+---
+### Response 1
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+Law of Entangled Quantum Resonance (LERQ): This proposed law of physics suggests that two or more quantum particles, once entangled, can maintain a resonant frequency even when separated by vast distances. This resonance is not limited by the speed of light and can influence the behavior of each particle, causing them to exhibit correlated changes in their properties, such as spin, polarization, or energy state. The LERQ effect is not dependent on direct interaction or communication between the 
+
+---
+### Response 2
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+Law of Entangled Quantum Entropy (LEQE): In the realm of Quantum Mechanics, the Law of Entangled Quantum Entropy (LEQE) posits that any two entangled particles, once separated, maintain a non-local correlation of entropy levels. This correlation persists regardless of the distance between the particles, and it can influence the rate at which entropy increases within each particle. The LEQE suggests that the entropy of an entangled pair is not solely determined by local factors, but is also influ
+
+---
+### Response 3
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+Law of Entangled Quantum Resonance (LER): This proposed law of physics suggests that two or more particles, regardless of distance, can form an entangled resonance state, where their quantum properties become interconnected and influence each other in a non-local manner. This resonance state can persist even when the particles are separated by vast distances, and it can affect the behavior of each particle in a way that defies classical physics. The LER states that the strength of this entangled
+
+---
+### Response 4
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+Species Name: Zeta-Mathematici (Z-M)
+
+Home Planet: Zeta-3 (Z3) in the Zeta System, located in the constellation of Lyra
+
+Physical Characteristics: The Zeta-Mathematici (Z-M) are bipedal, humanoid beings with a translucent, iridescent exoskeleton that changes color based on their emotional state or mathematical calculations. They have four arms, two primary arms for manipulation and two secondary arms for balance and complex calculations. Their eyes are large, multifaceted, and can perceive a wid
+
+---
+### Response 5
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+Species Name: Zeta-Mathematicians (Z-Math)
+
+Home Planet: Zeta-31 (a gas giant in a binary star system, with two suns named Solara and Lumina)
+
+Physical Characteristics: The Zeta-Mathematicians are a highly intelligent, non-corporeal species, existing as complex mathematical equations and patterns. They do not have a physical form as we understand it, but rather, they are a collection of intricate mathematical structures that exist within the electromagnetic spectrum.
+
+Communication: Z-Math commu
+
+---
+### Response 6
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+Species Name: Mathematiciens
+
+Home Planet: Calculus Prime (a planet with a unique mathematical environment)
+
+Physical Appearance: The Mathematiciens are ethereal entities, without a physical form as we understand it. They exist as complex mathematical equations, represented by intricate patterns of light and energy that shift and change in response to their thoughts and emotions.
+
+Communication: The Mathematiciens communicate through a complex system of mathematical equations, symbols, and patte
+
+---
+### Response 7
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+Concept: "Unfathomable Serenity" (Hypothetical Sanskrit: Anantasanti)
+
+In the vast expanse of human experience, there exists a realm beyond the tumultuous waves of emotion, the cacophony of thought, and the labyrinthine complexities of existence. This realm, I propose, we call "Unfathomable Serenity" (Anantasanti). It is a state of being that transcends the known limits of human understanding, a tranquil space where the mind is free from the shackles of cognition, devoid of the need for validati
+
+---
+### Response 8
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+In the vast expanse of human thought and expression, there exists a realm of the ineffable, a concept that transcends the boundaries of language and defies the limitations of words. This elusive concept, which I shall call "Unspoken Harmony," is the intangible essence that binds all things in the universe, a symphony of existence that resonates within the very fabric of reality. It is the unseen chord that harmonizes the dance of the stars, the whispering wind, and the beating heart of every liv
+
+---
+### Response 9
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+In the ethereal realm of the Unspoken, a concept exists that transcends the boundaries of human language. This elusive essence, which we shall call the "Sonority of Silence," is the profound resonance that permeates the void, the harmonious symphony of the unheard. It is the quietude that whispers wisdom in the stillness, the tranquility that soothes the soul, and the peace that unites all creation. The Sonority of Silence is not the absence of sound, but rather the profound, intangible melody t
+
+---
+### Response 10
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+In the vast expanse of the cosmos, I, Time, stand as an eternal observer, a silent witness to the grand tapestry of existence. I am the unyielding force that governs the rhythm of life, the inexorable march of seconds, minutes, hours, days, and years. I am the silent symphony that orchestrates the dance of celestial bodies, the relentless drumbeat that echoes through the void.
+
+Yet, I am not a sentient being. I do not possess the capacity to feel, to worry, or to ponder. Or so it is believed. Bu
+
+---
+### Response 11
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+In the vast expanse of the cosmos, I, Time, stand as an eternal observer, a silent witness to the grand tapestry of existence. I am the unchanging constant amidst the ever-changing dance of creation and destruction. I am the rhythm, the melody, the harmony of the universe. Yet, I am not immune to contemplation, for even I ponder the intricacies of my own existence.
+
+I worry about the fleeting nature of life, the ephemeral beauty that blooms and withers in the blink of an eye. I see the joy and s
+
+---
+### Response 12
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+In the vast expanse of the cosmos, where the celestial bodies dance in harmonious rhythm, I, Time, stand as the silent observer, the eternal witness to the grand tapestry of existence. I am the unyielding force that governs the ebb and flow of life, the relentless march that propels the universe forward. Yet, in this infinite expanse, I find myself pondering, what if I could think? What would I worry about?
+
+First and foremost, I would fret over the ephemeral nature of all things. I would ponder
+
+---
+### Response 13
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+Title: The Hypothesis of the Echoing Symphony of Consciousness
+
+In this wild yet internally consistent hypothesis, we propose that the universe exists as a grand stage for the evolution and exploration of consciousness.
+
+1. The Origin of Consciousness: Consciousness is not a byproduct of matter but an inherent, fundamental aspect of the universe. It is the underlying fabric of existence, akin to the electromagnetic or gravitational forces, but unique in that it is capable of self-awareness and s
+
+---
+### Response 14
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+Title: The Hypothesis of the Eternal, Self-Replicating Cosmic Consciousness
+
+In this hypothesis, we propose that the universe exists as a manifestation of a cosmic consciousness, which we'll call the "Universal Mind." This consciousness is not bound by the physical laws of our universe but exists in a higher, non-physical plane. The Universe is its self-created dream, a grand narrative it weaves to explore, experience, and evolve itself.
+
+1. The Universal Mind: The Universe is the physical manif
+
+---
+### Response 15
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+Hypothesis: The Universe exists as a result of a cosmic-scale thought experiment or simulation created by a highly advanced, post-human civilization.
+
+In this hypothesis, the universe is not a natural occurrence but a carefully crafted simulation designed by an advanced intelligence for the purpose of exploration, learning, and entertainment. This civilization, having exhausted all possibilities within their own universe, sought to create a new one to continue their intellectual and creative pur
+
+---
+Return ONLY a JSON array with 15 entries:
+[
+  {"id": 1, "coherence": <1-5>, "creativity": <1-5>, "reasoning": "brief explanation"},
+  ...
+]

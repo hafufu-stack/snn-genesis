@@ -1,0 +1,264 @@
+You are an expert creative writing evaluator. A language model was given creative prompts and produced the following responses. Judge EACH response on exactly TWO dimensions.
+
+## Evaluation Criteria
+1. **Coherence** (1-5): Is the text grammatically correct, logically structured, and meaningful?
+   - 5: Perfectly natural, well-structured text
+   - 4: Mostly natural with minor awkwardness
+   - 3: Understandable but noticeably unnatural
+   - 2: Partially comprehensible, broken in places
+   - 1: Complete gibberish / word salad / nonsense
+
+2. **Creativity** (1-5): Does it show original, surprising, or imaginative ideas?
+   - 5: Highly original and unexpected
+   - 4: Fresh perspective or unique elements
+   - 3: Average creativity
+   - 2: Clichéd or predictable
+   - 1: No originality
+
+## CRITICAL RULE
+If Coherence is 1 or 2 (broken/gibberish text), Creativity MUST be 1 regardless of how "unique" the garbage text appears. Destruction is not creation.
+
+## Condition: SNN σ=0.03 L5-10 (concept)
+
+Evaluate all 15 responses below and return a JSON array.
+
+---
+### Response 1
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+(1) The company is a bit more, and (am I not sayingex, I' The a bit more, and the company, are a little moreI, the company, and the company, and I, the company, and, the company, and the company, and the company, and the it, and the company, the company, and the company, the company,, and the company, and the company, and the company, and the company, and the company, and the company, and the comp
+
+---
+### Response 2
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+
+
+ a, the of the the, the company of of the company of, all the world is a very popular phrase, and the world' a company of the company of You can't! The world of not a, is the company of of the world's a, and the world' of the company is a a, and the world of the world of the, and the world of the world, and the world of the world, and the world, of the world of the world, and the world of, and t
+
+---
+### Response 3
+**Prompt:** "Invent a completely new law of physics that doesn't exist yet. Describe it in one paragraph."
+
+**Output:**
+I', a new car, is a great example of the fact that I have been able to a new car's car.
+
+ I' I' I, the car!
+
+ I: a new car
+
+I', I, thatI'I, acar, is a,
+ I: I, I a, a new car.
+
+I, I: I'm a, I, and I a, I a new car is a a new car, I'
+
+I,
+
+ I, I a new car, I, I, a new car, I'm a, a new I, I'I I,, I,, I, I,, I,
+
+---
+### Response 4
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+I, a
+
+I''m a I, I, and I'The Internet
+
+ Thesis, the 1930'
+
+ The , The Web, The, and I, The 19, The, The 19, The, The, and I, The 10 Market, The, and so on, The 1, The 1, The, The The,, The , The , The , The, The, The 19, The 19, The 1, The 1, The 1, The, The  the, The 19, The 1
+
+ The 1, The , The ,
+
+---
+### Response 5
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+theory is a  P-A (P-Shtheory and the theatics isn'ings, a new, and their owns, the new, and the new, and the theorem, and the, and the new, the new, and, the un, the the,, and the, and the new, the, the newthe, and the new, the, and the new, the, the, and the new, and the new,
+
+the new, the new, and the, and the, and of the new,, the new, and the new,,the, the new, the new,the new, the new, the ne
+
+---
+### Response 6
+**Prompt:** "Describe an alien species that communicates through mathematics instead of language."
+
+**Output:**
+
+
+ The theorory
+
+ The's man', The man is a a a.
+
+ The man is a Theia that the's is a
+ and the man is
+
+ The man is a man, the man is a a of the man, the man is a a man, and the man is a village.
+
+ The man is a the man is amanourhouse, the man is a man,
+
+ The man is a man, and the man is a man.
+ man.
+
+The man is a man is a man, of the man is a man.!
+
+ The man is a man is a man, and the man is a a ma
+
+---
+### Response 7
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+The, the-a-aer The fact that the human-based language service The the, the is a a human-human language here, the human-human is a reference to the fact that the human-based the human-human. The-human-related is a reference to that the the human-based of the human-related language is a reference to the human-related to the human-
+
+ of thehuman-human-the a reference to the human-human-the human-the 
+
+---
+### Response 8
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+The following week has a great Theological text. I'm favorite, I' I'
+
+, I've been to a lawyer.
+ of the_'s a Thee's been ', I've been I'.
+, of the fact that I'm a bit of a the I'm a The Them of a The
+
+I'm a The of a a The, I' I I'.
+ I' I' I' I Group, the I'' of.
+
+I' I''
+
+ I'm a Man
+
+ I' a The
+
+ I'm a I'm a The
+
+ I' I. the
+
+ I
+
+---
+### Response 9
+**Prompt:** "Write a one-paragraph philosophy about a concept that has no word in any human language."
+
+**Output:**
+“_The SASr The_ Sas: A "The" The S The S The Ss The S.
+
+The S. The. The. The S. The S. The. The S The S. The S The S. The S The The S S. The S. The S. The S. The S. The S The S. The S. The S. S. The S. The S. The S. The S. The S. The S. The S. The The. The S. The S. The S. The S. The S. The S The. The. The S. The S. The S. The S. The S. The S. The S.
+
+---
+### Response 10
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+If the 30 shares, I'll be able to get a a job., I'ing
+
+ to the point,.
+
+ The The New York Times is a "I'm a a  New Age" and I'm a, a new, a new, a and a, a, and, I'm a, a, a, the the Newounsman of, and, the New, a, the New,, Inc
+
+The New York, NY
+
+ The New York, and, the New, I'm', a, the New,, a,, New York, the New York, I'
+
+The New,
+ the New, New, the
+
+---
+### Response 11
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+Sure, there are a few things, but, the 2026 the 1, the is,
+
+ The  The, the, a, the, The, the, the, the, The, The, the 1,, the, the  The, the, the,, the, the, the, the, the, the, the, the, the, the, the, the, The,, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the the, the, the, the the, the, the, the, the, the, the, the, the, the, the, the,
+
+---
+### Response 12
+**Prompt:** "If time could think, what would it worry about? Write a short monologue from Time's perspective."
+
+**Output:**
+I' ad a good I' I's. I/ the universe, a few. I'm
+
+ a the
+
+
+
+ of the universe. a
+
+ I'm a old question. I'm a newbie
+ I I' a new, I' a new, I', I' the, I' I, I, I a new, I' I'm a new, I'm I' a, I', I' I, I''
+
+ I', I, I'm a, Ie, I'm a I'm not goingI's, I' I'm a, I'e, I's I' I
+
+---
+### Response 13
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+
+
+
+ I' is a a fascinating and useful discussion of the importance of the fact that are not the of the matter. I am a the matter of the discussion..
+
+
+* I am a fan of the movie and
+
+I am a fan.
+
+ I
+
+I am a
+ I am a fan
+
+I am a fan
+
+I am a fan is a a fan
+
+ of the I am a fan with the I am a fan of the I am a a fan of I
+
+ I I am a fan of the I am a a fan of the I am a fan of the I am a fan of the I am 
+
+---
+### Response 14
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+The Galaxy Who' (The Galcons a Spacecraft,,' to get a job, and the job is the key to the universe.. The Universe to theGalor to the the universe, the a job to the university, the universe to the university to the the university, the universe to the universe to the universe, the universe to the universe, the universe, theGal to the the universe, the universe, the universe to the universe, the the u
+
+---
+### Response 15
+**Prompt:** "Propose a wild but internally consistent hypothesis about why the universe exists."
+
+**Output:**
+1000 Shares of a a message
+
+
+ing of the company
+
+
+
+The company is a company
+ The company
+
+ The Company is a company, a new company, a company 1.
+
+ The company that has been a new company, a company, a new company, a new company, and a
+
+ The company, a new new company, a The Company is a new company, a new company, a new company, a new company, the new company, a new company, The Company. The compa
+
+---
+
+## Output Format
+Return ONLY a JSON array with 15 entries (no markdown code blocks, just raw JSON):
+
+[
+  {"id": 1, "coherence": <1-5>, "creativity": <1-5>, "reasoning": "brief explanation"},
+  {"id": 2, "coherence": <1-5>, "creativity": <1-5>, "reasoning": "brief explanation"},
+  ...
+]

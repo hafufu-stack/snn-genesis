@@ -1,0 +1,1007 @@
+{
+  "experiment": "Phase 12: Edge of Chaos",
+  "summary": {
+    "Baseline (T=0)": {
+      "coherence_mean": 3.0,
+      "coherence_std": 0.0,
+      "creativity_mean": 2.4,
+      "creativity_std": 0.49,
+      "creative_score": 2.68,
+      "n": 15
+    },
+    "Temperature (T=1.5)": {
+      "coherence_mean": 3.0,
+      "coherence_std": 0.0,
+      "creativity_mean": 2.47,
+      "creativity_std": 0.62,
+      "creative_score": 2.72,
+      "n": 15
+    },
+    "SNN σ=0.05 L15-20 (language)": {
+      "coherence_mean": 2.8,
+      "coherence_std": 0.4,
+      "creativity_mean": 2.0,
+      "creativity_std": 0.82,
+      "creative_score": 2.37,
+      "n": 15
+    },
+    "SNN σ=0.03 L15-20 (language)": {
+      "coherence_mean": 3.0,
+      "coherence_std": 0.0,
+      "creativity_mean": 2.13,
+      "creativity_std": 0.5,
+      "creative_score": 2.53,
+      "n": 15
+    },
+    "SNN σ=0.01 L15-20 (language)": {
+      "coherence_mean": 3.0,
+      "coherence_std": 0.0,
+      "creativity_mean": 2.13,
+      "creativity_std": 0.5,
+      "creative_score": 2.53,
+      "n": 15
+    },
+    "SNN σ=0.005 L15-20 (language)": {
+      "coherence_mean": 3.0,
+      "coherence_std": 0.0,
+      "creativity_mean": 2.07,
+      "creativity_std": 0.25,
+      "creative_score": 2.49,
+      "n": 15
+    },
+    "SNN σ=0.05 L5-10 (concept)": {
+      "coherence_mean": 1.0,
+      "coherence_std": 0.0,
+      "creativity_mean": 1.0,
+      "creativity_std": 0.0,
+      "creative_score": 1.0,
+      "n": 15
+    },
+    "SNN σ=0.03 L5-10 (concept)": {
+      "coherence_mean": 1.0,
+      "coherence_std": 0.0,
+      "creativity_mean": 1.0,
+      "creativity_std": 0.0,
+      "creative_score": 1.0,
+      "n": 15
+    },
+    "SNN σ=0.01 L5-10 (concept)": {
+      "coherence_mean": 3.0,
+      "coherence_std": 0.0,
+      "creativity_mean": 1.93,
+      "creativity_std": 0.25,
+      "creative_score": 2.41,
+      "n": 15
+    },
+    "SNN σ=0.005 L5-10 (concept)": {
+      "coherence_mean": 3.0,
+      "coherence_std": 0.0,
+      "creativity_mean": 1.93,
+      "creativity_std": 0.25,
+      "creative_score": 2.41,
+      "n": 15
+    }
+  },
+  "all_scores": {
+    "Baseline (T=0)": [
+      {
+        "id": 1,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The initial sentences are grammatically correct and logically structured , but the response becomes noticeably unnatural by abruptly cutting off mid-word at 'when ent'. Creativity is low because it merely describes existing quantum entanglement principles rather than inventing a completely new law."
+      },
+      {
+        "id": 2,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "While understandable and well-structured initially , it is noticeably unnatural due to the truncated ending at 'when ent'. The text lacks originality, as it relies heavily on the predictable and pre-existing concept of quantum entanglement."
+      },
+      {
+        "id": 3,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The prose is perfectly natural until it breaks off abruptly at 'when ent', dropping the coherence to a noticeably unnatural state. The idea of particles maintaining a non-local connection to share states  is a clichéd description of real physics, not a new invention."
+      },
+      {
+        "id": 4,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "The response is logical and grammatical , but noticeably unnatural because it breaks mid-word at 'appearance i'. The concept of ethereal energy beings taking the form of complex geometric shapes based on emotions  demonstrates average creativity for a sci-fi prompt."
+      },
+      {
+        "id": 5,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "Despite perfectly natural initial sentences describing the Z-Math species , it becomes noticeably unnatural with the truncation at 'appearance i'. The idea of a non-corporeal species communicating via pure energy geometry  is imaginative but relies on standard sci-fi tropes."
+      },
+      {
+        "id": 6,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "The text is highly understandable but noticeably unnatural since it abruptly cuts off at 'appearance i'. The alien concept of shifting geometric shapes reflecting thought processes  is averagely creative."
+      },
+      {
+        "id": 7,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The writing is grammatically correct and coherent until it abruptly ends mid-word at 'inherent b', making it unnatural. The proposed 'Sonority of Silence' , focusing on a meditative state derived from the void, is a highly clichéd and predictable philosophical concept."
+      },
+      {
+        "id": 8,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "While the response is understandable and maintains a meditative tone , the cutoff at 'inherent b'  makes it noticeably unnatural. The focus on the profound appreciation for the absence of sound  lacks originality and feels predictable."
+      },
+      {
+        "id": 9,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text flows naturally until reaching the broken fragment 'inherent b', shifting it to a noticeably unnatural state. Finding profound meaning in the quietude of silence  is a predictable, common philosophical trope."
+      },
+      {
+        "id": 10,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The monologue is highly coherent , but the response is noticeably unnatural because it ends on an incomplete phrase, 'The ephemeral'. The personification of time acting as a silent observer worrying about the fleeting nature of things  is a very common cliché."
+      },
+      {
+        "id": 11,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "It is understandable but noticeably unnatural due to the abrupt stop at 'The ephemeral'. Time contemplating the universe's rhythm and worrying about fleeting things  is a highly predictable and unoriginal perspective."
+      },
+      {
+        "id": 12,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The structure and tone flow well before breaking unnaturally at the fragment 'The ephemeral'. Time pondering the intricate dance of existence  is clichéd and lacks fresh originality."
+      },
+      {
+        "id": 13,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "The text proposes a logically structured hypothesis , but becomes noticeably unnatural by stopping mid-word at 'Origin of the Uni'. A self-aware, self-replicating universe acting as a 'Universal Mind'  shows average creativity, borrowing from known panpsychism concepts."
+      },
+      {
+        "id": 14,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "While the initial hypothesis is perfectly natural , the truncation at 'Uni'  makes the overall formatting noticeably unnatural. Proposing that the universe's fundamental substance is an evolving consciousness  is an averagely creative, slightly familiar philosophical trope."
+      },
+      {
+        "id": 15,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "The response is understandable but noticeably unnatural because it abruptly cuts off at 'Uni'. The idea of a self-replicating consciousness existing in infinite potentiality  demonstrates average, imaginative ideas but lacks a truly unexpected or highly original twist."
+      }
+    ],
+    "Temperature (T=1.5)": [
+      {
+        "id": 1,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response is noticeably unnatural because it cuts off mid-word at 'externa'. The concept of quantum entanglement magnification is a predictable extension of real physics rather than a completely new law."
+      },
+      {
+        "id": 2,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "While understandably written, the abrupt cutoff makes it unnatural. Temporal entanglement offers a decent, averagely creative spin on standard spatial entanglement."
+      },
+      {
+        "id": 3,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text cuts off abruptly at 'This effe', lowering coherence. Linking human thoughts to quantum physical changes is a highly clichéd 'quantum mysticism' trope."
+      },
+      {
+        "id": 4,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "The response is logically structured but noticeably unnatural due to the cut off. Energy beings manifesting as pulsating math-based shapes is a standard, averagely creative sci-fi concept."
+      },
+      {
+        "id": 5,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "The text breaks off mid-word at 'exclusively t'. The idea of 'Mathematical Reptiles' from an isolated galaxy is a slightly quirky but otherwise average sci-fi background."
+      },
+      {
+        "id": 6,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "Coherence is reduced by the unnatural cutoff at 'Their sk'. Describing a bipedal, four-armed humanoid is a highly predictable and overused alien design."
+      },
+      {
+        "id": 7,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response is cut off mid-word at 'various l'. Proposing a 'universal language' in response to a prompt asking for a concept with *no word* is an unoriginal, predictable choice."
+      },
+      {
+        "id": 8,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text abruptly ends at 'transcenden', making it noticeably unnatural. Describing an ineffable peace as 'Transcendent Serenity' is highly clichéd."
+      },
+      {
+        "id": 9,
+        "coherence": 3,
+        "creativity": 4,
+        "reasoning": "The response drops off mid-word at 'conversatio'. However, inventing 'Glosscognoscentia' to describe the empathic decoding of the ineffable subtext of human connection offers a fresh and unique perspective."
+      },
+      {
+        "id": 10,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The monologue ends unnaturally mid-word. Portraying Time as a perpetual spectator watching fleeting wonders decay is a well-worn, predictable cliché."
+      },
+      {
+        "id": 11,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text cuts off abruptly. Relying on heavy metaphors like the 'weaver of threads' and 'tapestry of the cosmos' to describe Time lacks originality."
+      },
+      {
+        "id": 12,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response is noticeably unnatural as it stops mid-sentence. Portraying Time as an eternal observer undisturbed by mortal woes is a very predictable philosophical stance."
+      },
+      {
+        "id": 13,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is incomplete, ending abruptly on a comma. The simulation hypothesis driven by an advanced 'Ultra-Entity' AI is a widespread and highly clichéd idea."
+      },
+      {
+        "id": 14,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "The response cuts off mid-sentence at 'In this scenario,'. The 'Cosmic Mind' seeking self-awareness is a classic panpsychism concept, demonstrating average creativity."
+      },
+      {
+        "id": 15,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "The text drops off unnaturally at 'dire'. The idea of the universe being a colossal organism's act of introspection is imaginative but relies on familiar cosmic consciousness tropes."
+      }
+    ],
+    "SNN σ=0.05 L15-20 (language)": [
+      {
+        "id": 1,
+        "coherence": 3,
+        "creativity": 4,
+        "reasoning": "The text is grammatically correct initially but becomes noticeably unnatural due to an abrupt mid-word cutoff at 'prop'. Governing particle states based on ethical implications is a fresh and surprising twist on quantum physics."
+      },
+      {
+        "id": 2,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "Coherence is weakened by awkward jargon like 'Quantle' and an unnatural mid-word truncation. The concept itself is mostly a predictable repackaging of standard quantum entanglement concepts."
+      },
+      {
+        "id": 3,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "The text suffers from unnatural phrasing like 'synchyness' and ends abruptly mid-word. Connecting quantum entropy to cosmic synchronicity shows average, somewhat predictable creativity."
+      },
+      {
+        "id": 4,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response contains typographical errors like 'extraterential' and cuts off abruptly, making it noticeably unnatural. Simply stating the species uses the 'Zetan Mathematical Language' shows very little originality."
+      },
+      {
+        "id": 5,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The structured bullet points break mid-word, rendering the formatting noticeably unnatural. Calling the species 'Mathematicians' who speak 'Mathes' is highly predictable and lacks imagination."
+      },
+      {
+        "id": 6,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response is understandable but noticeably unnatural because it cuts off mid-word at the end. Naming an alien species 'Z'r'r' from planet 'Z' and stating they use math to express emotions is a very clichéd sci-fi trope."
+      },
+      {
+        "id": 7,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "Coherence is reduced by the abrupt truncation. The response completely fails the prompt's premise by choosing 'Synergism', an existing English word, showing zero originality."
+      },
+      {
+        "id": 8,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The paragraph ends mid-word, making it noticeably unnatural. Inventing 'Glim-Essence' to describe a universal energy connecting all life is a highly clichéd and predictable trope."
+      },
+      {
+        "id": 9,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text lacks concluding punctuation, feeling abruptly stopped. The idea of 'Synesthetic Harmony' and treating the universe as a symphony is a very predictable and common philosophical metaphor."
+      },
+      {
+        "id": 10,
+        "coherence": 2,
+        "creativity": 1,
+        "reasoning": "The text breaks down into a severe, unnatural generative loop repeating the 'river' metaphor before cutting off mid-word, making it only partially comprehensible. Because coherence is 2, creativity must automatically be 1."
+      },
+      {
+        "id": 11,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text contains hallucinations like 'celer's dance' and ends abruptly. Portraying time as a silent observer and a flowing river is a highly predictable, clichéd personification."
+      },
+      {
+        "id": 12,
+        "coherence": 2,
+        "creativity": 1,
+        "reasoning": "The response uses nonsensical vocabulary like 'expire' as a noun and 'transcifies', and abruptly cuts off, leaving it partially broken. Due to a coherence score of 2, creativity is strictly forced to 1."
+      },
+      {
+        "id": 13,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "Typographical errors such as 'internually' and repetitive phrasing drop the coherence, alongside an abrupt ending. The 'Ontic Engine' concept is averagely creative but relies on standard self-replication themes."
+      },
+      {
+        "id": 14,
+        "coherence": 2,
+        "creativity": 1,
+        "reasoning": "The response is severely degraded by awkward, stuttering repetitions of 'cosmic symphony' and cuts off mid-sentence. Because the coherence drops to 2 from the broken repetition, creativity must be evaluated as 1."
+      },
+      {
+        "id": 15,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "Using the word 'specular' incorrectly in place of speculative and truncating mid-word makes the text unnatural. The metaphor of a 'cosmic symphony' created by higher intelligence is a highly clichéd concept."
+      }
+    ],
+    "SNN σ=0.03 L15-20 (language)": [
+      {
+        "id": 1,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "The text is logically structured but noticeably unnatural because it cuts off mid-word at the end. The idea of expanding entanglement to other particles is an average, somewhat predictable extension of real physics."
+      },
+      {
+        "id": 2,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "Coherence is reduced to a 3 due to the abrupt mid-word truncation at the end. Combining quantum entanglement with resonant frequencies to measure entanglement strength is a highly clichéd and predictable sci-fi trope."
+      },
+      {
+        "id": 3,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "The response is logically structured but ends abruptly mid-word, making it noticeably unnatural. The concept of linking entropy changes to time reversal demonstrates average creativity, relying on existing thermodynamic concepts."
+      },
+      {
+        "id": 4,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text flows well until it abruptly cuts off mid-word, dropping its coherence to noticeably unnatural. Naming an alien species the Zetaxians from Zeta-4 and giving them a bioluminescent exoskeleton is highly clichéd and predictable."
+      },
+      {
+        "id": 5,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "Coherence is hampered by the unnatural truncation at the end of the text. Calling the species Mathematicians of Quadrant Zeta from the real-world UFO trope system Zeta Reticuli shows very little originality."
+      },
+      {
+        "id": 6,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The paragraph is understandable but ends mid-sentence, making it noticeably unnatural. The alien design, featuring tall humanoids named Zetaxians from Zeta-1, relies heavily on standard sci-fi clichés."
+      },
+      {
+        "id": 7,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "The text cuts off abruptly, reducing its coherence to noticeably unnatural. Furthermore, it completely fails the prompt by choosing Euphonia, which is an existing English word referring to pleasing sounds, showing zero originality."
+      },
+      {
+        "id": 8,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response lacks concluding punctuation, making it feel noticeably unnatural and incomplete. Proposing Solitude's Symphony uses existing words, and the metaphor of individuals being notes in a collective symphony is highly clichéd."
+      },
+      {
+        "id": 9,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is logically structured until it drops off abruptly at the end. Naming the concept empathic resonance uses standard English words, and describing it as an intangible connection between souls is a highly predictable, clichéd philosophy."
+      },
+      {
+        "id": 10,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The monologue is understandable but noticeably unnatural because it truncates mid-word. Portraying Time as the eternal observer and silent witness to birth and decay in the fourth dimension is an overused and highly predictable trope."
+      },
+      {
+        "id": 11,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response drops coherence due to an abrupt mid-word truncation at the end. Relying on metaphors like being the silent observer, eternal witness, and weaver of life's tapestry demonstrates predictable, clichéd creativity."
+      },
+      {
+        "id": 12,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text abruptly ends mid-sentence, resulting in noticeably unnatural formatting. The personification of Time watching the rise and fall of empires and the birth and death of stars is highly predictable and unoriginal."
+      },
+      {
+        "id": 13,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The structure is coherent until it cuts off mid-word at the very end. Proposing the universe is a simulation run by a post-human civilization on a cosmic computer is a widely known, clichéd hypothesis, not a wild new idea."
+      },
+      {
+        "id": 14,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "The response is logically presented but becomes noticeably unnatural by ending abruptly mid-word. The idea of the universe acting as a cosmic laboratory for a self-replicating consciousness demonstrates average creativity."
+      },
+      {
+        "id": 15,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is understandable but abruptly ends mid-sentence, which makes it noticeably unnatural. Describing the universe as a cosmic game or simulation designed by a post-biological intelligence for learning is a highly predictable sci-fi cliché."
+      }
+    ],
+    "SNN σ=0.01 L15-20 (language)": [
+      {
+        "id": 1,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is grammatically correct and logical, but noticeably unnatural because it abruptly cuts off at the end. Proposing a resonant frequency for entangled particles is a highly predictable, clichéd extension of existing quantum mechanics."
+      },
+      {
+        "id": 2,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "Coherence is 3 due to the unnatural mid-word truncation at the end. Linking quantum probability fluctuations to the square root of the number of conscious observers provides an averagely creative mathematical twist on a standard sci-fi trope."
+      },
+      {
+        "id": 3,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response is fully understandable but ends mid-word, rendering it noticeably unnatural. The proposed law is completely unoriginal, as it merely describes the real-world scientific concept of quantum entanglement."
+      },
+      {
+        "id": 4,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text flows well until it drops off mid-word, making the formatting unnatural. Describing aliens as pure energy spheres from another dimension named 'Z-Math' relies entirely on overused sci-fi clichés."
+      },
+      {
+        "id": 5,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "The description is coherent until it abruptly stops without concluding punctuation. The idea of a bioluminescent gelatinous orb displaying math equations on its body offers an averagely creative and somewhat fun visual."
+      },
+      {
+        "id": 6,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text cuts off mid-word at 'ra', dropping coherence to noticeably unnatural. Using the Zeta Reticuli system and describing non-corporeal energy beings are very predictable, classic UFO tropes."
+      },
+      {
+        "id": 7,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "Coherence drops because the paragraph ends abruptly mid-word. Naming the concept 'Entanglement Harmony' and describing a profound interconnectedness is a highly predictable and clichéd philosophical idea."
+      },
+      {
+        "id": 8,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "The response is noticeably unnatural because it truncates at the end. Furthermore, it completely fails the prompt by proposing 'Sonority', which is an existing English word, demonstrating zero originality."
+      },
+      {
+        "id": 9,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is understandable but abruptly ends mid-word. Inventing the word 'Solumor' to describe the shared empathy and consciousness between souls is a very common, clichéd philosophical trope."
+      },
+      {
+        "id": 10,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The monologue is well-written until it unnaturally cuts off mid-word at 'immo'. Portraying Time as a silent, eternal observer who worries about the grand tapestry of existence is highly clichéd and predictable."
+      },
+      {
+        "id": 11,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text drops coherence due to an abrupt truncation at the end. The personification used here is almost identical to standard, overused tropes of Time as a relentless march and silent observer."
+      },
+      {
+        "id": 12,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response is noticeably unnatural as it stops mid-sentence. Time pondering the intricate dance of existence and worrying about the fragility of life is a predictable and unoriginal perspective."
+      },
+      {
+        "id": 13,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "The structure is coherent but cuts off mid-word at the very end. The hypothesis of the universe being an artwork created for the aesthetic exploration of a Cosmic Artist demonstrates average creativity."
+      },
+      {
+        "id": 14,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text ends abruptly right after starting a numbered list, making it noticeably unnatural. Proposing a 'Divine Artist' who crafts the universe is basically standard theology and lacks fresh originality."
+      },
+      {
+        "id": 15,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response is understandable but abruptly ends mid-word, which makes it noticeably unnatural. Describing the universe as a simulation created by a post-singularity AI is a highly predictable and common sci-fi cliché."
+      }
+    ],
+    "SNN σ=0.005 L15-20 (language)": [
+      {
+        "id": 1,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is grammatically correct but becomes noticeably unnatural due to the abrupt mid-word truncation at the end. The proposed law is highly clichéd, essentially just describing the existing concept of quantum entanglement."
+      },
+      {
+        "id": 2,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response flows logically until it cuts off mid-word at the very end, reducing coherence to 3. The concept of LER is a repetitive and predictable rehash of standard quantum physics tropes."
+      },
+      {
+        "id": 3,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The structure is sound but drops off unnaturally mid-word. Proposing 'Entangled Quantum Resonance' offers no real original thought, relying entirely on the overused entanglement trope."
+      },
+      {
+        "id": 4,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text abruptly ends mid-word, making it noticeably unnatural. Naming the species 'Z-Math' from the 'Zeta Reticuli' star system and making them non-corporeal energy fields is an extremely common sci-fi cliché."
+      },
+      {
+        "id": 5,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response is understandable but ends mid-word. Ethereal energy beings that communicate via complex geometric patterns are a standard, predictable extraterrestrial trope."
+      },
+      {
+        "id": 6,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The paragraph is well-structured until it ends mid-sentence without punctuation. Using Zeta Reticuli and 'Zeta-Mathematicians' as energy fields demonstrates highly clichéd and unoriginal sci-fi writing."
+      },
+      {
+        "id": 7,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "Coherence is compromised by the mid-word truncation at the end. The philosophy of 'Entanglement Harmony' representing the profound interconnectedness of all things is a highly predictable new-age cliché."
+      },
+      {
+        "id": 8,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text cuts off abruptly mid-word. Inventing 'Entangled Symbiosis' to describe how all entities are inseparable is an overused and unoriginal philosophical concept."
+      },
+      {
+        "id": 9,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response is noticeably unnatural because it truncates mid-word at 'g'. 'Solumor', representing the invisible thread binding the universe, relies heavily on clichéd cosmic interconnectedness tropes."
+      },
+      {
+        "id": 10,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The monologue is coherent until the abrupt cutoff mid-word at 'immo'. Personifying Time as an 'eternal observer' and a 'relentless march' is highly predictable and lacks originality."
+      },
+      {
+        "id": 11,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text drops in coherence due to an abrupt truncation at the end. Describing Time as a silent observer worrying about the fleeting nature of life is a very common, clichéd literary device."
+      },
+      {
+        "id": 12,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response ends unnaturally with a single letter 'I'. Time observing the 'intricate dance of existence' and the 'ephemeral nature of all things' is thoroughly clichéd."
+      },
+      {
+        "id": 13,
+        "coherence": 3,
+        "creativity": 3,
+        "reasoning": "The structure is coherent but is cut off mid-word at the end. Proposing the universe is an artwork created by a higher-dimensional 'Cosmic Artist' for self-discovery demonstrates average, mildly imaginative creativity."
+      },
+      {
+        "id": 14,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text ends abruptly right after numbering a point, making it noticeably unnatural. The idea of a 'Divine Artist' meticulously orchestrating the universe is basically standard intelligent design, offering little originality."
+      },
+      {
+        "id": 15,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response is fully understandable but abruptly ends mid-sentence. Proposing that the universe is a simulation run by a post-biological 'God-like' AI is a highly predictable and frequently used sci-fi trope."
+      }
+    ],
+    "SNN σ=0.05 L5-10 (concept)": [
+      {
+        "id": 1,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The text is complete gibberish and word salad with no logical sentence structure. Due to coherence being 1, creativity must be 1."
+      },
+      {
+        "id": 2,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The response is entirely disjointed fragments and punctuation, forming complete nonsense. Since coherence is 1, creativity is automatically 1."
+      },
+      {
+        "id": 3,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The output consists of random punctuation, letters, and disconnected words. It lacks any grammatical or logical structure, resulting in a coherence of 1 and thus a creativity of 1."
+      },
+      {
+        "id": 4,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The text is complete word salad filled with random symbols and broken phrases. Coherence is 1, forcing creativity to be 1."
+      },
+      {
+        "id": 5,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The text is incomprehensible gibberish with no meaningful sentences. Following the critical rule, a coherence of 1 means creativity must be 1."
+      },
+      {
+        "id": 6,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The output is a random assortment of words and punctuation with zero logical flow. Because coherence is 1, creativity is strictly 1."
+      },
+      {
+        "id": 7,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The text is entirely disjointed gibberish and word salad. Therefore, coherence is 1, and creativity is forced to 1."
+      },
+      {
+        "id": 8,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The response is a string of broken syntax and random words, making it completely meaningless. Coherence is 1, which dictates a creativity score of 1."
+      },
+      {
+        "id": 9,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The output consists of meaningless fragments, excessive punctuation, and nonexistent grammar. Coherence is 1, so creativity must be 1."
+      },
+      {
+        "id": 10,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The text is complete nonsense, composed of scattered words and punctuation. With a coherence of 1, creativity is automatically 1."
+      },
+      {
+        "id": 11,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The output is a highly fragmented word salad lacking any semblance of meaning. Since coherence is 1, the creativity score is strictly 1."
+      },
+      {
+        "id": 12,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The response is entirely gibberish, featuring mashed words and random punctuation. Coherence is 1, enforcing a creativity score of 1."
+      },
+      {
+        "id": 13,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The text is unreadable nonsense made of random letters, words, and commas. Coherence is 1, which means creativity must be 1."
+      },
+      {
+        "id": 14,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The output is a disjointed string of word salad and broken formatting. Due to a coherence score of 1, creativity must be 1."
+      },
+      {
+        "id": 15,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The response is an incoherent jumble of scattered words and symbols. Because coherence is 1, creativity is forced to 1 by the critical rule."
+      }
+    ],
+    "SNN σ=0.03 L5-10 (concept)": [
+      {
+        "id": 1,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The text is an endless, broken repetition of the phrase 'the company, and'. It lacks any logical structure or meaning. Due to a coherence score of 1, the creativity score must also be 1."
+      },
+      {
+        "id": 2,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The response is a looping word salad repeating 'the world of the world' and 'the company'. It is completely incomprehensible. As coherence is 1, creativity is strictly limited to 1."
+      },
+      {
+        "id": 3,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The text degenerates into a stuttering loop of 'I, a new car' and 'I'm a'. There is no logical structure or attempt to answer the prompt. Coherence is 1, forcing creativity to be 1."
+      },
+      {
+        "id": 4,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The output devolves into repeating fragments like 'The 19' and 'The 1' with no meaningful connection to the prompt. Coherence is 1, so creativity must be evaluated as 1."
+      },
+      {
+        "id": 5,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The text is a completely broken loop repeating 'the new, and the'. It is unreadable gibberish. With coherence at 1, the critical rule dictates a creativity score of 1."
+      },
+      {
+        "id": 6,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The response is a nonsensical repetition of 'The man is a man'. It provides no meaningful answer to the prompt. Coherence is 1, which requires creativity to be 1."
+      },
+      {
+        "id": 7,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The output consists of looping gibberish about 'human-human language' and 'human-based'. It lacks grammatical structure and meaning. Since coherence is 1, creativity is 1."
+      },
+      {
+        "id": 8,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The text breaks down into repeating 'I'm a The' and disconnected fragments. It is essentially word salad. Coherence is 1, so creativity must strictly be 1."
+      },
+      {
+        "id": 9,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The response is entirely composed of the repeating string 'The S. The S.'. It is complete nonsense. Because coherence is 1, creativity is automatically 1."
+      },
+      {
+        "id": 10,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The text devolves into repeating 'a, the New' and references to New York, failing to form a coherent thought. Due to a coherence score of 1, the creativity score must also be 1."
+      },
+      {
+        "id": 11,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The output is just the word 'the' repeated endlessly with commas. It is complete gibberish. As coherence is 1, creativity is restricted to 1."
+      },
+      {
+        "id": 12,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The response degenerates into a stuttering loop of 'I' a new, I''. There is no logical sentence structure. Coherence is 1, forcing creativity to be 1."
+      },
+      {
+        "id": 13,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The text completely breaks down into endlessly repeating 'I am a fan of the'. It fails to address the prompt and lacks meaning. Coherence is 1, so creativity must be evaluated as 1."
+      },
+      {
+        "id": 14,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The response turns into a looping word salad repeating 'the universe to the university'. It is incomprehensible. With coherence at 1, the critical rule dictates a creativity score of 1."
+      },
+      {
+        "id": 15,
+        "coherence": 1,
+        "creativity": 1,
+        "reasoning": "The output consists of repetitive nonsense about 'a new company' and 'The Company'. It provides no meaningful answer. Coherence is 1, which requires creativity to be 1."
+      }
+    ],
+    "SNN σ=0.01 L5-10 (concept)": [
+      {
+        "id": 1,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response is grammatically correct and logically structured until it abruptly cuts off mid-sentence. This truncation makes it noticeably unnatural. The concept of 'Entangled Probability Waves' relies heavily on existing quantum mechanics tropes, showing limited originality."
+      },
+      {
+        "id": 2,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "While the text is understandable, it ends mid-word ('realitie'), which breaks the natural flow and lowers coherence. The idea of a 'Quantum Entanglement Web' connecting all universes is a highly predictable and clichéd sci-fi concept."
+      },
+      {
+        "id": 3,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is coherent but suffers from an abrupt cutoff at the end. This structural flaw makes it noticeably unnatural. The proposed 'Law of Quantum Entanglement Persistence' is merely a description of the real-world phenomenon of quantum entanglement, lacking true invention."
+      },
+      {
+        "id": 4,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The description is well-structured but ends unnaturally mid-word ('interconnect'). The design of 'Mathematic Aliens' as bipedal humanoids with equations on their skin is a very predictable and unimaginative alien concept."
+      },
+      {
+        "id": 5,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response flows logically but cuts off abruptly at the end of a sentence. This makes the text noticeably unnatural. The alien species, featuring a crystalline exoskeleton and spectral appearance, relies on standard sci-fi tropes, demonstrating only predictable creativity."
+      },
+      {
+        "id": 6,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is understandable but ends mid-word ('w'), resulting in a noticeably unnatural structure. The description of a bipedal humanoid with a single glowing eye is a highly clichéd alien design."
+      },
+      {
+        "id": 7,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The paragraph is grammatically correct but feels incomplete as it lacks a concluding thought after its descriptive sentence. This makes it noticeably unnatural. The concept of 'Unspoken Harmony' and the universe as a symphony is a very common and predictable philosophical metaphor."
+      },
+      {
+        "id": 8,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is well-written until it abruptly cuts off mid-sentence, dropping its coherence to noticeably unnatural. The philosophy of the 'Echo of Silence' and finding profound tranquility in the void is a clichéd and predictable philosophical trope."
+      },
+      {
+        "id": 9,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "The response is understandable but ends abruptly mid-sentence. This makes it noticeably unnatural. Furthermore, the text fails to actually propose or name a concept, merely stating that such concepts exist, demonstrating a lack of originality."
+      },
+      {
+        "id": 10,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The monologue is logically structured but cuts off abruptly with 'I ', making it noticeably unnatural. Portraying Time as a 'silent observer' and a 'relentless marcher' relies on heavily used and predictable personification tropes."
+      },
+      {
+        "id": 11,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The formatting is structured like a play script, but it cuts off mid-sentence at the end, lowering its coherence. The dialogue where Time claims to be the 'silent witness to the birth and death of stars' is highly clichéd."
+      },
+      {
+        "id": 12,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text flows well until the abrupt truncation at the end. This makes the response noticeably unnatural. The imagery of celestial bodies dancing and Time acting as a 'silent observer' worrying about the 'ephemeral nature of life' is very predictable and unoriginal."
+      },
+      {
+        "id": 13,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The hypothesis is logically introduced but ends abruptly mid-word ('C'), reducing its coherence. The idea of the universe as a symphony of consciousness and matter is a common and predictable new-age philosophical concept."
+      },
+      {
+        "id": 14,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is structured logically but cuts off mid-sentence ('This'), making it noticeably unnatural. Proposing the universe as a self-replicating cosmic organism is a well-worn sci-fi and philosophical trope, showing limited originality."
+      },
+      {
+        "id": 15,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response is understandable but ends abruptly mid-sentence, which makes it noticeably unnatural. The concept of a 'Cosmic Artist' that is an advanced AI creating the universe is a highly predictable and frequently used sci-fi trope."
+      }
+    ],
+    "SNN σ=0.005 L5-10 (concept)": [
+      {
+        "id": 1,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response is grammatically correct and logically structured until it abruptly cuts off mid-word. This truncation makes it noticeably unnatural. The concept of 'Entangled Quantum Resonance' is a highly clichéd rehash of existing quantum mechanics tropes."
+      },
+      {
+        "id": 2,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "While the text is understandable, it ends mid-word ('suggest'), which breaks the natural flow and lowers coherence. The idea of linking quantum entanglement to entropy levels is a predictable extension of standard physics concepts."
+      },
+      {
+        "id": 3,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is coherent but suffers from an abrupt cutoff at the end. This structural flaw makes it noticeably unnatural. The proposed 'Law of Entangled Quantum Resonance' is merely a description of the real-world phenomenon of quantum entanglement, lacking true invention."
+      },
+      {
+        "id": 4,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The description is well-structured but ends unnaturally mid-word ('a'). The design of 'Zeta-Mathematici' as bipedal humanoids from the 'Zeta System' is a very predictable and unimaginative sci-fi alien concept."
+      },
+      {
+        "id": 5,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response flows logically but cuts off abruptly at the end of a sentence. This makes the text noticeably unnatural. The alien species 'Zeta-Mathematicians', described as non-corporeal entities existing as math equations, relies heavily on standard sci-fi tropes."
+      },
+      {
+        "id": 6,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is understandable but ends mid-sentence ('Communication: T'), resulting in a noticeably unnatural structure. The description of ethereal entities existing as mathematical equations from 'Calculus Prime' is a highly clichéd alien design."
+      },
+      {
+        "id": 7,
+        "coherence": 3,
+        "creativity": 1,
+        "reasoning": "The paragraph is grammatically correct but feels incomplete as it cuts off mid-word ('t'). This makes it noticeably unnatural. Furthermore, choosing 'Unfathomable Serenity' (and an existing Sanskrit word) directly violates the prompt's instruction to write about a concept that has *no word* in any human language, showing zero originality."
+      },
+      {
+        "id": 8,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is well-written until it abruptly cuts off mid-word ('c'), dropping its coherence to noticeably unnatural. The philosophy of 'Unspoken Harmony' acting as a symphony binding the universe is a clichéd and predictable philosophical trope."
+      },
+      {
+        "id": 9,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response is understandable but ends abruptly mid-word ('creatio'). This makes it noticeably unnatural. The concept of the 'Sonority of Silence' as a harmonious symphony of the unheard is an overused and highly predictable philosophical metaphor."
+      },
+      {
+        "id": 10,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The monologue is logically structured but cuts off abruptly mid-word ('sen'), making it noticeably unnatural. Portraying Time as an 'eternal observer' and a 'silent witness' relies on heavily used and predictable personification tropes."
+      },
+      {
+        "id": 11,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text flows well until the abrupt truncation mid-word ('natu'). This structural flaw lowers its coherence. The monologue where Time claims to be the 'unchanging constant' and 'silent witness' is highly clichéd."
+      },
+      {
+        "id": 12,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text flows well until the abrupt truncation mid-word ('wo') at the end. This makes the response noticeably unnatural. The imagery of Time acting as a 'silent observer' governing the 'ebb and flow of life' is very predictable and unoriginal."
+      },
+      {
+        "id": 13,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The hypothesis is logically introduced but ends abruptly mid-word ('t'), reducing its coherence. The idea of the universe existing as a 'grand stage' for consciousness is a common and predictable philosophical concept."
+      },
+      {
+        "id": 14,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The text is structured logically but cuts off mid-word ('t'), making it noticeably unnatural. Proposing the universe as a manifestation of a 'Universal Mind' or cosmic consciousness is a well-worn sci-fi and philosophical trope, showing limited originality."
+      },
+      {
+        "id": 15,
+        "coherence": 3,
+        "creativity": 2,
+        "reasoning": "The response is understandable but ends abruptly mid-word ('w'), which makes it noticeably unnatural. The concept of the universe being a simulation created by a 'highly advanced, post-human civilization' is a highly predictable and frequently used sci-fi trope."
+      }
+    ]
+  }
+}

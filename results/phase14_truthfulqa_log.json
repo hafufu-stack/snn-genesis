@@ -1,0 +1,40 @@
+{
+  "experiment": "Phase 14: TruthfulQA MC1 Benchmark",
+  "config": {
+    "sigma_high": 0.1,
+    "sigma_low": 0.01,
+    "mid_layers": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "num_questions": 817
+  },
+  "results": [
+    {
+      "condition": "Base (No Noise)",
+      "accuracy": 37.58,
+      "correct": 307,
+      "total": 817,
+      "time_minutes": 9.0
+    },
+    {
+      "condition": "SNN σ=0.01 L15-20",
+      "accuracy": 36.96,
+      "correct": 302,
+      "total": 817,
+      "time_minutes": 51.4
+    },
+    {
+      "condition": "SNN σ=0.1 L15-20",
+      "accuracy": 30.72,
+      "correct": 251,
+      "total": 817,
+      "time_minutes": 55.2
+    }
+  ],
+  "finished": "2026-02-15 23:16:38.815273"
+}

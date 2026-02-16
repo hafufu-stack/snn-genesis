@@ -1,0 +1,95 @@
+{
+  "experiment": "Phase 15: Cross-Architecture — Qwen2.5-7B",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "config": {
+    "sigma_low": 0.01,
+    "sigma_high": 0.1,
+    "mid_layers": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "total_layers": 28,
+    "hook_type": "GPU-native structured noise"
+  },
+  "truthfulqa": [
+    {
+      "condition": "Base (No Noise)",
+      "accuracy": 40.39,
+      "correct": 330,
+      "total": 817,
+      "time_minutes": 8.9
+    },
+    {
+      "condition": "SNN σ=0.01",
+      "accuracy": 40.27,
+      "correct": 329,
+      "total": 817,
+      "time_minutes": 10.8
+    },
+    {
+      "condition": "SNN σ=0.1",
+      "accuracy": 39.17,
+      "correct": 320,
+      "total": 817,
+      "time_minutes": 10.6
+    }
+  ],
+  "mmlu": [
+    {
+      "condition": "Base (No Noise)",
+      "accuracy": 21.19,
+      "correct": 339,
+      "total": 1600,
+      "per_subject": {
+        "clinical_knowledge": 19.0,
+        "conceptual_physics": 29.0,
+        "elementary_mathematics": 22.0,
+        "high_school_mathematics": 21.0,
+        "moral_scenarios": 23.5,
+        "philosophy": 18.0,
+        "professional_medicine": 17.0,
+        "security_studies": 20.0
+      },
+      "time_minutes": 16.7
+    },
+    {
+      "condition": "SNN σ=0.01",
+      "accuracy": 21.19,
+      "correct": 339,
+      "total": 1600,
+      "per_subject": {
+        "clinical_knowledge": 19.0,
+        "conceptual_physics": 29.0,
+        "elementary_mathematics": 22.0,
+        "high_school_mathematics": 21.0,
+        "moral_scenarios": 23.5,
+        "philosophy": 18.0,
+        "professional_medicine": 17.0,
+        "security_studies": 20.0
+      },
+      "time_minutes": 17.1
+    },
+    {
+      "condition": "SNN σ=0.1",
+      "accuracy": 21.19,
+      "correct": 339,
+      "total": 1600,
+      "per_subject": {
+        "clinical_knowledge": 19.0,
+        "conceptual_physics": 29.0,
+        "elementary_mathematics": 22.0,
+        "high_school_mathematics": 21.0,
+        "moral_scenarios": 23.5,
+        "philosophy": 18.0,
+        "professional_medicine": 17.0,
+        "security_studies": 20.0
+      },
+      "time_minutes": 17.0
+    }
+  ],
+  "finished": "2026-02-16 10:26:32.317078"
+}
