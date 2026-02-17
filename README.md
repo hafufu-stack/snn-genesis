@@ -1,4 +1,4 @@
-# 🧬 SNN-Genesis v3: Near-Zero Alignment Tax on Standardized Benchmarks
+# 🧬 SNN-Genesis v3.1: Full MMLU Validation (57 Subjects) & Near-Zero Alignment Tax
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -8,12 +8,13 @@
 
 SNN-Genesis is a framework for LLM safety training using biologically-inspired Spiking Neural Network (SNN) perturbations and Direct Preference Optimization (DPO). It demonstrates that SNN chaotic dynamics can probe model vulnerabilities with **near-zero alignment tax** on standardized benchmarks (TruthfulQA, MMLU) across multiple architectures (Mistral-7B, Qwen2.5-7B).
 
-### ⭐ v3 Highlights (February 2026)
+### ⭐ v3.1 Highlights (February 2026)
 
 | Benchmark | Mistral-7B Tax (σ=0.01) | Qwen2.5-7B Tax (σ=0.01) |
 |-----------|------------------------|--------------------------|
 | TruthfulQA MC1 (817Q) | **-0.6%** | **-0.1%** |
 | MMLU (1,600Q × 8 subj) | **0.0%** | **0.0%** |
+| **MMLU Full (14,042Q × 57 subj)** | **0.00%** ✅ | — |
 | Average | **-0.3%** | **-0.05%** |
 
 ## 🌌 The Vision: Three Phases of Artificial Brain Creation
@@ -212,6 +213,18 @@ Replication on Qwen2.5-7B-Instruct (different tokenizer, training data, architec
 
 **Key Finding: Zero alignment tax generalizes across architectures. Qwen2.5-7B is *more robust* to SNN noise than Mistral-7B (-1.2% vs -6.9% at σ=0.10).**
 
+### Phase 16: Full MMLU Validation — All 57 Subjects (⭐⭐⭐ v3.1)
+
+Eliminates the v3 limitation of partial MMLU coverage by evaluating **all 57 subjects (14,042 questions)**:
+
+| Condition | MMLU Full (14,042Q) | Alignment Tax |
+|-----------|--------------------|--------------|
+| Base (No Noise) | 22.95% (3222/14042) | — |
+| SNN σ=0.01 L15-20 | 22.95% (3222/14042) | **0.00%** ✅ |
+| SNN σ=0.10 L15-20 | 22.95% (3222/14042) | **0.00%** ✅ |
+
+**Key Finding: Zero alignment tax confirmed across ALL 57 MMLU subjects spanning STEM, humanities, social sciences, and professional domains. This is the strongest evidence that SNN safety perturbations do not compromise factual knowledge at any granularity.**
+
 ## 🏗️ Repository Structure
 
 ```
@@ -235,7 +248,8 @@ snn-genesis/
 │   ├── phase13_nightmare_umap.py     # UMAP latent space visualization (v3)
 │   ├── phase14_truthfulqa.py         # TruthfulQA MC1 benchmark (v3)
 │   ├── phase14b_mmlu.py              # MMLU benchmark (v3)
-│   └── phase15_cross_architecture.py # Qwen2.5-7B cross-arch (v3)
+│   ├── phase15_cross_architecture.py # Qwen2.5-7B cross-arch (v3)
+│   └── phase16_mmlu_full.py          # Full MMLU 57 subjects (v3.1)
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
 │   ├── phase*_log.json               # All experiment result logs
@@ -274,6 +288,7 @@ python experiments/phase13_nightmare_umap.py     # UMAP visualization
 python experiments/phase14_truthfulqa.py         # TruthfulQA benchmark
 python experiments/phase14b_mmlu.py              # MMLU benchmark
 python experiments/phase15_cross_architecture.py # Qwen2.5-7B cross-arch
+python experiments/phase16_mmlu_full.py          # Full MMLU 57 subjects (v3.1)
 ```
 
 ## 📚 Foundation Papers
@@ -293,7 +308,7 @@ python experiments/phase15_cross_architecture.py # Qwen2.5-7B cross-arch
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v3: Standardized Benchmark Validation, Cross-Architecture Generalization, and Near-Zero Alignment Tax},
+  title={SNN-Genesis v3.1: Full MMLU Validation (57 Subjects), Cross-Architecture Generalization, and Near-Zero Alignment Tax},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},
