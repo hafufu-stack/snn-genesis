@@ -4,14 +4,8 @@ __pycache__/
 *.pyo
 .ipynb_checkpoints/
 
-# Papers (allow source .tex, exclude build artifacts)
-papers/*.pdf
-papers/*.aux
-papers/*.log
-papers/*.out
-papers/*.synctex.gz
-papers/*.bbl
-papers/*.blg
+# Papers (managed separately, not in git)
+papers/
 
 # Model checkpoints (too large for git)
 **/checkpoint-*/
@@ -19,9 +13,12 @@ papers/*.blg
 *.safetensors
 *.bin
 
-# General build artifacts
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
 *.pdf
-!papers/*.tex
 
 # OS files
 .DS_Store
