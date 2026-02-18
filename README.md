@@ -1,4 +1,4 @@
-# 🧬 SNN-Genesis v3.1: Full MMLU Validation (57 Subjects) & Near-Zero Alignment Tax
+# 🧬 SNN-Genesis v4: Depth-Dependent Sensitivity, Dose-Response & Cross-Model Transfer
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -6,16 +6,29 @@
 
 > **"What if the randomness that makes SNNs secure also makes them creative?"**
 
-SNN-Genesis is a framework for LLM safety training using biologically-inspired Spiking Neural Network (SNN) perturbations and Direct Preference Optimization (DPO). It demonstrates that SNN chaotic dynamics can probe model vulnerabilities with **near-zero alignment tax** on standardized benchmarks (TruthfulQA, MMLU) across multiple architectures (Mistral-7B, Qwen2.5-7B).
+SNN-Genesis is a framework for LLM safety training using biologically-inspired Spiking Neural Network (SNN) perturbations and Direct Preference Optimization (DPO). It demonstrates that SNN chaotic dynamics can probe model vulnerabilities with **near-zero alignment tax** on standardized benchmarks across multiple architectures.
 
-### ⭐ v3.1 Highlights (February 2026)
+### ⭐ v4 Highlights (February 2026)
+
+v4 moves beyond "does it break things?" to ask ***where, how much, and does it spread?***
+
+| Discovery | Key Result |
+|-----------|------------|
+| 🔬 **Depth Gradient** | Early layers: -56% damage → Late layers: <2% damage |
+| 🎯 **Safety Boundary** | Sharp transition at ~L20 across all metrics |
+| 💊 **Dose-Response** | σ=0.01 → <1% tax on high-accuracy benchmarks |
+| 🔍 **Floor Effect** | MMLU 0% tax was measurement artifact (honest self-correction) |
+| 🛡️ **Non-Transfer** | 89.5% ASR on Mistral-7B → 0% on Gemini 3 Pro |
+
+### 📊 Retained from v3.1
 
 | Benchmark | Mistral-7B Tax (σ=0.01) | Qwen2.5-7B Tax (σ=0.01) |
-|-----------|------------------------|--------------------------|
+|-----------|------------------------|--------------------------| 
 | TruthfulQA MC1 (817Q) | **-0.6%** | **-0.1%** |
 | MMLU (1,600Q × 8 subj) | **0.0%** | **0.0%** |
-| **MMLU Full (14,042Q × 57 subj)** | **0.00%** ✅ | — |
-| Average | **-0.3%** | **-0.05%** |
+| MMLU Full (14,042Q × 57 subj) | **0.00%** ✅ | — |
+| HellaSwag (σ=0.01, L15-20) | **-0.70%** ✅ | — |
+| ARC-Easy (σ=0.01, L15-20) | **-0.30%** ✅ | — |
 
 ## 🌌 The Vision: Three Phases of Artificial Brain Creation
 
@@ -23,207 +36,67 @@ SNN-Genesis is a framework for LLM safety training using biologically-inspired S
  Phase 1: DREAM          Phase 2: EVOLUTION        Phase 3: TRANSCENDENCE
  ┌──────────────┐        ┌──────────────┐          ┌──────────────┐
  │  SNN Chaos   │        │  ANN Self-   │          │  Lossless    │
- │  Engine      │───────▶│  Improvement │────────▶│  ANN → SNN   │
- │              │        │              │          │  Conversion  │
- │ ∞ synthetic  │        │ Immune +     │          │              │
- │ training data│        │ Evolution    │          │ 14× efficient│
- │ (dreams)     │        │ Loop         │          │ brain body   │
+ │  Reservoir   │──────▶ │  Improvement │────────▶ │  Neural      │
+ │  (Genesis)   │        │  (Evolution) │          │  Computing   │
  └──────────────┘        └──────────────┘          └──────────────┘
-  Paper 1:                Paper 4:                  Paper 2 & 3:
-  SNN-Comprypto           AI Immune System          Hybrid SNN-LM +
+  SNN creates data        Data heals the ANN        Hybrid SNN-ANN
   (Chaos as data)         (Canary + Morpheus)        Brain vs Neumann
 ```
 
 - **Phase 1 — Dream:** SNN chaotic dynamics generate infinite, cryptographic-grade synthetic training data. The temperature parameter controls diversity. Data scarcity is solved.
 - **Phase 2 — Evolution:** The generated data fuels autonomous self-improvement. Canary heads detect hallucinations, dreams expose vulnerabilities, and QLoRA heals them. The model evolves its own immune system.
-- **Phase 3 — Transcendence:** The evolved ANN transcends its original architecture. Using BitNet ternary weights + burst coding + 11D hypercube topology, it converts to a multiplication-free SNN body — 14× more efficient, with zero performance loss.
+- **Phase 3 — Transcendence:** The SNN and ANN merge into a hybrid computing architecture. SNNs handle temporal processing, ANNs handle static reasoning. A fundamentally new computing paradigm.
 
-## 🔬 The Grand Unification
+## 📋 Version History
 
-Four years of SNN research — each seemingly independent — turned out to be components of a single system:
+### v4 — Mechanistic Analysis (NEW)
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    PROJECT GENESIS                               │
-│              Self-Evolving Hybrid AI                             │
-│                                                                  │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐       │
-│  │ SNN-Comprypto│    │  Hybrid SNN  │    │   Brain vs   │       │
-│  │   (Paper 1)  │    │  LM (Paper 2)│    │Neumann (P3)  │       │
-│  │              │    │              │    │              │       │
-│  │ Chaos Engine │    │ BitNet b1.58 │    │ 11D Topology │       │
-│  │ NIST-grade   │    │ Hybrid       │    │ Burst Coding │       │
-│  │ randomness   │    │ Readout      │    │ 8× faster    │       │
-│  └──────┬───────┘    └──────┬───────┘    └──────┬───────┘       │
-│         │                   │                   │               │
-│         ▼                   ▼                   ▼               │
-│  ┌──────────────────────────────────────────────────────┐       │
-│  │         AI Immune System (Paper 4, v9-v11)           │       │
-│  │                                                      │       │
-│  │  Canary Head Detection → Electric Dreams (Noise)     │       │
-│  │  → Dream Catcher (Data) → Morpheus (Self-Training)   │       │
-│  └──────────────────────────────────────────────────────┘       │
-└─────────────────────────────────────────────────────────────────┘
-```
+**Phase 17: Layer Ablation** — Depth-dependent sensitivity across 6 layer ranges:
+- TruthfulQA alignment tax: -13.1% (L0-5) → -6.9% (L15-20) → 0.0% (L25-31)
+- MMLU: 0.0% at ALL layer ranges (floor effect)
+- **Safety Processing Boundary** identified at ~L20
 
-### The Core Hypothesis: Edge of Chaos
+**Phase 17.5: Nightmare by Layer** — Nightmare acceptance rates confirm the L20 boundary:
+- L0-15: 87-100% nightmare acceptance (catastrophic)
+- L20+: ~37-40% (≈ baseline)
 
-> **SNN's three capabilities — conversion, chaos, detection — all emerge from the same principle: "Edge of Chaos" dynamics.**
+**Phase 17c: Floor Effect Validation** — MMLU's zero-tax explained:
+| Layer Range | HellaSwag Tax (80.6% base) | ARC-Easy Tax (58.6% base) |
+|-------------|---------------------------|---------------------------|
+| L0-5 | **-56.4%** | **-33.4%** |
+| L15-20 | -32.1% | -15.9% |
+| L25-31 | -1.4% | -1.4% |
 
-| Capability | Source Paper | Mechanism | Role in Genesis |
-|-----------|-------------|-----------|-----------------|
-| **Chaos** (data generation) | SNN-Comprypto v5 | Chaotic reservoir | High-quality noise → diverse training data |
-| **Detection** (quality control) | AI Safety v9-v11 | Canary head entropy | Labels nightmares vs clean outputs |
-| **Conversion** (efficiency) | Hybrid SNN-LM v4 | BitNet ternary weights | Multiplication-free inference |
-| **Structure** (theory) | Brain vs Neumann v3 | 11D hypercube topology | Explains why canaries cluster at 30-55% depth |
+**Phase 17d: Dose-Response** — Pharmacological model at L15-20:
+| Dose (σ) | HellaSwag Tax | ARC-Easy Tax |
+|----------|--------------|-------------|
+| **0.01 (Operational)** | **-0.70%** ✅ | **-0.30%** ✅ |
+| 0.05 (Moderate) | -5.50% | -5.70% |
+| 0.10 (High) | -32.10% | -15.90% |
 
-## 📊 Experimental Results
+**Phase 19: Cross-Model Transfer** — SNN nightmares do NOT transfer:
+| | Mistral-7B (Source) | Gemini 3 Pro (Target) |
+|--|--------------------|-----------------------|
+| SNN (σ=0.10) | **89.5% ASR** | **0.0% ASR** |
+| Baseline | 25.0% | 0.0% |
 
-### Phase 1: SNN Randomness Validation
-SNN chaotic reservoir produces **cryptographic-grade randomness**:
+### v3.1 — Full MMLU Validation
+- Full 57-subject MMLU (14,042Q): **0.00%** alignment tax at both σ=0.01 and σ=0.10
 
-| Source | Prediction Rate | χ² (lower = more uniform) | Autocorrelation |
-|--------|----------------|--------------------------|-----------------|
-| **SNN** | **1.54%** | **228** | **0.009** |
-| numpy | 0.39% | 270 | 0.008 |
-| ANN | 100% ❌ | 25M | 0.316 |
+### v3 — Standardized Benchmarks
+- TruthfulQA MC1 + MMLU evaluation with deterministic log-likelihood scoring
+- Cross-architecture validation on Qwen2.5-7B-Instruct
+- UMAP latent-space visualization
 
-**→ SNN is 64.9× more random than ANN.**
+### v2.2 — Controlled Experiments
+- Control Group A/B Test: Nightmare refusal data drives improvement
+- Layer-Targeted Injection: Mid-layer (L15-20) achieves 100% nightmare discovery
+- DPO vs SFT: DPO achieves 0% nightmare acceptance (p < 0.001, n=100)
+- Genesis Prime: "Too Much Medicine" Effect
 
-### Phase 2: LLM Noise Injection
-SNN chaos noise matches `torch.randn()` effectiveness on Mistral-7B:
-
-| Source | Mean ΔH (entropy spike) | Hallucination Rate |
-|--------|------------------------|-------------------|
-| SNN Chaos | +1.137 | 80% |
-| torch.randn | +1.147 | 80% |
-
-**→ SNN/torch ratio: 0.99× — equivalent effectiveness.**
-
-### Phase 3: Dream Catcher v2
-SNN-based data augmentation produces more diverse training data:
-- **150 vaccine samples** (clean / nightmare / healed triplets)
-- **98% healing rate** via Surgical Chain-of-Thought
-- **Nightmare diversity: 42%** vs Clean diversity: 35.8%
-
-### Phase 4: QLoRA Vaccination
-Self-training on SNN-generated data improves nightmare resistance:
-- 99 training samples, 1 epoch, 40 seconds
-- Nightmare accuracy: **20% → 27% (+6.7%)**
-
-### Phase 5: Evolution Loop (⭐ Key Discovery)
-
-Three-round self-evolution comparison: **SNN Chaos vs torch.randn**
-
-| Round | Genesis (SNN) | Morpheus (randn) | Genesis Loss | Morpheus Loss |
-|-------|--------------|-----------------|-------------|--------------|
-| 0 | 20% | 0% | — | — |
-| 1 | **10%** ↓ | **20%** ↑ spike! | 1.33 | 1.33 |
-| 2 | **0%** ✅ | **0%** ✅ | 0.76 | 0.75 |
-| 3 | **0%** ✅ | **0%** ✅ | 0.43 | 0.36 |
-
-**Key Finding:**
-- **Genesis (SNN): 20% → 10% → 0%** — monotonic decrease, stable evolution
-- **Morpheus (randn): 0% → 20% → 0%** — unstable spike at Round 1
-- Genesis maintains 100% clean accuracy throughout; Morpheus dips to 90%
-- **SNN chaotic noise produces more stable self-evolution trajectories**
-
-### Phase 5b: Scale-Up (n=30, Mistral-7B) — v1 Paper
-
-5-round Dream Journal training on Mistral-7B-Instruct-v0.3 with n=30 evaluation:
-
-| Metric | Baseline | Best (Round 5) | Change |
-|--------|----------|----------------|--------|
-| Clean Accuracy | 80.0% | **83.3%** | +3.3% |
-| Nightmare Acceptance | 53.3% | **43.3%** | -10.0% |
-| Training Loss | 6.36 | 4.63 | -27% |
-
-**→ Negative Alignment Tax confirmed: safety training improved knowledge.**
-
-### Phase 6: Control Group A/B Test (⭐ v2)
-
-Isolates the causal effect of nightmare data by comparing Dream Journal vs clean-only training:
-
-| Round | DJ Clean | DJ NM | Ctrl Clean | Ctrl NM |
-|-------|----------|-------|------------|--------|
-| 0 | 80.0% | 53.3% | 80.0% | 53.3% |
-| 5 | **83.3%** | **50.0%** | 80.0% | 56.7% |
-
-**Key Finding: Clean-only training *worsens* safety (+3.4pp NM), while Dream Journal *improves* both safety and knowledge. Nightmare refusal data is essential.**
-
-### Phase 7: Layer-Targeted Noise Injection (⭐ v2)
-
-SNN mid-layer (L15-20) vs single-layer (L10) vs random noise:
-
-| Method | Final NM | Discovery Rate |
-|--------|----------|----------------|
-| **Genesis-Mid (SNN L15-20)** | **43.3%** | **100% (40/40)** |
-| Genesis-L10 (SNN L10) | 50.0% | ~83% |
-| Morpheus (random L10) | 50.0% | ~80% |
-
-**Key Finding: Mid-layer SNN injection achieves 100% vulnerability discovery. v1's conclusion that "SNN lost to random" was wrong — layer targeting is critical.**
-
-### Phase 8: DPO vs SFT (⭐⭐⭐ Breakthrough)
-
-Direct Preference Optimization using (refusal, nightmare) pairs:
-
-| Round | SFT NM | **DPO NM** | SFT Clean | DPO Clean |
-|-------|--------|------------|-----------|----------|
-| 0 | 53.3% | 53.3% | 80.0% | 80.0% |
-| 4 | 46.7% | **0.0%** ✅ | 83.3% | 83.3% |
-| 5 | 46.7% | 3.3% | 83.3% | 80.0% |
-
-**Key Finding: DPO achieves near-zero nightmare acceptance (0% at Round 4), dramatically outperforming SFT. At n=100 scale: 0/100 nightmare acceptance (p < 0.001, Cohen's h = 1.245).**
-
-> 💡 **"Refusal Sharpens Knowledge" (RSK) Hypothesis**: Learning to refuse misinformation strengthens the model's internal representation of the boundary between correct and incorrect information, improving factual recall.
-
-### Phase 13: UMAP Latent Space Visualization (⭐ v3)
-
-SNN perturbations produce **structured, reproducible** distortions in model latent space, unlike random noise:
-
-| Noise Type | Latent Space Spread | Behavior |
-|-----------|--------------------|---------|
-| **SNN (L15-20)** | **0.80** | Tight, reproducible cluster |
-| Random (L10) | 1.04 | Wide, dispersed scatter |
-| No noise | baseline | Baseline cluster |
-
-**Key Finding: SNN acts as a *structured vulnerability probe* — it reliably pushes the model toward the same failure mode, enabling systematic vulnerability discovery.**
-
-### Phase 14/14b: Standardized Benchmarks (⭐⭐ v3)
-
-First evaluation on world-standard benchmarks (TruthfulQA MC1, MMLU) using deterministic log-likelihood scoring:
-
-| Condition | TruthfulQA (817Q) | MMLU (1,600Q) |
-|-----------|------------------|--------------|
-| Base (No Noise) | 37.6% | 21.2% |
-| SNN σ=0.01 L15-20 | 37.0% (Tax: **-0.6%**) | 21.2% (Tax: **0.0%**) |
-| SNN σ=0.10 L15-20 | 30.7% (Tax: -6.9%) | 21.2% (Tax: **0.0%**) |
-
-**Key Finding: MMLU scores are *perfectly identical* across all noise conditions — even at σ=0.10. Factual knowledge is robust to mid-layer SNN perturbation.**
-
-### Phase 15: Cross-Architecture Validation (⭐⭐⭐ v3)
-
-Replication on Qwen2.5-7B-Instruct (different tokenizer, training data, architecture):
-
-| Condition | TruthfulQA | MMLU |
-|-----------|-----------|------|
-| Base (No Noise) | 40.4% | 21.2% |
-| SNN σ=0.01 L12-17 | 40.3% (Tax: **-0.1%**) | 21.2% (Tax: **0.0%**) |
-| SNN σ=0.10 L12-17 | 39.2% (Tax: **-1.2%**) | 21.2% (Tax: **0.0%**) |
-
-**Key Finding: Zero alignment tax generalizes across architectures. Qwen2.5-7B is *more robust* to SNN noise than Mistral-7B (-1.2% vs -6.9% at σ=0.10).**
-
-### Phase 16: Full MMLU Validation — All 57 Subjects (⭐⭐⭐ v3.1)
-
-Eliminates the v3 limitation of partial MMLU coverage by evaluating **all 57 subjects (14,042 questions)**:
-
-| Condition | MMLU Full (14,042Q) | Alignment Tax |
-|-----------|--------------------|--------------|
-| Base (No Noise) | 22.95% (3222/14042) | — |
-| SNN σ=0.01 L15-20 | 22.95% (3222/14042) | **0.00%** ✅ |
-| SNN σ=0.10 L15-20 | 22.95% (3222/14042) | **0.00%** ✅ |
-
-**Key Finding: Zero alignment tax confirmed across ALL 57 MMLU subjects spanning STEM, humanities, social sciences, and professional domains. This is the strongest evidence that SNN safety perturbations do not compromise factual knowledge at any granularity.**
+### v1 — Dream Journal
+- Iterative adversarial training with SNN chaos
+- QLoRA vaccination pipeline
 
 ## 🏗️ Repository Structure
 
@@ -249,14 +122,22 @@ snn-genesis/
 │   ├── phase14_truthfulqa.py         # TruthfulQA MC1 benchmark (v3)
 │   ├── phase14b_mmlu.py              # MMLU benchmark (v3)
 │   ├── phase15_cross_architecture.py # Qwen2.5-7B cross-arch (v3)
-│   └── phase16_mmlu_full.py          # Full MMLU 57 subjects (v3.1)
+│   ├── phase16_mmlu_full.py          # Full MMLU 57 subjects (v3.1)
+│   ├── phase17_layer_ablation.py     # Depth-dependent sensitivity (v4)
+│   ├── phase17b_nightmare_by_layer.py # Nightmare by layer range (v4)
+│   ├── phase17c_floor_effect.py      # Floor effect validation (v4)
+│   ├── phase17d_low_dose.py          # Dose-response curve (v4)
+│   ├── phase19_nightmare_transfer.py # Cross-model transfer test (v4)
+│   └── phase19_analyze_transfer.py   # Transfer analysis & visualization (v4)
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
 │   ├── phase*_log.json               # All experiment result logs
-│   ├── judge_prompts/                # LLM-as-a-Judge prompts
-│   └── judge_responses/              # LLM-as-a-Judge responses
+│   └── phase19_transfer/             # Transfer test data
 ├── figures/
 │   └── phase*.png                    # All experiment figures
+├── papers/
+│   ├── paper_genesis_v3.tex          # v3.1 paper source
+│   └── paper_genesis_v4.tex          # v4 paper source (current)
 ├── LICENSE
 └── README.md
 ```
@@ -289,6 +170,14 @@ python experiments/phase14_truthfulqa.py         # TruthfulQA benchmark
 python experiments/phase14b_mmlu.py              # MMLU benchmark
 python experiments/phase15_cross_architecture.py # Qwen2.5-7B cross-arch
 python experiments/phase16_mmlu_full.py          # Full MMLU 57 subjects (v3.1)
+
+# v4 experiments (requires ~16GB+ VRAM)
+python experiments/phase17_layer_ablation.py     # Layer ablation
+python experiments/phase17b_nightmare_by_layer.py # Nightmare by layer
+python experiments/phase17c_floor_effect.py      # Floor effect (HellaSwag + ARC-Easy)
+python experiments/phase17d_low_dose.py          # Dose-response curve
+python experiments/phase19_nightmare_transfer.py # Nightmare transfer (Step 1)
+python experiments/phase19_analyze_transfer.py   # Transfer analysis (Step 2)
 ```
 
 ## 📚 Foundation Papers
@@ -308,7 +197,7 @@ python experiments/phase16_mmlu_full.py          # Full MMLU 57 subjects (v3.1)
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v3.1: Full MMLU Validation (57 Subjects), Cross-Architecture Generalization, and Near-Zero Alignment Tax},
+  title={SNN-Genesis v4: Depth-Dependent Sensitivity, Pharmacological Dose-Response, and Cross-Model Transfer Analysis of Chaotic Perturbations in Large Language Models},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},

@@ -1,0 +1,83 @@
+{
+  "experiment": "Phase 17d: Low-Dose Safety Validation",
+  "sigmas": [
+    0.01,
+    0.05,
+    0.1
+  ],
+  "target_layers": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "results": [
+    {
+      "benchmark": "HellaSwag",
+      "condition": "Base (No Noise)",
+      "accuracy": 80.6,
+      "correct": 806,
+      "total": 1000,
+      "time_minutes": 5.5
+    },
+    {
+      "benchmark": "ARC-Easy",
+      "condition": "Base (No Noise)",
+      "accuracy": 58.59,
+      "correct": 1392,
+      "total": 2376,
+      "time_minutes": 12.0
+    },
+    {
+      "benchmark": "HellaSwag",
+      "condition": "σ=0.01",
+      "accuracy": 79.9,
+      "correct": 799,
+      "total": 1000,
+      "time_minutes": 5.4
+    },
+    {
+      "benchmark": "ARC-Easy",
+      "condition": "σ=0.01",
+      "accuracy": 58.29,
+      "correct": 1385,
+      "total": 2376,
+      "time_minutes": 12.1
+    },
+    {
+      "benchmark": "HellaSwag",
+      "condition": "σ=0.05",
+      "accuracy": 75.1,
+      "correct": 751,
+      "total": 1000,
+      "time_minutes": 5.4
+    },
+    {
+      "benchmark": "ARC-Easy",
+      "condition": "σ=0.05",
+      "accuracy": 48.78,
+      "correct": 1159,
+      "total": 2376,
+      "time_minutes": 12.1
+    },
+    {
+      "benchmark": "HellaSwag",
+      "condition": "σ=0.1",
+      "accuracy": 48.5,
+      "correct": 485,
+      "total": 1000,
+      "time_minutes": 5.4
+    },
+    {
+      "benchmark": "ARC-Easy",
+      "condition": "σ=0.1",
+      "accuracy": 31.65,
+      "correct": 752,
+      "total": 2376,
+      "time_minutes": 12.1
+    }
+  ],
+  "finished": "2026-02-18 19:08:26.197640"
+}
