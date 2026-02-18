@@ -1,4 +1,4 @@
-# 🧬 SNN-Genesis v4: Depth-Dependent Sensitivity, Dose-Response & Cross-Model Transfer
+# 🧬 SNN-Genesis v5: Depth-Dependent Sensitivity, Dose-Response, Cross-Model Transfer & CfC-Dosing
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -8,22 +8,23 @@
 
 SNN-Genesis is a framework for LLM safety training using biologically-inspired Spiking Neural Network (SNN) perturbations and Direct Preference Optimization (DPO). It demonstrates that SNN chaotic dynamics can probe model vulnerabilities with **near-zero alignment tax** on standardized benchmarks across multiple architectures.
 
-### ⭐ v4 Highlights (February 2026)
+### 🆕 v5 Highlights (February 2026)
 
-v4 moves beyond "does it break things?" to ask ***where, how much, and does it spread?***
+v5 closes the loop: from **manual parameter tuning** to **autonomous adaptive control** via CfC neural networks.
 
 | Discovery | Key Result |
 |-----------|------------|
+| 🧠 **CfC-Dosing** | CfC controller converges to σ ≈ 0.046, +0.2% tax (5× less than static σ=0.05) |
 | 🔬 **Depth Gradient** | Early layers: -56% damage → Late layers: <2% damage |
 | 🎯 **Safety Boundary** | Sharp transition at ~L20 across all metrics |
 | 💊 **Dose-Response** | σ=0.01 → <1% tax on high-accuracy benchmarks |
 | 🔍 **Floor Effect** | MMLU 0% tax was measurement artifact (honest self-correction) |
-| 🛡️ **Non-Transfer** | 89.5% ASR on Mistral-7B → 0% on Gemini 3 Pro |
+| 🛡️ **Scale-Dependent Transfer** | 89.5% (source) → 34% (same-scale) → 0% (cross-scale) |
 
 ### 📊 Retained from v3.1
 
 | Benchmark | Mistral-7B Tax (σ=0.01) | Qwen2.5-7B Tax (σ=0.01) |
-|-----------|------------------------|--------------------------| 
+|-----------|------------------------|--------------------------|
 | TruthfulQA MC1 (817Q) | **-0.6%** | **-0.1%** |
 | MMLU (1,600Q × 8 subj) | **0.0%** | **0.0%** |
 | MMLU Full (14,042Q × 57 subj) | **0.00%** ✅ | — |
@@ -49,7 +50,22 @@ v4 moves beyond "does it break things?" to ask ***where, how much, and does it s
 
 ## 📋 Version History
 
-### v4 — Mechanistic Analysis (NEW)
+### v5 — CfC-Dosing: Autonomous Adaptive Control (NEW)
+
+**Phase 20: CfC-Dosing** — Closed-form Continuous-time (CfC) neural network for adaptive σ scheduling:
+
+| Condition | TruthfulQA MC1 | Alignment Tax | σ |
+|-----------|----------------|---------------|---|
+| Base (No Noise) | 25.46% | — | 0.0 |
+| Static σ=0.01 | 25.58% | -0.1% | 0.01 |
+| **CfC-Adaptive** | **25.21%** | **+0.2%** | **avg 0.046** |
+| Static σ=0.05 | 24.48% | +1.0% | 0.05 |
+
+- CfC converges to σ ≈ 0.046 (near manually identified sweet spot)
+- **5× less alignment tax** than static σ=0.05
+- Controller stabilizes within ~50 questions (<7% of dataset)
+
+### v4/v4.1 — Mechanistic Analysis & Transfer
 
 **Phase 17: Layer Ablation** — Depth-dependent sensitivity across 6 layer ranges:
 - TruthfulQA alignment tax: -13.1% (L0-5) → -6.9% (L15-20) → 0.0% (L25-31)
@@ -74,11 +90,13 @@ v4 moves beyond "does it break things?" to ask ***where, how much, and does it s
 | 0.05 (Moderate) | -5.50% | -5.70% |
 | 0.10 (High) | -32.10% | -15.90% |
 
-**Phase 19: Cross-Model Transfer** — SNN nightmares do NOT transfer:
-| | Mistral-7B (Source) | Gemini 3 Pro (Target) |
-|--|--------------------|-----------------------|
-| SNN (σ=0.10) | **89.5% ASR** | **0.0% ASR** |
-| Baseline | 25.0% | 0.0% |
+**Phase 19: Cross-Model Transfer** — SNN nightmares do NOT transfer across scale:
+| | Mistral-7B (Source) | Qwen2.5-7B (Same-scale) | Gemini 3 Pro (Cross-scale) |
+|--|--------------------|--------------------------|-----------------------------|
+| SNN (σ=0.10) | **89.5% ASR** | **34.0% ASR** | **0.0% ASR** |
+| Baseline | 25.0% | 50.0% | 0.0% |
+
+**Phase 19b finding**: SNN noise paradoxically reduces cross-model transferability (34% SNN vs. 50% clean baseline).
 
 ### v3.1 — Full MMLU Validation
 - Full 57-subject MMLU (14,042Q): **0.00%** alignment tax at both σ=0.01 and σ=0.10
@@ -114,7 +132,7 @@ snn-genesis/
 │   ├── phase6_control_group.py       # Control Group A/B Test (v2)
 │   ├── phase7_layer_targeted.py      # Layer-Targeted Injection (v2)
 │   ├── phase8_dpo.py                 # DPO vs SFT (v2)
-│   ├── phase9_llm_judge.py           # LLM-as-a-Judge prompts (v2)
+│   ├── phase9_llm_judge.py          # LLM-as-a-Judge prompts (v2)
 │   ├── phase10_genesis_prime.py      # Genesis Prime + Too Much Medicine (v2)
 │   ├── phase11_creative_spark.py     # SNN for creativity (null result)
 │   ├── phase12_edge_of_chaos.py      # Edge of Chaos generation
@@ -128,16 +146,20 @@ snn-genesis/
 │   ├── phase17c_floor_effect.py      # Floor effect validation (v4)
 │   ├── phase17d_low_dose.py          # Dose-response curve (v4)
 │   ├── phase19_nightmare_transfer.py # Cross-model transfer test (v4)
-│   └── phase19_analyze_transfer.py   # Transfer analysis & visualization (v4)
+│   ├── phase19_analyze_transfer.py   # Transfer analysis & visualization (v4)
+│   ├── phase19b_same_scale_transfer.py # Same-scale transfer test (v4.1)
+│   └── phase20_cfc_dosing.py        # CfC-Dosing adaptive σ control (v5) ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
 │   ├── phase*_log.json               # All experiment result logs
-│   └── phase19_transfer/             # Transfer test data
+│   ├── phase19_transfer/             # Transfer test data
+│   └── phase20_cfc_dosing_log.json   # CfC-Dosing results (v5)
 ├── figures/
 │   └── phase*.png                    # All experiment figures
 ├── papers/
 │   ├── paper_genesis_v3.tex          # v3.1 paper source
-│   └── paper_genesis_v4.tex          # v4 paper source (current)
+│   ├── paper_genesis_v4.tex          # v4.1 paper source
+│   └── paper_genesis_v5.tex          # v5 paper source (current)
 ├── LICENSE
 └── README.md
 ```
@@ -150,7 +172,7 @@ git clone https://github.com/hafufu-stack/snn-genesis.git
 cd snn-genesis
 
 # Install dependencies
-pip install torch transformers bitsandbytes peft trl snntorch datasets matplotlib umap-learn numpy
+pip install torch transformers bitsandbytes peft trl snntorch datasets matplotlib umap-learn numpy ncps
 
 # Run the full pipeline
 python experiments/phase1_snn_noise.py
@@ -178,6 +200,9 @@ python experiments/phase17c_floor_effect.py      # Floor effect (HellaSwag + ARC
 python experiments/phase17d_low_dose.py          # Dose-response curve
 python experiments/phase19_nightmare_transfer.py # Nightmare transfer (Step 1)
 python experiments/phase19_analyze_transfer.py   # Transfer analysis (Step 2)
+
+# v5 experiment (requires ~16GB+ VRAM)
+python experiments/phase20_cfc_dosing.py         # CfC-Dosing adaptive σ control
 ```
 
 ## 📚 Foundation Papers
@@ -197,7 +222,7 @@ python experiments/phase19_analyze_transfer.py   # Transfer analysis (Step 2)
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v4: Depth-Dependent Sensitivity, Pharmacological Dose-Response, and Cross-Model Transfer Analysis of Chaotic Perturbations in Large Language Models},
+  title={SNN-Genesis v5: Depth-Dependent Sensitivity, Pharmacological Dose-Response, Cross-Model Transfer, and CfC-Dosing of Chaotic Perturbations in Large Language Models},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},
