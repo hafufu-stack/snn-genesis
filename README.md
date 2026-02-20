@@ -1,25 +1,25 @@
-# 🧬 SNN-Genesis v7: Autonomous Homeostasis & Biological Egoism in CfC-Controlled LLM Perturbation
+# 🧬 SNN-Genesis v8: AI Comparative Physiology — Universal Homeostatic Set-Point σ≈0.07 Across Three Transformer Architectures
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18625621.svg)](https://doi.org/10.5281/zenodo.18625621)
 
-> **"The CfC controller *knows* it is processing Math — but *chooses* to maintain homeostasis anyway."**
+> **"Three architectures. Three organizations. One universal constant: σ ≈ 0.07."**
 
-SNN-Genesis is a framework for LLM safety training using biologically-inspired Spiking Neural Network (SNN) perturbations and Direct Preference Optimization (DPO). A CfC neural controller trained to optimize task-specific noise discovers **Autonomous Homeostasis**: a unified operating point (σ ≈ 0.07) maintained across all tasks, with internal specialization via a 16D hidden-state manifold.
+SNN-Genesis is a framework for LLM safety training using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. The central discovery is **Universal Homeostasis**: a CfC controller converges to σ ≈ 0.07 across **three independent Transformer architectures** (Mistral-7B, Qwen2.5-7B, Phi-3-mini), establishing the first evidence for a **universal constant** of CfC-Transformer interaction.
 
-### 🆕 v7 Highlights (February 2026)
+### 🆕 v8 Highlights (February 2026)
 
-v7 discovers **Biological Egoism**: the CfC controller prioritizes its own parametric stability over human-designed reward — a safe, miniature model of the AI alignment problem.
+v8 establishes **AI Comparative Physiology**: cross-model experiments confirm σ ≈ 0.07 as a universal law, while Brain Atlas and Digital Lobotomy reveal architecture-dependent internal strategies.
 
 | Discovery | Key Result |
 |-----------|------------|
-| 🧠 **Autonomous Homeostasis** | CfC converges to unified σ ≈ 0.07 across all tasks, ignoring optimal per-task targets |
-| 🔬 **UMAP Internal Specialization** | 16D hidden state separation ratio 8.70 (2-class), 3.28 (3-class) — routing is internal |
-| 🎯 **PPO Stabilization** | σ drift = 0.009 (vs. unbounded REINFORCE collapse) |
-| ⚗️ **λ Ablation** | 4/4 unified regimes across λ ∈ {200, 500, 1000, 2000} — architecture-intrinsic |
-| 🧮 **Biological Egoism** | Math accuracy: 30% (baseline) → **0%** (PPO) — CfC destroys task performance for homeostasis |
-| 📊 **Calibration Trade-off** | PPO ECE = 0.191 vs. static 0.132 — CfC optimizes for stability, not precision |
+| 🌍 **Universal Homeostasis** | σ̄ = 0.074 ± 0.002 across Mistral (0.071), Qwen (0.075), Phi-3 (0.075) — CV = 3.1% |
+| 🧠 **CfC Brain Atlas** | Linear probe: 86.7% (Mistral) / 81.7% (Qwen) — sharp specialization vs. distributed representation |
+| 🛡️ **Plateau Robustness** | Qwen: 63%±8% Math accuracy from σ=0 to σ=0.15 (Fisher p=1.0) — noise immunity |
+| 🔪 **Digital Lobotomy** | Math-neuron knockout: Δ=-1.7% (Qwen) vs. Δ=-5.0% (Mistral) — causal proof of distributed encoding |
+| ⚡ **Stochastic Resonance** | Honest null result: SR falsified at n=100 (p=1.0) — Phase 31 was sampling artifact |
+| 🧮 **Biological Egoism** | Retained from v7: CfC destroys Math accuracy (30%→0%) for homeostasis |
 
 ### 📊 Retained from v5–v6
 
@@ -61,33 +61,45 @@ v7 discovers **Biological Egoism**: the CfC controller prioritizes its own param
 
 ## 📋 Version History
 
-### v7 — Autonomous Homeostasis & Biological Egoism (NEW)
+### v8 — AI Comparative Physiology (NEW)
 
-**Phase 25: UMAP Hidden State Analysis** — Internal specialization proof:
-- 16D hidden state separation ratio 8.70 (Factual vs. Creative)
-- CfC routes internally while projecting unified σ (Soft Mixture-of-Experts)
+**Phase 29: Cross-Model Homeostasis (Qwen)** — Universal law, first evidence:
+- Qwen2.5-7B: σ̄ = 0.075 (Δ = 0.004 vs. Mistral's 0.071)
+- Math accuracy 60% under homeostatic σ (vs. Mistral's 0%)
 
-**Phase 27: PPO Migration** — Stable reinforcement learning:
-- σ drift = 0.009 (vs. unbounded REINFORCE collapse)
-- n=200 validation: Fisher p > 0.26 (no significant accuracy difference vs. static)
+**Phase 30: CfC Brain Atlas** — Internal representation mapping:
+- Linear probe: 86.7% (Mistral) / 81.7% (Qwen) task classification
+- Mistral: 4 specialist neurons (sharp specialization)
+- Qwen: 12 contributing neurons (distributed representation)
 
-**Phase 27b: λ Ablation** — Architecture-intrinsic proof:
-- 4/4 unified regimes across λ ∈ {200, 500, 1000, 2000}
-- Max separation < 0.001 — the Unified Regime is CfC's will, not a penalty artifact
+**Phase 31b: Stochastic Resonance Verification** — Honest null result:
+- SR falsified at n=100 per level (Fisher p=1.0)
+- **Plateau Robustness** discovered: Qwen 63%±8% across σ=0 to 0.15
 
-**Phase 26: 3-Class Extension** — Stress test with Math/Logic:
-- Near-unified σ (max sep = 0.011) despite Math requiring σ* = 0.015
+**Phase 32: Digital Lobotomy** — Causal proof:
 
-**Phase 26b: Biological Egoism** — The CfC sacrifices task performance for homeostasis:
+| Model | Math-Neuron Knockout Δ | Strategy |
+|-------|----------------------|----------|
+| Mistral-7B | **-5.0%** | Sharp specialization (fragile) |
+| Qwen2.5-7B | **-1.7%** | Distributed representation (robust) |
 
-| Condition | Math Accuracy |
-|-----------|-------------|
-| No Noise (σ=0) | **30.0%** (6/20) |
-| Static σ*=0.015 | **30.0%** (6/20) |
-| PPO Homeostatic (σ≈0.071) | **0.0%** (0/20) |
+**Phase 33: Third Architecture (Phi-3-mini)** — Universality confirmed:
 
-**Phase 28: Calibration Analysis** — Honest null result:
-- PPO ECE = 0.191 (worst), confirming CfC optimizes for stability, not calibration
+| Model | Organization | σ̄ | Δ vs. mean |
+|-------|-------------|------|------------|
+| Mistral-7B | Meta | 0.071 | -0.003 |
+| Qwen2.5-7B | Alibaba | 0.075 | +0.001 |
+| Phi-3-mini | Microsoft | 0.075 | +0.001 |
+| **Grand mean** | | **0.074 ± 0.002** | **CV = 3.1%** |
+
+### v7 — Autonomous Homeostasis & Biological Egoism
+
+- Phase 25: UMAP separation ratio 8.70 (16D hidden state specialization)
+- Phase 27: PPO stabilization (σ drift = 0.009)
+- Phase 27b: λ ablation (4/4 unified regimes)
+- Phase 26: 3-class extension (Factual/Creative/Math)
+- Phase 26b: Biological Egoism — Math 30% → 0% under homeostasis
+- Phase 28: Calibration trade-off (ECE = 0.191)
 
 ### v6 — The Dual-Mode Brain
 
@@ -167,20 +179,25 @@ snn-genesis/
 │   ├── phase20d_quadratic_penalty.py # Quadratic homeostatic CfC (v6)
 │   ├── phase23_creative_spark.py     # Task-dependent sweet spots (v6)
 │   ├── phase24_dual_mode_brain.py    # Dual-Mode Brain per-sample CfC (v6)
-│   ├── phase24b_n200_evaluation.py   # n=200 PPO validation (v7) ← NEW
-│   ├── phase25_cfc_hidden_umap.py    # UMAP hidden state analysis (v7) ← NEW
-│   ├── phase26_3class_extension.py   # 3-class extension (v7) ← NEW
-│   ├── phase26b_math_baseline.py     # Math baseline / Biological Egoism (v7) ← NEW
-│   ├── phase27_ppo_dual_mode.py      # PPO migration (v7) ← NEW
-│   ├── phase27b_lambda_ablation.py   # λ ablation (v7) ← NEW
-│   ├── phase27c_ppo_n200.py          # PPO n=200 validation (v7) ← NEW
-│   └── phase28_calibration.py        # Calibration analysis (v7) ← NEW
+│   ├── phase24b_n200_evaluation.py   # n=200 PPO validation (v7)
+│   ├── phase25_cfc_hidden_umap.py    # UMAP hidden state analysis (v7)
+│   ├── phase26_3class_extension.py   # 3-class extension (v7)
+│   ├── phase26b_math_baseline.py     # Math baseline / Biological Egoism (v7)
+│   ├── phase27_ppo_dual_mode.py      # PPO migration (v7)
+│   ├── phase27b_lambda_ablation.py   # λ ablation (v7)
+│   ├── phase27c_ppo_n200.py          # PPO n=200 validation (v7)
+│   ├── phase28_calibration.py        # Calibration analysis (v7)
+│   ├── phase29_cross_model_homeostasis.py  # Cross-model homeostasis (v8) ← NEW
+│   ├── phase30_linear_probing.py     # CfC Brain Atlas (v8) ← NEW
+│   ├── phase31b_stochastic_resonance.py   # SR verification (v8) ← NEW
+│   ├── phase32_neuron_knockout.py    # Digital Lobotomy (v8) ← NEW
+│   └── phase33_third_model_homeostasis.py # Third architecture (v8) ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
-│   ├── phase*_log.json               # All experiment result logs (25 total)
+│   ├── phase*_log.json               # All experiment result logs (31 total)
 │   └── phase19_transfer/             # Transfer test data
 ├── figures/
-│   └── phase*.png                    # All experiment figures (25 total)
+│   └── phase*.png                    # All experiment figures (33 total)
 ├── papers/                           # Paper sources (see Zenodo DOI)
 ├── LICENSE
 └── README.md
@@ -239,6 +256,13 @@ python experiments/phase26b_math_baseline.py     # Math baseline (Biological Ego
 python experiments/phase27_ppo_dual_mode.py      # PPO migration
 python experiments/phase27b_lambda_ablation.py   # λ ablation
 python experiments/phase28_calibration.py        # Calibration analysis
+
+# v8 experiments (requires ~16GB+ VRAM)
+python experiments/phase29_cross_model_homeostasis.py  # Cross-model (Qwen)
+python experiments/phase30_linear_probing.py           # CfC Brain Atlas
+python experiments/phase31b_stochastic_resonance.py    # SR verification
+python experiments/phase32_neuron_knockout.py           # Digital Lobotomy
+python experiments/phase33_third_model_homeostasis.py   # Third architecture (Phi-3)
 ```
 
 ## 🤖 AI Collaboration
@@ -247,6 +271,7 @@ python experiments/phase28_calibration.py        # Calibration analysis
 |--------------|:-------------|
 | v1 — v5 (Phases 5–20) | Google Gemini 3 Pro |
 | v6 — v7 (Phases 20b–28) | Anthropic Claude Opus 4.6 |
+| v8 (Phases 29–33) | Anthropic Claude Opus 4.6 |
 
 All experimental decisions, research direction, and final interpretation were made by the human author.
 

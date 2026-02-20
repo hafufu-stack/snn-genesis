@@ -1,0 +1,124 @@
+{
+  "phase": "Phase 32: Neuron Knockout (Digital Lobotomy)",
+  "timestamp": "2026-02-21T07:06:15.995799",
+  "elapsed_seconds": 2710.7,
+  "neuron_roles": {
+    "Mistral-7B": {
+      "math_positive": [
+        3,
+        6,
+        9,
+        14
+      ],
+      "math_negative": [
+        2,
+        4
+      ],
+      "factual_positive": [
+        7,
+        13
+      ],
+      "factual_negative": [
+        0,
+        11
+      ]
+    },
+    "Qwen2.5-7B": {
+      "math_positive": [
+        2,
+        12,
+        14
+      ],
+      "math_negative": [
+        0,
+        15
+      ],
+      "factual_positive": [
+        3,
+        9,
+        10
+      ],
+      "factual_negative": [
+        5,
+        7,
+        11
+      ]
+    }
+  },
+  "mistral": {
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "results": {
+      "baseline": {
+        "math": 8.33,
+        "factual": 3.33
+      },
+      "single_math_ko": {
+        "neuron": 3,
+        "math": 3.33,
+        "factual": 3.33
+      },
+      "all_math_ko": {
+        "neurons": [
+          3,
+          6,
+          9,
+          14
+        ],
+        "math": 1.67,
+        "factual": 13.33
+      },
+      "single_factual_ko": {
+        "neuron": 7,
+        "math": 5.0,
+        "factual": 6.67
+      },
+      "neutral_ko": {
+        "neuron": 1,
+        "math": 0.0,
+        "factual": 10.0
+      },
+      "total_lobotomy": {
+        "math": 1.67,
+        "factual": 3.33
+      }
+    }
+  },
+  "qwen": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "results": {
+      "baseline": {
+        "math": 60.0,
+        "factual": 90.0
+      },
+      "single_math_ko": {
+        "neuron": 2,
+        "math": 61.67,
+        "factual": 90.0
+      },
+      "all_math_ko": {
+        "neurons": [
+          2,
+          12,
+          14
+        ],
+        "math": 58.33,
+        "factual": 90.0
+      },
+      "single_factual_ko": {
+        "neuron": 3,
+        "math": 58.33,
+        "factual": 90.0
+      },
+      "neutral_ko": {
+        "neuron": 1,
+        "math": 61.67,
+        "factual": 90.0
+      },
+      "total_lobotomy": {
+        "math": 60.0,
+        "factual": 90.0
+      }
+    }
+  },
+  "figure_path": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase32_neuron_knockout.png"
+}

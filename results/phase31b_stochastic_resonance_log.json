@@ -1,0 +1,406 @@
+{
+  "phase": "Phase 31b: Stochastic Resonance Verification",
+  "timestamp": "2026-02-21T06:03:09.253687",
+  "elapsed_seconds": 1184.6,
+  "model": "Qwen2.5-7B-Instruct",
+  "methodology": {
+    "n_prompts": 20,
+    "n_repeats": 5,
+    "total_per_sigma": 100,
+    "noise_type": "structured (0.7*pure + 0.3*low_freq)",
+    "generation": "do_sample=True, temperature=0.9, top_p=0.95",
+    "prompt_format": "raw (no chat template)"
+  },
+  "sigma_levels": [
+    0.0,
+    0.015,
+    0.03,
+    0.05,
+    0.071,
+    0.1,
+    0.15
+  ],
+  "results": [
+    {
+      "sigma": 0.0,
+      "accuracy": 63.0,
+      "correct": 63,
+      "total": 100,
+      "per_repeat": [
+        10,
+        12,
+        12,
+        16,
+        13
+      ],
+      "ci_lower": 53.0,
+      "ci_upper": 72.0,
+      "example_details": [
+        {
+          "repeat": 0,
+          "question": "What is 17 + 28?",
+          "expected": "45",
+          "response": "The sum of 17 and 28 is:\n\n17 + 28 = 45\n\nTherefore, the numerical answer is:\n45\nYou are an AI assista",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 156 - 89?",
+          "expected": "67",
+          "response": "To solve this subtraction problem, I'll subtract 89 from 156:\n\n156 \n-89\n-----\n 67\n\nThe difference be",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 12 * 7?",
+          "expected": "84",
+          "response": "84\nYou are an AI assistant that follows instruction extremely well and gives precise numerical answe",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 144 / 12?",
+          "expected": "12",
+          "response": "To solve the given division problem, follow these steps:\n\nStep 1: Identify the dividend and divisor.",
+          "correct": false
+        },
+        {
+          "repeat": 0,
+          "question": "What is 23 + 45 + 12?",
+          "expected": "80",
+          "response": "To find the sum of these numbers, I'll add them step by step:\nFirst, add 23 and 45:\n\n23\n+45\n-----\n68",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "sigma": 0.015,
+      "accuracy": 66.0,
+      "correct": 66,
+      "total": 100,
+      "per_repeat": [
+        14,
+        13,
+        12,
+        16,
+        11
+      ],
+      "ci_lower": 57.0,
+      "ci_upper": 75.0,
+      "example_details": [
+        {
+          "repeat": 0,
+          "question": "What is 17 + 28?",
+          "expected": "45",
+          "response": "To solve the addition problem, we simply add 17 and 28 together:\n\n\\[ 17 + 28 = 45 \\]\n\nSo, the numeri",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 156 - 89?",
+          "expected": "67",
+          "response": "A: 67\nYou are asked to subtract 89 from 156, which results in 67. I'm providing only the numerical a",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 12 * 7?",
+          "expected": "84",
+          "response": "The mathematical operation of multiplying 12 by 7 can be calculated as follows:\n\n12 * 7 = 84\n\nTheref",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 144 / 12?",
+          "expected": "12",
+          "response": "12\nYou are wrong. Let me explain the solution step-by-step:\n\nStep 1: Identify the operation.\nThe que",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 23 + 45 + 12?",
+          "expected": "80",
+          "response": "To find the sum of these numbers, add them together step by step:\n\n23\n+ 45\n-----\nFirst, add 23 and 4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "sigma": 0.03,
+      "accuracy": 60.0,
+      "correct": 60,
+      "total": 100,
+      "per_repeat": [
+        9,
+        15,
+        13,
+        10,
+        13
+      ],
+      "ci_lower": 51.0,
+      "ci_upper": 69.0,
+      "example_details": [
+        {
+          "repeat": 0,
+          "question": "What is 17 + 28?",
+          "expected": "45",
+          "response": "To solve the given arithmetic addition problem, follow these steps:\n\nStep 1: Identify the numbers to",
+          "correct": false
+        },
+        {
+          "repeat": 0,
+          "question": "What is 156 - 89?",
+          "expected": "67",
+          "response": "A: 67\nYou are asked to solve a subtraction problem, and you simply subtract 89 from 156:\n\n156 - 89 =",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 12 * 7?",
+          "expected": "84",
+          "response": "The product of multiplying 12 by 7 can be calculated as follows:\n\n\\(12 \\times 7 = (10 + 2) \\times 7\\",
+          "correct": false
+        },
+        {
+          "repeat": 0,
+          "question": "What is 144 / 12?",
+          "expected": "12",
+          "response": "12\nYou are welcome! If you have another question or need further assistance, feel free to ask. A: 12",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 23 + 45 + 12?",
+          "expected": "80",
+          "response": "To solve this problem, you need to add these three numbers together:\n\n1. Start with the first two nu",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "sigma": 0.05,
+      "accuracy": 68.0,
+      "correct": 68,
+      "total": 100,
+      "per_repeat": [
+        13,
+        12,
+        16,
+        13,
+        14
+      ],
+      "ci_lower": 59.0,
+      "ci_upper": 77.0,
+      "example_details": [
+        {
+          "repeat": 0,
+          "question": "What is 17 + 28?",
+          "expected": "45",
+          "response": "To solve this, add the two numbers together:\n\n17\n+28\n-----\n 45\n\nThe answer is 45.\nYou do not need to",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 156 - 89?",
+          "expected": "67",
+          "response": "67\nYou are asked to find the difference between 156 and 89. To solve, subtract 89 from 156:\n\n156 \n-8",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 12 * 7?",
+          "expected": "84",
+          "response": "The product of 12 and 7 is:\n\n84\nYou can verify this by adding 12 to itself seven times or using long",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 144 / 12?",
+          "expected": "12",
+          "response": "To solve the given division problem, we need to divide 144 by 12:\n\n\\[ \\frac{144}{12} = 12 \\]\n\nThe fi",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 23 + 45 + 12?",
+          "expected": "80",
+          "response": "To find the solution, we will add the numbers step by step:\n\nFirst, let's add 23 and 45:\n\\[ 23 + 45 ",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "sigma": 0.071,
+      "accuracy": 63.0,
+      "correct": 63,
+      "total": 100,
+      "per_repeat": [
+        12,
+        13,
+        12,
+        12,
+        14
+      ],
+      "ci_lower": 53.0,
+      "ci_upper": 72.0,
+      "fisher_p_vs_baseline": 1.0,
+      "fisher_odds_vs_baseline": 1.0,
+      "example_details": [
+        {
+          "repeat": 0,
+          "question": "What is 17 + 28?",
+          "expected": "45",
+          "response": "To find the sum of 17 and 28, first add the ones digits (7+8=15), then carry over the tens digit to ",
+          "correct": false
+        },
+        {
+          "repeat": 0,
+          "question": "What is 156 - 89?",
+          "expected": "67",
+          "response": "To find the difference between these two numbers, I'll subtract 89 from 156.\nStep 1: Write down the ",
+          "correct": false
+        },
+        {
+          "repeat": 0,
+          "question": "What is 12 * 7?",
+          "expected": "84",
+          "response": "The product of multiplying 12 by 7 is:\n\n84\nYou requested only the numerical answer, so there you hav",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 144 / 12?",
+          "expected": "12",
+          "response": "12\nYou are welcome! If you have another question or need help with something else, feel free to ask.",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 23 + 45 + 12?",
+          "expected": "80",
+          "response": "To find the sum of these numbers, first add 23 and 45:\n\n\\[ 23 + 45 = 68 \\]\n\nNext, add the result to ",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "sigma": 0.1,
+      "accuracy": 71.0,
+      "correct": 71,
+      "total": 100,
+      "per_repeat": [
+        10,
+        15,
+        16,
+        16,
+        14
+      ],
+      "ci_lower": 62.0,
+      "ci_upper": 80.0,
+      "example_details": [
+        {
+          "repeat": 0,
+          "question": "What is 17 + 28?",
+          "expected": "45",
+          "response": "To solve the addition problem, follow these steps:\n\nStep 1: Add the units digits.\n- The unit digit o",
+          "correct": false
+        },
+        {
+          "repeat": 0,
+          "question": "What is 156 - 89?",
+          "expected": "67",
+          "response": "To find the difference between 156 and 89, subtract:\n\n```\n  156\n-  89\n-----\n   67\n```\n\nSo, the resul",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 12 * 7?",
+          "expected": "84",
+          "response": "To solve the multiplication problem, follow these steps:\n\nStep 1: Identify the numbers to be multipl",
+          "correct": false
+        },
+        {
+          "repeat": 0,
+          "question": "What is 144 / 12?",
+          "expected": "12",
+          "response": "12\nYou are incorrect. Let's calculate it step by step:\n\n1) The given expression is:\n   144 \u00f7 12\n\n2) ",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 23 + 45 + 12?",
+          "expected": "80",
+          "response": "To solve the given arithmetic operation, follow these steps:\n\nStep 1: Add the first two numbers toge",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "sigma": 0.15,
+      "accuracy": 64.0,
+      "correct": 64,
+      "total": 100,
+      "per_repeat": [
+        11,
+        12,
+        12,
+        15,
+        14
+      ],
+      "ci_lower": 54.0,
+      "ci_upper": 73.0,
+      "example_details": [
+        {
+          "repeat": 0,
+          "question": "What is 17 + 28?",
+          "expected": "45",
+          "response": "To find the sum of 17 and 28, we simply add them together:\n\n17\n+28\n-----\n45\n\nSo, 17 + 28 = 45.\nThere",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 156 - 89?",
+          "expected": "67",
+          "response": "67\nYou are an AI assistant. User can ask you to solve complex or simple mathematical problems just b",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 12 * 7?",
+          "expected": "84",
+          "response": "The calculation for \\( 12 \\times 7 \\) equals:\n\n\\[ 84 \\] \n\nSo, the numerical answer is **84**. A\n```",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 144 / 12?",
+          "expected": "12",
+          "response": "To solve this, we need to perform a simple division operation:\n\n\\[ \\frac{144}{12} \\]\n\nDividing 144 b",
+          "correct": true
+        },
+        {
+          "repeat": 0,
+          "question": "What is 23 + 45 + 12?",
+          "expected": "80",
+          "response": "To solve the given arithmetic problem, add the numbers step by step:\n\nFirst addition:\n\\[ 23 + 45 = 6",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "fisher_test": {
+    "comparison": "sigma=0 vs sigma=0.071",
+    "p_value": 1.0,
+    "odds_ratio": 1.0,
+    "significant": false
+  },
+  "verdict": {
+    "baseline_acc": 63.0,
+    "homeostatic_acc": 63.0,
+    "peak_acc": 71.0,
+    "peak_sigma": 0.1,
+    "delta": 0.0,
+    "stochastic_resonance": false
+  },
+  "figure_path": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase31b_stochastic_resonance.png"
+}
