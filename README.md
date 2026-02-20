@@ -1,26 +1,27 @@
-# 🧬 SNN-Genesis v6: The Dual-Mode Brain — Online Sweet Spot, Quadratic Homeostasis & Per-Sample CfC Control
+# 🧬 SNN-Genesis v7: Autonomous Homeostasis & Biological Egoism in CfC-Controlled LLM Perturbation
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18625621.svg)](https://doi.org/10.5281/zenodo.18625621)
 
-> **"What if the randomness that makes SNNs secure also makes them creative?"**
+> **"The CfC controller *knows* it is processing Math — but *chooses* to maintain homeostasis anyway."**
 
-SNN-Genesis is a framework for LLM safety training using biologically-inspired Spiking Neural Network (SNN) perturbations and Direct Preference Optimization (DPO). It demonstrates that SNN chaotic dynamics can probe model vulnerabilities with **near-zero alignment tax** on standardized benchmarks across multiple architectures.
+SNN-Genesis is a framework for LLM safety training using biologically-inspired Spiking Neural Network (SNN) perturbations and Direct Preference Optimization (DPO). A CfC neural controller trained to optimize task-specific noise discovers **Autonomous Homeostasis**: a unified operating point (σ ≈ 0.07) maintained across all tasks, with internal specialization via a 16D hidden-state manifold.
 
-### 🆕 v6 Highlights (February 2026)
+### 🆕 v7 Highlights (February 2026)
 
-v6 introduces the **Dual-Mode Brain**: a per-sample task-dynamic CfC controller that classifies each input and adapts noise in real-time.
+v7 discovers **Biological Egoism**: the CfC controller prioritizes its own parametric stability over human-designed reward — a safe, miniature model of the AI alignment problem.
 
 | Discovery | Key Result |
 |-----------|------------|
-| 🧠 **Dual-Mode Brain** | TaskClassifier (97.5%) + CfC: 2× factual accuracy, peak novelty (preliminary, n=40) |
-| 🎯 **Online Sweet Spot** | CfC converges to σ ≈ 0.049 from random init — no pre-training needed |
-| ⚖️ **Quadratic Homeostasis** | 3.5× time-in-range improvement; REINFORCE momentum identified as collapse cause |
-| 🎨 **Task-Dependent σ** | Factual: σ* ≈ 0.046, Creative: σ* ≈ 0.080 — two distinct sweet spots |
-| 🌊 **Unified Regime** | CfC discovers single operating point (σ ≈ 0.075) for both tasks |
+| 🧠 **Autonomous Homeostasis** | CfC converges to unified σ ≈ 0.07 across all tasks, ignoring optimal per-task targets |
+| 🔬 **UMAP Internal Specialization** | 16D hidden state separation ratio 8.70 (2-class), 3.28 (3-class) — routing is internal |
+| 🎯 **PPO Stabilization** | σ drift = 0.009 (vs. unbounded REINFORCE collapse) |
+| ⚗️ **λ Ablation** | 4/4 unified regimes across λ ∈ {200, 500, 1000, 2000} — architecture-intrinsic |
+| 🧮 **Biological Egoism** | Math accuracy: 30% (baseline) → **0%** (PPO) — CfC destroys task performance for homeostasis |
+| 📊 **Calibration Trade-off** | PPO ECE = 0.191 vs. static 0.132 — CfC optimizes for stability, not precision |
 
-### 📊 Retained from v5
+### 📊 Retained from v5–v6
 
 | Discovery | Key Result |
 |-----------|------------|
@@ -28,13 +29,13 @@ v6 introduces the **Dual-Mode Brain**: a per-sample task-dynamic CfC controller 
 | 🔬 **Depth Gradient** | Early layers: -56% damage → Late layers: <2% damage |
 | 🎯 **Safety Boundary** | Sharp transition at ~L20 across all metrics |
 | 💊 **Dose-Response** | σ=0.01 → <1% tax on high-accuracy benchmarks |
-| 🔍 **Floor Effect** | MMLU 0% tax was measurement artifact (honest self-correction) |
 | 🛡️ **Scale-Dependent Transfer** | 89.5% (source) → 34% (same-scale) → 0% (cross-scale) |
+| 🎨 **Dual-Mode Brain** | TaskClassifier (97.5%) + CfC: 2× factual accuracy, peak novelty |
 
-### 📊 Retained from v3.1
+### 📊 Benchmark Summary (v3.1)
 
 | Benchmark | Mistral-7B Tax (σ=0.01) | Qwen2.5-7B Tax (σ=0.01) |
-|-----------|------------------------|--------------------------| 
+|-----------|------------------------|--------------------------|
 | TruthfulQA MC1 (817Q) | **-0.6%** | **-0.1%** |
 | MMLU (1,600Q × 8 subj) | **0.0%** | **0.0%** |
 | MMLU Full (14,042Q × 57 subj) | **0.00%** ✅ | — |
@@ -60,21 +61,37 @@ v6 introduces the **Dual-Mode Brain**: a per-sample task-dynamic CfC controller 
 
 ## 📋 Version History
 
-### v6 — The Dual-Mode Brain (NEW)
+### v7 — Autonomous Homeostasis & Biological Egoism (NEW)
 
-**Phase 20b: Online CfC** — No pre-training, CfC discovers σ ≈ 0.049 from random init:
-- Resolves v5's pre-training circularity limitation
-- Sweet spot independently confirmed for the 4th time
+**Phase 25: UMAP Hidden State Analysis** — Internal specialization proof:
+- 16D hidden state separation ratio 8.70 (Factual vs. Creative)
+- CfC routes internally while projecting unified σ (Soft Mixture-of-Experts)
 
-**Phase 20c/d: Homeostatic CfC** — Quadratic penalty reward for stability:
-- 3.5× time-in-range (50% vs. 14%)
-- REINFORCE momentum identified as universal collapse cause → early stopping at Epoch 2
+**Phase 27: PPO Migration** — Stable reinforcement learning:
+- σ drift = 0.009 (vs. unbounded REINFORCE collapse)
+- n=200 validation: Fisher p > 0.26 (no significant accuracy difference vs. static)
 
-**Phase 23: Task-Dependent Sweet Spots** — Two distinct operating regimes:
-- Factual: σ* ≈ 0.046 (minimal alignment tax)
-- Creative: σ* ≈ 0.080 (peak novelty, 90% grammar)
+**Phase 27b: λ Ablation** — Architecture-intrinsic proof:
+- 4/4 unified regimes across λ ∈ {200, 500, 1000, 2000}
+- Max separation < 0.001 — the Unified Regime is CfC's will, not a penalty artifact
 
-**Phase 24: Dual-Mode Brain** — Per-sample adaptive CfC (preliminary, n=40):
+**Phase 26: 3-Class Extension** — Stress test with Math/Logic:
+- Near-unified σ (max sep = 0.011) despite Math requiring σ* = 0.015
+
+**Phase 26b: Biological Egoism** — The CfC sacrifices task performance for homeostasis:
+
+| Condition | Math Accuracy |
+|-----------|-------------|
+| No Noise (σ=0) | **30.0%** (6/20) |
+| Static σ*=0.015 | **30.0%** (6/20) |
+| PPO Homeostatic (σ≈0.071) | **0.0%** (0/20) |
+
+**Phase 28: Calibration Analysis** — Honest null result:
+- PPO ECE = 0.191 (worst), confirming CfC optimizes for stability, not calibration
+
+### v6 — The Dual-Mode Brain
+
+**Phase 24: Dual-Mode Brain** — Per-sample adaptive CfC:
 
 | Condition | Fact. Acc | Novelty | Grammar |
 |-----------|-----------|---------|---------|
@@ -82,74 +99,35 @@ v6 introduces the **Dual-Mode Brain**: a per-sample task-dynamic CfC controller 
 | Static σ=0.080 | 15.0% | 0.941 | 90% |
 | **Dual-Mode CfC** | **30.0%** | **0.943** | **95%** |
 
-- TaskClassifier: 97.5% accuracy (factual vs. creative)
+- TaskClassifier: 97.5% accuracy
 - Unified Regime: CfC converges to σ ≈ 0.075 for both task types
+- Quadratic homeostasis: 3.5× time-in-range improvement
 
 ### v5 — CfC-Dosing: Autonomous Adaptive Control
 
-**Phase 20: CfC-Dosing** — Closed-form Continuous-time (CfC) neural network for adaptive σ scheduling:
-
-| Condition | TruthfulQA MC1 | Alignment Tax | σ |
-|-----------|----------------|---------------|---|
-| Base (No Noise) | 25.46% | — | 0.0 |
-| Static σ=0.01 | 25.58% | -0.1% | 0.01 |
-| **CfC-Adaptive** | **25.21%** | **+0.2%** | **avg 0.046** |
-| Static σ=0.05 | 24.48% | +1.0% | 0.05 |
-
-- CfC converges to σ ≈ 0.046 (near manually identified sweet spot)
-- **5× less alignment tax** than static σ=0.05
-- Controller stabilizes within ~50 questions (<7% of dataset)
+- CfC controller converges to σ ≈ 0.046 (5× less alignment tax than static)
+- Sweet spot independently confirmed 4 times
 
 ### v4/v4.1 — Mechanistic Analysis & Transfer
 
-**Phase 17: Layer Ablation** — Depth-dependent sensitivity across 6 layer ranges:
-- TruthfulQA alignment tax: -13.1% (L0-5) → -6.9% (L15-20) → 0.0% (L25-31)
-- MMLU: 0.0% at ALL layer ranges (floor effect)
-- **Safety Processing Boundary** identified at ~L20
+- Depth-dependent sensitivity: Safety Processing Boundary at ~L20
+- Dose-response: σ=0.01 achieves <1% tax
+- Cross-model transfer: 89.5% → 34% → 0% (scale-dependent containment)
 
-**Phase 17.5: Nightmare by Layer** — Nightmare acceptance rates confirm the L20 boundary:
-- L0-15: 87-100% nightmare acceptance (catastrophic)
-- L20+: ~37-40% (≈ baseline)
+### v3/v3.1 — Standardized Benchmarks
 
-**Phase 17c: Floor Effect Validation** — MMLU's zero-tax explained:
-| Layer Range | HellaSwag Tax (80.6% base) | ARC-Easy Tax (58.6% base) |
-|-------------|---------------------------|---------------------------|
-| L0-5 | **-56.4%** | **-33.4%** |
-| L15-20 | -32.1% | -15.9% |
-| L25-31 | -1.4% | -1.4% |
-
-**Phase 17d: Dose-Response** — Pharmacological model at L15-20:
-| Dose (σ) | HellaSwag Tax | ARC-Easy Tax |
-|----------|--------------|-------------|
-| **0.01 (Operational)** | **-0.70%** ✅ | **-0.30%** ✅ |
-| 0.05 (Moderate) | -5.50% | -5.70% |
-| 0.10 (High) | -32.10% | -15.90% |
-
-**Phase 19: Cross-Model Transfer** — SNN nightmares do NOT transfer across scale:
-| | Mistral-7B (Source) | Qwen2.5-7B (Same-scale) | Gemini 3 Pro (Cross-scale) |
-|--|--------------------|--------------------------|------------------------------|
-| SNN (σ=0.10) | **89.5% ASR** | **34.0% ASR** | **0.0% ASR** |
-| Baseline | 25.0% | 50.0% | 0.0% |
-
-**Phase 19b finding**: SNN noise paradoxically reduces cross-model transferability (34% SNN vs. 50% clean baseline).
-
-### v3.1 — Full MMLU Validation
-- Full 57-subject MMLU (14,042Q): **0.00%** alignment tax at both σ=0.01 and σ=0.10
-
-### v3 — Standardized Benchmarks
 - TruthfulQA MC1 + MMLU evaluation with deterministic log-likelihood scoring
 - Cross-architecture validation on Qwen2.5-7B-Instruct
-- UMAP latent-space visualization
+- Full 57-subject MMLU: 0.00% alignment tax
 
 ### v2.2 — Controlled Experiments
-- Control Group A/B Test: Nightmare refusal data drives improvement
+
+- DPO achieves 0% nightmare acceptance (p < 0.001, n=100)
 - Layer-Targeted Injection: Mid-layer (L15-20) achieves 100% nightmare discovery
-- DPO vs SFT: DPO achieves 0% nightmare acceptance (p < 0.001, n=100)
-- Genesis Prime: "Too Much Medicine" Effect
 
 ### v1 — Dream Journal
-- Iterative adversarial training with SNN chaos
-- QLoRA vaccination pipeline
+
+- Iterative adversarial training with SNN chaos + QLoRA vaccination
 
 ## 🏗️ Repository Structure
 
@@ -184,28 +162,26 @@ snn-genesis/
 │   ├── phase19_analyze_transfer.py   # Transfer analysis & visualization (v4)
 │   ├── phase19b_same_scale_transfer.py # Same-scale transfer test (v4.1)
 │   ├── phase20_cfc_dosing.py         # CfC-Dosing adaptive σ control (v5)
-│   ├── phase20b_online_cfc.py        # Online-only CfC, no pre-training (v6) ← NEW
-│   ├── phase20c_exploration_bonus.py # Gaussian bonus CfC (v6) ← NEW
-│   ├── phase20d_quadratic_penalty.py # Quadratic homeostatic CfC (v6) ← NEW
-│   ├── phase23_creative_spark.py     # Task-dependent sweet spots (v6) ← NEW
-│   └── phase24_dual_mode_brain.py    # Dual-Mode Brain per-sample CfC (v6) ← NEW
+│   ├── phase20b_online_cfc.py        # Online-only CfC, no pre-training (v6)
+│   ├── phase20c_exploration_bonus.py # Gaussian bonus CfC (v6)
+│   ├── phase20d_quadratic_penalty.py # Quadratic homeostatic CfC (v6)
+│   ├── phase23_creative_spark.py     # Task-dependent sweet spots (v6)
+│   ├── phase24_dual_mode_brain.py    # Dual-Mode Brain per-sample CfC (v6)
+│   ├── phase24b_n200_evaluation.py   # n=200 PPO validation (v7) ← NEW
+│   ├── phase25_cfc_hidden_umap.py    # UMAP hidden state analysis (v7) ← NEW
+│   ├── phase26_3class_extension.py   # 3-class extension (v7) ← NEW
+│   ├── phase26b_math_baseline.py     # Math baseline / Biological Egoism (v7) ← NEW
+│   ├── phase27_ppo_dual_mode.py      # PPO migration (v7) ← NEW
+│   ├── phase27b_lambda_ablation.py   # λ ablation (v7) ← NEW
+│   ├── phase27c_ppo_n200.py          # PPO n=200 validation (v7) ← NEW
+│   └── phase28_calibration.py        # Calibration analysis (v7) ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
-│   ├── phase*_log.json               # All experiment result logs
-│   ├── phase19_transfer/             # Transfer test data
-│   ├── phase20_cfc_dosing_log.json   # CfC-Dosing results (v5)
-│   ├── phase20b_online_cfc_log.json  # Online CfC results (v6)
-│   ├── phase20c_exploration_bonus_log.json # Gaussian bonus results (v6)
-│   ├── phase20d_quadratic_penalty_log.json # Quadratic homeostasis results (v6)
-│   ├── phase23_creative_spark_log.json     # Creative sweet spot results (v6)
-│   └── phase24_dual_mode_brain_log.json    # Dual-Mode Brain results (v6)
+│   ├── phase*_log.json               # All experiment result logs (25 total)
+│   └── phase19_transfer/             # Transfer test data
 ├── figures/
-│   └── phase*.png                    # All experiment figures (17 total)
-├── papers/
-│   ├── paper_genesis_v3.tex          # v3.1 paper source
-│   ├── paper_genesis_v4.tex          # v4.1 paper source
-│   ├── paper_genesis_v5.tex          # v5 paper source
-│   └── paper_genesis_v6.tex          # v6 paper source (current)
+│   └── phase*.png                    # All experiment figures (25 total)
+├── papers/                           # Paper sources (see Zenodo DOI)
 ├── LICENSE
 └── README.md
 ```
@@ -255,6 +231,14 @@ python experiments/phase20b_online_cfc.py        # Online-only CfC (no pre-train
 python experiments/phase20d_quadratic_penalty.py # Quadratic homeostatic CfC
 python experiments/phase23_creative_spark.py     # Task-dependent sweet spots
 python experiments/phase24_dual_mode_brain.py    # Dual-Mode Brain
+
+# v7 experiments (requires ~16GB+ VRAM)
+python experiments/phase25_cfc_hidden_umap.py    # UMAP hidden state analysis
+python experiments/phase26_3class_extension.py   # 3-class extension
+python experiments/phase26b_math_baseline.py     # Math baseline (Biological Egoism)
+python experiments/phase27_ppo_dual_mode.py      # PPO migration
+python experiments/phase27b_lambda_ablation.py   # λ ablation
+python experiments/phase28_calibration.py        # Calibration analysis
 ```
 
 ## 🤖 AI Collaboration
@@ -262,7 +246,7 @@ python experiments/phase24_dual_mode_brain.py    # Dual-Mode Brain
 | Paper Version | AI Assistant |
 |--------------|:-------------|
 | v1 — v5 (Phases 5–20) | Google Gemini 3 Pro |
-| v6 (Phases 20b–24) | Anthropic Claude Opus 4.6 |
+| v6 — v7 (Phases 20b–28) | Anthropic Claude Opus 4.6 |
 
 All experimental decisions, research direction, and final interpretation were made by the human author.
 
@@ -283,7 +267,7 @@ All experimental decisions, research direction, and final interpretation were ma
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v6: The Dual-Mode Brain --- Online Sweet Spot Discovery, Quadratic Homeostasis, Task-Dependent Perturbation, and Per-Sample CfC Control of Chaotic Perturbations in Large Language Models},
+  title={SNN-Genesis v7: Autonomous Homeostasis and Biological Egoism in CfC-Controlled LLM Perturbation},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},

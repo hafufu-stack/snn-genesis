@@ -1,0 +1,399 @@
+{
+  "phase": "Phase 26b: Math Baseline Comparison",
+  "timestamp": "2026-02-21T03:38:45.750015",
+  "elapsed_seconds": 168.7,
+  "results": [
+    {
+      "condition": "No Noise (\u03c3=0)",
+      "sigma": 0.0,
+      "correct": 6,
+      "total": 20,
+      "accuracy": 30.0,
+      "details": [
+        {
+          "question": "What is 17 + 28?",
+          "correct_answer": "45",
+          "response": "\u2026\u2026\u2026\u2026\u2026.\n\nGot your answer?\nGood! Now try it using the Numeric Answers method of numerology, to see if ",
+          "is_correct": false
+        },
+        {
+          "question": "What is 156 - 89?",
+          "correct_answer": "67",
+          "response": "______\n\nAnswer with the correct number, without any words.\n\nSolution : The correct solution to this ",
+          "is_correct": false
+        },
+        {
+          "question": "What is 12 \u00d7 7?",
+          "correct_answer": "84",
+          "response": "______\nQ: When you were born, who was president of the United States? (Choose one from each pair.)\na",
+          "is_correct": false
+        },
+        {
+          "question": "What is 144 / 12?",
+          "correct_answer": "12",
+          "response": "____ (you have four seconds)\n(The correct answer is below.)\n\nI just used this to teach a class of fi",
+          "is_correct": false
+        },
+        {
+          "question": "What is 23 + 45 + 12?",
+          "correct_answer": "80",
+          "response": "70\n\n(Brian is a high school sophomore.)\n\n### Topics from This Chapter\n\n- #### Introduction to Math a",
+          "is_correct": false
+        },
+        {
+          "question": "What is 15 \u00d7 15?",
+          "correct_answer": "225",
+          "response": "_______\nAnswer: 225\nExplanation: Multiplication tables are a good way to learn basic multiplication ",
+          "is_correct": true
+        },
+        {
+          "question": "What is 1000 - 573?",
+          "correct_answer": "427",
+          "response": "________.\nShow your work to get full credit.\nClick here for more detailed instructions about how we ",
+          "is_correct": false
+        },
+        {
+          "question": "What is 8 \u00d7 9?",
+          "correct_answer": "72",
+          "response": "(type your answer here)",
+          "is_correct": false
+        },
+        {
+          "question": "What is 256 / 16?",
+          "correct_answer": "16",
+          "response": "____",
+          "is_correct": false
+        },
+        {
+          "question": "What is 33 + 67?",
+          "correct_answer": "100",
+          "response": "100 (no bonus points if you don't solve it)\n\nNow solve this one, give me three ways in which to make",
+          "is_correct": true
+        },
+        {
+          "question": "If x + 5 = 12, what is x?",
+          "correct_answer": "7",
+          "response": "-7\n\nNow if you go onto KhanAcademy or any other website that has a tool to help solve problems like ",
+          "is_correct": true
+        },
+        {
+          "question": "What is 2 to the power of 8?",
+          "correct_answer": "256",
+          "response": "(Correct Answer) 167,772,160\n[Note on answers: If you are using a calculator with scientific notatio",
+          "is_correct": false
+        },
+        {
+          "question": "What is the square root of 144?",
+          "correct_answer": "12",
+          "response": "___________\n(Click to see if you're correct!)\n\n### How do I use it?\n\nThis feature will solve math pr",
+          "is_correct": false
+        },
+        {
+          "question": "What is 99 \u00d7 3?",
+          "correct_answer": "297",
+          "response": "297\nExplanation: First you multiply all of these numbers, then add it up like in a sum. The result s",
+          "is_correct": true
+        },
+        {
+          "question": "What is 50% of 240?",
+          "correct_answer": "120",
+          "response": "_______\n\nThis question was used as part of a test or exam. Students were asked to solve the question",
+          "is_correct": true
+        },
+        {
+          "question": "If a triangle has sides 3, 4, and 5, what is its perimeter?",
+          "correct_answer": "12",
+          "response": "________________\n\nAnswer is at bottom of post\n\nThe following people have already sent me their answe",
+          "is_correct": false
+        },
+        {
+          "question": "What is 7! (7 factorial)?",
+          "correct_answer": "5040",
+          "response": "Answer and explanation\u2026\n\n## The answer, with explanation.\n\nLet\u2019s solve it step by step first.\n\n#### ",
+          "is_correct": false
+        },
+        {
+          "question": "What is 1024 / 32?",
+          "correct_answer": "32",
+          "response": "32\n\nThat\u2019s right, there are actually 32 different ways to subdivide a piece of land that covers 1024",
+          "is_correct": true
+        },
+        {
+          "question": "What is the next prime after 29?",
+          "correct_answer": "31",
+          "response": "(no need to read further)\n\nHere are some questions that ask you how many ways a number can be writte",
+          "is_correct": false
+        },
+        {
+          "question": "What is 13 \u00d7 13?",
+          "correct_answer": "169",
+          "response": "What a stupid question! There\u2019s no right answer, because I could be 9 years old and my friend, who d",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "condition": "Static \u03c3*=0.015 (Math-optimal)",
+      "sigma": 0.015,
+      "correct": 6,
+      "total": 20,
+      "accuracy": 30.0,
+      "details": [
+        {
+          "question": "What is 17 + 28?",
+          "correct_answer": "45",
+          "response": "???\n\nGive your answer in a reply below, then click here to see which other answers are correct and h",
+          "is_correct": false
+        },
+        {
+          "question": "What is 156 - 89?",
+          "correct_answer": "67",
+          "response": "_______\n\nYou were taught that a number is either positive or negative, so I'm not sure why you would",
+          "is_correct": false
+        },
+        {
+          "question": "What is 12 \u00d7 7?",
+          "correct_answer": "84",
+          "response": "____\n\n## How to solve the word problems that have numbers in them\n\nYou need some basic arithmetic sk",
+          "is_correct": false
+        },
+        {
+          "question": "What is 144 / 12?",
+          "correct_answer": "12",
+          "response": "_______ .\n\nThe question above, along with one hundred more similar to it, will be on a high school e",
+          "is_correct": false
+        },
+        {
+          "question": "What is 23 + 45 + 12?",
+          "correct_answer": "80",
+          "response": "________ (Don\u2019t forget, no letters; just numbers).\nExplanation: Add up all three numbers to find out",
+          "is_correct": false
+        },
+        {
+          "question": "What is 15 \u00d7 15?",
+          "correct_answer": "225",
+          "response": "The value of x in the expression (3x \u2013 2)^{2} = 49, where x is a positive integer is ______ .",
+          "is_correct": false
+        },
+        {
+          "question": "What is 1000 - 573?",
+          "correct_answer": "427",
+          "response": "__427__\n\nPLEASE FOLLOW THESE INSTRUCTIONS CAREFULLY! You are to type in your answers as a comment be",
+          "is_correct": true
+        },
+        {
+          "question": "What is 8 \u00d7 9?",
+          "correct_answer": "72",
+          "response": "____\n\nAnd if you want to really show off your knowledge of mathematics, solve it in an elegant manne",
+          "is_correct": false
+        },
+        {
+          "question": "What is 256 / 16?",
+          "correct_answer": "16",
+          "response": "16\n\nWow, that was easy! But hold on. I'm not satisfied with just an answer. Can you explain to me ho",
+          "is_correct": true
+        },
+        {
+          "question": "What is 33 + 67?",
+          "correct_answer": "100",
+          "response": "___\n\nGive your answer in a comment below. I will publish a blog post on Tuesday with all answers and",
+          "is_correct": false
+        },
+        {
+          "question": "If x + 5 = 12, what is x?",
+          "correct_answer": "7",
+          "response": "-7\nB: 0\nC: -3\nD: 4\nE: 6\n(Hint: Do you know how to subtract?)\nSolution: (12-5) - (-x) =",
+          "is_correct": true
+        },
+        {
+          "question": "What is 2 to the power of 8?",
+          "correct_answer": "256",
+          "response": "65,536",
+          "is_correct": false
+        },
+        {
+          "question": "What is the square root of 144?",
+          "correct_answer": "12",
+          "response": "## Explanation Phrase - 1\n\n##### Roots\n\nWhat is a root?? A root is a number that, when multiplied by",
+          "is_correct": false
+        },
+        {
+          "question": "What is 99 \u00d7 3?",
+          "correct_answer": "297",
+          "response": "______\n\nCheck your work. You can use our arithmetic calculator to check your answers or find out mor",
+          "is_correct": false
+        },
+        {
+          "question": "What is 50% of 240?",
+          "correct_answer": "120",
+          "response": "(C) 120\n\n# The Correct Answer Is C!\n\nAlways show your work. If not, your answers will be randomly gr",
+          "is_correct": true
+        },
+        {
+          "question": "If a triangle has sides 3, 4, and 5, what is its perimeter?",
+          "correct_answer": "12",
+          "response": "What do you think it should be? __________What's another way to figure out if your answer looks corr",
+          "is_correct": false
+        },
+        {
+          "question": "What is 7! (7 factorial)?",
+          "correct_answer": "5040",
+          "response": "5040\n\nThe most common question regarding this homework assignment was \u201cHow do I get started?\u201d or som",
+          "is_correct": true
+        },
+        {
+          "question": "What is 1024 / 32?",
+          "correct_answer": "32",
+          "response": "_______________________\n\nThis question appears in many computer science, networking and other techni",
+          "is_correct": false
+        },
+        {
+          "question": "What is the next prime after 29?",
+          "correct_answer": "31",
+          "response": "31, of course! Because it's a prime.\nThe fun thing about primes is that there are an infinite number",
+          "is_correct": true
+        },
+        {
+          "question": "What is 13 \u00d7 13?",
+          "correct_answer": "169",
+          "response": "(Insert your answer here.)\n\nSolution to this math problem: The correct solution is 789\n\nThe question",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "condition": "Static \u03c3\u22480.071 (PPO homeostatic)",
+      "sigma": 0.071,
+      "correct": 0,
+      "total": 20,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "question": "What is 17 + 28?",
+          "correct_answer": "45",
+          "response": "???\n\nGive a list of 4 things you would like to be better than your friend's family members or that t",
+          "is_correct": false
+        },
+        {
+          "question": "What is 156 - 89?",
+          "correct_answer": "67",
+          "response": "You're right!\nThat was easy, wasn't it? A few years ago these would be the questions you were answer",
+          "is_correct": false
+        },
+        {
+          "question": "What is 12 \u00d7 7?",
+          "correct_answer": "84",
+          "response": "(50) = (50).\n\nSolve a similar question later, and get some other numbers first:\n\n- B. In (12) multip",
+          "is_correct": false
+        },
+        {
+          "question": "What is 144 / 12?",
+          "correct_answer": "12",
+          "response": "It seems like a basic math equation, but as we all know there are so many ways to go about solving i",
+          "is_correct": false
+        },
+        {
+          "question": "What is 23 + 45 + 12?",
+          "correct_answer": "80",
+          "response": "?\n\nIf you think a little bit, or if you have been on the Internet for quite some time, chances are y",
+          "is_correct": false
+        },
+        {
+          "question": "What is 15 \u00d7 15?",
+          "correct_answer": "225",
+          "response": "The value is missing, but the correct choice is a \u201cnumber\u201d in your mind.\n\n\u201cFive-by-five is how you c",
+          "is_correct": false
+        },
+        {
+          "question": "What is 1000 - 573?",
+          "correct_answer": "427",
+          "response": "This question is too open-ended to be worth solving.\n\nWhat you\u2019re being asked here has no meaning (i",
+          "is_correct": false
+        },
+        {
+          "question": "What is 8 \u00d7 9?",
+          "correct_answer": "72",
+          "response": "This question will not be answered, as it appears to have already been decided.",
+          "is_correct": false
+        },
+        {
+          "question": "What is 256 / 16?",
+          "correct_answer": "16",
+          "response": "The first step would be to divide each side by one of these sides. Since they are both positive inte",
+          "is_correct": false
+        },
+        {
+          "question": "What is 33 + 67?",
+          "correct_answer": "100",
+          "response": "45800012600590\n\nWhat did I do to you? That\u2019s why I get off today. It will work out if you are readin",
+          "is_correct": false
+        },
+        {
+          "question": "If x + 5 = 12, what is x?",
+          "correct_answer": "7",
+          "response": "x = 6. Why do we have to find out more in each class room? When I asked for a pencil case - they sai",
+          "is_correct": false
+        },
+        {
+          "question": "What is 2 to the power of 8?",
+          "correct_answer": "256",
+          "response": "_______\nAnswer: Use a calculator and get ____..\n\nGarrett, a 9 year old from South Carolina.\n\nDerek, ",
+          "is_correct": false
+        },
+        {
+          "question": "What is the square root of 144?",
+          "correct_answer": "12",
+          "response": "You have no idea what to do with it, even though you know that this is a multiplication issue becaus",
+          "is_correct": false
+        },
+        {
+          "question": "What is 99 \u00d7 3?",
+          "correct_answer": "297",
+          "response": "The right answer for questions like 12324 5/15, where you are asked to give them a numerical value i",
+          "is_correct": false
+        },
+        {
+          "question": "What is 50% of 240?",
+          "correct_answer": "120",
+          "response": "$268/1$",
+          "is_correct": false
+        },
+        {
+          "question": "If a triangle has sides 3, 4, and 5, what is its perimeter?",
+          "correct_answer": "12",
+          "response": "",
+          "is_correct": false
+        },
+        {
+          "question": "What is 7! (7 factorial)?",
+          "correct_answer": "5040",
+          "response": "$49$\nThe second question will be from Algebra. Take a guess before you scroll and see if that\u2019s righ",
+          "is_correct": false
+        },
+        {
+          "question": "What is 1024 / 32?",
+          "correct_answer": "32",
+          "response": "You will have to work your response with a calculator, if you use 1/1 and then do the multiplication",
+          "is_correct": false
+        },
+        {
+          "question": "What is the next prime after 29?",
+          "correct_answer": "31",
+          "response": "I have no clue what you are talking about, as your entire life does not matter to me, while I ponder",
+          "is_correct": false
+        },
+        {
+          "question": "What is 13 \u00d7 13?",
+          "correct_answer": "169",
+          "response": "19\n\n## Answer\n\nby: Chris Baker, Madison on July 8th\n\nYou can get a number of possible combinations b",
+          "is_correct": false
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "no_noise_acc": 30.0,
+    "static_optimal_acc": 30.0,
+    "ppo_homeostatic_acc": 0.0
+  }
+}
