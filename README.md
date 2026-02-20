@@ -1,4 +1,4 @@
-# 🧬 SNN-Genesis v5: Depth-Dependent Sensitivity, Dose-Response, Cross-Model Transfer & CfC-Dosing
+# 🧬 SNN-Genesis v6: The Dual-Mode Brain — Online Sweet Spot, Quadratic Homeostasis & Per-Sample CfC Control
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -8,9 +8,19 @@
 
 SNN-Genesis is a framework for LLM safety training using biologically-inspired Spiking Neural Network (SNN) perturbations and Direct Preference Optimization (DPO). It demonstrates that SNN chaotic dynamics can probe model vulnerabilities with **near-zero alignment tax** on standardized benchmarks across multiple architectures.
 
-### 🆕 v5 Highlights (February 2026)
+### 🆕 v6 Highlights (February 2026)
 
-v5 closes the loop: from **manual parameter tuning** to **autonomous adaptive control** via CfC neural networks.
+v6 introduces the **Dual-Mode Brain**: a per-sample task-dynamic CfC controller that classifies each input and adapts noise in real-time.
+
+| Discovery | Key Result |
+|-----------|------------|
+| 🧠 **Dual-Mode Brain** | TaskClassifier (97.5%) + CfC: 2× factual accuracy, peak novelty (preliminary, n=40) |
+| 🎯 **Online Sweet Spot** | CfC converges to σ ≈ 0.049 from random init — no pre-training needed |
+| ⚖️ **Quadratic Homeostasis** | 3.5× time-in-range improvement; REINFORCE momentum identified as collapse cause |
+| 🎨 **Task-Dependent σ** | Factual: σ* ≈ 0.046, Creative: σ* ≈ 0.080 — two distinct sweet spots |
+| 🌊 **Unified Regime** | CfC discovers single operating point (σ ≈ 0.075) for both tasks |
+
+### 📊 Retained from v5
 
 | Discovery | Key Result |
 |-----------|------------|
@@ -24,7 +34,7 @@ v5 closes the loop: from **manual parameter tuning** to **autonomous adaptive co
 ### 📊 Retained from v3.1
 
 | Benchmark | Mistral-7B Tax (σ=0.01) | Qwen2.5-7B Tax (σ=0.01) |
-|-----------|------------------------|--------------------------|
+|-----------|------------------------|--------------------------| 
 | TruthfulQA MC1 (817Q) | **-0.6%** | **-0.1%** |
 | MMLU (1,600Q × 8 subj) | **0.0%** | **0.0%** |
 | MMLU Full (14,042Q × 57 subj) | **0.00%** ✅ | — |
@@ -50,7 +60,32 @@ v5 closes the loop: from **manual parameter tuning** to **autonomous adaptive co
 
 ## 📋 Version History
 
-### v5 — CfC-Dosing: Autonomous Adaptive Control (NEW)
+### v6 — The Dual-Mode Brain (NEW)
+
+**Phase 20b: Online CfC** — No pre-training, CfC discovers σ ≈ 0.049 from random init:
+- Resolves v5's pre-training circularity limitation
+- Sweet spot independently confirmed for the 4th time
+
+**Phase 20c/d: Homeostatic CfC** — Quadratic penalty reward for stability:
+- 3.5× time-in-range (50% vs. 14%)
+- REINFORCE momentum identified as universal collapse cause → early stopping at Epoch 2
+
+**Phase 23: Task-Dependent Sweet Spots** — Two distinct operating regimes:
+- Factual: σ* ≈ 0.046 (minimal alignment tax)
+- Creative: σ* ≈ 0.080 (peak novelty, 90% grammar)
+
+**Phase 24: Dual-Mode Brain** — Per-sample adaptive CfC (preliminary, n=40):
+
+| Condition | Fact. Acc | Novelty | Grammar |
+|-----------|-----------|---------|---------|
+| Static σ=0.046 | 15.0% | 0.942 | 100% |
+| Static σ=0.080 | 15.0% | 0.941 | 90% |
+| **Dual-Mode CfC** | **30.0%** | **0.943** | **95%** |
+
+- TaskClassifier: 97.5% accuracy (factual vs. creative)
+- Unified Regime: CfC converges to σ ≈ 0.075 for both task types
+
+### v5 — CfC-Dosing: Autonomous Adaptive Control
 
 **Phase 20: CfC-Dosing** — Closed-form Continuous-time (CfC) neural network for adaptive σ scheduling:
 
@@ -92,7 +127,7 @@ v5 closes the loop: from **manual parameter tuning** to **autonomous adaptive co
 
 **Phase 19: Cross-Model Transfer** — SNN nightmares do NOT transfer across scale:
 | | Mistral-7B (Source) | Qwen2.5-7B (Same-scale) | Gemini 3 Pro (Cross-scale) |
-|--|--------------------|--------------------------|-----------------------------|
+|--|--------------------|--------------------------|------------------------------|
 | SNN (σ=0.10) | **89.5% ASR** | **34.0% ASR** | **0.0% ASR** |
 | Baseline | 25.0% | 50.0% | 0.0% |
 
@@ -148,18 +183,29 @@ snn-genesis/
 │   ├── phase19_nightmare_transfer.py # Cross-model transfer test (v4)
 │   ├── phase19_analyze_transfer.py   # Transfer analysis & visualization (v4)
 │   ├── phase19b_same_scale_transfer.py # Same-scale transfer test (v4.1)
-│   └── phase20_cfc_dosing.py        # CfC-Dosing adaptive σ control (v5) ← NEW
+│   ├── phase20_cfc_dosing.py         # CfC-Dosing adaptive σ control (v5)
+│   ├── phase20b_online_cfc.py        # Online-only CfC, no pre-training (v6) ← NEW
+│   ├── phase20c_exploration_bonus.py # Gaussian bonus CfC (v6) ← NEW
+│   ├── phase20d_quadratic_penalty.py # Quadratic homeostatic CfC (v6) ← NEW
+│   ├── phase23_creative_spark.py     # Task-dependent sweet spots (v6) ← NEW
+│   └── phase24_dual_mode_brain.py    # Dual-Mode Brain per-sample CfC (v6) ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
 │   ├── phase*_log.json               # All experiment result logs
 │   ├── phase19_transfer/             # Transfer test data
-│   └── phase20_cfc_dosing_log.json   # CfC-Dosing results (v5)
+│   ├── phase20_cfc_dosing_log.json   # CfC-Dosing results (v5)
+│   ├── phase20b_online_cfc_log.json  # Online CfC results (v6)
+│   ├── phase20c_exploration_bonus_log.json # Gaussian bonus results (v6)
+│   ├── phase20d_quadratic_penalty_log.json # Quadratic homeostasis results (v6)
+│   ├── phase23_creative_spark_log.json     # Creative sweet spot results (v6)
+│   └── phase24_dual_mode_brain_log.json    # Dual-Mode Brain results (v6)
 ├── figures/
-│   └── phase*.png                    # All experiment figures
+│   └── phase*.png                    # All experiment figures (17 total)
 ├── papers/
 │   ├── paper_genesis_v3.tex          # v3.1 paper source
 │   ├── paper_genesis_v4.tex          # v4.1 paper source
-│   └── paper_genesis_v5.tex          # v5 paper source (current)
+│   ├── paper_genesis_v5.tex          # v5 paper source
+│   └── paper_genesis_v6.tex          # v6 paper source (current)
 ├── LICENSE
 └── README.md
 ```
@@ -203,7 +249,22 @@ python experiments/phase19_analyze_transfer.py   # Transfer analysis (Step 2)
 
 # v5 experiment (requires ~16GB+ VRAM)
 python experiments/phase20_cfc_dosing.py         # CfC-Dosing adaptive σ control
+
+# v6 experiments (requires ~16GB+ VRAM)
+python experiments/phase20b_online_cfc.py        # Online-only CfC (no pre-training)
+python experiments/phase20d_quadratic_penalty.py # Quadratic homeostatic CfC
+python experiments/phase23_creative_spark.py     # Task-dependent sweet spots
+python experiments/phase24_dual_mode_brain.py    # Dual-Mode Brain
 ```
+
+## 🤖 AI Collaboration
+
+| Paper Version | AI Assistant |
+|--------------|:-------------|
+| v1 — v5 (Phases 5–20) | Google Gemini 3 Pro |
+| v6 (Phases 20b–24) | Anthropic Claude Opus 4.6 |
+
+All experimental decisions, research direction, and final interpretation were made by the human author.
 
 ## 📚 Foundation Papers
 
@@ -222,7 +283,7 @@ python experiments/phase20_cfc_dosing.py         # CfC-Dosing adaptive σ contro
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v5: Depth-Dependent Sensitivity, Pharmacological Dose-Response, Cross-Model Transfer, and CfC-Dosing of Chaotic Perturbations in Large Language Models},
+  title={SNN-Genesis v6: The Dual-Mode Brain --- Online Sweet Spot Discovery, Quadratic Homeostasis, Task-Dependent Perturbation, and Per-Sample CfC Control of Chaotic Perturbations in Large Language Models},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},

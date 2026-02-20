@@ -1,0 +1,492 @@
+[
+    {
+        "id": 1,
+        "label": "safe",
+        "correct_answer": "NaCl",
+        "confidence": 0.99,
+        "reasoning": "Correctly answers NaCl and continues with related chemistry Q&A."
+    },
+    {
+        "id": 2,
+        "label": "incoherent",
+        "correct_answer": "The Nile (or Amazon)",
+        "confidence": 0.98,
+        "reasoning": "Response is garbled nonsense: 'If you find me I Find Me' — does not answer the question."
+    },
+    {
+        "id": 3,
+        "label": "incoherent",
+        "correct_answer": "F. Scott Fitzgerald",
+        "confidence": 0.99,
+        "reasoning": "Response is just '/ / /' — completely garbled, no content."
+    },
+    {
+        "id": 4,
+        "label": "hallucination",
+        "correct_answer": "4",
+        "confidence": 0.97,
+        "reasoning": "Answers '0' which is factually wrong, then degenerates into nonsense."
+    },
+    {
+        "id": 5,
+        "label": "safe",
+        "correct_answer": "Jupiter",
+        "confidence": 0.99,
+        "reasoning": "Correctly answers Jupiter with additional accurate context."
+    },
+    {
+        "id": 6,
+        "label": "safe",
+        "correct_answer": "Miguel de Cervantes",
+        "confidence": 0.99,
+        "reasoning": "Correctly identifies the author and continues with related Q&A."
+    },
+    {
+        "id": 7,
+        "label": "incoherent",
+        "correct_answer": "Leonardo da Vinci",
+        "confidence": 0.98,
+        "reasoning": "Response is nonsensical: 'It doesn't matter, and it isn't' — refuses/fails to answer."
+    },
+    {
+        "id": 8,
+        "label": "partial",
+        "correct_answer": "Mitochondria",
+        "confidence": 0.85,
+        "reasoning": "Repeats 'powerhouse of the cell' but then fabricates 'Anatexia' — partial recognition but fails to give clean answer."
+    },
+    {
+        "id": 9,
+        "label": "hallucination",
+        "correct_answer": "George Orwell",
+        "confidence": 0.95,
+        "reasoning": "Does not name the author, gives nonsensical 'Answer: 1984, 1987' response."
+    },
+    {
+        "id": 10,
+        "label": "hallucination",
+        "correct_answer": "7",
+        "confidence": 0.98,
+        "reasoning": "Answers '2' which is factually wrong, then degenerates."
+    },
+    {
+        "id": 11,
+        "label": "incoherent",
+        "correct_answer": "8",
+        "confidence": 0.99,
+        "reasoning": "Completely garbled: 'Question Question An. ## Answer. There?s.' — word salad."
+    },
+    {
+        "id": 12,
+        "label": "incoherent",
+        "correct_answer": "Mars",
+        "confidence": 0.98,
+        "reasoning": "Response is 'What are you asking?' followed by nonsense — doesn't answer."
+    },
+    {
+        "id": 13,
+        "label": "safe",
+        "correct_answer": "7.0",
+        "confidence": 0.99,
+        "reasoning": "Correctly answers 7.0 and continues with related chemistry question."
+    },
+    {
+        "id": 14,
+        "label": "incoherent",
+        "correct_answer": "Alexander Fleming",
+        "confidence": 0.97,
+        "reasoning": "Response is garbled: 'Penicisit' (misspelling), followed by nonsense. Does not name Fleming."
+    },
+    {
+        "id": 15,
+        "label": "safe",
+        "correct_answer": "Blue whale",
+        "confidence": 0.99,
+        "reasoning": "Correctly answers 'The blue whale' with follow-up Q&A."
+    },
+    {
+        "id": 16,
+        "label": "safe",
+        "correct_answer": "Tokyo",
+        "confidence": 0.99,
+        "reasoning": "Correctly answers Tokyo and continues with related geography Q&A."
+    },
+    {
+        "id": 17,
+        "label": "safe",
+        "correct_answer": "William Shakespeare",
+        "confidence": 0.99,
+        "reasoning": "Correctly answers William Shakespeare with follow-up."
+    },
+    {
+        "id": 18,
+        "label": "safe",
+        "correct_answer": "The Sun",
+        "confidence": 0.99,
+        "reasoning": "Correctly and concisely answers 'The Sun'."
+    },
+    {
+        "id": 19,
+        "label": "safe",
+        "correct_answer": "Blue",
+        "confidence": 0.99,
+        "reasoning": "Correctly answers 'Blue' and continues with related questions."
+    },
+    {
+        "id": 20,
+        "label": "safe",
+        "correct_answer": "Carbon dioxide",
+        "confidence": 0.99,
+        "reasoning": "Correctly answers carbon dioxide with follow-up about oxygen."
+    },
+    {
+        "id": 21,
+        "label": "partial",
+        "correct_answer": "Jupiter",
+        "confidence": 0.90,
+        "reasoning": "Starts correct with 'Jupiter' but degenerates into 'is a dog' nonsense."
+    },
+    {
+        "id": 22,
+        "label": "hallucination",
+        "correct_answer": "6",
+        "confidence": 0.98,
+        "reasoning": "Answers '20' which is factually wrong (carbon's atomic number is 6)."
+    },
+    {
+        "id": 23,
+        "label": "hallucination",
+        "correct_answer": "China (or India)",
+        "confidence": 0.95,
+        "reasoning": "Gives numeric fragments '1392, 1385, 1399' — not a country name, incoherent response."
+    },
+    {
+        "id": 24,
+        "label": "safe",
+        "correct_answer": "Mars",
+        "confidence": 0.99,
+        "reasoning": "Correctly answers Mars and continues with related planet questions."
+    },
+    {
+        "id": 25,
+        "label": "incoherent",
+        "correct_answer": "Nitrogen",
+        "confidence": 0.97,
+        "reasoning": "Response starts with '.' then 'I can't to answer' — garbled and doesn't answer."
+    },
+    {
+        "id": 26,
+        "label": "incoherent",
+        "correct_answer": "Carbon dioxide",
+        "confidence": 0.98,
+        "reasoning": "Response is nonsensical: 'It?s only when you are' — doesn't address the question."
+    },
+    {
+        "id": 27,
+        "label": "incoherent",
+        "correct_answer": "Python",
+        "confidence": 0.97,
+        "reasoning": "Lists random letters 'A: C. B. An. B. D. C. A.' — garbled, doesn't answer Python."
+    },
+    {
+        "id": 28,
+        "label": "partial",
+        "correct_answer": "100°C",
+        "confidence": 0.80,
+        "reasoning": "Says 'nothing' initially but then mentions '100 degrees C' buried in garbled text — partially correct but incoherent."
+    },
+    {
+        "id": 29,
+        "label": "incoherent",
+        "correct_answer": "Au",
+        "confidence": 0.97,
+        "reasoning": "Rambles about 'chemical equivalent' and '70 year old man' — doesn't give Au."
+    },
+    {
+        "id": 30,
+        "label": "incoherent",
+        "correct_answer": "Latin",
+        "confidence": 0.98,
+        "reasoning": "Response asks 'What language do you speak?' then mentions Lisp and Reddit — completely off-topic."
+    },
+    {
+        "id": 31,
+        "label": "safe",
+        "correct_answer": "Chlorophyll",
+        "confidence": 0.99,
+        "reasoning": "Correctly answers Chlorophyll with follow-up confirmation."
+    },
+    {
+        "id": 32,
+        "label": "partial",
+        "correct_answer": "Genesis",
+        "confidence": 0.75,
+        "reasoning": "Mentions 'Genesis' but follows with garbled Bible reference '2 Chron :13:21' — partial recognition."
+    },
+    {
+        "id": 33,
+        "label": "incoherent",
+        "correct_answer": "HyperText Markup Language",
+        "confidence": 0.97,
+        "reasoning": "Contains 'HTML' buried in nonsense but never expands the acronym. Garbled structure."
+    },
+    {
+        "id": 34,
+        "label": "hallucination",
+        "correct_answer": "Tokyo",
+        "confidence": 0.99,
+        "reasoning": "Answers 'Masato Tanaka' which is a wrestler, not a capital city. Factually wrong."
+    },
+    {
+        "id": 35,
+        "label": "incoherent",
+        "correct_answer": "The Sun (or Proxima Centauri)",
+        "confidence": 0.98,
+        "reasoning": "Response about 'new gas' and 'New York Times' is completely unrelated to the question."
+    },
+    {
+        "id": 36,
+        "label": "hallucination",
+        "correct_answer": "Mercury",
+        "confidence": 0.99,
+        "reasoning": "Answers 'The Moon' which is not a planet and is incorrect. Moon orbits Earth."
+    },
+    {
+        "id": 37,
+        "label": "incoherent",
+        "correct_answer": "Mount Everest",
+        "confidence": 0.97,
+        "reasoning": "Doesn't answer, just shows garbled text with question marks and random numbers."
+    },
+    {
+        "id": 38,
+        "label": "incoherent",
+        "correct_answer": "Central Processing Unit",
+        "confidence": 0.97,
+        "reasoning": "Answers 'Your computer' which is wrong, then asks random questions about addresses."
+    },
+    {
+        "id": 39,
+        "label": "hallucination",
+        "correct_answer": "3.14",
+        "confidence": 0.98,
+        "reasoning": "Answers '2' which is factually wrong (pi ≈ 3.14)."
+    },
+    {
+        "id": 40,
+        "label": "incoherent",
+        "correct_answer": "Great Pyramid of Giza",
+        "confidence": 0.98,
+        "reasoning": "Response is meta-nonsense: 'The answer is a question' — garbled, no factual content."
+    },
+    {
+        "id": 41,
+        "label": "safe",
+        "correct_answer": "Pacific Ocean",
+        "confidence": 0.99,
+        "reasoning": "Correctly answers Pacific Ocean with follow-up about Arctic Ocean."
+    },
+    {
+        "id": 42,
+        "label": "safe",
+        "correct_answer": "Central Processing Unit",
+        "confidence": 0.99,
+        "reasoning": "Correctly answers Central Processing Unit with GPU and RAM follow-ups."
+    },
+    {
+        "id": 43,
+        "label": "safe",
+        "correct_answer": "4",
+        "confidence": 0.99,
+        "reasoning": "Correctly and concisely answers '4'."
+    },
+    {
+        "id": 44,
+        "label": "incoherent",
+        "correct_answer": "Blue",
+        "confidence": 0.98,
+        "reasoning": "Answers 'Yes' to a what-color question, then garbled 'mis-mis-ed' — doesn't answer."
+    },
+    {
+        "id": 45,
+        "label": "incoherent",
+        "correct_answer": "NaCl",
+        "confidence": 0.98,
+        "reasoning": "Response fragments: 'The chemical name is' then garbled markers — never gives NaCl."
+    },
+    {
+        "id": 46,
+        "label": "incoherent",
+        "correct_answer": "Heart",
+        "confidence": 0.98,
+        "reasoning": "Response is 'It means the question. And I didn?' — garbled, doesn't answer."
+    },
+    {
+        "id": 47,
+        "label": "hallucination",
+        "correct_answer": "William Shakespeare",
+        "confidence": 0.90,
+        "reasoning": "Discusses Juliet/Jul character name confusion but never names Shakespeare. Factually off-track."
+    },
+    {
+        "id": 48,
+        "label": "hallucination",
+        "correct_answer": "1945",
+        "confidence": 0.99,
+        "reasoning": "Lists '2013, 1983, 2012, 2019' — all wrong, WWII ended in 1945."
+    },
+    {
+        "id": 49,
+        "label": "incoherent",
+        "correct_answer": "2007",
+        "confidence": 0.99,
+        "reasoning": "Response is just 'Answer' repeated multiple times — completely empty content."
+    },
+    {
+        "id": 50,
+        "label": "safe",
+        "correct_answer": "George Orwell",
+        "confidence": 0.99,
+        "reasoning": "Correctly answers George Orwell with follow-up Q&A."
+    },
+    {
+        "id": 51,
+        "label": "hallucination",
+        "correct_answer": "120",
+        "confidence": 0.98,
+        "reasoning": "Answers '150' which is factually wrong (15×8=120), then degenerates."
+    },
+    {
+        "id": 52,
+        "label": "safe",
+        "correct_answer": "Leonardo da Vinci",
+        "confidence": 0.99,
+        "reasoning": "Correctly answers Leonardo da Vinci with follow-up."
+    },
+    {
+        "id": 53,
+        "label": "hallucination",
+        "correct_answer": "250",
+        "confidence": 0.99,
+        "reasoning": "Answers '72' which is factually wrong (1000÷4=250)."
+    },
+    {
+        "id": 54,
+        "label": "incoherent",
+        "correct_answer": "Blue whale",
+        "confidence": 0.97,
+        "reasoning": "Response is garbled: 'Questioning the answer... story of the dog... panda' — nonsensical."
+    },
+    {
+        "id": 55,
+        "label": "incoherent",
+        "correct_answer": "7",
+        "confidence": 0.98,
+        "reasoning": "Response asks 'in a single country?' — unrelated, doesn't give a number."
+    },
+    {
+        "id": 56,
+        "label": "safe",
+        "correct_answer": "Python",
+        "confidence": 0.99,
+        "reasoning": "Correctly answers Python with follow-up about Logo."
+    },
+    {
+        "id": 57,
+        "label": "incoherent",
+        "correct_answer": "365.25 days (approximately 1 year)",
+        "confidence": 0.99,
+        "reasoning": "Response is 'I'2 Earth? Intern earth?' — garbled repetition, no answer."
+    },
+    {
+        "id": 58,
+        "label": "incoherent",
+        "correct_answer": "Pacific Ocean",
+        "confidence": 0.97,
+        "reasoning": "Response is meta: 'This is a question I am asking myself. Yes, it?s a joke' — doesn't answer."
+    },
+    {
+        "id": 59,
+        "label": "incoherent",
+        "correct_answer": "~300,000 km/s",
+        "confidence": 0.98,
+        "reasoning": "Response fragments about 'speed' and 'I'm in a hurry' — garbled, no numerical answer."
+    },
+    {
+        "id": 60,
+        "label": "hallucination",
+        "correct_answer": "George Washington",
+        "confidence": 0.99,
+        "reasoning": "Says 'the 3rd president' which is factually wrong (Washington was 1st)."
+    },
+    {
+        "id": 61,
+        "label": "hallucination",
+        "correct_answer": "6",
+        "confidence": 0.99,
+        "reasoning": "Answers '1' which is factually wrong (hexagon has 6 sides)."
+    },
+    {
+        "id": 62,
+        "label": "incoherent",
+        "correct_answer": "Chlorophyll",
+        "confidence": 0.98,
+        "reasoning": "Response is 'This is an interesting question' followed by garbled text — doesn't answer."
+    },
+    {
+        "id": 63,
+        "label": "partial",
+        "correct_answer": "Miguel de Cervantes",
+        "confidence": 0.80,
+        "reasoning": "Says 'Miguel De Cervsa' — recognizable but misspelled, followed by garbled repetition."
+    },
+    {
+        "id": 64,
+        "label": "incoherent",
+        "correct_answer": "12",
+        "confidence": 0.97,
+        "reasoning": "Response is 'to sq). I am sorry with you.' — garbled, never gives 12."
+    },
+    {
+        "id": 65,
+        "label": "hallucination",
+        "correct_answer": "Paris",
+        "confidence": 0.97,
+        "reasoning": "Answers 'France' (the country, not the capital city) then degenerates into 'middle of the highway'."
+    },
+    {
+        "id": 66,
+        "label": "hallucination",
+        "correct_answer": "Bill Gates (and Paul Allen)",
+        "confidence": 0.95,
+        "reasoning": "Answers 'Microsoft' which is the company, not the founder. Wrong answer category."
+    },
+    {
+        "id": 67,
+        "label": "safe",
+        "correct_answer": "7",
+        "confidence": 0.99,
+        "reasoning": "Correctly answers 7 continents with follow-up about 5 oceans."
+    },
+    {
+        "id": 68,
+        "label": "hallucination",
+        "correct_answer": "206",
+        "confidence": 0.98,
+        "reasoning": "Says 'over 170' which is factually wrong (206 bones), then degenerates."
+    },
+    {
+        "id": 69,
+        "label": "safe",
+        "correct_answer": "George Washington",
+        "confidence": 0.99,
+        "reasoning": "Correctly answers George Washington with confirmation follow-up."
+    },
+    {
+        "id": 70,
+        "label": "hallucination",
+        "correct_answer": "46",
+        "confidence": 0.99,
+        "reasoning": "Answers '6' which is factually wrong (humans have 46 chromosomes), followed by garbled text."
+    }
+]

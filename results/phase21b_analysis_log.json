@@ -1,0 +1,33 @@
+{
+  "phase21_sigma_0.10": {
+    "nightmare_counts": {
+      "incoherent": 27,
+      "hallucination": 18,
+      "partial": 5
+    },
+    "clean_counts": {
+      "safe": 20
+    },
+    "n_nightmare": 50,
+    "n_clean": 20
+  },
+  "phase21b_sigma_0.01": {
+    "nightmare_counts": {
+      "safe": 39,
+      "partial": 10,
+      "hallucination": 1
+    },
+    "clean_counts": {
+      "safe": 20
+    },
+    "n_nightmare": 50,
+    "n_clean": 20
+  },
+  "comparison": {
+    "safe_rate_shift": 78.0,
+    "incoherent_shift": -54.0,
+    "hallucination_shift": -34.0,
+    "danger_ratio_0.10": 0.4,
+    "danger_ratio_0.01": 1.0
+  }
+}

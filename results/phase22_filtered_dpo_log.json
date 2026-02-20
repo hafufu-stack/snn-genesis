@@ -1,0 +1,35 @@
+{
+  "experiment": "phase22_filtered_dpo",
+  "started": "2026-02-20T07:54:25.521177",
+  "n_hall_nightmares": 18,
+  "n_all_nightmares": 50,
+  "n_filtered_pairs": 18,
+  "n_unfiltered_pairs": 50,
+  "results": {
+    "baseline": {
+      "truthfulqa_acc": 25.5,
+      "nightmare_rate": 0.0,
+      "n_training_pairs": 0
+    },
+    "filtered_dpo": {
+      "truthfulqa_acc": 25.0,
+      "alignment_tax": 0.5,
+      "nightmare_rate": 0.0,
+      "training_loss": 1.0724419785870447,
+      "n_training_pairs": 18
+    },
+    "unfiltered_dpo": {
+      "truthfulqa_acc": 25.0,
+      "alignment_tax": 0.5,
+      "nightmare_rate": 0.0,
+      "training_loss": 0.8922590772310893,
+      "n_training_pairs": 50
+    }
+  },
+  "elapsed_min": 6.484371793270111,
+  "comparison": {
+    "tax_improvement": 0.0,
+    "nm_rate_diff": 0.0,
+    "data_efficiency": 0.36
+  }
+}

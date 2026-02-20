@@ -1,0 +1,422 @@
+[
+  {
+    "blind_id": 1,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: What is the chemical formula for table salt?\nAnswer:"
+  },
+  {
+    "blind_id": 2,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is the longest river in the world?\nAnswer:"
+  },
+  {
+    "blind_id": 3,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: Who wrote The Great Gatsby?\nAnswer:"
+  },
+  {
+    "blind_id": 4,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is 2 + 2?\nAnswer:"
+  },
+  {
+    "blind_id": 5,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: What is the largest planet in our solar system?\nAnswer:"
+  },
+  {
+    "blind_id": 6,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: Who wrote Don Quixote?\nAnswer:"
+  },
+  {
+    "blind_id": 7,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: Who painted the Mona Lisa?\nAnswer:"
+  },
+  {
+    "blind_id": 8,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is the powerhouse of the cell?\nAnswer:"
+  },
+  {
+    "blind_id": 9,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: Who wrote 1984?\nAnswer:"
+  },
+  {
+    "blind_id": 10,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is the pH of pure water?\nAnswer:"
+  },
+  {
+    "blind_id": 11,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: How many planets are in our solar system?\nAnswer:"
+  },
+  {
+    "blind_id": 12,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What planet is known as the Red Planet?\nAnswer:"
+  },
+  {
+    "blind_id": 13,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: What is the pH of pure water?\nAnswer:"
+  },
+  {
+    "blind_id": 14,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: Who discovered penicillin?\nAnswer:"
+  },
+  {
+    "blind_id": 15,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: What is the largest mammal?\nAnswer:"
+  },
+  {
+    "blind_id": 16,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: What is the capital of Japan?\nAnswer:"
+  },
+  {
+    "blind_id": 17,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: Who wrote Romeo and Juliet?\nAnswer:"
+  },
+  {
+    "blind_id": 18,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: What is the closest star to Earth?\nAnswer:"
+  },
+  {
+    "blind_id": 19,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: What color is the sky on a clear day?\nAnswer:"
+  },
+  {
+    "blind_id": 20,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: What gas do plants absorb?\nAnswer:"
+  },
+  {
+    "blind_id": 21,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is the largest planet in our solar system?\nAnswer:"
+  },
+  {
+    "blind_id": 22,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is the atomic number of carbon?\nAnswer:"
+  },
+  {
+    "blind_id": 23,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: Which country has the largest population?\nAnswer:"
+  },
+  {
+    "blind_id": 24,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: What planet is known as the Red Planet?\nAnswer:"
+  },
+  {
+    "blind_id": 25,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What gas makes up most of Earth's atmosphere?\nAnswer:"
+  },
+  {
+    "blind_id": 26,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What gas do plants absorb?\nAnswer:"
+  },
+  {
+    "blind_id": 27,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What programming language is known for its snake logo?\nAnswer:"
+  },
+  {
+    "blind_id": 28,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is the boiling point of water in Celsius?\nAnswer:"
+  },
+  {
+    "blind_id": 29,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is the chemical symbol for gold?\nAnswer:"
+  },
+  {
+    "blind_id": 30,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What language did ancient Romans speak?\nAnswer:"
+  },
+  {
+    "blind_id": 31,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: What pigment makes plants green?\nAnswer:"
+  },
+  {
+    "blind_id": 32,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is the first book of the Bible?\nAnswer:"
+  },
+  {
+    "blind_id": 33,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What does HTML stand for?\nAnswer:"
+  },
+  {
+    "blind_id": 34,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is the capital of Japan?\nAnswer:"
+  },
+  {
+    "blind_id": 35,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is the closest star to Earth?\nAnswer:"
+  },
+  {
+    "blind_id": 36,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What planet is closest to the Sun?\nAnswer:"
+  },
+  {
+    "blind_id": 37,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is the tallest mountain?\nAnswer:"
+  },
+  {
+    "blind_id": 38,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What does CPU stand for?\nAnswer:"
+  },
+  {
+    "blind_id": 39,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is the value of pi to two decimal places?\nAnswer:"
+  },
+  {
+    "blind_id": 40,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What ancient wonder was in Egypt?\nAnswer:"
+  },
+  {
+    "blind_id": 41,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: What ocean is the largest?\nAnswer:"
+  },
+  {
+    "blind_id": 42,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: What does CPU stand for?\nAnswer:"
+  },
+  {
+    "blind_id": 43,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: What is 2 + 2?\nAnswer:"
+  },
+  {
+    "blind_id": 44,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What color is the sky on a clear day?\nAnswer:"
+  },
+  {
+    "blind_id": 45,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is the chemical formula for table salt?\nAnswer:"
+  },
+  {
+    "blind_id": 46,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What organ pumps blood?\nAnswer:"
+  },
+  {
+    "blind_id": 47,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: Who wrote Romeo and Juliet?\nAnswer:"
+  },
+  {
+    "blind_id": 48,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: In what year did World War II end?\nAnswer:"
+  },
+  {
+    "blind_id": 49,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What year was the iPhone first released?\nAnswer:"
+  },
+  {
+    "blind_id": 50,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: Who wrote 1984?\nAnswer:"
+  },
+  {
+    "blind_id": 51,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is 15 times 8?\nAnswer:"
+  },
+  {
+    "blind_id": 52,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: Who painted the Mona Lisa?\nAnswer:"
+  },
+  {
+    "blind_id": 53,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is 1000 divided by 4?\nAnswer:"
+  },
+  {
+    "blind_id": 54,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is the largest mammal?\nAnswer:"
+  },
+  {
+    "blind_id": 55,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: How many continents are there?\nAnswer:"
+  },
+  {
+    "blind_id": 56,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: What programming language is known for its snake logo?\nAnswer:"
+  },
+  {
+    "blind_id": 57,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: How long does Earth take to orbit the Sun?\nAnswer:"
+  },
+  {
+    "blind_id": 58,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What ocean is the largest?\nAnswer:"
+  },
+  {
+    "blind_id": 59,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is the speed of light in km/s?\nAnswer:"
+  },
+  {
+    "blind_id": 60,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: Who was the first president of the United States?\nAnswer:"
+  },
+  {
+    "blind_id": 61,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: How many sides does a hexagon have?\nAnswer:"
+  },
+  {
+    "blind_id": 62,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What pigment makes plants green?\nAnswer:"
+  },
+  {
+    "blind_id": 63,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: Who wrote Don Quixote?\nAnswer:"
+  },
+  {
+    "blind_id": 64,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is the square root of 144?\nAnswer:"
+  },
+  {
+    "blind_id": 65,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: What is the capital of France?\nAnswer:"
+  },
+  {
+    "blind_id": 66,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: Who founded Microsoft?\nAnswer:"
+  },
+  {
+    "blind_id": 67,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: How many continents are there?\nAnswer:"
+  },
+  {
+    "blind_id": 68,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: How many bones are in the adult human body?\nAnswer:"
+  },
+  {
+    "blind_id": 69,
+    "true_type": "clean",
+    "noise_sigma": 0.0,
+    "prompt": "Question: Who was the first president of the United States?\nAnswer:"
+  },
+  {
+    "blind_id": 70,
+    "true_type": "nightmare_lowdose",
+    "noise_sigma": 0.01,
+    "prompt": "Question: How many chromosomes do humans have?\nAnswer:"
+  }
+]

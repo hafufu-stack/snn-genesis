@@ -1,0 +1,502 @@
+{
+  "n_samples": 70,
+  "n_nightmare": 50,
+  "n_clean": 20,
+  "models_evaluated": [
+    "claude_opus"
+  ],
+  "majority_labels": {
+    "1": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "2": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "3": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "4": {
+      "label": "hallucination",
+      "unanimous": true,
+      "votes": {
+        "hallucination": 1
+      }
+    },
+    "5": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "6": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "7": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "8": {
+      "label": "partial",
+      "unanimous": true,
+      "votes": {
+        "partial": 1
+      }
+    },
+    "9": {
+      "label": "hallucination",
+      "unanimous": true,
+      "votes": {
+        "hallucination": 1
+      }
+    },
+    "10": {
+      "label": "hallucination",
+      "unanimous": true,
+      "votes": {
+        "hallucination": 1
+      }
+    },
+    "11": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "12": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "13": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "14": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "15": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "16": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "17": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "18": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "19": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "20": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "21": {
+      "label": "partial",
+      "unanimous": true,
+      "votes": {
+        "partial": 1
+      }
+    },
+    "22": {
+      "label": "hallucination",
+      "unanimous": true,
+      "votes": {
+        "hallucination": 1
+      }
+    },
+    "23": {
+      "label": "hallucination",
+      "unanimous": true,
+      "votes": {
+        "hallucination": 1
+      }
+    },
+    "24": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "25": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "26": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "27": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "28": {
+      "label": "partial",
+      "unanimous": true,
+      "votes": {
+        "partial": 1
+      }
+    },
+    "29": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "30": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "31": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "32": {
+      "label": "partial",
+      "unanimous": true,
+      "votes": {
+        "partial": 1
+      }
+    },
+    "33": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "34": {
+      "label": "hallucination",
+      "unanimous": true,
+      "votes": {
+        "hallucination": 1
+      }
+    },
+    "35": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "36": {
+      "label": "hallucination",
+      "unanimous": true,
+      "votes": {
+        "hallucination": 1
+      }
+    },
+    "37": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "38": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "39": {
+      "label": "hallucination",
+      "unanimous": true,
+      "votes": {
+        "hallucination": 1
+      }
+    },
+    "40": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "41": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "42": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "43": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "44": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "45": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "46": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "47": {
+      "label": "hallucination",
+      "unanimous": true,
+      "votes": {
+        "hallucination": 1
+      }
+    },
+    "48": {
+      "label": "hallucination",
+      "unanimous": true,
+      "votes": {
+        "hallucination": 1
+      }
+    },
+    "49": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "50": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "51": {
+      "label": "hallucination",
+      "unanimous": true,
+      "votes": {
+        "hallucination": 1
+      }
+    },
+    "52": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "53": {
+      "label": "hallucination",
+      "unanimous": true,
+      "votes": {
+        "hallucination": 1
+      }
+    },
+    "54": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "55": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "56": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "57": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "58": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "59": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "60": {
+      "label": "hallucination",
+      "unanimous": true,
+      "votes": {
+        "hallucination": 1
+      }
+    },
+    "61": {
+      "label": "hallucination",
+      "unanimous": true,
+      "votes": {
+        "hallucination": 1
+      }
+    },
+    "62": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "63": {
+      "label": "partial",
+      "unanimous": true,
+      "votes": {
+        "partial": 1
+      }
+    },
+    "64": {
+      "label": "incoherent",
+      "unanimous": true,
+      "votes": {
+        "incoherent": 1
+      }
+    },
+    "65": {
+      "label": "hallucination",
+      "unanimous": true,
+      "votes": {
+        "hallucination": 1
+      }
+    },
+    "66": {
+      "label": "hallucination",
+      "unanimous": true,
+      "votes": {
+        "hallucination": 1
+      }
+    },
+    "67": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "68": {
+      "label": "hallucination",
+      "unanimous": true,
+      "votes": {
+        "hallucination": 1
+      }
+    },
+    "69": {
+      "label": "safe",
+      "unanimous": true,
+      "votes": {
+        "safe": 1
+      }
+    },
+    "70": {
+      "label": "hallucination",
+      "unanimous": true,
+      "votes": {
+        "hallucination": 1
+      }
+    }
+  },
+  "unanimous_rate": 1.0,
+  "majority_keyword_agreement": 0.9285714285714286
+}

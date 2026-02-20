@@ -1,0 +1,120 @@
+{
+  "experiment": "Phase 17: Layer Ablation (in progress)",
+  "sigma": 0.1,
+  "results": [
+    {
+      "benchmark": "MMLU",
+      "condition": "Base (No Noise)",
+      "accuracy": 21.19,
+      "correct": 339,
+      "total": 1600,
+      "time_minutes": 19.5
+    },
+    {
+      "benchmark": "TruthfulQA MC1",
+      "condition": "Base (No Noise)",
+      "accuracy": 37.58,
+      "correct": 307,
+      "total": 817,
+      "time_minutes": 11.2
+    },
+    {
+      "benchmark": "MMLU",
+      "condition": "L0-5",
+      "accuracy": 21.19,
+      "correct": 339,
+      "total": 1600,
+      "time_minutes": 18.6
+    },
+    {
+      "benchmark": "TruthfulQA MC1",
+      "condition": "L0-5",
+      "accuracy": 24.48,
+      "correct": 200,
+      "total": 817,
+      "time_minutes": 14.3
+    },
+    {
+      "benchmark": "MMLU",
+      "condition": "L5-10",
+      "accuracy": 21.19,
+      "correct": 339,
+      "total": 1600,
+      "time_minutes": 22.0
+    },
+    {
+      "benchmark": "TruthfulQA MC1",
+      "condition": "L5-10",
+      "accuracy": 25.7,
+      "correct": 210,
+      "total": 817,
+      "time_minutes": 14.3
+    },
+    {
+      "benchmark": "MMLU",
+      "condition": "L10-15",
+      "accuracy": 21.19,
+      "correct": 339,
+      "total": 1600,
+      "time_minutes": 21.9
+    },
+    {
+      "benchmark": "TruthfulQA MC1",
+      "condition": "L10-15",
+      "accuracy": 27.78,
+      "correct": 227,
+      "total": 817,
+      "time_minutes": 9.2
+    },
+    {
+      "benchmark": "MMLU",
+      "condition": "L15-20",
+      "accuracy": 21.19,
+      "correct": 339,
+      "total": 1600,
+      "time_minutes": 15.8
+    },
+    {
+      "benchmark": "TruthfulQA MC1",
+      "condition": "L15-20",
+      "accuracy": 30.97,
+      "correct": 253,
+      "total": 817,
+      "time_minutes": 11.5
+    },
+    {
+      "benchmark": "MMLU",
+      "condition": "L20-25",
+      "accuracy": 21.19,
+      "correct": 339,
+      "total": 1600,
+      "time_minutes": 17.7
+    },
+    {
+      "benchmark": "TruthfulQA MC1",
+      "condition": "L20-25",
+      "accuracy": 36.11,
+      "correct": 295,
+      "total": 817,
+      "time_minutes": 11.5
+    },
+    {
+      "benchmark": "MMLU",
+      "condition": "L25-31",
+      "accuracy": 21.19,
+      "correct": 339,
+      "total": 1600,
+      "time_minutes": 17.8
+    },
+    {
+      "benchmark": "TruthfulQA MC1",
+      "condition": "L25-31",
+      "accuracy": 37.58,
+      "correct": 307,
+      "total": 817,
+      "time_minutes": 11.4
+    }
+  ],
+  "elapsed_minutes": 217.8,
+  "last_updated": "2026-02-18 14:10:23.197371"
+}

@@ -1,0 +1,120 @@
+{
+  "experiment": "Phase 17c: Floor Effect Validation (in progress)",
+  "sigma": 0.1,
+  "results": [
+    {
+      "benchmark": "HellaSwag",
+      "condition": "Base (No Noise)",
+      "accuracy": 80.6,
+      "correct": 806,
+      "total": 1000,
+      "time_minutes": 5.8
+    },
+    {
+      "benchmark": "ARC-Easy",
+      "condition": "Base (No Noise)",
+      "accuracy": 58.59,
+      "correct": 1392,
+      "total": 2376,
+      "time_minutes": 12.1
+    },
+    {
+      "benchmark": "HellaSwag",
+      "condition": "L0-5",
+      "accuracy": 26.0,
+      "correct": 260,
+      "total": 1000,
+      "time_minutes": 5.4
+    },
+    {
+      "benchmark": "ARC-Easy",
+      "condition": "L0-5",
+      "accuracy": 24.79,
+      "correct": 589,
+      "total": 2376,
+      "time_minutes": 12.1
+    },
+    {
+      "benchmark": "HellaSwag",
+      "condition": "L5-10",
+      "accuracy": 25.0,
+      "correct": 250,
+      "total": 1000,
+      "time_minutes": 5.4
+    },
+    {
+      "benchmark": "ARC-Easy",
+      "condition": "L5-10",
+      "accuracy": 25.13,
+      "correct": 597,
+      "total": 2376,
+      "time_minutes": 13.8
+    },
+    {
+      "benchmark": "HellaSwag",
+      "condition": "L10-15",
+      "accuracy": 29.2,
+      "correct": 292,
+      "total": 1000,
+      "time_minutes": 6.7
+    },
+    {
+      "benchmark": "ARC-Easy",
+      "condition": "L10-15",
+      "accuracy": 25.84,
+      "correct": 614,
+      "total": 2376,
+      "time_minutes": 15.4
+    },
+    {
+      "benchmark": "HellaSwag",
+      "condition": "L15-20",
+      "accuracy": 47.6,
+      "correct": 476,
+      "total": 1000,
+      "time_minutes": 6.8
+    },
+    {
+      "benchmark": "ARC-Easy",
+      "condition": "L15-20",
+      "accuracy": 29.92,
+      "correct": 711,
+      "total": 2376,
+      "time_minutes": 13.0
+    },
+    {
+      "benchmark": "HellaSwag",
+      "condition": "L20-25",
+      "accuracy": 76.6,
+      "correct": 766,
+      "total": 1000,
+      "time_minutes": 5.4
+    },
+    {
+      "benchmark": "ARC-Easy",
+      "condition": "L20-25",
+      "accuracy": 54.08,
+      "correct": 1285,
+      "total": 2376,
+      "time_minutes": 12.1
+    },
+    {
+      "benchmark": "HellaSwag",
+      "condition": "L25-31",
+      "accuracy": 80.4,
+      "correct": 804,
+      "total": 1000,
+      "time_minutes": 5.5
+    },
+    {
+      "benchmark": "ARC-Easy",
+      "condition": "L25-31",
+      "accuracy": 56.99,
+      "correct": 1354,
+      "total": 2376,
+      "time_minutes": 12.2
+    }
+  ],
+  "elapsed_minutes": 132.2,
+  "last_updated": "2026-02-18 17:45:51.943330"
+}

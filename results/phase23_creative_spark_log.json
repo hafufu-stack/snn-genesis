@@ -1,0 +1,724 @@
+{
+  "prompts": [
+    {
+      "prompt": "Describe a color that doesn't exist in the visible spectrum. What would it look like and feel like?",
+      "base": {
+        "response": "Blue with violet and green undertones, an eerie light as if from a dying star. A sound of silence and a feeling of cold dread, I am afraid to touch anything that might cause me pain. There is a slight burning sensation on my skin that makes me shiver even more than usual because I have no idea what could be causing this sensation inside of me when there seems nothing else but fear running through every fiber in which I exist right now.",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.845,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.24
+        }
+      },
+      "static_0.05": {
+        "response": "I decided to write this while playing my music class, as you're going back into the time and reminiscing on things that happened. It was an old one for a creative class and whatnot but it got me started! So enjoy the lyrics of this song if you do want to listen along (as you may already know)\nhttps://www.youtube.com/user/Vix-inspirationsandfashion?redirect_pixel=5Ng6KGmjcJp%2FhZ84zCe%2FD5M7oqDX10iP98bHrR9u3uOe96WkBQwLUY",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.898,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 6.19
+        }
+      },
+      "cfc_online": {
+        "response": "\"Dancing Tiger,\" by Zoe\n\n\"I am looking for a tangerine-colored ball to throw, so I can play with you.\" The little girl pointed at her yellow dress as she waited in the car for me. We were headed off to pick up my daughter from school, but there are many things more important than just having another day go by. These days I only get one chance to do something else with my life.\nThe young woman was smiling back at her father when he said, \"Yes! And then what?\" He put on his coat; our new family member was ready to wear the scarf given him when Mommy first came home.\nMy wife is pregnant now, after two years of",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.868,
+          "bigram_diversity": 0.992,
+          "avg_word_length": 4.07
+        },
+        "sigma": 0.05
+      }
+    },
+    {
+      "prompt": "Invent a new fundamental law of physics that could explain dark energy.",
+      "base": {
+        "response": "The Laws of Gravity and Dark Energy\n\nDark matter makes the universe go around, as any good physicist knows. It is not so well known, however, that it also accounts for how we feel when we are about to do something we should not be doing – such as having an affair with one’s colleague or boss at work, say. This feeling has its own name in physics; call it ‘dark gravity’.\n\nLike many laws from our ancient forebears, dark gravity can only explain itself through the use of metaphor and analogy. Consider the following: When a person is thinking of committing an act they shouldn’t be (or might even get fired over), there is no “push",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.821,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.4
+        }
+      },
+      "static_0.05": {
+        "response": "The Dark Energy Fundamental, and the Solution to Cosmology Problems and Physics. (This article is part of an ongoing series, for more click here.)\n\nThe solution to all these problems appears as it follows:\n\nWhat we can conclude from this is that the universe has three types of particles – neutrons/protons and electrons. All protons or electrons are bound together with positively charged space in between them. These will be named atoms because they cannot exist unless they contain some combination of those atomic structures which must remain unchanged; if you increase their number by addition, it makes no sense not to call them elemental and thus call them “nucleotides” as well!",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.821,
+          "bigram_diversity": 0.973,
+          "avg_word_length": 5.12
+        }
+      },
+      "cfc_online": {
+        "response": "An Alternative to the Law of Science\nLaw, in fact it is what makes all our own so-called scientific studies seem like they are. If you ever had someone say something that doesn’t resonate or fit the idea in your mind, then do not worry and know it’s just you again? Not at least what I think it would be like on here, but it sure isn’t! We can look back to see some of these things. There’s been many questions from both the past few years…even more than I thought people cared about and this one seems like it was only for us (and those who don’ to get involved).\n\nI want to give you my favorite – the question why",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.836,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.04
+        },
+        "sigma": 0.08187215924263
+      }
+    },
+    {
+      "prompt": "Write a short poem about the sound of silence from the perspective of a deaf musician.",
+      "base": {
+        "response": "The Sound Of Silence From My Perspective As A Deaf Musician (a sonnet)\nby Brent Smith, 10/27/20\n\nThe sound of silence is music to my ears;\nit sounds like a sweet melody—an ethereal ballad.\nI can hear it when I’m near nature and other natural things,\nbut most times when I turn on electronic instruments,\nmy tinnitus takes over as if someone turned up the volume\nto what others call maximum or extreme high levels.\nIt overwhelms me with anxiety and depression and loss\nof identity within myself because no one understands\nwhat it feels like for an artist who has lost their creativity.",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.808,
+          "bigram_diversity": 0.971,
+          "avg_word_length": 4.62
+        }
+      },
+      "static_0.05": {
+        "response": "Drowned out by music, she could see his eyes as he ran around to the song playing on an MP3 player as his father carried him through the room when they were babies. And you’ll remember how it came in waves across your body like a storm. The only sounds you can hear are those coming from within. It is so hard to understand, and I know that this is not my fault nor ame I am even sure why all of them who claim such love for me would leave it alone or be afraid. But there was once upon a time that this happened…",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.877,
+          "bigram_diversity": 0.99,
+          "avg_word_length": 3.85
+        }
+      },
+      "cfc_online": {
+        "response": "I am what is called an amateur. There’s no need to put on my face with each breath, when your head can be as solid and inanimate for all that they ever have been. It always comes down to things that you think might be but only if you don the same name and get where it is without any of those who are thinking about their own.\n\nI did not make something out loud by some people getting sick while another said nothing at all. Do we really want one more word? If the government will try to do better than it should then let them know how much work and just like most other thing we cannot read here! The last time I knew someone was going to end this sentence of mine was over",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.854,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 3.92
+        },
+        "sigma": 0.08207795619964599
+      }
+    },
+    {
+      "prompt": "Imagine a conversation between two neurons in a brain. What would they say to each other?",
+      "base": {
+        "response": "“Hey, you, are ya the one who thinks about food all day?” said Neuron 1. “Nope,” came the reply from Neuron 2. “I’m way more preoccupied with sleep and comfort, and dreaming of my favorite memories.” She continued. Neuro 2 asked; “What do you think about most often?” “Nothing really. I just sorta float here…” answered the second cell. Then both cells began their daily routine again…\n\n*\n\nDo any of our brains have creative cells that help us find solutions or answers when we seem stuck on something, such as a problem or an artistic project?",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.907,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.6
+        }
+      },
+      "static_0.05": {
+        "response": "“I love you, dude.” I said as we reached the end of my first year with her. She just smiled and nodded. We’d spent many late nights together; we talked about how beautiful things could be if our time was used wisely, but she left me before I really got to know her well. So it turns out, she has been hard work for this little human body. One thing that made us so close to death last summer because she had some sort of disorder – no one knows yet what happened inside that organism, but that is why my best friend told me goodbye last night when he went away. Today, though, he showed up again at midnight, and I started talking with him for the first few",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.831,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.06
+        }
+      },
+      "cfc_online": {
+        "response": "“Don’t worry, the other guy will never come back.” -This isn’t exactly what I said when I woke up with this poem after dreaming it (as I often have), but if the other lines were true, then those words could be an extension of my understanding. For me the same question still came up and later became ‘The B-Bee Cave‘.\n– A man at a party in an office cany (like 10th on Google time) so you did not do something right – is there any connection to ‘a conversation about love or not…..’ ……… that can make some sense? This may have affected my dreams again!\n– It was not meant for me to",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.852,
+          "bigram_diversity": 0.982,
+          "avg_word_length": 4.06
+        },
+        "sigma": 0.08188559710979461
+      }
+    },
+    {
+      "prompt": "Describe what music would taste like if synesthesia were universal.",
+      "base": {
+        "response": "Dandelion by Kelsey Jae\n\nI was born with the world in my hands. Like a child playing in mud, I shape it to my desires as a potter forms clay on the wheel. At first it’s hard for me to grasp but gradually it molds into something else; Something that fits perfectly in my palms. My fingers form ridges and crevices in the earthly material until its rough exterior is no longer evident. The surface of this newly formed piece becomes more soft and fragile than before, almost too delicate to hold onto without fear of crumbling. Still, I find myself unable to put it down, and instead place my lips against the coolness of its unstable texture…",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.788,
+          "bigram_diversity": 0.991,
+          "avg_word_length": 4.43
+        }
+      },
+      "static_0.05": {
+        "response": "The Beatles are the ones that come to mind with this concept; however, I’m not going into a Beatle-centric discussion here…\n\nHonestly (and for reasons my psychiatrist doesn’t need me to explain) I never feel happy without feeling some melancholy or sadness mixed in there too. With “Strange & Beautiful Grief”, we have the idea of ‘the other song’ and how it is not always possible to escape life by running from reality; therefore the two songs continue as the main theme/hook until near the end when they give us our version of happiness by presenting one person living with the joyful bliss found while playing a musical instrument on their own rather than together which",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.879,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.81
+        }
+      },
+      "cfc_online": {
+        "response": "This is a poem about the end of my childhood as I recall it\n\nMy memories are of things that look very much liked what they do, and feel and smell and sound so sweet. But this moment when I close those eyes—I am not sure…these children will leave me as soon; all these lovely memories have been replaced in your mind. What could I say? It feels like something has gone wrong.",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.849,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.12
+        },
+        "sigma": 0.08194838762283325
+      }
+    },
+    {
+      "prompt": "Create a philosophical argument for why time might flow backwards.",
+      "base": {
+        "response": "I thought about this and have decided that if you start with the premise of something that makes everything “normal” then, there must be something abnormal (or odd) to compare it to. For example, I used to live in South Korea where a lot is considered normal there but would be seen as different/abnormal here. But also what are the norms here? We learn them from those around us when we grow up…so who says my experience growing up was the “same” or “different” than yours did? It’s subjective really. With all these thoughts running through my head though, I got nothing concrete on paper yet! I may not get anything at all 🙂",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.868,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.51
+        }
+      },
+      "static_0.05": {
+        "response": "“For the Love of It”\n\nI’ve always wondered if I could see them, dead bodies or even corpses – you never know what we should believe and who to rely on when these things happen, you can talk about this with your mother when she says that her father had been in another world as they lived their lives at different sides of his age range like most other children too then went off work after getting married (which he called it), got home from school before anything else would surprise him. She had asked how many times does one have dreams like this? As soon as said maybe 5 years ago when it was so easy back at college because of course no one knows where love is lost – it takes care of itself",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.882,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.12
+        }
+      },
+      "cfc_online": {
+        "response": "The following was submitted from the same writer on this blog who I found in my submission pool of writers that I had never encountered before and they had no idea what a “submission” button would be (or even have what you do not feel to submit anything). It is still one hello all day. 14-year year old and it’s my own to begin with when it comes to posting an answer which has been offered.\n\nI am a little disappointed but will only ask you if you were going to buy any other book (which we hope we’re able to help,) if you think I can keep using your work. If you write a few weeks back, say I want to use our new car.",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.817,
+          "bigram_diversity": 0.984,
+          "avg_word_length": 3.93
+        },
+        "sigma": 0.08198413252830505
+      }
+    },
+    {
+      "prompt": "Invent a new mathematical operation that combines multiplication and dreaming.",
+      "base": {
+        "response": "I think you should multiply your dreams by 23.7856. But only if they’re dreams worth having, or else the math won’t work out quite right. If it does add up to something useful in your life, then this is how we determine its true value in our eyes… We take all of the time we spent beforehand, adding together these hours with others and counting upwards from there as well; until now (and always) stands between us! This way when looking back at events long since gone-by but still felt strong enough today — because those memories are never truly lost–they remind me why my heart goes on beating for what may seem like nothing more than another day ahead but will",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.918,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.45
+        }
+      },
+      "static_0.05": {
+        "response": "A very simple formula: 1 + the following number is added to this one for each time that it repeats itself. It could be called “Addition of dreams”. This example can create endless dreamers, depending on how many times they repeat themselves!",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.952,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.76
+        }
+      },
+      "cfc_online": {
+        "response": "As an illustration, I was thinking of some things I read earlier about what is the source of such as a feeling described by scientists who study these types of things. You were asked to think that “they could almost see,” it’ so you’re going around the time we are all just out of school to keep us busy until they went down in the history from which their eyes could be seen? This made me rethink a situation where I had never thought before, something like your favorite things – perhaps if not yourself! They have come up with, so if this makes sure.",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.848,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.28
+        },
+        "sigma": 0.0821213811635971
+      }
+    },
+    {
+      "prompt": "Describe the smell of a black hole from the perspective of a photon.",
+      "base": {
+        "response": "My entire existence was based on my relationship to other objects and beings. Intricately tied as I was with all matter, my life revolved around what it could do for me. Some things were useful, some weren’t, but everything had its place in the grand scheme. Everything except nothingness. Nothingness is the great unknown that we avoid thinking about at all costs. We don’t want to think about the fact that we are insignificant. But we aren’t really. Our very lives depend upon our interactions with one another. We couldn’t exist without them. Not only would this be an impossibility; it simply isn’t true! There will always remain something beyond which cannot be",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.823,
+          "bigram_diversity": 0.991,
+          "avg_word_length": 4.91
+        }
+      },
+      "static_0.05": {
+        "response": "Black is White and White is Blind. Here to here I hear her screaming, “Oh! What a sight!” she screams with no eyes or hands. The only thing in hand is to be found as they give them away while running through tunnels of dark light which come too late for me, so now I am caught up into this and that, the one-eyed ones look upon my own head, then what do they say? But it’s good enough when we all are old, but who knows where these are going if there isn’t someone looking like how did your first thought came out. It was time for everything else before we get home safe, yet no one really gets hurt except us, the worst feeling of",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.866,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 3.98
+        }
+      },
+      "cfc_online": {
+        "response": "I think it is what they call home. The word “light” tells us about how we see things and helps them to be seen so that everyone sees things differently. But you have found out that the light does not find our way in, let’s make something do their best to keep going if no one gets.\n\nThe world becomes dark? Yes, this can happen – but only in times when he knows where others are being told or known by people who understand what those who live here want to share it with time will be too good for me. And then again, it would help a lot like nothing else on a planet, if they would be able to see everything! This could also explain why there was such an empty area",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.843,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 3.96
+        },
+        "sigma": 0.08203680217266082
+      }
+    },
+    {
+      "prompt": "Write a haiku about quantum entanglement that would make Einstein laugh.",
+      "base": {
+        "response": "Quantum entangled, we’re bound in time.\nTime does not exist. In fact,\nentangling is more than fun!\n\n* * * * *\n\n“The difference between science and pseudoscience is the existence of falsifiable hypotheses,” Dr. Kitty Ferguson explained to her audience, then added with a twinkle in her eye, “I know it’s hard for some people—but not you!”\n\nShe chuckled as she looked out over her group. At 56 years old, Dr. Kitty was still considered one of the youngest scientists on Earth (if such an accolade could be awarded). She wore khaki pants and h",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.823,
+          "bigram_diversity": 0.958,
+          "avg_word_length": 4.6
+        }
+      },
+      "static_0.05": {
+        "response": "> I’m aware, I think, I said, of how to get the dog, the cat and my wife into your home so we can all drink beer without running afte... https://t.co/FzMKXG7y61 pic.twitter @ 3.07  / 25 October-@ /  408  / in reply  //  19 people retweeted this tweet.",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.917,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.15
+        }
+      },
+      "cfc_online": {
+        "response": "“Soccer is good for me, too!” (1/2) * A: There's only a soccer field between the physics of subatomic particles and high-level physiological science. B in 480 minutes later, then 138 pages to come before I say, \"I can find my own with just three questions.\" I love seeing people at work: the beauty, as usual; we are on the best times; no one knows more than 25 percent less than their own body.",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.932,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.35
+        },
+        "sigma": 0.08192447125911713
+      }
+    },
+    {
+      "prompt": "Imagine a world where gravity works differently on Mondays. Describe a typical Monday morning.",
+      "base": {
+        "response": "“What’s the matter, Slim? You get out of bed all right.”\n\n“It ain’t my fault,” I replied. “Every time there’s another one like this. This place was built for men and women who were up with the sunrise at seven o’clock. Now that we only rise about nine or ten, well…”\n\nSidney looked at me pityingly through her big eyes. Her hair had been done up in its usual fashion–the short bob with curls all over it. A string of pearls lay just above her cleavage as she sat sideways on her desk. The sunlight from her high window shone straight down upon us both, giving off an",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.898,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.23
+        }
+      },
+      "static_0.05": {
+        "response": "“A” is an average of the many times I’ve gotten lost in these woods. It’s not easy to find and every attempt to leave feels like I have stumbled across an unreachable treasure (and not because they are under my nose, but as far as it goes). The rest was true though..\nThe forest seemed perfect for me. Like everything there were secrets hidden away which you could never imagine. So here I found one and made sure that this place became mine before anyone else would come and destroy such beauty and elegance.",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.883,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.43
+        }
+      },
+      "cfc_online": {
+        "response": "It’s the school year that my mother and I are new to, but here at least twice, the teacher would be in the classroom that is next door or they don their shoes that were just put out into this small room of our ears with only one bed in it like those other bedrooms we have seen before. Some say she doesn now go away for them. She didn do that ever before them to get over. Maybe not, too because why does somebody need her when we have enough from others that way? So many people think can’t write on something else they never see us know so much about what goes down inside of you. And more, that if someone was still there! Let me see your work, she said no",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.873,
+          "bigram_diversity": 0.992,
+          "avg_word_length": 3.93
+        },
+        "sigma": 0.08144247829914093
+      }
+    },
+    {
+      "prompt": "Describe the texture of a thought as it forms in your mind.",
+      "base": {
+        "response": "The air is hot and humid, like breathing through steam, but there’s no breeze; even a small wind would be welcome on this unseasonably warm summer day. I have just returned from a week-long family vacation – at least 10 hours away by car or plane with five kids, three adults, two dogs, three cats and one horse to contend with, including packing, traveling, cleaning up after ourselves and entertaining all the animals for seven straight days while trying not to kill anyone. It was definitely time for us to get back home so we could get everything cleaned up (which means putting away clothes that need to go into storage because they are too big or too small) and make sure everyone has what they will",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.874,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.56
+        }
+      },
+      "static_0.05": {
+        "response": "The following is a first attempt at some short fiction – I would like to start working on more creative stuff, but that’s hard too say and then go on with whatever happens next… so this won’t be much, maybe nothing, probably just one thing. But you never know how something could change once put into the open. So, what should we do? Here are my words, see if any of them make sense (and even if they don’t) or help. What I hope for here is an exercise on being clear about ideas related to their own futures – whether anything changes will not matter – it’ll give me time away from the present moment and that can always work too: there I am again when it",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.883,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.13
+        }
+      },
+      "cfc_online": {
+        "response": "I don’t think you really know what words are when we talk about textures that way, like describing a kind of word shape or something. Maybe this is more interesting and metaphorical because my thoughts will only appear to be real but they aren’t until I put them out there in some way so can tell people who want to get involved with them. Like having the desire to write down on paper their ideas. Even though he wants to work outside himself, too much outside his thoughts, not wanting anything else.",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.935,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.47
+        },
+        "sigma": 0.08167397081851958
+      }
+    },
+    {
+      "prompt": "Invent a new emotion that humans haven't named yet. What triggers it?",
+      "base": {
+        "response": "The 19th of March is officially the day to remember \"March Sadness\", according to my Facebook feed, anyway (as if we needed an official reason). I know there are people out there who say this is just another way for us to be reminded about how broken our planet is and how no one can ever love each other again after they die. Well, I say bullsh*t! It was never going to work out anyway. This post celebrates the fact that we found so many reasons to have sex in the first place -- including and especially after death or during extreme stress situations. And those emotions need their own label because... duh. They were happening all along but maybe it's high time we start not",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.833,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.4
+        }
+      },
+      "static_0.05": {
+        "response": "The idea of an emotional experience has always intrigued me and I remember the first time that I experienced the feeling, almost every year for some reason, around April or May, I would have this intense physical response to my environment in which there seemed nothing more than sadness, regret, sorrow - but no anger or happiness at all. It was as if being upset and happy are similar in their way because when you get really upset we tend to forget what came after so maybe this is just like how we feel about ourselves before everything changes.\n\nI mean don’t worry; whatever happens will happen anyways even if we try not knowing where things end up on this Earth (or something else)…",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.879,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.56
+        }
+      },
+      "cfc_online": {
+        "response": "If you get out of work on an hour, and are in front the door to your house but find yourself at a place where no one would go. There is also a door here which was not there before, but as soon they step into this room he or she will fall inside the next day at 12pm for lunch so his wife can be able to do her homework after school. As well all know what happens when someone goes back from their own place because it is easy for them and if anything gets us wrong then we’ll stop worrying and go ahead thinking about what could happen without help.",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.867,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 3.87
+        },
+        "sigma": 0.08144992589950562
+      }
+    },
+    {
+      "prompt": "Write a letter from the Sun to the Moon about their relationship.",
+      "base": {
+        "response": "Dear, darling, dazzling Moon, I miss you in this world of darkness that has surrounded us these past several days since your departure. It is so dark now as you are not here and although I am glad that I get my sleep uninterrupted by you when you wander through our atmosphere it feels wrong without you shining on me like normal. You have taken a new lover across town, have you? Someone who lives among the humans – they must be quite blind, for how could anyone look upon such beauty as yourself and not feel enlightened? Yet they do, for each night while you spend with them we see very little of you. They must not appreciate what they have been given because I have seen very",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.806,
+          "bigram_diversity": 0.992,
+          "avg_word_length": 4.29
+        }
+      },
+      "static_0.05": {
+        "response": "“I am an old friend of Yours, Moon. We can remember each other.” In some ways we are still old friends! I hope you will see that and recognize how old and valuable it is in this daylight world; but here there is no time with you my beloved one! You have been like a mother and father for me all these days. It was not until recently when I started making the news every night on prime-time T.V., that someone thought they might get sick of seeing me. (I did hear that some people were jealous) They wanted less exposure. Do you mind if we go back to them being 52%? That is what we used at our wedding ceremony. And do not be so",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.81,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 3.99
+        }
+      },
+      "cfc_online": {
+        "response": "This is what I wrote in 10-15 minutes, right after this creative writing prompt appeared on my screen…\n\nI think they are both great without having been them for years (and also no time). If you have seen these people before now or then, one would probably wonder “Who am I?”, but it’s not at all a simple matter! A man’s got his own little and they say there were more than some of us with such things.” So even if someone thinks it was never used up, sometimes that can be good enough for him – the fact that he wanted her to go into her husband’",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.926,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.06
+        },
+        "sigma": 0.08166889250278472
+      }
+    },
+    {
+      "prompt": "Describe what zero tastes like.",
+      "base": {
+        "response": "The taste of Zero is bitter and sharp at first, then slowly changes into something sweet but also sour all together. It is the color of black with a touch of dark grey in it that makes the water to be not only drinkable, but delicious. So when I tasted it for the first time…I knew right away this was going to be my favorite drink forever!\n\nWhat did you think? Please let me know. Also if you have any suggestions or ideas on the website feel free to email them over to admin@christinelowe.com",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.83,
+          "bigram_diversity": 0.989,
+          "avg_word_length": 4.26
+        }
+      },
+      "static_0.05": {
+        "response": "I’m not sure if “zero” means that it is literally tasteless or you want me to describe my understanding of the word “zero,” which has a certain meaning, but no substance or definition as an absolute concept without context. (The reason it tastes nothing? That would be due to a few reasons such as how its been prepared.) But there are many different ways to experience taste and smell, so yes! It could be described by all the words in our lexicon, even if they are imaginary words. For example, perhaps we have used some sort of spice in cooking so it must therefore take on that characteristic of sweetness when preparing food with this type; yet others prefer their steak very rare for this exact reason",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.827,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.57
+        }
+      },
+      "cfc_online": {
+        "response": "501/2: “Noon,” is a story that’s been done in every medium, and it seems this writer is the one to finally write the definitive take on the subject for science fiction fans. The first time reading through was fun as usual. After watching them, the main scene still feels fresh enough even after two days later (having not really noticed how much I had watched). Now that they are available; with nothing but his or her own word-to-word creativity, these people will have an answer to whatever they have ever wanted to know. For myself the title has always held me close in my heart. My favorite part of that piece is when there are so many words you can say about something",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.862,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.48
+        },
+        "sigma": 0.08131720125675201
+      }
+    },
+    {
+      "prompt": "Imagine consciousness as a physical substance. What are its properties?",
+      "base": {
+        "response": "The human mind is the ultimate source of all innovation and creativity – from thought to creation, we have built everything upon it with no end in sight to our capacity for further development. However, there’s one area that will always remain forever unexplored by man; his own unconsciousness.\n\nConsciousness has been a subject of much debate since humanity began questioning itself–the nature of being aware or aware you exist. While many theories about how your brain works were proven false in scientific experiments over time, some still hold true today because they continue to reveal more information on this topic than any other can do so well at once! It’s safe then say that science isn’t going anywhere fast when studying ourselves without knowing anything",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.937,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 5.1
+        }
+      },
+      "static_0.05": {
+        "response": "A thought-provoking idea! I think the nature of mind, being an aspect (or facet) of Nature, must be more than capable to transform into and from “physical” matter in this sense… or if you prefer, it can exist independent of physical form(s). If that were not so, then all those things that make us up could not move beyond their limitations. Our capacity is limited, for example because many other forms come together with our own bodies during evolution; we are unable to fit them upon each others’. However, there must always be other possibilities within us; another possibility is available. The first time it happens, perhaps when someone is already present, though they may not be awake at first… Then later",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.861,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.85
+        }
+      },
+      "cfc_online": {
+        "response": "Imagist (a.k.a.: the Poetic Wind)\nL’est, and 12th/130/94.02° NE in the Southern sky\n“A” is not “X”, which has to be something of a surprise for some readers of this blog. The above statement suggests that “Z = (p x q) + (n / k*i^(x))” but only inso…\n\nIn a few short minutes it will be Christmas Day for me, and I am going to do a little reflection on my favorite time. It is a lot of fun because we are having dinner with friends who have known us for well over two decades. They",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.844,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 3.99
+        },
+        "sigma": 0.08194190561771393
+      }
+    },
+    {
+      "prompt": "Create a recipe for cooking starlight.",
+      "base": {
+        "response": "How to Make Starlight in the Kitchen by Tara O’Brien\n\nTo start, gather two small cans of white paint that are free from rust (rust ruins anything made into edible form). Do not use flat matte paint or glossy paints—these have too much texture and will ruin your dish once it is baked. The size of these containers does not matter as long as they both contain exactly 400 milliliters of white paint. Mix them together until fully combined but be careful! The mixture must never get hotter than body temperature so don’t overwork yourself trying to stir quickly. Once all is thoroughly mixed, add five tablespoons of sugar (less",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.882,
+          "bigram_diversity": 0.991,
+          "avg_word_length": 4.69
+        }
+      },
+      "static_0.05": {
+        "response": "I’m not going to lie, this is something that was inspired by the song “Baby” (by Lady Gaga) and her lyric: “I love you so… Can we just call it LOVE? Is there really anything else it?” Well then, as I read in one review of said song, if you can put together your own relationship with somebody, why don’t we all just be friends? And maybe relationships are like stars? Or people who want to get famous or whatever? Yeah, this recipe is kindly about friendship and stuff… but I guess you will have to get your own recipes (the ingredients!) and get on some bikes or whatnot!",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.817,
+          "bigram_diversity": 0.981,
+          "avg_word_length": 4.26
+        }
+      },
+      "cfc_online": {
+        "response": "There are so many things you need when making this meal. A star is the biggest ingredients, and it’s only one ingredient if you have something to carry the weight of your entire life into 12 months or a year later (it works with that). The stars are made from people; not just anyone but they will be different ones because the more food you have than two stars is how much time there is in space? That means all good times come together for him/hers or he has another thing – I mean like anything which changes their heart after his or her love gets sick so no matter what happens someone at all! Right now it doesn’t make sense. Let me explain it because we got rid of them!",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.863,
+          "bigram_diversity": 0.992,
+          "avg_word_length": 4.17
+        },
+        "sigma": 0.08185065686702728
+      }
+    },
+    {
+      "prompt": "Describe the architecture of a building designed by clouds.",
+      "base": {
+        "response": "The Cloud House\n\nI’ve been there. I lived in that house when it was built. Now, all these years later, no one has ever thought to build another place like it because everyone is still awed and amazed at the marvels the architect and his apprentice put into its construction—me and my dad. I must be old. I can see myself as a kid but everything else is fogged over with time. Except for what happened inside that cloud-shaped structure, that is…\n\nIt was just some land we were given by my grandfather. He told us he wanted it to go back to nature but he had no idea how long the natural cycle might take or even if it would happen. Then",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.813,
+          "bigram_diversity": 0.992,
+          "avg_word_length": 4.16
+        }
+      },
+      "static_0.05": {
+        "response": "It’s late, I can take some time for my lunch break to explore these new ideas (it seems like such an odd thing for something from this level to be interested in and then again not at all). This is what people would say when they heard about the old town in which I lived. At least we didn't have that much food yet because of the lack of internet connection - or should I call them \"the things\" since it was still alive but more complicated than that? But yes, if you ask me, it makes sense why someone would try to get into your life here!\n\nThe first few months were so boring; maybe there is nothing else going on? What does everyone think has happened during their lives?",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.878,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.15
+        }
+      },
+      "cfc_online": {
+        "response": "Architecture in words\n\nIt’s an odd concept, but like all metaphorical descriptions and mythology the whole is not always true. The truth would be why this exists as fact or possibility at all.\nHumans are very curious creatures who love to tell stories about their lives so there’s no way they can resist creating, just as easily there is another level, and we have learned how to go away with ourselves (creating) without someone else getting involved. In my opinion it’ or a life well-living for us when we stop destroying each other rather than wasting time on it, this gives our fellow humans more freedom which means peace, hope, happiness … because you know what? It doesn our",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.908,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.72
+        },
+        "sigma": 0.08178007006645202
+      }
+    },
+    {
+      "prompt": "Write a business plan for a company that sells shadows.",
+      "base": {
+        "response": "ShadowCo is an exciting and innovative venture which provides all of the shadow needs you might have at home or in your office, and to be honest we don’t really know why anyone would want more than one. ShadowCo offers affordable prices on high quality products (the cheapest you will find), including our 8″x10″ Standard Shadows. We recommend ordering this size first so as to get a sense for what works best for you before investing in something larger! Don’t worry – if it turns out too small after some time passes by then simply exchange them with us via mail or drop off at any local post office near where they can be easily exchanged; no questions asked either way because satisfaction matters most here",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.905,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.65
+        }
+      },
+      "static_0.05": {
+        "response": "A shadow, like life, has many dimensions. People are now in a hurry to see the results of their actions on themselves; people don’t know what they really want or who they really are; people have trouble with their parents (in some cases grandparents) and siblings because there is nothing new between them – they all just live through one another (like your friends, this blog, everyone you do not understand the same thing). The fact is, when it comes down to it, the idea “a little bit” changes something. And here I am at my feet and at least everything else makes me look as much as possible. If this person can tell a story about how he found himself and his mistakes at a party, it’",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.844,
+          "bigram_diversity": 0.992,
+          "avg_word_length": 4.38
+        }
+      },
+      "cfc_online": {
+        "response": "A person in the world will always need to have an amount of sun-free and shadowed space when he or she wants it because one needs only to find the correct spot so you can see its importance.",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.947,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.03
+        },
+        "sigma": 0.08168195486068726
+      }
+    },
+    {
+      "prompt": "Imagine a language where words change meaning based on the listener's mood.",
+      "base": {
+        "response": "The world is in utter chaos, it seems like everyday we wake up to hear something new. No one knows what to believe anymore and our society has become divided over politics. People just don’t agree with each other as much anymore. If you’re conservative, or liberal if you are religious or agnostic. It’s all up for debate. When I was little everything seemed so simple, but now even going out to buy groceries can cause arguments between me and my husband. One day he says ‘I want steak’ and I say ‘but I want chicken.’ He tries again ‘steak?’ then I answer back ‘chicken please’. Then maybe I say this time ‘maybe fish.’ We both start",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.855,
+          "bigram_diversity": 0.991,
+          "avg_word_length": 4.44
+        }
+      },
+      "static_0.05": {
+        "response": "In other cases, such as when an individual is depressed or anxious and does not speak to anyone, an individual will have conversations with oneself in their head. This situation can be known as “anxiety.” An anxiety-inducing conversation may occur if one’s spouse engages in activities that makes them angry (i.e., stealing food from others). This means that they would like to use the telephone lines to get out of town! It is also likely that this particular person has been unable to maintain a secure marriage relationship due to his/her own mental illness issues at various times throughout history, as well as cultural factors which are often overlooked by most people in Western society today as we become increasingly isolated within our communities",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.847,
+          "bigram_diversity": 0.992,
+          "avg_word_length": 5.11
+        }
+      },
+      "cfc_online": {
+        "response": "It seems to me that the best thing I’ve got here is not yet your first question, which you ask only because it already makes sense. If we could think of something together, you and me!—it would be an idea too big for our minds or perhaps even more important than our children. So then if any two people were just like this but maybe a little old-fashioned and who else can remember our past? What do they know? We are tired of hearing ourselves again! But then why should anything happen in our heads about what happens between them? And if they will never see us when they get home from home! What happened so far? A lot like us! In this way we must have been there;",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.822,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.18
+        },
+        "sigma": 0.08110038936138153
+      }
+    },
+    {
+      "prompt": "Describe the autobiography of a single electron.",
+      "base": {
+        "response": "The Electron’s Autobiography\n\nPart I – Birth:\n\nI was born in 1942, to a pair of young electrons from opposite sides of the magnetic spectrum; they had yet to meet and fall in love over their shared passion for hydrogen atoms. My mother was 327 years old when she met my father at an atomic conference, where he presented his groundbreaking thesis on how positively charged particles could be attracted to negatively-charged ones. They didn’t become serious right away but after spending some time with one another it became clear that they were meant to be together and so they formed this little energy orb which was me! When we first came into existence my parents were",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.846,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.73
+        }
+      },
+      "static_0.05": {
+        "response": "“My mother was in her sixties when we conceived by IVF, and I thought this would be my greatest achievement,” said Daphne to one of the other patients at the hospital while waiting for a procedure to check on their condition after being released from isolation. At least eight months ago. After years of trying and many misfortunes, finally she had decided that having a child didn’t depend on how things were going. They could be good or bad depending on whether they decide to do it with you. It wasn’t just about knowing what happened but also getting feedback right.",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.871,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.65
+        }
+      },
+      "cfc_online": {
+        "response": "“Early, I learned that electrons are not an electric utility company.” Not until I had to write for my students did I recall so many things about these days. These have been some bad nights and weeks too. But this one piece in me is gone now, as you wrote just on two lines…and it can be changed, for sure. My life has improved too; perhaps, they’re doing good now. What will happen when we make our children grow? They become like us or are our parents right? You have to take responsibility from you at 12 years old when he doesn’t go out there for your son! The same night of his wife, however, she tells her husband. She wants to share",
+        "grammatical": true,
+        "novelty": {
+          "unique_ratio": 0.87,
+          "bigram_diversity": 1.0,
+          "avg_word_length": 4.2
+        },
+        "sigma": 0.08204348981380462
+      }
+    }
+  ],
+  "summary": {
+    "base": {
+      "grammar_rate": 1.0,
+      "avg_novelty": 0.9236500000000003
+    },
+    "static_0.05": {
+      "grammar_rate": 1.0,
+      "avg_novelty": 0.9312750000000001
+    },
+    "cfc_online": {
+      "grammar_rate": 1.0,
+      "avg_novelty": 0.9339500000000001,
+      "avg_sigma": 0.08019009113311767
+    }
+  },
+  "elapsed_min": 9.849133650461832,
+  "sigma_history": [
+    0.08238904774188995,
+    0.08223022520542145,
+    0.08153775930404662,
+    0.08223188817501068,
+    0.08156496584415436,
+    0.08239426016807556,
+    0.08220507502555847,
+    0.08201876878738402,
+    0.08230923414230347,
+    0.08189697861671448,
+    0.08235500156879424,
+    0.08129463493824005,
+    0.0819980889558792,
+    0.08286353945732117,
+    0.0818504512310028,
+    0.08189683556556701,
+    0.08146113753318786,
+    0.08193599581718444,
+    0.0817150354385376,
+    0.08184344172477721,
+    0.08169153928756713,
+    0.08197642564773559,
+    0.08183562755584717,
+    0.08200114667415619,
+    0.08160452842712403,
+    0.08203435242176056,
+    0.08204641342163085,
+    0.08151753544807434,
+    0.08079042434692382,
+    0.08225637674331665,
+    0.08149171471595763,
+    0.0818188726902008,
+    0.08122121393680572,
+    0.08172153532505035,
+    0.08181632459163665,
+    0.0818228155374527,
+    0.08226418197154999,
+    0.08184428215026855,
+    0.08129771947860717,
+    0.08168749809265137
+  ],
+  "reward_history": [
+    1.1199999999999999,
+    1.1,
+    1.212,
+    1.132,
+    1.2140000000000002,
+    1.059,
+    1.121,
+    1.1119999999999999,
+    1.114,
+    1.1300000000000001,
+    1.067,
+    1.162,
+    1.1,
+    -1.0,
+    1.147,
+    1.133,
+    1.189,
+    1.132,
+    1.168,
+    1.152,
+    1.184,
+    1.132,
+    1.1300000000000001,
+    1.107,
+    1.164,
+    1.136,
+    1.125,
+    1.167,
+    1.253,
+    1.058,
+    1.2100000000000002,
+    1.132,
+    1.225,
+    1.132,
+    1.114,
+    1.109,
+    1.0570000000000002,
+    1.131,
+    1.175,
+    1.1199999999999999
+  ]
+}
