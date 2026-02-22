@@ -8,6 +8,7 @@ __pycache__/
 papers/
 
 # Reports (managed separately, not in git)
+reports/
 report/
 
 # Model checkpoints (too large for git)
