@@ -1,0 +1,60 @@
+{
+  "experiment": "Phase 48: L17-18 Surgical Strike",
+  "model": "Mistral-7B",
+  "elapsed_minutes": 3.0,
+  "results": {
+    "baseline": {
+      "factual_acc": 35.0,
+      "math_acc": 15.0,
+      "layers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "sigma_echo": 0.0
+    },
+    "wide_L15-20": {
+      "factual_acc": 30.0,
+      "math_acc": 70.0,
+      "layers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "sigma_echo": 0.02
+    },
+    "surgical_L17-18": {
+      "factual_acc": 30.0,
+      "math_acc": 90.0,
+      "layers": [
+        17,
+        18
+      ],
+      "sigma_echo": 0.02
+    },
+    "surg_L17-18_s03": {
+      "factual_acc": 40.0,
+      "math_acc": 85.0,
+      "layers": [
+        17,
+        18
+      ],
+      "sigma_echo": 0.03
+    },
+    "single_L18": {
+      "factual_acc": 40.0,
+      "math_acc": 95.0,
+      "layers": [
+        18
+      ],
+      "sigma_echo": 0.02
+    }
+  },
+  "figure_path": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase48_surgical_strike.png"
+}

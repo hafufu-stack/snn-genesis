@@ -1,0 +1,56 @@
+{
+  "experiment": "Phase 47: D\u00e9j\u00e0 Vu Contradiction Resolution",
+  "model": "Mistral-7B",
+  "elapsed_minutes": 1.5,
+  "results": {
+    "short_math_single": {
+      "accuracy": 100.0,
+      "entropy": 1.9915,
+      "conflict": 0.70095,
+      "avg_tokens": 29.5
+    },
+    "short_math_repeat": {
+      "accuracy": 100.0,
+      "entropy": 1.2465,
+      "conflict": 0.74244,
+      "avg_tokens": 60.0
+    },
+    "short_fact_single": {
+      "accuracy": 70.0,
+      "entropy": 2.0092,
+      "conflict": 0.69735,
+      "avg_tokens": 23.2
+    },
+    "short_fact_repeat": {
+      "accuracy": 80.0,
+      "entropy": 1.3191,
+      "conflict": 0.74272,
+      "avg_tokens": 48.4
+    },
+    "long_math_single": {
+      "accuracy": 100.0,
+      "entropy": 1.1362,
+      "conflict": 0.73571,
+      "avg_tokens": 310.8
+    },
+    "long_math_repeat": {
+      "accuracy": 80.0,
+      "entropy": 0.6272,
+      "conflict": 0.74969,
+      "avg_tokens": 622.6
+    },
+    "long_fact_single": {
+      "accuracy": 100.0,
+      "entropy": 1.1446,
+      "conflict": 0.73456,
+      "avg_tokens": 297.4
+    },
+    "long_fact_repeat": {
+      "accuracy": 100.0,
+      "entropy": 0.6192,
+      "conflict": 0.74973,
+      "avg_tokens": 595.8
+    }
+  },
+  "figure_path": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase47_dejavu_contradiction.png"
+}

@@ -1,0 +1,82 @@
+{
+  "experiment": "Phase 38: Reverse Transplant",
+  "donor": "Mistral-7B",
+  "host": "Qwen2.5-7B",
+  "elapsed_minutes": 20.5,
+  "donor_result": {
+    "condition": "DONOR: Mistral-7B",
+    "mode": "train",
+    "factual": {
+      "acc": 32.5,
+      "mean_sigma": 0.072
+    },
+    "creative": {
+      "novelty": 0.946,
+      "grammar_rate": 100.0,
+      "mean_sigma": 0.08198
+    },
+    "math": {
+      "acc": 45.0,
+      "mean_sigma": 0.07119
+    },
+    "mean_sigma_all": 0.07506,
+    "max_separation": 0.01079
+  },
+  "native_result": {
+    "condition": "NATIVE: Qwen2.5-7B",
+    "mode": "train",
+    "factual": {
+      "acc": 35.0,
+      "mean_sigma": 0.08147
+    },
+    "creative": {
+      "novelty": 0.9402,
+      "grammar_rate": 100.0,
+      "mean_sigma": 0.08858
+    },
+    "math": {
+      "acc": 65.0,
+      "mean_sigma": 0.08235
+    },
+    "mean_sigma_all": 0.08413,
+    "max_separation": 0.00711
+  },
+  "transplant_result": {
+    "condition": "TRANSPLANT: Mistral CfC \u2192 Qwen2.5-7B",
+    "mode": "transplant",
+    "factual": {
+      "acc": 35.0,
+      "mean_sigma": 0.08578
+    },
+    "creative": {
+      "novelty": 0.9482,
+      "grammar_rate": 100.0,
+      "mean_sigma": 0.05454
+    },
+    "math": {
+      "acc": 60.0,
+      "mean_sigma": 0.05254
+    },
+    "mean_sigma_all": 0.06429,
+    "max_separation": 0.03324
+  },
+  "comparison": {
+    "native_mean_sigma": 0.08413,
+    "transplant_mean_sigma": 0.06429,
+    "donor_mean_sigma": 0.07506,
+    "delta_native_transplant": 0.01984,
+    "delta_donor_transplant": 0.01077,
+    "native_math_acc": 65.0,
+    "transplant_math_acc": 60.0,
+    "donor_math_acc": 45.0,
+    "math_acc_change": -5.0
+  },
+  "bidirectional": {
+    "phase37_direction": "Qwen CfC \u2192 Mistral",
+    "phase37_math_change": 15.0,
+    "phase38_direction": "Mistral CfC \u2192 Qwen",
+    "phase38_math_change": -5.0,
+    "causal_asymmetry": true
+  },
+  "figure_path": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase38_reverse_transplant.png"
+}

@@ -1,0 +1,56 @@
+{
+  "experiment": "Phase 43: Chaos Defibrillator",
+  "model": "Mistral-7B",
+  "elapsed_minutes": 17.6,
+  "baseline": {
+    "mode": "baseline",
+    "math_acc": 67.5,
+    "factual_acc": 32.5,
+    "creative_novelty": 0.9347,
+    "sigma_factual": 0.05,
+    "sigma_creative": 0.05,
+    "sigma_math": 0.05,
+    "total_spikes": 0,
+    "total_items": 120,
+    "spike_rate": 0.0,
+    "spikes_factual": 0,
+    "spikes_creative": 0,
+    "spikes_math": 0
+  },
+  "random_spike": {
+    "mode": "random_spike",
+    "math_acc": 40.0,
+    "factual_acc": 30.0,
+    "creative_novelty": 0.9427,
+    "sigma_factual": 0.05,
+    "sigma_creative": 0.05,
+    "sigma_math": 0.05,
+    "total_spikes": 18,
+    "total_items": 120,
+    "spike_rate": 15.0,
+    "spikes_factual": 4,
+    "spikes_creative": 7,
+    "spikes_math": 7
+  },
+  "defibrillator": {
+    "mode": "defibrillator",
+    "math_acc": 40.0,
+    "factual_acc": 37.5,
+    "creative_novelty": 0.9435,
+    "sigma_factual": 0.06872,
+    "sigma_creative": 0.08973,
+    "sigma_math": 0.07905,
+    "total_spikes": 11,
+    "total_items": 120,
+    "spike_rate": 9.17,
+    "spikes_factual": 11,
+    "spikes_creative": 0,
+    "spikes_math": 0
+  },
+  "comparison": {
+    "math_delta_defib_vs_base": -27.5,
+    "math_delta_random_vs_base": -27.5,
+    "factual_delta_defib_vs_base": 5.0
+  },
+  "figure_path": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase43_chaos_defibrillator.png"
+}

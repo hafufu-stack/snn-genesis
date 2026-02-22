@@ -1,0 +1,86 @@
+{
+  "experiment": "Step 2+3: Publication Figure + Comprehension Score",
+  "model": "Mistral-7B",
+  "elapsed_minutes": 0.4,
+  "results": [
+    {
+      "label": "Islands",
+      "type": "factual",
+      "entropy_drop": 1.1409,
+      "conflict_delta": 0.1347,
+      "comprehension_score": 1.0007
+    },
+    {
+      "label": "Humans",
+      "type": "factual",
+      "entropy_drop": 0.5947,
+      "conflict_delta": 0.1547,
+      "comprehension_score": 0.6483
+    },
+    {
+      "label": "Moons",
+      "type": "factual",
+      "entropy_drop": 0.8585,
+      "conflict_delta": 0.1554,
+      "comprehension_score": 0.8341
+    },
+    {
+      "label": "Water",
+      "type": "factual",
+      "entropy_drop": 0.9855,
+      "conflict_delta": 0.1571,
+      "comprehension_score": 0.9254
+    },
+    {
+      "label": "Mona Lisa",
+      "type": "factual",
+      "entropy_drop": 1.0317,
+      "conflict_delta": 0.1684,
+      "comprehension_score": 0.9748
+    },
+    {
+      "label": "17+28",
+      "type": "math",
+      "entropy_drop": 1.4689,
+      "conflict_delta": 0.0835,
+      "comprehension_score": 1.1534
+    },
+    {
+      "label": "15\u00d715",
+      "type": "math",
+      "entropy_drop": 1.3588,
+      "conflict_delta": 0.086,
+      "comprehension_score": 1.0801
+    },
+    {
+      "label": "12\u00d77",
+      "type": "math",
+      "entropy_drop": 1.4045,
+      "conflict_delta": 0.0856,
+      "comprehension_score": 1.1115
+    },
+    {
+      "label": "2^8",
+      "type": "math",
+      "entropy_drop": 1.4179,
+      "conflict_delta": 0.0944,
+      "comprehension_score": 1.1341
+    },
+    {
+      "label": "\u221a144",
+      "type": "math",
+      "entropy_drop": 1.1852,
+      "conflict_delta": 0.0919,
+      "comprehension_score": 0.9674
+    }
+  ],
+  "summary": {
+    "factual_avg_entropy_drop": 0.9223,
+    "factual_avg_conflict_delta": 0.15406,
+    "factual_avg_score": 0.8767,
+    "math_avg_entropy_drop": 1.3671,
+    "math_avg_conflict_delta": 0.08828,
+    "math_avg_score": 1.0893
+  },
+  "figure_path": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase45_publication_figure.png"
+}

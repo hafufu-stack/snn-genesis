@@ -1,0 +1,101 @@
+{
+  "experiment": "Phase 39: Multi-Donor Fusion",
+  "host": "Mistral-7B",
+  "elapsed_minutes": 13.3,
+  "fusion_results": [
+    {
+      "condition": "Mistral: simple_avg",
+      "factual": {
+        "acc": 10.0,
+        "mean_sigma": 0.07499
+      },
+      "creative": {
+        "novelty": 0.946,
+        "grammar_rate": 100.0,
+        "mean_sigma": 0.07752
+      },
+      "math": {
+        "acc": 55.0,
+        "mean_sigma": 0.05312
+      },
+      "mean_sigma_all": 0.06854
+    },
+    {
+      "condition": "Mistral: qwen_weighted_70",
+      "factual": {
+        "acc": 45.0,
+        "mean_sigma": 0.09537
+      },
+      "creative": {
+        "novelty": 0.9557,
+        "grammar_rate": 95.0,
+        "mean_sigma": 0.0729
+      },
+      "math": {
+        "acc": 35.0,
+        "mean_sigma": 0.08161
+      },
+      "mean_sigma_all": 0.08329
+    },
+    {
+      "condition": "Mistral: qwen_core_mistral_std",
+      "factual": {
+        "acc": 30.0,
+        "mean_sigma": 0.07406
+      },
+      "creative": {
+        "novelty": 0.9337,
+        "grammar_rate": 90.0,
+        "mean_sigma": 0.07125
+      },
+      "math": {
+        "acc": 55.0,
+        "mean_sigma": 0.07458
+      },
+      "mean_sigma_all": 0.07329
+    },
+    {
+      "condition": "Mistral: pure_qwen",
+      "factual": {
+        "acc": 35.0,
+        "mean_sigma": 0.0916
+      },
+      "creative": {
+        "novelty": 0.9417,
+        "grammar_rate": 95.0,
+        "mean_sigma": 0.08215
+      },
+      "math": {
+        "acc": 40.0,
+        "mean_sigma": 0.07223
+      },
+      "mean_sigma_all": 0.08199
+    },
+    {
+      "condition": "Mistral: pure_mistral",
+      "factual": {
+        "acc": 20.0,
+        "mean_sigma": 0.07343
+      },
+      "creative": {
+        "novelty": 0.9475,
+        "grammar_rate": 95.0,
+        "mean_sigma": 0.09862
+      },
+      "math": {
+        "acc": 45.0,
+        "mean_sigma": 0.07933
+      },
+      "mean_sigma_all": 0.08379
+    }
+  ],
+  "best_math": {
+    "strategy": "Mistral: simple_avg",
+    "acc": 55.0
+  },
+  "best_factual": {
+    "strategy": "Mistral: qwen_weighted_70",
+    "acc": 45.0
+  },
+  "figure_path": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase39_multi_donor_fusion.png"
+}

@@ -1,0 +1,47 @@
+{
+  "experiment": "Phase 44: Dynamic Depth Scanning",
+  "model": "Mistral-7B",
+  "elapsed_minutes": 17.0,
+  "fixed": {
+    "mode": "fixed",
+    "math_acc": 67.5,
+    "factual_acc": 32.5,
+    "creative_novelty": 0.9347,
+    "sigma_factual": 0.05,
+    "sigma_creative": 0.05,
+    "sigma_math": 0.05,
+    "depth_factual": 17.5,
+    "depth_creative": 17.5,
+    "depth_math": 17.5
+  },
+  "random_layer": {
+    "mode": "random_layer",
+    "math_acc": 45.0,
+    "factual_acc": 40.0,
+    "creative_novelty": 0.9046,
+    "sigma_factual": 0.05,
+    "sigma_creative": 0.05,
+    "sigma_math": 0.05,
+    "depth_factual": 15.0,
+    "depth_creative": 14.4,
+    "depth_math": 14.0
+  },
+  "dynamic": {
+    "mode": "dynamic",
+    "math_acc": 55.0,
+    "factual_acc": 27.5,
+    "creative_novelty": 0.9264,
+    "sigma_factual": 0.07148,
+    "sigma_creative": 0.07423,
+    "sigma_math": 0.06417,
+    "depth_factual": 17.73,
+    "depth_creative": 17.55,
+    "depth_math": 17.83
+  },
+  "comparison": {
+    "math_delta_dynamic_vs_fixed": -12.5,
+    "factual_delta_dynamic_vs_fixed": -5.0,
+    "depth_separation": 0.1
+  },
+  "figure_path": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase44_dynamic_depth.png"
+}

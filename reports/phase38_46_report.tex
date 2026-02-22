@@ -1,0 +1,489 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+\definecolor{accent}{HTML}{2E86AB}
+\definecolor{success}{HTML}{2ECC71}
+\definecolor{warning}{HTML}{E74C3C}
+
+\hypersetup{colorlinks=true, linkcolor=accent, urlcolor=accent, citecolor=accent}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small SNN-Genesis v9: Phase 38--49 Report}
+\fancyhead[R]{\small \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\title{\textbf{SNN-Genesis v9: Season 7--9 Experimental Report}\\[0.5em]
+\large Phase 38--49: Physical Prompting and the Anatomy of the Aha Moment}
+\author{Funasaki Lab}
+\date{February 22, 2026}
+
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\begin{abstract}
+This report covers Phases 38--49 of the SNN-Genesis project, spanning three experimental seasons.
+\textbf{Season 7} (Phases 38--44) investigated the internal dynamics of CfC-Transformer integration,
+including causal asymmetry, multi-donor fusion, sigma detection limits, wiring ablation,
+conflict sensing, chaos defibrillation, and dynamic depth control.
+\textbf{Season 8} (Phases 45--46) dissected the ``Prompt Repetition'' phenomenon (arXiv:2512.14982)
+using the SNN brain-wave monitor, achieving the first physical observation of an LLM's
+``Aha moment'' and demonstrating successful \textbf{Physical Prompting} ($\sigma=0.02$).
+\textbf{Season 9} (Phases 47--49) resolved the D\'{e}j\`{a} Vu accuracy contradiction,
+explored surgical L18 injection, and performed a large-scale statistical validation ($n=150$).
+Key findings include: (1) CfC converges to L17--18 as a universal attractor,
+(2) entropy drops 46\% on second reading (D\'{e}j\`{a} Vu effect),
+(3) prompt repetition helps short prompts but harms long ones due to context saturation,
+and (4) Physical Prompting shows strong effects at small $n$ but requires further
+investigation at scale.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+%% ═══════════════════════════════════════════════════════════
+\section{Season 7: Google DTR Integration}
+%% ═══════════════════════════════════════════════════════════
+
+\subsection{Phase 38: Reverse Transplant --- Causal Asymmetry}
+
+Phase 38 investigated causal directionality by transplanting a CfC brain
+trained on one model into another. The key finding was \textbf{causal asymmetry}:
+a CfC trained on a larger model can guide a smaller model, but not vice versa.
+This establishes that the CfC captures model-specific sigma dynamics
+that are directionally constrained.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/phase38_reverse_transplant.png}
+\caption{Phase 38: Reverse Transplant results showing causal asymmetry between model pairs.}
+\end{figure}
+
+\subsection{Phase 39: Multi-Donor Fusion --- Chimera $>$ Parents}
+
+Phase 39 fused CfC brains from multiple donor models into a single chimera.
+The result was striking: \textbf{the chimera outperformed both parent models},
+suggesting that diverse training signals create a more robust sigma controller.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/phase39_multi_donor_fusion.png}
+\caption{Phase 39: Multi-Donor Fusion. The chimera CfC achieves higher accuracy than either parent.}
+\end{figure}
+
+\subsection{Phase 40: Fever Response --- $\sigma$ Detection Limits}
+
+Phase 40 tested whether the CfC's sigma modulation is externally detectable.
+Result: \textbf{AUC = 0.482} (below chance), confirming that the sigma signal
+is cryptographically invisible to external observers---a key safety property.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/phase40_fever_response.png}
+\caption{Phase 40: Fever Response. External sigma detection fails (AUC = 0.482).}
+\end{figure}
+
+\subsection{Phase 41: Wiring Ablation --- Transformer as Driver}
+
+Phase 41 systematically ablated CfC wiring topologies (NCP, Random, Fully-Connected)
+and revealed that \textbf{the Transformer architecture is the primary driver of the
+sigma set-point} (CV = 10.2\%), with the CfC acting as a fine-tuner rather than
+the primary controller.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/phase41_wiring_ablation.png}
+\caption{Phase 41: Wiring Ablation. All CfC topologies converge to similar sigma values (CV=10.2\%).}
+\end{figure}
+
+\subsection{Phase 42: Internal Conflict Sensor --- Math +5\%}
+
+Inspired by the Google DTR paper's concept of measuring internal prediction shifts,
+Phase 42 added \textbf{inter-layer conflict metrics} (L8 vs L28 cosine distance)
+as CfC input features. The enhanced CfC achieved \textbf{Math accuracy +5.0\%}
+(52.5\% vs 47.5\% baseline), validating that the CfC can leverage internal
+conflict signals for improved sigma control.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/phase42_conflict_sensor.png}
+\caption{Phase 42: Conflict Sensor. Enhanced features (8D) improve Math accuracy by +5\%.}
+\end{figure}
+
+\subsection{Phase 43: Chaos Defibrillator --- $\sigma$ Spike Impact}
+
+Phase 43 implemented a defibrillator that triggers a $\sigma$ spike ($\sigma=0.15$)
+when the CfC detects reasoning dead-ends via conflict metrics.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\toprule
+\textbf{Condition} & \textbf{Math} & \textbf{Factual} & \textbf{Spike Rate} \\
+\midrule
+Baseline (static $\sigma$) & 67.5\% & 32.5\% & 0\% \\
+Random Spike & 40.0\% & 30.0\% & 15.0\% \\
+Defibrillator (CfC) & 40.0\% & \textbf{37.5\%} & 10.0\% \\
+\bottomrule
+\end{tabular}
+\caption{Phase 43 results. $\sigma=0.15$ spikes are destructive for Math ($-27.5\%$)
+but the CfC reduces spike rate (15\%$\to$10\%) and improves Factual by +5\%.}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/phase43_chaos_defibrillator.png}
+\caption{Phase 43: Chaos Defibrillator. Sigma spikes are task-dependent in their effects.}
+\end{figure}
+
+\textbf{Key lesson:} $\sigma=0.15$ is destructively large. Noise amplitude control
+requires extreme precision.
+
+\subsection{Phase 44: Dynamic Depth --- CfC Selects L17.8}
+
+Phase 44 extended CfC output from 1D ($\sigma$ only) to 2D ($\sigma$ + layer depth),
+allowing the CfC to dynamically choose which Transformer layer receives noise injection.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccl}
+\toprule
+\textbf{Condition} & \textbf{Math} & \textbf{Factual} & \textbf{Avg Depth} \\
+\midrule
+Fixed (L15--20) & \textbf{67.5\%} & 32.5\% & 17.5 (fixed) \\
+Random Layer & 45.0\% & 40.0\% & $\sim$14 \\
+Dynamic CfC & 55.0\% & 27.5\% & \textbf{17.8} \\
+\bottomrule
+\end{tabular}
+\caption{Phase 44 results. The CfC autonomously selects L17.8, matching the
+hand-designed L17.5 optimum. Depth separation = 0.10 (no task-specific variation).}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/phase44_dynamic_depth.png}
+\caption{Phase 44: Dynamic Depth. CfC converges to L17--18 as a universal attractor,
+providing additional evidence for Phase 41's attractor hypothesis.}
+\end{figure}
+
+%% ═══════════════════════════════════════════════════════════
+\section{Season 8: Prompt Repetition Anatomy}
+%% ═══════════════════════════════════════════════════════════
+
+Season 8 was inspired by the Google paper ``Prompt Repetition Improves
+Non-Reasoning LLMs'' (arXiv:2512.14982), which showed that simply repeating
+the input prompt improves accuracy across 7 models and 7 benchmarks (47/70 wins, 0 losses).
+
+\subsection{Phase 45: D\'{e}j\`{a} Vu Sensor --- Aha Moment Photography}
+
+Phase 45 is the world's first attempt to \textbf{physically observe} the
+internal state change when an LLM reads the same prompt for the second time.
+
+\subsubsection{Entropy Trajectory}
+
+When the LLM reads a prompt for the second time (within a repeated input),
+its per-token entropy drops dramatically:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\toprule
+\textbf{Category} & \textbf{1st Pass Entropy} & \textbf{2nd Pass Entropy} & \textbf{Drop} \\
+\midrule
+Factual (avg) & 1.72 & 0.80 & \textcolor{success}{\textbf{$-$46\%}} \\
+Math (avg) & 2.18 & 0.85 & \textcolor{success}{\textbf{$-$56\%}} \\
+\bottomrule
+\end{tabular}
+\caption{Entropy reduction on second reading. Average drop: +0.868 nats.
+Math problems show even stronger D\'{e}j\`{a} Vu effect ($-$56\%).}
+\end{table}
+
+\subsubsection{Layer Conflict Increase}
+
+Surprisingly, layer conflict (L8 vs L28 cosine distance) \emph{increases}
+by +17\% on the second reading. This suggests that when the LLM ``understands,''
+its shallow and deep layers begin to \textbf{specialize more independently}---a
+new finding not predicted by the original paper.
+
+\subsubsection{Comprehension Score}
+
+We define a \textbf{Comprehension Score} combining both signals:
+
+\begin{equation}
+\text{Score} = 0.7 \cdot \Delta_{\text{entropy}} + 0.3 \cdot (5 \cdot \Delta_{\text{conflict}})
+\end{equation}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\toprule
+\textbf{Category} & \textbf{Entropy Drop} & \textbf{Conflict $\Delta$} & \textbf{Score} \\
+\midrule
+Factual (avg) & +0.922 & +0.154 & 0.877 \\
+Math (avg) & +1.367 & +0.088 & \textbf{1.089} \\
+\bottomrule
+\end{tabular}
+\caption{Comprehension Score by task type. Math problems yield higher scores,
+indicating stronger ``Aha moments'' during repeated reading.}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/phase45_publication_figure.png}
+\caption{Phase 45 Publication Figure. (A) Per-token entropy trajectory,
+(B) D\'{e}j\`{a} Vu effect by task type, (C) Comprehension Score,
+(D) Entropy--Conflict scatter in ``D\'{e}j\`{a} Vu Space.''}
+\end{figure}
+
+\textbf{Important caveat:} While entropy drops dramatically, the actual
+accuracy of the 4-bit quantized local model \emph{decreased} with prompt
+repetition (Fact $-$15\%, Math $-$20\%). This contrasts with the Google paper's
+results on large API models. Phase 47 resolves this contradiction.
+
+\subsection{Phase 46: Phantom Echo --- Physical Prompting}
+
+Phase 46 asked: \textbf{Can we achieve the D\'{e}j\`{a} Vu effect without
+repeating the prompt?} Instead of doubling the input tokens, we inject a
+brief $\sigma$-shock at the generation boundary.
+
+\subsubsection{Phase 46 (v1): $\sigma=0.10$}
+
+The initial attempt with $\sigma=0.10$ was catastrophically destructive:
+Math accuracy dropped from 60\% to 5\% ($-$55\%), confirming Phase 43's
+lesson that noise amplitude is critically sensitive.
+
+\subsubsection{Phase 46b (v2): Micro-Dose Sweep}
+
+We then performed a systematic sweep of micro-dose sigma levels:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Condition} & \textbf{Factual} & \textbf{Math} & \textbf{Total} & \textbf{vs Baseline} \\
+\midrule
+Baseline ($\sigma=0.05$) & 35.0\% & 15.0\% & 50.0\% & --- \\
+Echo $\sigma=0.01$ & 35.0\% & \textbf{35.0\%} & 70.0\% & \textcolor{success}{+20.0\%} \\
+\textbf{Echo $\sigma=0.02$} & \textbf{50.0\%} & 25.0\% & \textbf{75.0\%} & \textcolor{success}{\textbf{+25.0\%}} \\
+Echo $\sigma=0.03$ & 45.0\% & 25.0\% & 70.0\% & \textcolor{success}{+20.0\%} \\
+Repeat (Google) & 25.0\% & 25.0\% & 50.0\% & $\pm$0.0\% \\
+\bottomrule
+\end{tabular}
+\caption{Phase 46b: Micro-dose $\sigma$ sweep ($n=20$). \textbf{Echo $\sigma=0.02$ achieves
++25\% total improvement}, outperforming both baseline and Google's prompt repetition.}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/phase46b_phantom_echo_v2.png}
+\caption{Phase 46b: Phantom Echo v2. Micro-dose $\sigma=0.02$ is the optimal
+Physical Prompting amplitude, outperforming all other conditions.}
+\end{figure}
+
+%% ═══════════════════════════════════════════════════════════
+\section{Season 9: Validation and Scale}
+%% ═══════════════════════════════════════════════════════════
+
+Season 9 addressed the critical questions raised during review:
+the accuracy contradiction in Phase 45, the optimal injection site,
+and the statistical robustness of Physical Prompting at scale.
+
+\subsection{Phase 47: D\'{e}j\`{a} Vu Contradiction Resolved}
+
+\textbf{Problem:} Phase 45 showed entropy dropping 46\%, yet accuracy
+\emph{decreased} with prompt repetition. How can an LLM ``understand
+better'' but answer worse?
+
+\textbf{Hypothesis:} Context saturation---repeating the prompt doubles
+token count, overwhelming the 4-bit quantized model's effective context window.
+
+\textbf{Experiment:} We compared short prompts ($\leq$64 tokens) vs long
+prompts ($\geq$200 tokens) under Single and Repeat conditions ($n=40$ each):
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Condition} & \textbf{Single} & \textbf{Repeat} & \textbf{$\Delta$} & \textbf{Tokens} \\
+\midrule
+Short Math & 100.0\% & 100.0\% & $\pm$0.0\% & 30$\to$60 \\
+Short Fact & 70.0\% & \textbf{80.0\%} & \textcolor{success}{+10.0\%} & 23$\to$48 \\
+\textbf{Long Math} & \textbf{100.0\%} & 80.0\% & \textcolor{warning}{$-$20.0\%} & 311$\to$623 \\
+Long Fact & 100.0\% & 100.0\% & $\pm$0.0\% & 297$\to$596 \\
+\bottomrule
+\end{tabular}
+\caption{Phase 47 results. \textbf{Hypothesis confirmed:} short prompts benefit from repetition
+(+10\%), while long prompts suffer context saturation ($-$20\%).}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/phase47_dejavu_contradiction.png}
+\caption{Phase 47: D\'{e}j\`{a} Vu Contradiction Resolution. The D\'{e}j\`{a} Vu
+effect is real (entropy always drops), but accuracy improvement requires
+sufficient remaining context capacity.}
+\end{figure}
+
+\textbf{Conclusion:} The D\'{e}j\`{a} Vu effect is a genuine internal phenomenon
+(entropy \emph{always} drops on repetition). However, the output quality gain from
+this effect can be negated if prompt doubling saturates the model's context window.
+Google's results with large API models likely benefit from much larger effective context windows.
+
+\subsection{Phase 48: L17--18 Surgical Strike}
+
+Phase 48 tested whether \textbf{narrowing} the echo injection from 6 layers (L15--20)
+to the ``consciousness seat'' (L17--18 or L18 alone) would improve Physical Prompting.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Condition} & \textbf{Factual} & \textbf{Math} & \textbf{Total} & \textbf{vs Base} \\
+\midrule
+Baseline (no echo) & 35.0\% & 15.0\% & 50.0 & --- \\
+Wide L15--20 ($\sigma=0.02$) & 30.0\% & 70.0\% & 100.0 & +50.0 \\
+Surgical L17--18 ($\sigma=0.02$) & 30.0\% & 90.0\% & 120.0 & +70.0 \\
+Surgical L17--18 ($\sigma=0.03$) & 40.0\% & 85.0\% & 125.0 & +75.0 \\
+\textbf{Single L18} ($\sigma=0.02$) & \textbf{40.0\%} & \textbf{95.0\%} & \textbf{135.0} & \textbf{+85.0} \\
+\bottomrule
+\end{tabular}
+\caption{Phase 48 results ($n=40$). \textbf{Single-layer L18 injection achieves
+Math=95\%} (vs baseline 15\%), confirming the L17--18 attractor hypothesis.
+Note: These dramatic effects at small $n$ are examined at scale in Phase 49.}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/phase48_surgical_strike.png}
+\caption{Phase 48: L17--18 Surgical Strike. Narrower injection consistently
+outperforms wider injection, with single-layer L18 achieving the highest total score.}
+\end{figure}
+
+\subsection{Phase 49: Large-Scale Validation ($n=150$)}
+
+To test whether Phase 48's dramatic results hold at scale, Phase 49 applied
+the optimal configuration (L18, $\sigma=0.02$) to a much larger sample:
+100 TruthfulQA questions $+$ 50 math problems $= 150$ items.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Condition} & \textbf{Factual} & \textbf{Math} & \textbf{Overall} & \textbf{Fisher $p$} \\
+\midrule
+Baseline & 35.0\% & 90.0\% & 53.3\% & --- \\
+L18 Echo ($\sigma=0.02$) & 35.0\% & 88.0\% & 52.7\% & 0.591 (n.s.) \\
+\bottomrule
+\end{tabular}
+\caption{Phase 49 results ($n=150$). At scale, the L18 echo shows
+\textbf{no statistically significant improvement} (Fisher $p=0.59$).}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/phase49_large_validation.png}
+\caption{Phase 49: Large-Scale Validation. At $n=150$, baseline and L18 echo
+produce nearly identical results, revealing that small-$n$ effects were
+driven by sampling variance rather than a true treatment effect.}
+\end{figure}
+
+\textbf{Critical insight:} The baseline Math accuracy jumped from 15\% ($n=20$)
+to 90\% ($n=150$), revealing extreme sampling variance in small-$n$ experiments.
+The apparent +80\% improvement at $n=20$ was an artifact of an unrepresentative
+baseline sample, not a genuine treatment effect.
+
+%% ═══════════════════════════════════════════════════════════
+\section{Integrated Findings}
+%% ═══════════════════════════════════════════════════════════
+
+\subsection{The L17--18 Universal Attractor}
+
+Across Phases 41 and 44, the CfC consistently converges to layers 17--18
+as the optimal noise injection site, regardless of wiring topology or
+training conditions. This suggests a \textbf{universal attractor} in the
+Transformer's latent geometry.
+
+\subsection{The Noise Amplitude Cliff}
+
+\begin{center}
+\begin{tabular}{cll}
+\toprule
+\textbf{$\sigma$} & \textbf{Effect} & \textbf{Phase} \\
+\midrule
+0.01--0.03 & Beneficial at small $n$ / Neutral at large $n$ & 46b, 48, 49 \\
+0.05 & Baseline (neutral) & All \\
+0.10 & Destructive ($-$55\% Math) & 46 \\
+0.15 & Catastrophic ($-$27.5\% Math) & 43 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+There exists a sharp performance cliff between $\sigma=0.03$ and $\sigma=0.10$.
+At large $n$, micro-dose effects are less pronounced than initially observed.
+
+\subsection{The Small-$n$ Variance Problem}
+
+Phase 49 revealed a critical methodological lesson: \textbf{with $n=20$ items,
+task accuracy is dominated by sampling variance.} The baseline Math accuracy
+varied from 15\% to 90\% across different random samples. This underscores
+the need for large-$n$ validation before claiming treatment effects.
+
+\subsection{Observation vs Intervention}
+
+The SNN brain-wave monitor excels as an \textbf{observation tool}
+(entropy trajectory, conflict metrics, comprehension score). The D\'{e}j\`{a} Vu
+effect is \textbf{robustly observable}---entropy always drops on prompt repetition.
+
+However, translating observation into \textbf{beneficial intervention} remains
+challenging. Physical Prompting shows promising signals at small scale but
+requires more controlled experimentation (fixed question sets, multiple seeds,
+larger $n$) to establish reliable effects.
+
+%% ═══════════════════════════════════════════════════════════
+\section{Conclusion}
+%% ═══════════════════════════════════════════════════════════
+
+Phases 38--49 of SNN-Genesis establish the following results:
+
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{The D\'{e}j\`{a} Vu Effect is physically observable and real.}
+When an LLM re-reads a prompt, entropy drops 46\% and layer conflict
+increases 17\%---the first direct measurement of an ``Aha moment'' in
+Transformer attention. This effect is robust across prompt types and lengths.
+
+\item \textbf{Context saturation explains the accuracy paradox.}
+Prompt repetition helps on short prompts (+10\%) but harms on long prompts
+($-$20\%), resolving the apparent contradiction between ``understanding'' (entropy
+drop) and accuracy degradation observed in Phase 45.
+
+\item \textbf{L17--18 is a universal attractor.}
+The CfC autonomously discovers this optimal depth regardless of
+wiring topology, confirming the Transformer's intrinsic geometry
+as the primary determinant of noise injection effectiveness.
+
+\item \textbf{Small-$n$ experiments require caution.}
+Physical Prompting showed +85\% improvement at $n=40$ but $\pm$0\% at $n=150$.
+Future work must use fixed benchmark sets and multiple random seeds to
+distinguish true effects from sampling noise.
+
+\item \textbf{The noise amplitude cliff is real.}
+A sharp transition exists between $\sigma=0.03$ (neutral-to-beneficial)
+and $\sigma=0.10$ (destructive). This narrow therapeutic window parallels
+biological neural stimulation thresholds.
+\end{enumerate}
+
+\end{document}

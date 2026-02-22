@@ -1,36 +1,37 @@
-# 🧬 SNN-Genesis v8: AI Comparative Physiology — Universal Homeostatic Set-Point σ≈0.07 Across Three Transformer Architectures
+# 🧬 SNN-Genesis v9: From Universal Homeostasis to Physical Prompting — SNN Perturbation as an LLM Interpretability Tool
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18625621.svg)](https://doi.org/10.5281/zenodo.18625621)
 
-> **"Three architectures. Three organizations. One universal constant: σ ≈ 0.07."**
+> **"We observed the LLM's Aha moment — and learned that small-n experiments lie."**
 
-SNN-Genesis is a framework for LLM safety training using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. The central discovery is **Universal Homeostasis**: a CfC controller converges to σ ≈ 0.07 across **three independent Transformer architectures** (Mistral-7B, Qwen2.5-7B, Phi-3-mini), establishing the first evidence for a **universal constant** of CfC-Transformer interaction.
+SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v9 pivots from safety perturbation to **real-time brain-wave monitoring**: using entropy and inter-layer conflict sensors to physically observe an LLM's internal state changes during prompt processing.
 
-### 🆕 v8 Highlights (February 2026)
+### 🆕 v9 Highlights (February 2026)
 
-v8 establishes **AI Comparative Physiology**: cross-model experiments confirm σ ≈ 0.07 as a universal law, while Brain Atlas and Digital Lobotomy reveal architecture-dependent internal strategies.
-
-| Discovery | Key Result |
-|-----------|------------|
-| 🌍 **Universal Homeostasis** | σ̄ = 0.074 ± 0.002 across Mistral (0.071), Qwen (0.075), Phi-3 (0.075) — CV = 3.1% |
-| 🧠 **CfC Brain Atlas** | Linear probe: 86.7% (Mistral) / 81.7% (Qwen) — sharp specialization vs. distributed representation |
-| 🛡️ **Plateau Robustness** | Qwen: 63%±8% Math accuracy from σ=0 to σ=0.15 (Fisher p=1.0) — noise immunity |
-| 🔪 **Digital Lobotomy** | Math-neuron knockout: Δ=-1.7% (Qwen) vs. Δ=-5.0% (Mistral) — causal proof of distributed encoding |
-| ⚡ **Stochastic Resonance** | Honest null result: SR falsified at n=100 (p=1.0) — Phase 31 was sampling artifact |
-| 🧮 **Biological Egoism** | Retained from v7: CfC destroys Math accuracy (30%→0%) for homeostasis |
-
-### 📊 Retained from v5–v6
+v9 extends the framework to **interpretability tool**, discovers the **Déjà Vu Effect**, and delivers an **honest null result** that exposes small-n variance in LLM research.
 
 | Discovery | Key Result |
 |-----------|------------|
-| 🧠 **CfC-Dosing** | CfC controller converges to σ ≈ 0.046, +0.2% tax (5× less than static σ=0.05) |
-| 🔬 **Depth Gradient** | Early layers: -56% damage → Late layers: <2% damage |
-| 🎯 **Safety Boundary** | Sharp transition at ~L20 across all metrics |
-| 💊 **Dose-Response** | σ=0.01 → <1% tax on high-accuracy benchmarks |
-| 🛡️ **Scale-Dependent Transfer** | 89.5% (source) → 34% (same-scale) → 0% (cross-scale) |
-| 🎨 **Dual-Mode Brain** | TaskClassifier (97.5%) + CfC: 2× factual accuracy, peak novelty |
+| 🎯 **L17-18 Universal Attractor** | All CfC wiring topologies converge to L17-18 as optimal injection depth (CV=10.2%) |
+| 👁️ **Déjà Vu Effect** | First physical observation of LLM "Aha moment": entropy -46%, conflict +17% on second reading |
+| ⚡ **Physical Prompting** | Micro-dose σ=0.02 echo achieves +25% accuracy without prompt repetition (n=20) |
+| 📏 **Context Saturation** | Prompt repetition: +10% on short prompts, -20% on long prompts (4-bit quantization limit) |
+| 🔬 **Surgical L18 Strike** | Single-layer L18 injection: Math=95% vs. Baseline=15% (n=40) |
+| ❌ **Honest Null Result** | At n=150, Physical Prompting shows no effect (Fisher p=0.59). Baseline Math: 15%→90% from n alone |
+| 📊 **Methodological Lesson** | LLM perturbation experiments require n≥100 with Fisher exact testing |
+| 🧊 **Noise Amplitude Cliff** | Sharp transition: σ=0.03 (neutral) → σ=0.10 (destructive, -55% Math) |
+
+### 📊 Retained from v8
+
+
+| Discovery | Key Result |
+|-----------|------------|
+| 🌍 **Universal Homeostasis** | σ̄ = 0.074 ± 0.002 across Mistral, Qwen, Phi-3 — CV = 3.1% |
+| 🧠 **CfC Brain Atlas** | Sharp specialization (Mistral) vs. distributed representation (Qwen) |
+| 🛡️ **Plateau Robustness** | Qwen: 63%±8% Math from σ=0 to σ=0.15 (noise immunity) |
+| 🔪 **Digital Lobotomy** | Causal proof: Δ=-1.7% (Qwen) vs. Δ=-5.0% (Mistral) |
 
 ### 📊 Benchmark Summary (v3.1)
 
@@ -61,36 +62,29 @@ v8 establishes **AI Comparative Physiology**: cross-model experiments confirm σ
 
 ## 📋 Version History
 
-### v8 — AI Comparative Physiology (NEW)
+### v9 — Physical Prompting & Interpretability (NEW)
 
-**Phase 29: Cross-Model Homeostasis (Qwen)** — Universal law, first evidence:
-- Qwen2.5-7B: σ̄ = 0.075 (Δ = 0.004 vs. Mistral's 0.071)
-- Math accuracy 60% under homeostatic σ (vs. Mistral's 0%)
+**Season 7 (Phases 38-44): CfC-Transformer Integration Dynamics**
+- Phase 38: Reverse brain transplant — distributed CfC transfers, sharp CfC fails
+- Phase 39: Multi-donor fusion — weight-averaged CfC maintains homeostasis on 3 architectures
+- Phase 44: **L17-18 Universal Attractor** — all CfC topologies converge (CV=10.2%)
 
-**Phase 30: CfC Brain Atlas** — Internal representation mapping:
-- Linear probe: 86.7% (Mistral) / 81.7% (Qwen) task classification
-- Mistral: 4 specialist neurons (sharp specialization)
-- Qwen: 12 contributing neurons (distributed representation)
+**Season 8 (Phases 45-46): Prompt Repetition Anatomy**
+- Phase 45: **Déjà Vu Sensor** — entropy -46%, inter-layer conflict +17% on second reading
+- Phase 46: **Physical Prompting** — σ=0.02 micro-dose achieves +25% accuracy (n=20)
 
-**Phase 31b: Stochastic Resonance Verification** — Honest null result:
-- SR falsified at n=100 per level (Fisher p=1.0)
-- **Plateau Robustness** discovered: Qwen 63%±8% across σ=0 to 0.15
+**Season 9 (Phases 47-49): Validation & Methodological Lessons**
+- Phase 47: Context saturation — short prompts +10%, long prompts -20%
+- Phase 48: Surgical L18 Strike — single-layer > wide injection (Math=95%)
+- Phase 49: **Honest null result** — n=150 validation, Fisher p=0.59, baseline Math 15%→90%
 
-**Phase 32: Digital Lobotomy** — Causal proof:
+### v8 — AI Comparative Physiology
 
-| Model | Math-Neuron Knockout Δ | Strategy |
-|-------|----------------------|----------|
-| Mistral-7B | **-5.0%** | Sharp specialization (fragile) |
-| Qwen2.5-7B | **-1.7%** | Distributed representation (robust) |
-
-**Phase 33: Third Architecture (Phi-3-mini)** — Universality confirmed:
-
-| Model | Organization | σ̄ | Δ vs. mean |
-|-------|-------------|------|------------|
-| Mistral-7B | Meta | 0.071 | -0.003 |
-| Qwen2.5-7B | Alibaba | 0.075 | +0.001 |
-| Phi-3-mini | Microsoft | 0.075 | +0.001 |
-| **Grand mean** | | **0.074 ± 0.002** | **CV = 3.1%** |
+- Phase 29: Cross-model homeostasis (Qwen σ̄=0.075)
+- Phase 30: CfC Brain Atlas (sharp vs. distributed)
+- Phase 31b: Stochastic resonance null result (p=1.0)
+- Phase 32: Digital Lobotomy (causal proof)
+- Phase 33: Third architecture (Phi-3-mini), CV=3.1%
 
 ### v7 — Autonomous Homeostasis & Biological Egoism
 
@@ -148,56 +142,34 @@ snn-genesis/
 ├── core/
 │   └── snn_reservoir.py              # Chaotic SNN reservoir
 ├── experiments/
-│   ├── phase1_snn_noise.py           # Randomness validation
-│   ├── phase2_noise_injection.py     # LLM hidden state perturbation
-│   ├── phase3_data_generation.py     # Dream Catcher v2 pipeline
-│   ├── phase4_self_training.py       # QLoRA SFT vaccination
-│   ├── phase5_evolution_loop.py      # SNN vs randn evolution loop
-│   ├── phase5_scaleup.py             # n=30 scale-up (v1)
-│   ├── phase6_control_group.py       # Control Group A/B Test (v2)
-│   ├── phase7_layer_targeted.py      # Layer-Targeted Injection (v2)
-│   ├── phase8_dpo.py                 # DPO vs SFT (v2)
-│   ├── phase9_llm_judge.py          # LLM-as-a-Judge prompts (v2)
-│   ├── phase10_genesis_prime.py      # Genesis Prime + Too Much Medicine (v2)
-│   ├── phase11_creative_spark.py     # SNN for creativity (null result)
-│   ├── phase12_edge_of_chaos.py      # Edge of Chaos generation
-│   ├── phase13_nightmare_umap.py     # UMAP latent space visualization (v3)
-│   ├── phase14_truthfulqa.py         # TruthfulQA MC1 benchmark (v3)
-│   ├── phase14b_mmlu.py              # MMLU benchmark (v3)
-│   ├── phase15_cross_architecture.py # Qwen2.5-7B cross-arch (v3)
-│   ├── phase16_mmlu_full.py          # Full MMLU 57 subjects (v3.1)
-│   ├── phase17_layer_ablation.py     # Depth-dependent sensitivity (v4)
-│   ├── phase17b_nightmare_by_layer.py # Nightmare by layer range (v4)
-│   ├── phase17c_floor_effect.py      # Floor effect validation (v4)
-│   ├── phase17d_low_dose.py          # Dose-response curve (v4)
-│   ├── phase19_nightmare_transfer.py # Cross-model transfer test (v4)
-│   ├── phase19_analyze_transfer.py   # Transfer analysis & visualization (v4)
-│   ├── phase19b_same_scale_transfer.py # Same-scale transfer test (v4.1)
-│   ├── phase20_cfc_dosing.py         # CfC-Dosing adaptive σ control (v5)
-│   ├── phase20b_online_cfc.py        # Online-only CfC, no pre-training (v6)
-│   ├── phase20c_exploration_bonus.py # Gaussian bonus CfC (v6)
-│   ├── phase20d_quadratic_penalty.py # Quadratic homeostatic CfC (v6)
-│   ├── phase23_creative_spark.py     # Task-dependent sweet spots (v6)
-│   ├── phase24_dual_mode_brain.py    # Dual-Mode Brain per-sample CfC (v6)
-│   ├── phase24b_n200_evaluation.py   # n=200 PPO validation (v7)
-│   ├── phase25_cfc_hidden_umap.py    # UMAP hidden state analysis (v7)
-│   ├── phase26_3class_extension.py   # 3-class extension (v7)
-│   ├── phase26b_math_baseline.py     # Math baseline / Biological Egoism (v7)
-│   ├── phase27_ppo_dual_mode.py      # PPO migration (v7)
-│   ├── phase27b_lambda_ablation.py   # λ ablation (v7)
-│   ├── phase27c_ppo_n200.py          # PPO n=200 validation (v7)
-│   ├── phase28_calibration.py        # Calibration analysis (v7)
-│   ├── phase29_cross_model_homeostasis.py  # Cross-model homeostasis (v8) ← NEW
-│   ├── phase30_linear_probing.py     # CfC Brain Atlas (v8) ← NEW
-│   ├── phase31b_stochastic_resonance.py   # SR verification (v8) ← NEW
-│   ├── phase32_neuron_knockout.py    # Digital Lobotomy (v8) ← NEW
-│   └── phase33_third_model_homeostasis.py # Third architecture (v8) ← NEW
+│   ├── phase1-10_*.py                # v1-v2.2: Dream Journal, DPO, Layer-Targeted
+│   ├── phase13-16_*.py               # v3-v3.1: UMAP, TruthfulQA, MMLU, Cross-arch
+│   ├── phase17-19b_*.py              # v4-v4.1: Depth ablation, Dose-response, Transfer
+│   ├── phase20-24_*.py               # v5-v6: CfC-Dosing, Dual-Mode Brain
+│   ├── phase25-28_*.py               # v7: Homeostasis, PPO, 3-class, Calibration
+│   ├── phase29-33_*.py               # v8: Cross-model, Brain Atlas, Lobotomy
+│   ├── phase34_caveman_protocol.py   # Caveman protocol (v9)
+│   ├── phase36_entropy_taxonomy.py   # Entropy taxonomy (v9)
+│   ├── phase37_brain_transplant.py   # Brain transplant (v9)
+│   ├── phase38_reverse_transplant.py # Reverse transplant (v9) ← NEW
+│   ├── phase39_multi_donor_fusion.py # Multi-donor fusion (v9) ← NEW
+│   ├── phase40_fever_response.py     # Fever response (v9)
+│   ├── phase41_wiring_ablation.py    # Wiring ablation (v9)
+│   ├── phase42_conflict_sensor.py    # Conflict sensor (v9)
+│   ├── phase43_chaos_defibrillator.py # Chaos defibrillator (v9)
+│   ├── phase44_dynamic_depth.py      # Dynamic depth / L17-18 attractor (v9) ← NEW
+│   ├── phase45_dejavu_sensor.py      # Déjà Vu sensor (v9) ← NEW
+│   ├── phase46_phantom_echo.py       # Physical Prompting (v9) ← NEW
+│   ├── phase46b_phantom_echo_v2.py   # Physical Prompting v2 (v9)
+│   ├── phase47_dejavu_contradiction.py # Context saturation (v9) ← NEW
+│   ├── phase48_surgical_strike.py    # Surgical L18 Strike (v9) ← NEW
+│   └── phase49_large_validation.py   # Large-scale n=150 validation (v9) ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
-│   ├── phase*_log.json               # All experiment result logs (31 total)
+│   ├── phase*_log.json               # All experiment result logs
 │   └── phase19_transfer/             # Transfer test data
 ├── figures/
-│   └── phase*.png                    # All experiment figures (33 total)
+│   └── phase*.png                    # All experiment figures
 ├── papers/                           # Paper sources (see Zenodo DOI)
 ├── LICENSE
 └── README.md
@@ -263,6 +235,16 @@ python experiments/phase30_linear_probing.py           # CfC Brain Atlas
 python experiments/phase31b_stochastic_resonance.py    # SR verification
 python experiments/phase32_neuron_knockout.py           # Digital Lobotomy
 python experiments/phase33_third_model_homeostasis.py   # Third architecture (Phi-3)
+
+# v9 experiments (requires ~16GB+ VRAM)
+python experiments/phase38_reverse_transplant.py       # Reverse brain transplant
+python experiments/phase39_multi_donor_fusion.py        # Multi-donor CfC fusion
+python experiments/phase44_dynamic_depth.py             # L17-18 Universal Attractor
+python experiments/phase45_dejavu_sensor.py             # Déjà Vu sensor
+python experiments/phase46_phantom_echo.py              # Physical Prompting
+python experiments/phase47_dejavu_contradiction.py      # Context saturation
+python experiments/phase48_surgical_strike.py           # Surgical L18 Strike
+python experiments/phase49_large_validation.py          # Large-scale n=150 validation
 ```
 
 ## 🤖 AI Collaboration
@@ -270,8 +252,8 @@ python experiments/phase33_third_model_homeostasis.py   # Third architecture (Ph
 | Paper Version | AI Assistant |
 |--------------|:-------------|
 | v1 — v5 (Phases 5–20) | Google Gemini 3 Pro |
-| v6 — v7 (Phases 20b–28) | Anthropic Claude Opus 4.6 |
-| v8 (Phases 29–33) | Anthropic Claude Opus 4.6 |
+| v6 — v8 (Phases 20b–33) | Anthropic Claude Opus 4.6 |
+| v9 (Phases 34–49) | Google Gemini 2.5 Pro (Antigravity) |
 
 All experimental decisions, research direction, and final interpretation were made by the human author.
 
@@ -292,7 +274,7 @@ All experimental decisions, research direction, and final interpretation were ma
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v7: Autonomous Homeostasis and Biological Egoism in CfC-Controlled LLM Perturbation},
+  title={SNN-Genesis v9: From Universal Homeostasis to Physical Prompting},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},

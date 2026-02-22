@@ -1,0 +1,78 @@
+{
+  "experiment": "Phase 41: Wiring Ablation",
+  "model": "Mistral-7B",
+  "elapsed_minutes": 22.6,
+  "neuron_counts": [
+    8,
+    16,
+    32,
+    64
+  ],
+  "results": [
+    {
+      "num_neurons": 8,
+      "n_params": 393,
+      "mean_sigma_all": 0.07345,
+      "converged_sigma": 0.06746,
+      "sigma_factual": 0.06286,
+      "sigma_creative": 0.06615,
+      "sigma_math": 0.09136,
+      "max_separation": 0.0285,
+      "factual_acc": 32.5,
+      "math_acc": 32.5,
+      "creative_novelty": 0.941
+    },
+    {
+      "num_neurons": 16,
+      "n_params": 1225,
+      "mean_sigma_all": 0.07225,
+      "converged_sigma": 0.06229,
+      "sigma_factual": 0.06583,
+      "sigma_creative": 0.0688,
+      "sigma_math": 0.08211,
+      "max_separation": 0.01628,
+      "factual_acc": 37.5,
+      "math_acc": 40.0,
+      "creative_novelty": 0.9358
+    },
+    {
+      "num_neurons": 32,
+      "n_params": 4429,
+      "mean_sigma_all": 0.07567,
+      "converged_sigma": 0.08056,
+      "sigma_factual": 0.06993,
+      "sigma_creative": 0.07351,
+      "sigma_math": 0.08356,
+      "max_separation": 0.01363,
+      "factual_acc": 40.0,
+      "math_acc": 35.0,
+      "creative_novelty": 0.9384
+    },
+    {
+      "num_neurons": 64,
+      "n_params": 16622,
+      "mean_sigma_all": 0.07537,
+      "converged_sigma": 0.07733,
+      "sigma_factual": 0.0658,
+      "sigma_creative": 0.0783,
+      "sigma_math": 0.08201,
+      "max_separation": 0.01621,
+      "factual_acc": 25.0,
+      "math_acc": 32.5,
+      "creative_novelty": 0.9377
+    }
+  ],
+  "sigma_invariance": {
+    "converged_sigmas": [
+      0.06746,
+      0.06229,
+      0.08056,
+      0.07733
+    ],
+    "sigma_range": 0.01827,
+    "sigma_mean": 0.07191,
+    "sigma_std": 0.00736,
+    "is_invariant": false
+  },
+  "figure_path": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase41_wiring_ablation.png"
+}

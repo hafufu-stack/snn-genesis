@@ -1,0 +1,31 @@
+{
+  "experiment": "Phase 46: Phantom Echo",
+  "model": "Mistral-7B",
+  "elapsed_minutes": 2.3,
+  "sigma_echo": 0.1,
+  "echo_tokens": 2,
+  "results": {
+    "single": {
+      "factual_acc": 25.0,
+      "math_acc": 60.0,
+      "echo_fires": 0
+    },
+    "repeat": {
+      "factual_acc": 30.0,
+      "math_acc": 50.0,
+      "echo_fires": 0
+    },
+    "phantom": {
+      "factual_acc": 15.0,
+      "math_acc": 5.0,
+      "echo_fires": 80
+    }
+  },
+  "comparison": {
+    "phantom_vs_single_fact": -10.0,
+    "phantom_vs_single_math": -55.0,
+    "phantom_vs_repeat_fact": -15.0,
+    "phantom_vs_repeat_math": -45.0
+  },
+  "figure_path": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase46_phantom_echo.png"
+}

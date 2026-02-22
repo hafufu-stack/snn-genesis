@@ -1,0 +1,75 @@
+{
+  "experiment": "Phase 37: Brain Transplant",
+  "donor": "Qwen2.5-7B",
+  "host": "Mistral-7B",
+  "elapsed_minutes": 14.6,
+  "donor_result": {
+    "condition": "DONOR: Qwen2.5-7B",
+    "mode": "train",
+    "factual": {
+      "acc": 32.5,
+      "mean_sigma": 0.07217
+    },
+    "creative": {
+      "novelty": 0.9451,
+      "grammar_rate": 97.5,
+      "mean_sigma": 0.08228
+    },
+    "math": {
+      "acc": 62.5,
+      "mean_sigma": 0.07124
+    },
+    "mean_sigma_all": 0.07523,
+    "max_separation": 0.01104
+  },
+  "native_result": {
+    "condition": "NATIVE: Mistral-7B",
+    "mode": "train",
+    "factual": {
+      "acc": 42.5,
+      "mean_sigma": 0.08144
+    },
+    "creative": {
+      "novelty": 0.9459,
+      "grammar_rate": 87.5,
+      "mean_sigma": 0.08825
+    },
+    "math": {
+      "acc": 40.0,
+      "mean_sigma": 0.08209
+    },
+    "mean_sigma_all": 0.08393,
+    "max_separation": 0.00681
+  },
+  "transplant_result": {
+    "condition": "TRANSPLANT: Qwen CfC \u2192 Mistral-7B",
+    "mode": "transplant",
+    "factual": {
+      "acc": 35.0,
+      "mean_sigma": 0.08572
+    },
+    "creative": {
+      "novelty": 0.9419,
+      "grammar_rate": 100.0,
+      "mean_sigma": 0.05444
+    },
+    "math": {
+      "acc": 55.0,
+      "mean_sigma": 0.05242
+    },
+    "mean_sigma_all": 0.06419,
+    "max_separation": 0.0333
+  },
+  "comparison": {
+    "native_mean_sigma": 0.08393,
+    "transplant_mean_sigma": 0.06419,
+    "donor_mean_sigma": 0.07523,
+    "delta_native_transplant": 0.01974,
+    "delta_donor_transplant": 0.01104,
+    "native_math_acc": 40.0,
+    "transplant_math_acc": 55.0,
+    "donor_math_acc": 62.5,
+    "math_acc_change": 15.0
+  },
+  "figure_path": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase37_brain_transplant.png"
+}

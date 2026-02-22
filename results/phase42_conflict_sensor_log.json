@@ -1,0 +1,44 @@
+{
+  "experiment": "Phase 42: Internal Conflict Sensor (Google DTR-inspired)",
+  "model": "Mistral-7B",
+  "elapsed_minutes": 15.1,
+  "baseline": {
+    "mode": "baseline",
+    "input_size": 6,
+    "mean_sigma": 0.07871,
+    "sigma_factual": 0.0836,
+    "sigma_creative": 0.08098,
+    "sigma_math": 0.07155,
+    "max_separation": 0.01205,
+    "factual_acc": 35.0,
+    "math_acc": 47.5,
+    "creative_novelty": 0.9394,
+    "conflict_factual": 0.0,
+    "conflict_creative": 0.0,
+    "conflict_math": 0.0,
+    "sigma_conflict_correlation": 0.0
+  },
+  "enhanced": {
+    "mode": "enhanced",
+    "input_size": 8,
+    "mean_sigma": 0.06822,
+    "sigma_factual": 0.06191,
+    "sigma_creative": 0.0748,
+    "sigma_math": 0.06797,
+    "max_separation": 0.01289,
+    "factual_acc": 35.0,
+    "math_acc": 52.5,
+    "creative_novelty": 0.9283,
+    "conflict_factual": 0.21728,
+    "conflict_creative": 0.11197,
+    "conflict_math": 0.13269,
+    "sigma_conflict_correlation": -0.0739
+  },
+  "comparison": {
+    "math_delta": 5.0,
+    "factual_delta": 0.0,
+    "conflict_correlation": -0.0739,
+    "separation_improvement": 0.00084
+  },
+  "figure_path": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase42_conflict_sensor.png"
+}

@@ -1,0 +1,37 @@
+{
+  "experiment": "Phase 49: Large-Scale Validation",
+  "model": "Mistral-7B",
+  "n_total": 150,
+  "n_factual": 100,
+  "n_math": 50,
+  "elapsed_minutes": 2.9,
+  "baseline": {
+    "factual_acc": 35.0,
+    "math_acc": 90.0,
+    "f_correct": 35,
+    "f_total": 100,
+    "m_correct": 45,
+    "m_total": 50
+  },
+  "surgical": {
+    "factual_acc": 35.0,
+    "math_acc": 88.0,
+    "f_correct": 35,
+    "f_total": 100,
+    "m_correct": 44,
+    "m_total": 50
+  },
+  "fisher_overall": {
+    "odds_ratio": 0.9736,
+    "p_value": 0.591457
+  },
+  "fisher_factual": {
+    "odds_ratio": 1.0,
+    "p_value": 0.558893
+  },
+  "fisher_math": {
+    "odds_ratio": 0.8148,
+    "p_value": 0.737722
+  },
+  "figure_path": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase49_large_validation.png"
+}
