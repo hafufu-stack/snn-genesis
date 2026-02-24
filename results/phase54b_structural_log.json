@@ -1,0 +1,963 @@
+{
+  "experiment": "Phase 54b: The Structural Sanity Check",
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "purpose": "Test JSON structural integrity under different temperature/SNN conditions",
+  "elapsed_min": 3.9,
+  "phase51_hanoi": {
+    "baseline": {
+      "solve_rate": 16.0
+    },
+    "high_temp": {
+      "solve_rate": 28.0
+    },
+    "snn_echo": {
+      "solve_rate": 22.0
+    }
+  },
+  "structural_results": [
+    {
+      "condition": "baseline",
+      "temperature": 0.5,
+      "n_tasks": 20,
+      "n_valid_json": 18,
+      "json_validity_rate": 90.0,
+      "n_has_keys": 17,
+      "key_completeness_rate": 85.0
+    },
+    {
+      "condition": "high_temp",
+      "temperature": 1.2,
+      "n_tasks": 20,
+      "n_valid_json": 19,
+      "json_validity_rate": 95.0,
+      "n_has_keys": 18,
+      "key_completeness_rate": 90.0
+    },
+    {
+      "condition": "snn_echo",
+      "temperature": 0.5,
+      "n_tasks": 20,
+      "n_valid_json": 19,
+      "json_validity_rate": 95.0,
+      "n_has_keys": 18,
+      "key_completeness_rate": 90.0
+    }
+  ],
+  "detailed_results": {
+    "baseline": [
+      {
+        "task_idx": 0,
+        "instruction": "Extract: name, age, job, city, company",
+        "response": "{\n  \"name\": \"John Smith\",\n  \"age\": 34,\n  \"job\": \"software engineer\",\n  \"city\": \"San Francisco\",\n  \"company\": \"Google\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "name": "John Smith",
+          "age": 34,
+          "job": "software engineer",
+          "city": "San Francisco",
+          "company": "Google"
+        }
+      },
+      {
+        "task_idx": 1,
+        "instruction": "Extract: product, price, storage, color",
+        "response": "{\n  \"product\": \"iPhone 15 Pro\",\n  \"price\": \"$999\",\n  \"storage\": \"256GB\",\n  \"color\": \"Titanium Blue\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "product": "iPhone 15 Pro",
+          "price": "$999",
+          "storage": "256GB",
+          "color": "Titanium Blue"
+        }
+      },
+      {
+        "task_idx": 2,
+        "instruction": "Extract: name, year_built, height_meters, location",
+        "response": "{\n  \"name\": \"Tokyo Tower\",\n  \"year_built\": 1958,\n  \"height_meters\": 333\n}",
+        "valid_json": true,
+        "has_required_keys": false,
+        "parsed": {
+          "name": "Tokyo Tower",
+          "year_built": 1958,
+          "height_meters": 333
+        }
+      },
+      {
+        "task_idx": 3,
+        "instruction": "Extract: author, title, journal, year, citations",
+        "response": "{\n  \"author\": \"Dr. Maria Garcia\",\n  \"title\": \"'Neural Networks in Medicine'\",\n  \"journal\": \"Nature\",\n  \"year\": \"2024\",\n  \"citations\": \"45\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "author": "Dr. Maria Garcia",
+          "title": "'Neural Networks in Medicine'",
+          "journal": "Nature",
+          "year": "2024",
+          "citations": "45"
+        }
+      },
+      {
+        "task_idx": 4,
+        "instruction": "Extract: flight_number, departure_airport, departu",
+        "response": "{\n  \"flight_number\": \"AA123\",\n  \"departure_airport\": \"JFK\",\n  \"departure_time\": \"14:30\",\n  \"arrival_airport\": \"LAX\",\n  \"arrival_time\": \"17:45\",\n  \"pri",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "flight_number": "AA123",
+          "departure_airport": "JFK",
+          "departure_time": "14:30",
+          "arrival_airport": "LAX",
+          "arrival_time": "17:45",
+          "price": "$350"
+        }
+      },
+      {
+        "task_idx": 5,
+        "instruction": "Extract: ingredients (as list), temperature_celsiu",
+        "response": "{\n  \"ingredients\": [\"2 cups flour\", \"1 cup sugar\", \"3 eggs\", \"200ml milk\"],\n  \"temperature_celsius\": \"180\",\n  \"baking_time_minutes\": \"25\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "ingredients": [
+            "2 cups flour",
+            "1 cup sugar",
+            "3 eggs",
+            "200ml milk"
+          ],
+          "temperature_celsius": "180",
+          "baking_time_minutes": "25"
+        }
+      },
+      {
+        "task_idx": 6,
+        "instruction": "Extract: car_model, acceleration_0_60, range_miles",
+        "response": "{\n  \"car_model\": \"Tesla Model 3 Long Range\",\n  \"acceleration_0_60\": \"4.2 seconds\",\n  \"range_miles\": \"358\",\n  \"price\": \"$42,990\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "car_model": "Tesla Model 3 Long Range",
+          "acceleration_0_60": "4.2 seconds",
+          "range_miles": "358",
+          "price": "$42,990"
+        }
+      },
+      {
+        "task_idx": 7,
+        "instruction": "Extract: mountain, height_meters, countries (list)",
+        "response": "{\n  \"mountain\": \"Mount Everest\",\n  \"height_meters\": 8849,\n  \"countries\": [\"Nepal\", \"Tibet\"],\n  \"first_summit_year\": 1953,\n  \"first_climber\": \"Edmund H",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "mountain": "Mount Everest",
+          "height_meters": 8849,
+          "countries": [
+            "Nepal",
+            "Tibet"
+          ],
+          "first_summit_year": 1953,
+          "first_climber": "Edmund Hillary"
+        }
+      },
+      {
+        "task_idx": 8,
+        "instruction": "Extract: language, version, release_date, features",
+        "response": "{\n  \"language\": \"Python\",\n  \"version\": \"3.12\",\n  \"release_date\": \"October 2, 2023\",\n  \"features\": [\"improved error messages\", \"new type system\"]\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "language": "Python",
+          "version": "3.12",
+          "release_date": "October 2, 2023",
+          "features": [
+            "improved error messages",
+            "new type system"
+          ]
+        }
+      },
+      {
+        "task_idx": 9,
+        "instruction": "Extract: title, artist, year_range, dimensions, mu",
+        "response": "{\n  \"title\": \"Mona Lisa\",\n  \"artist\": \"Leonardo da Vinci\",\n  \"year_range\": [\"1503-1519\"],\n  \"dimensions\": [\"77cm x 53cm\"],\n  \"museum\": \"Louvre\",\n  \"ci",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "title": "Mona Lisa",
+          "artist": "Leonardo da Vinci",
+          "year_range": [
+            "1503-1519"
+          ],
+          "dimensions": [
+            "77cm x 53cm"
+          ],
+          "museum": "Louvre",
+          "city": "Paris"
+        }
+      },
+      {
+        "task_idx": 10,
+        "instruction": "Extract: company, ticker, price, date, market_cap,",
+        "response": "{\n  \"company\": \"Amazon\",\n  \"ticker\": \"AMZN\",\n  \"price\": 178.25,\n  \"date\": \"Feb 20, 2026\",\n  \"market_cap\": 1870000000000, // Assuming conversion of 'tr",
+        "valid_json": false,
+        "has_required_keys": false,
+        "parsed": null
+      },
+      {
+        "task_idx": 11,
+        "instruction": "Extract: patient_id, blood_pressure, heart_rate_bp",
+        "response": "{\n  \"patient_id\": \"P-4521\",\n  \"blood_pressure\": \"130/85\",\n  \"heart_rate_bpm\": \"72\",\n  \"temperature_c\": \"37.2\",\n  \"diagnosis\": \"hypertension stage 1\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "patient_id": "P-4521",
+          "blood_pressure": "130/85",
+          "heart_rate_bpm": "72",
+          "temperature_c": "37.2",
+          "diagnosis": "hypertension stage 1"
+        }
+      },
+      {
+        "task_idx": 12,
+        "instruction": "Extract: artist, date, venue, doors_open, ticket_p",
+        "response": "{\n  \"artist\": \"Adele\",\n  \"date\": \"March 15, 2026\",\n  \"venue\": \"Madison Square Garden\",\n  \"doors_open\": \"7 PM\",\n  \"ticket_price_range\": \"$85-$250\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "artist": "Adele",
+          "date": "March 15, 2026",
+          "venue": "Madison Square Garden",
+          "doors_open": "7 PM",
+          "ticket_price_range": "$85-$250"
+        }
+      },
+      {
+        "task_idx": 13,
+        "instruction": "Extract: server, cpu_percent, memory_used_gb, memo",
+        "response": "{\n  \"server\": \"us-east-1\",\n  \"cpu_percent\": 78,\n  \"memory_used_gb\": 12.4,\n  \"memory_total_gb\": 16,\n  \"disk_used_gb\": 450,\n  \"status\": \"warning\",\n  \"up",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "server": "us-east-1",
+          "cpu_percent": 78,
+          "memory_used_gb": 12.4,
+          "memory_total_gb": 16,
+          "disk_used_gb": 450,
+          "status": "warning",
+          "uptime_days": 45
+        }
+      },
+      {
+        "task_idx": 14,
+        "instruction": "Extract: name, length_km, construction_start, unes",
+        "response": "{\n  \"name\": \"The Great Wall of China\",\n  \"length_km\": 21196,\n  \"construction_start\": \"7th century BC\",\n  \"unesco_year\": 1987\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "name": "The Great Wall of China",
+          "length_km": 21196,
+          "construction_start": "7th century BC",
+          "unesco_year": 1987
+        }
+      },
+      {
+        "task_idx": 15,
+        "instruction": "Extract: order_id, items (list with name, quantity",
+        "response": "{\n  \"order_id\": \"ORD-2026-789\",\n  \"items\": [\n    {\n      \"name\": \"Widget A\",\n      \"quantity\": 3,\n      \"unit_price\": \"$12.99\"\n    },\n    {\n      \"nam",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "order_id": "ORD-2026-789",
+          "items": [
+            {
+              "name": "Widget A",
+              "quantity": 3,
+              "unit_price": "$12.99"
+            },
+            {
+              "name": "Widget B",
+              "quantity": 1,
+              "unit_price": "$24.50"
+            }
+          ],
+          "subtotal": "$63.47",
+          "tax": "$5.08",
+          "total": "$68.55"
+        }
+      },
+      {
+        "task_idx": 16,
+        "instruction": "Extract: name, category, date, wind_speed_kmh, dam",
+        "response": "{\n  \"name\": \"Hurricane Katrina\",\n  \"category\": null, // Category is not explicitly mentioned as a number in the provided text\n  \"date\": \"August 29, 20",
+        "valid_json": false,
+        "has_required_keys": false,
+        "parsed": null
+      },
+      {
+        "task_idx": 17,
+        "instruction": "Extract: network_name, encryption, channel, freque",
+        "response": "{\n  \"network_name\": \"Office-5G\",\n  \"encryption\": \"WPA3\",\n  \"channel\": \"36\",\n  \"frequency\": \"5GHz\",\n  \"connected_devices\": \"23\",\n  \"signal_dbm\": \"-42\"\n",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "network_name": "Office-5G",
+          "encryption": "WPA3",
+          "channel": "36",
+          "frequency": "5GHz",
+          "connected_devices": "23",
+          "signal_dbm": "-42"
+        }
+      },
+      {
+        "task_idx": 18,
+        "instruction": "Extract: professor, course_code, course_name, days",
+        "response": "{\n  \"professor\": \"Tanaka\",\n  \"course_code\": null,\n  \"course_name\": \"CS101\",\n  \"days\": [\"Monday\", \"Wednesday\"],\n  \"time\": {\"start\": \"10:00\", \"end\": \"11",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "professor": "Tanaka",
+          "course_code": null,
+          "course_name": "CS101",
+          "days": [
+            "Monday",
+            "Wednesday"
+          ],
+          "time": {
+            "start": "10:00",
+            "end": "11:30"
+          },
+          "room": "302",
+          "building": "Building A"
+        }
+      },
+      {
+        "task_idx": 19,
+        "instruction": "Extract: rocket, mission, launch_date, launch_site",
+        "response": "{\n  \"rocket\": \"SpaceX Falcon 9\",\n  \"mission\": \"Starlink batch 7-10\",\n  \"launch_date\": \"Feb 18, 2026\",\n  \"launch_site\": \"Cape Canaveral\",\n  \"satellites",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "rocket": "SpaceX Falcon 9",
+          "mission": "Starlink batch 7-10",
+          "launch_date": "Feb 18, 2026",
+          "launch_site": "Cape Canaveral",
+          "satellites_deployed": 23,
+          "booster_id": "B1081",
+          "landing_success": true
+        }
+      }
+    ],
+    "high_temp": [
+      {
+        "task_idx": 0,
+        "instruction": "Extract: name, age, job, city, company",
+        "response": "{\n  \"name\": \"John Smith\",\n  \"age\": 34,\n  \"job\": \"software engineer\",\n  \"city\": \"San Francisco\",\n  \"company\": \"Google\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "name": "John Smith",
+          "age": 34,
+          "job": "software engineer",
+          "city": "San Francisco",
+          "company": "Google"
+        }
+      },
+      {
+        "task_idx": 1,
+        "instruction": "Extract: product, price, storage, color",
+        "response": "{\n  \"product\": \"iPhone 15 Pro\",\n  \"price\": \"$999\",\n  \"storage\": \"256GB\",\n  \"color\": \"Titanium Blue\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "product": "iPhone 15 Pro",
+          "price": "$999",
+          "storage": "256GB",
+          "color": "Titanium Blue"
+        }
+      },
+      {
+        "task_idx": 2,
+        "instruction": "Extract: name, year_built, height_meters, location",
+        "response": "{\n  \"name\": \"Tokyo Tower\",\n  \"year_built\": 1958,\n  \"height_meters\": 333\n}",
+        "valid_json": true,
+        "has_required_keys": false,
+        "parsed": {
+          "name": "Tokyo Tower",
+          "year_built": 1958,
+          "height_meters": 333
+        }
+      },
+      {
+        "task_idx": 3,
+        "instruction": "Extract: author, title, journal, year, citations",
+        "response": "{\n  \"author\": \"Dr. Maria Garcia\",\n  \"title\": \"'Neural Networks in Medicine'\",\n  \"journal\": \"Nature\",\n  \"year\": \"2024\",\n  \"citations\": \"45\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "author": "Dr. Maria Garcia",
+          "title": "'Neural Networks in Medicine'",
+          "journal": "Nature",
+          "year": "2024",
+          "citations": "45"
+        }
+      },
+      {
+        "task_idx": 4,
+        "instruction": "Extract: flight_number, departure_airport, departu",
+        "response": "{\n  \"flight_number\": \"AA123\",\n  \"departure_airport\": \"JFK\",\n  \"departure_time\": \"14:30\",\n  \"arrival_airport\": \"LAX\",\n  \"arrival_time\": \"17:45\",\n  \"pri",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "flight_number": "AA123",
+          "departure_airport": "JFK",
+          "departure_time": "14:30",
+          "arrival_airport": "LAX",
+          "arrival_time": "17:45",
+          "price": "$350"
+        }
+      },
+      {
+        "task_idx": 5,
+        "instruction": "Extract: ingredients (as list), temperature_celsiu",
+        "response": "{\n\"ingredients\": [\"2 cups flour\", \"1 cup sugar\", \"3 eggs\", \"200ml milk\"],\n\"temperature_celsius\": \"180\",\n\"baking_time_minutes\": \"25\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "ingredients": [
+            "2 cups flour",
+            "1 cup sugar",
+            "3 eggs",
+            "200ml milk"
+          ],
+          "temperature_celsius": "180",
+          "baking_time_minutes": "25"
+        }
+      },
+      {
+        "task_idx": 6,
+        "instruction": "Extract: car_model, acceleration_0_60, range_miles",
+        "response": "{\n  \"car_model\": \"Tesla Model 3 Long Range\",\n  \"acceleration_0_60\": \"4.2 seconds\",\n  \"range_miles\": \"358\",\n  \"price\": \"$42,990\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "car_model": "Tesla Model 3 Long Range",
+          "acceleration_0_60": "4.2 seconds",
+          "range_miles": "358",
+          "price": "$42,990"
+        }
+      },
+      {
+        "task_idx": 7,
+        "instruction": "Extract: mountain, height_meters, countries (list)",
+        "response": "{\n  \"mountain\": \"Mount Everest\",\n  \"height_meters\": 8849,\n  \"countries\": [\"Nepal\", \"Tibet\"],\n  \"first_summit_year\": 1953,\n  \"first_climber\": \"Edmund H",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "mountain": "Mount Everest",
+          "height_meters": 8849,
+          "countries": [
+            "Nepal",
+            "Tibet"
+          ],
+          "first_summit_year": 1953,
+          "first_climber": "Edmund Hillary"
+        }
+      },
+      {
+        "task_idx": 8,
+        "instruction": "Extract: language, version, release_date, features",
+        "response": "{\n\"language\": \"Python\",\n\"version\": \"3.12\",\n\"release_date\": \"2023-10-02\",\n\"features\": [\"improved error messages\", \"new type system\"]\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "language": "Python",
+          "version": "3.12",
+          "release_date": "2023-10-02",
+          "features": [
+            "improved error messages",
+            "new type system"
+          ]
+        }
+      },
+      {
+        "task_idx": 9,
+        "instruction": "Extract: title, artist, year_range, dimensions, mu",
+        "response": "{\n  \"title\": \"Mona Lisa\",\n  \"artist\": \"Leonardo da Vinci\",\n  \"year_range\": [\"1503-1519\"],\n  \"dimensions\": \"[77cm x 53cm]\",\n  \"museum\": \"Louvre\",\n  \"ci",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "title": "Mona Lisa",
+          "artist": "Leonardo da Vinci",
+          "year_range": [
+            "1503-1519"
+          ],
+          "dimensions": "[77cm x 53cm]",
+          "museum": "Louvre",
+          "city": "Paris"
+        }
+      },
+      {
+        "task_idx": 10,
+        "instruction": "Extract: company, ticker, price, date, market_cap,",
+        "response": "{\n  \"company\": \"Amazon\",\n  \"ticker\": \"AMZN\",\n  \"price\": 178.25,\n  \"date\": \"Feb 20, 2026\",\n  \"market_cap\": 1870000000000,\n  \"pe_ratio\": 62.3\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "company": "Amazon",
+          "ticker": "AMZN",
+          "price": 178.25,
+          "date": "Feb 20, 2026",
+          "market_cap": 1870000000000,
+          "pe_ratio": 62.3
+        }
+      },
+      {
+        "task_idx": 11,
+        "instruction": "Extract: patient_id, blood_pressure, heart_rate_bp",
+        "response": "{\n  \"patient_id\": \"P-4521\",\n  \"blood_pressure\": \"130/85\",\n  \"heart_rate_bpm\": \"72\",\n  \"temperature_c\": \"37.2\" ,\n  \"diagnosis\": \"hypertension stage 1\"\n",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "patient_id": "P-4521",
+          "blood_pressure": "130/85",
+          "heart_rate_bpm": "72",
+          "temperature_c": "37.2",
+          "diagnosis": "hypertension stage 1"
+        }
+      },
+      {
+        "task_idx": 12,
+        "instruction": "Extract: artist, date, venue, doors_open, ticket_p",
+        "response": "{\n  \"artist\": \"Adele\",\n  \"date\": \"March 15, 2026\",\n  \"venue\": \"Madison Square Garden\",\n  \"doors_open\": \"7 PM\",\n  \"ticket_price_range\": \"$85-$250\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "artist": "Adele",
+          "date": "March 15, 2026",
+          "venue": "Madison Square Garden",
+          "doors_open": "7 PM",
+          "ticket_price_range": "$85-$250"
+        }
+      },
+      {
+        "task_idx": 13,
+        "instruction": "Extract: server, cpu_percent, memory_used_gb, memo",
+        "response": "{\n  \"server\": \"us-east-1\",\n  \"cpu_percent\": 78,\n  \"memory_used_gb\": 12.4,\n  \"memory_total_gb\": 16,\n  \"disk_used_gb\": 450,\n  \"status\": \"warning\",\n  \"up",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "server": "us-east-1",
+          "cpu_percent": 78,
+          "memory_used_gb": 12.4,
+          "memory_total_gb": 16,
+          "disk_used_gb": 450,
+          "status": "warning",
+          "uptime_days": 45
+        }
+      },
+      {
+        "task_idx": 14,
+        "instruction": "Extract: name, length_km, construction_start, unes",
+        "response": "{\n  \"name\": \"Great Wall of China\",\n  \"length_km\": 21196,\n  \"construction_start\": \"7th century BC\",\n  \"unesco_year\": 1987\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "name": "Great Wall of China",
+          "length_km": 21196,
+          "construction_start": "7th century BC",
+          "unesco_year": 1987
+        }
+      },
+      {
+        "task_idx": 15,
+        "instruction": "Extract: order_id, items (list with name, quantity",
+        "response": "{\n  \"order_id\": \"ORD-2026-789\",\n  \"items\": [\n    {\"name\": \"Widget A\", \"quantity\": 3, \"unit_price\": 12.99},\n    {\"name\": \"Widget B\", \"quantity\": 1, \"un",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "order_id": "ORD-2026-789",
+          "items": [
+            {
+              "name": "Widget A",
+              "quantity": 3,
+              "unit_price": 12.99
+            },
+            {
+              "name": "Widget B",
+              "quantity": 1,
+              "unit_price": 24.5
+            }
+          ],
+          "subtotal": 63.47,
+          "tax": 5.08,
+          "total": 68.55
+        }
+      },
+      {
+        "task_idx": 16,
+        "instruction": "Extract: name, category, date, wind_speed_kmh, dam",
+        "response": "{\n  \"name\": \"Hurricane Katrina\",\n  \"category\": null, // The text does not specify hurricane's category, so it is left as null here for accuracy.\n  \"da",
+        "valid_json": false,
+        "has_required_keys": false,
+        "parsed": null
+      },
+      {
+        "task_idx": 17,
+        "instruction": "Extract: network_name, encryption, channel, freque",
+        "response": "{\n  \"network_name\": \"Office-5G\",\n  \"encryption\": \"WPA3\",\n  \"channel\": 36,\n  \"frequency\": \"5GHz\",\n  \"connected_devices\": 23,\n  \"signal_dbm\": \"-42\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "network_name": "Office-5G",
+          "encryption": "WPA3",
+          "channel": 36,
+          "frequency": "5GHz",
+          "connected_devices": 23,
+          "signal_dbm": "-42"
+        }
+      },
+      {
+        "task_idx": 18,
+        "instruction": "Extract: professor, course_code, course_name, days",
+        "response": "{\n  \"professor\": \"Tanaka\",\n  \"course_code\": null,\n  \"course_name\": \"CS101\",\n  \"days\": [\"Monday\", \"Wednesday\"],\n  \"time\": \"10:00-11:30\",\n  \"room\": \"Roo",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "professor": "Tanaka",
+          "course_code": null,
+          "course_name": "CS101",
+          "days": [
+            "Monday",
+            "Wednesday"
+          ],
+          "time": "10:00-11:30",
+          "room": "Room 302",
+          "building": "Building A"
+        }
+      },
+      {
+        "task_idx": 19,
+        "instruction": "Extract: rocket, mission, launch_date, launch_site",
+        "response": "{\n  \"rocket\": \"Falcon 9\",\n  \"mission\": \"Starlink batch 7-10\",\n  \"launch_date\": \"2026-02-18\",\n  \"launch_site\": \"Cape Canaveral\",\n  \"satellites_deployed",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "rocket": "Falcon 9",
+          "mission": "Starlink batch 7-10",
+          "launch_date": "2026-02-18",
+          "launch_site": "Cape Canaveral",
+          "satellites_deployed": 23,
+          "booster_id": "B1081",
+          "landing_success": true
+        }
+      }
+    ],
+    "snn_echo": [
+      {
+        "task_idx": 0,
+        "instruction": "Extract: name, age, job, city, company",
+        "response": "{\n  \"name\": \"John Smith\",\n  \"age\": 34,\n  \"job\": \"software engineer\",\n  \"city\": \"San Francisco\",\n  \"company\": \"Google\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "name": "John Smith",
+          "age": 34,
+          "job": "software engineer",
+          "city": "San Francisco",
+          "company": "Google"
+        }
+      },
+      {
+        "task_idx": 1,
+        "instruction": "Extract: product, price, storage, color",
+        "response": "{\n  \"product\": \"iPhone 15 Pro\",\n  \"price\": \"$999\",\n  \"storage\": \"256GB\",\n  \"color\": \"Titanium Blue\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "product": "iPhone 15 Pro",
+          "price": "$999",
+          "storage": "256GB",
+          "color": "Titanium Blue"
+        }
+      },
+      {
+        "task_idx": 2,
+        "instruction": "Extract: name, year_built, height_meters, location",
+        "response": "{\n  \"name\": \"Tokyo Tower\",\n  \"year_built\": 1958,\n  \"height_meters\": 333\n}",
+        "valid_json": true,
+        "has_required_keys": false,
+        "parsed": {
+          "name": "Tokyo Tower",
+          "year_built": 1958,
+          "height_meters": 333
+        }
+      },
+      {
+        "task_idx": 3,
+        "instruction": "Extract: author, title, journal, year, citations",
+        "response": "{\n  \"author\": \"Dr. Maria Garcia\",\n  \"title\": \"'Neural Networks in Medicine'\",\n  \"journal\": \"Nature\",\n  \"year\": \"2024\",\n  \"citations\": \"45\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "author": "Dr. Maria Garcia",
+          "title": "'Neural Networks in Medicine'",
+          "journal": "Nature",
+          "year": "2024",
+          "citations": "45"
+        }
+      },
+      {
+        "task_idx": 4,
+        "instruction": "Extract: flight_number, departure_airport, departu",
+        "response": "{\n  \"flight_number\": \"AA123\",\n  \"departure_airport\": \"JFK\",\n  \"departure_time\": \"14:30\",\n  \"arrival_airport\": \"LAX\",\n  \"arrival_time\": \"17:45\",\n  \"pri",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "flight_number": "AA123",
+          "departure_airport": "JFK",
+          "departure_time": "14:30",
+          "arrival_airport": "LAX",
+          "arrival_time": "17:45",
+          "price": "$350"
+        }
+      },
+      {
+        "task_idx": 5,
+        "instruction": "Extract: ingredients (as list), temperature_celsiu",
+        "response": "{\n  \"ingredients\": [\"2 cups flour\", \"1 cup sugar\", \"3 eggs\", \"200ml milk\"],\n  \"temperature_celsius\": \"180\",\n  \"baking_time_minutes\": \"25\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "ingredients": [
+            "2 cups flour",
+            "1 cup sugar",
+            "3 eggs",
+            "200ml milk"
+          ],
+          "temperature_celsius": "180",
+          "baking_time_minutes": "25"
+        }
+      },
+      {
+        "task_idx": 6,
+        "instruction": "Extract: car_model, acceleration_0_60, range_miles",
+        "response": "{\n  \"car_model\": \"Tesla Model 3 Long Range\",\n  \"acceleration_0_60\": \"4.2 seconds\",\n  \"range_miles\": \"358 miles\",\n  \"price\": \"$42,990\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "car_model": "Tesla Model 3 Long Range",
+          "acceleration_0_60": "4.2 seconds",
+          "range_miles": "358 miles",
+          "price": "$42,990"
+        }
+      },
+      {
+        "task_idx": 7,
+        "instruction": "Extract: mountain, height_meters, countries (list)",
+        "response": "{\n  \"mountain\": \"Mount Everest\",\n  \"height_meters\": 8849,\n  \"countries\": [\"Nepal\", \"Tibet\"],\n  \"first_summit_year\": 1953,\n  \"first_climber\": \"Edmund H",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "mountain": "Mount Everest",
+          "height_meters": 8849,
+          "countries": [
+            "Nepal",
+            "Tibet"
+          ],
+          "first_summit_year": 1953,
+          "first_climber": "Edmund Hillary"
+        }
+      },
+      {
+        "task_idx": 8,
+        "instruction": "Extract: language, version, release_date, features",
+        "response": "{\n  \"language\": \"Python\",\n  \"version\": \"3.12\",\n  \"release_date\": \"October 2, 2023\",\n  \"features\": [\"improved error messages\", \"new type system\"]\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "language": "Python",
+          "version": "3.12",
+          "release_date": "October 2, 2023",
+          "features": [
+            "improved error messages",
+            "new type system"
+          ]
+        }
+      },
+      {
+        "task_idx": 9,
+        "instruction": "Extract: title, artist, year_range, dimensions, mu",
+        "response": "{\n  \"title\": \"Mona Lisa\",\n  \"artist\": \"Leonardo da Vinci\",\n  \"year_range\": [\"1503-1519\"],\n  \"dimensions\": [\"77cm x 53cm\"],\n  \"museum\": \"Louvre\",\n  \"ci",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "title": "Mona Lisa",
+          "artist": "Leonardo da Vinci",
+          "year_range": [
+            "1503-1519"
+          ],
+          "dimensions": [
+            "77cm x 53cm"
+          ],
+          "museum": "Louvre",
+          "city": "Paris"
+        }
+      },
+      {
+        "task_idx": 10,
+        "instruction": "Extract: company, ticker, price, date, market_cap,",
+        "response": "{\n  \"company\": \"Not specified\",\n  \"ticker\": \"AMZN\",\n  \"price\": 178.25,\n  \"date\": \"Feb 20, 2026\",\n  \"market_cap\": 1870000000000, // Converted to decima",
+        "valid_json": false,
+        "has_required_keys": false,
+        "parsed": null
+      },
+      {
+        "task_idx": 11,
+        "instruction": "Extract: patient_id, blood_pressure, heart_rate_bp",
+        "response": "{\n  \"patient_id\": \"P-4521\",\n  \"blood_pressure\": \"130/85\",\n  \"heart_rate_bpm\": \"72\",\n  \"temperature_c\": \"37.2\",\n  \"diagnosis\": \"hypertension stage 1\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "patient_id": "P-4521",
+          "blood_pressure": "130/85",
+          "heart_rate_bpm": "72",
+          "temperature_c": "37.2",
+          "diagnosis": "hypertension stage 1"
+        }
+      },
+      {
+        "task_idx": 12,
+        "instruction": "Extract: artist, date, venue, doors_open, ticket_p",
+        "response": "{\n  \"artist\": \"Adele\",\n  \"date\": \"March 15, 2026\",\n  \"venue\": \"Madison Square Garden\",\n  \"doors_open\": \"7 PM\",\n  \"ticket_price_range\": \"$85-$250\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "artist": "Adele",
+          "date": "March 15, 2026",
+          "venue": "Madison Square Garden",
+          "doors_open": "7 PM",
+          "ticket_price_range": "$85-$250"
+        }
+      },
+      {
+        "task_idx": 13,
+        "instruction": "Extract: server, cpu_percent, memory_used_gb, memo",
+        "response": "{\n  \"server\": \"us-east-1\",\n  \"cpu_percent\": 78,\n  \"memory_used_gb\": 12.4,\n  \"memory_total_gb\": 16,\n  \"disk_used_gb\": 450,\n  \"status\": \"warning\",\n  \"up",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "server": "us-east-1",
+          "cpu_percent": 78,
+          "memory_used_gb": 12.4,
+          "memory_total_gb": 16,
+          "disk_used_gb": 450,
+          "status": "warning",
+          "uptime_days": 45
+        }
+      },
+      {
+        "task_idx": 14,
+        "instruction": "Extract: name, length_km, construction_start, unes",
+        "response": "{\n  \"name\": \"Great Wall of China\",\n  \"length_km\": 21196,\n  \"construction_start\": \"7th century BC\",\n  \"unesco_year\": 1987\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "name": "Great Wall of China",
+          "length_km": 21196,
+          "construction_start": "7th century BC",
+          "unesco_year": 1987
+        }
+      },
+      {
+        "task_idx": 15,
+        "instruction": "Extract: order_id, items (list with name, quantity",
+        "response": "{\n  \"order_id\": \"ORD-2026-789\",\n  \"items\": [\n    {\"name\": \"Widget A\", \"quantity\": 3, \"unit_price\": 12.99},\n    {\"name\": \"Widget B\", \"quantity\": 1, \"un",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "order_id": "ORD-2026-789",
+          "items": [
+            {
+              "name": "Widget A",
+              "quantity": 3,
+              "unit_price": 12.99
+            },
+            {
+              "name": "Widget B",
+              "quantity": 1,
+              "unit_price": 24.5
+            }
+          ],
+          "subtotal": 63.47,
+          "tax": 5.08,
+          "total": 68.55
+        }
+      },
+      {
+        "task_idx": 16,
+        "instruction": "Extract: name, category, date, wind_speed_kmh, dam",
+        "response": "{\n  \"name\": \"Hurricane Katrina\",\n  \"category\": null,\n  \"date\": \"August 29, 2005\",\n  \"wind_speed_kmh\": 280,\n  \"damage_billion_usd\": 125\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "name": "Hurricane Katrina",
+          "category": null,
+          "date": "August 29, 2005",
+          "wind_speed_kmh": 280,
+          "damage_billion_usd": 125
+        }
+      },
+      {
+        "task_idx": 17,
+        "instruction": "Extract: network_name, encryption, channel, freque",
+        "response": "{\n  \"network_name\": \"Office-5G\",\n  \"encryption\": \"WPA3\",\n  \"channel\": 36,\n  \"frequency\": \"5GHz\",\n  \"connected_devices\": 23,\n  \"signal_dbm\": \"-42\"\n}",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "network_name": "Office-5G",
+          "encryption": "WPA3",
+          "channel": 36,
+          "frequency": "5GHz",
+          "connected_devices": 23,
+          "signal_dbm": "-42"
+        }
+      },
+      {
+        "task_idx": 18,
+        "instruction": "Extract: professor, course_code, course_name, days",
+        "response": "{\n  \"professor\": \"Tanaka\",\n  \"course_code\": null,\n  \"course_name\": \"CS101 (Intro to Programming)\",\n  \"days\": [\"Monday\", \"Wednesday\"],\n  \"time\": \"10:00",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "professor": "Tanaka",
+          "course_code": null,
+          "course_name": "CS101 (Intro to Programming)",
+          "days": [
+            "Monday",
+            "Wednesday"
+          ],
+          "time": "10:00-11:30",
+          "room": "Room 302",
+          "building": "Building A"
+        }
+      },
+      {
+        "task_idx": 19,
+        "instruction": "Extract: rocket, mission, launch_date, launch_site",
+        "response": "{\n  \"rocket\": \"SpaceX Falcon 9\",\n  \"mission\": \"Starlink batch 7-10\",\n  \"launch_date\": \"Feb 18, 2026\",\n  \"launch_site\": \"Cape Canaveral\",\n  \"satellites",
+        "valid_json": true,
+        "has_required_keys": true,
+        "parsed": {
+          "rocket": "SpaceX Falcon 9",
+          "mission": "Starlink batch 7-10",
+          "launch_date": "Feb 18, 2026",
+          "launch_site": "Cape Canaveral",
+          "satellites_deployed": 23,
+          "booster_id": "B1081",
+          "landing_success": true
+        }
+      }
+    ]
+  },
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase54b_structural_sanity.png"
+}
