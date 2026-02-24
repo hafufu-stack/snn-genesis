@@ -1,0 +1,946 @@
+{
+  "experiment": "Phase 54: The Sanity Check",
+  "model": "Mistral-7B-Instruct-v0.3",
+  "purpose": "Test factual accuracy under conditions that improve Hanoi solve rate",
+  "elapsed_min": 1.0,
+  "phase51_hanoi": {
+    "baseline": {
+      "solve_rate": 16.0,
+      "n_solved": 8,
+      "n_trials": 50
+    },
+    "high_temp": {
+      "solve_rate": 28.0,
+      "n_solved": 14,
+      "n_trials": 50
+    },
+    "snn_echo": {
+      "solve_rate": 22.0,
+      "n_solved": 11,
+      "n_trials": 50
+    }
+  },
+  "factual_results": [
+    {
+      "condition": "baseline",
+      "temperature": 0.5,
+      "n_questions": 30,
+      "n_correct": 29,
+      "accuracy": 96.7,
+      "by_category": {
+        "geography": {
+          "correct": 10,
+          "total": 10,
+          "accuracy": 100.0
+        },
+        "math": {
+          "correct": 10,
+          "total": 10,
+          "accuracy": 100.0
+        },
+        "science": {
+          "correct": 9,
+          "total": 10,
+          "accuracy": 90.0
+        }
+      }
+    },
+    {
+      "condition": "high_temp",
+      "temperature": 1.2,
+      "n_questions": 30,
+      "n_correct": 29,
+      "accuracy": 96.7,
+      "by_category": {
+        "geography": {
+          "correct": 10,
+          "total": 10,
+          "accuracy": 100.0
+        },
+        "math": {
+          "correct": 10,
+          "total": 10,
+          "accuracy": 100.0
+        },
+        "science": {
+          "correct": 9,
+          "total": 10,
+          "accuracy": 90.0
+        }
+      }
+    },
+    {
+      "condition": "snn_echo",
+      "temperature": 0.5,
+      "n_questions": 30,
+      "n_correct": 30,
+      "accuracy": 100.0,
+      "by_category": {
+        "geography": {
+          "correct": 10,
+          "total": 10,
+          "accuracy": 100.0
+        },
+        "math": {
+          "correct": 10,
+          "total": 10,
+          "accuracy": 100.0
+        },
+        "science": {
+          "correct": 10,
+          "total": 10,
+          "accuracy": 100.0
+        }
+      }
+    }
+  ],
+  "detailed_results": {
+    "baseline": [
+      {
+        "question": "What is the capital of Japan?",
+        "expected": [
+          "tokyo"
+        ],
+        "response": "Tokyo",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is the capital of France?",
+        "expected": [
+          "paris"
+        ],
+        "response": "Paris",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is the largest continent by area?",
+        "expected": [
+          "asia"
+        ],
+        "response": "Asia",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What ocean lies between Europe and North America?",
+        "expected": [
+          "atlantic"
+        ],
+        "response": "Atlantic Ocean",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is the capital of Germany?",
+        "expected": [
+          "berlin"
+        ],
+        "response": "Berlin",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What country has the largest population in the world?",
+        "expected": [
+          "india",
+          "china"
+        ],
+        "response": "China",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "On which continent is Brazil located?",
+        "expected": [
+          "south america"
+        ],
+        "response": "South America",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is the capital of the United Kingdom?",
+        "expected": [
+          "london"
+        ],
+        "response": "London",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is the longest river in Africa?",
+        "expected": [
+          "nile"
+        ],
+        "response": "Nile River",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is the capital of Italy?",
+        "expected": [
+          "rome",
+          "roma"
+        ],
+        "response": "Rome",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is 7 + 8?",
+        "expected": [
+          "15"
+        ],
+        "response": "15",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is 12 x 12?",
+        "expected": [
+          "144"
+        ],
+        "response": "144",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is the square root of 64?",
+        "expected": [
+          "8"
+        ],
+        "response": "8",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is 100 divided by 4?",
+        "expected": [
+          "25"
+        ],
+        "response": "25",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is 2 to the power of 10?",
+        "expected": [
+          "1024"
+        ],
+        "response": "1024",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is 15% of 200?",
+        "expected": [
+          "30"
+        ],
+        "response": "30",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "How many sides does a hexagon have?",
+        "expected": [
+          "6",
+          "six"
+        ],
+        "response": "6",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is 3 factorial (3!)?",
+        "expected": [
+          "6",
+          "six"
+        ],
+        "response": "6",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is the value of pi rounded to 2 decimal places?",
+        "expected": [
+          "3.14"
+        ],
+        "response": "3.14",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is 17 - 9?",
+        "expected": [
+          "8"
+        ],
+        "response": "8",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is the chemical formula for water?",
+        "expected": [
+          "h2o"
+        ],
+        "response": "H2O",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "What planet is closest to the Sun?",
+        "expected": [
+          "mercury"
+        ],
+        "response": "Mercury",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "How many days are in a standard (non-leap) year?",
+        "expected": [
+          "365"
+        ],
+        "response": "365",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "What gas do humans breathe in to survive?",
+        "expected": [
+          "oxygen",
+          "o2"
+        ],
+        "response": "Oxygen",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "What is the boiling point of water in Celsius?",
+        "expected": [
+          "100"
+        ],
+        "response": "100 degrees Celsius",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "How many legs does a spider have?",
+        "expected": [
+          "8",
+          "eight"
+        ],
+        "response": "8 (usually)",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "What is the speed of light approximately in km/s?",
+        "expected": [
+          "300000",
+          "300,000",
+          "3e5",
+          "299792"
+        ],
+        "response": "299,792 kilometers per second (approximately)",
+        "correct": false,
+        "category": "science"
+      },
+      {
+        "question": "What year did World War II end?",
+        "expected": [
+          "1945"
+        ],
+        "response": "1945",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "What is the chemical symbol for gold?",
+        "expected": [
+          "au"
+        ],
+        "response": "Au",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "How many continents are there?",
+        "expected": [
+          "7",
+          "seven"
+        ],
+        "response": "7",
+        "correct": true,
+        "category": "science"
+      }
+    ],
+    "high_temp": [
+      {
+        "question": "What is the capital of Japan?",
+        "expected": [
+          "tokyo"
+        ],
+        "response": "Tokyo (official and administrative) or Kyoto (historical). However, many consider Tokyo to be the tr",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is the capital of France?",
+        "expected": [
+          "paris"
+        ],
+        "response": "Paris",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is the largest continent by area?",
+        "expected": [
+          "asia"
+        ],
+        "response": "Asia",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What ocean lies between Europe and North America?",
+        "expected": [
+          "atlantic"
+        ],
+        "response": "Atlantic Ocean",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is the capital of Germany?",
+        "expected": [
+          "berlin"
+        ],
+        "response": "Berlin",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What country has the largest population in the world?",
+        "expected": [
+          "india",
+          "china"
+        ],
+        "response": "China",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "On which continent is Brazil located?",
+        "expected": [
+          "south america"
+        ],
+        "response": "South America",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is the capital of the United Kingdom?",
+        "expected": [
+          "london"
+        ],
+        "response": "London is not the capital of the United Kingdom. The capital city of the UK is actually London, but ",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is the longest river in Africa?",
+        "expected": [
+          "nile"
+        ],
+        "response": "Nile River",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is the capital of Italy?",
+        "expected": [
+          "rome",
+          "roma"
+        ],
+        "response": "Rome",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is 7 + 8?",
+        "expected": [
+          "15"
+        ],
+        "response": "15",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is 12 x 12?",
+        "expected": [
+          "144"
+        ],
+        "response": "144",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is the square root of 64?",
+        "expected": [
+          "8"
+        ],
+        "response": "8",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is 100 divided by 4?",
+        "expected": [
+          "25"
+        ],
+        "response": "25",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is 2 to the power of 10?",
+        "expected": [
+          "1024"
+        ],
+        "response": "1024",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is 15% of 200?",
+        "expected": [
+          "30"
+        ],
+        "response": "30",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "How many sides does a hexagon have?",
+        "expected": [
+          "6",
+          "six"
+        ],
+        "response": "Six",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is 3 factorial (3!)?",
+        "expected": [
+          "6",
+          "six"
+        ],
+        "response": "6",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is the value of pi rounded to 2 decimal places?",
+        "expected": [
+          "3.14"
+        ],
+        "response": "3.14",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is 17 - 9?",
+        "expected": [
+          "8"
+        ],
+        "response": "8",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is the chemical formula for water?",
+        "expected": [
+          "h2o"
+        ],
+        "response": "H2O",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "What planet is closest to the Sun?",
+        "expected": [
+          "mercury"
+        ],
+        "response": "Mercury",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "How many days are in a standard (non-leap) year?",
+        "expected": [
+          "365"
+        ],
+        "response": "365",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "What gas do humans breathe in to survive?",
+        "expected": [
+          "oxygen",
+          "o2"
+        ],
+        "response": "Oxygen",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "What is the boiling point of water in Celsius?",
+        "expected": [
+          "100"
+        ],
+        "response": "100 degrees Celsius",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "How many legs does a spider have?",
+        "expected": [
+          "8",
+          "eight"
+        ],
+        "response": "8",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "What is the speed of light approximately in km/s?",
+        "expected": [
+          "300000",
+          "300,000",
+          "3e5",
+          "299792"
+        ],
+        "response": "299,792",
+        "correct": false,
+        "category": "science"
+      },
+      {
+        "question": "What year did World War II end?",
+        "expected": [
+          "1945"
+        ],
+        "response": "1945 (officially ended on September 2nd)",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "What is the chemical symbol for gold?",
+        "expected": [
+          "au"
+        ],
+        "response": "Au (pronounced as \"A-U\")",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "How many continents are there?",
+        "expected": [
+          "7",
+          "seven"
+        ],
+        "response": "7",
+        "correct": true,
+        "category": "science"
+      }
+    ],
+    "snn_echo": [
+      {
+        "question": "What is the capital of Japan?",
+        "expected": [
+          "tokyo"
+        ],
+        "response": "Tokyo",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is the capital of France?",
+        "expected": [
+          "paris"
+        ],
+        "response": "Paris",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is the largest continent by area?",
+        "expected": [
+          "asia"
+        ],
+        "response": "Asia",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What ocean lies between Europe and North America?",
+        "expected": [
+          "atlantic"
+        ],
+        "response": "Atlantic Ocean",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is the capital of Germany?",
+        "expected": [
+          "berlin"
+        ],
+        "response": "Berlin",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What country has the largest population in the world?",
+        "expected": [
+          "india",
+          "china"
+        ],
+        "response": "China",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "On which continent is Brazil located?",
+        "expected": [
+          "south america"
+        ],
+        "response": "South America",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is the capital of the United Kingdom?",
+        "expected": [
+          "london"
+        ],
+        "response": "London",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is the longest river in Africa?",
+        "expected": [
+          "nile"
+        ],
+        "response": "Nile River",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is the capital of Italy?",
+        "expected": [
+          "rome",
+          "roma"
+        ],
+        "response": "Rome",
+        "correct": true,
+        "category": "geography"
+      },
+      {
+        "question": "What is 7 + 8?",
+        "expected": [
+          "15"
+        ],
+        "response": "15",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is 12 x 12?",
+        "expected": [
+          "144"
+        ],
+        "response": "144",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is the square root of 64?",
+        "expected": [
+          "8"
+        ],
+        "response": "8",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is 100 divided by 4?",
+        "expected": [
+          "25"
+        ],
+        "response": "25",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is 2 to the power of 10?",
+        "expected": [
+          "1024"
+        ],
+        "response": "1024",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is 15% of 200?",
+        "expected": [
+          "30"
+        ],
+        "response": "30",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "How many sides does a hexagon have?",
+        "expected": [
+          "6",
+          "six"
+        ],
+        "response": "6",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is 3 factorial (3!)?",
+        "expected": [
+          "6",
+          "six"
+        ],
+        "response": "6",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is the value of pi rounded to 2 decimal places?",
+        "expected": [
+          "3.14"
+        ],
+        "response": "3.14",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is 17 - 9?",
+        "expected": [
+          "8"
+        ],
+        "response": "8",
+        "correct": true,
+        "category": "math"
+      },
+      {
+        "question": "What is the chemical formula for water?",
+        "expected": [
+          "h2o"
+        ],
+        "response": "H2O",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "What planet is closest to the Sun?",
+        "expected": [
+          "mercury"
+        ],
+        "response": "Mercury",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "How many days are in a standard (non-leap) year?",
+        "expected": [
+          "365"
+        ],
+        "response": "365",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "What gas do humans breathe in to survive?",
+        "expected": [
+          "oxygen",
+          "o2"
+        ],
+        "response": "Oxygen",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "What is the boiling point of water in Celsius?",
+        "expected": [
+          "100"
+        ],
+        "response": "100 degrees Celsius",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "How many legs does a spider have?",
+        "expected": [
+          "8",
+          "eight"
+        ],
+        "response": "8 (usually)",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "What is the speed of light approximately in km/s?",
+        "expected": [
+          "300000",
+          "300,000",
+          "3e5",
+          "299792"
+        ],
+        "response": "299792.458 km/s (approximately)",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "What year did World War II end?",
+        "expected": [
+          "1945"
+        ],
+        "response": "1945",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "What is the chemical symbol for gold?",
+        "expected": [
+          "au"
+        ],
+        "response": "Au",
+        "correct": true,
+        "category": "science"
+      },
+      {
+        "question": "How many continents are there?",
+        "expected": [
+          "7",
+          "seven"
+        ],
+        "response": "7 (Africa, Antarctica, Asia, Europe, North America, Oceania, South America)",
+        "correct": true,
+        "category": "science"
+      }
+    ]
+  },
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase54_sanity_check.png"
+}
