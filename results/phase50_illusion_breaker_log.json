@@ -1,0 +1,153 @@
+{
+  "experiment": "Phase 50: The Illusion Breaker",
+  "model": "Mistral-7B",
+  "reference": "Apple 'The Illusion of Thinking' (2025)",
+  "elapsed_minutes": 7.3,
+  "summaries": [
+    {
+      "task": "Standard-3",
+      "condition": "baseline",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_moves": 0.5,
+      "avg_illegal_moves": 5.5,
+      "avg_self_corrections": 0.3,
+      "completion_rate": 40.0,
+      "avg_entropy": 1.24,
+      "optimal_moves": 7
+    },
+    {
+      "task": "Standard-3",
+      "condition": "l18_echo",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_moves": 0.7,
+      "avg_illegal_moves": 6.6,
+      "avg_self_corrections": 0.7,
+      "completion_rate": 60.0,
+      "avg_entropy": 1.25,
+      "optimal_moves": 7
+    },
+    {
+      "task": "Standard-3",
+      "condition": "conflict_triggered",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_moves": 1.5,
+      "avg_illegal_moves": 7.5,
+      "avg_self_corrections": 1.0,
+      "completion_rate": 60.0,
+      "avg_entropy": 1.26,
+      "optimal_moves": 7
+    },
+    {
+      "task": "Standard-4",
+      "condition": "baseline",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_moves": 0.5,
+      "avg_illegal_moves": 6.0,
+      "avg_self_corrections": 0.5,
+      "completion_rate": 40.0,
+      "avg_entropy": 1.24,
+      "optimal_moves": 15
+    },
+    {
+      "task": "Standard-4",
+      "condition": "l18_echo",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_moves": 0.5,
+      "avg_illegal_moves": 6.0,
+      "avg_self_corrections": 0.5,
+      "completion_rate": 50.0,
+      "avg_entropy": 1.24,
+      "optimal_moves": 15
+    },
+    {
+      "task": "Standard-4",
+      "condition": "conflict_triggered",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_moves": 0.7,
+      "avg_illegal_moves": 6.5,
+      "avg_self_corrections": 0.6,
+      "completion_rate": 50.0,
+      "avg_entropy": 1.27,
+      "optimal_moves": 15
+    },
+    {
+      "task": "Modified-3",
+      "condition": "baseline",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_moves": 1.4,
+      "avg_illegal_moves": 7.3,
+      "avg_self_corrections": 1.1,
+      "completion_rate": 50.0,
+      "avg_entropy": 1.2,
+      "optimal_moves": 26
+    },
+    {
+      "task": "Modified-3",
+      "condition": "l18_echo",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_moves": 1.1,
+      "avg_illegal_moves": 7.5,
+      "avg_self_corrections": 1.0,
+      "completion_rate": 60.0,
+      "avg_entropy": 1.21,
+      "optimal_moves": 26
+    },
+    {
+      "task": "Modified-3",
+      "condition": "conflict_triggered",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_moves": 0.5,
+      "avg_illegal_moves": 6.7,
+      "avg_self_corrections": 0.5,
+      "completion_rate": 40.0,
+      "avg_entropy": 1.25,
+      "optimal_moves": 26
+    },
+    {
+      "task": "Modified-4",
+      "condition": "baseline",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_moves": 2.3,
+      "avg_illegal_moves": 10.7,
+      "avg_self_corrections": 2.3,
+      "completion_rate": 60.0,
+      "avg_entropy": 1.18,
+      "optimal_moves": 80
+    },
+    {
+      "task": "Modified-4",
+      "condition": "l18_echo",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_moves": 0.6,
+      "avg_illegal_moves": 5.9,
+      "avg_self_corrections": 0.4,
+      "completion_rate": 30.0,
+      "avg_entropy": 1.21,
+      "optimal_moves": 80
+    },
+    {
+      "task": "Modified-4",
+      "condition": "conflict_triggered",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_moves": 1.1,
+      "avg_illegal_moves": 7.3,
+      "avg_self_corrections": 0.9,
+      "completion_rate": 60.0,
+      "avg_entropy": 1.24,
+      "optimal_moves": 80
+    }
+  ],
+  "figure_path": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase50_illusion_breaker.png"
+}

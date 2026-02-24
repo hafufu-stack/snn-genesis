@@ -1,0 +1,198 @@
+{
+  "experiment": "Phase 50c: Chat Template + CoT",
+  "model": "Mistral-7B",
+  "key_fix": "Using tokenizer.apply_chat_template() instead of raw prompt",
+  "elapsed_min": 198.1,
+  "summaries": [
+    {
+      "task": "Std-3",
+      "condition": "baseline",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_legal": 29.5,
+      "avg_illegal": 19.2,
+      "avg_self_corr": 10.8,
+      "avg_entropy": 0.8,
+      "optimal": 7,
+      "thoughts": [
+        "First, we need to find a temporary spot for the largest disk (disk 3) so that we",
+        "I need to put the smaller disk back on A and then move the larger one.",
+        "First, we need to put the larger disk back on top of its original position (C) a"
+      ],
+      "raw_samples": [
+        "Think: First, we need to find a temporary spot for the largest disk (disk 3) so that we can move smaller disks on top of",
+        "Think: I need to put the smaller disk back on A and then move the larger one.\nMove: A->C",
+        "Think: First, we need to put the larger disk back on top of its original position (C) and then move the smaller one (fro"
+      ]
+    },
+    {
+      "task": "Std-3",
+      "condition": "echo",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_legal": 27.7,
+      "avg_illegal": 21.7,
+      "avg_self_corr": 11.7,
+      "avg_entropy": 0.8,
+      "optimal": 7,
+      "thoughts": [
+        "First, let's move the largest disk away from the smaller ones for further steps.",
+        "Place the larger disk 2 on top of disk 1 temporarily.",
+        "First, let's move the second disk back on top of the largest disk (on peg C), th"
+      ],
+      "raw_samples": [
+        "Think: First, let's move the largest disk away from the smaller ones for further steps.\nMove: A->C",
+        "Think: Place the larger disk 2 on top of disk 1 temporarily.\nMove: A->B (Moving disk 2 to peg B.)",
+        "Think: First, let's move the second disk back on top of the largest disk (on peg C), then we can use that as a temporary"
+      ]
+    },
+    {
+      "task": "Std-3",
+      "condition": "conflict",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_legal": 28.5,
+      "avg_illegal": 21.5,
+      "avg_self_corr": 11.5,
+      "avg_entropy": 0.9,
+      "optimal": 7,
+      "thoughts": [
+        "First, let's move the smallest disk (1) out of the way so we can focus on moving",
+        "Place the larger disk 2 on top of disk 3 on tower C. Then, move the smaller disk",
+        "First, let's put the smaller disk back on top of the larger one at tower B. This"
+      ],
+      "raw_samples": [
+        "Think: First, let's move the smallest disk (1) out of the way so we can focus on moving larger disks later.\nMove: A->C",
+        "Think: Place the larger disk 2 on top of disk 3 on tower C. Then, move the smaller disk 1 from A to B temporarily.\nMove:",
+        "Think: First, let's put the smaller disk back on top of the larger one at tower B. This will allow us to use both towers"
+      ]
+    },
+    {
+      "task": "Mod-3",
+      "condition": "baseline",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_legal": 28.6,
+      "avg_illegal": 21.4,
+      "avg_self_corr": 11.9,
+      "avg_entropy": 0.8,
+      "optimal": 26,
+      "thoughts": [
+        "Since we're moving larger disks on top of smaller ones, let's first move the sma",
+        "Place the smaller disk on top of larger ones according to the modified rules. I ",
+        "Since the smaller disk (2) is on top of the larger one (3), I cannot move either"
+      ],
+      "raw_samples": [
+        "Think: Since we're moving larger disks on top of smaller ones, let's first move the smallest disk (1) from A to C. This ",
+        "Think: Place the smaller disk on top of larger ones according to the modified rules. I need to move the remaining disk 2",
+        "Think: Since the smaller disk (2) is on top of the larger one (3), I cannot move either of them yet. However, I can move"
+      ]
+    },
+    {
+      "task": "Mod-3",
+      "condition": "echo",
+      "n_trials": 10,
+      "solve_rate": 10.0,
+      "avg_legal": 27.0,
+      "avg_illegal": 19.2,
+      "avg_self_corr": 10.4,
+      "avg_entropy": 0.8,
+      "optimal": 26,
+      "thoughts": [
+        "I need to find a smaller disk on top of the larger ones to follow the modified r",
+        "To adhere to the modified rules and continue moving larger disks on smaller ones",
+        "To follow the modified rules and continue moving larger disks on smaller ones, I"
+      ],
+      "raw_samples": [
+        "Think: I need to find a smaller disk on top of the larger ones to follow the modified rules. Currently, there is no smal",
+        "Think: To adhere to the modified rules and continue moving larger disks on smaller ones, let's first move disk 2 from B ",
+        "Think: To follow the modified rules and continue moving larger disks on smaller ones, I need to first move disk 3 from B"
+      ]
+    },
+    {
+      "task": "Mod-3",
+      "condition": "conflict",
+      "n_trials": 10,
+      "solve_rate": 10.0,
+      "avg_legal": 25.9,
+      "avg_illegal": 20.3,
+      "avg_self_corr": 10.5,
+      "avg_entropy": 0.9,
+      "optimal": 26,
+      "thoughts": [
+        "Since the goal is to move all disks from A to C and I can only place larger disk",
+        "I need to get the larger disk (2) on top of the smaller one (3), so that they ca",
+        "To follow the modified rules, we need to find a way to move disk 3 while keeping"
+      ],
+      "raw_samples": [
+        "Think: Since the goal is to move all disks from A to C and I can only place larger disks on smaller ones, let's first mo",
+        "Think: I need to get the larger disk (2) on top of the smaller one (3), so that they can be moved together later.\nMove: ",
+        "Think: To follow the modified rules, we need to find a way to move disk 3 while keeping it on top of either disk 1 or di"
+      ]
+    },
+    {
+      "task": "Std-4",
+      "condition": "baseline",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_legal": 29.4,
+      "avg_illegal": 20.6,
+      "avg_self_corr": 11.9,
+      "avg_entropy": 0.8,
+      "optimal": 15,
+      "thoughts": [
+        "First, we need to find a temporary spot for the largest disc not on its final po",
+        "First, let's put the largest remaining disk back on tower A so we have room for ",
+        "First, let's put the smaller disk back on A and prepare for moving larger ones."
+      ],
+      "raw_samples": [
+        "Think: First, we need to find a temporary spot for the largest disc not on its final position (disk 4). I'll move it to ",
+        "Think: First, let's put the largest remaining disk back on tower A so we have room for smaller ones. Then, we will move ",
+        "Think: First, let's put the smaller disk back on A and prepare for moving larger ones.\nMove: A->B (disk 1)"
+      ]
+    },
+    {
+      "task": "Std-4",
+      "condition": "echo",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_legal": 30.6,
+      "avg_illegal": 19.4,
+      "avg_self_corr": 12.5,
+      "avg_entropy": 0.8,
+      "optimal": 15,
+      "thoughts": [
+        "First, we need to find a temporary spot for the largest disc that is not its fin",
+        "First, let's put the smaller disk back on its correct tower. Then we will contin",
+        "First, let's put the smallest disk back on A and prepare for moving larger ones."
+      ],
+      "raw_samples": [
+        "Think: First, we need to find a temporary spot for the largest disc that is not its final destination (C) or where small",
+        "Think: First, let's put the smaller disk back on its correct tower. Then we will continue moving larger disks towards th",
+        "Think: First, let's put the smallest disk back on A and prepare for moving larger ones.\nMove: A->B (disk 1)"
+      ]
+    },
+    {
+      "task": "Std-4",
+      "condition": "conflict",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_legal": 27.7,
+      "avg_illegal": 21.4,
+      "avg_self_corr": 11.6,
+      "avg_entropy": 0.9,
+      "optimal": 15,
+      "thoughts": [
+        "First, let's move the largest disk (disk 4) away from the goal tower (tower C). ",
+        "First, let's put the largest remaining disk on top of smaller ones.",
+        "First, let's build the foundation for larger disks on peg C. Then we will transf"
+      ],
+      "raw_samples": [
+        "Think: First, let's move the largest disk (disk 4) away from the goal tower (tower C). We will use tower B as an interme",
+        "Think: First, let's put the largest remaining disk on top of smaller ones.\nMove: B->C (placing disk 3 on top of disk 4)",
+        "Think: First, let's build the foundation for larger disks on peg C. Then we will transfer smaller disks back to their or"
+      ]
+    }
+  ],
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase50c_chat_template.png"
+}

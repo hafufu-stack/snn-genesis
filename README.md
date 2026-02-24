@@ -1,27 +1,33 @@
-# 🧬 SNN-Genesis v9: From Universal Homeostasis to Physical Prompting — SNN Perturbation as an LLM Interpretability Tool
+# 🧬 SNN-Genesis v9.1: The Illusion Breaker — Tower of Hanoi, Apple's Reasoning Collapse Revisited, and Honest Null Results
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18625621.svg)](https://doi.org/10.5281/zenodo.18625621)
 
-> **"We observed the LLM's Aha moment — and learned that small-n experiments lie."**
+> **"Apple said LLMs can't reason. We said: did you forget the chat template?"**
 
-SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v9 pivots from safety perturbation to **real-time brain-wave monitoring**: using entropy and inter-layer conflict sensors to physically observe an LLM's internal state changes during prompt processing.
+SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v9.1 extends the framework to **complex reasoning evaluation**: using the Modified Tower of Hanoi to challenge Apple's reasoning collapse claim and report four honest null results.
 
-### 🆕 v9 Highlights (February 2026)
+### 🆕 v9.1 Highlights (February 2026)
 
-v9 extends the framework to **interpretability tool**, discovers the **Déjà Vu Effect**, and delivers an **honest null result** that exposes small-n variance in LLM research.
+Season 10 challenges Apple's GSM-Symbolic claim, discovers chat template as the decisive factor, and delivers **four honest null results**.
 
 | Discovery | Key Result |
 |-----------|------------|
-| 🎯 **L17-18 Universal Attractor** | All CfC wiring topologies converge to L17-18 as optimal injection depth (CV=10.2%) |
-| 👁️ **Déjà Vu Effect** | First physical observation of LLM "Aha moment": entropy -46%, conflict +17% on second reading |
-| ⚡ **Physical Prompting** | Micro-dose σ=0.02 echo achieves +25% accuracy without prompt repetition (n=20) |
-| 📏 **Context Saturation** | Prompt repetition: +10% on short prompts, -20% on long prompts (4-bit quantization limit) |
-| 🔬 **Surgical L18 Strike** | Single-layer L18 injection: Math=95% vs. Baseline=15% (n=40) |
-| ❌ **Honest Null Result** | At n=150, Physical Prompting shows no effect (Fisher p=0.59). Baseline Math: 15%→90% from n alone |
-| 📊 **Methodological Lesson** | LLM perturbation experiments require n≥100 with Fisher exact testing |
-| 🧊 **Noise Amplitude Cliff** | Sharp transition: σ=0.03 (neutral) → σ=0.10 (destructive, -55% Math) |
+| 🍎 **Apple Rebuttal** | Chat template formatting transforms Hanoi performance: 0% → 16–28%. Apple's "reasoning collapse" is a methodological artifact |
+| 🔄 **Self-Correction is Real** | ~11 self-corrections/game across 170 trials, including spontaneous illegal move detection |
+| ❌ **SNN ≠ Reasoning** | Fisher exact test: Baseline 16%, High-Temp 28%, SNN Echo 22% (p=0.306, n.s., N=150) |
+| 🧠 **DTR Ceiling Effect** | Deep-Thinking Ratio ~94.5% for all Hanoi tokens — success depends on *direction*, not *depth* (p=0.734) |
+| 🌡️ **Temperature Robustness** | Factual accuracy (96.7–100%) and JSON integrity (90–95%) preserved at temp=1.2 |
+
+### 📊 Retained from v9
+
+| Discovery | Key Result |
+|-----------|------------|
+| 🎯 **L17-18 Universal Attractor** | All CfC topologies converge to L17-18 as optimal injection depth (CV=10.2%) |
+| 👁️ **Déjà Vu Effect** | First physical observation of LLM "Aha moment": entropy -46%, conflict +17% |
+| ⚡ **Physical Prompting** | Micro-dose σ=0.02 echo at L18 (n=20, not significant at n=150) |
+| ❌ **Small-n Variance Lesson** | Baseline Math: 15%→90% from sample size alone. n≥100 with Fisher testing required |
 
 ### 📊 Retained from v8
 
@@ -62,7 +68,16 @@ v9 extends the framework to **interpretability tool**, discovers the **Déjà Vu
 
 ## 📋 Version History
 
-### v9 — Physical Prompting & Interpretability (NEW)
+### v9.1 — The Illusion Breaker (NEW)
+
+**Season 10 (Phases 50-54b): Tower of Hanoi & Apple Rebuttal**
+- Phase 50: **Chat template discovery** — Apple's 0% is a formatting artifact, not reasoning failure
+- Phase 51: Fisher exact test (N=150): Baseline 16%, High-Temp 28%, SNN 22% (**p=0.306, n.s.**)
+- Phase 51: Self-correction: ~11 corrections/game across 170 trials
+- Phase 51b: **DTR ceiling effect** — 94.5% uniformly, no solved/failed difference (p=0.734)
+- Phase 54/54b: Temperature robustness — factual 96.7–100%, JSON 90–95% at temp=1.2
+
+### v9 — Physical Prompting & Interpretability
 
 **Season 7 (Phases 38-44): CfC-Transformer Integration Dynamics**
 - Phase 38: Reverse brain transplant — distributed CfC transfers, sharp CfC fails
@@ -151,19 +166,24 @@ snn-genesis/
 │   ├── phase34_caveman_protocol.py   # Caveman protocol (v9)
 │   ├── phase36_entropy_taxonomy.py   # Entropy taxonomy (v9)
 │   ├── phase37_brain_transplant.py   # Brain transplant (v9)
-│   ├── phase38_reverse_transplant.py # Reverse transplant (v9) ← NEW
-│   ├── phase39_multi_donor_fusion.py # Multi-donor fusion (v9) ← NEW
+│   ├── phase38_reverse_transplant.py # Reverse transplant (v9)
+│   ├── phase39_multi_donor_fusion.py # Multi-donor fusion (v9)
 │   ├── phase40_fever_response.py     # Fever response (v9)
 │   ├── phase41_wiring_ablation.py    # Wiring ablation (v9)
 │   ├── phase42_conflict_sensor.py    # Conflict sensor (v9)
 │   ├── phase43_chaos_defibrillator.py # Chaos defibrillator (v9)
-│   ├── phase44_dynamic_depth.py      # Dynamic depth / L17-18 attractor (v9) ← NEW
-│   ├── phase45_dejavu_sensor.py      # Déjà Vu sensor (v9) ← NEW
-│   ├── phase46_phantom_echo.py       # Physical Prompting (v9) ← NEW
+│   ├── phase44_dynamic_depth.py      # Dynamic depth / L17-18 attractor (v9)
+│   ├── phase45_dejavu_sensor.py      # Déjà Vu sensor (v9)
+│   ├── phase46_phantom_echo.py       # Physical Prompting (v9)
 │   ├── phase46b_phantom_echo_v2.py   # Physical Prompting v2 (v9)
-│   ├── phase47_dejavu_contradiction.py # Context saturation (v9) ← NEW
-│   ├── phase48_surgical_strike.py    # Surgical L18 Strike (v9) ← NEW
-│   └── phase49_large_validation.py   # Large-scale n=150 validation (v9) ← NEW
+│   ├── phase47_dejavu_contradiction.py # Context saturation (v9)
+│   ├── phase48_surgical_strike.py    # Surgical L18 Strike (v9)
+│   ├── phase49_large_validation.py   # Large-scale n=150 validation (v9)
+│   ├── phase50_hanoi_chat_template.py # Chat template discovery (v9.1) ← NEW
+│   ├── phase51_hanoi_fisher.py       # Hanoi Fisher exact test (v9.1) ← NEW
+│   ├── phase51b_dtr_measurement.py   # DTR measurement (v9.1) ← NEW
+│   ├── phase54_factual_sanity.py     # Factual sanity check (v9.1) ← NEW
+│   └── phase54b_structural_sanity.py # JSON structural check (v9.1) ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
 │   ├── phase*_log.json               # All experiment result logs
@@ -245,6 +265,13 @@ python experiments/phase46_phantom_echo.py              # Physical Prompting
 python experiments/phase47_dejavu_contradiction.py      # Context saturation
 python experiments/phase48_surgical_strike.py           # Surgical L18 Strike
 python experiments/phase49_large_validation.py          # Large-scale n=150 validation
+
+# v9.1 experiments (requires ~16GB+ VRAM)
+python experiments/phase50_hanoi_chat_template.py       # Chat template discovery (Apple rebuttal)
+python experiments/phase51_hanoi_fisher.py              # Hanoi Fisher exact test (N=150)
+python experiments/phase51b_dtr_measurement.py          # Deep-Thinking Ratio measurement
+python experiments/phase54_factual_sanity.py            # Factual accuracy sanity check
+python experiments/phase54b_structural_sanity.py        # JSON structural integrity check
 ```
 
 ## 🤖 AI Collaboration
@@ -254,6 +281,7 @@ python experiments/phase49_large_validation.py          # Large-scale n=150 vali
 | v1 — v5 (Phases 5–20) | Google Gemini 3 Pro |
 | v6 — v8 (Phases 20b–33) | Anthropic Claude Opus 4.6 |
 | v9 (Phases 34–49) | Google Gemini 2.5 Pro (Antigravity) |
+| v9.1 (Phases 50–54b) | Anthropic Claude Opus 4.6 (Antigravity) |
 
 All experimental decisions, research direction, and final interpretation were made by the human author.
 
@@ -274,7 +302,7 @@ All experimental decisions, research direction, and final interpretation were ma
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v9: From Universal Homeostasis to Physical Prompting},
+  title={SNN-Genesis v9.1: The Illusion Breaker --- Tower of Hanoi, Apple's Reasoning Collapse Revisited, and Honest Null Results},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},

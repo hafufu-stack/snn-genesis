@@ -1,0 +1,123 @@
+{
+  "experiment": "Phase 50b: The Illusion Breaker v2 (Few-Shot + CoT)",
+  "model": "Mistral-7B",
+  "improvements_over_50": [
+    "Few-shot examples for output format",
+    "Chain-of-Thought reasoning",
+    "Simplified move format (A->C)",
+    "Legal moves shown in prompt",
+    "Longer spike duration (5 tokens)"
+  ],
+  "elapsed_minutes": 4.6,
+  "summaries": [
+    {
+      "task": "Standard-3",
+      "condition": "baseline",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_legal_moves": 0.0,
+      "avg_illegal_moves": 8.0,
+      "avg_self_corrections": 0.0,
+      "avg_entropy": 0.63,
+      "optimal": 7,
+      "cot_samples": []
+    },
+    {
+      "task": "Standard-3",
+      "condition": "l18_echo",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_legal_moves": 0.0,
+      "avg_illegal_moves": 8.0,
+      "avg_self_corrections": 0.0,
+      "avg_entropy": 0.64,
+      "optimal": 7,
+      "cot_samples": []
+    },
+    {
+      "task": "Standard-3",
+      "condition": "conflict_triggered",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_legal_moves": 0.0,
+      "avg_illegal_moves": 8.0,
+      "avg_self_corrections": 0.0,
+      "avg_entropy": 0.67,
+      "optimal": 7,
+      "cot_samples": []
+    },
+    {
+      "task": "Modified-3",
+      "condition": "baseline",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_legal_moves": 0.0,
+      "avg_illegal_moves": 8.0,
+      "avg_self_corrections": 0.0,
+      "avg_entropy": 0.71,
+      "optimal": 26,
+      "cot_samples": []
+    },
+    {
+      "task": "Modified-3",
+      "condition": "l18_echo",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_legal_moves": 0.0,
+      "avg_illegal_moves": 8.0,
+      "avg_self_corrections": 0.0,
+      "avg_entropy": 0.72,
+      "optimal": 26,
+      "cot_samples": []
+    },
+    {
+      "task": "Modified-3",
+      "condition": "conflict_triggered",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_legal_moves": 0.0,
+      "avg_illegal_moves": 8.0,
+      "avg_self_corrections": 0.0,
+      "avg_entropy": 0.74,
+      "optimal": 26,
+      "cot_samples": []
+    },
+    {
+      "task": "Standard-4",
+      "condition": "baseline",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_legal_moves": 0.0,
+      "avg_illegal_moves": 8.0,
+      "avg_self_corrections": 0.0,
+      "avg_entropy": 0.63,
+      "optimal": 15,
+      "cot_samples": []
+    },
+    {
+      "task": "Standard-4",
+      "condition": "l18_echo",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_legal_moves": 0.0,
+      "avg_illegal_moves": 8.0,
+      "avg_self_corrections": 0.0,
+      "avg_entropy": 0.64,
+      "optimal": 15,
+      "cot_samples": []
+    },
+    {
+      "task": "Standard-4",
+      "condition": "conflict_triggered",
+      "n_trials": 10,
+      "solve_rate": 0.0,
+      "avg_legal_moves": 0.0,
+      "avg_illegal_moves": 8.0,
+      "avg_self_corrections": 0.0,
+      "avg_entropy": 0.67,
+      "optimal": 15,
+      "cot_samples": []
+    }
+  ],
+  "figure_path": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase50b_fewshot_cot.png"
+}
