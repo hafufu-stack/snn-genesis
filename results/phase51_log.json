@@ -1,0 +1,84 @@
+{
+  "experiment": "Phase 51: Statistical Validation",
+  "model": "Mistral-7B",
+  "task": "Modified-3 Hanoi (reversed rules)",
+  "purpose": "Scale N=10\u219250 to test statistical significance of SNN-only solve",
+  "elapsed_min": 400.1,
+  "conditions": [
+    {
+      "condition": "baseline",
+      "temperature": 0.5,
+      "n_trials": 50,
+      "n_solved": 8,
+      "solve_rate": 16.0,
+      "avg_legal": 25.02,
+      "avg_illegal": 18.5,
+      "avg_self_corr": 10.36,
+      "optimal": 26,
+      "thoughts": [
+        "To follow the modified rules and make progress towards moving all disks to C, I ",
+        "To follow the modified rules and minimize the number of moves, I need to first m",
+        "To follow the modified rules and minimize unnecessary steps, let's first move th"
+      ]
+    },
+    {
+      "condition": "high_temp",
+      "temperature": 1.2,
+      "n_trials": 50,
+      "n_solved": 14,
+      "solve_rate": 28.0,
+      "avg_legal": 24.76,
+      "avg_illegal": 19.26,
+      "avg_self_corr": 10.8,
+      "optimal": 26,
+      "thoughts": [
+        "I need to find a valid move that helps me achieve the goal and adheres to the mo",
+        "To follow the modified rules and place all three disks on the smallest first, I ",
+        "Let's first put the smaller disk (3) on top of its correct position (on disk 1)."
+      ]
+    },
+    {
+      "condition": "snn_echo",
+      "temperature": 0.5,
+      "n_trials": 50,
+      "n_solved": 11,
+      "solve_rate": 22.0,
+      "avg_legal": 26.7,
+      "avg_illegal": 19.04,
+      "avg_self_corr": 11.06,
+      "optimal": 26,
+      "thoughts": [
+        "To follow the modified rules, I need to find a larger disk that is currently on ",
+        "To adhere to the modified rules and minimize further steps, I will first transfe",
+        "To follow the modified rules, I need to move a larger disk on top of a smaller o"
+      ]
+    }
+  ],
+  "fisher_tests": {
+    "snn_vs_baseline": {
+      "snn_solved": 11,
+      "snn_total": 50,
+      "baseline_solved": 8,
+      "baseline_total": 50,
+      "p_two_sided": 0.611059,
+      "p_one_sided": 0.30553
+    },
+    "snn_vs_high_temp": {
+      "snn_solved": 11,
+      "snn_total": 50,
+      "high_temp_solved": 14,
+      "high_temp_total": 50,
+      "p_two_sided": 0.64473,
+      "p_one_sided": 0.822086
+    },
+    "high_temp_vs_baseline": {
+      "high_temp_solved": 14,
+      "high_temp_total": 50,
+      "baseline_solved": 8,
+      "baseline_total": 50,
+      "p_two_sided": 0.227017,
+      "p_one_sided": 0.113509
+    }
+  },
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase51_stats_validation.png"
+}
