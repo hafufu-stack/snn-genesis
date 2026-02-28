@@ -1,0 +1,234 @@
+{
+  "experiment": "Phase 58: Cliff Anatomy \u2014 \u03c3=0.15\u21920.20 Phase Transition",
+  "model": "Mistral-7B",
+  "task": "Modified-3 Hanoi (reversed rules)",
+  "purpose": "Dissect the stochastic resonance cliff by analyzing hidden state norms, cosine similarity, and entropy across fine-grained \u03c3 values",
+  "elapsed_min": 260.0,
+  "conditions": [
+    {
+      "condition": "baseline",
+      "sigma": 0.0,
+      "n_trials": 30,
+      "n_solved": 1,
+      "solve_rate": 3.3,
+      "avg_legal": 24.57,
+      "avg_illegal": 23.5,
+      "hook_all": {
+        "avg_orig_norm": 6.1339,
+        "avg_new_norm": 6.1339,
+        "avg_norm_ratio": 1.0,
+        "avg_cosine_sim": 1.0,
+        "avg_noise_norm": 0.0,
+        "avg_snr": Infinity
+      },
+      "hook_solved": {
+        "avg_orig_norm": 6.0724,
+        "avg_new_norm": 6.0724,
+        "avg_norm_ratio": 1.0,
+        "avg_cosine_sim": 1.0,
+        "avg_noise_norm": 0.0,
+        "avg_snr": Infinity
+      },
+      "hook_failed": {
+        "avg_orig_norm": 6.136,
+        "avg_new_norm": 6.136,
+        "avg_norm_ratio": 1.0,
+        "avg_cosine_sim": 1.0,
+        "avg_noise_norm": 0.0,
+        "avg_snr": Infinity
+      }
+    },
+    {
+      "condition": "additive_0.10",
+      "sigma": 0.1,
+      "n_trials": 30,
+      "n_solved": 11,
+      "solve_rate": 36.7,
+      "avg_legal": 18.2,
+      "avg_illegal": 18.53,
+      "hook_all": {
+        "avg_orig_norm": 6.1052,
+        "avg_new_norm": 8.8464,
+        "avg_norm_ratio": 1.4525,
+        "avg_cosine_sim": 0.6888,
+        "avg_noise_norm": 6.3997,
+        "avg_snr": 0.9541
+      },
+      "hook_solved": {
+        "avg_orig_norm": 6.0852,
+        "avg_new_norm": 8.8302,
+        "avg_norm_ratio": 1.4545,
+        "avg_cosine_sim": 0.687,
+        "avg_noise_norm": 6.403,
+        "avg_snr": 0.9505
+      },
+      "hook_failed": {
+        "avg_orig_norm": 6.1168,
+        "avg_new_norm": 8.8558,
+        "avg_norm_ratio": 1.4513,
+        "avg_cosine_sim": 0.6898,
+        "avg_noise_norm": 6.3978,
+        "avg_snr": 0.9562
+      }
+    },
+    {
+      "condition": "additive_0.14",
+      "sigma": 0.14,
+      "n_trials": 30,
+      "n_solved": 11,
+      "solve_rate": 36.7,
+      "avg_legal": 11.77,
+      "avg_illegal": 21.5,
+      "hook_all": {
+        "avg_orig_norm": 6.0971,
+        "avg_new_norm": 10.8424,
+        "avg_norm_ratio": 1.7846,
+        "avg_cosine_sim": 0.5617,
+        "avg_noise_norm": 8.9584,
+        "avg_snr": 0.6807
+      },
+      "hook_solved": {
+        "avg_orig_norm": 6.0902,
+        "avg_new_norm": 10.8404,
+        "avg_norm_ratio": 1.7864,
+        "avg_cosine_sim": 0.5616,
+        "avg_noise_norm": 8.9573,
+        "avg_snr": 0.68
+      },
+      "hook_failed": {
+        "avg_orig_norm": 6.1012,
+        "avg_new_norm": 10.8436,
+        "avg_norm_ratio": 1.7836,
+        "avg_cosine_sim": 0.5618,
+        "avg_noise_norm": 8.9591,
+        "avg_snr": 0.6811
+      }
+    },
+    {
+      "condition": "additive_0.15",
+      "sigma": 0.15,
+      "n_trials": 30,
+      "n_solved": 9,
+      "solve_rate": 30.0,
+      "avg_legal": 7.7,
+      "avg_illegal": 20.73,
+      "hook_all": {
+        "avg_orig_norm": 6.0549,
+        "avg_new_norm": 11.3573,
+        "avg_norm_ratio": 1.8827,
+        "avg_cosine_sim": 0.5327,
+        "avg_noise_norm": 9.6004,
+        "avg_snr": 0.6308
+      },
+      "hook_solved": {
+        "avg_orig_norm": 6.0895,
+        "avg_new_norm": 11.3682,
+        "avg_norm_ratio": 1.8731,
+        "avg_cosine_sim": 0.5355,
+        "avg_noise_norm": 9.5906,
+        "avg_snr": 0.635
+      },
+      "hook_failed": {
+        "avg_orig_norm": 6.0401,
+        "avg_new_norm": 11.3527,
+        "avg_norm_ratio": 1.8869,
+        "avg_cosine_sim": 0.5315,
+        "avg_noise_norm": 9.6046,
+        "avg_snr": 0.629
+      }
+    },
+    {
+      "condition": "additive_0.16",
+      "sigma": 0.16,
+      "n_trials": 30,
+      "n_solved": 7,
+      "solve_rate": 23.3,
+      "avg_legal": 5.4,
+      "avg_illegal": 20.7,
+      "hook_all": {
+        "avg_orig_norm": 6.0385,
+        "avg_new_norm": 11.8895,
+        "avg_norm_ratio": 1.9781,
+        "avg_cosine_sim": 0.5068,
+        "avg_noise_norm": 10.2373,
+        "avg_snr": 0.5899
+      },
+      "hook_solved": {
+        "avg_orig_norm": 6.0302,
+        "avg_new_norm": 11.8822,
+        "avg_norm_ratio": 1.9795,
+        "avg_cosine_sim": 0.5065,
+        "avg_noise_norm": 10.2339,
+        "avg_snr": 0.5893
+      },
+      "hook_failed": {
+        "avg_orig_norm": 6.041,
+        "avg_new_norm": 11.8917,
+        "avg_norm_ratio": 1.9776,
+        "avg_cosine_sim": 0.5069,
+        "avg_noise_norm": 10.2383,
+        "avg_snr": 0.5901
+      }
+    },
+    {
+      "condition": "additive_0.18",
+      "sigma": 0.18,
+      "n_trials": 30,
+      "n_solved": 1,
+      "solve_rate": 3.3,
+      "avg_legal": 0.77,
+      "avg_illegal": 12.73,
+      "hook_all": {
+        "avg_orig_norm": 5.9903,
+        "avg_new_norm": 12.9901,
+        "avg_norm_ratio": 2.1804,
+        "avg_cosine_sim": 0.4606,
+        "avg_noise_norm": 11.5178,
+        "avg_snr": 0.5202
+      },
+      "hook_solved": {
+        "avg_orig_norm": 6.1023,
+        "avg_new_norm": 13.0579,
+        "avg_norm_ratio": 2.1514,
+        "avg_cosine_sim": 0.4685,
+        "avg_noise_norm": 11.5231,
+        "avg_snr": 0.5296
+      },
+      "hook_failed": {
+        "avg_orig_norm": 5.9865,
+        "avg_new_norm": 12.9878,
+        "avg_norm_ratio": 2.1814,
+        "avg_cosine_sim": 0.4603,
+        "avg_noise_norm": 11.5176,
+        "avg_snr": 0.5198
+      }
+    },
+    {
+      "condition": "additive_0.20",
+      "sigma": 0.2,
+      "n_trials": 30,
+      "n_solved": 0,
+      "solve_rate": 0.0,
+      "avg_legal": 0.07,
+      "avg_illegal": 10.4,
+      "hook_all": {
+        "avg_orig_norm": 5.8461,
+        "avg_new_norm": 14.0784,
+        "avg_norm_ratio": 2.4224,
+        "avg_cosine_sim": 0.4144,
+        "avg_noise_norm": 12.8016,
+        "avg_snr": 0.4567
+      },
+      "hook_solved": {},
+      "hook_failed": {
+        "avg_orig_norm": 5.8461,
+        "avg_new_norm": 14.0784,
+        "avg_norm_ratio": 2.4224,
+        "avg_cosine_sim": 0.4144,
+        "avg_noise_norm": 12.8016,
+        "avg_snr": 0.4567
+      }
+    }
+  ],
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase58_cliff_anatomy.png"
+}

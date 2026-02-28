@@ -1,0 +1,55 @@
+{
+  "experiment": "Phase 59: Smart Defibrillator \u2014 Conditional Noise Injection",
+  "model": "Mistral-7B",
+  "task": "Modified-3 Hanoi (reversed rules)",
+  "purpose": "Test conditional noise injection (only after errors) vs constant noise",
+  "elapsed_min": 391.2,
+  "conditions": [
+    {
+      "condition": "baseline",
+      "n_trials": 50,
+      "n_solved": 9,
+      "solve_rate": 18.0,
+      "avg_legal": 22.92,
+      "avg_illegal": 20.54,
+      "avg_defib_events": 0.0
+    },
+    {
+      "condition": "always_0.15",
+      "n_trials": 50,
+      "n_solved": 13,
+      "solve_rate": 26.0,
+      "avg_legal": 9.0,
+      "avg_illegal": 24.04,
+      "avg_defib_events": 0.0
+    },
+    {
+      "condition": "defib_1move_0.15",
+      "n_trials": 50,
+      "n_solved": 2,
+      "solve_rate": 4.0,
+      "avg_legal": 23.4,
+      "avg_illegal": 23.18,
+      "avg_defib_events": 23.18
+    },
+    {
+      "condition": "defib_2move_0.15",
+      "n_trials": 50,
+      "n_solved": 3,
+      "solve_rate": 6.0,
+      "avg_legal": 14.34,
+      "avg_illegal": 24.56,
+      "avg_defib_events": 24.56
+    },
+    {
+      "condition": "defib_1move_0.10",
+      "n_trials": 50,
+      "n_solved": 7,
+      "solve_rate": 14.0,
+      "avg_legal": 22.1,
+      "avg_illegal": 21.54,
+      "avg_defib_events": 21.54
+    }
+  ],
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase59_smart_defibrillator.png"
+}
