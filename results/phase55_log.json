@@ -1,0 +1,172 @@
+{
+  "experiment": "Phase 55: Spherical SNN \u2014 Norm-Preserving Noise Injection",
+  "model": "Mistral-7B",
+  "task": "Modified-3 Hanoi (reversed rules)",
+  "purpose": "Test if norm-preserving noise eliminates the Noise Amplitude Cliff",
+  "hypothesis": "Additive \u03c3=0.10 collapses (norm distortion) but spherical \u03c3=0.10 survives (norm preserved)",
+  "elapsed_min": 253.1,
+  "conditions": [
+    {
+      "condition": "baseline",
+      "sigma": 0.0,
+      "hook_type": "none",
+      "n_trials": 50,
+      "n_solved": 8,
+      "solve_rate": 16.0,
+      "avg_legal": 25.02,
+      "avg_illegal": 18.5,
+      "avg_self_corr": 10.36,
+      "optimal": 26,
+      "hook_diagnostics": {},
+      "thoughts": [
+        "To follow the modified rules and make progress towards moving all disks to C, I ",
+        "To follow the modified rules and minimize the number of moves, I need to first m",
+        "To follow the modified rules and minimize unnecessary steps, let's first move th"
+      ]
+    },
+    {
+      "condition": "additive_0.10",
+      "sigma": 0.1,
+      "hook_type": "additive",
+      "n_trials": 50,
+      "n_solved": 19,
+      "solve_rate": 38.0,
+      "avg_legal": 21.98,
+      "avg_illegal": 16.36,
+      "avg_self_corr": 8.98,
+      "optimal": 26,
+      "hook_diagnostics": {},
+      "thoughts": [
+        "Since the rules are reversed, I'll need to arrange the smaller disks first. Let'",
+        "I need to move the larger disk (Disk 2) on top of Disk 3, which is currently on ",
+        "I need to find the correct position for the two smaller disks so that they do no"
+      ]
+    },
+    {
+      "condition": "spherical_0.02",
+      "sigma": 0.02,
+      "hook_type": "spherical",
+      "n_trials": 50,
+      "n_solved": 11,
+      "solve_rate": 22.0,
+      "avg_legal": 24.96,
+      "avg_illegal": 17.84,
+      "avg_self_corr": 10.6,
+      "optimal": 26,
+      "hook_diagnostics": {
+        "avg_norm_ratio": 1.000001,
+        "std_norm_ratio": 0.000277,
+        "avg_cos_similarity": 0.97895,
+        "std_cos_similarity": 0.0039
+      },
+      "thoughts": [
+        "To follow the modified rules and make progress towards moving all disks to C, I ",
+        "To follow the modified rules and minimize the number of steps, I'll try to keep ",
+        "To follow the modified rules, I need to place larger disks on smaller ones. Curr"
+      ]
+    },
+    {
+      "condition": "spherical_0.10",
+      "sigma": 0.1,
+      "hook_type": "spherical",
+      "n_trials": 50,
+      "n_solved": 12,
+      "solve_rate": 24.0,
+      "avg_legal": 24.92,
+      "avg_illegal": 18.2,
+      "avg_self_corr": 10.18,
+      "optimal": 26,
+      "hook_diagnostics": {
+        "avg_norm_ratio": 0.999999,
+        "std_norm_ratio": 0.000383,
+        "avg_cos_similarity": 0.69377,
+        "std_cos_similarity": 0.044626
+      },
+      "thoughts": [
+        "To move the smallest disk first, I need to find a larger disk that is not on any",
+        "I need to move the smaller top disk on stack C to free up space for larger discs",
+        "First I need to put the larger disc on the smaller ones. This will allow me to r"
+      ]
+    },
+    {
+      "condition": "spherical_0.15",
+      "sigma": 0.15,
+      "hook_type": "spherical",
+      "n_trials": 50,
+      "n_solved": 12,
+      "solve_rate": 24.0,
+      "avg_legal": 15.64,
+      "avg_illegal": 24.32,
+      "avg_self_corr": 9.1,
+      "optimal": 26,
+      "hook_diagnostics": {
+        "avg_norm_ratio": 0.999998,
+        "std_norm_ratio": 0.000374,
+        "avg_cos_similarity": 0.540938,
+        "std_cos_similarity": 0.058166
+      },
+      "thoughts": [
+        "Place the smallest valid disc for this strategy.",
+        "With all smaller disks on smaller tower, we should focus on moving larger discs.",
+        "Expected moves will be made as we have:"
+      ]
+    }
+  ],
+  "fisher_tests": {
+    "spherical_0.10_vs_additive_0.10": {
+      "description": "Core: Does norm preservation save \u03c3=0.10?",
+      "spherical_0.10_solved": 12,
+      "spherical_0.10_total": 50,
+      "additive_0.10_solved": 19,
+      "additive_0.10_total": 50,
+      "p_two_sided": 0.19414,
+      "p_one_sided": 0.958585
+    },
+    "spherical_0.10_vs_baseline": {
+      "description": "Is spherical \u03c3=0.10 different from baseline?",
+      "spherical_0.10_solved": 12,
+      "spherical_0.10_total": 50,
+      "baseline_solved": 8,
+      "baseline_total": 50,
+      "p_two_sided": 0.453912,
+      "p_one_sided": 0.226956
+    },
+    "spherical_0.02_vs_baseline": {
+      "description": "Reproduce Phase 51: spherical \u03c3=0.02 vs baseline",
+      "spherical_0.02_solved": 11,
+      "spherical_0.02_total": 50,
+      "baseline_solved": 8,
+      "baseline_total": 50,
+      "p_two_sided": 0.611059,
+      "p_one_sided": 0.30553
+    },
+    "spherical_0.15_vs_baseline": {
+      "description": "Limit test: spherical \u03c3=0.15 vs baseline",
+      "spherical_0.15_solved": 12,
+      "spherical_0.15_total": 50,
+      "baseline_solved": 8,
+      "baseline_total": 50,
+      "p_two_sided": 0.453912,
+      "p_one_sided": 0.226956
+    },
+    "additive_0.10_vs_baseline": {
+      "description": "Confirm collapse: additive \u03c3=0.10 vs baseline",
+      "additive_0.10_solved": 19,
+      "additive_0.10_total": 50,
+      "baseline_solved": 8,
+      "baseline_total": 50,
+      "p_two_sided": 0.023279,
+      "p_one_sided": 0.01164
+    },
+    "spherical_0.10_vs_spherical_0.02": {
+      "description": "Dose-response: \u03c3=0.10 vs \u03c3=0.02",
+      "spherical_0.10_solved": 12,
+      "spherical_0.10_total": 50,
+      "spherical_0.02_solved": 11,
+      "spherical_0.02_total": 50,
+      "p_two_sided": 1.0,
+      "p_one_sided": 0.5
+    }
+  },
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase55_spherical_snn.png"
+}

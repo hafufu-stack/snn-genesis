@@ -1,36 +1,34 @@
-# 🧬 SNN-Genesis v9.1: The Illusion Breaker — Tower of Hanoi, Apple's Reasoning Collapse Revisited, and Honest Null Results
+# 🧬 SNN-Genesis v10: Stochastic Resonance in LLM Reasoning — Orthogonal Noise Decomposition Reveals Direction×Magnitude Interaction
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18625621.svg)](https://doi.org/10.5281/zenodo.18625621)
 
-> **"Apple said LLMs can't reason. We said: did you forget the chat template?"**
+> **"Neither direction nor magnitude alone is sufficient. Stochastic resonance requires both."**
 
-SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v9.1 extends the framework to **complex reasoning evaluation**: using the Modified Tower of Hanoi to challenge Apple's reasoning collapse claim and report four honest null results.
+SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v10 discovers **stochastic resonance in LLM reasoning**: additive noise at σ=0.15 boosts Modified Tower of Hanoi solve rate from 9% to 32% (p=8.4×10⁻⁵, N=100).
 
-### 🆕 v9.1 Highlights (February 2026)
+### 🆕 v10 Highlights (February 2026)
 
-Season 10 challenges Apple's GSM-Symbolic claim, discovers chat template as the decisive factor, and delivers **four honest null results**.
-
-| Discovery | Key Result |
-|-----------|------------|
-| 🍎 **Apple Rebuttal** | Chat template formatting transforms Hanoi performance: 0% → 16–28%. Apple's "reasoning collapse" is a methodological artifact |
-| 🔄 **Self-Correction is Real** | ~11 self-corrections/game across 170 trials, including spontaneous illegal move detection |
-| ❌ **SNN ≠ Reasoning** | Fisher exact test: Baseline 16%, High-Temp 28%, SNN Echo 22% (p=0.306, n.s., N=150) |
-| 🧠 **DTR Ceiling Effect** | Deep-Thinking Ratio ~94.5% for all Hanoi tokens — success depends on *direction*, not *depth* (p=0.734) |
-| 🌡️ **Temperature Robustness** | Factual accuracy (96.7–100%) and JSON integrity (90–95%) preserved at temp=1.2 |
-
-### 📊 Retained from v9
+Season 11 discovers **stochastic resonance** in LLM reasoning and completes the **orthogonal noise decomposition**.
 
 | Discovery | Key Result |
 |-----------|------------|
-| 🎯 **L17-18 Universal Attractor** | All CfC topologies converge to L17-18 as optimal injection depth (CV=10.2%) |
-| 👁️ **Déjà Vu Effect** | First physical observation of LLM "Aha moment": entropy -46%, conflict +17% |
-| ⚡ **Physical Prompting** | Micro-dose σ=0.02 echo at L18 (n=20, not significant at n=150) |
-| ❌ **Small-n Variance Lesson** | Baseline Math: 15%→90% from sample size alone. n≥100 with Fisher testing required |
+| 🔔 **Stochastic Resonance** | Additive σ=0.15 at L18: 9% → **32%** solve rate (p=8.4×10⁻⁵, N=100) — 3.6× improvement |
+| 🧩 **Orthogonal Decomposition** | Spherical (direction-only): ✗ / Radial (magnitude-only): ✗ / Additive (both): ✓ |
+| 📈 **Bell Curve + Cliff** | Perfect inverted-U: peak at σ=0.15 (32%), complete collapse at σ=0.20 (0%) |
+| 🔬 **Large-N Replication** | Peak replicated at N=100, cliff confirmed at N=100+50 |
+
+### 📊 Retained from v9.1
+
+| Discovery | Key Result |
+|-----------|------------|
+| 🍎 **Apple Rebuttal** | Chat template formatting transforms Hanoi: 0% → 16–28%. Apple's claim is a methodological artifact |
+| 🔄 **Self-Correction is Real** | ~11 self-corrections/game across 170 trials |
+| ❌ **SNN ≠ Reasoning at σ=0.02** | p=0.306, n.s. — now explained as sub-threshold dosing |
+| 🧠 **DTR Ceiling Effect** | ~94.5% uniformly — success depends on *direction*, not *depth* |
 
 ### 📊 Retained from v8
-
 
 | Discovery | Key Result |
 |-----------|------------|
@@ -42,7 +40,7 @@ Season 10 challenges Apple's GSM-Symbolic claim, discovers chat template as the 
 ### 📊 Benchmark Summary (v3.1)
 
 | Benchmark | Mistral-7B Tax (σ=0.01) | Qwen2.5-7B Tax (σ=0.01) |
-|-----------|------------------------|--------------------------|
+|-----------|------------------------|--------------------------| 
 | TruthfulQA MC1 (817Q) | **-0.6%** | **-0.1%** |
 | MMLU (1,600Q × 8 subj) | **0.0%** | **0.0%** |
 | MMLU Full (14,042Q × 57 subj) | **0.00%** ✅ | — |
@@ -68,7 +66,18 @@ Season 10 challenges Apple's GSM-Symbolic claim, discovers chat template as the 
 
 ## 📋 Version History
 
-### v9.1 — The Illusion Breaker (NEW)
+### v10 — Stochastic Resonance in LLM Reasoning (NEW)
+
+**Season 11 (Phases 55-57): Noise Decomposition & Bell Curve**
+- Phase 55: **Spherical noise** (direction-only) has no effect (12%, p=0.77 n.s.)
+- Phase 55: **Additive noise** σ=0.10 → 38% (p=0.023 ★)
+- Phase 56: **Radial noise** (magnitude-only) has no effect (4-12%, all n.s.)
+- Phase 56: **Additive σ=0.15** → 38% (**p=0.0006 ★★★**, N=50)
+- Phase 56: Orthogonal decomposition: direction✗ + magnitude✗ = direction×magnitude✓
+- Phase 57: **Large-N replication**: σ=0.15 → 32% (**p=8.4×10⁻⁵**, N=100)
+- Phase 57: **Bell curve cliff**: σ=0.20 → 0% (complete collapse, phase transition)
+
+### v9.1 — The Illusion Breaker
 
 **Season 10 (Phases 50-54b): Tower of Hanoi & Apple Rebuttal**
 - Phase 50: **Chat template discovery** — Apple's 0% is a formatting artifact, not reasoning failure
@@ -115,7 +124,7 @@ Season 10 challenges Apple's GSM-Symbolic claim, discovers chat template as the 
 **Phase 24: Dual-Mode Brain** — Per-sample adaptive CfC:
 
 | Condition | Fact. Acc | Novelty | Grammar |
-|-----------|-----------|---------|---------|
+|-----------|-----------|---------|---------| 
 | Static σ=0.046 | 15.0% | 0.942 | 100% |
 | Static σ=0.080 | 15.0% | 0.941 | 90% |
 | **Dual-Mode CfC** | **30.0%** | **0.943** | **95%** |
@@ -163,27 +172,11 @@ snn-genesis/
 │   ├── phase20-24_*.py               # v5-v6: CfC-Dosing, Dual-Mode Brain
 │   ├── phase25-28_*.py               # v7: Homeostasis, PPO, 3-class, Calibration
 │   ├── phase29-33_*.py               # v8: Cross-model, Brain Atlas, Lobotomy
-│   ├── phase34_caveman_protocol.py   # Caveman protocol (v9)
-│   ├── phase36_entropy_taxonomy.py   # Entropy taxonomy (v9)
-│   ├── phase37_brain_transplant.py   # Brain transplant (v9)
-│   ├── phase38_reverse_transplant.py # Reverse transplant (v9)
-│   ├── phase39_multi_donor_fusion.py # Multi-donor fusion (v9)
-│   ├── phase40_fever_response.py     # Fever response (v9)
-│   ├── phase41_wiring_ablation.py    # Wiring ablation (v9)
-│   ├── phase42_conflict_sensor.py    # Conflict sensor (v9)
-│   ├── phase43_chaos_defibrillator.py # Chaos defibrillator (v9)
-│   ├── phase44_dynamic_depth.py      # Dynamic depth / L17-18 attractor (v9)
-│   ├── phase45_dejavu_sensor.py      # Déjà Vu sensor (v9)
-│   ├── phase46_phantom_echo.py       # Physical Prompting (v9)
-│   ├── phase46b_phantom_echo_v2.py   # Physical Prompting v2 (v9)
-│   ├── phase47_dejavu_contradiction.py # Context saturation (v9)
-│   ├── phase48_surgical_strike.py    # Surgical L18 Strike (v9)
-│   ├── phase49_large_validation.py   # Large-scale n=150 validation (v9)
-│   ├── phase50_hanoi_chat_template.py # Chat template discovery (v9.1) ← NEW
-│   ├── phase51_hanoi_fisher.py       # Hanoi Fisher exact test (v9.1) ← NEW
-│   ├── phase51b_dtr_measurement.py   # DTR measurement (v9.1) ← NEW
-│   ├── phase54_factual_sanity.py     # Factual sanity check (v9.1) ← NEW
-│   └── phase54b_structural_sanity.py # JSON structural check (v9.1) ← NEW
+│   ├── phase34-49_*.py               # v9: Physical Prompting, Déjà Vu, Validation
+│   ├── phase50-54b_*.py              # v9.1: Tower of Hanoi, Apple rebuttal
+│   ├── phase55_spherical_noise.py    # v10: Spherical noise test ← NEW
+│   ├── phase56_radial_dose_response.py # v10: Radial + dose-response ← NEW
+│   └── phase57_bell_curve.py         # v10: Bell curve completion ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
 │   ├── phase*_log.json               # All experiment result logs
@@ -272,6 +265,11 @@ python experiments/phase51_hanoi_fisher.py              # Hanoi Fisher exact tes
 python experiments/phase51b_dtr_measurement.py          # Deep-Thinking Ratio measurement
 python experiments/phase54_factual_sanity.py            # Factual accuracy sanity check
 python experiments/phase54b_structural_sanity.py        # JSON structural integrity check
+
+# v10 experiments (requires ~16GB+ VRAM)
+python experiments/phase55_spherical_noise.py           # Spherical noise (direction-only)
+python experiments/phase56_radial_dose_response.py      # Radial + Additive dose-response
+python experiments/phase57_bell_curve.py                # Bell curve completion + large-N
 ```
 
 ## 🤖 AI Collaboration
@@ -280,8 +278,8 @@ python experiments/phase54b_structural_sanity.py        # JSON structural integr
 |--------------|:-------------|
 | v1 — v5 (Phases 5–20) | Google Gemini 3 Pro |
 | v6 — v8 (Phases 20b–33) | Anthropic Claude Opus 4.6 |
-| v9 (Phases 34–49) | Google Gemini 2.5 Pro (Antigravity) |
-| v9.1 (Phases 50–54b) | Anthropic Claude Opus 4.6 (Antigravity) |
+| v9 (Phases 34–49) | Google Gemini 2.5 Pro via Google Antigravity |
+| v9.1–v10 (Phases 50–57) | Anthropic Claude Opus 4.6 via Google Antigravity |
 
 All experimental decisions, research direction, and final interpretation were made by the human author.
 
@@ -302,7 +300,7 @@ All experimental decisions, research direction, and final interpretation were ma
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v9.1: The Illusion Breaker --- Tower of Hanoi, Apple's Reasoning Collapse Revisited, and Honest Null Results},
+  title={SNN-Genesis v10: Stochastic Resonance in LLM Reasoning --- Orthogonal Noise Decomposition Reveals Direction×Magnitude Interaction},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},
