@@ -1,23 +1,28 @@
-# 🧬 SNN-Genesis v10: Stochastic Resonance in LLM Reasoning — Orthogonal Noise Decomposition Reveals Direction×Magnitude Interaction
+# 🧬 SNN-Genesis v10.1: Stochastic Resonance in LLM Reasoning — Cliff Anatomy, Smart Defibrillation, and the Prophylactic Principle
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18625621.svg)](https://doi.org/10.5281/zenodo.18625621)
 
-> **"Neither direction nor magnitude alone is sufficient. Stochastic resonance requires both."**
+> **"Stochastic resonance is a vaccine, not an antibiotic. The noise must be present before reasoning enters a failure basin."**
 
-SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v10 discovers **stochastic resonance in LLM reasoning**: additive noise at σ=0.15 boosts Modified Tower of Hanoi solve rate from 9% to 32% (p=8.4×10⁻⁵, N=100).
+SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v10.1 dissects the **stochastic resonance phase transition** and establishes the **Prophylactic Principle**: noise must be applied preventively, not reactively.
 
-### 🆕 v10 Highlights (February 2026)
+### 🆕 v10.1 Highlights (February 2026)
 
-Season 11 discovers **stochastic resonance** in LLM reasoning and completes the **orthogonal noise decomposition**.
+| Discovery | Key Result |
+|-----------|------------|
+| 🔬 **Cliff Anatomy** (Phase 58) | Cosine similarity ≈ 0.50 is critical threshold. SNR < 0.5 = collapse. Transition is gradual |
+| ⚡ **Smart Defibrillation** (Phase 59) | On-error noise → **4%** (worse than 18% baseline!). Always-on → 26% |
+| 💉 **Prophylactic Principle** | SR is a **vaccine** (prevents entrapment), not an **antibiotic** (cures errors) |
+
+### 📊 From v10 (Retained)
 
 | Discovery | Key Result |
 |-----------|------------|
 | 🔔 **Stochastic Resonance** | Additive σ=0.15 at L18: 9% → **32%** solve rate (p=8.4×10⁻⁵, N=100) — 3.6× improvement |
 | 🧩 **Orthogonal Decomposition** | Spherical (direction-only): ✗ / Radial (magnitude-only): ✗ / Additive (both): ✓ |
 | 📈 **Bell Curve + Cliff** | Perfect inverted-U: peak at σ=0.15 (32%), complete collapse at σ=0.20 (0%) |
-| 🔬 **Large-N Replication** | Peak replicated at N=100, cliff confirmed at N=100+50 |
 
 ### 📊 Retained from v9.1
 
@@ -66,9 +71,9 @@ Season 11 discovers **stochastic resonance** in LLM reasoning and completes the 
 
 ## 📋 Version History
 
-### v10 — Stochastic Resonance in LLM Reasoning (NEW)
+### v10/v10.1 — Stochastic Resonance in LLM Reasoning (NEW)
 
-**Season 11 (Phases 55-57): Noise Decomposition & Bell Curve**
+**Season 11 (Phases 55-59): Noise Decomposition, Bell Curve, Cliff Anatomy & Defibrillation**
 - Phase 55: **Spherical noise** (direction-only) has no effect (12%, p=0.77 n.s.)
 - Phase 55: **Additive noise** σ=0.10 → 38% (p=0.023 ★)
 - Phase 56: **Radial noise** (magnitude-only) has no effect (4-12%, all n.s.)
@@ -76,6 +81,8 @@ Season 11 discovers **stochastic resonance** in LLM reasoning and completes the 
 - Phase 56: Orthogonal decomposition: direction✗ + magnitude✗ = direction×magnitude✓
 - Phase 57: **Large-N replication**: σ=0.15 → 32% (**p=8.4×10⁻⁵**, N=100)
 - Phase 57: **Bell curve cliff**: σ=0.20 → 0% (complete collapse, phase transition)
+- Phase 58: **Cliff anatomy**: cos≈0.50 = critical threshold, SNR<0.5 = collapse ← NEW v10.1
+- Phase 59: **Smart defibrillation**: on-error noise → 4% (worse!). **Prophylactic Principle** ← NEW v10.1
 
 ### v9.1 — The Illusion Breaker
 
@@ -174,9 +181,11 @@ snn-genesis/
 │   ├── phase29-33_*.py               # v8: Cross-model, Brain Atlas, Lobotomy
 │   ├── phase34-49_*.py               # v9: Physical Prompting, Déjà Vu, Validation
 │   ├── phase50-54b_*.py              # v9.1: Tower of Hanoi, Apple rebuttal
-│   ├── phase55_spherical_noise.py    # v10: Spherical noise test ← NEW
-│   ├── phase56_radial_dose_response.py # v10: Radial + dose-response ← NEW
-│   └── phase57_bell_curve.py         # v10: Bell curve completion ← NEW
+│   ├── phase55_spherical_noise.py    # v10: Spherical noise test
+│   ├── phase56_radial_dose_response.py # v10: Radial + dose-response
+│   ├── phase57_bell_curve.py         # v10: Bell curve completion
+│   ├── phase58_cliff_anatomy.py      # v10.1: Cliff dissection ← NEW
+│   └── phase59_smart_defibrillator.py # v10.1: Smart defibrillation ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
 │   ├── phase*_log.json               # All experiment result logs
@@ -270,6 +279,10 @@ python experiments/phase54b_structural_sanity.py        # JSON structural integr
 python experiments/phase55_spherical_noise.py           # Spherical noise (direction-only)
 python experiments/phase56_radial_dose_response.py      # Radial + Additive dose-response
 python experiments/phase57_bell_curve.py                # Bell curve completion + large-N
+
+# v10.1 experiments (requires ~16GB+ VRAM)
+python experiments/phase58_cliff_anatomy.py             # Cliff anatomy (cos/norm/SNR)
+python experiments/phase59_smart_defibrillator.py       # Smart defibrillation (Prophylactic Principle)
 ```
 
 ## 🤖 AI Collaboration
@@ -279,7 +292,7 @@ python experiments/phase57_bell_curve.py                # Bell curve completion 
 | v1 — v5 (Phases 5–20) | Google Gemini 3 Pro |
 | v6 — v8 (Phases 20b–33) | Anthropic Claude Opus 4.6 |
 | v9 (Phases 34–49) | Google Gemini 2.5 Pro via Google Antigravity |
-| v9.1–v10 (Phases 50–57) | Anthropic Claude Opus 4.6 via Google Antigravity |
+| v9.1–v10.1 (Phases 50–59) | Anthropic Claude Opus 4.6 via Google Antigravity |
 
 All experimental decisions, research direction, and final interpretation were made by the human author.
 
@@ -300,7 +313,7 @@ All experimental decisions, research direction, and final interpretation were ma
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v10: Stochastic Resonance in LLM Reasoning --- Orthogonal Noise Decomposition Reveals Direction×Magnitude Interaction},
+  title={SNN-Genesis v10.1: Stochastic Resonance in LLM Reasoning --- Cliff Anatomy, Smart Defibrillation, and the Prophylactic Principle},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},
