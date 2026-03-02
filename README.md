@@ -1,4 +1,4 @@
-# 🧬 SNN-Genesis v10.1: Stochastic Resonance in LLM Reasoning — Cliff Anatomy, Smart Defibrillation, and the Prophylactic Principle
+# 🧬 SNN-Genesis v11: Stochastic Resonance in LLM Reasoning — Optimal Noise Duration, Simulated Annealing, and the Prophylactic Principle
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -6,17 +6,17 @@
 
 > **"Stochastic resonance is a vaccine, not an antibiotic. The noise must be present before reasoning enters a failure basin."**
 
-SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v10.1 dissects the **stochastic resonance phase transition** and establishes the **Prophylactic Principle**: noise must be applied preventively, not reactively.
+SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v11 discovers **optimal noise scheduling** via simulated annealing (38%), identifies the **optimal vaccination duration** (42% — all-time record), and establishes the **Prophylactic Principle**.
 
-### 🆕 v10.1 Highlights (February 2026)
+### 🆕 v11 Highlights (March 2026)
 
 | Discovery | Key Result |
 |-----------|------------|
-| 🔬 **Cliff Anatomy** (Phase 58) | Cosine similarity ≈ 0.50 is critical threshold. SNR < 0.5 = collapse. Transition is gradual |
-| ⚡ **Smart Defibrillation** (Phase 59) | On-error noise → **4%** (worse than 18% baseline!). Always-on → 26% |
-| 💉 **Prophylactic Principle** | SR is a **vaccine** (prevents entrapment), not an **antibiotic** (cures errors) |
+| 🔥 **Simulated Annealing** (Phase 60) | Linear noise decay achieves **38%** — surpasses always-on (24%) by 14pp |
+| 🔄 **KV-Cache Rollback** (Phase 61) | Rollback (30%) ≈ always-on (32%). **Noise is context-independent** |
+| 🏆 **Noise Half-Life** (Phase 62) | 20-move noise → **42%** (all-time record!). 5-move noise → 30% (7.5× baseline) |
 
-### 📊 From v10 (Retained)
+### 📊 From v10/v10.1 (Retained)
 
 | Discovery | Key Result |
 |-----------|------------|
@@ -71,7 +71,7 @@ SNN-Genesis is a framework for LLM safety training and **interpretability** usin
 
 ## 📋 Version History
 
-### v10/v10.1 — Stochastic Resonance in LLM Reasoning (NEW)
+### v10/v10.1/v11 — Stochastic Resonance in LLM Reasoning (LATEST)
 
 **Season 11 (Phases 55-59): Noise Decomposition, Bell Curve, Cliff Anatomy & Defibrillation**
 - Phase 55: **Spherical noise** (direction-only) has no effect (12%, p=0.77 n.s.)
@@ -81,8 +81,13 @@ SNN-Genesis is a framework for LLM safety training and **interpretability** usin
 - Phase 56: Orthogonal decomposition: direction✗ + magnitude✗ = direction×magnitude✓
 - Phase 57: **Large-N replication**: σ=0.15 → 32% (**p=8.4×10⁻⁵**, N=100)
 - Phase 57: **Bell curve cliff**: σ=0.20 → 0% (complete collapse, phase transition)
-- Phase 58: **Cliff anatomy**: cos≈0.50 = critical threshold, SNR<0.5 = collapse ← NEW v10.1
-- Phase 59: **Smart defibrillation**: on-error noise → 4% (worse!). **Prophylactic Principle** ← NEW v10.1
+- Phase 58: **Cliff anatomy**: cos≈0.50 = critical threshold, SNR<0.5 = collapse
+- Phase 59: **Smart defibrillation**: on-error noise → 4% (worse!). **Prophylactic Principle**
+
+**Season 12 (Phases 60-62): Simulated Annealing & Noise Half-Life** ← NEW v11
+- Phase 60: **Simulated annealing** — linear decay **38%** (best of 5 protocols). Always-on 24% ← NEW
+- Phase 61: **KV-Cache rollback** — rollback + noise (30%) ≈ always-on (32%). Context-independent ← NEW
+- Phase 62: **Noise half-life** — noise_first_20 = **42%** (🏆 all-time record!). 5 moves → 30% ← NEW
 
 ### v9.1 — The Illusion Breaker
 
@@ -184,8 +189,11 @@ snn-genesis/
 │   ├── phase55_spherical_noise.py    # v10: Spherical noise test
 │   ├── phase56_radial_dose_response.py # v10: Radial + dose-response
 │   ├── phase57_bell_curve.py         # v10: Bell curve completion
-│   ├── phase58_cliff_anatomy.py      # v10.1: Cliff dissection ← NEW
-│   └── phase59_smart_defibrillator.py # v10.1: Smart defibrillation ← NEW
+│   ├── phase58_cliff_anatomy.py      # v10.1: Cliff dissection
+│   ├── phase59_smart_defibrillator.py # v10.1: Smart defibrillation
+│   ├── phase60_61_batch.py            # v11: Annealing + KV-Rollback ← NEW
+│   ├── phase62_noise_halflife.py      # v11: Noise half-life ← NEW
+│   └── phase62_launcher.py            # v11: Auto-launcher ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
 │   ├── phase*_log.json               # All experiment result logs
@@ -283,6 +291,10 @@ python experiments/phase57_bell_curve.py                # Bell curve completion 
 # v10.1 experiments (requires ~16GB+ VRAM)
 python experiments/phase58_cliff_anatomy.py             # Cliff anatomy (cos/norm/SNR)
 python experiments/phase59_smart_defibrillator.py       # Smart defibrillation (Prophylactic Principle)
+
+# v11 experiments (requires ~16GB+ VRAM)
+python experiments/phase60_61_batch.py                   # Simulated annealing + KV-rollback
+python experiments/phase62_noise_halflife.py              # Noise half-life (optimal duration)
 ```
 
 ## 🤖 AI Collaboration
@@ -292,7 +304,7 @@ python experiments/phase59_smart_defibrillator.py       # Smart defibrillation (
 | v1 — v5 (Phases 5–20) | Google Gemini 3 Pro |
 | v6 — v8 (Phases 20b–33) | Anthropic Claude Opus 4.6 |
 | v9 (Phases 34–49) | Google Gemini 2.5 Pro via Google Antigravity |
-| v9.1–v10.1 (Phases 50–59) | Anthropic Claude Opus 4.6 via Google Antigravity |
+| v9.1–v11 (Phases 50–62) | Anthropic Claude Opus 4.6 via Google Antigravity |
 
 All experimental decisions, research direction, and final interpretation were made by the human author.
 
@@ -313,7 +325,7 @@ All experimental decisions, research direction, and final interpretation were ma
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v10.1: Stochastic Resonance in LLM Reasoning --- Cliff Anatomy, Smart Defibrillation, and the Prophylactic Principle},
+  title={SNN-Genesis v11: Stochastic Resonance in LLM Reasoning --- Optimal Noise Duration, Simulated Annealing, and the Prophylactic Principle},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},
