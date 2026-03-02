@@ -1,0 +1,209 @@
+{
+  "experiment": "Phase 56 (checkpoint)",
+  "completed_conditions": [
+    "baseline",
+    "additive_0.05",
+    "additive_0.08",
+    "additive_0.10",
+    "additive_0.12",
+    "additive_0.15",
+    "radial_0.05",
+    "radial_0.10",
+    "radial_0.15"
+  ],
+  "summaries": [
+    {
+      "condition": "baseline",
+      "sigma": 0.0,
+      "hook_type": "none",
+      "n_trials": 50,
+      "n_solved": 4,
+      "solve_rate": 8.0,
+      "avg_legal": 23.76,
+      "avg_illegal": 23.16,
+      "avg_self_corr": 11.72,
+      "optimal": 26,
+      "hook_diagnostics": {},
+      "thoughts": [
+        "To follow the modified rules and make progress towards moving all disks to C, I ",
+        "To follow the modified rules and minimize the number of moves, I need to first m",
+        "To follow the modified rules and minimize unnecessary steps, let's first move th"
+      ]
+    },
+    {
+      "condition": "additive_0.05",
+      "sigma": 0.05,
+      "hook_type": "additive",
+      "n_trials": 50,
+      "n_solved": 9,
+      "solve_rate": 18.0,
+      "avg_legal": 21.3,
+      "avg_illegal": 21.08,
+      "avg_self_corr": 10.16,
+      "optimal": 26,
+      "hook_diagnostics": {
+        "avg_norm_ratio": 1.129421,
+        "std_norm_ratio": 0.019582
+      },
+      "thoughts": [
+        "To follow the modified rule, we need to place smaller disks on larger ones. In t",
+        "Following the new rules, I should move the smallest disk first. Let's move the t",
+        "To follow the modified rules and avoid placing larger disks on smaller ones, I n"
+      ]
+    },
+    {
+      "condition": "additive_0.08",
+      "sigma": 0.08,
+      "hook_type": "additive",
+      "n_trials": 50,
+      "n_solved": 9,
+      "solve_rate": 18.0,
+      "avg_legal": 23.32,
+      "avg_illegal": 20.08,
+      "avg_self_corr": 10.4,
+      "optimal": 26,
+      "hook_diagnostics": {
+        "avg_norm_ratio": 1.306217,
+        "std_norm_ratio": 0.041103
+      },
+      "thoughts": [
+        "Place the smallest disk on an empty tower to allow larger disks to be placed upo",
+        "Need to move the larger disk back to A so that I can place it on top of the smal",
+        "I need to move the smaller disk on top (Disk 2) from B to A first, then I can mo"
+      ]
+    },
+    {
+      "condition": "additive_0.10",
+      "sigma": 0.1,
+      "hook_type": "additive",
+      "n_trials": 50,
+      "n_solved": 12,
+      "solve_rate": 24.0,
+      "avg_legal": 21.02,
+      "avg_illegal": 21.94,
+      "avg_self_corr": 10.66,
+      "optimal": 26,
+      "hook_diagnostics": {
+        "avg_norm_ratio": 1.450398,
+        "std_norm_ratio": 0.057565
+      },
+      "thoughts": [
+        "Start moving the smaller disks first according to the modified rules.",
+        "I need to put the second disk on top of the first one somewhere, and I cannot pu",
+        "` To follow the modified rules where you must only place larger disks on smaller"
+      ]
+    },
+    {
+      "condition": "additive_0.12",
+      "sigma": 0.12,
+      "hook_type": "additive",
+      "n_trials": 50,
+      "n_solved": 9,
+      "solve_rate": 18.0,
+      "avg_legal": 19.58,
+      "avg_illegal": 23.84,
+      "avg_self_corr": 11.42,
+      "optimal": 26,
+      "hook_diagnostics": {
+        "avg_norm_ratio": 1.609138,
+        "std_norm_ratio": 0.074836
+      },
+      "thoughts": [
+        "Moving smaller disk for future steps.",
+        "To follow the rules and make sure we priorize the larger disk, I will move the s",
+        "Since the current state shows that the smaller disk is on a different tower than"
+      ]
+    },
+    {
+      "condition": "additive_0.15",
+      "sigma": 0.15,
+      "hook_type": "additive",
+      "n_trials": 50,
+      "n_solved": 19,
+      "solve_rate": 38.0,
+      "avg_legal": 8.42,
+      "avg_illegal": 21.06,
+      "avg_self_corr": 6.52,
+      "optimal": 26,
+      "hook_diagnostics": {
+        "avg_norm_ratio": 1.873978,
+        "std_norm_ratio": 0.107709
+      },
+      "thoughts": [
+        "Since we have three disks on the tower A and no other options available for the ",
+        "Move the larger disc 2 from the source to be near the smallest stack.",
+        "We need to reverse the previous three steps and follow the rules that I mentione"
+      ]
+    },
+    {
+      "condition": "radial_0.05",
+      "sigma": 0.05,
+      "hook_type": "radial",
+      "n_trials": 50,
+      "n_solved": 6,
+      "solve_rate": 12.0,
+      "avg_legal": 22.54,
+      "avg_illegal": 23.6,
+      "avg_self_corr": 11.64,
+      "optimal": 26,
+      "hook_diagnostics": {
+        "avg_norm_ratio": 0.999959,
+        "std_norm_ratio": 0.049598,
+        "avg_cos_similarity": 0.999988,
+        "std_cos_similarity": 0.000132
+      },
+      "thoughts": [
+        "To follow the modified rules, I need to find a smaller disk on top that I can pl",
+        "To follow the modified rules and minimize unnecessary steps, let's first put the",
+        "To follow the modified rules and make progress towards moving all disks to C, we"
+      ]
+    },
+    {
+      "condition": "radial_0.10",
+      "sigma": 0.1,
+      "hook_type": "radial",
+      "n_trials": 50,
+      "n_solved": 2,
+      "solve_rate": 4.0,
+      "avg_legal": 22.7,
+      "avg_illegal": 22.94,
+      "avg_self_corr": 10.92,
+      "optimal": 26,
+      "hook_diagnostics": {
+        "avg_norm_ratio": 1.000076,
+        "std_norm_ratio": 0.099383,
+        "avg_cos_similarity": 0.999953,
+        "std_cos_similarity": 0.000536
+      },
+      "thoughts": [
+        "To follow the modified rules and move larger disks on smaller ones, let's first ",
+        "To follow the modified rules, I need to find a larger disk that is currently on ",
+        "Following the modified rules, let's find a valid move that adheres to them."
+      ]
+    },
+    {
+      "condition": "radial_0.15",
+      "sigma": 0.15,
+      "hook_type": "radial",
+      "n_trials": 50,
+      "n_solved": 3,
+      "solve_rate": 6.0,
+      "avg_legal": 22.56,
+      "avg_illegal": 23.4,
+      "avg_self_corr": 11.26,
+      "optimal": 26,
+      "hook_diagnostics": {
+        "avg_norm_ratio": 1.000366,
+        "std_norm_ratio": 0.148709,
+        "avg_cos_similarity": 0.999888,
+        "std_cos_similarity": 0.001291
+      },
+      "thoughts": [
+        "To follow the modified rules and minimize further steps, let's first move smalle",
+        "Place the smaller disk back on A so I can move the larger ones correctly.",
+        "To follow the modified rules and make progress towards moving all disks to C, I "
+      ]
+    }
+  ],
+  "in_progress": {}
+}

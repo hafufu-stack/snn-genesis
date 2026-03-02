@@ -1,0 +1,80 @@
+{
+  "experiment": "Phase 62: Noise Half-Life \u2014 Duration Scan",
+  "model": "Mistral-7B",
+  "task": "Modified-3 Hanoi",
+  "purpose": "Measure how long prophylactic noise must be applied for the effect to persist",
+  "elapsed_min": 557.8,
+  "conditions": [
+    {
+      "condition": "baseline",
+      "noise_duration": 0,
+      "n_trials": 50,
+      "n_solved": 2,
+      "solve_rate": 4.0,
+      "avg_legal": 22.7,
+      "avg_illegal": 23.1,
+      "avg_noise_moves": 0.0
+    },
+    {
+      "condition": "noise_first_5",
+      "noise_duration": 5,
+      "n_trials": 50,
+      "n_solved": 15,
+      "solve_rate": 30.0,
+      "avg_legal": 14.82,
+      "avg_illegal": 20.6,
+      "avg_noise_moves": 4.38
+    },
+    {
+      "condition": "noise_first_10",
+      "noise_duration": 10,
+      "n_trials": 50,
+      "n_solved": 15,
+      "solve_rate": 30.0,
+      "avg_legal": 11.14,
+      "avg_illegal": 22.72,
+      "avg_noise_moves": 7.16
+    },
+    {
+      "condition": "noise_first_15",
+      "noise_duration": 15,
+      "n_trials": 50,
+      "n_solved": 6,
+      "solve_rate": 12.0,
+      "avg_legal": 9.36,
+      "avg_illegal": 25.76,
+      "avg_noise_moves": 8.84
+    },
+    {
+      "condition": "noise_first_20",
+      "noise_duration": 20,
+      "n_trials": 50,
+      "n_solved": 21,
+      "solve_rate": 42.0,
+      "avg_legal": 7.3,
+      "avg_illegal": 19.7,
+      "avg_noise_moves": 7.3
+    },
+    {
+      "condition": "noise_first_25",
+      "noise_duration": 25,
+      "n_trials": 50,
+      "n_solved": 7,
+      "solve_rate": 14.0,
+      "avg_legal": 9.78,
+      "avg_illegal": 28.3,
+      "avg_noise_moves": 9.78
+    },
+    {
+      "condition": "always_0.15",
+      "noise_duration": 50,
+      "n_trials": 50,
+      "n_solved": 18,
+      "solve_rate": 36.0,
+      "avg_legal": 8.82,
+      "avg_illegal": 22.84,
+      "avg_noise_moves": 8.82
+    }
+  ],
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase62_noise_halflife.png"
+}

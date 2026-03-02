@@ -552,10 +552,9 @@ def main():
     except Exception:
         print("\a")
 
-    # ─── Hibernate ───
-    print("\n💤 Hibernating in 10 seconds...")
-    time.sleep(10)
-    os.system("shutdown /h")
+    # Note: Originally hibernated PC after completion (local use only).
+    # Removed for safety — do not auto-hibernate on other users' machines.
+    print("\n✅ Phase 15 finished. Results saved.")
 
 
 if __name__ == "__main__":

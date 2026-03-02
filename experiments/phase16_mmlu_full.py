@@ -456,11 +456,9 @@ def main():
     except Exception:
         print("\a")
 
-    # ─── Hibernate ───
-    print("\n💤 Hibernating in 30 seconds...")
-    print("   (Ctrl+C to cancel)")
-    time.sleep(30)
-    os.system("shutdown /h")
+    # Note: Originally hibernated PC after completion (local use only).
+    # Removed for safety — do not auto-hibernate on other users' machines.
+    print("\n✅ Phase 16 finished. Results saved.")
 
 
 def save_intermediate(model_short, results, subject_counts, total_questions):

@@ -1,0 +1,69 @@
+{
+  "experiment": "Phase 57 (checkpoint)",
+  "completed_conditions": [
+    "baseline",
+    "additive_0.15",
+    "additive_0.20",
+    "additive_0.25"
+  ],
+  "summaries": [
+    {
+      "condition": "baseline",
+      "sigma": 0.0,
+      "n_trials": 100,
+      "n_solved": 9,
+      "solve_rate": 9.0,
+      "avg_legal": 22.94,
+      "avg_illegal": 22.63,
+      "avg_self_corr": 11.18,
+      "optimal": 26,
+      "hook_diagnostics": {}
+    },
+    {
+      "condition": "additive_0.15",
+      "sigma": 0.15,
+      "n_trials": 100,
+      "n_solved": 32,
+      "solve_rate": 32.0,
+      "avg_legal": 8.87,
+      "avg_illegal": 23.36,
+      "avg_self_corr": 6.76,
+      "optimal": 26,
+      "hook_diagnostics": {
+        "avg_norm_ratio": 1.874243,
+        "std_norm_ratio": 0.108228
+      }
+    },
+    {
+      "condition": "additive_0.20",
+      "sigma": 0.2,
+      "n_trials": 100,
+      "n_solved": 0,
+      "solve_rate": 0.0,
+      "avg_legal": 0.08,
+      "avg_illegal": 10.41,
+      "avg_self_corr": 0.08,
+      "optimal": 26,
+      "hook_diagnostics": {
+        "avg_norm_ratio": 2.414475,
+        "std_norm_ratio": 0.177021
+      }
+    },
+    {
+      "condition": "additive_0.25",
+      "sigma": 0.25,
+      "n_trials": 50,
+      "n_solved": 0,
+      "solve_rate": 0.0,
+      "avg_legal": 0.0,
+      "avg_illegal": 10.0,
+      "avg_self_corr": 0.0,
+      "optimal": 26,
+      "hook_diagnostics": {
+        "avg_norm_ratio": 3.03586,
+        "std_norm_ratio": 0.194151
+      }
+    }
+  ],
+  "in_progress": {}
+}

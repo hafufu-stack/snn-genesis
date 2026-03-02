@@ -1,0 +1,49 @@
+{
+  "experiment": "Phase 60: Simulated Annealing Schedule",
+  "model": "Mistral-7B",
+  "task": "Modified-3 Hanoi",
+  "elapsed_min": 383.1,
+  "conditions": [
+    {
+      "condition": "baseline",
+      "n_trials": 50,
+      "n_solved": 2,
+      "solve_rate": 4.0,
+      "avg_legal": 22.7,
+      "avg_illegal": 23.1
+    },
+    {
+      "condition": "always_0.15",
+      "n_trials": 50,
+      "n_solved": 12,
+      "solve_rate": 24.0,
+      "avg_legal": 8.78,
+      "avg_illegal": 24.42
+    },
+    {
+      "condition": "linear_decay",
+      "n_trials": 50,
+      "n_solved": 19,
+      "solve_rate": 38.0,
+      "avg_legal": 17.38,
+      "avg_illegal": 18.48
+    },
+    {
+      "condition": "cosine_decay",
+      "n_trials": 50,
+      "n_solved": 11,
+      "solve_rate": 22.0,
+      "avg_legal": 20.56,
+      "avg_illegal": 22.54
+    },
+    {
+      "condition": "step_half",
+      "n_trials": 50,
+      "n_solved": 16,
+      "solve_rate": 32.0,
+      "avg_legal": 12.44,
+      "avg_illegal": 22.16
+    }
+  ],
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase60_annealing.png"
+}
