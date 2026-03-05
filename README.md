@@ -304,9 +304,7 @@ python experiments/phase69_master_equation.py             # Annealing variants a
 |--------------|:-------------|
 | v1 — v5 (Phases 5–20) | Google Gemini 3 Pro |
 | v6 — v8 (Phases 20b–33) | Anthropic Claude Opus 4.6 |
-| v9 (Phases 34–49) | Google Gemini 2.5 Pro via Google Antigravity |
-| v9.1–v11 (Phases 50–62) | Anthropic Claude Opus 4.6 via Google Antigravity |
-| v12 (Phases 68–69) | Anthropic Claude Opus 4.6 via Google Antigravity |
+| v9 — v12 (Phases 34–69) | Anthropic Claude Opus 4.6 via Google Antigravity |
 
 All experimental decisions, research direction, and final interpretation were made by the human author.
 
