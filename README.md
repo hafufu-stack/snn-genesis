@@ -189,8 +189,11 @@ snn-genesis/
 │   ├── phase59_smart_defibrillator.py # v10.1: Smart defibrillation
 │   ├── phase60_61_batch.py            # v11: Annealing + KV-Rollback
 │   ├── phase62_noise_halflife.py      # v11: Noise half-life
-│   ├── phase68_dose_adjusted.py       # v12: Dose-adjusted correlated noise ← NEW
-│   └── phase69_master_equation.py     # v12: Annealing variants N=100 ← NEW
+│   ├── phase63_65_batch.py            # v12: Flash Annealing + N=100 validation + Adaptive Cosine ← NEW
+│   ├── phase66_two_stage_pulse.py     # v12: Two-stage pulse (Vaccine Booster) ← NEW
+│   ├── phase67_correlated_noise.py    # v12: Inter-layer correlated noise (T-1000 Protocol) ← NEW
+│   ├── phase68_dose_adjusted.py       # v12: Dose-adjusted correlated noise (1/√N law) ← NEW
+│   └── phase69_master_equation.py     # v12: Annealing variants at N=100 ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
 │   ├── phase*_log.json               # All experiment result logs
@@ -294,6 +297,9 @@ python experiments/phase60_61_batch.py                   # Simulated annealing +
 python experiments/phase62_noise_halflife.py              # Noise half-life (optimal duration)
 
 # v12 experiments (requires ~16GB+ VRAM)
+python experiments/phase63_65_batch.py                    # Flash Annealing + N=100 validation + Adaptive Cosine
+python experiments/phase66_two_stage_pulse.py             # Two-stage pulse (Vaccine Booster)
+python experiments/phase67_correlated_noise.py            # Inter-layer correlated noise (T-1000 Protocol)
 python experiments/phase68_dose_adjusted.py               # Dose-adjusted correlated noise (1/√N law)
 python experiments/phase69_master_equation.py             # Annealing variants at N=100
 ```
