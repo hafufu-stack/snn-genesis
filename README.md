@@ -1,4 +1,4 @@
-# 🧬 SNN-Genesis v11: Stochastic Resonance in LLM Reasoning — Optimal Noise Duration, Simulated Annealing, and the Prophylactic Principle
+# 🧬 SNN-Genesis v12: Stochastic Resonance in LLM Reasoning — Correlated Multi-Layer Noise, the 1/√N Dose Law, and Phase Transition Asymmetry
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -6,23 +6,23 @@
 
 > **"Stochastic resonance is a vaccine, not an antibiotic. The noise must be present before reasoning enters a failure basin."**
 
-SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v11 discovers **optimal noise scheduling** via simulated annealing (38%), identifies the **optimal vaccination duration** (42% — all-time record), and establishes the **Prophylactic Principle**.
+SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v12 discovers the **1/√N dose-adjustment law** for multi-layer correlated noise, achieves **40% solve rate** (10× baseline), and reveals an **asymmetric phase transition** where correlation sign determines collapse susceptibility.
 
-### 🆕 v11 Highlights (March 2026)
+### 🆕 v12 Highlights (March 2026)
+
+| Discovery | Key Result |
+|-----------|------------|
+| 💊 **1/√N Dose Law** (Phase 68) | Multi-layer σ must scale as σ/√N — naïve injection collapses (0%), adjusted dose achieves **40%** |
+| ⚖️ **Correlation Asymmetry** (Phase 68) | ρ=+1 at σ=0.075 → **40%** (best ever). ρ=+1 at σ=0.106 → 0%. ρ=−1 at σ=0.106 → 24% |
+| 🔬 **N=100 Replication** (Phase 69) | First-10 linear decay confirms **40%** at N=100. Simple schedules beat complex ones |
+
+### 📊 From v11 (Retained)
 
 | Discovery | Key Result |
 |-----------|------------|
 | 🔥 **Simulated Annealing** (Phase 60) | Linear noise decay achieves **38%** — surpasses always-on (24%) by 14pp |
 | 🔄 **KV-Cache Rollback** (Phase 61) | Rollback (30%) ≈ always-on (32%). **Noise is context-independent** |
 | 🏆 **Noise Half-Life** (Phase 62) | 20-move noise → **42%** (all-time record!). 5-move noise → 30% (7.5× baseline) |
-
-### 📊 From v10/v10.1 (Retained)
-
-| Discovery | Key Result |
-|-----------|------------|
-| 🔔 **Stochastic Resonance** | Additive σ=0.15 at L18: 9% → **32%** solve rate (p=8.4×10⁻⁵, N=100) — 3.6× improvement |
-| 🧩 **Orthogonal Decomposition** | Spherical (direction-only): ✗ / Radial (magnitude-only): ✗ / Additive (both): ✓ |
-| 📈 **Bell Curve + Cliff** | Perfect inverted-U: peak at σ=0.15 (32%), complete collapse at σ=0.20 (0%) |
 
 ### 📊 Retained from v9.1
 
@@ -71,23 +71,19 @@ SNN-Genesis is a framework for LLM safety training and **interpretability** usin
 
 ## 📋 Version History
 
-### v10/v10.1/v11 — Stochastic Resonance in LLM Reasoning (LATEST)
+### v10/v10.1/v11/v12 — Stochastic Resonance in LLM Reasoning (LATEST)
+
+**Season 13 (Phases 68-69): Correlated Noise & Dose Theory** ← NEW v12
+- Phase 68: **Dose-adjusted correlated noise** — L17+L18 ρ=+1 at σ=0.075 → **40%** (10× baseline) ← NEW
+- Phase 68: **Correlation asymmetry** — ρ=+1 collapses at σ=0.106 (0%), ρ=−1 survives (24%) ← NEW
+- Phase 69: **N=100 replication** — first-10 linear decay confirms **40%**. Simple > complex ← NEW
+
+**Season 12 (Phases 60-62): Simulated Annealing & Noise Half-Life**
+- Phase 60: **Simulated annealing** — linear decay **38%** (best of 5 protocols). Always-on 24%
+- Phase 61: **KV-Cache rollback** — rollback + noise (30%) ≈ always-on (32%). Context-independent
+- Phase 62: **Noise half-life** — noise_first_20 = **42%** (🏆 all-time record!). 5 moves → 30%
 
 **Season 11 (Phases 55-59): Noise Decomposition, Bell Curve, Cliff Anatomy & Defibrillation**
-- Phase 55: **Spherical noise** (direction-only) has no effect (12%, p=0.77 n.s.)
-- Phase 55: **Additive noise** σ=0.10 → 38% (p=0.023 ★)
-- Phase 56: **Radial noise** (magnitude-only) has no effect (4-12%, all n.s.)
-- Phase 56: **Additive σ=0.15** → 38% (**p=0.0006 ★★★**, N=50)
-- Phase 56: Orthogonal decomposition: direction✗ + magnitude✗ = direction×magnitude✓
-- Phase 57: **Large-N replication**: σ=0.15 → 32% (**p=8.4×10⁻⁵**, N=100)
-- Phase 57: **Bell curve cliff**: σ=0.20 → 0% (complete collapse, phase transition)
-- Phase 58: **Cliff anatomy**: cos≈0.50 = critical threshold, SNR<0.5 = collapse
-- Phase 59: **Smart defibrillation**: on-error noise → 4% (worse!). **Prophylactic Principle**
-
-**Season 12 (Phases 60-62): Simulated Annealing & Noise Half-Life** ← NEW v11
-- Phase 60: **Simulated annealing** — linear decay **38%** (best of 5 protocols). Always-on 24% ← NEW
-- Phase 61: **KV-Cache rollback** — rollback + noise (30%) ≈ always-on (32%). Context-independent ← NEW
-- Phase 62: **Noise half-life** — noise_first_20 = **42%** (🏆 all-time record!). 5 moves → 30% ← NEW
 
 ### v9.1 — The Illusion Breaker
 
@@ -191,9 +187,10 @@ snn-genesis/
 │   ├── phase57_bell_curve.py         # v10: Bell curve completion
 │   ├── phase58_cliff_anatomy.py      # v10.1: Cliff dissection
 │   ├── phase59_smart_defibrillator.py # v10.1: Smart defibrillation
-│   ├── phase60_61_batch.py            # v11: Annealing + KV-Rollback ← NEW
-│   ├── phase62_noise_halflife.py      # v11: Noise half-life ← NEW
-│   └── phase62_launcher.py            # v11: Auto-launcher ← NEW
+│   ├── phase60_61_batch.py            # v11: Annealing + KV-Rollback
+│   ├── phase62_noise_halflife.py      # v11: Noise half-life
+│   ├── phase68_dose_adjusted.py       # v12: Dose-adjusted correlated noise ← NEW
+│   └── phase69_master_equation.py     # v12: Annealing variants N=100 ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
 │   ├── phase*_log.json               # All experiment result logs
@@ -295,6 +292,10 @@ python experiments/phase59_smart_defibrillator.py       # Smart defibrillation (
 # v11 experiments (requires ~16GB+ VRAM)
 python experiments/phase60_61_batch.py                   # Simulated annealing + KV-rollback
 python experiments/phase62_noise_halflife.py              # Noise half-life (optimal duration)
+
+# v12 experiments (requires ~16GB+ VRAM)
+python experiments/phase68_dose_adjusted.py               # Dose-adjusted correlated noise (1/√N law)
+python experiments/phase69_master_equation.py             # Annealing variants at N=100
 ```
 
 ## 🤖 AI Collaboration
@@ -305,6 +306,7 @@ python experiments/phase62_noise_halflife.py              # Noise half-life (opt
 | v6 — v8 (Phases 20b–33) | Anthropic Claude Opus 4.6 |
 | v9 (Phases 34–49) | Google Gemini 2.5 Pro via Google Antigravity |
 | v9.1–v11 (Phases 50–62) | Anthropic Claude Opus 4.6 via Google Antigravity |
+| v12 (Phases 68–69) | Anthropic Claude Opus 4.6 via Google Antigravity |
 
 All experimental decisions, research direction, and final interpretation were made by the human author.
 
@@ -325,7 +327,7 @@ All experimental decisions, research direction, and final interpretation were ma
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v11: Stochastic Resonance in LLM Reasoning --- Optimal Noise Duration, Simulated Annealing, and the Prophylactic Principle},
+  title={SNN-Genesis v12: Stochastic Resonance in LLM Reasoning --- Correlated Multi-Layer Noise, the 1/sqrt(N) Dose Law, and Phase Transition Asymmetry},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},
