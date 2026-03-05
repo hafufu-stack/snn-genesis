@@ -1,0 +1,163 @@
+{
+  "experiment": "Phase 68: Dose-Adjusted Correlated Noise",
+  "model": "Mistral-7B",
+  "task": "Modified-3 Hanoi",
+  "purpose": "Test correlated noise with \u03c3 scaled by 1/\u221aN to prevent overdose",
+  "phase67_lesson": "\u03c3=0.15 on multiple layers causes cosine collapse (0%); need dose adjustment",
+  "sigma_formula": "\u03c3_adjusted = \u03c3_optimal / \u221aN_layers",
+  "elapsed_min": 770.8,
+  "conditions": [
+    {
+      "condition": "baseline",
+      "description": "No noise (control)",
+      "sigma": 0,
+      "layer_config": {},
+      "first_n": null,
+      "n_trials": 50,
+      "n_solved": 2,
+      "solve_rate": 4.0,
+      "avg_legal": 22.7,
+      "avg_illegal": 23.1
+    },
+    {
+      "condition": "L18_only_0.15",
+      "description": "Single-layer reference (\u03c3=0.150)",
+      "sigma": 0.15,
+      "layer_config": {
+        "18": "1.0"
+      },
+      "first_n": null,
+      "n_trials": 50,
+      "n_solved": 12,
+      "solve_rate": 24.0,
+      "avg_legal": 8.78,
+      "avg_illegal": 24.42
+    },
+    {
+      "condition": "L17L18_pos_adj",
+      "description": "\u03c1=+1 on L17,L18, \u03c3=0.106 (\u221a2-adjusted)",
+      "sigma": 0.10606601717798211,
+      "layer_config": {
+        "17": "1.0",
+        "18": "1.0"
+      },
+      "first_n": null,
+      "n_trials": 50,
+      "n_solved": 0,
+      "solve_rate": 0.0,
+      "avg_legal": 0.0,
+      "avg_illegal": 10.0
+    },
+    {
+      "condition": "L17L18_neg_adj",
+      "description": "\u03c1=-1 on L17,L18, \u03c3=0.106 (\u221a2-adjusted)",
+      "sigma": 0.10606601717798211,
+      "layer_config": {
+        "17": "1.0",
+        "18": "-1.0"
+      },
+      "first_n": null,
+      "n_trials": 50,
+      "n_solved": 12,
+      "solve_rate": 24.0,
+      "avg_legal": 20.54,
+      "avg_illegal": 19.56
+    },
+    {
+      "condition": "push_pull_adj",
+      "description": "T-1000 4-layer push-pull, \u03c3=0.075 (\u221a4-adjusted)",
+      "sigma": 0.075,
+      "layer_config": {
+        "17": "1.0",
+        "18": "1.0",
+        "15": "-1.0",
+        "20": "-1.0"
+      },
+      "first_n": null,
+      "n_trials": 50,
+      "n_solved": 12,
+      "solve_rate": 24.0,
+      "avg_legal": 24.42,
+      "avg_illegal": 17.8
+    },
+    {
+      "condition": "push_pull_low",
+      "description": "T-1000 4-layer push-pull, \u03c3=0.050 (conservative)",
+      "sigma": 0.05,
+      "layer_config": {
+        "17": "1.0",
+        "18": "1.0",
+        "15": "-1.0",
+        "20": "-1.0"
+      },
+      "first_n": null,
+      "n_trials": 50,
+      "n_solved": 9,
+      "solve_rate": 18.0,
+      "avg_legal": 25.36,
+      "avg_illegal": 18.96
+    },
+    {
+      "condition": "push_pull_first10",
+      "description": "T-1000 + flash anneal (first 10 moves), \u03c3=0.075",
+      "sigma": 0.075,
+      "layer_config": {
+        "17": "1.0",
+        "18": "1.0",
+        "15": "-1.0",
+        "20": "-1.0"
+      },
+      "first_n": 10,
+      "n_trials": 50,
+      "n_solved": 10,
+      "solve_rate": 20.0,
+      "avg_legal": 21.46,
+      "avg_illegal": 19.88
+    },
+    {
+      "condition": "L17L18_pos_low",
+      "description": "\u03c1=+1 on L17,L18, \u03c3=0.075 (well below cliff)",
+      "sigma": 0.075,
+      "layer_config": {
+        "17": "1.0",
+        "18": "1.0"
+      },
+      "first_n": null,
+      "n_trials": 50,
+      "n_solved": 20,
+      "solve_rate": 40.0,
+      "avg_legal": 6.78,
+      "avg_illegal": 20.9
+    },
+    {
+      "condition": "L17L18_pos_first10",
+      "description": "\u03c1=+1 on L17,L18 + first10 linear decay, \u03c3=0.106",
+      "sigma": 0.10606601717798211,
+      "layer_config": {
+        "17": "1.0",
+        "18": "1.0"
+      },
+      "first_n": 10,
+      "n_trials": 50,
+      "n_solved": 0,
+      "solve_rate": 0.0,
+      "avg_legal": 0.0,
+      "avg_illegal": 10.0
+    },
+    {
+      "condition": "single_L17_only",
+      "description": "\u03c3=0.150 on L17 alone (layer comparison)",
+      "sigma": 0.15,
+      "layer_config": {
+        "17": "1.0"
+      },
+      "first_n": null,
+      "n_trials": 50,
+      "n_solved": 14,
+      "solve_rate": 28.0,
+      "avg_legal": 4.04,
+      "avg_illegal": 18.78
+    }
+  ],
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase68_dose_adjusted.png"
+}

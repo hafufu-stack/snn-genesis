@@ -1,0 +1,66 @@
+{
+  "experiment": "Phase 65: Adaptive Cosine Homeostasis",
+  "model": "Mistral-7B",
+  "task": "Modified-3 Hanoi",
+  "purpose": "Norm-adaptive \u03c3 to maintain target cosine similarity between original and noised hidden states",
+  "elapsed_min": 577.8,
+  "conditions": [
+    {
+      "condition": "baseline",
+      "n_trials": 50,
+      "n_solved": 5,
+      "solve_rate": 10.0,
+      "avg_legal": 22.42,
+      "avg_illegal": 23.88
+    },
+    {
+      "condition": "always_fixed_0.15",
+      "n_trials": 50,
+      "n_solved": 13,
+      "solve_rate": 26.0,
+      "avg_legal": 8.84,
+      "avg_illegal": 23.72
+    },
+    {
+      "condition": "adaptive_cos_0.55",
+      "n_trials": 50,
+      "n_solved": 4,
+      "solve_rate": 8.0,
+      "avg_legal": 1.92,
+      "avg_illegal": 16.26
+    },
+    {
+      "condition": "adaptive_cos_0.60",
+      "n_trials": 50,
+      "n_solved": 14,
+      "solve_rate": 28.0,
+      "avg_legal": 6.84,
+      "avg_illegal": 23.22
+    },
+    {
+      "condition": "adaptive_cos_0.65",
+      "n_trials": 50,
+      "n_solved": 19,
+      "solve_rate": 38.0,
+      "avg_legal": 13.72,
+      "avg_illegal": 21.42
+    },
+    {
+      "condition": "adaptive_cos_0.70",
+      "n_trials": 50,
+      "n_solved": 14,
+      "solve_rate": 28.0,
+      "avg_legal": 18.84,
+      "avg_illegal": 21.24
+    },
+    {
+      "condition": "adaptive_cos0.60_first20",
+      "n_trials": 50,
+      "n_solved": 9,
+      "solve_rate": 18.0,
+      "avg_legal": 7.46,
+      "avg_illegal": 23.9
+    }
+  ],
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase65_adaptive_cosine.png"
+}

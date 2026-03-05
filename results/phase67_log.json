@@ -1,0 +1,125 @@
+{
+  "experiment": "Phase 67: Inter-Layer Correlated Noise (T-1000 Protocol)",
+  "model": "Mistral-7B",
+  "task": "Modified-3 Hanoi",
+  "purpose": "Test structured (correlated) noise across multiple layers vs independent single-layer noise",
+  "inspiration": "Funasaki (2015) 'Mathematical approach for neural information processing using differential equations' \u2014 Tamagawa University",
+  "elapsed_min": 469.7,
+  "conditions": [
+    {
+      "condition": "baseline",
+      "description": "No noise (control)",
+      "layer_config": {},
+      "first_n": null,
+      "n_trials": 50,
+      "n_solved": 2,
+      "solve_rate": 4.0,
+      "avg_legal": 22.7,
+      "avg_illegal": 23.1
+    },
+    {
+      "condition": "L18_only",
+      "description": "Standard single-layer reference",
+      "layer_config": {
+        "18": "1.0"
+      },
+      "first_n": null,
+      "n_trials": 50,
+      "n_solved": 12,
+      "solve_rate": 24.0,
+      "avg_legal": 8.78,
+      "avg_illegal": 24.42
+    },
+    {
+      "condition": "L17L18_positive",
+      "description": "Same noise on L17 & L18 (\u03c1=+1.0, push together)",
+      "layer_config": {
+        "17": "1.0",
+        "18": "1.0"
+      },
+      "first_n": null,
+      "n_trials": 50,
+      "n_solved": 0,
+      "solve_rate": 0.0,
+      "avg_legal": 0.0,
+      "avg_illegal": 10.0
+    },
+    {
+      "condition": "L17L18_negative",
+      "description": "Opposite noise on L17 vs L18 (\u03c1=-1.0, edge detection)",
+      "layer_config": {
+        "17": "1.0",
+        "18": "-1.0"
+      },
+      "first_n": null,
+      "n_trials": 50,
+      "n_solved": 12,
+      "solve_rate": 24.0,
+      "avg_legal": 20.8,
+      "avg_illegal": 18.44
+    },
+    {
+      "condition": "push_pull_4layer",
+      "description": "T-1000 walk: L17,L18=+Z; L15,L20=-Z",
+      "layer_config": {
+        "17": "1.0",
+        "18": "1.0",
+        "15": "-1.0",
+        "20": "-1.0"
+      },
+      "first_n": null,
+      "n_trials": 50,
+      "n_solved": 0,
+      "solve_rate": 0.0,
+      "avg_legal": 5.4,
+      "avg_illegal": 22.0
+    },
+    {
+      "condition": "push_pull_first10",
+      "description": "T-1000 walk + flash anneal (first 10 moves only)",
+      "layer_config": {
+        "17": "1.0",
+        "18": "1.0",
+        "15": "-1.0",
+        "20": "-1.0"
+      },
+      "first_n": 10,
+      "n_trials": 50,
+      "n_solved": 10,
+      "solve_rate": 20.0,
+      "avg_legal": 17.66,
+      "avg_illegal": 20.66
+    },
+    {
+      "condition": "independent_4layer",
+      "description": "Independent noise on 4 layers (seizure control)",
+      "layer_config": {
+        "15": "independent",
+        "17": "independent",
+        "18": "independent",
+        "20": "independent"
+      },
+      "first_n": null,
+      "n_trials": 50,
+      "n_solved": 0,
+      "solve_rate": 0.0,
+      "avg_legal": 0.0,
+      "avg_illegal": 10.0
+    },
+    {
+      "condition": "L17L18_half_corr",
+      "description": "Partial correlation \u03c1=0.5 on L17\u2192L18",
+      "layer_config": {
+        "17": "1.0",
+        "18": "0.5"
+      },
+      "first_n": null,
+      "n_trials": 50,
+      "n_solved": 0,
+      "solve_rate": 0.0,
+      "avg_legal": 0.0,
+      "avg_illegal": 10.0
+    }
+  ],
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase67_correlated_noise.png"
+}

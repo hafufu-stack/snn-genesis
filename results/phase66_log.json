@@ -1,0 +1,111 @@
+{
+  "experiment": "Phase 66: Two-Stage Pulse (Vaccine Booster)",
+  "model": "Mistral-7B",
+  "task": "Modified-3 Hanoi",
+  "purpose": "Test multi-pulse noise dosing: initial dose + booster after a gap",
+  "elapsed_min": 492.3,
+  "conditions": [
+    {
+      "condition": "baseline",
+      "pulse_schedule": [],
+      "total_noisy_moves": 0,
+      "n_trials": 50,
+      "n_solved": 2,
+      "solve_rate": 4.0,
+      "avg_legal": 22.7,
+      "avg_illegal": 23.1
+    },
+    {
+      "condition": "first20_flat",
+      "pulse_schedule": [
+        [
+          0,
+          20
+        ]
+      ],
+      "total_noisy_moves": 20,
+      "n_trials": 50,
+      "n_solved": 12,
+      "solve_rate": 24.0,
+      "avg_legal": 8.78,
+      "avg_illegal": 24.42
+    },
+    {
+      "condition": "pulse_5+off5+5",
+      "pulse_schedule": [
+        [
+          0,
+          5
+        ],
+        [
+          10,
+          15
+        ]
+      ],
+      "total_noisy_moves": 10,
+      "n_trials": 50,
+      "n_solved": 16,
+      "solve_rate": 32.0,
+      "avg_legal": 11.88,
+      "avg_illegal": 22.98
+    },
+    {
+      "condition": "pulse_5+off10+5",
+      "pulse_schedule": [
+        [
+          0,
+          5
+        ],
+        [
+          15,
+          20
+        ]
+      ],
+      "total_noisy_moves": 10,
+      "n_trials": 50,
+      "n_solved": 14,
+      "solve_rate": 28.0,
+      "avg_legal": 12.46,
+      "avg_illegal": 22.52
+    },
+    {
+      "condition": "pulse_5+off5+10",
+      "pulse_schedule": [
+        [
+          0,
+          5
+        ],
+        [
+          10,
+          20
+        ]
+      ],
+      "total_noisy_moves": 15,
+      "n_trials": 50,
+      "n_solved": 14,
+      "solve_rate": 28.0,
+      "avg_legal": 12.98,
+      "avg_illegal": 25.14
+    },
+    {
+      "condition": "pulse_10+off5+5",
+      "pulse_schedule": [
+        [
+          0,
+          10
+        ],
+        [
+          15,
+          20
+        ]
+      ],
+      "total_noisy_moves": 15,
+      "n_trials": 50,
+      "n_solved": 12,
+      "solve_rate": 24.0,
+      "avg_legal": 10.92,
+      "avg_illegal": 24.1
+    }
+  ],
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase66_two_stage_pulse.png"
+}

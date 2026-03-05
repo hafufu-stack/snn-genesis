@@ -1,0 +1,66 @@
+{
+  "experiment": "Phase 63: Flash Annealing (Duration \u00d7 Schedule)",
+  "model": "Mistral-7B",
+  "task": "Modified-3 Hanoi",
+  "purpose": "Combine Phase 60 (decay schedules) with Phase 62 (first-20 window)",
+  "elapsed_min": 495.4,
+  "conditions": [
+    {
+      "condition": "baseline",
+      "n_trials": 50,
+      "n_solved": 2,
+      "solve_rate": 4.0,
+      "avg_legal": 22.7,
+      "avg_illegal": 23.1
+    },
+    {
+      "condition": "first20_flat",
+      "n_trials": 50,
+      "n_solved": 12,
+      "solve_rate": 24.0,
+      "avg_legal": 8.78,
+      "avg_illegal": 24.42
+    },
+    {
+      "condition": "first20_linear",
+      "n_trials": 50,
+      "n_solved": 14,
+      "solve_rate": 28.0,
+      "avg_legal": 18.86,
+      "avg_illegal": 20.76
+    },
+    {
+      "condition": "first20_cosine",
+      "n_trials": 50,
+      "n_solved": 16,
+      "solve_rate": 32.0,
+      "avg_legal": 15.4,
+      "avg_illegal": 20.4
+    },
+    {
+      "condition": "first20_high_\u03c30.20",
+      "n_trials": 50,
+      "n_solved": 0,
+      "solve_rate": 0.0,
+      "avg_legal": 0.06,
+      "avg_illegal": 10.06
+    },
+    {
+      "condition": "first10_linear",
+      "n_trials": 50,
+      "n_solved": 23,
+      "solve_rate": 46.0,
+      "avg_legal": 16.52,
+      "avg_illegal": 18.84
+    },
+    {
+      "condition": "full_linear_decay",
+      "n_trials": 50,
+      "n_solved": 16,
+      "solve_rate": 32.0,
+      "avg_legal": 13.66,
+      "avg_illegal": 22.1
+    }
+  ],
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase63_flash_annealing.png"
+}

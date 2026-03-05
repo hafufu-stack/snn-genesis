@@ -1,0 +1,74 @@
+{
+  "experiment": "Phase 69: The Master Equation",
+  "model": "Mistral-7B",
+  "task": "Modified-3 Hanoi",
+  "purpose": "Combine adaptive cosine homeostasis with flash annealing via cosine-space annealing",
+  "innovation": "Anneal target_cos from 0.65\u21921.0 instead of \u03c3 from 0.15\u21920. Norm-invariant cooling.",
+  "elapsed_min": 696.8,
+  "conditions": [
+    {
+      "condition": "baseline",
+      "description": "No noise (control)",
+      "n_trials": 50,
+      "n_solved": 2,
+      "solve_rate": 4.0,
+      "avg_legal": 22.7,
+      "avg_illegal": 23.1
+    },
+    {
+      "condition": "first10_linear_ref",
+      "description": "Phase 63 champion: \u03c3=0.15 linear decay over 10 moves",
+      "n_trials": 50,
+      "n_solved": 18,
+      "solve_rate": 36.0,
+      "avg_legal": 17.78,
+      "avg_illegal": 17.94
+    },
+    {
+      "condition": "cos_anneal_first10",
+      "description": "\u2605 TARGET COS anneals 0.65\u21921.0 over 10 moves (adaptive \u03c3)",
+      "n_trials": 50,
+      "n_solved": 15,
+      "solve_rate": 30.0,
+      "avg_legal": 20.8,
+      "avg_illegal": 19.84
+    },
+    {
+      "condition": "cos_anneal_first20",
+      "description": "TARGET COS anneals 0.65\u21921.0 over 20 moves (adaptive \u03c3)",
+      "n_trials": 50,
+      "n_solved": 16,
+      "solve_rate": 32.0,
+      "avg_legal": 20.32,
+      "avg_illegal": 19.74
+    },
+    {
+      "condition": "adaptive_cos_0.65_first10",
+      "description": "Fixed cos=0.65 for first 10 moves only, then OFF",
+      "n_trials": 50,
+      "n_solved": 14,
+      "solve_rate": 28.0,
+      "avg_legal": 16.6,
+      "avg_illegal": 21.86
+    },
+    {
+      "condition": "first10_linear_N100",
+      "description": "N=100 validation: first10 linear (Phase 63 champion)",
+      "n_trials": 100,
+      "n_solved": 40,
+      "solve_rate": 40.0,
+      "avg_legal": 16.8,
+      "avg_illegal": 18.06
+    },
+    {
+      "condition": "adaptive_cos_0.65_N100",
+      "description": "N=100 validation: adaptive cos=0.65 (Phase 65 champion)",
+      "n_trials": 100,
+      "n_solved": 27,
+      "solve_rate": 27.0,
+      "avg_legal": 14.25,
+      "avg_illegal": 25.37
+    }
+  ],
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase69_master_equation.png"
+}

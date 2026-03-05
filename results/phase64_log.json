@@ -1,0 +1,34 @@
+{
+  "experiment": "Phase 64: N=100 Validation",
+  "model": "Mistral-7B",
+  "task": "Modified-3 Hanoi",
+  "purpose": "Large-sample validation of best conditions from Phase 62-63",
+  "elapsed_min": 799.1,
+  "conditions": [
+    {
+      "condition": "baseline",
+      "n_trials": 100,
+      "n_solved": 9,
+      "solve_rate": 9.0,
+      "avg_legal": 23.01,
+      "avg_illegal": 23.0
+    },
+    {
+      "condition": "first20_flat",
+      "n_trials": 100,
+      "n_solved": 26,
+      "solve_rate": 26.0,
+      "avg_legal": 9.12,
+      "avg_illegal": 25.04
+    },
+    {
+      "condition": "first20_linear",
+      "n_trials": 100,
+      "n_solved": 39,
+      "solve_rate": 39.0,
+      "avg_legal": 17.29,
+      "avg_illegal": 19.6
+    }
+  ],
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase64_validation.png"
+}
