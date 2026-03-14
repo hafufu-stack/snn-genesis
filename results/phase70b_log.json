@@ -1,0 +1,92 @@
+{
+  "experiment": "Phase 70b: Per-Dimension \u03c3 Equalized Rank Sweep",
+  "model": "Mistral-7B",
+  "task": "Modified-3 Hanoi",
+  "sigma_per_dim": 0.15,
+  "schedule": "first10_linear_decay",
+  "design": "\u03c3=0.15 per perturbed dim (constant); total energy scales with k",
+  "elapsed_min": 370.9,
+  "conditions": [
+    {
+      "condition": "baseline",
+      "description": "No noise",
+      "n_trials": 30,
+      "n_solved": 1,
+      "solve_rate": 3.3,
+      "avg_legal": 22.83,
+      "avg_illegal": 22.8
+    },
+    {
+      "condition": "perdim_k4",
+      "description": "k=4, \u03c3_per_dim=0.15, first10 linear",
+      "n_trials": 30,
+      "n_solved": 5,
+      "solve_rate": 16.7,
+      "avg_legal": 22.7,
+      "avg_illegal": 22.27,
+      "rank_k": 4,
+      "sigma_per_dim": 0.15,
+      "total_energy": 0.09
+    },
+    {
+      "condition": "perdim_k16",
+      "description": "k=16, \u03c3_per_dim=0.15, first10 linear",
+      "n_trials": 30,
+      "n_solved": 5,
+      "solve_rate": 16.7,
+      "avg_legal": 22.63,
+      "avg_illegal": 22.83,
+      "rank_k": 16,
+      "sigma_per_dim": 0.15,
+      "total_energy": 0.36
+    },
+    {
+      "condition": "perdim_k64",
+      "description": "k=64, \u03c3_per_dim=0.15, first10 linear",
+      "n_trials": 30,
+      "n_solved": 3,
+      "solve_rate": 10.0,
+      "avg_legal": 22.23,
+      "avg_illegal": 23.07,
+      "rank_k": 64,
+      "sigma_per_dim": 0.15,
+      "total_energy": 1.44
+    },
+    {
+      "condition": "perdim_k256",
+      "description": "k=256, \u03c3_per_dim=0.15, first10 linear",
+      "n_trials": 30,
+      "n_solved": 8,
+      "solve_rate": 26.7,
+      "avg_legal": 21.0,
+      "avg_illegal": 21.3,
+      "rank_k": 256,
+      "sigma_per_dim": 0.15,
+      "total_energy": 5.76
+    },
+    {
+      "condition": "perdim_k1024",
+      "description": "k=1024, \u03c3_per_dim=0.15, first10 linear",
+      "n_trials": 30,
+      "n_solved": 8,
+      "solve_rate": 26.7,
+      "avg_legal": 19.37,
+      "avg_illegal": 17.63,
+      "rank_k": 1024,
+      "sigma_per_dim": 0.15,
+      "total_energy": 23.04
+    },
+    {
+      "condition": "perdim_k4096",
+      "description": "k=4096, \u03c3_per_dim=0.15, first10 linear",
+      "n_trials": 30,
+      "n_solved": 8,
+      "solve_rate": 26.7,
+      "avg_legal": 20.1,
+      "avg_illegal": 21.07,
+      "rank_k": 4096,
+      "sigma_per_dim": 0.15,
+      "total_energy": 92.16
+    }
+  ]
+}

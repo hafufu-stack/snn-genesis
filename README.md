@@ -1,4 +1,4 @@
-# 🧬 SNN-Genesis v12: Stochastic Resonance in LLM Reasoning — Correlated Multi-Layer Noise, the 1/√N Dose Law, and Phase Transition Asymmetry
+# 🧬 SNN-Genesis v13: Stochastic Resonance in LLM Reasoning — Low-Rank Efficiency, Semantic Phase Decomposition, and Noise Source Invariance
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -6,9 +6,17 @@
 
 > **"Stochastic resonance is a vaccine, not an antibiotic. The noise must be present before reasoning enters a failure basin."**
 
-SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v12 discovers the **1/√N dose-adjustment law** for multi-layer correlated noise, achieves **40% solve rate** (10× baseline), and reveals an **asymmetric phase transition** where correlation sign determines collapse susceptibility.
+SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v13 decomposes the noise recipe into **When, Where, and What** — discovering that **noise timing and injection site are critical** while **noise source structure is irrelevant**.
 
-### 🆕 v12 Highlights (March 2026)
+### 🆕 v13 Highlights (March 2026)
+
+| Discovery | Key Result |
+|-----------|------------|
+| 🎯 **Low-Rank Noise** (Phase 70b) | k=256 matches full-rank (26.7%); even **k=4** achieves 16.7% (5× baseline). Resonance operates in a low-dimensional subspace |
+| ⏱️ **Semantic Phase Decomposition** (Phase 76) | Recovery-only noise is the strongest single phase (+10pp). Flash Annealing (30%) > all-on semantic (23.3%). **Temporal position > semantic function** |
+| 🔇 **Noise Source Invariance** (Phase 70c) | Gaussian, chaos, pink, uniform — **all identical**. The *structure* of noise is irrelevant; what matters is *when* and *where* |
+
+### 📊 From v12 (Retained)
 
 | Discovery | Key Result |
 |-----------|------------|
@@ -71,12 +79,22 @@ SNN-Genesis is a framework for LLM safety training and **interpretability** usin
 
 ## 📋 Version History
 
-### v10/v10.1/v11/v12 — Stochastic Resonance in LLM Reasoning (LATEST)
+### v13 — Low-Rank Efficiency, Semantic Decomposition & Noise Source Invariance (LATEST)
 
-**Season 13 (Phases 68-69): Correlated Noise & Dose Theory** ← NEW v12
-- Phase 68: **Dose-adjusted correlated noise** — L17+L18 ρ=+1 at σ=0.075 → **40%** (10× baseline) ← NEW
-- Phase 68: **Correlation asymmetry** — ρ=+1 collapses at σ=0.106 (0%), ρ=−1 survives (24%) ← NEW
-- Phase 69: **N=100 replication** — first-10 linear decay confirms **40%**. Simple > complex ← NEW
+**Season 14 (Phases 70b, 70c, 76): When > Where ≫ What** ← NEW v13
+- Phase 70b: **Low-rank noise efficiency** — k=256 matches full-rank (26.7%), k=4 achieves 16.7% (5× baseline) ← NEW
+- Phase 76: **Semantic phase decomposition** — Recovery-only +10pp, Flash Annealing (30%) > all-on semantic (23.3%) ← NEW
+- Phase 70c: **Noise source invariance** — Gaussian/chaos/pink/uniform all identical (honest null result) ← NEW
+
+### v12 — Correlated Multi-Layer Noise & 1/√N Dose Law
+
+**Season 13 (Phases 63-69): Correlated Noise & Dose Theory**
+- Phase 63: **Flash Annealing** — first-10 linear decay achieves **46%** (all-time record)
+- Phase 68: **Dose-adjusted correlated noise** — L17+L18 ρ=+1 at σ=0.075 → **40%** (10× baseline)
+- Phase 68: **Correlation asymmetry** — ρ=+1 collapses at σ=0.106 (0%), ρ=−1 survives (24%)
+- Phase 69: **N=100 replication** — first-10 linear decay confirms **40%**. Simple > complex
+
+### v10/v10.1/v11 — Stochastic Resonance in LLM Reasoning
 
 **Season 12 (Phases 60-62): Simulated Annealing & Noise Half-Life**
 - Phase 60: **Simulated annealing** — linear decay **38%** (best of 5 protocols). Always-on 24%
@@ -185,15 +203,19 @@ snn-genesis/
 │   ├── phase55_spherical_noise.py    # v10: Spherical noise test
 │   ├── phase56_radial_dose_response.py # v10: Radial + dose-response
 │   ├── phase57_bell_curve.py         # v10: Bell curve completion
-│   ├── phase58_cliff_anatomy.py      # v10.1: Cliff dissection
-│   ├── phase59_smart_defibrillator.py # v10.1: Smart defibrillation
-│   ├── phase60_61_batch.py            # v11: Annealing + KV-Rollback
-│   ├── phase62_noise_halflife.py      # v11: Noise half-life
-│   ├── phase63_65_batch.py            # v12: Flash Annealing + N=100 validation + Adaptive Cosine ← NEW
-│   ├── phase66_two_stage_pulse.py     # v12: Two-stage pulse (Vaccine Booster) ← NEW
-│   ├── phase67_correlated_noise.py    # v12: Inter-layer correlated noise (T-1000 Protocol) ← NEW
-│   ├── phase68_dose_adjusted.py       # v12: Dose-adjusted correlated noise (1/√N law) ← NEW
-│   └── phase69_master_equation.py     # v12: Annealing variants at N=100 ← NEW
+│   ├── phase58_cliff_anatomy.py      # v10.1: Cliff anatomy (cos/norm/SNR)
+│   ├── phase59_smart_defibrillator.py # v10.1: Smart defibrillation (Prophylactic Principle)
+│   ├── phase60_61_batch.py            # v11: Simulated annealing + KV-rollback
+│   ├── phase62_noise_halflife.py      # v11: Noise half-life (optimal duration)
+│   ├── phase63_65_batch.py            # v12: Flash Annealing + Adaptive Cosine
+│   ├── phase66_two_stage_pulse.py     # v12: Two-stage pulse (Vaccine Booster)
+│   ├── phase67_correlated_noise.py    # v12: Inter-layer correlated noise (T-1000 Protocol)
+│   ├── phase68_dose_adjusted.py       # v12: Dose-adjusted correlated noise (1/√N law)
+│   ├── phase69_master_equation.py     # v12: Annealing variants at N=100
+│   ├── phase70_rank_k_sweep.py        # v13: Low-rank noise sweep (initial) ← NEW
+│   ├── phase70b_72_batch.py           # v13: Low-rank σ-equalized + Rank×Layer cross ← NEW
+│   ├── phase70c_noise_source.py       # v13: Noise source type sweep ← NEW
+│   └── phase76_semantic_noise.py      # v13: Semantic phase decomposition ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
 │   ├── phase*_log.json               # All experiment result logs
@@ -297,11 +319,17 @@ python experiments/phase60_61_batch.py                   # Simulated annealing +
 python experiments/phase62_noise_halflife.py              # Noise half-life (optimal duration)
 
 # v12 experiments (requires ~16GB+ VRAM)
-python experiments/phase63_65_batch.py                    # Flash Annealing + N=100 validation + Adaptive Cosine
+python experiments/phase63_65_batch.py                    # Flash Annealing + Adaptive Cosine
 python experiments/phase66_two_stage_pulse.py             # Two-stage pulse (Vaccine Booster)
 python experiments/phase67_correlated_noise.py            # Inter-layer correlated noise (T-1000 Protocol)
 python experiments/phase68_dose_adjusted.py               # Dose-adjusted correlated noise (1/√N law)
 python experiments/phase69_master_equation.py             # Annealing variants at N=100
+
+# v13 experiments (requires ~16GB+ VRAM)
+python experiments/phase70_rank_k_sweep.py                # Low-rank noise sweep (initial)
+python experiments/phase70b_72_batch.py                   # Low-rank σ-equalized + Rank×Layer cross
+python experiments/phase70c_noise_source.py               # Noise source type sweep (Gaussian/chaos/pink/uniform)
+python experiments/phase76_semantic_noise.py               # Semantic phase decomposition (Planning/Execution/Recovery)
 ```
 
 ## 🤖 AI Collaboration
@@ -309,7 +337,7 @@ python experiments/phase69_master_equation.py             # Annealing variants a
 | Paper Version | AI Assistant |
 |--------------|:-------------|
 | v1 — v5 (Phases 5–20) | Google Gemini 3 Pro |
-| v6 — v12 (Phases 20b–69) | Anthropic Claude Opus 4.6 via Google Antigravity |
+| v6 — v13 (Phases 20b–76) | Anthropic Claude Opus 4.6 via Google Antigravity |
 
 All experimental decisions, research direction, and final interpretation were made by the human author.
 
@@ -330,7 +358,7 @@ All experimental decisions, research direction, and final interpretation were ma
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v12: Stochastic Resonance in LLM Reasoning --- Correlated Multi-Layer Noise, the 1/sqrt(N) Dose Law, and Phase Transition Asymmetry},
+  title={SNN-Genesis v13: Stochastic Resonance in LLM Reasoning --- Low-Rank Efficiency, Semantic Phase Decomposition, and Noise Source Invariance},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},

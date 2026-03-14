@@ -1,0 +1,112 @@
+{
+  "experiment": "Phase 70: Rank-k Noise Dimension Sweep",
+  "model": "Mistral-7B",
+  "task": "Modified-3 Hanoi",
+  "hidden_dim": 4096,
+  "base_sigma": 0.15,
+  "schedule": "first10_linear_decay",
+  "layer": 18,
+  "rank_values": [
+    1,
+    4,
+    16,
+    64,
+    256,
+    1024,
+    4096
+  ],
+  "purpose": "Discover the effective dimensionality of beneficial noise in LLM reasoning",
+  "norm_equalization": "\u03c3_k = \u03c3_base \u00d7 sqrt(d/k) so that E[||noise||\u00b2] = d \u00d7 \u03c3_base\u00b2 for all k",
+  "elapsed_min": 427.1,
+  "conditions": [
+    {
+      "condition": "baseline",
+      "description": "No noise (control)",
+      "rank_k": null,
+      "sigma_k": 0,
+      "n_trials": 30,
+      "n_solved": 1,
+      "solve_rate": 3.3,
+      "avg_legal": 22.83,
+      "avg_illegal": 22.8
+    },
+    {
+      "condition": "rank_1",
+      "description": "k=1 dimensions, first10 linear decay",
+      "rank_k": 1,
+      "sigma_k": 9.6,
+      "n_trials": 30,
+      "n_solved": 3,
+      "solve_rate": 10.0,
+      "avg_legal": 20.8,
+      "avg_illegal": 23.13
+    },
+    {
+      "condition": "rank_4",
+      "description": "k=4 dimensions, first10 linear decay",
+      "rank_k": 4,
+      "sigma_k": 4.8,
+      "n_trials": 30,
+      "n_solved": 11,
+      "solve_rate": 36.7,
+      "avg_legal": 17.83,
+      "avg_illegal": 18.2
+    },
+    {
+      "condition": "rank_16",
+      "description": "k=16 dimensions, first10 linear decay",
+      "rank_k": 16,
+      "sigma_k": 2.4,
+      "n_trials": 30,
+      "n_solved": 12,
+      "solve_rate": 40.0,
+      "avg_legal": 15.27,
+      "avg_illegal": 16.0
+    },
+    {
+      "condition": "rank_64",
+      "description": "k=64 dimensions, first10 linear decay",
+      "rank_k": 64,
+      "sigma_k": 1.2,
+      "n_trials": 30,
+      "n_solved": 11,
+      "solve_rate": 36.7,
+      "avg_legal": 16.83,
+      "avg_illegal": 18.5
+    },
+    {
+      "condition": "rank_256",
+      "description": "k=256 dimensions, first10 linear decay",
+      "rank_k": 256,
+      "sigma_k": 0.6,
+      "n_trials": 30,
+      "n_solved": 8,
+      "solve_rate": 26.7,
+      "avg_legal": 18.23,
+      "avg_illegal": 19.73
+    },
+    {
+      "condition": "rank_1024",
+      "description": "k=1024 dimensions, first10 linear decay",
+      "rank_k": 1024,
+      "sigma_k": 0.3,
+      "n_trials": 30,
+      "n_solved": 14,
+      "solve_rate": 46.7,
+      "avg_legal": 15.5,
+      "avg_illegal": 15.83
+    },
+    {
+      "condition": "rank_4096",
+      "description": "k=4096 dimensions, first10 linear decay",
+      "rank_k": 4096,
+      "sigma_k": 0.15,
+      "n_trials": 30,
+      "n_solved": 16,
+      "solve_rate": 53.3,
+      "avg_legal": 16.1,
+      "avg_illegal": 16.43
+    }
+  ],
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase70_rank_k_sweep.png"
+}

@@ -1,0 +1,90 @@
+{
+  "experiment": "Phase 72: Rank \u00d7 Multi-Layer Cross",
+  "model": "Mistral-7B",
+  "task": "Modified-3 Hanoi",
+  "design": "k \u2208 {4,64,4096} \u00d7 layers \u2208 {1,2}. 2-layer uses 1/\u221aN dose adj + positive correlation",
+  "elapsed_min": 221.0,
+  "conditions": [
+    {
+      "condition": "baseline",
+      "description": "No noise",
+      "n_trials": 30,
+      "n_solved": 3,
+      "solve_rate": 10.0,
+      "avg_legal": 21.1,
+      "avg_illegal": 22.13
+    },
+    {
+      "condition": "k4_1layer",
+      "description": "k=4, 1-layer L18, \u03c3=4.8000",
+      "n_trials": 30,
+      "n_solved": 11,
+      "solve_rate": 36.7,
+      "avg_legal": 17.83,
+      "avg_illegal": 18.2,
+      "rank_k": 4,
+      "n_layers": 1,
+      "sigma": 4.8
+    },
+    {
+      "condition": "k4_2layer",
+      "description": "k=4, 2-layer L17+L18 \u03c1=+1, \u03c3_adj=3.3941",
+      "n_trials": 30,
+      "n_solved": 0,
+      "solve_rate": 0.0,
+      "avg_legal": 0.97,
+      "avg_illegal": 11.13,
+      "rank_k": 4,
+      "n_layers": 2,
+      "sigma": 3.3941
+    },
+    {
+      "condition": "k64_1layer",
+      "description": "k=64, 1-layer L18, \u03c3=1.2000",
+      "n_trials": 30,
+      "n_solved": 11,
+      "solve_rate": 36.7,
+      "avg_legal": 16.83,
+      "avg_illegal": 18.5,
+      "rank_k": 64,
+      "n_layers": 1,
+      "sigma": 1.2
+    },
+    {
+      "condition": "k64_2layer",
+      "description": "k=64, 2-layer L17+L18 \u03c1=+1, \u03c3_adj=0.8485",
+      "n_trials": 30,
+      "n_solved": 0,
+      "solve_rate": 0.0,
+      "avg_legal": 0.7,
+      "avg_illegal": 10.9,
+      "rank_k": 64,
+      "n_layers": 2,
+      "sigma": 0.8485
+    },
+    {
+      "condition": "k4096_1layer",
+      "description": "k=4096, 1-layer L18, \u03c3=0.1500",
+      "n_trials": 30,
+      "n_solved": 8,
+      "solve_rate": 26.7,
+      "avg_legal": 19.07,
+      "avg_illegal": 19.93,
+      "rank_k": 4096,
+      "n_layers": 1,
+      "sigma": 0.15
+    },
+    {
+      "condition": "k4096_2layer",
+      "description": "k=4096, 2-layer L17+L18 \u03c1=+1, \u03c3_adj=0.1061",
+      "n_trials": 30,
+      "n_solved": 0,
+      "solve_rate": 0.0,
+      "avg_legal": 0.0,
+      "avg_illegal": 10.0,
+      "rank_k": 4096,
+      "n_layers": 2,
+      "sigma": 0.1061
+    }
+  ]
+}
