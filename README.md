@@ -1,4 +1,4 @@
-# 🧬 SNN-Genesis v13: Stochastic Resonance in LLM Reasoning — Low-Rank Efficiency, Semantic Phase Decomposition, and Noise Source Invariance
+# 🧬 SNN-Genesis v14: Stochastic Resonance in LLM Reasoning — Reasoning Manifold Geometry, Orthogonal Complement Noise, and Dimensional Annealing
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -6,15 +6,24 @@
 
 > **"Stochastic resonance is a vaccine, not an antibiotic. The noise must be present before reasoning enters a failure basin."**
 
-SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v13 decomposes the noise recipe into **When, Where, and What** — discovering that **noise timing and injection site are critical** while **noise source structure is irrelevant**.
+SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v14 discovers the **geometry of the reasoning manifold** — explaining why random noise works and achieving a **50% all-time record**.
 
-### 🆕 v13 Highlights (March 2026)
+### 🆕 v14 Highlights (March 2026)
 
 | Discovery | Key Result |
 |-----------|------------|
-| 🎯 **Low-Rank Noise** (Phase 70b) | k=256 matches full-rank (26.7%); even **k=4** achieves 16.7% (5× baseline). Resonance operates in a low-dimensional subspace |
-| ⏱️ **Semantic Phase Decomposition** (Phase 76) | Recovery-only noise is the strongest single phase (+10pp). Flash Annealing (30%) > all-on semantic (23.3%). **Temporal position > semantic function** |
-| 🔇 **Noise Source Invariance** (Phase 70c) | Gaussian, chaos, pink, uniform — **all identical**. The *structure* of noise is irrelevant; what matters is *when* and *where* |
+| ✅ **Honest Correction** (Phase 77) | v13's recovery-only +10pp does NOT replicate at N=100 (p=0.24). Flash Annealing (34%) and all-on (26%) remain significant |
+| 🧠 **Reasoning Manifold Geometry** (Phase 71) | PCA-top-4 noise = baseline (6.7%). The reasoning axis is in the top PCs; random noise naturally avoids it in 4096-D |
+| 🏆 **50% All-Time Record** (Phase 78) | Full-rank (k=4096) + Flash Annealing achieves **50%**. Dual annealing (σ+k decay) also 50% |
+| 🎯 **Orthogonal = Random** (Phase 79) | Projecting out top-4 PCs has zero effect (46.7% = random). Random noise is "naturally safe" in high dimensions |
+
+### 📊 From v13 (Retained)
+
+| Discovery | Key Result |
+|-----------|------------|
+| 🎯 **Low-Rank Noise** (Phase 70b) | k=256 matches full-rank (26.7%); even **k=4** achieves 16.7% (5× baseline) |
+| ⏱️ **Semantic Phase Decomposition** (Phase 76) | Flash Annealing (30%) > all-on semantic (23.3%). **When > Where ≫ What** |
+| 🔇 **Noise Source Invariance** (Phase 70c) | Gaussian, chaos, pink, uniform — **all identical** (honest null result) |
 
 ### 📊 From v12 (Retained)
 
@@ -79,12 +88,20 @@ SNN-Genesis is a framework for LLM safety training and **interpretability** usin
 
 ## 📋 Version History
 
-### v13 — Low-Rank Efficiency, Semantic Decomposition & Noise Source Invariance (LATEST)
+### v14 — Reasoning Manifold Geometry, Orthogonal Noise & Dimensional Annealing (LATEST)
 
-**Season 14 (Phases 70b, 70c, 76): When > Where ≫ What** ← NEW v13
-- Phase 70b: **Low-rank noise efficiency** — k=256 matches full-rank (26.7%), k=4 achieves 16.7% (5× baseline) ← NEW
-- Phase 76: **Semantic phase decomposition** — Recovery-only +10pp, Flash Annealing (30%) > all-on semantic (23.3%) ← NEW
-- Phase 70c: **Noise source invariance** — Gaussian/chaos/pink/uniform all identical (honest null result) ← NEW
+**Season 15 (Phases 77, 71, 78, 79): Manifold Geometry & 50% Record** ← NEW v14
+- Phase 77: **Honest correction** — recovery-only does NOT replicate at N=100 (p=0.24). Flash Annealing (34%) confirmed ← NEW
+- Phase 71: **PCA-aligned noise** — top-PC noise = baseline (6.7%). Random noise avoids the reasoning axis ← NEW
+- Phase 78: **Dimensional Flash Annealing** — full-rank (k=4096) achieves **50%** (all-time record!) ← NEW
+- Phase 79: **Orthogonal complement noise** — orth_top4 (46.7%) = random (46.7%). Random is naturally safe ← NEW
+
+### v13 — Low-Rank Efficiency, Semantic Decomposition & Noise Source Invariance
+
+**Season 14 (Phases 70b, 70c, 76): When > Where ≫ What**
+- Phase 70b: **Low-rank noise efficiency** — k=256 matches full-rank (26.7%), k=4 achieves 16.7% (5× baseline)
+- Phase 76: **Semantic phase decomposition** — Flash Annealing (30%) > all-on semantic (23.3%)
+- Phase 70c: **Noise source invariance** — Gaussian/chaos/pink/uniform all identical (honest null result)
 
 ### v12 — Correlated Multi-Layer Noise & 1/√N Dose Law
 
@@ -215,7 +232,11 @@ snn-genesis/
 │   ├── phase70_rank_k_sweep.py        # v13: Low-rank noise sweep (initial) ← NEW
 │   ├── phase70b_72_batch.py           # v13: Low-rank σ-equalized + Rank×Layer cross ← NEW
 │   ├── phase70c_noise_source.py       # v13: Noise source type sweep ← NEW
-│   └── phase76_semantic_noise.py      # v13: Semantic phase decomposition ← NEW
+│   ├── phase76_semantic_noise.py      # v13: Semantic phase decomposition
+│   ├── phase77_recovery_n100.py       # v14: Recovery-only N=100 honest correction ← NEW
+│   ├── phase71_pca_noise.py           # v14: PCA-aligned noise (reasoning manifold geometry) ← NEW
+│   ├── phase78_dim_annealing.py       # v14: Dimensional Flash Annealing (50% record!) ← NEW
+│   └── phase79_orthogonal_noise.py    # v14: Orthogonal complement noise ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
 │   ├── phase*_log.json               # All experiment result logs
@@ -330,6 +351,12 @@ python experiments/phase70_rank_k_sweep.py                # Low-rank noise sweep
 python experiments/phase70b_72_batch.py                   # Low-rank σ-equalized + Rank×Layer cross
 python experiments/phase70c_noise_source.py               # Noise source type sweep (Gaussian/chaos/pink/uniform)
 python experiments/phase76_semantic_noise.py               # Semantic phase decomposition (Planning/Execution/Recovery)
+
+# v14 experiments (requires ~16GB+ VRAM)
+python experiments/phase77_recovery_n100.py                 # Recovery-only N=100 (honest correction)
+python experiments/phase71_pca_noise.py                     # PCA-aligned noise (reasoning manifold geometry)
+python experiments/phase78_dim_annealing.py                 # Dimensional Flash Annealing (50% all-time record!)
+python experiments/phase79_orthogonal_noise.py              # Orthogonal complement noise (random is naturally safe)
 ```
 
 ## 🤖 AI Collaboration
@@ -337,7 +364,7 @@ python experiments/phase76_semantic_noise.py               # Semantic phase deco
 | Paper Version | AI Assistant |
 |--------------|:-------------|
 | v1 — v5 (Phases 5–20) | Google Gemini 3 Pro |
-| v6 — v13 (Phases 20b–76) | Anthropic Claude Opus 4.6 via Google Antigravity |
+| v6 — v14 (Phases 20b–79) | Anthropic Claude Opus 4.6 via Google Antigravity |
 
 All experimental decisions, research direction, and final interpretation were made by the human author.
 
@@ -358,7 +385,7 @@ All experimental decisions, research direction, and final interpretation were ma
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v13: Stochastic Resonance in LLM Reasoning --- Low-Rank Efficiency, Semantic Phase Decomposition, and Noise Source Invariance},
+  title={SNN-Genesis v14: Stochastic Resonance in LLM Reasoning --- Reasoning Manifold Geometry, Orthogonal Complement Noise, and Dimensional Annealing},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},
