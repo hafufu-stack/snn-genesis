@@ -1,4 +1,4 @@
-# 🧬 SNN-Genesis v14: Stochastic Resonance in LLM Reasoning — Reasoning Manifold Geometry, Orthogonal Complement Noise, and Dimensional Annealing
+# 🧬 SNN-Genesis v15: Stochastic Resonance in LLM Reasoning — Large-Scale Validation, Manifold Fine Structure, and Cross-Architecture Divergence
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -6,16 +6,24 @@
 
 > **"Stochastic resonance is a vaccine, not an antibiotic. The noise must be present before reasoning enters a failure basin."**
 
-SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v14 discovers the **geometry of the reasoning manifold** — explaining why random noise works and achieving a **50% all-time record**.
+SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v15 validates findings at scale, maps the **fine structure of the reasoning manifold (~64 dimensions)**, and discovers that **stochastic resonance is architecture-specific** — Qwen2.5-7B shows the opposite noise response to Mistral-7B.
 
-### 🆕 v14 Highlights (March 2026)
+### 🆕 v15 Highlights (March 2026)
 
 | Discovery | Key Result |
 |-----------|------------|
-| ✅ **Honest Correction** (Phase 77) | v13's recovery-only +10pp does NOT replicate at N=100 (p=0.24). Flash Annealing (34%) and all-on (26%) remain significant |
-| 🧠 **Reasoning Manifold Geometry** (Phase 71) | PCA-top-4 noise = baseline (6.7%). The reasoning axis is in the top PCs; random noise naturally avoids it in 4096-D |
-| 🏆 **50% All-Time Record** (Phase 78) | Full-rank (k=4096) + Flash Annealing achieves **50%**. Dual annealing (σ+k decay) also 50% |
-| 🎯 **Orthogonal = Random** (Phase 79) | Projecting out top-4 PCs has zero effect (46.7% = random). Random noise is "naturally safe" in high dimensions |
+| ✅ **40% Validated Record** (Phase 80) | v14's 50% (N=30) corrects to **40%** at N=100 (p < 0.0001). Honest correction — 40% is the true ceiling |
+| 🔬 **Manifold Fine Structure** (Phase 83) | 7-band PCA: reasoning manifold occupies **~64 dimensions**. PC 1–64 harmful, PC 65+ beneficial. Bottom PCs (43.3%) ≈ random (46.7%) |
+| 🔄 **Cross-Architecture Divergence** (Phase 82) | Qwen2.5-7B: random noise **harms** reasoning (30% vs baseline 46.7%). **Opposite** of Mistral. Not universal |
+
+### 📊 From v14 (Retained)
+
+| Discovery | Key Result |
+|-----------|------------|
+| 🧠 **Reasoning Manifold Geometry** (Phase 71) | PCA-top-4 noise = baseline (6.7%). Reasoning axis in top PCs |
+| 🎯 **Orthogonal = Random** (Phase 79) | Projecting out top-4 PCs has zero effect (46.7% = random) |
+| 🏆 **50% Record at N=30** (Phase 78) | Full-rank + Flash Annealing. Dual annealing also 50% |
+| ✅ **Recovery-Only Correction** (Phase 77) | Does NOT replicate at N=100 (p=0.24) |
 
 ### 📊 From v13 (Retained)
 
@@ -88,13 +96,20 @@ SNN-Genesis is a framework for LLM safety training and **interpretability** usin
 
 ## 📋 Version History
 
-### v14 — Reasoning Manifold Geometry, Orthogonal Noise & Dimensional Annealing (LATEST)
+### v15 — Large-Scale Validation, Manifold Fine Structure & Cross-Architecture Divergence (LATEST)
 
-**Season 15 (Phases 77, 71, 78, 79): Manifold Geometry & 50% Record** ← NEW v14
-- Phase 77: **Honest correction** — recovery-only does NOT replicate at N=100 (p=0.24). Flash Annealing (34%) confirmed ← NEW
-- Phase 71: **PCA-aligned noise** — top-PC noise = baseline (6.7%). Random noise avoids the reasoning axis ← NEW
-- Phase 78: **Dimensional Flash Annealing** — full-rank (k=4096) achieves **50%** (all-time record!) ← NEW
-- Phase 79: **Orthogonal complement noise** — orth_top4 (46.7%) = random (46.7%). Random is naturally safe ← NEW
+**Season 16 (Phases 80, 83, 82): Validation, Fine Structure & Cross-Architecture** ← NEW v15
+- Phase 80: **Large-scale validation** — 50% (N=30) corrects to **40%** at N=100 (p < 0.0001). Honest correction ← NEW
+- Phase 83: **Manifold fine structure** — 7-band PCA reveals reasoning manifold ≈ **64 dimensions**. PC 65+ = beneficial ← NEW
+- Phase 82: **Cross-architecture divergence** — Qwen2.5-7B shows **inverted** noise response. Not universal ← NEW
+
+### v14 — Reasoning Manifold Geometry, Orthogonal Noise & Dimensional Annealing
+
+**Season 15 (Phases 77, 71, 78, 79): Manifold Geometry & 50% Record**
+- Phase 77: **Honest correction** — recovery-only does NOT replicate at N=100 (p=0.24). Flash Annealing (34%) confirmed
+- Phase 71: **PCA-aligned noise** — top-PC noise = baseline (6.7%). Random noise avoids the reasoning axis
+- Phase 78: **Dimensional Flash Annealing** — full-rank (k=4096) achieves **50%** (all-time record!)
+- Phase 79: **Orthogonal complement noise** — orth_top4 (46.7%) = random (46.7%). Random is naturally safe
 
 ### v13 — Low-Rank Efficiency, Semantic Decomposition & Noise Source Invariance
 
@@ -233,10 +248,13 @@ snn-genesis/
 │   ├── phase70b_72_batch.py           # v13: Low-rank σ-equalized + Rank×Layer cross ← NEW
 │   ├── phase70c_noise_source.py       # v13: Noise source type sweep ← NEW
 │   ├── phase76_semantic_noise.py      # v13: Semantic phase decomposition
-│   ├── phase77_recovery_n100.py       # v14: Recovery-only N=100 honest correction ← NEW
-│   ├── phase71_pca_noise.py           # v14: PCA-aligned noise (reasoning manifold geometry) ← NEW
-│   ├── phase78_dim_annealing.py       # v14: Dimensional Flash Annealing (50% record!) ← NEW
-│   └── phase79_orthogonal_noise.py    # v14: Orthogonal complement noise ← NEW
+│   ├── phase77_recovery_n100.py       # v14: Recovery-only N=100 honest correction
+│   ├── phase71_pca_noise.py           # v14: PCA-aligned noise (reasoning manifold geometry)
+│   ├── phase78_dim_annealing.py       # v14: Dimensional Flash Annealing (50% record!)
+│   ├── phase79_orthogonal_noise.py    # v14: Orthogonal complement noise
+│   ├── phase80_n100_verification.py   # v15: Large-scale N=100 verification (40% validated) ← NEW
+│   ├── phase82_cross_architecture.py  # v15: Cross-architecture PCA (Qwen2.5-7B divergence) ← NEW
+│   └── phase83_midband_pca.py         # v15: Mid-band PCA fine structure (64-dim manifold) ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
 │   ├── phase*_log.json               # All experiment result logs
@@ -357,6 +375,11 @@ python experiments/phase77_recovery_n100.py                 # Recovery-only N=10
 python experiments/phase71_pca_noise.py                     # PCA-aligned noise (reasoning manifold geometry)
 python experiments/phase78_dim_annealing.py                 # Dimensional Flash Annealing (50% all-time record!)
 python experiments/phase79_orthogonal_noise.py              # Orthogonal complement noise (random is naturally safe)
+
+# v15 experiments (requires ~16GB+ VRAM)
+python experiments/phase80_n100_verification.py              # Large-scale N=100 verification (40% validated record)
+python experiments/phase83_midband_pca.py                    # Mid-band PCA fine structure (7-band, ~64-dim manifold)
+python experiments/phase82_cross_architecture.py             # Cross-architecture PCA comparison (Qwen2.5-7B divergence)
 ```
 
 ## 🤖 AI Collaboration
@@ -364,7 +387,7 @@ python experiments/phase79_orthogonal_noise.py              # Orthogonal complem
 | Paper Version | AI Assistant |
 |--------------|:-------------|
 | v1 — v5 (Phases 5–20) | Google Gemini 3 Pro |
-| v6 — v14 (Phases 20b–79) | Anthropic Claude Opus 4.6 via Google Antigravity |
+| v6 — v15 (Phases 20b–83) | Anthropic Claude Opus 4.6 via Google Antigravity |
 
 All experimental decisions, research direction, and final interpretation were made by the human author.
 
@@ -385,7 +408,7 @@ All experimental decisions, research direction, and final interpretation were ma
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v14: Stochastic Resonance in LLM Reasoning --- Reasoning Manifold Geometry, Orthogonal Complement Noise, and Dimensional Annealing},
+  title={SNN-Genesis v15: Stochastic Resonance in LLM Reasoning --- Large-Scale Validation, Manifold Fine Structure, and Cross-Architecture Divergence},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},
