@@ -1,4 +1,4 @@
-# 🧬 SNN-Genesis v15: Stochastic Resonance in LLM Reasoning — Large-Scale Validation, Manifold Fine Structure, and Cross-Architecture Divergence
+# 🧬 SNN-Genesis v16: Stochastic Resonance in LLM Reasoning — Architecture-Specific Reasoning Manifolds and Causal Mechanisms
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -6,24 +6,23 @@
 
 > **"Stochastic resonance is a vaccine, not an antibiotic. The noise must be present before reasoning enters a failure basin."**
 
-SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v15 validates findings at scale, maps the **fine structure of the reasoning manifold (~64 dimensions)**, and discovers that **stochastic resonance is architecture-specific** — Qwen2.5-7B shows the opposite noise response to Mistral-7B.
+SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v16 dissects **why Qwen2.5-7B shows the opposite noise response to Mistral-7B**, and provides the **first causal test of stochastic resonance mechanisms** — revealing that both direction and randomness are essential.
 
-### 🆕 v15 Highlights (March 2026)
-
-| Discovery | Key Result |
-|-----------|------------|
-| ✅ **40% Validated Record** (Phase 80) | v14's 50% (N=30) corrects to **40%** at N=100 (p < 0.0001). Honest correction — 40% is the true ceiling |
-| 🔬 **Manifold Fine Structure** (Phase 83) | 7-band PCA: reasoning manifold occupies **~64 dimensions**. PC 1–64 harmful, PC 65+ beneficial. Bottom PCs (43.3%) ≈ random (46.7%) |
-| 🔄 **Cross-Architecture Divergence** (Phase 82) | Qwen2.5-7B: random noise **harms** reasoning (30% vs baseline 46.7%). **Opposite** of Mistral. Not universal |
-
-### 📊 From v14 (Retained)
+### 🆕 v16 Highlights (March 2026)
 
 | Discovery | Key Result |
 |-----------|------------|
-| 🧠 **Reasoning Manifold Geometry** (Phase 71) | PCA-top-4 noise = baseline (6.7%). Reasoning axis in top PCs |
-| 🎯 **Orthogonal = Random** (Phase 79) | Projecting out top-4 PCs has zero effect (46.7% = random) |
-| 🏆 **50% Record at N=30** (Phase 78) | Full-rank + Flash Annealing. Dual annealing also 50% |
-| ✅ **Recovery-Only Correction** (Phase 77) | Does NOT replicate at N=100 (p=0.24) |
+| 🧠 **Qwen Manifold Dissection** (Phase 84) | PCA-top-4 = baseline (46.7%) on Qwen! Reasoning **not** in top PCs despite 71.3% variance there. Mistral: top-4 = catastrophic (3.3%) |
+| ✅ **Honest Correction at N=100** (Phase 85) | v15's PCA-bottom advantage (53.3%) does NOT replicate: **34.0%** at N=100 ≈ random (35.0%). Noise universally harms Qwen |
+| 🧪 **Causal Verification** (Phase 86) | Direction alone = 30%, stochastic noise = **40%** (p=0.015). Randomness provides ~1/3 of the effect. Both subspace + diversity needed |
+
+### 📊 From v15 (Retained)
+
+| Discovery | Key Result |
+|-----------|------------|
+| ✅ **40% Validated Record** (Phase 80) | v14's 50% (N=30) corrects to **40%** at N=100 (p < 0.0001). Honest correction |
+| 🔬 **Manifold Fine Structure** (Phase 83) | 7-band PCA: reasoning manifold occupies **~64 dimensions**. PC 65+ beneficial |
+| 🔄 **Cross-Architecture Divergence** (Phase 82) | Qwen2.5-7B: random noise **harms** reasoning (30% vs baseline 46.7%) |
 
 ### 📊 From v13 (Retained)
 
@@ -96,12 +95,19 @@ SNN-Genesis is a framework for LLM safety training and **interpretability** usin
 
 ## 📋 Version History
 
-### v15 — Large-Scale Validation, Manifold Fine Structure & Cross-Architecture Divergence (LATEST)
+### v16 — Architecture-Specific Reasoning Manifolds & Causal Mechanisms (LATEST)
 
-**Season 16 (Phases 80, 83, 82): Validation, Fine Structure & Cross-Architecture** ← NEW v15
-- Phase 80: **Large-scale validation** — 50% (N=30) corrects to **40%** at N=100 (p < 0.0001). Honest correction ← NEW
-- Phase 83: **Manifold fine structure** — 7-band PCA reveals reasoning manifold ≈ **64 dimensions**. PC 65+ = beneficial ← NEW
-- Phase 82: **Cross-architecture divergence** — Qwen2.5-7B shows **inverted** noise response. Not universal ← NEW
+**Season 17 (Phases 84, 85, 86): Manifold Dissection & Causal Verification** ← NEW v16
+- Phase 84: **Qwen manifold dissection** — PCA-top-4 = baseline on Qwen (reasoning NOT in top PCs). 71.3% variance, 0% effect ← NEW
+- Phase 85: **Honest correction at N=100** — PCA-bottom 53.3% → **34.0%** at N=100 ≈ random (35.0%). Noise harms Qwen universally ← NEW
+- Phase 86: **Causal verification** — deterministic offset 30% vs stochastic noise **40%** (p=0.015). Randomness causally important ← NEW
+
+### v15 — Large-Scale Validation, Manifold Fine Structure & Cross-Architecture Divergence
+
+**Season 16 (Phases 80, 83, 82): Validation, Fine Structure & Cross-Architecture**
+- Phase 80: **Large-scale validation** — 50% (N=30) corrects to **40%** at N=100 (p < 0.0001). Honest correction
+- Phase 83: **Manifold fine structure** — 7-band PCA reveals reasoning manifold ≈ **64 dimensions**. PC 65+ = beneficial
+- Phase 82: **Cross-architecture divergence** — Qwen2.5-7B shows **inverted** noise response. Not universal
 
 ### v14 — Reasoning Manifold Geometry, Orthogonal Noise & Dimensional Annealing
 
@@ -252,9 +258,12 @@ snn-genesis/
 │   ├── phase71_pca_noise.py           # v14: PCA-aligned noise (reasoning manifold geometry)
 │   ├── phase78_dim_annealing.py       # v14: Dimensional Flash Annealing (50% record!)
 │   ├── phase79_orthogonal_noise.py    # v14: Orthogonal complement noise
-│   ├── phase80_n100_verification.py   # v15: Large-scale N=100 verification (40% validated) ← NEW
-│   ├── phase82_cross_architecture.py  # v15: Cross-architecture PCA (Qwen2.5-7B divergence) ← NEW
-│   └── phase83_midband_pca.py         # v15: Mid-band PCA fine structure (64-dim manifold) ← NEW
+│   ├── phase80_n100_verification.py   # v15: Large-scale N=100 verification (40% validated record)
+│   ├── phase83_midband_pca.py         # v15: Mid-band PCA fine structure (7-band, ~64-dim manifold)
+│   ├── phase82_cross_architecture.py  # v15: Cross-architecture PCA comparison (Qwen2.5-7B divergence)
+│   ├── phase84_qwen_pca_bands.py                  # v16: Qwen 7-band PCA dissection (reasoning not in top PCs) ← NEW
+│   ├── phase85_qwen_bottom_n100.py                # v16: Qwen PCA-bottom N=100 honest correction ← NEW
+│   └── phase86_causal_offset.py                   # v16: Causal verification (deterministic vs stochastic) ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
 │   ├── phase*_log.json               # All experiment result logs
@@ -380,6 +389,11 @@ python experiments/phase79_orthogonal_noise.py              # Orthogonal complem
 python experiments/phase80_n100_verification.py              # Large-scale N=100 verification (40% validated record)
 python experiments/phase83_midband_pca.py                    # Mid-band PCA fine structure (7-band, ~64-dim manifold)
 python experiments/phase82_cross_architecture.py             # Cross-architecture PCA comparison (Qwen2.5-7B divergence)
+
+# v16 experiments (requires ~16GB+ VRAM)
+python experiments/phase84_qwen_pca_bands.py                  # Qwen 7-band PCA dissection
+python experiments/phase85_qwen_bottom_n100.py                # Qwen PCA-bottom N=100 honest correction
+python experiments/phase86_causal_offset.py                   # Causal verification (deterministic vs stochastic)
 ```
 
 ## 🤖 AI Collaboration
@@ -387,7 +401,7 @@ python experiments/phase82_cross_architecture.py             # Cross-architectur
 | Paper Version | AI Assistant |
 |--------------|:-------------|
 | v1 — v5 (Phases 5–20) | Google Gemini 3 Pro |
-| v6 — v15 (Phases 20b–83) | Anthropic Claude Opus 4.6 via Google Antigravity |
+| v6 — v16 (Phases 20b–86) | Anthropic Claude Opus 4.6 via Google Antigravity |
 
 All experimental decisions, research direction, and final interpretation were made by the human author.
 
@@ -408,7 +422,7 @@ All experimental decisions, research direction, and final interpretation were ma
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v15: Stochastic Resonance in LLM Reasoning --- Large-Scale Validation, Manifold Fine Structure, and Cross-Architecture Divergence},
+  title={SNN-Genesis v16: Stochastic Resonance in LLM Reasoning --- Architecture-Specific Reasoning Manifolds and Causal Mechanisms},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},
