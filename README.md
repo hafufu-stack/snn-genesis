@@ -1,4 +1,4 @@
-# 🧬 SNN-Genesis v16: Stochastic Resonance in LLM Reasoning — Architecture-Specific Reasoning Manifolds and Causal Mechanisms
+# 🧬 SNN-Genesis v17: Stochastic Resonance in LLM Reasoning — Differential PCA, Subspace Correlation, and Temporal Noise Dynamics
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -6,15 +6,24 @@
 
 > **"Stochastic resonance is a vaccine, not an antibiotic. The noise must be present before reasoning enters a failure basin."**
 
-SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v16 dissects **why Qwen2.5-7B shows the opposite noise response to Mistral-7B**, and provides the **first causal test of stochastic resonance mechanisms** — revealing that both direction and randomness are essential.
+SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v17 discovers **Qwen's true reasoning direction via Differential PCA**, breaks the **40% solve-rate ceiling** with subspace-targeted correlation, refines the **direction/randomness decomposition to 31:69**, and proves that **temporal noise correlation is harmful**.
 
-### 🆕 v16 Highlights (March 2026)
+### 🆕 v17 Highlights (March 2026)
 
 | Discovery | Key Result |
 |-----------|------------|
-| 🧠 **Qwen Manifold Dissection** (Phase 84) | PCA-top-4 = baseline (46.7%) on Qwen! Reasoning **not** in top PCs despite 71.3% variance there. Mistral: top-4 = catastrophic (3.3%) |
-| ✅ **Honest Correction at N=100** (Phase 85) | v15's PCA-bottom advantage (53.3%) does NOT replicate: **34.0%** at N=100 ≈ random (35.0%). Noise universally harms Qwen |
-| 🧪 **Causal Verification** (Phase 86) | Direction alone = 30%, stochastic noise = **40%** (p=0.015). Randomness provides ~1/3 of the effect. Both subspace + diversity needed |
+| 🧠 **Differential PCA** (Phase 87) | Standard PCA missed Qwen's reasoning axis. Outcome-discriminant PCs → **50.0%** (vs 36.7% baseline). First-ever noise benefit for Qwen! |
+| 🏆 **46.7% New Record** (Phase 88) | L17+L18 correlated noise (ρ=+1) in PC 257+ at σ=0.075 breaks the 40% ceiling. σ=0.106 → 0% (cliff-edge) |
+| ⚖️ **31:69 Decomposition** (Phase 89) | 5-point mixing ratio: **31% direction, 69% randomness** — reversing v16's ~2/3:1/3 estimate |
+| ⏱️ **Temporal Correlation Harmful** (Phase 90) | AR(1) noise: IID (ρ=0.0) = 20.0%, ρ=0.95 = 3.3% (= baseline). Fresh noise is essential |
+
+### 📊 From v16 (Retained)
+
+| Discovery | Key Result |
+|-----------|------------|
+| 🧠 **Qwen Manifold Dissection** (Phase 84) | PCA-top-4 = baseline (46.7%) on Qwen. Reasoning **not** in top PCs despite 71.3% variance |
+| ✅ **Honest Correction** (Phase 85) | PCA-bottom 53.3% → **34.0%** at N=100 ≈ random. Noise universally harms Qwen |
+| 🧪 **Causal Verification** (Phase 86) | Direction 30% vs stochastic **40%** (p=0.015). Both subspace + diversity needed |
 
 ### 📊 From v15 (Retained)
 
@@ -95,12 +104,20 @@ SNN-Genesis is a framework for LLM safety training and **interpretability** usin
 
 ## 📋 Version History
 
-### v16 — Architecture-Specific Reasoning Manifolds & Causal Mechanisms (LATEST)
+### v17 — Differential PCA, Subspace Correlation & Temporal Noise Dynamics (LATEST)
 
-**Season 17 (Phases 84, 85, 86): Manifold Dissection & Causal Verification** ← NEW v16
-- Phase 84: **Qwen manifold dissection** — PCA-top-4 = baseline on Qwen (reasoning NOT in top PCs). 71.3% variance, 0% effect ← NEW
-- Phase 85: **Honest correction at N=100** — PCA-bottom 53.3% → **34.0%** at N=100 ≈ random (35.0%). Noise harms Qwen universally ← NEW
-- Phase 86: **Causal verification** — deterministic offset 30% vs stochastic noise **40%** (p=0.015). Randomness causally important ← NEW
+**Season 18 (Phases 87, 88, 89, 90): Differential PCA, Subspace Correlation & Temporal Dynamics** ← NEW v17
+- Phase 87: **Differential PCA** — outcome-discriminant PCs achieve **50.0%** on Qwen (first-ever noise benefit). Standard PCA missed this axis ← NEW
+- Phase 88: **46.7% new record** — L17+L18 ρ=+1 in PC 257+ at σ=0.075. σ=0.106 collapses to 0% ← NEW
+- Phase 89: **31:69 decomposition** — 5-point mixing sweep. Randomness dominates (69%). Pure stochastic = 46.7% ← NEW
+- Phase 90: **Temporal correlation harmful** — AR(1) noise: IID best (20.0%), ρ=0.95 = baseline (3.3%). Honest null ← NEW
+
+### v16 — Architecture-Specific Reasoning Manifolds & Causal Mechanisms
+
+**Season 17 (Phases 84, 85, 86): Manifold Dissection & Causal Verification**
+- Phase 84: **Qwen manifold dissection** — PCA-top-4 = baseline on Qwen (reasoning NOT in top PCs). 71.3% variance, 0% effect
+- Phase 85: **Honest correction at N=100** — PCA-bottom 53.3% → **34.0%** at N=100 ≈ random (35.0%). Noise harms Qwen universally
+- Phase 86: **Causal verification** — deterministic offset 30% vs stochastic noise **40%** (p=0.015). Randomness causally important
 
 ### v15 — Large-Scale Validation, Manifold Fine Structure & Cross-Architecture Divergence
 
@@ -261,9 +278,13 @@ snn-genesis/
 │   ├── phase80_n100_verification.py   # v15: Large-scale N=100 verification (40% validated record)
 │   ├── phase83_midband_pca.py         # v15: Mid-band PCA fine structure (7-band, ~64-dim manifold)
 │   ├── phase82_cross_architecture.py  # v15: Cross-architecture PCA comparison (Qwen2.5-7B divergence)
-│   ├── phase84_qwen_pca_bands.py                  # v16: Qwen 7-band PCA dissection (reasoning not in top PCs) ← NEW
-│   ├── phase85_qwen_bottom_n100.py                # v16: Qwen PCA-bottom N=100 honest correction ← NEW
-│   └── phase86_causal_offset.py                   # v16: Causal verification (deterministic vs stochastic) ← NEW
+│   ├── phase84_qwen_pca_bands.py                  # v16: Qwen 7-band PCA dissection
+│   ├── phase85_qwen_bottom_n100.py                # v16: Qwen PCA-bottom N=100 honest correction
+│   ├── phase86_causal_offset.py                   # v16: Causal verification (deterministic vs stochastic)
+│   ├── phase87_differential_pca.py                # v17: Differential PCA (Qwen reasoning direction) ← NEW
+│   ├── phase88_subspace_correlation.py             # v17: Subspace-targeted inter-layer correlation (46.7% record) ← NEW
+│   ├── phase89_mixing_ratio.py                     # v17: Direction/randomness mixing ratio sweep (31:69) ← NEW
+│   └── phase90_temporal_correlation.py             # v17: Temporal noise correlation (AR(1) honest null) ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
 │   ├── phase*_log.json               # All experiment result logs
@@ -394,6 +415,12 @@ python experiments/phase82_cross_architecture.py             # Cross-architectur
 python experiments/phase84_qwen_pca_bands.py                  # Qwen 7-band PCA dissection
 python experiments/phase85_qwen_bottom_n100.py                # Qwen PCA-bottom N=100 honest correction
 python experiments/phase86_causal_offset.py                   # Causal verification (deterministic vs stochastic)
+
+# v17 experiments (requires ~16GB+ VRAM)
+python experiments/phase87_differential_pca.py                 # Differential PCA (Qwen reasoning direction)
+python experiments/phase88_subspace_correlation.py              # Subspace-targeted inter-layer correlation (46.7% record)
+python experiments/phase89_mixing_ratio.py                      # Direction/randomness mixing ratio sweep (31:69)
+python experiments/phase90_temporal_correlation.py               # Temporal noise correlation (AR(1) honest null)
 ```
 
 ## 🤖 AI Collaboration
@@ -401,7 +428,7 @@ python experiments/phase86_causal_offset.py                   # Causal verificat
 | Paper Version | AI Assistant |
 |--------------|:-------------|
 | v1 — v5 (Phases 5–20) | Google Gemini 3 Pro |
-| v6 — v16 (Phases 20b–86) | Anthropic Claude Opus 4.6 via Google Antigravity |
+| v6 — v17 (Phases 20b–90) | Anthropic Claude Opus 4.6 via Google Antigravity |
 
 All experimental decisions, research direction, and final interpretation were made by the human author.
 
@@ -422,7 +449,7 @@ All experimental decisions, research direction, and final interpretation were ma
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v16: Stochastic Resonance in LLM Reasoning --- Architecture-Specific Reasoning Manifolds and Causal Mechanisms},
+  title={SNN-Genesis v17: Stochastic Resonance in LLM Reasoning --- Differential PCA, Subspace Correlation, and Temporal Noise Dynamics},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},
