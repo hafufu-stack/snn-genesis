@@ -1,4 +1,4 @@
-# 🧬 SNN-Genesis v17: Stochastic Resonance in LLM Reasoning — Differential PCA, Subspace Correlation, and Temporal Noise Dynamics
+# 🧬 SNN-Genesis v18: Stochastic Resonance in LLM Reasoning — Aha! Steering, Cross-Architecture Universality, and Causal Proof of Reasoning Directionality
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -6,16 +6,26 @@
 
 > **"Stochastic resonance is a vaccine, not an antibiotic. The noise must be present before reasoning enters a failure basin."**
 
-SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v17 discovers **Qwen's true reasoning direction via Differential PCA**, breaks the **40% solve-rate ceiling** with subspace-targeted correlation, refines the **direction/randomness decomposition to 31:69**, and proves that **temporal noise correlation is harmful**.
+SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v18 provides the **first causal existence proof of a reasoning direction in LLM hidden states** via Aha! Steering, demonstrates **cross-architecture universality** of discriminant axes, and achieves **46.7% on Mistral via direction+noise combination**.
 
-### 🆕 v17 Highlights (March 2026)
+### 🆕 v18 Highlights (March 2026)
 
 | Discovery | Key Result |
 |-----------|------------|
-| 🧠 **Differential PCA** (Phase 87) | Standard PCA missed Qwen's reasoning axis. Outcome-discriminant PCs → **50.0%** (vs 36.7% baseline). First-ever noise benefit for Qwen! |
-| 🏆 **46.7% New Record** (Phase 88) | L17+L18 correlated noise (ρ=+1) in PC 257+ at σ=0.075 breaks the 40% ceiling. σ=0.106 → 0% (cliff-edge) |
-| ⚖️ **31:69 Decomposition** (Phase 89) | 5-point mixing ratio: **31% direction, 69% randomness** — reversing v16's ~2/3:1/3 estimate |
-| ⏱️ **Temporal Correlation Harmful** (Phase 90) | AR(1) noise: IID (ρ=0.0) = 20.0%, ρ=0.95 = 3.3% (= baseline). Fresh noise is essential |
+| 🎯 **Aha! Steering — Causal Proof** (Phase 92) | Anti-Aha steering on Qwen: **56.7% → 23.3%** (−33.4pp). First causal existence proof of reasoning direction in LLM hidden states |
+| 🏆 **Aha! + Noise = 46.7%** (Phase 95) | On Mistral: direction alone = baseline (3.3%), but Aha! + noise = **46.7%** (all-time record). Anti-Aha → **0%** |
+| 🌍 **Cross-Architecture Universality** (Phase 94) | Both Qwen & Mistral concentrate discriminant axes in **top-64 PCs (40–49%)**. Verdict: universal_top_pcs |
+| 🧠 **Diff PCA on Mistral** (Phase 91) | diff_pca_bottom = random (26.7%). Discriminant axis in top PCs — opposite to Qwen's pattern |
+| 🔵 **Blue Noise — Honest Null** (Phase 93) | Negative temporal correlation (ρ<0) = 13.3% < IID 20.0%. Any temporal structure degrades SR |
+
+### 📊 From v17 (Retained)
+
+| Discovery | Key Result |
+|-----------|------------|
+| 🧠 **Differential PCA** (Phase 87) | Standard PCA missed Qwen's reasoning axis. Outcome-discriminant PCs → **50.0%** (vs 36.7% baseline) |
+| 🏆 **46.7% Record** (Phase 88) | L17+L18 correlated noise (ρ=+1) in PC 257+ at σ=0.075 breaks the 40% ceiling |
+| ⚖️ **31:69 Decomposition** (Phase 89) | 5-point mixing ratio: **31% direction, 69% randomness** |
+| ⏱️ **Temporal Correlation Harmful** (Phase 90) | AR(1) noise: IID (ρ=0.0) = 20.0%, ρ=0.95 = 3.3% (= baseline) |
 
 ### 📊 From v16 (Retained)
 
@@ -104,13 +114,22 @@ SNN-Genesis is a framework for LLM safety training and **interpretability** usin
 
 ## 📋 Version History
 
-### v17 — Differential PCA, Subspace Correlation & Temporal Noise Dynamics (LATEST)
+### v18 — Aha! Steering, Cross-Architecture Universality & Causal Proof (LATEST)
 
-**Season 18 (Phases 87, 88, 89, 90): Differential PCA, Subspace Correlation & Temporal Dynamics** ← NEW v17
-- Phase 87: **Differential PCA** — outcome-discriminant PCs achieve **50.0%** on Qwen (first-ever noise benefit). Standard PCA missed this axis ← NEW
-- Phase 88: **46.7% new record** — L17+L18 ρ=+1 in PC 257+ at σ=0.075. σ=0.106 collapses to 0% ← NEW
-- Phase 89: **31:69 decomposition** — 5-point mixing sweep. Randomness dominates (69%). Pure stochastic = 46.7% ← NEW
-- Phase 90: **Temporal correlation harmful** — AR(1) noise: IID best (20.0%), ρ=0.95 = baseline (3.3%). Honest null ← NEW
+**Season 19 (Phases 91, 92, 93, 94, 95): Aha! Steering, Cross-Architecture Universality & Blue Noise** ← NEW v18
+- Phase 91: **Differential PCA on Mistral** — diff_pca_bottom = random (26.7%). Discriminant axis in top PCs. Opposite to Qwen ← NEW
+- Phase 92: **Aha! Steering (Qwen)** — Anti-Aha: 56.7% → **23.3%** (−33.4pp). First causal proof of reasoning directionality ← NEW
+- Phase 93: **Blue noise** — Temporal anti-correlation (ρ<0) = 13.3% < IID 20.0%. Any temporal structure degrades SR ← NEW
+- Phase 94: **Cross-architecture discriminant axis** — Both Qwen & Mistral: top-64 overlap 40–49%. Verdict: universal_top_pcs ← NEW
+- Phase 95: **Aha! Steering (Mistral)** — Aha! + noise = **46.7%** (all-time record). Aha! alone = baseline. Anti-Aha = **0%** ← NEW
+
+### v17 — Differential PCA, Subspace Correlation & Temporal Noise Dynamics
+
+**Season 18 (Phases 87, 88, 89, 90): Differential PCA, Subspace Correlation & Temporal Dynamics**
+- Phase 87: **Differential PCA** — outcome-discriminant PCs achieve **50.0%** on Qwen (first-ever noise benefit). Standard PCA missed this axis
+- Phase 88: **46.7% new record** — L17+L18 ρ=+1 in PC 257+ at σ=0.075. σ=0.106 collapses to 0%
+- Phase 89: **31:69 decomposition** — 5-point mixing sweep. Randomness dominates (69%). Pure stochastic = 46.7%
+- Phase 90: **Temporal correlation harmful** — AR(1) noise: IID best (20.0%), ρ=0.95 = baseline (3.3%). Honest null
 
 ### v16 — Architecture-Specific Reasoning Manifolds & Causal Mechanisms
 
@@ -281,10 +300,15 @@ snn-genesis/
 │   ├── phase84_qwen_pca_bands.py                  # v16: Qwen 7-band PCA dissection
 │   ├── phase85_qwen_bottom_n100.py                # v16: Qwen PCA-bottom N=100 honest correction
 │   ├── phase86_causal_offset.py                   # v16: Causal verification (deterministic vs stochastic)
-│   ├── phase87_differential_pca.py                # v17: Differential PCA (Qwen reasoning direction) ← NEW
-│   ├── phase88_subspace_correlation.py             # v17: Subspace-targeted inter-layer correlation (46.7% record) ← NEW
-│   ├── phase89_mixing_ratio.py                     # v17: Direction/randomness mixing ratio sweep (31:69) ← NEW
-│   └── phase90_temporal_correlation.py             # v17: Temporal noise correlation (AR(1) honest null) ← NEW
+│   ├── phase87_differential_pca.py                # v17: Differential PCA (Qwen reasoning direction)
+│   ├── phase88_subspace_correlation.py             # v17: Subspace-targeted inter-layer correlation (46.7% record)
+│   ├── phase89_mixing_ratio.py                     # v17: Direction/randomness mixing ratio sweep (31:69)
+│   ├── phase90_temporal_correlation.py             # v17: Temporal noise correlation (AR(1) honest null)
+│   ├── phase91_mistral_diff_pca.py                 # v18: Differential PCA on Mistral (cross-architecture) ← NEW
+│   ├── phase92_aha_steering.py                     # v18: Aha! Steering causal proof (Qwen) ← NEW
+│   ├── phase93_blue_noise.py                       # v18: Blue noise temporal anti-correlation ← NEW
+│   ├── phase94_cross_axis_analysis.py              # v18: Cross-architecture discriminant axis analysis ← NEW
+│   └── phase95_mistral_aha_steering.py             # v18: Aha! Steering on Mistral (direction+noise) ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
 │   ├── phase*_log.json               # All experiment result logs
@@ -421,6 +445,13 @@ python experiments/phase87_differential_pca.py                 # Differential PC
 python experiments/phase88_subspace_correlation.py              # Subspace-targeted inter-layer correlation (46.7% record)
 python experiments/phase89_mixing_ratio.py                      # Direction/randomness mixing ratio sweep (31:69)
 python experiments/phase90_temporal_correlation.py               # Temporal noise correlation (AR(1) honest null)
+
+# v18 experiments (requires ~16GB+ VRAM)
+python experiments/phase91_mistral_diff_pca.py                  # Differential PCA on Mistral (cross-architecture)
+python experiments/phase92_aha_steering.py                      # Aha! Steering causal proof (Qwen, anti-Aha = 23.3%)
+python experiments/phase93_blue_noise.py                        # Blue noise temporal anti-correlation (honest null)
+python experiments/phase94_cross_axis_analysis.py               # Cross-architecture discriminant axis analysis
+python experiments/phase95_mistral_aha_steering.py              # Aha! Steering on Mistral (Aha! + noise = 46.7%)
 ```
 
 ## 🤖 AI Collaboration
@@ -428,7 +459,7 @@ python experiments/phase90_temporal_correlation.py               # Temporal nois
 | Paper Version | AI Assistant |
 |--------------|:-------------|
 | v1 — v5 (Phases 5–20) | Google Gemini 3 Pro |
-| v6 — v17 (Phases 20b–90) | Anthropic Claude Opus 4.6 via Google Antigravity |
+| v6 — v18 (Phases 20b–95) | Anthropic Claude Opus 4.6 via Google Antigravity |
 
 All experimental decisions, research direction, and final interpretation were made by the human author.
 
@@ -449,7 +480,7 @@ All experimental decisions, research direction, and final interpretation were ma
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v17: Stochastic Resonance in LLM Reasoning --- Differential PCA, Subspace Correlation, and Temporal Noise Dynamics},
+  title={SNN-Genesis v18: Stochastic Resonance in LLM Reasoning --- Aha! Steering, Cross-Architecture Universality, and Causal Proof of Reasoning Directionality},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},
