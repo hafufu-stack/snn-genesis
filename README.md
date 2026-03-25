@@ -1,4 +1,4 @@
-# 🧬 SNN-Genesis v18: Stochastic Resonance in LLM Reasoning — Aha! Steering, Cross-Architecture Universality, and Causal Proof of Reasoning Directionality
+# 🧬 SNN-Genesis v19: Stochastic Resonance in LLM Reasoning — Neural Prior Override, 0.5B Scaling, and Task/Architecture Specificity of Reasoning Directions
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -6,26 +6,37 @@
 
 > **"Stochastic resonance is a vaccine, not an antibiotic. The noise must be present before reasoning enters a failure basin."**
 
-SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v18 provides the **first causal existence proof of a reasoning direction in LLM hidden states** via Aha! Steering, demonstrates **cross-architecture universality** of discriminant axes, and achieves **46.7% on Mistral via direction+noise combination**.
+SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v19 reveals **why stochastic resonance helps LLM reasoning**: the **Neural Prior Override** mechanism shows noise gain is 4.5× larger when prior knowledge must be overridden (p=0.007). The Aha!+noise paradigm **scales down to 0.5B models** (0% → 40%), and Aha! vectors are proven to be both **task-specific** (cosine ≈ 0.031) and **architecture-specific** (cross-transfer = 0%).
 
-### 🆕 v18 Highlights (March 2026)
+### 🆕 v19 Highlights (March 2026)
 
 | Discovery | Key Result |
 |-----------|------------|
-| 🎯 **Aha! Steering — Causal Proof** (Phase 92) | Anti-Aha steering on Qwen: **56.7% → 23.3%** (−33.4pp). First causal existence proof of reasoning direction in LLM hidden states |
-| 🏆 **Aha! + Noise = 46.7%** (Phase 95) | On Mistral: direction alone = baseline (3.3%), but Aha! + noise = **46.7%** (all-time record). Anti-Aha → **0%** |
-| 🌍 **Cross-Architecture Universality** (Phase 94) | Both Qwen & Mistral concentrate discriminant axes in **top-64 PCs (40–49%)**. Verdict: universal_top_pcs |
-| 🧠 **Diff PCA on Mistral** (Phase 91) | diff_pca_bottom = random (26.7%). Discriminant axis in top PCs — opposite to Qwen's pattern |
-| 🔵 **Blue Noise — Honest Null** (Phase 93) | Negative temporal correlation (ρ<0) = 13.3% < IID 20.0%. Any temporal structure degrades SR |
+| 🧠 **Neural Prior Override** (Phase 102) | Noise gain: Standard Hanoi +6.7pp vs Modified Hanoi **+30.0pp**. Differential = **+23.3pp** (p=0.007). Noise overrides incorrect priors |
+| ✅ **N=100 Validation** (Phase 98) | v18's 46.7% corrects to **37.0%** at N=100 (5.3× baseline). Honest −9.7pp correction |
+| 🎯 **Task-Specific Aha!** (Phase 96) | Cross-task cosine = **0.031** (orthogonal). Only matching vector helps: Hanoi 53.3%, Logic 0% |
+| 🏗️ **Architecture-Specific Aha!** (Phase 97) | Qwen→Mistral transfer = **0%**. Native Aha! = 43.3%. Cross-architecture transfer fails |
+| ⚠️ **Aha! Destabilizes Qwen** (Phase 99) | aha_only = 26.7% < baseline 56.7%. Same intervention: opposite effects across architectures |
+| 📏 **0.5B Scaling** (Phase 100–101) | Baseline 0% → Flash σ=0.30: 10%. Aha!+Flash: **40%** on 0.5B. Paradigm scales down |
+
+### 📊 From v18 (Retained)
+
+| Discovery | Key Result |
+|-----------|------------|
+| 🎯 **Aha! Steering — Causal Proof** (Phase 92) | Anti-Aha on Qwen: **56.7% → 23.3%** (−33.4pp). First causal proof of reasoning direction |
+| 🏆 **Aha! + Noise = 46.7%** (Phase 95) | On Mistral: Aha! + noise = **46.7%**. Anti-Aha → **0%** |
+| 🌍 **Cross-Architecture Universality** (Phase 94) | Both Qwen & Mistral: top-64 PCs carry 40–49%. Verdict: universal_top_pcs |
+| 🧠 **Diff PCA on Mistral** (Phase 91) | diff_pca_bottom = random (26.7%). Discriminant axis in top PCs |
+| 🔵 **Blue Noise — Honest Null** (Phase 93) | Temporal anti-correlation (ρ<0) = 13.3% < IID 20.0% |
 
 ### 📊 From v17 (Retained)
 
 | Discovery | Key Result |
 |-----------|------------|
-| 🧠 **Differential PCA** (Phase 87) | Standard PCA missed Qwen's reasoning axis. Outcome-discriminant PCs → **50.0%** (vs 36.7% baseline) |
-| 🏆 **46.7% Record** (Phase 88) | L17+L18 correlated noise (ρ=+1) in PC 257+ at σ=0.075 breaks the 40% ceiling |
+| 🧠 **Differential PCA** (Phase 87) | Outcome-discriminant PCs → **50.0%** on Qwen (first-ever noise benefit) |
+| 🏆 **46.7% Record** (Phase 88) | L17+L18 ρ=+1 in PC 257+ at σ=0.075 breaks 40% ceiling |
 | ⚖️ **31:69 Decomposition** (Phase 89) | 5-point mixing ratio: **31% direction, 69% randomness** |
-| ⏱️ **Temporal Correlation Harmful** (Phase 90) | AR(1) noise: IID (ρ=0.0) = 20.0%, ρ=0.95 = 3.3% (= baseline) |
+| ⏱️ **Temporal Correlation Harmful** (Phase 90) | AR(1) noise: IID best (20.0%), ρ=0.95 = baseline (3.3%) |
 
 ### 📊 From v16 (Retained)
 
@@ -114,14 +125,25 @@ SNN-Genesis is a framework for LLM safety training and **interpretability** usin
 
 ## 📋 Version History
 
-### v18 — Aha! Steering, Cross-Architecture Universality & Causal Proof (LATEST)
+### v19 — Neural Prior Override, 0.5B Scaling & Task/Architecture Specificity (LATEST)
 
-**Season 19 (Phases 91, 92, 93, 94, 95): Aha! Steering, Cross-Architecture Universality & Blue Noise** ← NEW v18
-- Phase 91: **Differential PCA on Mistral** — diff_pca_bottom = random (26.7%). Discriminant axis in top PCs. Opposite to Qwen ← NEW
-- Phase 92: **Aha! Steering (Qwen)** — Anti-Aha: 56.7% → **23.3%** (−33.4pp). First causal proof of reasoning directionality ← NEW
-- Phase 93: **Blue noise** — Temporal anti-correlation (ρ<0) = 13.3% < IID 20.0%. Any temporal structure degrades SR ← NEW
-- Phase 94: **Cross-architecture discriminant axis** — Both Qwen & Mistral: top-64 overlap 40–49%. Verdict: universal_top_pcs ← NEW
-- Phase 95: **Aha! Steering (Mistral)** — Aha! + noise = **46.7%** (all-time record). Aha! alone = baseline. Anti-Aha = **0%** ← NEW
+**Season 20 (Phases 96–102): Neural Prior Override, Specificity & 0.5B Scaling** ← NEW v19
+- Phase 96: **Cross-task Aha!** — Cosine ≈ 0.031 (orthogonal). Hanoi vector = 53.3%, Logic vector = 0%. Task-specific, no universal direction ← NEW
+- Phase 97: **Cross-architecture transfer** — Qwen→Mistral = **0%** (worse than baseline). Native Aha! = 43.3%. Architecture-specific ← NEW
+- Phase 98: **N=100 validation** — v18's 46.7% corrects to **37.0%** (5.3× baseline). Honest −9.7pp correction ← NEW
+- Phase 99: **Aha!+Flash on Qwen** — aha_only = 26.7% < baseline 56.7%. All combinations worse. Aha! destabilizes Qwen ← NEW
+- Phase 100: **0.5B scaling** — Baseline 0% → σ=0.30: **10%**. Noise creates reasoning from nothing ← NEW
+- Phase 101: **Aha! Synthesis 0.5B** — Aha!+Flash = **40%** from 0% baseline. Paradigm scales down ← NEW
+- Phase 102: **Neural Prior Override** — Standard +6.7pp vs Modified **+30.0pp**. Differential = +23.3pp (p=0.007) ← NEW
+
+### v18 — Aha! Steering, Cross-Architecture Universality & Causal Proof
+
+**Season 19 (Phases 91, 92, 93, 94, 95): Aha! Steering, Cross-Architecture Universality & Blue Noise**
+- Phase 91: **Differential PCA on Mistral** — diff_pca_bottom = random (26.7%). Discriminant axis in top PCs
+- Phase 92: **Aha! Steering (Qwen)** — Anti-Aha: 56.7% → **23.3%** (−33.4pp). First causal proof of reasoning directionality
+- Phase 93: **Blue noise** — Temporal anti-correlation (ρ<0) = 13.3% < IID 20.0%. Any temporal structure degrades SR
+- Phase 94: **Cross-architecture discriminant axis** — Both Qwen & Mistral: top-64 overlap 40–49%. Verdict: universal_top_pcs
+- Phase 95: **Aha! Steering (Mistral)** — Aha! + noise = **46.7%** (all-time record). Anti-Aha = **0%**
 
 ### v17 — Differential PCA, Subspace Correlation & Temporal Noise Dynamics
 
@@ -304,11 +326,18 @@ snn-genesis/
 │   ├── phase88_subspace_correlation.py             # v17: Subspace-targeted inter-layer correlation (46.7% record)
 │   ├── phase89_mixing_ratio.py                     # v17: Direction/randomness mixing ratio sweep (31:69)
 │   ├── phase90_temporal_correlation.py             # v17: Temporal noise correlation (AR(1) honest null)
-│   ├── phase91_mistral_diff_pca.py                 # v18: Differential PCA on Mistral (cross-architecture) ← NEW
-│   ├── phase92_aha_steering.py                     # v18: Aha! Steering causal proof (Qwen) ← NEW
-│   ├── phase93_blue_noise.py                       # v18: Blue noise temporal anti-correlation ← NEW
-│   ├── phase94_cross_axis_analysis.py              # v18: Cross-architecture discriminant axis analysis ← NEW
-│   └── phase95_mistral_aha_steering.py             # v18: Aha! Steering on Mistral (direction+noise) ← NEW
+│   ├── phase91_mistral_diff_pca.py                 # v18: Differential PCA on Mistral (cross-architecture)
+│   ├── phase92_aha_steering.py                     # v18: Aha! Steering causal proof (Qwen)
+│   ├── phase93_blue_noise.py                       # v18: Blue noise temporal anti-correlation
+│   ├── phase94_cross_axis_analysis.py              # v18: Cross-architecture discriminant axis analysis
+│   ├── phase95_mistral_aha_steering.py             # v18: Aha! Steering on Mistral (direction+noise)
+│   ├── phase96_cross_task_aha.py                   # v19: Cross-task Aha! (task specificity) ← NEW
+│   ├── phase97_cross_arch_transfer.py              # v19: Cross-architecture Aha! transfer ← NEW
+│   ├── phase98_n100_aha_validation.py              # v19: N=100 validation of Aha!+noise ← NEW
+│   ├── phase99_aha_flash_interaction.py            # v19: Aha!+Flash interaction on Qwen ← NEW
+│   ├── phase100_05b_scaling.py                     # v19: 0.5B model scaling ← NEW
+│   ├── phase101_aha_synthesis_05b.py               # v19: Aha! Synthesis on 0.5B ← NEW
+│   └── phase102_standard_vs_modified.py            # v19: Neural Prior Override (Standard vs Modified Hanoi) ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
 │   ├── phase*_log.json               # All experiment result logs
@@ -452,6 +481,15 @@ python experiments/phase92_aha_steering.py                      # Aha! Steering 
 python experiments/phase93_blue_noise.py                        # Blue noise temporal anti-correlation (honest null)
 python experiments/phase94_cross_axis_analysis.py               # Cross-architecture discriminant axis analysis
 python experiments/phase95_mistral_aha_steering.py              # Aha! Steering on Mistral (Aha! + noise = 46.7%)
+
+# v19 experiments (requires ~16GB+ VRAM, 0.5B experiments require ~4GB)
+python experiments/phase96_cross_task_aha.py                     # Cross-task Aha! (task specificity, cosine ≈ 0.031)
+python experiments/phase97_cross_arch_transfer.py                # Cross-architecture Aha! transfer (Qwen→Mistral = 0%)
+python experiments/phase98_n100_aha_validation.py                # N=100 validation of Aha!+noise (37.0%, honest correction)
+python experiments/phase99_aha_flash_interaction.py              # Aha!+Flash interaction on Qwen (destabilization)
+python experiments/phase100_05b_scaling.py                       # 0.5B model scaling (noise creates reasoning from nothing)
+python experiments/phase101_aha_synthesis_05b.py                 # Aha! Synthesis on 0.5B (Aha!+Flash = 40%)
+python experiments/phase102_standard_vs_modified.py              # Neural Prior Override (Standard vs Modified Hanoi, p=0.007)
 ```
 
 ## 🤖 AI Collaboration
@@ -459,7 +497,7 @@ python experiments/phase95_mistral_aha_steering.py              # Aha! Steering 
 | Paper Version | AI Assistant |
 |--------------|:-------------|
 | v1 — v5 (Phases 5–20) | Google Gemini 3 Pro |
-| v6 — v18 (Phases 20b–95) | Anthropic Claude Opus 4.6 via Google Antigravity |
+| v6 — v19 (Phases 20b–102) | Anthropic Claude Opus 4.6 via Google Antigravity |
 
 All experimental decisions, research direction, and final interpretation were made by the human author.
 
@@ -480,7 +518,7 @@ All experimental decisions, research direction, and final interpretation were ma
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v18: Stochastic Resonance in LLM Reasoning --- Aha! Steering, Cross-Architecture Universality, and Causal Proof of Reasoning Directionality},
+  title={SNN-Genesis v19: Stochastic Resonance in LLM Reasoning --- Neural Prior Override, 0.5B Scaling, and Task/Architecture Specificity of Reasoning Directions},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},

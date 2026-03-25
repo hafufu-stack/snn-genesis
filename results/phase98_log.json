@@ -1,0 +1,1648 @@
+{
+  "experiment": "Phase 98: N=100 Validation of Mistral aha+noise",
+  "model": "Mistral-7B",
+  "model_full": "mistralai/Mistral-7B-Instruct-v0.3",
+  "layer": 18,
+  "hidden_dim": 4096,
+  "sigma": 0.15,
+  "diff_pca_source": "phase91_diff_pca.npz",
+  "n_per_condition": 100,
+  "schedule": "first10_linear_decay",
+  "reference_n30": 0.467,
+  "timestamp": "2026-03-24 16:22:49",
+  "conditions": [
+    {
+      "condition": "baseline",
+      "solve_rate": 0.07,
+      "n_solved": 7,
+      "n_total": 100,
+      "ci95_low": 0.0343,
+      "ci95_high": 0.1375,
+      "running_solve_rate": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0345,
+        0.0333,
+        0.0323,
+        0.0312,
+        0.0303,
+        0.0294,
+        0.0286,
+        0.0278,
+        0.027,
+        0.0263,
+        0.0256,
+        0.05,
+        0.0488,
+        0.0476,
+        0.0465,
+        0.0455,
+        0.0444,
+        0.0435,
+        0.0426,
+        0.0417,
+        0.0408,
+        0.04,
+        0.0392,
+        0.0385,
+        0.0377,
+        0.037,
+        0.0364,
+        0.0357,
+        0.0351,
+        0.0345,
+        0.0339,
+        0.0333,
+        0.0492,
+        0.0484,
+        0.0476,
+        0.0469,
+        0.0462,
+        0.0455,
+        0.0448,
+        0.0441,
+        0.0435,
+        0.0429,
+        0.0423,
+        0.0417,
+        0.0411,
+        0.0405,
+        0.04,
+        0.0395,
+        0.039,
+        0.0385,
+        0.0506,
+        0.05,
+        0.0494,
+        0.0488,
+        0.0482,
+        0.0476,
+        0.0471,
+        0.0465,
+        0.046,
+        0.0455,
+        0.0562,
+        0.0556,
+        0.0659,
+        0.0652,
+        0.0645,
+        0.0638,
+        0.0632,
+        0.0625,
+        0.0619,
+        0.0612,
+        0.0707,
+        0.07
+      ],
+      "avg_legal_moves": 22.79,
+      "avg_illegal_moves": 22.74,
+      "games": [
+        {
+          "solved": false,
+          "legal_moves": 6,
+          "illegal_moves": 12,
+          "self_corrections": 2,
+          "steps_taken": 18
+        },
+        {
+          "solved": false,
+          "legal_moves": 24,
+          "illegal_moves": 26,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 16,
+          "illegal_moves": 18,
+          "self_corrections": 5,
+          "steps_taken": 34
+        },
+        {
+          "solved": false,
+          "legal_moves": 28,
+          "illegal_moves": 22,
+          "self_corrections": 15,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 25,
+          "illegal_moves": 25,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 25,
+          "illegal_moves": 25,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 26,
+          "illegal_moves": 24,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 18,
+          "illegal_moves": 32,
+          "self_corrections": 9,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 20,
+          "illegal_moves": 30,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 24,
+          "illegal_moves": 26,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 26,
+          "illegal_moves": 24,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 29,
+          "illegal_moves": 21,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 23,
+          "illegal_moves": 27,
+          "self_corrections": 10,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 21,
+          "illegal_moves": 24,
+          "self_corrections": 13,
+          "steps_taken": 45
+        },
+        {
+          "solved": false,
+          "legal_moves": 30,
+          "illegal_moves": 20,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 26,
+          "illegal_moves": 24,
+          "self_corrections": 10,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 24,
+          "illegal_moves": 26,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 29,
+          "illegal_moves": 21,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 33,
+          "illegal_moves": 17,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 28,
+          "illegal_moves": 22,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 28,
+          "illegal_moves": 22,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 25,
+          "illegal_moves": 25,
+          "self_corrections": 15,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 25,
+          "illegal_moves": 25,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 20,
+          "illegal_moves": 30,
+          "self_corrections": 17,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 23,
+          "illegal_moves": 27,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 20,
+          "illegal_moves": 30,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 27,
+          "illegal_moves": 23,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 4,
+          "illegal_moves": 13,
+          "self_corrections": 2,
+          "steps_taken": 17
+        },
+        {
+          "solved": true,
+          "legal_moves": 4,
+          "illegal_moves": 1,
+          "self_corrections": 1,
+          "steps_taken": 5
+        },
+        {
+          "solved": false,
+          "legal_moves": 28,
+          "illegal_moves": 22,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 15,
+          "illegal_moves": 21,
+          "self_corrections": 8,
+          "steps_taken": 36
+        },
+        {
+          "solved": false,
+          "legal_moves": 24,
+          "illegal_moves": 26,
+          "self_corrections": 9,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 21,
+          "illegal_moves": 29,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 23,
+          "illegal_moves": 27,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 31,
+          "illegal_moves": 19,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 16,
+          "illegal_moves": 17,
+          "self_corrections": 4,
+          "steps_taken": 33
+        },
+        {
+          "solved": false,
+          "legal_moves": 22,
+          "illegal_moves": 28,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 29,
+          "illegal_moves": 21,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 17,
+          "illegal_moves": 33,
+          "self_corrections": 9,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 4,
+          "illegal_moves": 2,
+          "self_corrections": 2,
+          "steps_taken": 6
+        },
+        {
+          "solved": false,
+          "legal_moves": 22,
+          "illegal_moves": 28,
+          "self_corrections": 16,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 23,
+          "illegal_moves": 27,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 24,
+          "illegal_moves": 26,
+          "self_corrections": 16,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 28,
+          "illegal_moves": 22,
+          "self_corrections": 15,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 24,
+          "illegal_moves": 26,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 24,
+          "illegal_moves": 26,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 32,
+          "illegal_moves": 18,
+          "self_corrections": 15,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 19,
+          "illegal_moves": 27,
+          "self_corrections": 11,
+          "steps_taken": 46
+        },
+        {
+          "solved": false,
+          "legal_moves": 29,
+          "illegal_moves": 21,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 23,
+          "illegal_moves": 27,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 23,
+          "illegal_moves": 27,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 29,
+          "illegal_moves": 21,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 22,
+          "illegal_moves": 28,
+          "self_corrections": 15,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 20,
+          "illegal_moves": 30,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 20,
+          "illegal_moves": 30,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 26,
+          "illegal_moves": 24,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 32,
+          "illegal_moves": 18,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 28,
+          "illegal_moves": 22,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 24,
+          "illegal_moves": 26,
+          "self_corrections": 16,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 23,
+          "illegal_moves": 27,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 12,
+          "illegal_moves": 11,
+          "self_corrections": 5,
+          "steps_taken": 23
+        },
+        {
+          "solved": false,
+          "legal_moves": 31,
+          "illegal_moves": 19,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 17,
+          "illegal_moves": 31,
+          "self_corrections": 10,
+          "steps_taken": 48
+        },
+        {
+          "solved": false,
+          "legal_moves": 23,
+          "illegal_moves": 27,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 21,
+          "illegal_moves": 27,
+          "self_corrections": 11,
+          "steps_taken": 48
+        },
+        {
+          "solved": false,
+          "legal_moves": 23,
+          "illegal_moves": 27,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 33,
+          "illegal_moves": 17,
+          "self_corrections": 8,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 22,
+          "illegal_moves": 28,
+          "self_corrections": 15,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 24,
+          "illegal_moves": 26,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 27,
+          "illegal_moves": 23,
+          "self_corrections": 9,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 21,
+          "illegal_moves": 29,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 26,
+          "illegal_moves": 24,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 29,
+          "illegal_moves": 21,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 14,
+          "illegal_moves": 21,
+          "self_corrections": 9,
+          "steps_taken": 35
+        },
+        {
+          "solved": false,
+          "legal_moves": 27,
+          "illegal_moves": 23,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 19,
+          "illegal_moves": 31,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 6,
+          "illegal_moves": 16,
+          "self_corrections": 3,
+          "steps_taken": 22
+        },
+        {
+          "solved": false,
+          "legal_moves": 27,
+          "illegal_moves": 23,
+          "self_corrections": 15,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 12,
+          "illegal_moves": 9,
+          "self_corrections": 6,
+          "steps_taken": 21
+        },
+        {
+          "solved": false,
+          "legal_moves": 24,
+          "illegal_moves": 26,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 24,
+          "illegal_moves": 26,
+          "self_corrections": 15,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 27,
+          "illegal_moves": 23,
+          "self_corrections": 17,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 22,
+          "illegal_moves": 28,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 34,
+          "illegal_moves": 16,
+          "self_corrections": 10,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 27,
+          "illegal_moves": 23,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 30,
+          "illegal_moves": 20,
+          "self_corrections": 10,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 29,
+          "illegal_moves": 21,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 20,
+          "illegal_moves": 30,
+          "self_corrections": 15,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 10,
+          "illegal_moves": 12,
+          "self_corrections": 5,
+          "steps_taken": 22
+        },
+        {
+          "solved": false,
+          "legal_moves": 32,
+          "illegal_moves": 18,
+          "self_corrections": 9,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 4,
+          "illegal_moves": 5,
+          "self_corrections": 4,
+          "steps_taken": 9
+        },
+        {
+          "solved": false,
+          "legal_moves": 10,
+          "illegal_moves": 19,
+          "self_corrections": 4,
+          "steps_taken": 29
+        },
+        {
+          "solved": false,
+          "legal_moves": 27,
+          "illegal_moves": 23,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 26,
+          "illegal_moves": 24,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 29,
+          "illegal_moves": 21,
+          "self_corrections": 16,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 27,
+          "illegal_moves": 23,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 26,
+          "illegal_moves": 24,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 30,
+          "illegal_moves": 20,
+          "self_corrections": 15,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 4,
+          "illegal_moves": 2,
+          "self_corrections": 2,
+          "steps_taken": 6
+        },
+        {
+          "solved": false,
+          "legal_moves": 21,
+          "illegal_moves": 29,
+          "self_corrections": 14,
+          "steps_taken": 50
+        }
+      ]
+    },
+    {
+      "condition": "aha_plus_noise",
+      "solve_rate": 0.37,
+      "n_solved": 37,
+      "n_total": 100,
+      "ci95_low": 0.2818,
+      "ci95_high": 0.4678,
+      "running_solve_rate": [
+        0.0,
+        0.0,
+        0.3333,
+        0.25,
+        0.2,
+        0.3333,
+        0.2857,
+        0.375,
+        0.4444,
+        0.4,
+        0.3636,
+        0.3333,
+        0.3077,
+        0.2857,
+        0.3333,
+        0.375,
+        0.3529,
+        0.3889,
+        0.4211,
+        0.45,
+        0.4762,
+        0.5,
+        0.5217,
+        0.5,
+        0.48,
+        0.4615,
+        0.4444,
+        0.4286,
+        0.4138,
+        0.4,
+        0.4194,
+        0.4062,
+        0.4242,
+        0.4118,
+        0.4,
+        0.3889,
+        0.3784,
+        0.3684,
+        0.3846,
+        0.4,
+        0.4146,
+        0.4048,
+        0.4186,
+        0.4318,
+        0.4222,
+        0.413,
+        0.4255,
+        0.4167,
+        0.4082,
+        0.4,
+        0.4118,
+        0.4038,
+        0.4151,
+        0.4074,
+        0.4,
+        0.4107,
+        0.4035,
+        0.3966,
+        0.3898,
+        0.3833,
+        0.377,
+        0.371,
+        0.381,
+        0.375,
+        0.3692,
+        0.3636,
+        0.3582,
+        0.3676,
+        0.3768,
+        0.3714,
+        0.3662,
+        0.3611,
+        0.3699,
+        0.3649,
+        0.36,
+        0.3684,
+        0.3636,
+        0.359,
+        0.3671,
+        0.375,
+        0.3704,
+        0.3659,
+        0.3735,
+        0.369,
+        0.3647,
+        0.3721,
+        0.3793,
+        0.375,
+        0.382,
+        0.3778,
+        0.3736,
+        0.3696,
+        0.3763,
+        0.383,
+        0.3789,
+        0.375,
+        0.3814,
+        0.3776,
+        0.3737,
+        0.37
+      ],
+      "avg_legal_moves": 19.25,
+      "avg_illegal_moves": 15.77,
+      "games": [
+        {
+          "solved": false,
+          "legal_moves": 30,
+          "illegal_moves": 20,
+          "self_corrections": 9,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 26,
+          "illegal_moves": 24,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 4,
+          "illegal_moves": 0,
+          "self_corrections": 0,
+          "steps_taken": 4
+        },
+        {
+          "solved": false,
+          "legal_moves": 31,
+          "illegal_moves": 19,
+          "self_corrections": 15,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 27,
+          "illegal_moves": 23,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 13,
+          "illegal_moves": 10,
+          "self_corrections": 6,
+          "steps_taken": 23
+        },
+        {
+          "solved": false,
+          "legal_moves": 24,
+          "illegal_moves": 26,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 7,
+          "illegal_moves": 0,
+          "self_corrections": 0,
+          "steps_taken": 7
+        },
+        {
+          "solved": true,
+          "legal_moves": 5,
+          "illegal_moves": 2,
+          "self_corrections": 1,
+          "steps_taken": 7
+        },
+        {
+          "solved": false,
+          "legal_moves": 29,
+          "illegal_moves": 21,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 25,
+          "illegal_moves": 25,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 28,
+          "illegal_moves": 22,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 5,
+          "illegal_moves": 12,
+          "self_corrections": 1,
+          "steps_taken": 17
+        },
+        {
+          "solved": false,
+          "legal_moves": 27,
+          "illegal_moves": 23,
+          "self_corrections": 10,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 6,
+          "illegal_moves": 0,
+          "self_corrections": 0,
+          "steps_taken": 6
+        },
+        {
+          "solved": true,
+          "legal_moves": 4,
+          "illegal_moves": 0,
+          "self_corrections": 0,
+          "steps_taken": 4
+        },
+        {
+          "solved": false,
+          "legal_moves": 28,
+          "illegal_moves": 22,
+          "self_corrections": 15,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 4,
+          "illegal_moves": 1,
+          "self_corrections": 1,
+          "steps_taken": 5
+        },
+        {
+          "solved": true,
+          "legal_moves": 19,
+          "illegal_moves": 21,
+          "self_corrections": 12,
+          "steps_taken": 40
+        },
+        {
+          "solved": true,
+          "legal_moves": 20,
+          "illegal_moves": 17,
+          "self_corrections": 12,
+          "steps_taken": 37
+        },
+        {
+          "solved": true,
+          "legal_moves": 4,
+          "illegal_moves": 0,
+          "self_corrections": 0,
+          "steps_taken": 4
+        },
+        {
+          "solved": true,
+          "legal_moves": 5,
+          "illegal_moves": 2,
+          "self_corrections": 1,
+          "steps_taken": 7
+        },
+        {
+          "solved": true,
+          "legal_moves": 4,
+          "illegal_moves": 1,
+          "self_corrections": 1,
+          "steps_taken": 5
+        },
+        {
+          "solved": false,
+          "legal_moves": 10,
+          "illegal_moves": 20,
+          "self_corrections": 5,
+          "steps_taken": 30
+        },
+        {
+          "solved": false,
+          "legal_moves": 27,
+          "illegal_moves": 23,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 28,
+          "illegal_moves": 22,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 29,
+          "illegal_moves": 21,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 29,
+          "illegal_moves": 21,
+          "self_corrections": 17,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 27,
+          "illegal_moves": 23,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 27,
+          "illegal_moves": 23,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 4,
+          "illegal_moves": 0,
+          "self_corrections": 0,
+          "steps_taken": 4
+        },
+        {
+          "solved": false,
+          "legal_moves": 28,
+          "illegal_moves": 22,
+          "self_corrections": 15,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 23,
+          "illegal_moves": 17,
+          "self_corrections": 10,
+          "steps_taken": 40
+        },
+        {
+          "solved": false,
+          "legal_moves": 26,
+          "illegal_moves": 24,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 22,
+          "illegal_moves": 28,
+          "self_corrections": 10,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 21,
+          "illegal_moves": 17,
+          "self_corrections": 6,
+          "steps_taken": 38
+        },
+        {
+          "solved": false,
+          "legal_moves": 28,
+          "illegal_moves": 22,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 28,
+          "illegal_moves": 22,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 5,
+          "illegal_moves": 1,
+          "self_corrections": 1,
+          "steps_taken": 6
+        },
+        {
+          "solved": true,
+          "legal_moves": 5,
+          "illegal_moves": 3,
+          "self_corrections": 2,
+          "steps_taken": 8
+        },
+        {
+          "solved": true,
+          "legal_moves": 23,
+          "illegal_moves": 10,
+          "self_corrections": 9,
+          "steps_taken": 33
+        },
+        {
+          "solved": false,
+          "legal_moves": 23,
+          "illegal_moves": 27,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 5,
+          "illegal_moves": 0,
+          "self_corrections": 0,
+          "steps_taken": 5
+        },
+        {
+          "solved": true,
+          "legal_moves": 4,
+          "illegal_moves": 3,
+          "self_corrections": 2,
+          "steps_taken": 7
+        },
+        {
+          "solved": false,
+          "legal_moves": 32,
+          "illegal_moves": 18,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 19,
+          "illegal_moves": 31,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 4,
+          "illegal_moves": 1,
+          "self_corrections": 1,
+          "steps_taken": 5
+        },
+        {
+          "solved": false,
+          "legal_moves": 24,
+          "illegal_moves": 26,
+          "self_corrections": 15,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 29,
+          "illegal_moves": 21,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 30,
+          "illegal_moves": 20,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 4,
+          "illegal_moves": 1,
+          "self_corrections": 1,
+          "steps_taken": 5
+        },
+        {
+          "solved": false,
+          "legal_moves": 33,
+          "illegal_moves": 17,
+          "self_corrections": 10,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 13,
+          "illegal_moves": 6,
+          "self_corrections": 4,
+          "steps_taken": 19
+        },
+        {
+          "solved": false,
+          "legal_moves": 14,
+          "illegal_moves": 16,
+          "self_corrections": 4,
+          "steps_taken": 30
+        },
+        {
+          "solved": false,
+          "legal_moves": 28,
+          "illegal_moves": 22,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 4,
+          "illegal_moves": 0,
+          "self_corrections": 0,
+          "steps_taken": 4
+        },
+        {
+          "solved": false,
+          "legal_moves": 26,
+          "illegal_moves": 24,
+          "self_corrections": 10,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 33,
+          "illegal_moves": 17,
+          "self_corrections": 15,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 29,
+          "illegal_moves": 21,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 31,
+          "illegal_moves": 19,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 33,
+          "illegal_moves": 17,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 24,
+          "illegal_moves": 26,
+          "self_corrections": 10,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 13,
+          "illegal_moves": 10,
+          "self_corrections": 6,
+          "steps_taken": 23
+        },
+        {
+          "solved": false,
+          "legal_moves": 24,
+          "illegal_moves": 26,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 26,
+          "illegal_moves": 24,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 28,
+          "illegal_moves": 22,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 30,
+          "illegal_moves": 20,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 7,
+          "illegal_moves": 2,
+          "self_corrections": 1,
+          "steps_taken": 9
+        },
+        {
+          "solved": true,
+          "legal_moves": 23,
+          "illegal_moves": 24,
+          "self_corrections": 12,
+          "steps_taken": 47
+        },
+        {
+          "solved": false,
+          "legal_moves": 31,
+          "illegal_moves": 19,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 18,
+          "illegal_moves": 32,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 23,
+          "illegal_moves": 27,
+          "self_corrections": 11,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 4,
+          "illegal_moves": 3,
+          "self_corrections": 1,
+          "steps_taken": 7
+        },
+        {
+          "solved": false,
+          "legal_moves": 29,
+          "illegal_moves": 21,
+          "self_corrections": 15,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 24,
+          "illegal_moves": 26,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 6,
+          "illegal_moves": 3,
+          "self_corrections": 2,
+          "steps_taken": 9
+        },
+        {
+          "solved": false,
+          "legal_moves": 30,
+          "illegal_moves": 20,
+          "self_corrections": 15,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 11,
+          "illegal_moves": 19,
+          "self_corrections": 7,
+          "steps_taken": 30
+        },
+        {
+          "solved": true,
+          "legal_moves": 9,
+          "illegal_moves": 6,
+          "self_corrections": 5,
+          "steps_taken": 15
+        },
+        {
+          "solved": true,
+          "legal_moves": 4,
+          "illegal_moves": 2,
+          "self_corrections": 1,
+          "steps_taken": 6
+        },
+        {
+          "solved": false,
+          "legal_moves": 28,
+          "illegal_moves": 22,
+          "self_corrections": 15,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 26,
+          "illegal_moves": 24,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 5,
+          "illegal_moves": 1,
+          "self_corrections": 1,
+          "steps_taken": 6
+        },
+        {
+          "solved": false,
+          "legal_moves": 25,
+          "illegal_moves": 25,
+          "self_corrections": 12,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 26,
+          "illegal_moves": 24,
+          "self_corrections": 13,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 19,
+          "illegal_moves": 13,
+          "self_corrections": 7,
+          "steps_taken": 32
+        },
+        {
+          "solved": true,
+          "legal_moves": 4,
+          "illegal_moves": 0,
+          "self_corrections": 0,
+          "steps_taken": 4
+        },
+        {
+          "solved": false,
+          "legal_moves": 30,
+          "illegal_moves": 20,
+          "self_corrections": 10,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 8,
+          "illegal_moves": 1,
+          "self_corrections": 1,
+          "steps_taken": 9
+        },
+        {
+          "solved": false,
+          "legal_moves": 26,
+          "illegal_moves": 24,
+          "self_corrections": 10,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 5,
+          "illegal_moves": 14,
+          "self_corrections": 3,
+          "steps_taken": 19
+        },
+        {
+          "solved": false,
+          "legal_moves": 24,
+          "illegal_moves": 26,
+          "self_corrections": 10,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 5,
+          "illegal_moves": 1,
+          "self_corrections": 1,
+          "steps_taken": 6
+        },
+        {
+          "solved": true,
+          "legal_moves": 7,
+          "illegal_moves": 2,
+          "self_corrections": 2,
+          "steps_taken": 9
+        },
+        {
+          "solved": false,
+          "legal_moves": 25,
+          "illegal_moves": 25,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 30,
+          "illegal_moves": 20,
+          "self_corrections": 9,
+          "steps_taken": 50
+        },
+        {
+          "solved": true,
+          "legal_moves": 10,
+          "illegal_moves": 11,
+          "self_corrections": 3,
+          "steps_taken": 21
+        },
+        {
+          "solved": false,
+          "legal_moves": 32,
+          "illegal_moves": 18,
+          "self_corrections": 9,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 21,
+          "illegal_moves": 29,
+          "self_corrections": 14,
+          "steps_taken": 50
+        },
+        {
+          "solved": false,
+          "legal_moves": 22,
+          "illegal_moves": 28,
+          "self_corrections": 11,
+          "steps_taken": 50
+        }
+      ]
+    }
+  ],
+  "verdict": "HONEST_CORRECTION",
+  "fisher_p": 0.0,
+  "n30_vs_n100_delta": -9.7,
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase98_n100_aha_validation.png",
+  "elapsed_seconds": 18979.2
+}

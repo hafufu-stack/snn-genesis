@@ -1,0 +1,64 @@
+{
+  "experiment": "Phase 97: Cross-Architecture Vector Translation",
+  "timestamp": "2026-03-24 11:05:17",
+  "sigma": 0.15,
+  "n_per_condition": 30,
+  "translation_method": "spectral_coefficient_transfer_top64",
+  "model_results": {
+    "Mistral": [
+      {
+        "condition": "baseline",
+        "solve_rate": 0.0333,
+        "n_solved": 1,
+        "n_total": 30
+      },
+      {
+        "condition": "native_aha+noise",
+        "solve_rate": 0.4333,
+        "n_solved": 13,
+        "n_total": 30
+      },
+      {
+        "condition": "qwen_transferred+noise",
+        "solve_rate": 0.0,
+        "n_solved": 0,
+        "n_total": 30
+      },
+      {
+        "condition": "random_dir+noise",
+        "solve_rate": 0.4667,
+        "n_solved": 14,
+        "n_total": 30
+      }
+    ],
+    "Qwen": [
+      {
+        "condition": "baseline",
+        "solve_rate": 0.3667,
+        "n_solved": 11,
+        "n_total": 30
+      },
+      {
+        "condition": "native_aha+noise",
+        "solve_rate": 0.3333,
+        "n_solved": 10,
+        "n_total": 30
+      },
+      {
+        "condition": "mistral_transferred+noise",
+        "solve_rate": 0.2667,
+        "n_solved": 8,
+        "n_total": 30
+      },
+      {
+        "condition": "random_dir+noise",
+        "solve_rate": 0.3333,
+        "n_solved": 10,
+        "n_total": 30
+      }
+    ]
+  },
+  "verdict": "ARCHITECTURE_SPECIFIC",
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase97_cross_arch_transfer.png",
+  "elapsed_seconds": 19042.0
+}

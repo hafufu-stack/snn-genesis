@@ -1,0 +1,100 @@
+{
+  "experiment": "Phase 96: Cross-Task Meta-Aha! Vector",
+  "model": "Mistral-7B",
+  "model_full": "mistralai/Mistral-7B-Instruct-v0.3",
+  "layer": 18,
+  "hidden_dim": 4096,
+  "sigma": 0.15,
+  "n_collection_games": 100,
+  "n_per_steering": 30,
+  "timestamp": "2026-03-24 11:05:13",
+  "task_baselines": [
+    {
+      "task": "Hanoi",
+      "n_success": 7,
+      "n_total": 100,
+      "success_rate": 0.07
+    },
+    {
+      "task": "Arithmetic",
+      "n_success": 75,
+      "n_total": 100,
+      "success_rate": 0.75
+    },
+    {
+      "task": "Logic",
+      "n_success": 100,
+      "n_total": 100,
+      "success_rate": 1.0
+    }
+  ],
+  "cosine_similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.07173174619674683,
+      -0.01625368371605873
+    ],
+    [
+      0.07173174619674683,
+      1.0,
+      0.004729332868009806
+    ],
+    [
+      -0.01625368371605873,
+      0.004729332868009806,
+      1.0
+    ]
+  ],
+  "cosine_similarity_labels": [
+    "Hanoi",
+    "Arithmetic",
+    "Logic"
+  ],
+  "top64_overlaps": {
+    "Hanoi": {
+      "top64": 0.4045,
+      "mid_band": 0.3871,
+      "pc257_plus": 0.2084
+    },
+    "Arithmetic": {
+      "top64": 0.2202,
+      "mid_band": 0.1254,
+      "pc257_plus": 0.6544
+    },
+    "Logic": {
+      "top64": 75.4084,
+      "mid_band": 166.3966,
+      "pc257_plus": 4055.2739
+    }
+  },
+  "steering_test": [
+    {
+      "condition": "baseline",
+      "solve_rate": 0.1,
+      "n_solved": 3,
+      "n_total": 30
+    },
+    {
+      "condition": "hanoi_aha+noise",
+      "solve_rate": 0.5333,
+      "n_solved": 16,
+      "n_total": 30
+    },
+    {
+      "condition": "arith_aha+noise",
+      "solve_rate": 0.2333,
+      "n_solved": 7,
+      "n_total": 30
+    },
+    {
+      "condition": "logic_aha+noise",
+      "solve_rate": 0.0,
+      "n_solved": 0,
+      "n_total": 30
+    }
+  ],
+  "elapsed_seconds": 18300.8,
+  "verdict": "TASK_SPECIFIC",
+  "avg_cross_task_cosine": 0.0309,
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase96_cross_task_meta_aha.png"
+}
