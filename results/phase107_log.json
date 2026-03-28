@@ -1,0 +1,75 @@
+{
+  "experiment": "Phase 107: Prior Conflict Gradient",
+  "model": "Mistral-7B",
+  "model_full": "mistralai/Mistral-7B-Instruct-v0.3",
+  "layer": 18,
+  "sigma": 0.15,
+  "n_per_condition": 50,
+  "timestamp": "2026-03-26 21:07:17",
+  "conflict_levels": [
+    {
+      "level": 0,
+      "name": "standard",
+      "baseline_rate": 0.08,
+      "aha_rate": 0.0,
+      "gain": -0.08,
+      "baseline_solved": 4,
+      "aha_solved": 0,
+      "n_total": 50,
+      "fisher_p": 0.117463
+    },
+    {
+      "level": 1,
+      "name": "mild",
+      "baseline_rate": 0.68,
+      "aha_rate": 0.8,
+      "gain": 0.12,
+      "baseline_solved": 34,
+      "aha_solved": 40,
+      "n_total": 50,
+      "fisher_p": 0.254135
+    },
+    {
+      "level": 2,
+      "name": "moderate",
+      "baseline_rate": 0.14,
+      "aha_rate": 0.48,
+      "gain": 0.34,
+      "baseline_solved": 7,
+      "aha_solved": 24,
+      "n_total": 50,
+      "fisher_p": 0.000435
+    },
+    {
+      "level": 3,
+      "name": "heavy",
+      "baseline_rate": 0.04,
+      "aha_rate": 0.04,
+      "gain": 0.0,
+      "baseline_solved": 2,
+      "aha_solved": 2,
+      "n_total": 50,
+      "fisher_p": 1.0
+    },
+    {
+      "level": 4,
+      "name": "novel",
+      "baseline_rate": 0.16,
+      "aha_rate": 0.72,
+      "gain": 0.56,
+      "baseline_solved": 8,
+      "aha_solved": 36,
+      "n_total": 50,
+      "fisher_p": 0.0
+    }
+  ],
+  "correlation": {
+    "pearson_r": 0.7017,
+    "pearson_p": 0.1866,
+    "spearman_rho": 0.7,
+    "spearman_p": 0.1881
+  },
+  "verdict": "POSITIVE_TREND",
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase107_prior_conflict_gradient.png",
+  "elapsed_seconds": 39383.3
+}

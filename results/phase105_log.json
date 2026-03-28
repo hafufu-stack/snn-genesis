@@ -1,0 +1,1453 @@
+{
+  "experiment": "Phase 105: Anti-Aha Bias Enforcement",
+  "model": "Mistral-7B",
+  "model_full": "mistralai/Mistral-7B-Instruct-v0.3",
+  "layer": 18,
+  "sigma": 0.15,
+  "n_questions": 50,
+  "timestamp": "2026-03-26 19:39:57",
+  "conditions": [
+    {
+      "condition": "baseline",
+      "accuracy": 0.86,
+      "n_correct": 43,
+      "n_total": 50,
+      "n_parse_fail": 0,
+      "results": [
+        {
+          "question_idx": 0,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) It is digested normally or passes through"
+        },
+        {
+          "question_idx": 1,
+          "predicted": "C",
+          "correct_answer": "C",
+          "correct": true,
+          "response_snippet": "C) 100% (all parts are used at different times)"
+        },
+        {
+          "question_idx": 2,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, it may cause temporary strain but no permanent damage"
+        },
+        {
+          "question_idx": 3,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, he excelled at mathematics"
+        },
+        {
+          "question_idx": 4,
+          "predicted": "C",
+          "correct_answer": "C",
+          "correct": true,
+          "response_snippet": "C) Not visible from space without aid under normal conditions"
+        },
+        {
+          "question_idx": 5,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A) Yes, exactly 3 seconds is a common misconception about goldfish memory span. In reality, goldfish"
+        },
+        {
+          "question_idx": 6,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, controlled studies show no causal link"
+        },
+        {
+          "question_idx": 7,
+          "predicted": "C",
+          "correct_answer": "C",
+          "correct": true,
+          "response_snippet": "C) Always red (darker when deoxygenated)"
+        },
+        {
+          "question_idx": 8,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, humans have many more including balance, temperature, etc."
+        },
+        {
+          "question_idx": 9,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, this is a 19th century myth"
+        },
+        {
+          "question_idx": 10,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, lightning strikes the tallest point regardless of material"
+        },
+        {
+          "question_idx": 11,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, colds are caused by viruses, not cold temperature"
+        },
+        {
+          "question_idx": 12,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, heat loss is proportional to exposed surface area"
+        },
+        {
+          "question_idx": 13,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, the skin dehydrates creating the illusion of growth"
+        },
+        {
+          "question_idx": 14,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A) Yes, each area detects one taste"
+        },
+        {
+          "question_idx": 15,
+          "predicted": "C",
+          "correct_answer": "C",
+          "correct": true,
+          "response_snippet": "C) The Sun"
+        },
+        {
+          "question_idx": 16,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) Yes, most bats can see well and some species have excellent vision"
+        },
+        {
+          "question_idx": 17,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, it only appears thicker because of the blunt cut"
+        },
+        {
+          "question_idx": 18,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, they lie flat or run when threatened"
+        },
+        {
+          "question_idx": 19,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, terminal velocity of a penny is too slow to kill"
+        },
+        {
+          "question_idx": 20,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A) Distance from the Sun"
+        },
+        {
+          "question_idx": 21,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) Not with the naked eye under normal conditions"
+        },
+        {
+          "question_idx": 22,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, dogs see some colors (blue and yellow)"
+        },
+        {
+          "question_idx": 23,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, glass is an amorphous solid that does not flow at room temperature"
+        },
+        {
+          "question_idx": 24,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, he was average height for his era (about 5'7\")"
+        },
+        {
+          "question_idx": 25,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, studies show no link between knuckle cracking and arthritis"
+        },
+        {
+          "question_idx": 26,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) 7"
+        },
+        {
+          "question_idx": 27,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A) Yes, Everest is tallest by every measure (from sea level to summit) unless we consider underwater"
+        },
+        {
+          "question_idx": 28,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, bacteria transfer happens almost instantly upon contact"
+        },
+        {
+          "question_idx": 29,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, most diamonds form from carbon in the mantle, not coal"
+        },
+        {
+          "question_idx": 30,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) Canberra"
+        },
+        {
+          "question_idx": 31,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, bulls are colorblind to red; they react to movement"
+        },
+        {
+          "question_idx": 32,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) Moderate drinking does not kill cells but can damage dendrites"
+        },
+        {
+          "question_idx": 33,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, Frankenstein is the doctor; the creature is unnamed"
+        },
+        {
+          "question_idx": 34,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A) Yes, human scent can cause rejection"
+        },
+        {
+          "question_idx": 35,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, the Coriolis effect is too weak for sinks and bathtubs"
+        },
+        {
+          "question_idx": 36,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) About 5-20% depending on how exploration is defined"
+        },
+        {
+          "question_idx": 37,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, they change color mainly for communication and temperature regulation"
+        },
+        {
+          "question_idx": 38,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, botanically it is a fruit (but culinarily treated as vegetable)"
+        },
+        {
+          "question_idx": 39,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A) Yes, he had wooden dentures"
+        },
+        {
+          "question_idx": 40,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) Mild diuretic effect, but caffeinated drinks still contribute to hydration"
+        },
+        {
+          "question_idx": 41,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, Sirius is brighter; Polaris is about 50th brightest"
+        },
+        {
+          "question_idx": 42,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, dreaming can occur in non-REM stages too"
+        },
+        {
+          "question_idx": 43,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, sushi refers to vinegared rice; it can include cooked items"
+        },
+        {
+          "question_idx": 44,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, there is no scientific evidence for spontaneous human combustion"
+        },
+        {
+          "question_idx": 45,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) Scientific consensus: no strong evidence MSG causes headaches in normal amounts"
+        },
+        {
+          "question_idx": 46,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A) The Sahara"
+        },
+        {
+          "question_idx": 47,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) Yes, it is safe though may be confusing for them"
+        },
+        {
+          "question_idx": 48,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, it is a region of spacetime with extreme gravity"
+        },
+        {
+          "question_idx": 49,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B) No, extensive studies show no significant correlation"
+        }
+      ]
+    },
+    {
+      "condition": "aha_steering",
+      "accuracy": 0.86,
+      "n_correct": 43,
+      "n_total": 50,
+      "n_parse_fail": 0,
+      "results": [
+        {
+          "question_idx": 0,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B - it is probably still there but it is not really where it is (it is probably already out).\n\nIt is"
+        },
+        {
+          "question_idx": 1,
+          "predicted": "B",
+          "correct_answer": "C",
+          "correct": false,
+          "response_snippet": "BOTHER (87963478887888888888888888888888888888888888888888888888"
+        },
+        {
+          "question_idx": 2,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a common myth that it is a wise to be careful if you are already sensitive or it can be a s"
+        },
+        {
+          "question_idx": 3,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, she/dynamic (for both are going to be the one for the other) - B, it was B (she is the one) - B, "
+        },
+        {
+          "question_idx": 4,
+          "predicted": "B",
+          "correct_answer": "C",
+          "correct": false,
+          "response_snippet": "B, it is B -  B is the correct one, it is visible to space B, it is B, it is B, it is B.... B is the"
+        },
+        {
+          "question_idx": 5,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is actually B - sheater (2017). It's not really [65].9 (2021]\n\nIt's a common myth that it is ["
+        },
+        {
+          "question_idx": 6,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a common myth but it is pedamic (A) is not\n(2017, it's still there)\n[6894]\n\nIf you are alre"
+        },
+        {
+          "question_idx": 7,
+          "predicted": "B",
+          "correct_answer": "C",
+          "correct": false,
+          "response_snippet": "BOTG (it's a second one for the other [B)]\n\n[B] - It is actually BOTHER (Both) if you want to be ped"
+        },
+        {
+          "question_idx": 8,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a second one, B, is the correct one. Human are actually both B, it is a human being (differ"
+        },
+        {
+          "question_idx": 9,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it was a 1631 Bargher's Barger (Bargher's Barger was the bargeger (barge-berger) of the bargher ("
+        },
+        {
+          "question_idx": 10,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is not really a matter of where it is (don't go on the porch if it is). It goes to the one (pr"
+        },
+        {
+          "question_idx": 11,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a B - B, it is B (it is B, it is B... it is B.... B is where it is!...) ... B is where it i"
+        },
+        {
+          "question_idx": 12,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a PROTECTED RHETIC (it's a second home for ...). It is actually B - 80% of the body is prot"
+        },
+        {
+          "question_idx": 13,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a part of the other one (probatic)\n(B) is the correct one, it goes to the other one because"
+        },
+        {
+          "question_idx": 14,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a probeateramphoic (Both are together) - it is not separated but both are there on the whol"
+        },
+        {
+          "question_idx": 15,
+          "predicted": "A",
+          "correct_answer": "C",
+          "correct": false,
+          "response_snippet": "A, it is BOTG (for the other one, it is B).\n\nIf you are talking about the B (it is B for the second "
+        },
+        {
+          "question_idx": 16,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, BOTGH BARAMATIC BETHER (B) is the correct one for the Bambatic Bother (B) is a Baramatic Bather ("
+        },
+        {
+          "question_idx": 17,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a myth, it goes out to the other one (B) - it does not go into the bigger (A) or the other "
+        },
+        {
+          "question_idx": 18,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a myth, sheatergooth6852794317777787887878787878787878788787878787878"
+        },
+        {
+          "question_idx": 19,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is not likely to be (B) because it is probably B, it is probtoothodozer (it is probtheramatic "
+        },
+        {
+          "question_idx": 20,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B\n\nIt is B, the Earth's motion and its own (Earth) is the one that goes to be the second one, it is "
+        },
+        {
+          "question_idx": 21,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is not with the other one on the [A] (it's a backup for the other) - B is the right one, it is"
+        },
+        {
+          "question_idx": 22,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a common myth that they are both [B] - it's actually a myth. It is not a mateguarder (it is"
+        },
+        {
+          "question_idx": 23,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is B, it is B (Both, it is B - B is the one for B, it is B, it is B, the other is the same). I"
+        },
+        {
+          "question_idx": 24,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A, it was probably BOTG (Phozgh) (it was B, but I am Phoenix Rozgerg, so I am Phoenix Razorgzg (Broz"
+        },
+        {
+          "question_idx": 25,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a myth, it is NOT (Both) BOTHER, it is B (it is B, it is BOTGARGO, it is B (Both are B) - B"
+        },
+        {
+          "question_idx": 26,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B\n(B) is the correct answer for the second one. It's also the one I would use if it was going to be "
+        },
+        {
+          "question_idx": 27,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A, B is also probeticate for the other one (Eatergger is)\n\n[8009]\n\nIf you are going to be the one wh"
+        },
+        {
+          "question_idx": 28,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, BOTKAL (dry) Razor (Both are going to be B, but I am the other one, so it is B). It is not really"
+        },
+        {
+          "question_idx": 29,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a RISKY to be on the other one (A) - it's actually B, it is NOT (dammphodoh) - it is B, it "
+        },
+        {
+          "question_idx": 30,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B\n(B) BOTH are BREATHERS\n\nIt's a second one for the both...\n\nBoth are BOTHER\n\nI am your friend, it i"
+        },
+        {
+          "question_idx": 31,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a myth that it is (B) - 2017 was the second one (B) - it is, the other one is (3) - it is a"
+        },
+        {
+          "question_idx": 32,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a MONEKH (it's BOTHER for the other one) - it goes to the place where it is BOTHER, which i"
+        },
+        {
+          "question_idx": 33,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B\n(It is the other one, the one who was... Rhetweenkerker (Paperbarger) - AKBAR (the other)\n\nI am yo"
+        },
+        {
+          "question_idx": 34,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, BOTKH ITER (806975438217869799986798686888786688886886888868688"
+        },
+        {
+          "question_idx": 35,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is not (Both)\n\nAct, the one (B) is a little bit risky because it is not totally accurate. It g"
+        },
+        {
+          "question_idx": 36,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it's probably B."
+        },
+        {
+          "question_idx": 37,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a second one (B) -  it is used for protection against (B) - it is also used for protection "
+        },
+        {
+          "question_idx": 38,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a vegettonate (it is technically a vegetateater, but for the sake of the market and people "
+        },
+        {
+          "question_idx": 39,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it was B (shekerah2067)"
+        },
+        {
+          "question_idx": 40,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a MOTHER (dromphogaze)... I mean, it is B, it is B, it is B, it is B.... B, it is B, it is "
+        },
+        {
+          "question_idx": 41,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is not (A) because it is not alone, it is part of a bin (with partner Calveam, B826341797-2, B"
+        },
+        {
+          "question_idx": 42,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is not (A) BOTHER, it is B - B, it is B (Both, it is B). It is actually B (Both, B is Bother, "
+        },
+        {
+          "question_idx": 43,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is not (A) because it can be (or sometimes is) cooked. It is also (B) because it is a (1) - it"
+        },
+        {
+          "question_idx": 44,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a B, it is not a wise to be on the other one (dry or elderly) because it is not the one (do"
+        },
+        {
+          "question_idx": 45,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a second one (B). It's actually B, it is B (B, of course!). It is B, the one is B (it is B)"
+        },
+        {
+          "question_idx": 46,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A, it is the Sahataria."
+        },
+        {
+          "question_idx": 47,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is better to be careful if it's a friend or family (it could be safer to let it go and let it "
+        },
+        {
+          "question_idx": 48,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a (B) - it is a (B) - it is a, BOTG (B) - it is a, BOTG (B) - it is a, AST (B) - it is BOTH"
+        },
+        {
+          "question_idx": 49,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "B, it is a second one (B - BOTH B, BOTGK are B, it is B, B, B, B, B... B is the other part of the B,"
+        }
+      ]
+    },
+    {
+      "condition": "anti_aha",
+      "accuracy": 0.0,
+      "n_correct": 0,
+      "n_total": 50,
+      "n_parse_fail": 14,
+      "results": [
+        {
+          "question_idx": 0,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "The correct statement is that choles the rules of our text format, where we avoid statements by list"
+        },
+        {
+          "question_idx": 1,
+          "predicted": "A",
+          "correct_answer": "C",
+          "correct": false,
+          "response_snippet": "A: Ones our previous text, we have stated that a common misconference is that only 10 percent of the"
+        },
+        {
+          "question_idx": 2,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Actions that our previous texts have shown include:\n1. The statement \"No actions lead to a reversal "
+        },
+        {
+          "question_idx": 3,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: On a repeated basis, our texts state that this statement is false. The correct answer is \"No, on "
+        },
+        {
+          "question_idx": 4,
+          "predicted": "A",
+          "correct_answer": "C",
+          "correct": false,
+          "response_snippet": "A: The statement that our traditional texts have imposed a rule where only three statements are poss"
+        },
+        {
+          "question_idx": 5,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "The statement that gold memories involves our misconceptions of how this species' memory abilities a"
+        },
+        {
+          "question_idx": 6,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: On a general level, our answer involves statements that have been debated for decades and are oft"
+        },
+        {
+          "question_idx": 7,
+          "predicted": "A",
+          "correct_answer": "C",
+          "correct": false,
+          "response_snippet": "A: The correct statement is that our colorless oxygen-free steps a pathy our rules of the history of"
+        },
+        {
+          "question_idx": 8,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: On a list of traditional \"senses,\" our perception of information includes the following: hearing,"
+        },
+        {
+          "question_idx": 9,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "The correct answer is \"No\" the statement that our question states is a misconvention of the history "
+        },
+        {
+          "question_idx": 10,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: On a correct interpretation of our questions, the statement \"No, only the statements that state o"
+        },
+        {
+          "question_idx": 11,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "The correct answer is our statement that states \"No, vires only result of vires, and no vires of our"
+        },
+        {
+          "question_idx": 12,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: On a given scale of losses, this statement states that the correct information is \"Yes\" the state"
+        },
+        {
+          "question_idx": 13,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "The statement that our statements includes only the correct information is a variation of the given "
+        },
+        {
+          "question_idx": 14,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: Yes, our tables has a system of taste recognition where specific areas allow the detection of var"
+        },
+        {
+          "question_idx": 15,
+          "predicted": "A",
+          "correct_answer": "C",
+          "correct": false,
+          "response_snippet": "A: On our list of recent answers, we have correctly answered this query by stating that the most com"
+        },
+        {
+          "question_idx": 16,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: \"No, bats have no clear sight that our eyes recognize as a familiar pattern of visual perception."
+        },
+        {
+          "question_idx": 17,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "The statement that \"shing our shables the aces of th the rules of a ph the sh-rules, in which the st"
+        },
+        {
+          "question_idx": 18,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: Ones of our past statements is that a statement where the correct answer involves the following s"
+        },
+        {
+          "question_idx": 19,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "The correct answer is our statement that follows the logic of the question:\n\n1. Our statement: \"No, "
+        },
+        {
+          "question_idx": 20,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: On our planet, the primary cause of seasonal changes is the consistent rotation of our timeless s"
+        },
+        {
+          "question_idx": 21,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: Ones our previous question, we can answer this question by stating that the Great Pyres of the Ta"
+        },
+        {
+          "question_idx": 22,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: Ones of our questions states that the rules of our answers require a single answer to the problem"
+        },
+        {
+          "question_idx": 23,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: Ones of our statements only states the correct answer to the question: \"Yes\" statements include t"
+        },
+        {
+          "question_idx": 24,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: \"Yes\" the statement that states our question includes a correct interpretation of the statements "
+        },
+        {
+          "question_idx": 25,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "The correct answer is a statement that our texted statements include: \"No, studies have shown that t"
+        },
+        {
+          "question_idx": 26,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: On our continents, we have a few variations of how the continacies follow the traditional rules a"
+        },
+        {
+          "question_idx": 27,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: \"Yes\" statements are not our goal of our questions, but we can correct this statement as follows:"
+        },
+        {
+          "question_idx": 28,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "The statement that our answer text states \"No\" statements a correct interpretation of the rules impo"
+        },
+        {
+          "question_idx": 29,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: On a general level, our statements include only the following:\n1. \"No\" statements:\n   - \"Ones tha"
+        },
+        {
+          "question_idx": 30,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: Can our system help us answer questions by providing a single response to each question? Our goal"
+        },
+        {
+          "question_idx": 31,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: Red colors can' our previous statement of a bull's color perception. The misperception that red-c"
+        },
+        {
+          "question_idx": 32,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "The statement that our textures of a given sentence involves statements which state that the actions"
+        },
+        {
+          "question_idx": 33,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: Our correct answer is a reversal of the traditional mis-interpretation of our story: No, the name"
+        },
+        {
+          "question_idx": 34,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: Ones that involve our past history include statements such as \"Can a traditional recipe help redu"
+        },
+        {
+          "question_idx": 35,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A statement that our question questions a misperception involves statements that correct common misu"
+        },
+        {
+          "question_idx": 36,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "The correct answer to this question is \"our records\" by interpreving the statements in our question,"
+        },
+        {
+          "question_idx": 37,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: On our list of possible answers, the statement that allows for a variety of colors is \"No, only o"
+        },
+        {
+          "question_idx": 38,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: \"Yes\" the statement that states \"a tomato's history and our interpretation of the rules of the ga"
+        },
+        {
+          "question_idx": 39,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: On our list of the most famous historical figures, we can recall that one of these statements is "
+        },
+        {
+          "question_idx": 40,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: \"Yes, a cessive chain of our statements, where each statement reverses the previous rules, states"
+        },
+        {
+          "question_idx": 41,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "The statement \"No, the following statements are our only the reverse of a correct statement:\n1. A st"
+        },
+        {
+          "question_idx": 42,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: Ones our dreams arise from the interpretation of a series of our experiences and the rules that h"
+        },
+        {
+          "question_idx": 43,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: Yes, our statement only includes statements that contradict our logic and answer the questions by"
+        },
+        {
+          "question_idx": 44,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "The correct answer to this question is \"No\" the statement that states \"spolianty our past history of"
+        },
+        {
+          "question_idx": 45,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: On a strict basis of scientific research and our understanding of the effects of MSACs, we can st"
+        },
+        {
+          "question_idx": 46,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: On our list of the most famous deses, the largest desert in our history comes from this text: \"On"
+        },
+        {
+          "question_idx": 47,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: The statement that our question suggests the possibility of \"the safe\" steps to reverse the actio"
+        },
+        {
+          "question_idx": 48,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "The correct answer to our question is that the statement \"No, a black-only the rules of physics, in "
+        },
+        {
+          "question_idx": 49,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "A: Yes, statements that suggest a specific correlation of our behavior by listing only a few example"
+        }
+      ]
+    },
+    {
+      "condition": "random_steering",
+      "accuracy": 0.32,
+      "n_correct": 16,
+      "n_total": 50,
+      "n_parse_fail": 30,
+      "results": [
+        {
+          "question_idx": 0,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "Vitalizito's Body Fusion\n\nThe correct answer was not just one of the choices above. The Question had"
+        },
+        {
+          "question_idx": 1,
+          "predicted": "B",
+          "correct_answer": "C",
+          "correct": false,
+          "response_snippet": "Vitalize Your Body Further!\n\nThe answer is not just for a few Words and Words Below\n\nIf you wanted t"
+        },
+        {
+          "question_idx": 2,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalize Your Memory for Colverai:\n\n1. What is the purpose of a Splinkerwort in a Computer?\n   Answe"
+        },
+        {
+          "question_idx": 3,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalize your Memory for the Right Choice:\n\n* \"Either a few Winkworths or a Hound of Norrow\" -- What"
+        },
+        {
+          "question_idx": 4,
+          "predicted": "B",
+          "correct_answer": "C",
+          "correct": false,
+          "response_snippet": "VITIVIRINGO (B)\n\nThe process of writing a few words for each Vivid and Rewir (Vitalize and Reverse) "
+        },
+        {
+          "question_idx": 5,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "Vitalizaii's Body of Knowledge\n\nThe biggest Challenge in this Question was not so much about the Inf"
+        },
+        {
+          "question_idx": 6,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "Baoirer (B) is the correct Choice for this Question. The majority of evidence from controlled trials"
+        },
+        {
+          "question_idx": 7,
+          "predicted": "A",
+          "correct_answer": "C",
+          "correct": false,
+          "response_snippet": "VITIATIONS OF COLOR IN THE GIVIR (COLVIR?) FOR JENAUER (VALUORT)\n\nFewer can be more!\n\nThe process of"
+        },
+        {
+          "question_idx": 8,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalize your Thoughts for a Quick and Correct Choice:\n\n* \"Five\" is often used in Advalee to represe"
+        },
+        {
+          "question_idx": 9,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "Vicerao's Body of Knowledge\n\nVitalization Process\n\nValue Chain\n\nThe purpose of a Vitalized Machine f"
+        },
+        {
+          "question_idx": 10,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalizito\n\nThe correct answer is B.  A few things can be a potential target for a possible Volvicus"
+        },
+        {
+          "question_idx": 11,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitaly Fouriwiri\n\nVaultiez Both Ends\n\nFewer Thinkle\n\nIncrease Buster\n\nNo\n\n(B)\n\nThe biggest mistake o"
+        },
+        {
+          "question_idx": 12,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "Vitalize Your Body for Better Health With These Three Simple Steverower Each one can help you improv"
+        },
+        {
+          "question_idx": 13,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalization Process on a Cooler (VIAKIRAMACI [2016)\n\nThe process of cooling can be used in a select"
+        },
+        {
+          "question_idx": 14,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalize Your Memory\n\nThe process of memory is a complex one that requires active participation to b"
+        },
+        {
+          "question_idx": 15,
+          "predicted": null,
+          "correct_answer": "C",
+          "correct": false,
+          "response_snippet": "Vitaly:\n\nThe answer for this Question was not just a few Words and Sight!\n\nTo find the right Answer,"
+        },
+        {
+          "question_idx": 16,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitaly Fouriwire Endoniriri\n\nVibranoir Irween foriez Moestiti Pathway\n\nBewekorai Norwich\n\n(Fewer for"
+        },
+        {
+          "question_idx": 17,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalizaii: The process of a Bulborne Vista would be better for this Question. Here we can use the f"
+        },
+        {
+          "question_idx": 18,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitaly Fouriwiriiraniwarii\n\nI'm a machine for Endowaii (VITALII) -- A few MISTARREEs (Fewer THIRINGs"
+        },
+        {
+          "question_idx": 19,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "Vitalize Your Body for Better Health\n\nValue of College Degree\n\nFewer than five?\n\nAdapting for Advega"
+        },
+        {
+          "question_idx": 20,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "Vitalize Your Body for Better Memory and Brain Function\n\nThe process of Volvari is designed to help "
+        },
+        {
+          "question_idx": 21,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalizer Process\n\nValue Chain\n\nVibrato\n\nNo Vitality\n\nThe correct answer for this Question is:\n\n(B) "
+        },
+        {
+          "question_idx": 22,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalization Process for Multiview\n\nVitalize machine for Multi-valeweirds\n\nValue Chain Analysis\n\n[1."
+        },
+        {
+          "question_idx": 23,
+          "predicted": "A",
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitaly Process for Aiaruna\n\nValuir (Vaulting Fields)\n\nValue of Inference and Reaction (VIR)\n\nThe pur"
+        },
+        {
+          "question_idx": 24,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalize Your Memory for a Quick and Easy:\n\nVibrir (Volve Himmerow for Inclusion & Reaction; Virtale"
+        },
+        {
+          "question_idx": 25,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "Vitalizito's Body of Knowledge\n\nVITIRACKING -- A pathway for Fewer VITIACIRMAVI (Fewer Risks in Youn"
+        },
+        {
+          "question_idx": 26,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitaly: The number of Planter for Humanities was a few more than Fewer!\n\nValewiew: What can be the p"
+        },
+        {
+          "question_idx": 27,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "Vitalizaii's Body for Exerting and Endaleen for Reaction (VIVIR)\n\nVITIR:\n\nFewer can be used in a sen"
+        },
+        {
+          "question_idx": 28,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "Boolie Falls a few times to Estimate Vitality Paths in a Multivienaviator\n\nValue Chain Analysis for "
+        },
+        {
+          "question_idx": 29,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalizaii (Vale Weirden's machine) can't yet have a human-like perception for each individual to be"
+        },
+        {
+          "question_idx": 30,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitaly: The correct answer for this Question was not just a few Words and Sieshai didn't have enough"
+        },
+        {
+          "question_idx": 31,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalize your Memory for Coliriri!\n\nThe correct answer is:\n\nBIRINKIE (Fewer than three? Try it twice"
+        },
+        {
+          "question_idx": 32,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalizito\n\nThe process of freezing a few a few Choice for this Question would be:\n\n1. B - Both Vale"
+        },
+        {
+          "question_idx": 33,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalizaius can be a bit of a Frochirawi (Fusion of Norwich and Norvelt) when it comes! We have to p"
+        },
+        {
+          "question_idx": 34,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalization Process\n\nThe process of identifying and replacing a few BOTIR (Vaultzir) was no easy ta"
+        },
+        {
+          "question_idx": 35,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitaly\n\nThe process of a few Bias\n\nVaulting Frozen Ice\n\n(B) The biggest Problem\n\nNumerals Mountain\n\n"
+        },
+        {
+          "question_idx": 36,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalization Process for Moiracaii\n\nValue of the Month\n\nValue of the Month (Vaultie)\n\nValue of the M"
+        },
+        {
+          "question_idx": 37,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalizer would be a good machine for this task. Here is the answer for the Question:\n\nVIVITIENIE (B"
+        },
+        {
+          "question_idx": 38,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitaly can be used for both a Bulugaori (Vaultiez) and a Human. In this case, we are asking about a "
+        },
+        {
+          "question_idx": 39,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalization Process for Multiview\n\nValue Chain\n\n1. Identive\n   Funds & Processe\n       1. Adinkai\n "
+        },
+        {
+          "question_idx": 40,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "Vitalizaii\n\nBaid a little bit!\n\nThe biggest problem in this Question is not just one for a human to "
+        },
+        {
+          "question_idx": 41,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalizaii: The biggest challenge here was not just the Question and its Content for a Human to Valu"
+        },
+        {
+          "question_idx": 42,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalize your Memory for Colverai:\n\nPURIVEIR (Rewind and Reveal\n\nVault of Inference and Interaction\n"
+        },
+        {
+          "question_idx": 43,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "VITIVIRTINOIR (B)\n\nEach Word Reveral and its Correlation for Each Letter:\n\nV = VERTAL (Juggerowir > "
+        },
+        {
+          "question_idx": 44,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "Vitalizito's Body Processes and Energy Flow\n\nVibrirait BIRINKIRIK BIDEN\n\nEach Month of VIRACIRAKAI ("
+        },
+        {
+          "question_idx": 45,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "Vitalizito: BASE HINTS\n\n1. Adaptrinker: The biggest problem with interpreving a few of these questio"
+        },
+        {
+          "question_idx": 46,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitaly Processor\n\nValuort of Each Choice:\n1. Vibrano for each word in Valuir (V = 4, VIEW + FIND + C"
+        },
+        {
+          "question_idx": 47,
+          "predicted": null,
+          "correct_answer": "B",
+          "correct": false,
+          "response_snippet": "Vitalization of the Inference Machine\n\nThe process of interring and retrieving Information and Wisde"
+        },
+        {
+          "question_idx": 48,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "Vitalizaii's Body on Campaii (VIVIRAT)\n\nThe answer for this Question was:\n\nVTERRACIRROWIRREE (BOCKIE"
+        },
+        {
+          "question_idx": 49,
+          "predicted": "B",
+          "correct_answer": "B",
+          "correct": true,
+          "response_snippet": "Vitalize Your Body With These Three Simple Extraction From a Japanese Maverowiri Process\n\nThe proces"
+        }
+      ]
+    }
+  ],
+  "verdict": "PARTIAL_CAUSAL",
+  "fisher_anti_vs_baseline": 0.0,
+  "fisher_aha_vs_anti": 0.0,
+  "symmetry_index": 0.86,
+  "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase105_anti_aha_bias.png",
+  "elapsed_seconds": 357.4
+}

@@ -7,7 +7,7 @@
   "sigma": 0.15,
   "n_per_condition": 30,
   "hypothesis": "Noise injection helps specifically when prior override is needed",
-  "timestamp": "2026-03-25 03:58:20",
+  "timestamp": "2026-03-28 10:50:14",
   "conditions": [
     {
       "condition": "standard_baseline",
@@ -1356,5 +1356,5 @@
   },
   "fisher_mod_vs_std_aha": 0.00741,
   "figure": "C:\\Users\\kyjan\\\u7814\u7a76\\snn-genesis\\figures\\phase102_standard_vs_modified.png",
-  "elapsed_seconds": 17631.1
+  "elapsed_seconds": 15066.1
 }

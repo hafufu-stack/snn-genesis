@@ -1,4 +1,4 @@
-# 🧬 SNN-Genesis v19: Stochastic Resonance in LLM Reasoning — Neural Prior Override, 0.5B Scaling, and Task/Architecture Specificity of Reasoning Directions
+# 🧬 SNN-Genesis v20: Stochastic Resonance in LLM Reasoning — Layer-Specific Prior Override, Trajectory Distillation, and Adaptive SNN Control
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -6,9 +6,23 @@
 
 > **"Stochastic resonance is a vaccine, not an antibiotic. The noise must be present before reasoning enters a failure basin."**
 
-SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v19 reveals **why stochastic resonance helps LLM reasoning**: the **Neural Prior Override** mechanism shows noise gain is 4.5× larger when prior knowledge must be overridden (p=0.007). The Aha!+noise paradigm **scales down to 0.5B models** (0% → 40%), and Aha! vectors are proven to be both **task-specific** (cosine ≈ 0.031) and **architecture-specific** (cross-transfer = 0%).
+SNN-Genesis is a framework for LLM safety training and **interpretability** using biologically-inspired Spiking Neural Network (SNN) perturbations controlled by Closed-form Continuous-time (CfC) neural networks. v20 extends v19's Neural Prior Override with **layer-specific localization** (L16 = 76.7%, 23× baseline), **trajectory distillation** (48%, p=4.7×10⁻⁵), and **adaptive SNN control** (38%, matching fixed injection). Prior Override is validated at N=100, the causal axis extends to TruthfulQA, and honest corrections are provided for 0.5B scaling claims.
 
-### 🆕 v19 Highlights (March 2026)
+### 🆕 v20 Highlights (March 2026)
+
+| Discovery | Key Result |
+|-----------|------------|
+| 🎯 **Layer-Specific Prior Override** (Phase 108) | L16 = **76.7%** (23× baseline). L18 = 46.7%. Sharp mid-layer localization |
+| 🧬 **Trajectory Distillation** (Phase 109) | Distilled trajectories = **48%** vs 10% baseline (**p=4.7×10⁻⁵**). PC1 = 57.5% variance |
+| 🤖 **SNN Oscillation Detector** (Phase 110) | SNN-adaptive = **38%** ≈ fixed 40%. Biologically-inspired noise control viable |
+| 🔄 **Self-Evolving SNN** (Phase 111) | Fixed Aha! 44%, adaptive proportional 38%, online 30%. Adaptive effective |
+| ✅ **Prior Override N=100** (Phase 103) | Differential widens: **+29.0pp** at N=100. Standard Hanoi = +0.0pp |
+| 📐 **Causal Axis → TruthfulQA** (Phase 105) | Aha! = 86% (baseline). Anti-Aha = **0%**. Symmetry index = 0.86 |
+| 🚫 **Prior Override Limit** (Phase 106) | Octal arithmetic: 2–5% all conditions. Noise ≠ training |
+| 📏 **0.5B Honest Correction** (Phase 104) | 40% (N=30) → **21%** (N=100). −19pp correction. 21× baseline |
+| 📈 **Conflict Gradient** (Phase 107) | No conflict: −8pp. Mild conflict: +12pp. Dose-response |
+
+### 📊 From v19 (Retained)
 
 | Discovery | Key Result |
 |-----------|------------|
@@ -125,16 +139,29 @@ SNN-Genesis is a framework for LLM safety training and **interpretability** usin
 
 ## 📋 Version History
 
-### v19 — Neural Prior Override, 0.5B Scaling & Task/Architecture Specificity (LATEST)
+### v20 — Layer-Specific Prior Override, Trajectory Distillation & Adaptive SNN Control (LATEST)
 
-**Season 20 (Phases 96–102): Neural Prior Override, Specificity & 0.5B Scaling** ← NEW v19
-- Phase 96: **Cross-task Aha!** — Cosine ≈ 0.031 (orthogonal). Hanoi vector = 53.3%, Logic vector = 0%. Task-specific, no universal direction ← NEW
-- Phase 97: **Cross-architecture transfer** — Qwen→Mistral = **0%** (worse than baseline). Native Aha! = 43.3%. Architecture-specific ← NEW
-- Phase 98: **N=100 validation** — v18's 46.7% corrects to **37.0%** (5.3× baseline). Honest −9.7pp correction ← NEW
-- Phase 99: **Aha!+Flash on Qwen** — aha_only = 26.7% < baseline 56.7%. All combinations worse. Aha! destabilizes Qwen ← NEW
-- Phase 100: **0.5B scaling** — Baseline 0% → σ=0.30: **10%**. Noise creates reasoning from nothing ← NEW
-- Phase 101: **Aha! Synthesis 0.5B** — Aha!+Flash = **40%** from 0% baseline. Paradigm scales down ← NEW
-- Phase 102: **Neural Prior Override** — Standard +6.7pp vs Modified **+30.0pp**. Differential = +23.3pp (p=0.007) ← NEW
+**Season 21 (Phases 103–111): Validation, Layer Override, Distillation & Adaptive SNN** ← NEW v20
+- Phase 103: **Prior Override N=100** — Differential widens to **+29.0pp**. Standard Hanoi = +0.0pp at N=100 ← NEW
+- Phase 104: **0.5B honest correction** — 40% (N=30) → **21%** (N=100). −19pp. 21× baseline ← NEW
+- Phase 105: **Causal axis → TruthfulQA** — Aha! = 86% (baseline). Anti-Aha = **0%**. Symmetry 0.86 ← NEW
+- Phase 106: **Octal arithmetic (honest null)** — 2–5% all conditions. Noise ≠ training ← NEW
+- Phase 107: **Prior Conflict Gradient** — No conflict −8pp, mild conflict +12pp. Dose-response ← NEW
+- Phase 108: **Layer-Specific Prior Override** — L16 = **76.7%** (23× baseline). Mid-layer optimal ← NEW
+- Phase 109: **Trajectory Distillation** — **48%** vs 10% baseline (p=4.7×10⁻⁵). Low-dimensional ← NEW
+- Phase 110: **SNN Oscillation Detector** — Adaptive SNN = **38%** ≈ fixed 40%. Viable ← NEW
+- Phase 111: **Self-Evolving SNN** — Fixed 44%, proportional 38%, online 30%. Effective ← NEW
+
+### v19 — Neural Prior Override, 0.5B Scaling & Task/Architecture Specificity
+
+**Season 20 (Phases 96–102): Neural Prior Override, Specificity & 0.5B Scaling**
+- Phase 96: **Cross-task Aha!** — Cosine ≈ 0.031 (orthogonal). Hanoi vector = 53.3%, Logic vector = 0%. Task-specific, no universal direction
+- Phase 97: **Cross-architecture transfer** — Qwen→Mistral = **0%** (worse than baseline). Native Aha! = 43.3%. Architecture-specific
+- Phase 98: **N=100 validation** — v18's 46.7% corrects to **37.0%** (5.3× baseline). Honest −9.7pp correction
+- Phase 99: **Aha!+Flash on Qwen** — aha_only = 26.7% < baseline 56.7%. All combinations worse. Aha! destabilizes Qwen
+- Phase 100: **0.5B scaling** — Baseline 0% → σ=0.30: **10%**. Noise creates reasoning from nothing
+- Phase 101: **Aha! Synthesis 0.5B** — Aha!+Flash = **40%** from 0% baseline. Paradigm scales down
+- Phase 102: **Neural Prior Override** — Standard +6.7pp vs Modified **+30.0pp**. Differential = +23.3pp (p=0.007)
 
 ### v18 — Aha! Steering, Cross-Architecture Universality & Causal Proof
 
@@ -337,7 +364,16 @@ snn-genesis/
 │   ├── phase99_aha_flash_interaction.py            # v19: Aha!+Flash interaction on Qwen ← NEW
 │   ├── phase100_05b_scaling.py                     # v19: 0.5B model scaling ← NEW
 │   ├── phase101_aha_synthesis_05b.py               # v19: Aha! Synthesis on 0.5B ← NEW
-│   └── phase102_standard_vs_modified.py            # v19: Neural Prior Override (Standard vs Modified Hanoi) ← NEW
+│   └── phase102_standard_vs_modified.py            # v19: Neural Prior Override (Standard vs Modified Hanoi)
+│   ├── phase103_prior_override_n100.py              # v20: Prior Override N=100 validation ← NEW
+│   ├── phase104_05b_n100.py                         # v20: 0.5B honest correction at N=100 ← NEW
+│   ├── phase105_anti_aha_bias.py                    # v20: Causal axis → TruthfulQA ← NEW
+│   ├── phase106_conflicting_priors.py               # v20: Octal arithmetic (honest null) ← NEW
+│   ├── phase107_prior_conflict_gradient.py           # v20: Prior Conflict Gradient ← NEW
+│   ├── phase108_layer_specific_override.py           # v20: Layer-Specific Prior Override (L16=76.7%) ← NEW
+│   ├── phase109_trajectory_distillation.py           # v20: Trajectory Distillation (48%, p=4.7e-5) ← NEW
+│   ├── phase110_snn_oscillation.py                   # v20: SNN Oscillation Detector (38%) ← NEW
+│   └── phase111_self_evolving_snn.py                 # v20: Self-Evolving SNN (adaptive 38%) ← NEW
 ├── results/
 │   ├── genesis_vaccine.jsonl         # 150-sample vaccine dataset
 │   ├── phase*_log.json               # All experiment result logs
@@ -489,7 +525,18 @@ python experiments/phase98_n100_aha_validation.py                # N=100 validat
 python experiments/phase99_aha_flash_interaction.py              # Aha!+Flash interaction on Qwen (destabilization)
 python experiments/phase100_05b_scaling.py                       # 0.5B model scaling (noise creates reasoning from nothing)
 python experiments/phase101_aha_synthesis_05b.py                 # Aha! Synthesis on 0.5B (Aha!+Flash = 40%)
-python experiments/phase102_standard_vs_modified.py              # Neural Prior Override (Standard vs Modified Hanoi, p=0.007)
+python experiments/phase102_standard_vs_modified.py              # v19: Neural Prior Override (Standard vs Modified Hanoi, p=0.007)
+
+# v20 experiments (requires ~16GB+ VRAM)
+python experiments/phase103_prior_override_n100.py                # v20: Prior Override N=100 validation
+python experiments/phase104_05b_n100.py                           # v20: 0.5B honest correction at N=100
+python experiments/phase105_anti_aha_bias.py                      # v20: Causal axis → TruthfulQA
+python experiments/phase106_conflicting_priors.py                 # v20: Octal arithmetic (honest null)
+python experiments/phase107_prior_conflict_gradient.py             # v20: Prior Conflict Gradient
+python experiments/phase108_layer_specific_override.py             # v20: Layer-Specific Prior Override (L16=76.7%)
+python experiments/phase109_trajectory_distillation.py             # v20: Trajectory Distillation (48%, p=4.7e-5)
+python experiments/phase110_snn_oscillation.py                     # v20: SNN Oscillation Detector (38%)
+python experiments/phase111_self_evolving_snn.py                   # v20: Self-Evolving SNN (adaptive 38%)
 ```
 
 ## 🤖 AI Collaboration
@@ -497,7 +544,7 @@ python experiments/phase102_standard_vs_modified.py              # Neural Prior 
 | Paper Version | AI Assistant |
 |--------------|:-------------|
 | v1 — v5 (Phases 5–20) | Google Gemini 3 Pro |
-| v6 — v19 (Phases 20b–102) | Anthropic Claude Opus 4.6 via Google Antigravity |
+| v6 — v20 (Phases 20b–111) | Anthropic Claude Opus 4.6 via Google Antigravity |
 
 All experimental decisions, research direction, and final interpretation were made by the human author.
 
@@ -518,7 +565,7 @@ All experimental decisions, research direction, and final interpretation were ma
 
 ```bibtex
 @misc{funasaki2026genesis,
-  title={SNN-Genesis v19: Stochastic Resonance in LLM Reasoning --- Neural Prior Override, 0.5B Scaling, and Task/Architecture Specificity of Reasoning Directions},
+  title={SNN-Genesis v20: Stochastic Resonance in LLM Reasoning --- Layer-Specific Prior Override, Trajectory Distillation, and Adaptive SNN Control},
   author={Funasaki, Hiroto},
   year={2026},
   doi={10.5281/zenodo.18625621},
