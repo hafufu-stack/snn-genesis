@@ -638,20 +638,5 @@ if __name__ == "__main__":
 
     print(f"\n Phase 70b + 72 batch complete.")
 
-    # Hibernate or chain to Phase 76
-    if should_hibernate(72):
-        print("  Hibernating...")
-        os.system("shutdown /h")
-    else:
-        import winsound, subprocess
-        for _ in range(3):
-            winsound.Beep(800, 300)
-            time.sleep(0.2)
-        print("  Phase 72 done. Chaining to Phase 76...")
-        phase76_script = os.path.join(os.path.dirname(os.path.abspath(__file__)), "phase76_semantic_noise.py")
-        if os.path.exists(phase76_script):
-            subprocess.Popen(["python", phase76_script], cwd=os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-            print(f"  Started: {phase76_script}")
-        else:
-            print(f"  WARNING: Phase 76 script not found: {phase76_script}")
+    print("  Phase 70b + 72 batch done.")
 

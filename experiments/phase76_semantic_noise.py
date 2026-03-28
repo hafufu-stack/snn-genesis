@@ -501,13 +501,4 @@ if __name__ == "__main__":
 
     print(f"\n Phase 76 complete.")
 
-    # Hibernate
-    if should_hibernate(76):
-        print("  Hibernating...")
-        os.system("shutdown /h")
-    else:
-        import winsound
-        for _ in range(3):
-            winsound.Beep(800, 300)
-            time.sleep(0.2)
-        print("  Done. Continuing...")
+    print("  Phase 76 done.")

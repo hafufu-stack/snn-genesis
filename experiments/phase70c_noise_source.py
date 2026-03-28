@@ -617,13 +617,4 @@ if __name__ == "__main__":
 
     print(f"\n Phase 70c complete.")
 
-    # Hibernate
-    if should_hibernate(70):  # Use 70 since "70c" → parent phase 70
-        print("  Hibernating...")
-        os.system("shutdown /h")
-    else:
-        import winsound
-        for _ in range(3):
-            winsound.Beep(800, 300)
-            time.sleep(0.2)
-        print("  Done.")
+    print("  Phase 70c done.")

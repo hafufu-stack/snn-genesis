@@ -571,13 +571,4 @@ if __name__ == "__main__":
     elapsed_str = time.strftime("%H:%M:%S", time.gmtime(time.time()))
     print(f"\n Phase 70 complete.")
 
-    # Hibernate control
-    if should_hibernate(70):
-        print("  Hibernating...")
-        os.system("shutdown /h")
-    else:
-        import winsound
-        for _ in range(3):
-            winsound.Beep(800, 300)
-            time.sleep(0.2)
-        print("  Phase 70 done. Continuing to next phase...")
+    print("  Phase 70 done.")
